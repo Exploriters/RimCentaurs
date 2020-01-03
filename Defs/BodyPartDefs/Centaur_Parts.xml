@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+<BodyPartDef>
+   	 <defName>CentaurTail</defName>
+   	 <label>equine tail</label>
+   	 <hitPoints>15</hitPoints>
+   	 <frostbiteVulnerability>1</frostbiteVulnerability>
+   	 <skinCovered>true</skinCovered>
+   	 <beautyRelated>true</beautyRelated>
+   	 <tags>
+		<li>MovingLimbSegment</li>
+   	 </tags>
+	</BodyPartDef>
+
+	  <BodyPartDef>
+    <defName>CentaurHoof</defName>
+    <label>hoof</label>
+    <hitPoints>25</hitPoints>
+	<bleedRate>0</bleedRate>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+    <BodyPartDef>
+    <defName>CentaurHeart</defName>
+    <label>auxiliary heart</label>
+    <hitPoints>20</hitPoints>
+    <bleedRate>7</bleedRate>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>BloodPumpingSource</li>
+    </tags>
+    <spawnThingOnRemoved>Heart</spawnThingOnRemoved>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+  
+</Defs>

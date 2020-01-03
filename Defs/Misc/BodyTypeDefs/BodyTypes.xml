@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  
+  <BodyTypeDef>
+  <defName>CentaurMale</defName>
+  <headOffset>(0.04, 0.54)</headOffset>
+  <bodyNakedGraphicPath>Things/Centaur/Bodies/Naked_Centaur</bodyNakedGraphicPath>
+  <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</bodyDessicatedGraphicPath>
+  </BodyTypeDef>
+  
+   <BodyTypeDef>
+   <defName>CentaurFemale</defName>
+   <headOffset>(0.04, 0.54)</headOffset>
+   <bodyNakedGraphicPath>Things/Centaur/Bodies/Naked_Centaur</bodyNakedGraphicPath>
+   <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</bodyDessicatedGraphicPath>
+  </BodyTypeDef>
+  
+</Defs>

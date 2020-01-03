@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Mostly Stolen Orassan Stuff -->
+
+  <Alien_Centaur.label>半人马</Alien_Centaur.label>
+  <Alien_Centaur.description>一种作为超级富豪的嗜好而进行的基因改造结果，现在被归类为一个独立的物种。尽管他们有着马的外观，但半人马是杂食性的。</Alien_Centaur.description>
+  
+  <Alien_Centaur.tools.0.label>左拳</Alien_Centaur.tools.0.label>
+  <Alien_Centaur.tools.1.label>右拳</Alien_Centaur.tools.1.label>
+  <Alien_Centaur.tools.2.label>蹄子</Alien_Centaur.tools.2.label>
+
+
+</LanguageData>

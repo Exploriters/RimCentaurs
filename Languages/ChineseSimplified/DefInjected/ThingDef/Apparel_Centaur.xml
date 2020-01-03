@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Centaur Civilian -->
+
+  <!-- EN: pants -->
+  <Apparel_CentaurPants.label>半人马裤子</Apparel_CentaurPants.label>
+  <!-- EN: A simple set of pants. -->
+  <Apparel_CentaurPants.description>一条给马穿的裤子。现在我们知道一只马要如何穿裤子了。</Apparel_CentaurPants.description>
+  
+  <!-- EN: T-shirt -->
+  <Apparel_CentaurBasicShirt.label>半人马T恤衫</Apparel_CentaurBasicShirt.label>
+  <!-- EN: A simple T-shirt. -->
+  <Apparel_CentaurBasicShirt.description>一件改装过提供给半人马的T恤衫。</Apparel_CentaurBasicShirt.description>
+  
+  <!-- EN: button-down shirt -->
+  <Apparel_CentaurCollarShirt.label>半人马衬衫</Apparel_CentaurCollarShirt.label>
+  <!-- EN: A nice-looking collared shirt with buttons. -->
+  <Apparel_CentaurCollarShirt.description>一件好看的、带有纽扣的有领衬衫，为半人马而设计。</Apparel_CentaurCollarShirt.description>
+  
+  <!-- Centaur Armour -->
+
+  <Apparel_CentaurShieldArmor.label>护盾背心</Apparel_CentaurShieldArmor.label>
+  <Apparel_CentaurShieldArmor.description>为半人马穿戴者的一套轻型动力盔甲，具有投射屏障装置。覆盖玻璃钢纤维编制的装甲片，能够十分有效地防御攻击。神经模因机械让人在穿着重型装甲时仍然能够轻松行动。\n\n护盾能阻挡从一定距离外射来的任何高速运动弹头或能量攻击，但对近战攻击或零距离贴近射击无效，同时会被EMP摧毁。不会阻碍穿戴者从内往外的射击。\n\n动力装甲通常由来自太空时代军队的重甲士兵和空间海军突击队员使用。\n\n和人类的相比具有额外的重量和材料，来提供侧面的保护。</Apparel_CentaurShieldArmor.description>
+
+  <!-- EN: flak vest -->
+  <Apparel_CentaurFlakVest.label>半人马防弹背心</Apparel_CentaurFlakVest.label>
+  <!-- EN: A vest with armor plates inserted on the chest and back. While quite effective at deflecting gunshots and stabbing attacks against the chest, it does nothing to protect the limbs. -->
+  <Apparel_CentaurFlakVest.description>为半人马穿戴者而设计的修改版防弹背心。和人类的相比具有额外的重量和材料，来提供侧面的保护。对四肢没有防护能力。</Apparel_CentaurFlakVest.description>
+  
+  <!-- EN: flak pants -->
+  <Apparel_CentaurFlakPants.label>半人马防弹裤</Apparel_CentaurFlakPants.label>
+  <!-- EN: A pair of pants with armor plates sewn in. While it's not as good as solid armor, it offers effective protection against all manner of attacks while remaining quite comfortable. -->
+  <Apparel_CentaurFlakPants.description>给半人马穿的修改版防弹裤。主要用于保护腿部，虽然没有全身盔甲严密，但也提供了强大的防护，同时兼顾了舒适性。</Apparel_CentaurFlakPants.description>
+  
+  <!-- EN: plate armor -->
+  <Apparel_CentaurPlateArmor.label>半人马板甲</Apparel_CentaurPlateArmor.label>
+  <!-- EN: Overlapping solid plates of armor covering the entire body from neck to feet. -->
+  <Apparel_CentaurPlateArmor.description>一件为半人马设计的重型板甲，从颈部到脚部都用厚实的材料层层堆叠覆盖。</Apparel_CentaurPlateArmor.description>
+  
+
+</LanguageData>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- ============================ Mostly Stolen Orassan Stuff ========================== -->
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+        <defName>Alien_Centaur</defName>
+        <label>Centaur</label>
+        <description>The result of extensive gene modding done by the ultra-wealthy as a hobby, now recognised as a distinct species. Despite their equine appearance, centaurs are omnivorous.</description>
+
+		<alienRace>
+			<generalSettings>
+			
+			<allowHumanBios>true</allowHumanBios>
+			
+				<alienPartGenerator>
+					<headOffset>(0.0, 0.0)</headOffset>
+                    <alienbodytypes>
+                        <li>CentaurMale</li>
+						<li>CentaurFemale</li>
+                    </alienbodytypes>
+					<useGenderedBodies>false</useGenderedBodies>
+                    <bodyAddons>
+						<li>
+						<drawSize>1</drawSize>
+							<path>Things/Centaur/Ears/EarLeft</path>
+							<bodyPart>left ear</bodyPart>
+							<inFrontOfBody>true</inFrontOfBody>
+							<useSkinColor>false</useSkinColor>
+							<drawnInBed>true</drawnInBed>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<CentaurMale>(-.425,0.95)</CentaurMale>
+										<CentaurFemale>(-.425,0.95)</CentaurFemale>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<CentaurMale>(-.425,0.95)</CentaurMale>
+										<CentaurFemale>(-.425,0.95)</CentaurFemale>
+									</portraitBodyTypes>
+									<crownTypes>
+										<Normal_Average>(0,0)</Normal_Average>
+									</crownTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<CentaurMale>(0,0.95)</CentaurMale>
+										<CentaurFemale>(0,0.95)</CentaurFemale>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<CentaurMale>(0,0.95)</CentaurMale>
+										<CentaurFemale>(0,0.95)</CentaurFemale>
+									</portraitBodyTypes>
+									<crownTypes>
+										<Normal_Average>(0,0)</Normal_Average>
+									</crownTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<CentaurMale>(-.425,0.95)</CentaurMale>
+										<CentaurFemale>(-.425,0.95)</CentaurFemale>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<CentaurMale>(-.425,0.95)</CentaurMale>
+										<CentaurFemale>(-.425,0.95)</CentaurFemale>
+									</portraitBodyTypes>
+									<crownTypes>
+										<Normal_Average>(0,0)</Normal_Average>
+									</crownTypes>
+								</east>
+							</offsets>
+						</li>
+						
+						
+						
+						<li>
+						<drawSize>1</drawSize>
+							<path>Things/Centaur/Ears/EarRight</path>
+							<bodyPart>right ear</bodyPart>
+							<inFrontOfBody>true</inFrontOfBody>
+							<useSkinColor>false</useSkinColor>
+							<drawnInBed>true</drawnInBed>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<CentaurMale>(-.425,0.95)</CentaurMale>
+										<CentaurFemale>(-.425,0.95)</CentaurFemale>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<CentaurMale>(-.425,0.95)</CentaurMale>
+										<CentaurFemale>(-.425,0.95)</CentaurFemale>
+									</portraitBodyTypes>
+									<crownTypes>
+										<Normal_Average>(0,0)</Normal_Average>
+									</crownTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<CentaurMale>(0,0.95)</CentaurMale>
+										<CentaurFemale>(0,0.95)</CentaurFemale>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<CentaurMale>(0,0.95)</CentaurMale>
+										<CentaurFemale>(0,0.95)</CentaurFemale>
+									</portraitBodyTypes>
+									<crownTypes>
+										<Normal_Average>(0,0)</Normal_Average>
+									</crownTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<CentaurMale>(-.425,0.95)</CentaurMale>
+										<CentaurFemale>(-.425,0.95)</CentaurFemale>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<CentaurMale>(-.425,0.95)</CentaurMale>
+										<CentaurFemale>(-.425,0.95)</CentaurFemale>
+									</portraitBodyTypes>
+									<crownTypes>
+										<Normal_Average>(0,0)</Normal_Average>
+									</crownTypes>
+								</east>
+							</offsets>
+						</li>
+						
+						
+						
+						<li>
+						<drawSize>1</drawSize>
+							<path>Things/Centaur/Tail/Tail</path>
+							<bodyPart>tail</bodyPart>
+							<inFrontOfBody>true</inFrontOfBody>
+							<useSkinColor>false</useSkinColor>
+							<drawnInBed>false</drawnInBed>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<CentaurMale>(-.425,0.92)</CentaurMale>
+										<CentaurFemale>(-.425,0.92)</CentaurFemale>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<CentaurMale>(-.425,0.92)</CentaurMale>
+										<CentaurFemale>(-.425,0.92)</CentaurFemale>
+									</portraitBodyTypes>
+									<crownTypes>
+										<Normal_Average>(0,0)</Normal_Average>
+									</crownTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<CentaurMale>(0,0.20)</CentaurMale>
+										<CentaurFemale>(0,0.20)</CentaurFemale>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<CentaurMale>(0,0.20)</CentaurMale>
+										<CentaurFemale>(0,0.20)</CentaurFemale>
+									</portraitBodyTypes>
+									<crownTypes>
+										<Normal_Average>(0,0)</Normal_Average>
+									</crownTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<CentaurMale>(.925,0.05)</CentaurMale>
+										<CentaurFemale>(.925,0.05)</CentaurFemale>
+									</bodyTypes>
+									<portraitBodyTypes>
+										<CentaurMale>(.925,0.10)</CentaurMale>
+										<CentaurFemale>(.925,0.10)</CentaurFemale>
+									</portraitBodyTypes>
+									<crownTypes>
+										<Normal_Average>(0,0)</Normal_Average>
+									</crownTypes>
+								</east>
+							</offsets>
+						</li>						
+						
+					
+					</bodyAddons>
+
+                    <alienskincolorgen Class="ColorGenerator_StandardApparel">
+                    <!--    <options>
+                        <li>
+                            <weight>10</weight>
+                            <only>RGBA(0.2,0.2,0.2,1)</only>
+                        </li>
+						
+                        <li>
+                            <weight>10</weight>
+                            <only>RGBA(1,0.7,0.5,1)</only>
+                        </li>
+						<!- - Cute Colours - ->
+                        <li>
+                            <weight>10</weight>
+                            <only>RGBA(0.5,0.9,1,1)</only>
+                        </li>						
+                        </options>-->
+
+                    </alienskincolorgen>
+                    <alienhaircolorgen Class="ColorGenerator_StandardApparel">
+                    <!--    <options>
+                        <li>
+                            <weight>10</weight>
+                            <only>RGBA(0.2,0.2,0.2,1)</only>
+                        </li>
+						
+                        <li>
+                            <weight>10</weight>
+                            <only>RGBA(1,0.7,0.5,1)</only>
+                        </li>
+						<!- - Cute Colours - ->
+                        <li>
+                            <weight>10</weight>
+                            <only>RGBA(0.5,0.9,1,1)</only>
+                        </li>						
+                        </options>-->
+
+                    </alienhaircolorgen>
+					<useSkincolorForHair>false</useSkincolorForHair>
+					<customHeadDrawSize>(1, 1)</customHeadDrawSize>
+                    <customDrawSize>(1.35, 1.35)</customDrawSize>
+                </alienPartGenerator>
+				<humanRecipeImport>true</humanRecipeImport>
+		    </generalSettings>
+			
+
+            <hairSettings>
+                <getsGreyAt>255</getsGreyAt>
+            </hairSettings>			
+			
+			
+			<raceRestriction>
+				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<apparelList>
+					<li>Apparel_CentaurPants</li>
+					<li>Apparel_CentaurBasicShirt</li>
+					<li>Apparel_CentaurCollarShirt</li>
+					<li>Apparel_CentaurFlakJacket</li>
+					<li>Apparel_CentaurFlakVest</li>
+					<li>Apparel_CentaurFlakPants</li>
+					<!--<li>Apparel_CentaurCollarShirt_Raised</li>-->
+					<li>Apparel_CentaurShieldArmor</li>
+				</apparelList>
+				<whiteApparelList>
+				<li>Apparel_CowboyHat</li>
+				<li>Apparel_BowlerHat</li>
+				<li>Apparel_TribalHeaddress</li>
+				<li>Apparel_Tuque</li>
+				<li>Apparel_WarMask</li>
+				<li>Apparel_WarVeil</li>
+				<li>Apparel_SimpleHelmet</li>
+				<li>Apparel_AdvancedHelmet</li>
+				<li>Apparel_PsychicFoilHelmet</li>
+				</whiteApparelList>
+			</raceRestriction>
+			
+        </alienRace>
+		
+		
+		
+        <statBases>
+            <MarketValue>5700</MarketValue> <!-- 1900 -->
+            <MoveSpeed>13.5</MoveSpeed> <!--Nyooooooooom--> <!-- 9.0 -->
+            <Flammability>1.0</Flammability>
+            <ComfyTemperatureMin>-36</ComfyTemperatureMin><!-- 14 -->
+            <ComfyTemperatureMax>24</ComfyTemperatureMax><!-- 24 -->
+            <LeatherAmount>90</LeatherAmount>
+			<MeleeDodgeChance>1.25</MeleeDodgeChance>
+        </statBases>
+		<tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.4</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>18</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.4</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>18</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>hooves</label>
+		<capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>CentaurHooves</linkedBodyPartsGroup>
+		<chanceFactor>0.2</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>26</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+    </tools>
+        <race>
+            <thinkTreeMain>Humanlike</thinkTreeMain>
+            <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+            <intelligence>Humanlike</intelligence>
+            <makesFootprints>true</makesFootprints>
+			<lifeExpectancy>800</lifeExpectancy>
+			<leatherDef>Leather_Human</leatherDef>
+            <nameCategory>HumanStandard</nameCategory>
+            <body>Centaur</body>
+            <baseBodySize>3.0</baseBodySize><!-- 1.5 -->
+            <baseHealthScale>3.0</baseHealthScale><!-- 1.2 -->
+            <foodType>OmnivoreHuman</foodType>
+			
+      <gestationPeriodDays>32.5</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, .30)</li>
+          <li>(2, .40)</li>
+          <li>(3, .10)</li>
+		  <li>(4, .20)</li>
+		  <li>(5, 0)</li>
+        </points>
+      </litterSizeCurve>
+            <lifeStageAges>
+				<li>
+				  <def>HumanlikeBaby</def>
+				  <minAge>0</minAge>
+				</li>
+				<li>
+				  <def>HumanlikeToddler</def>
+				  <minAge>1.2</minAge>
+				</li>
+				<li>
+				  <def>HumanlikeChild</def>
+				  <minAge>4</minAge>
+				</li>
+				<li>
+				  <def>HumanlikeTeenager</def>
+				  <minAge>13</minAge>
+				</li>
+				<li>
+				  <def>HumanlikeAdult</def>
+				  <minAge>18</minAge>
+				</li>
+            </lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+            <specialShadowData>
+                <volume>(0.3, 0.8, 0.4)</volume>
+                <offset>(0,0,-0.3)</offset>
+            </specialShadowData>
+			      <ageGenerationCurve>
+					<points>
+					  <li>(14,0)</li>
+					  <li>(16,100)</li>
+					  <li>(50,100)</li>
+					  <li>(60,30)</li>
+					  <li>(70,18)</li>
+					  <li>(80,10)</li>
+					  <li>(90,3)</li>
+					  <li>(100,0)</li>
+					</points>
+				  </ageGenerationCurve>
+			<hediffGiverSets>
+                <li>OrganicStandard</li>
+            </hediffGiverSets>
+        </race>
+</AlienRace.ThingDef_AlienRace>
+</Defs>

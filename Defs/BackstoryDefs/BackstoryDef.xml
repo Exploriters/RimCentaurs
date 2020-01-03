@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+			<!--=====Adulthood=====-->
+
+<!-- Generic -->
+
+<!-- Placeholder Backstory
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_Base</defName>
+    <title>BaseError</title>
+    <titleShort>BaseError</titleShort>
+    <baseDescription>[PAWN_nameDef] [PAWN_pronoun] [PAWN_possessive]</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+	
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+
+</AlienRace.BackstoryDef>
+-->
+
+
+
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_Laborer</defName>
+    <title>Laborer</title>
+    <titleShort>Laborer</titleShort>
+    <baseDescription>[PAWN_nameDef] worked as general laborer, assisting in the construction and demolition of buildings in urban centres and getting into brawls after work regularly.</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+	
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_Procession</defName>
+    <title>Processionist</title>
+    <titleShort>Processionist</titleShort>
+    <baseDescription>[PAWN_nameDef] fondly recalls their days on a glitterworld, covered in neon lights and fireworks as they lead celebratory parades for the local dictator.</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+	
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>10</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+
+</AlienRace.BackstoryDef>
+
+
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_Mercenary</defName>
+    <title>Processionist</title>
+    <titleShort>Processionist</titleShort>
+    <baseDescription>There's nothing better than killing for [PAWN_nameDef], and so the life of a career mercenary suited them just fine.</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+	
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+	<forcedTraits>
+		<li>
+			<defName>Bloodlust</defName>
+		</li>
+	</forcedTraits>
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+
+</AlienRace.BackstoryDef>
+
+
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_Lobotomite</defName>
+    <title>Lobotomite</title>
+    <titleShort>Lobotomite</titleShort>
+    <baseDescription>[PAWN_nameDef] was just one of many centaurs abducted for scientific experimentation. Portions of [PAWN_possessive] brain removed and altered, [PAWN_pronoun] has made most complex tasks downright impossible to focus on.</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+	
+    <skillGains>
+      <li>
+        <defName>Mining</defName>
+        <amount>8</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+
+	<requiredWorkTags>
+        <li>ManualDumb</li>
+		<li>Caring</li>
+		<li>Social</li>
+		<li>Mining</li>
+	</requiredWorkTags>
+	
+</AlienRace.BackstoryDef>
+
+
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_Scout</defName>
+    <title>Centaur scout</title>
+    <titleShort>Scout</titleShort>
+    <baseDescription>[PAWN_nameDef] found themselves a part of a rimworld scouting regiment, hooves thundering across all variety of landscape. Every scout showed some competency in both combat and foraging, or alternatively being a corpse.</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+	
+    <skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+	
+</AlienRace.BackstoryDef>
+
+
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_Medic</defName>
+    <title>Centaur medic</title>
+    <titleShort>Medic</titleShort>
+    <baseDescription>[PAWN_nameDef] served as a medical outrider for centaur based rimworld expeditions.</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+	
+    <skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+	
+</AlienRace.BackstoryDef>
+
+
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_Police</defName>
+    <title>Urbworld cop</title>
+    <titleShort>Cop</titleShort>
+    <baseDescription>Acting as law enforcement on an urbworld taught [PAWN_nameDef] the value of a quick shot. It also left [PAWN_pronoun] paranoid.</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+	
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>8</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+	<forcedTraits>
+		<li>
+			<defName>Nerves</defName>
+			<degree>-1</degree>
+		</li>
+		<li>
+			<defName>ShootingAccuracy</defName>
+			<degree>-1</degree>
+		</li>
+	</forcedTraits>
+	
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+
+</AlienRace.BackstoryDef>
+
+
+			<!--=====Childhood=====-->
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_RacingCentaur</defName>
+    <title>Race centaur</title>
+    <titleShort>Racer</titleShort>
+    <baseDescription>[PAWN_nameDef] was bred for speed, racing in both underground and public tracks.</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    
+		<forcedTraits>
+		<li>
+			<defName>SpeedOffset</defName>
+			<degree>1</degree>
+		</li>
+	</forcedTraits>
+	
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+    
+</AlienRace.BackstoryDef>	
+			
+			
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_RacingCentaur</defName>
+    <title>Race centaur</title>
+    <titleShort>Racer</titleShort>
+    <baseDescription>[PAWN_nameDef] was bred for speed, racing in both underground and public tracks.</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    
+		<forcedTraits>
+		<li>
+			<defName>SpeedOffset</defName>
+			<degree>1</degree>
+		</li>
+	</forcedTraits>
+	
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+    
+</AlienRace.BackstoryDef>	
+			
+			
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_BeastOfBurden</defName>
+    <title>Beast of burden</title>
+    <titleShort>Beast</titleShort>
+    <baseDescription>[PAWN_nameDef] grew up on a medieval world, serving as a beast of burden on farmland.</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+	
+    <skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+    
+</AlienRace.BackstoryDef>			
+
+			
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_VatSoldier</defName>
+    <title>Vatgrown soldier</title>
+    <titleShort>Vatgrown</titleShort>
+    <baseDescription>[PAWN_nameDef] was vat grown, part of a line of military centaurs.</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+	
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+	  <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+    
+</AlienRace.BackstoryDef>
+
+
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_EngineeredToy</defName>
+    <title>Engineered toy</title>
+    <titleShort>Toy</titleShort>
+    <baseDescription>[PAWN_nameDef] was engineered to be a plaything for a glitterworld elite's child. [PAWN_pronoun] was promptly abandoned when no longer "cute".</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+	
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+    
+</AlienRace.BackstoryDef>
+	
+	
+
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_JellyBean</defName>
+    <title>Jellybean mascot</title>
+    <titleShort>Jellybean</titleShort>
+    <baseDescription>[PAWN_nameDef] was a child star on a glitterworld, promoting the sales of jellybeans.</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+	
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+
+</AlienRace.BackstoryDef>
+	
+</Defs>

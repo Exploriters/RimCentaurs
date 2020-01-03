@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Placeholder Backstory
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_Base</defName>
+    <title>BaseError</title>
+    <titleShort>BaseError</titleShort>
+    <baseDescription>[PAWN_nameDef] [PAWN_pronoun] [PAWN_possessive]</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+	
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+
+</AlienRace.BackstoryDef> -->
+
+  <CentaurCivil_Laborer.title>Laborer</CentaurCivil_Laborer.title>
+  <CentaurCivil_Laborer.titleShort>Laborer</CentaurCivil_Laborer.titleShort>
+  <CentaurCivil_Laborer.baseDescription>[PAWN_nameDef] worked as general laborer, assisting in the construction and demolition of buildings in urban centres and getting into brawls after work regularly.</CentaurCivil_Laborer.baseDescription>
+
+  <CentaurCivil_Procession.title>Processionist</CentaurCivil_Procession.title>
+  <CentaurCivil_Procession.titleShort>Processionist</CentaurCivil_Procession.titleShort>
+  <CentaurCivil_Procession.baseDescription>[PAWN_nameDef] fondly recalls their days on a glitterworld, covered in neon lights and fireworks as they lead celebratory parades for the local dictator.</CentaurCivil_Procession.baseDescription>
+
+  <CentaurCivil_Mercenary.title>Processionist</CentaurCivil_Mercenary.title>
+  <CentaurCivil_Mercenary.titleShort>Processionist</CentaurCivil_Mercenary.titleShort>
+  <CentaurCivil_Mercenary.baseDescription>There's nothing better than killing for [PAWN_nameDef], and so the life of a career mercenary suited them just fine.</CentaurCivil_Mercenary.baseDescription>
+
+  <CentaurCivil_Lobotomite.title>Lobotomite</CentaurCivil_Lobotomite.title>
+  <CentaurCivil_Lobotomite.titleShort>Lobotomite</CentaurCivil_Lobotomite.titleShort>
+  <CentaurCivil_Lobotomite.baseDescription>[PAWN_nameDef] was just one of many centaurs abducted for scientific experimentation. Portions of [PAWN_possessive] brain removed and altered, [PAWN_pronoun] has made most complex tasks downright impossible to focus on.</CentaurCivil_Lobotomite.baseDescription>
+
+  <CentaurCivil_Scout.title>Centaur scout</CentaurCivil_Scout.title>
+  <CentaurCivil_Scout.titleShort>Scout</CentaurCivil_Scout.titleShort>
+  <CentaurCivil_Scout.baseDescription>[PAWN_nameDef] found themselves a part of a rimworld scouting regiment, hooves thundering across all variety of landscape. Every scout showed some competency in both combat and foraging, or alternatively being a corpse.</CentaurCivil_Scout.baseDescription>
+
+  <CentaurCivil_Medic.title>Centaur medic</CentaurCivil_Medic.title>
+  <CentaurCivil_Medic.titleShort>Medic</CentaurCivil_Medic.titleShort>
+  <CentaurCivil_Medic.baseDescription>[PAWN_nameDef] served as a medical outrider for centaur based rimworld expeditions.</CentaurCivil_Medic.baseDescription>
+
+  <CentaurCivil_Police.title>Urbworld cop</CentaurCivil_Police.title>
+  <CentaurCivil_Police.titleShort>Cop</CentaurCivil_Police.titleShort>
+  <CentaurCivil_Police.baseDescription>Acting as law enforcement on an urbworld taught [PAWN_nameDef] the value of a quick shot. It also left [PAWN_pronoun] paranoid.</CentaurCivil_Police.baseDescription>
+
+
+  <!-- Childhood -->
+
+  <!--[Duplicated] <CentaurCivil_RacingCentaur.title>Race centaur</CentaurCivil_RacingCentaur.title>-->
+  <!--[Duplicated] <CentaurCivil_RacingCentaur.titleShort>Racer</CentaurCivil_RacingCentaur.titleShort>-->
+  <!--[Duplicated] <CentaurCivil_RacingCentaur.baseDescription>[PAWN_nameDef] was bred for speed, racing in both underground and public tracks.</CentaurCivil_RacingCentaur.baseDescription>-->
+
+  <CentaurCivil_RacingCentaur.title>Race centaur</CentaurCivil_RacingCentaur.title>
+  <CentaurCivil_RacingCentaur.titleShort>Racer</CentaurCivil_RacingCentaur.titleShort>
+  <CentaurCivil_RacingCentaur.baseDescription>[PAWN_nameDef] was bred for speed, racing in both underground and public tracks.</CentaurCivil_RacingCentaur.baseDescription>
+
+  <CentaurCivil_BeastOfBurden.title>Beast of burden</CentaurCivil_BeastOfBurden.title>
+  <CentaurCivil_BeastOfBurden.titleShort>Beast</CentaurCivil_BeastOfBurden.titleShort>
+  <CentaurCivil_BeastOfBurden.baseDescription>[PAWN_nameDef] grew up on a medieval world, serving as a beast of burden on farmland.</CentaurCivil_BeastOfBurden.baseDescription>
+
+  <CentaurCivil_VatSoldier.title>Vatgrown soldier</CentaurCivil_VatSoldier.title>
+  <CentaurCivil_VatSoldier.titleShort>Vatgrown</CentaurCivil_VatSoldier.titleShort>
+  <CentaurCivil_VatSoldier.baseDescription>[PAWN_nameDef] was vat grown, part of a line of military centaurs.</CentaurCivil_VatSoldier.baseDescription>
+
+  <CentaurCivil_EngineeredToy.title>Engineered toy</CentaurCivil_EngineeredToy.title>
+  <CentaurCivil_EngineeredToy.titleShort>Toy</CentaurCivil_EngineeredToy.titleShort>
+  <CentaurCivil_EngineeredToy.baseDescription>[PAWN_nameDef] was engineered to be a plaything for a glitterworld elite's child. [PAWN_pronoun] was promptly abandoned when no longer "cute".</CentaurCivil_EngineeredToy.baseDescription>
+
+  <CentaurCivil_JellyBean.title>Jellybean mascot</CentaurCivil_JellyBean.title>
+  <CentaurCivil_JellyBean.titleShort>Jellybean</CentaurCivil_JellyBean.titleShort>
+  <CentaurCivil_JellyBean.baseDescription>[PAWN_nameDef] was a child star on a glitterworld, promoting the sales of jellybeans.</CentaurCivil_JellyBean.baseDescription>
+
+
+</LanguageData>
