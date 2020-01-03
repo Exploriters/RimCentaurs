@@ -7,7 +7,7 @@
     <defName>Apparel_CentaurPants</defName>
     <label>centaur pants</label>
     <description>A pair of pants suited for an equine body. Now we know how a horse would wear pants.</description>
-	<generateCommonality>0.0</generateCommonality>
+	<!--<generateCommonality>0.0</generateCommonality>-->
     <recipeMaker>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
@@ -57,7 +57,7 @@
     <defName>Apparel_CentaurBasicShirt</defName>
     <label>centaur T-shirt</label>
     <description>A modified T-shirt for use by centaurs.</description>
-	<generateCommonality>0.0</generateCommonality>
+	<!--<generateCommonality>0.0</generateCommonality>-->
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/CentaurBasicShirt/CentaurBasicShirt</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -104,7 +104,7 @@
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_CentaurCollarShirt</defName>
     <description>Designed for centaurs, this collared shirt comes with skirting and tiedowns to suit.</description>
-	<generateCommonality>0.0</generateCommonality>
+	<!--<generateCommonality>0.0</generateCommonality>-->
     <label>button-down centaur shirt</label>
     <recipeMaker>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
@@ -168,7 +168,7 @@
   <!--<ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_CentaurCollarShirt_Raised</defName>
     <description>Designed for centaurs, this collared shirt comes with skirting and tiedowns to suit.</description>
-	<generateCommonality>0.0</generateCommonality>
+	<!- -<generateCommonality>0.0</generateCommonality>- ->
 	<thingClass>D9ASB.RangedShieldBelt</thingClass>
     <label>Button-down centaur shirt</label>
     <recipeMaker>
@@ -322,7 +322,7 @@
     <defName>Apparel_CentaurFlakVest</defName>
     <label>centaur flak vest</label>
     <description>Flak armor modified for a centaur wearer. Additional weight and materials are required when compared to humanoid vests, allowing for protection of the flanks. This armor design does not protect the limbs.</description>
-	<generateCommonality>0.0</generateCommonality>
+	<!--<generateCommonality>0.0</generateCommonality>-->
     <techLevel>Industrial</techLevel>
     <recipeMaker>
       <researchPrerequisite>FlakArmor</researchPrerequisite>
@@ -396,7 +396,7 @@
     <defName>Apparel_CentaurFlakPants</defName>
     <label>centaur flak pants</label>
     <description>Modified pants suited to a centaur. The addition of armored plating grants effective protection from attacks without restricting movements.</description>
-	<generateCommonality>0.0</generateCommonality>
+	<!--<generateCommonality>0.0</generateCommonality>-->
     <recipeMaker>
       <researchPrerequisite>FlakArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -465,7 +465,7 @@
     <defName>Apparel_CentaurFlakJacket</defName>
     <label>centaur flak jacket</label>
     <description>An armoured overcoat suited for a centaur. A step below plate armor, the defense offered is by no means insignificant and still doesn't impede movement.</description>
-	<generateCommonality>0.0</generateCommonality>
+	<!--<generateCommonality>0.0</generateCommonality>-->
     <recipeMaker>
       <researchPrerequisite>FlakArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>

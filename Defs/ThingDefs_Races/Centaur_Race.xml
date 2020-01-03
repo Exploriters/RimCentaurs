@@ -11,7 +11,16 @@
 		<alienRace>
 			<generalSettings>
 			
+			<immuneToAge>true</immuneToAge>
 			<allowHumanBios>true</allowHumanBios>
+			<canLayDown>true</canLayDown>
+			<validBeds>
+				<li>DoubleSleepingSpot</li>
+				<li>DoubleBed</li>
+				<li>RoyalBed</li>
+				<li>HospitalBed</li>
+				<li>BedrollDouble</li>
+		    </validBeds>
 			
 				<alienPartGenerator>
 					<headOffset>(0.0, 0.0)</headOffset>
@@ -40,6 +49,11 @@
 									</portraitBodyTypes>
 									<crownTypes>
 										<Normal_Average>(0,0)</Normal_Average>
+										<Normal_Pointy>(0,0)</Normal_Pointy>
+										<Normal_Wide>(0,0)</Normal_Wide>
+										<Narrow_Average>(0,0)</Narrow_Average>
+										<Narrow_Pointy>(0,0)</Narrow_Pointy>
+										<Narrow_Wide>(0,0)</Narrow_Wide>
 									</crownTypes>
 								</south>
 								<north>
@@ -53,6 +67,11 @@
 									</portraitBodyTypes>
 									<crownTypes>
 										<Normal_Average>(0,0)</Normal_Average>
+										<Normal_Pointy>(0,0)</Normal_Pointy>
+										<Normal_Wide>(0,0)</Normal_Wide>
+										<Narrow_Average>(0,0)</Narrow_Average>
+										<Narrow_Pointy>(0,0)</Narrow_Pointy>
+										<Narrow_Wide>(0,0)</Narrow_Wide>
 									</crownTypes>
 								</north>
 								<east>
@@ -66,6 +85,11 @@
 									</portraitBodyTypes>
 									<crownTypes>
 										<Normal_Average>(0,0)</Normal_Average>
+										<Normal_Pointy>(0,0)</Normal_Pointy>
+										<Normal_Wide>(0,0)</Normal_Wide>
+										<Narrow_Average>(0,0)</Narrow_Average>
+										<Narrow_Pointy>(0,0)</Narrow_Pointy>
+										<Narrow_Wide>(0,0)</Narrow_Wide>
 									</crownTypes>
 								</east>
 							</offsets>
@@ -92,6 +116,11 @@
 									</portraitBodyTypes>
 									<crownTypes>
 										<Normal_Average>(0,0)</Normal_Average>
+										<Normal_Pointy>(0,0)</Normal_Pointy>
+										<Normal_Wide>(0,0)</Normal_Wide>
+										<Narrow_Average>(0,0)</Narrow_Average>
+										<Narrow_Pointy>(0,0)</Narrow_Pointy>
+										<Narrow_Wide>(0,0)</Narrow_Wide>
 									</crownTypes>
 								</south>
 								<north>
@@ -105,6 +134,11 @@
 									</portraitBodyTypes>
 									<crownTypes>
 										<Normal_Average>(0,0)</Normal_Average>
+										<Normal_Pointy>(0,0)</Normal_Pointy>
+										<Normal_Wide>(0,0)</Normal_Wide>
+										<Narrow_Average>(0,0)</Narrow_Average>
+										<Narrow_Pointy>(0,0)</Narrow_Pointy>
+										<Narrow_Wide>(0,0)</Narrow_Wide>
 									</crownTypes>
 								</north>
 								<east>
@@ -118,6 +152,11 @@
 									</portraitBodyTypes>
 									<crownTypes>
 										<Normal_Average>(0,0)</Normal_Average>
+										<Normal_Pointy>(0,0)</Normal_Pointy>
+										<Normal_Wide>(0,0)</Normal_Wide>
+										<Narrow_Average>(0,0)</Narrow_Average>
+										<Narrow_Pointy>(0,0)</Narrow_Pointy>
+										<Narrow_Wide>(0,0)</Narrow_Wide>
 									</crownTypes>
 								</east>
 							</offsets>
@@ -129,7 +168,7 @@
 						<drawSize>1</drawSize>
 							<path>Things/Centaur/Tail/Tail</path>
 							<bodyPart>tail</bodyPart>
-							<inFrontOfBody>true</inFrontOfBody>
+							<inFrontOfBody>false</inFrontOfBody>
 							<useSkinColor>false</useSkinColor>
 							<drawnInBed>false</drawnInBed>
 							<offsets>
@@ -144,6 +183,11 @@
 									</portraitBodyTypes>
 									<crownTypes>
 										<Normal_Average>(0,0)</Normal_Average>
+										<Normal_Pointy>(0,0)</Normal_Pointy>
+										<Normal_Wide>(0,0)</Normal_Wide>
+										<Narrow_Average>(0,0)</Narrow_Average>
+										<Narrow_Pointy>(0,0)</Narrow_Pointy>
+										<Narrow_Wide>(0,0)</Narrow_Wide>
 									</crownTypes>
 								</south>
 								<north>
@@ -157,6 +201,11 @@
 									</portraitBodyTypes>
 									<crownTypes>
 										<Normal_Average>(0,0)</Normal_Average>
+										<Normal_Pointy>(0,0)</Normal_Pointy>
+										<Normal_Wide>(0,0)</Normal_Wide>
+										<Narrow_Average>(0,0)</Narrow_Average>
+										<Narrow_Pointy>(0,0)</Narrow_Pointy>
+										<Narrow_Wide>(0,0)</Narrow_Wide>
 									</crownTypes>
 								</north>
 								<east>
@@ -170,6 +219,11 @@
 									</portraitBodyTypes>
 									<crownTypes>
 										<Normal_Average>(0,0)</Normal_Average>
+										<Normal_Pointy>(0,0)</Normal_Pointy>
+										<Normal_Wide>(0,0)</Normal_Wide>
+										<Narrow_Average>(0,0)</Narrow_Average>
+										<Narrow_Pointy>(0,0)</Narrow_Pointy>
+										<Narrow_Wide>(0,0)</Narrow_Wide>
 									</crownTypes>
 								</east>
 							</offsets>
@@ -178,8 +232,8 @@
 					
 					</bodyAddons>
 
-                    <alienskincolorgen Class="ColorGenerator_StandardApparel">
-                    <!--    <options>
+                    <!--<alienskincolorgen Class="ColorGenerator_StandardApparel">
+                    <!- -    <options>
                         <li>
                             <weight>10</weight>
                             <only>RGBA(0.2,0.2,0.2,1)</only>
@@ -194,11 +248,11 @@
                             <weight>10</weight>
                             <only>RGBA(0.5,0.9,1,1)</only>
                         </li>						
-                        </options>-->
+                        </options>- ->
 
                     </alienskincolorgen>
                     <alienhaircolorgen Class="ColorGenerator_StandardApparel">
-                    <!--    <options>
+                    <!- -    <options>
                         <li>
                             <weight>10</weight>
                             <only>RGBA(0.2,0.2,0.2,1)</only>
@@ -213,9 +267,9 @@
                             <weight>10</weight>
                             <only>RGBA(0.5,0.9,1,1)</only>
                         </li>						
-                        </options>-->
+                        </options>- ->
 
-                    </alienhaircolorgen>
+                    </alienhaircolorgen>-->
 					<useSkincolorForHair>false</useSkincolorForHair>
 					<customHeadDrawSize>(1, 1)</customHeadDrawSize>
                     <customDrawSize>(1.35, 1.35)</customDrawSize>
@@ -251,6 +305,9 @@
 				<li>Apparel_SimpleHelmet</li>
 				<li>Apparel_AdvancedHelmet</li>
 				<li>Apparel_PsychicFoilHelmet</li>
+				<!--<li>Apparel_PowerArmorHelmet</li>-->
+				<li>Apparel_ShieldBelt</li>
+				<li>Apparel_SmokepopBelt</li>
 				</whiteApparelList>
 			</raceRestriction>
 			
@@ -326,7 +383,7 @@
             <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
             <intelligence>Humanlike</intelligence>
             <makesFootprints>true</makesFootprints>
-			<lifeExpectancy>800</lifeExpectancy>
+			<lifeExpectancy>150</lifeExpectancy>
 			<leatherDef>Leather_Human</leatherDef>
             <nameCategory>HumanStandard</nameCategory>
             <body>Centaur</body>

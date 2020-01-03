@@ -3,7 +3,7 @@
 
   <Backstory_Mayinas_Exploriter.title>探解者</Backstory_Mayinas_Exploriter.title>
   <Backstory_Mayinas_Exploriter.titleShort>探解者</Backstory_Mayinas_Exploriter.titleShort>
-  <Backstory_Mayinas_Exploriter.baseDescription>探解者[PAWN_nameDef]。[PAWN_pronoun]是最终制作。[PAWN_possessive]的作者是[PAWN_possessive]自己。</Backstory_Mayinas_Exploriter.baseDescription>
+  <Backstory_Mayinas_Exploriter.baseDescription>探解者[PAWN_nameDef]。[PAWN_pronoun]即是最终制作。[PAWN_pronoun]的作者是[PAWN_pronoun]自己。</Backstory_Mayinas_Exploriter.baseDescription>
 	
   <CentaurCivil_Laborer.title>Laborer</CentaurCivil_Laborer.title>
   <CentaurCivil_Laborer.titleShort>Laborer</CentaurCivil_Laborer.titleShort>

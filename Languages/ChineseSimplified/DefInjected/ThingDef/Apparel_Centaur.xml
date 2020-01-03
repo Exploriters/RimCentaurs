@@ -34,6 +34,11 @@
   <Apparel_CentaurFlakPants.description>给半人马穿的修改版防弹裤。主要用于保护腿部，虽然没有全身盔甲严密，但也提供了强大的防护，同时兼顾了舒适性。</Apparel_CentaurFlakPants.description>
   
   <!-- EN: plate armor -->
+  <Apparel_CentaurFlakJacket.label>半人马防弹夹克</Apparel_CentaurFlakJacket.label>
+  <!-- EN: Overlapping solid plates of armor covering the entire body from neck to feet. -->
+  <Apparel_CentaurFlakJacket.description>给半人马穿的修改版防弹夹克。虽然没有全身盔甲严密，但也提供了强大的防护，同时兼顾了舒适性。</Apparel_CentaurFlakJacket.description>
+  
+  <!-- EN: plate armor -->
   <Apparel_CentaurPlateArmor.label>半人马板甲</Apparel_CentaurPlateArmor.label>
   <!-- EN: Overlapping solid plates of armor covering the entire body from neck to feet. -->
   <Apparel_CentaurPlateArmor.description>一件为半人马设计的重型板甲，从颈部到脚部都用厚实的材料层层堆叠覆盖。</Apparel_CentaurPlateArmor.description>

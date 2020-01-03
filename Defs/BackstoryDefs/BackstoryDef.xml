@@ -8,8 +8,8 @@
     <titleShort>Exploriter</titleShort>
     <baseDescription>[PAWN_nameDef] the Exploriter. [PAWN_pronoun] is the end-art. [PAWN_possessive] author is [PAWN_possessive]self. </baseDescription>
 	
-    <!--<bodyTypeMale>CentaurMale</bodyTypeMale>
-    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>-->
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
 
     <slot>Childhood</slot>
     
@@ -73,14 +73,17 @@
     <spawnCategories>
       <li>Mayinas</li>
     </spawnCategories>
+		
+	<maleCommonality>0</maleCommonality>
+	<femaleCommonality>0</femaleCommonality>
     
 </AlienRace.BackstoryDef>	
+<!--
+			<!- -=====Adulthood=====- ->
 
-			<!--=====Adulthood=====-->
+<!- - Generic - ->
 
-<!-- Generic -->
-
-<!-- Placeholder Backstory
+<!- - Placeholder Backstory
 <AlienRace.BackstoryDef>
 
     <defName>CentaurCivil_Base</defName>
@@ -98,7 +101,7 @@
     </spawnCategories>
 
 </AlienRace.BackstoryDef>
--->
+- ->
 
 
 
@@ -109,8 +112,8 @@
     <titleShort>Laborer</titleShort>
     <baseDescription>[PAWN_nameDef] worked as general laborer, assisting in the construction and demolition of buildings in urban centres and getting into brawls after work regularly.</baseDescription>
 	
-    <!--<bodyTypeMale>CentaurMale</bodyTypeMale>
-    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>-->
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
 
     <slot>Adulthood</slot>
 	
@@ -137,8 +140,8 @@
     <titleShort>Processionist</titleShort>
     <baseDescription>[PAWN_nameDef] fondly recalls their days on a glitterworld, covered in neon lights and fireworks as they lead celebratory parades for the local dictator.</baseDescription>
 	
-    <!--<bodyTypeMale>CentaurMale</bodyTypeMale>
-    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>-->
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
 
     <slot>Adulthood</slot>
 	
@@ -162,8 +165,8 @@
     <titleShort>Processionist</titleShort>
     <baseDescription>There's nothing better than killing for [PAWN_nameDef], and so the life of a career mercenary suited them just fine.</baseDescription>
 	
-    <!--<bodyTypeMale>CentaurMale</bodyTypeMale>
-    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>-->
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
 
     <slot>Adulthood</slot>
 	
@@ -196,8 +199,8 @@
     <titleShort>Lobotomite</titleShort>
     <baseDescription>[PAWN_nameDef] was just one of many centaurs abducted for scientific experimentation. Portions of [PAWN_possessive] brain removed and altered, [PAWN_pronoun] has made most complex tasks downright impossible to focus on.</baseDescription>
 	
-    <!--<bodyTypeMale>CentaurMale</bodyTypeMale>
-    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>-->
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
 
     <slot>Adulthood</slot>
 	
@@ -232,8 +235,8 @@
     <titleShort>Scout</titleShort>
     <baseDescription>[PAWN_nameDef] found themselves a part of a rimworld scouting regiment, hooves thundering across all variety of landscape. Every scout showed some competency in both combat and foraging, or alternatively being a corpse.</baseDescription>
 	
-    <!--<bodyTypeMale>CentaurMale</bodyTypeMale>
-    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>-->
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
 
     <slot>Adulthood</slot>
 	
@@ -269,8 +272,8 @@
     <titleShort>Medic</titleShort>
     <baseDescription>[PAWN_nameDef] served as a medical outrider for centaur based rimworld expeditions.</baseDescription>
 	
-    <!--<bodyTypeMale>CentaurMale</bodyTypeMale>
-    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>-->
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
 
     <slot>Adulthood</slot>
 	
@@ -302,8 +305,8 @@
     <titleShort>Cop</titleShort>
     <baseDescription>Acting as law enforcement on an urbworld taught [PAWN_nameDef] the value of a quick shot. It also left [PAWN_pronoun] paranoid.</baseDescription>
 	
-    <!--<bodyTypeMale>CentaurMale</bodyTypeMale>
-    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>-->
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
 
     <slot>Adulthood</slot>
 	
@@ -335,7 +338,7 @@
 </AlienRace.BackstoryDef>
 
 
-			<!--=====Childhood=====-->
+			<!- -=====Childhood=====- ->
 <AlienRace.BackstoryDef>
 
     <defName>CentaurCivil_RacingCentaur</defName>
@@ -343,8 +346,8 @@
     <titleShort>Racer</titleShort>
     <baseDescription>[PAWN_nameDef] was bred for speed, racing in both underground and public tracks.</baseDescription>
 	
-    <!--<bodyTypeMale>CentaurMale</bodyTypeMale>
-    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>-->
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
 
     <slot>Childhood</slot>
     
@@ -369,8 +372,8 @@
     <titleShort>Racer</titleShort>
     <baseDescription>[PAWN_nameDef] was bred for speed, racing in both underground and public tracks.</baseDescription>
 	
-    <!--<bodyTypeMale>CentaurMale</bodyTypeMale>
-    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>-->
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
 
     <slot>Childhood</slot>
     
@@ -395,8 +398,8 @@
     <titleShort>Beast</titleShort>
     <baseDescription>[PAWN_nameDef] grew up on a medieval world, serving as a beast of burden on farmland.</baseDescription>
 	
-    <!--<bodyTypeMale>CentaurMale</bodyTypeMale>
-    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>-->
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
 
     <slot>Childhood</slot>
 	
@@ -421,8 +424,8 @@
     <titleShort>Vatgrown</titleShort>
     <baseDescription>[PAWN_nameDef] was vat grown, part of a line of military centaurs.</baseDescription>
 	
-    <!--<bodyTypeMale>CentaurMale</bodyTypeMale>
-    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>-->
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
 
     <slot>Childhood</slot>
 	
@@ -451,8 +454,8 @@
     <titleShort>Toy</titleShort>
     <baseDescription>[PAWN_nameDef] was engineered to be a plaything for a glitterworld elite's child. [PAWN_pronoun] was promptly abandoned when no longer "cute".</baseDescription>
 	
-    <!--<bodyTypeMale>CentaurMale</bodyTypeMale>
-    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>-->
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
 
     <slot>Childhood</slot>
 	
@@ -478,8 +481,8 @@
     <titleShort>Jellybean</titleShort>
     <baseDescription>[PAWN_nameDef] was a child star on a glitterworld, promoting the sales of jellybeans.</baseDescription>
 	
-    <!--<bodyTypeMale>CentaurMale</bodyTypeMale>
-    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>-->
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
 
     <slot>Childhood</slot>
 	
@@ -488,5 +491,5 @@
     </spawnCategories>
 
 </AlienRace.BackstoryDef>
-	
+-->
 </Defs>

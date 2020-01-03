@@ -13,7 +13,7 @@
    <defName>CentaurFemale</defName>
    <headOffset>(0.04, 0.54)</headOffset>
    <bodyNakedGraphicPath>Things/Centaur/Bodies/Naked_Centaur</bodyNakedGraphicPath>
-   <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male</bodyDessicatedGraphicPath>
+   <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</bodyDessicatedGraphicPath>
   </BodyTypeDef>
   
 </Defs>
