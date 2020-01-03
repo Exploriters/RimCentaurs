@@ -1,25 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- Placeholder Backstory
-<AlienRace.BackstoryDef>
-
-    <defName>CentaurCivil_Base</defName>
-    <title>BaseError</title>
-    <titleShort>BaseError</titleShort>
-    <baseDescription>[PAWN_nameDef] [PAWN_pronoun] [PAWN_possessive]</baseDescription>
+  <Backstory_Mayinas_Exploriter.title>探解者</Backstory_Mayinas_Exploriter.title>
+  <Backstory_Mayinas_Exploriter.titleShort>探解者</Backstory_Mayinas_Exploriter.titleShort>
+  <Backstory_Mayinas_Exploriter.baseDescription>探解者[PAWN_nameDef]。[PAWN_pronoun]是最终制作。[PAWN_possessive]的作者是[PAWN_possessive]自己。</Backstory_Mayinas_Exploriter.baseDescription>
 	
-    <bodyTypeMale>CentaurMale</bodyTypeMale>
-    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
-
-    <slot>Adulthood</slot>
-	
-    <spawnCategories>
-      <li>CentaurCivil</li>
-    </spawnCategories>
-
-</AlienRace.BackstoryDef> -->
-
   <CentaurCivil_Laborer.title>Laborer</CentaurCivil_Laborer.title>
   <CentaurCivil_Laborer.titleShort>Laborer</CentaurCivil_Laborer.titleShort>
   <CentaurCivil_Laborer.baseDescription>[PAWN_nameDef] worked as general laborer, assisting in the construction and demolition of buildings in urban centres and getting into brawls after work regularly.</CentaurCivil_Laborer.baseDescription>
