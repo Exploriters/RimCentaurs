@@ -6,8 +6,10 @@
 	<ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_CentaurPants</defName>
     <label>centaur pants</label>
+    <tradeability>Sellable</tradeability>
     <description>A pair of pants suited for an equine body. Now we know how a horse would wear pants.</description>
 	<!--<generateCommonality>0.0</generateCommonality>-->
+    <!-- <commonality>0</commonality> -->
     <recipeMaker>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
@@ -24,8 +26,8 @@
       <li>Apparel</li>
     </thingCategories>
     <statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>3000</WorkToMake>
+	  <MaxHitPoints>200</MaxHitPoints>
+	  <WorkToMake>3000</WorkToMake>
       <Mass>1</Mass>
       <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
@@ -34,7 +36,6 @@
     </statBases>
     <apparel>
       <bodyPartGroups>
-        <li>Legs</li>
         <li>CentaurLegs</li>
       </bodyPartGroups>
       <layers>
@@ -56,6 +57,7 @@
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_CentaurBasicShirt</defName>
     <label>centaur T-shirt</label>
+    <tradeability>Sellable</tradeability>
     <description>A modified T-shirt for use by centaurs.</description>
 	<!--<generateCommonality>0.0</generateCommonality>-->
     <graphicData>
@@ -71,8 +73,8 @@
       <li>Apparel</li>
     </thingCategories>
     <statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToMake>3200</WorkToMake>
+	  <MaxHitPoints>200</MaxHitPoints>
+	  <WorkToMake>3200</WorkToMake>
       <Mass>0.50</Mass>
       <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
@@ -106,6 +108,7 @@
     <description>Designed for centaurs, this collared shirt comes with skirting and tiedowns to suit.</description>
 	<!--<generateCommonality>0.0</generateCommonality>-->
     <label>button-down centaur shirt</label>
+    <tradeability>Sellable</tradeability>
     <recipeMaker>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
@@ -165,12 +168,14 @@
   </ThingDef>
   
   
-  <!--<ThingDef ParentName="ApparelMakeableBase">
+  <!-- TESTING_REMOVED
+  <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_CentaurCollarShirt_Raised</defName>
     <description>Designed for centaurs, this collared shirt comes with skirting and tiedowns to suit.</description>
 	<!- -<generateCommonality>0.0</generateCommonality>- ->
 	<thingClass>D9ASB.RangedShieldBelt</thingClass>
     <label>Button-down centaur shirt</label>
+    <tradeability>Sellable</tradeability>
     <recipeMaker>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
@@ -225,14 +230,318 @@
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>-->
   
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_CentaurParka</defName>
+		<label>centaur parka</label>
+		<description>A parka for staying warm in even the coldest of temperatures. Modified for a centaur wearer.</description>
+    <tradeability>Sellable</tradeability>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/CentaurParka/CentaurParka</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<costStuffCount>160</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>360</MaxHitPoints>
+			<WorkToMake>14000</WorkToMake>
+			<Mass>7.6</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>2.00</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>5</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurParka/CentaurParka</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>CentaurIndustrialBasic</li>
+				<li>CentaurNeolithic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.4,0.3,0.15)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.5,0.5,0.5)</min>
+					<max>(1,1,1)</max>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_CentaurDuster</defName>
+    <description>A long duster coat for blocking the sun and grit of the outdoors. Modified for a centaur wearer.</description>
+    <label>centaur duster</label>
+    <tradeability>Sellable</tradeability>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/CentaurDuster/CentaurDuster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.05</drawSize>
+    </graphicData>
+    <costStuffCount>160</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>4.4</Mass>
+      <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.60</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.85</StuffEffectMultiplierInsulation_Heat>
+      <Insulation_Heat>5.8</Insulation_Heat>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>CentaurLegs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurDuster/CentaurDuster</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>CentaurIndustrialAdvanced</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65)</only>
+        </li>
+        <li>
+          <weight>30</weight>
+          <only>(0.4,0.3,0.15)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3)</min>
+          <max>(0.5,0.5,0.5)</max>
+        </li>
+        <li>
+          <weight>2</weight>
+          <min>(0.5,0.5,0.5)</min>
+          <max>(1,1,1)</max>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_CentaurJacket</defName>
+    <label>centaur jacket</label>
+    <description>A tough jacket to stop scrapes and bruises, and to keep one warm in chilly weather. Modified for a centaur wearer.</description>
+    <tradeability>Sellable</tradeability>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/CentaurJacket/CentaurJacket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <costStuffCount>140</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>320</MaxHitPoints>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3.4</Mass>
+      <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.80</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.30</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <!-- <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurJacket/CentaurJacket</wornGraphicPath> Texture Unfinished -->
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>CentaurIndustrialAdvanced</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.4,0.3,0.15)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <min>(0.3,0.3,0.3)</min>
+          <max>(0.5,0.5,0.5)</max>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.5,0.5,0.5)</min>
+          <max>(1,1,1)</max>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  
    <!-- ====================================== Centaur Armour =========================================== -->
  
   
+  <ThingDef ParentName="ArmorSmithableBase">
+    <defName>Apparel_CentaurPlateArmor</defName>
+    <label>centaur plate armor</label>
+    <description>Overlapping solid plates of armor covering the entire body from neck to feet. Modified for a centaur wearer.</description>
+    <tradeability>Sellable</tradeability>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <researchPrerequisite>PlateArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/CentaurPlateArmor/CentaurPlateArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>340</costStuffCount>
+    <statBases>
+      <WorkToMake>75000</WorkToMake>
+      <MaxHitPoints>580</MaxHitPoints>
+      <Mass>30</Mass>
+      <StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>30</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.8</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>CentaurLegs</li>
+      </bodyPartGroups>
+      <!-- <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurPlateArmor/CentaurPlateArmor</wornGraphicPath> Texture Unfinished -->
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>CentaurMedievalMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3)</min>
+          <max>(0.5,0.5,0.5)</max>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  
+  <!-- VERY TEST FOR MAYINAS -->
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>Apparel_CentaurShieldArmor</defName>
-    <label>centaur shield vest</label>
-    <description>A suit of light powered armor for a centaur wearer with projectile-repulsion device. Layered plasteel-weave plates are very effective at stopping attacks, with few vulnerable joint sections. Neuro-memetic assistors allow a centaur to wear the armor and still move easily.\n\nThe shield of it will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks or heat. It shuts down instantly if hit by EMP. It DOES NOT prevents the wearer from firing out.\n\nArmor like this is often used by imperial janissaries and rapid-incursion space marines.\n\nAdditional weight and materials are required when compared to humanoid armor, allowing for protection of the flanks.</description>
-	<generateCommonality>0.0</generateCommonality>
+    <label>centaur shield armor</label>
+    <tradeability>Sellable</tradeability>
+    <description>A suit of light powered armor for a centaur wearer with projectile-repulsion device and toxic defense. Layered plasteel-weave plates are very effective at stopping attacks, with few vulnerable joint sections. Neuro-memetic assistors allow a centaur to wear the armor and still move easily.\n\nThe shield of it will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks or heat. It shuts down instantly if hit by EMP. It DOES NOT prevents the wearer from firing out.\n\nArmor like this is often used by imperial janissaries and rapid-incursion space marines.\n\nAdditional weight and materials are required when compared to humanoid armor, allowing for protection of the flanks.</description>
+	<!-- <generateCommonality>0.0</generateCommonality> -->
 	<thingClass>D9ASB.RangedShieldBelt</thingClass>
     <tickerType>Normal</tickerType>
     <techLevel>Spacer</techLevel>
@@ -244,7 +553,7 @@
       </skillRequirements>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/CentaurFlakVest/CentaurFlakVest</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmor/CentaurPowerArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -255,17 +564,18 @@
       <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
       <ArmorRating_Blunt>1.00</ArmorRating_Blunt>
       <ArmorRating_Heat>1.00</ArmorRating_Heat>
-      <EnergyShieldRechargeRate>1.0</EnergyShieldRechargeRate>
-      <EnergyShieldEnergyMax>3.0</EnergyShieldEnergyMax>
+      <EnergyShieldRechargeRate>0.5</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>1.5</EnergyShieldEnergyMax>
       <Insulation_Cold>51</Insulation_Cold>
       <Insulation_Heat>22</Insulation_Heat>
       <EquipDelay>20</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>0.05</MoveSpeed>
+      <ToxicSensitivity>-0.45</ToxicSensitivity>
       <PainShockThreshold>0.95</PainShockThreshold>
 	  <PsychicSensitivity>0.0</PsychicSensitivity>
-      <SocialImpact>0.0</SocialImpact>
+      <!--<MoveSpeed>0.05</MoveSpeed>
+      <SocialImpact>0.0</SocialImpact>-->
     </equippedStatOffsets>
     <thingCategories>
       <li>Apparel</li>
@@ -285,14 +595,16 @@
         <li>Shoulders</li>
         <li>Arms</li>
         <li>CentaurLegs</li>
+		<li>Hands</li>
+		<li>CentaurHooves</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurFlakVest/CentaurFlakVest</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmor/CentaurPowerArmor</wornGraphicPath>
       <layers>
         <li>Middle</li>
         <li>Shell</li>
       </layers>
       <tags>
-        <li>CentaurIndustrialMilitaryBasic</li>
+        <li>CentaurEndgame</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -301,18 +613,23 @@
     <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
+          <only>(1.0,0.75,0)</only>
+        </li>
+        <li>
+          <only>(0.5,0.75,1)</only>
+        </li>
+        <li>
+          <weight>0</weight>
           <only>(0.33,0.33,0.33)</only>
         </li>
         <li>
+          <weight>0</weight>
           <only>(0.65,0.65,0.65)</only>
         </li>
         <li>
-          <weight>0.5</weight>
+          <weight>0</weight>
           <min>(0.3,0.3,0.3)</min>
           <max>(0.5,0.5,0.5)</max>
-        </li>
-        <li>
-          <only>(1.0,1.0,1.0)</only>
         </li>
       </options>
     </colorGenerator>
@@ -321,6 +638,7 @@
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>Apparel_CentaurFlakVest</defName>
     <label>centaur flak vest</label>
+    <tradeability>Sellable</tradeability>
     <description>Flak armor modified for a centaur wearer. Additional weight and materials are required when compared to humanoid vests, allowing for protection of the flanks. This armor design does not protect the limbs.</description>
 	<!--<generateCommonality>0.0</generateCommonality>-->
     <techLevel>Industrial</techLevel>
@@ -395,6 +713,7 @@
 <ThingDef ParentName="ArmorMachineableBase">
     <defName>Apparel_CentaurFlakPants</defName>
     <label>centaur flak pants</label>
+    <tradeability>Sellable</tradeability>
     <description>Modified pants suited to a centaur. The addition of armored plating grants effective protection from attacks without restricting movements.</description>
 	<!--<generateCommonality>0.0</generateCommonality>-->
     <recipeMaker>
@@ -411,7 +730,7 @@
     </graphicData>
     <statBases>
       <WorkToMake>16000</WorkToMake>
-      <MaxHitPoints>200</MaxHitPoints>
+      <MaxHitPoints>400</MaxHitPoints>
       <Mass>8</Mass>
       <Flammability>0.6</Flammability>
       <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
@@ -464,6 +783,7 @@
  <ThingDef ParentName="ArmorMachineableBase">
     <defName>Apparel_CentaurFlakJacket</defName>
     <label>centaur flak jacket</label>
+    <tradeability>Sellable</tradeability>
     <description>An armoured overcoat suited for a centaur. A step below plate armor, the defense offered is by no means insignificant and still doesn't impede movement.</description>
 	<!--<generateCommonality>0.0</generateCommonality>-->
     <recipeMaker>
@@ -531,4 +851,759 @@
     </colorGenerator>
   </ThingDef>
  
+	<ThingDef ParentName="ArmorMachineableBase">
+    <defName>Apparel_CentaurPowerArmor</defName>
+    <label>centaur marine armor</label>
+    <tradeability>Sellable</tradeability>
+    <description>A modified light powered armor suited to a centaur. Layered plasteel-weave plates are very effective at stopping attacks, with few vulnerable joint sections. Neuro-memetic assistors allow a human to wear the armor and still move easily.\n\nArmor like this is often used by imperial janissaries and rapid-incursion space marines.</description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>PoweredArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmor/CentaurPowerArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>2</generateCommonality>
+    <statBases>
+      <WorkToMake>120000</WorkToMake>
+      <MaxHitPoints>680</MaxHitPoints>
+      <Mass>30</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.08</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <Insulation_Cold>34</Insulation_Cold>
+      <Insulation_Heat>10</Insulation_Heat>
+      <EquipDelay>15</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.8</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <costList>
+      <ComponentSpacer>8</ComponentSpacer>
+      <Plasteel>200</Plasteel>
+      <Uranium>40</Uranium>
+    </costList>
+	<apparel>
+	  <bodyPartGroups>
+		<li>Torso</li>
+		<li>Neck</li>
+		<li>Shoulders</li>
+		<li>Arms</li>
+		<li>CentaurLegs</li>
+		<li>Hands</li>
+		<li>CentaurHooves</li>
+	  </bodyPartGroups>
+	  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmor/CentaurPowerArmor</wornGraphicPath>
+	  <layers>
+		<li>Middle</li>
+		<li>Shell</li>
+	  </layers>
+	  <tags>
+        <li>CentaurSpacerMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3)</min>
+          <max>(0.5,0.5,0.5)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>Apparel_CentaurPowerArmorHelmet</defName>
+    <label>centaur marine helmet</label>
+    <tradeability>Sellable</tradeability>
+    <description>A centaur marine armor helmet, with a built-in status computer and layered plasteel-weave plates, also providing toxic resist. \n\nArmor like this is often used by imperial janissaries and rapid-incursion space marines.</description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>PoweredArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmorHelmet/CentaurPowerArmorHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.25</drawSize>
+    </graphicData>
+    <generateCommonality>2</generateCommonality>
+    <statBases>
+      <WorkToMake>50000</WorkToMake>
+      <MaxHitPoints>320</MaxHitPoints>
+      <Mass>2.7</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.9</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>4</EquipDelay>
+    </statBases>
+	<equippedStatOffsets>
+      <ToxicSensitivity>-0.45</ToxicSensitivity>
+	</equippedStatOffsets>
+    <costList>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Plasteel>80</Plasteel>
+    </costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmorHelmet/CentaurPowerArmorHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+        <li>CentaurSpacerMilitary</li>
+		<li>HideCentaurEar</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>Apparel_PowerArmorHelmet_Clocked</defName>
+    <label>marine clocked helmet</label>
+    <tradeability>Sellable</tradeability>
+    <description>A marine armor helmet, with a built-in status computer and layered plasteel-weave plates.\n\nArmor like this is often used by imperial janissaries and rapid-incursion space marines. \n\nThis modified verison is invisible, powered by clocking shield technology, but behaviored as a normal helmet and requires more skills to make, allowing someone showing it best face and hair without the thread of exposing head, original designed for centaur but available to all species.</description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>PoweredArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>16</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmorHelmet/ClockedPowerArmorHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>2</generateCommonality>
+    <statBases>
+      <WorkToMake>50000</WorkToMake>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Mass>2.7</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.9</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>4</EquipDelay>
+    </statBases>
+    <costList>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Plasteel>40</Plasteel>
+    </costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<!-- <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmorHelmet/PowerArmorHelmet</wornGraphicPath> -->
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+        <li>CentaurSpacerMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+  </ThingDef>
+  
+ <!-- Weapons -->
+ 
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_CentaurChargeShotgun</defName>
+    <label>charge shotgun</label>
+    <tradeability>Sellable</tradeability>
+    <description>A charged-shot shotgun. Pulse-charge technology charges each shot with unstable energy as it leaves the barrel. Released on impact, the charged energy greatly increases the damage done.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/CentaurChargeShotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>4.5</Mass>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.32</AccuracyShort>
+      <AccuracyMedium>0.275</AccuracyMedium>
+      <AccuracyLong>0.225</AccuracyLong>
+      <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>75</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <weaponTags>
+      <li>CentaurSpacerGun</li>
+      <li>CentaurRanged</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_CentaurChargeShotgun</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>25.9</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>20</burstShotCount>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_CentaurChargeShotgun</defName>
+    <label>charge shot</label>
+    <graphicData>
+      <texPath>Things/Projectile/Charge_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>3</damageAmountBase>
+      <armorPenetrationBase>0.05</armorPenetrationBase>
+      <stoppingPower>2.0</stoppingPower>
+      <speed>150</speed>
+    </projectile>
+  </ThingDef>
+ 
+
+ 
+  <ThingDef ParentName="ResourceBase">
+    <defName>ThermoDamper</defName>
+    <label>thermo damper</label>
+    <description>A powerful power core that generates energy by absorb environment thermo. When you placing it indoor, it will drain heat in the room. This technology is developed by unknowns but likly centaurs, and is beyond even most glitterworld societies. Its internal workings are a mystery to all minds, althought it likly extracts energy directly from a singularity in it, means it likly explode on hit.</description>
+    <graphicData>
+      <!-- <texPath>Things/Item/Special/AIPersonaCore</texPath> -->
+      <texPath>Things/Projectile/Arrow_Trishot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <useHitPoints>true</useHitPoints>
+	<tickerType>Normal</tickerType>
+    <statBases>
+      <MarketValue>5000</MarketValue>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+      <li>MortarShells</li>
+    </thingCategories>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <tradeability>Sellable</tradeability>
+    <techLevel>Ultra</techLevel>
+	
+    <tradeTags>
+      <li>ExoticMisc</li>
+      <li>MortarShell</li>
+    </tradeTags>
+    <comps>
+      <!-- <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>20</heatPerSecond>
+        <heatPushMaxTemperature>-273</heatPushMaxTemperature>
+      </li> -->
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-20</heatPerSecond>
+        <heatPushMinTemperature>-273</heatPushMinTemperature>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>20</glowRadius>
+        <glowColor>(127,192,255,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <explosiveDamageType>FrostblastSuper</explosiveDamageType>
+        <explosiveRadius>39.95</explosiveRadius>
+		<preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
+		<preExplosionSpawnChance>0.25</preExplosionSpawnChance>
+		<preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
+		<postExplosionSpawnThingDef>Filth_FrostdustOrange</postExplosionSpawnThingDef>
+		<postExplosionSpawnChance>0.25</postExplosionSpawnChance>
+		<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        <explosiveExpandPerStackcount>0.2</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.25</startWickHitPointsPercent>
+        <chanceToStartFire>0</chanceToStartFire>
+        <damageFalloff>true</damageFalloff>
+        <explosionEffect>GiantExplosion</explosionEffect>
+        <explosionSound>Explosion_GiantBomb</explosionSound>
+        <wickTicks>
+          <min>180</min>
+          <max>600</max>
+        </wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>Arrow_Trishot_Super</projectileWhenLoaded>
+  </ThingDef>
+  
+  <DamageDef Name="Frostblast">
+    <defName>Frostblast</defName>
+    <label>frostbite</label>
+    <defaultDamage>20</defaultDamage>
+    <workerClass>DamageWorker_Frostbite</workerClass>
+    <makesBlood>false</makesBlood>
+    <canInterruptJobs>false</canInterruptJobs>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has succumbed to frostbite.</deathMessage>
+    <hediff>Frostbite</hediff>
+    <armorCategory>Heat</armorCategory>
+    <impactSoundType>Slice</impactSoundType>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <explosionHeatEnergyPerCell>-80</explosionHeatEnergyPerCell>
+    <explosionCellMote>Mote_BlastFlame</explosionCellMote>
+    <explosionColorCenter>(1.0, 0.75, 0.0, 0.2)</explosionColorCenter>
+    <explosionColorEdge>(0.5, 0.75, 1.0, 0.2)</explosionColorEdge>
+    <soundExplosion>Explosion_Flame</soundExplosion>
+    <canUseDeflectMetalEffect>true</canUseDeflectMetalEffect>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+  
+  <DamageDef ParentName="Frostblast">
+    <defName>FrostblastSuper</defName>
+    <defaultDamage>200</defaultDamage>
+    <defaultStoppingPower>20.0</defaultStoppingPower>
+    <defaultArmorPenetration>0.0</defaultArmorPenetration>
+  </DamageDef>
+ 
+  <ToolCapacityDef>
+    <defName>Frostbite</defName>
+  </ToolCapacityDef>
+  <ToolCapacityDef>
+    <defName>Frostblast</defName>
+  </ToolCapacityDef>
+
+  <ResearchProjectDef>
+    <defName>TrishotProject</defName>
+    <label>trishot</label>
+    <description>Allows you craft an ultra weapon that used by centaur, Trishot, a powerful massive bow with long range that fires triple heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst.</description>
+    <baseCost>12500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>ChargedShot</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>14</researchViewX>
+    <researchViewY>4</researchViewY>
+    <!-- <discoveredLetterTitle>About: Trishot</discoveredLetterTitle>
+    <discoveredLetterText>????</discoveredLetterText>
+    <discoveredLetterMinDifficulty>1</discoveredLetterMinDifficulty> -->
+  </ResearchProjectDef>
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Bow_Trishot</defName>
+    <label>trishot</label>
+    <tradeability>None</tradeability>
+    <description>A powerful massive bow with long range that fires triple heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst. It requires powerful arms to use it that only available to Centaurs. With a massive weight and sharp edge on it, it can also be a deadly melee weapon.</description>
+    <techLevel>Ultra</techLevel>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/BowTrishot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Bow_Large</soundInteract>
+    <soundDrop>Bow_Large</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <costList>
+      <Hyperweave>75</Hyperweave>
+      <Plasteel>150</Plasteel>
+      <Gold>50</Gold>
+      <ComponentSpacer>100</ComponentSpacer>
+	  <Uranium>150</Uranium>
+	  <Gun_CentaurChargeShotgun>1</Gun_CentaurChargeShotgun>
+	  <ThermoDamper>1</ThermoDamper>
+    </costList>
+    <statBases>
+      <WorkToMake>50000</WorkToMake>
+      <MaxHitPoints>250</MaxHitPoints>
+      <MarketValue>30000</MarketValue>
+      <Mass>12.5</Mass>
+      <AccuracyTouch>0.425</AccuracyTouch>
+      <AccuracyShort>0.383</AccuracyShort>
+      <AccuracyMedium>0.525</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+      <EquipDelay>3</EquipDelay>
+      <Flammability>0.05</Flammability>
+    </statBases>
+    <weaponTags>
+      <li>CentaurRanged</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+		<requireLineOfSight>true</requireLineOfSight>
+        <defaultProjectile>Arrow_Trishot</defaultProjectile>
+        <forcedMissRadius>3</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+		<noiseRadius>20</noiseRadius>
+		<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>4.2</warmupTime>
+        <range>79.95</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>20</muzzleFlashScale>
+        <onlyManualCast>false</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>ice constructor</label>
+        <capacities>
+          <li>Frostblast</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>TrishotProject</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseProjectileNeolithic" Name="Arrow_Trishot">
+    <defName>Arrow_Trishot</defName>
+    <label>trishot bombarrow</label>
+    <useHitPoints>false</useHitPoints>
+    <neverMultiSelect>false</neverMultiSelect>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>2</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Trishot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Frostblast</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <stoppingPower>10.05</stoppingPower>
+      <armorPenetrationBase>0.0</armorPenetrationBase>
+      <speed>60</speed>
+      <explosionRadius>1.5</explosionRadius>
+      <preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+      <preExplosionSpawnThingCount>5</preExplosionSpawnThingCount>
+      <postExplosionSpawnThingDef>Filth_FrostdustOrange</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>0.5</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>5</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <ai_IsIncendiary>false</ai_IsIncendiary>
+	  <explosionDelay>20</explosionDelay>
+	  
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Arrow_Trishot_Hyper</defName>
+    <label>trishot bombarrow</label>
+    <useHitPoints>false</useHitPoints>
+    <neverMultiSelect>false</neverMultiSelect>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>2</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Trishot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <flyOverhead>true</flyOverhead>
+      <damageDef>Frostblast</damageDef>
+      <damageAmountBase>60</damageAmountBase>
+      <stoppingPower>20</stoppingPower>
+      <armorPenetrationBase>0.0</armorPenetrationBase>
+      <speed>180</speed>
+      <explosionRadius>2.5</explosionRadius>
+      <preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+      <preExplosionSpawnThingCount>5</preExplosionSpawnThingCount>
+      <postExplosionSpawnThingDef>Filth_FrostdustOrange</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>0.5</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>5</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <ai_IsIncendiary>false</ai_IsIncendiary>
+	  <explosionDelay>60</explosionDelay>
+	  
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Arrow_Trishot_Super</defName>
+    <label>trishot bombarrow</label>
+    <useHitPoints>false</useHitPoints>
+    <neverMultiSelect>false</neverMultiSelect>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>2</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Trishot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <flyOverhead>true</flyOverhead>
+      <damageDef>FrostblastSuper</damageDef>
+      <damageAmountBase>200</damageAmountBase>
+      <stoppingPower>20</stoppingPower>
+      <armorPenetrationBase>0.0</armorPenetrationBase>
+      <speed>120</speed>
+      <explosionRadius>39.95</explosionRadius>
+		<preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
+		<preExplosionSpawnChance>0.25</preExplosionSpawnChance>
+		<preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
+		<postExplosionSpawnThingDef>Filth_FrostdustOrange</postExplosionSpawnThingDef>
+		<postExplosionSpawnChance>0.25</postExplosionSpawnChance>
+		<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <ai_IsIncendiary>false</ai_IsIncendiary>
+	  <explosionDelay>180</explosionDelay>
+	  
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_GiantBomb</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseFilth">
+    <defName>Filth_FrostdustBlue</defName>
+    <label>blue frozen matter</label>
+    <description>A puddle of sticky freezing chemfuel, likly from Trishot.</description>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <Beauty>-11</Beauty>
+      <Cleanliness>-15</Cleanliness>
+      <MaxHitPoints>0</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(127, 192, 255, 127)</color>
+    </graphicData>
+    <filth>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>25</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <maxThickness>20</maxThickness>
+    </filth>
+  </ThingDef>
+  <ThingDef ParentName="BaseFilth">
+    <defName>Filth_FrostdustOrange</defName>
+    <label>orange frozen matter</label>
+    <description>A puddle of sticky freezing chemfuel, likly from Trishot.</description>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <Beauty>-11</Beauty>
+      <Cleanliness>-15</Cleanliness>
+      <MaxHitPoints>0</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(255, 192, 0, 127)</color>
+    </graphicData>
+    <filth>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>25</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <maxThickness>20</maxThickness>
+    </filth>
+  </ThingDef>
+  
 </Defs>

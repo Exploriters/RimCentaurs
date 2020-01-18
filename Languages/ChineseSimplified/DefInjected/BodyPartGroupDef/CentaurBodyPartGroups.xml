@@ -2,7 +2,19 @@
 <LanguageData>
 
   <CentaurLegs.label>四腿</CentaurLegs.label>
-  <CentaurHooves.label>蹄子</CentaurHooves.label>
+  <CentaurHooves.label>蹄</CentaurHooves.label>
+  
+  <FrontLeftHoove.label>左前蹄</FrontLeftHoove.label>
+  <FrontLeftHoove.labelShort>蹄</FrontLeftHoove.labelShort>
+
+  <FrontRightHoove.label>右前蹄</FrontRightHoove.label>
+  <FrontRightHoove.labelShort>蹄</FrontRightHoove.labelShort>
+
+  <RearLeftHoove.label>左后蹄</RearLeftHoove.label>
+  <RearLeftHoove.labelShort>蹄</RearLeftHoove.labelShort>
+
+  <RearRightHoove.label>右后蹄</RearRightHoove.label>
+  <RearRightHoove.labelShort>蹄</RearRightHoove.labelShort>
 
 
 </LanguageData>

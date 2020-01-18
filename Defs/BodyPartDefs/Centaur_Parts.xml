@@ -4,12 +4,13 @@
 <BodyPartDef>
    	 <defName>CentaurTail</defName>
    	 <label>equine tail</label>
-   	 <hitPoints>15</hitPoints>
+   	 <hitPoints>5</hitPoints>
    	 <frostbiteVulnerability>1</frostbiteVulnerability>
    	 <skinCovered>true</skinCovered>
    	 <beautyRelated>true</beautyRelated>
    	 <tags>
 		<li>MovingLimbSegment</li>
+		<!-- <li>MovingLimbDigit</li> -->
    	 </tags>
 	</BodyPartDef>
 

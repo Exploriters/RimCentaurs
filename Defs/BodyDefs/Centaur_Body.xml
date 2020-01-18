@@ -72,7 +72,8 @@
           </groups>
 		</li>
         <li>
-          <def>CentaurHeart</def>
+          <def>Heart</def>
+          <customLabel>auxiliary heart</customLabel>
           <coverage>0.017</coverage>
           <depth>Inside</depth>
           <groups>
@@ -137,7 +138,7 @@
               <groups>
                 <li>UpperHead</li>
                 <li>FullHead</li>
-								<li>HeadAttackTool</li>
+				<li>HeadAttackTool</li>
               </groups>
               <parts>
                 <li>
@@ -463,6 +464,7 @@
               <coverage>0.05</coverage>
               <groups>
                 <li>CentaurHooves</li>
+				<li>FrontLeftHoove</li>
               </groups>
             </li>
           </parts>
@@ -500,6 +502,7 @@
               <coverage>0.05</coverage>
               <groups>
                 <li>CentaurHooves</li>
+				<li>FrontRightHoove</li>
               </groups>
             </li>
           </parts>
@@ -537,6 +540,7 @@
               <coverage>0.05</coverage>
               <groups>
                 <li>CentaurHooves</li>
+				<li>RearLeftHoove</li>
               </groups>
             </li>
           </parts>
@@ -574,6 +578,7 @@
               <coverage>0.05</coverage>
               <groups>
                 <li>CentaurHooves</li>
+				<li>RearRightHoove</li>
               </groups>
             </li>
           </parts>

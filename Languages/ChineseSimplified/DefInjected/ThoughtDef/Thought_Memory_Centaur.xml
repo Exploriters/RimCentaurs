@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ate kibble -->
+  <AteKibble_Centaur.stages.ate_kibble.label>吃了饲料</AteKibble_Centaur.stages.ate_kibble.label>
+  <!-- EN: I had to eat animal kibble. It feels like .. not being considered as a intelligent species any more. -->
+  <AteKibble_Centaur.stages.ate_kibble.description>我不得不吃下动物饲料。感觉像是...不再被当作一个有智慧的物种看待。</AteKibble_Centaur.stages.ate_kibble.description>
+  
+  <!-- EN: was imprisoned -->
+  <WasImprisoned_Centaur.stages.was_imprisoned.label>被囚禁</WasImprisoned_Centaur.stages.was_imprisoned.label>
+  <!-- EN: The colony had me in jail for a while, like a caged animal. -->
+  <WasImprisoned_Centaur.stages.was_imprisoned.description>这个殖民地把我丢进监狱关了起来，像只笼子里的动物一样。</WasImprisoned_Centaur.stages.was_imprisoned.description>
+  
+  <!-- EN: slept in the cold -->
+  <SleptInCold_Centaur.stages.slept_in_the_cold.label>在寒冷中睡觉</SleptInCold_Centaur.stages.slept_in_the_cold.label>
+  <!-- EN: I had to sleep in the cold. We really need some heaters. -->
+  <SleptInCold_Centaur.stages.slept_in_the_cold.description>我睡觉的时候有点冷。</SleptInCold_Centaur.stages.slept_in_the_cold.description>
+  
+  <!-- EN: slept in the heat -->
+  <SleptInHeat_Centaur.stages.slept_in_the_heat.label>在炎热中睡觉</SleptInHeat_Centaur.stages.slept_in_the_heat.label>
+  <!-- EN: I had to sleep in unbearable heat. Can't we have air conditioning? -->
+  <SleptInHeat_Centaur.stages.slept_in_the_heat.description>我睡觉的时候太热了，我们的空调哪去了？</SleptInHeat_Centaur.stages.slept_in_the_heat.description>
+  
+  <!-- EN: chilly -->
+  <EnvironmentCold_Centaur.stages.chilly.label>有点冷</EnvironmentCold_Centaur.stages.chilly.label>
+  <!-- EN: I'm uncomfortably cold. -->
+  <EnvironmentCold_Centaur.stages.chilly.description>我感觉有一点点不舒适的冷。</EnvironmentCold_Centaur.stages.chilly.description>
+  <!-- EN: cold -->
+  <EnvironmentCold_Centaur.stages.cold.label>非常冷</EnvironmentCold_Centaur.stages.cold.label>
+  <!-- EN: I'm so cold, I'm shivering. -->
+  <EnvironmentCold_Centaur.stages.cold.description>我好冷啊，一直在发抖。我是不是有点让自己做过头了？</EnvironmentCold_Centaur.stages.cold.description>
+  <!-- EN: numbing cold -->
+  <EnvironmentCold_Centaur.stages.numbing_cold.label>特别冷</EnvironmentCold_Centaur.stages.numbing_cold.label>
+  <!-- EN: I can't stop shivering. My teeth are chattering. All I can think of is getting warm. -->
+  <EnvironmentCold_Centaur.stages.numbing_cold.description>我控制不住发抖。我感觉不想再对付这种错误类型的寒冷了。</EnvironmentCold_Centaur.stages.numbing_cold.description>
+  <!-- EN: absolutely freezing -->
+  <EnvironmentCold_Centaur.stages.absolutely_freezing.label>要冻僵了</EnvironmentCold_Centaur.stages.absolutely_freezing.label>
+  <!-- EN: My teeth are chattering so hard I can barely speak. My toes are numb. I need to get warm. -->
+  <EnvironmentCold_Centaur.stages.absolutely_freezing.description>这已经完全超出了我承受寒冷的能力。我的蹄子冻僵了，牙齿在打架。为什么寒冷可以变得这么痛苦？</EnvironmentCold_Centaur.stages.absolutely_freezing.description>
+  
+  <!-- EN: sweaty -->
+  <EnvironmentHot_Centaur.stages.sweaty.label>有点热</EnvironmentHot_Centaur.stages.sweaty.label>
+  <!-- EN: It's too hot here. I'm sweating. -->
+  <EnvironmentHot_Centaur.stages.sweaty.description>这温度让人不太舒服，我在过热和出汗。</EnvironmentHot_Centaur.stages.sweaty.description>
+  <!-- EN: hot -->
+  <EnvironmentHot_Centaur.stages.hot.label>非常热</EnvironmentHot_Centaur.stages.hot.label>
+  <!-- EN: It's way too hot here. If I could just have a breath of cool air... -->
+  <EnvironmentHot_Centaur.stages.hot.description>如果我可以呼吸一点寒冷的空气就好了。我讨厌炎热环境</EnvironmentHot_Centaur.stages.hot.description>
+  <!-- EN: sweltering hot -->
+  <EnvironmentHot_Centaur.stages.sweltering_hot.label>特别热</EnvironmentHot_Centaur.stages.sweltering_hot.label>
+  <!-- EN: I feel like I'm in an oven! I'm not sure how long I can handle this. -->
+  <EnvironmentHot_Centaur.stages.sweltering_hot.description>我感觉自己在一个烤箱里，我不确定我还能坚持多久。</EnvironmentHot_Centaur.stages.sweltering_hot.description>
+  <!-- EN: blistering hot -->
+  <EnvironmentHot_Centaur.stages.blistering_hot.label>要烤熟了</EnvironmentHot_Centaur.stages.blistering_hot.label>
+  <!-- EN: This place is searing hot. I think I could die from this heat! -->
+  <EnvironmentHot_Centaur.stages.blistering_hot.description>我快要被烤熟了，在这种温度下我肯定会死的。</EnvironmentHot_Centaur.stages.blistering_hot.description>
+  
+  
+  <!-- EN: entombed underground -->
+  <NeedOutdoors_Centaur.stages.entombed_underground.label>幽居病（极重）</NeedOutdoors_Centaur.stages.entombed_underground.label>
+  <!-- EN: I've been underground too long. I feel like the weight of this mountain is crushing me. I need to see the sky and feel the wind. -->
+  <NeedOutdoors_Centaur.stages.entombed_underground.description>我在这个不见天日的地方待得太久，头顶的重量让我备受压抑。我极度渴望看到天空，感受风。</NeedOutdoors_Centaur.stages.entombed_underground.description>
+  <!-- EN: trapped underground -->
+  <NeedOutdoors_Centaur.stages.trapped_underground.label>幽居病（严重）</NeedOutdoors_Centaur.stages.trapped_underground.label>
+  <!-- EN: How long have I been underground? I need to get out in the fresh air and spend some time under the sky. -->
+  <NeedOutdoors_Centaur.stages.trapped_underground.description>我在这个不见天日的地方待了多久？我非常需要呼吸新鲜空气，在天空下生活一段时间。</NeedOutdoors_Centaur.stages.trapped_underground.description>
+  <!-- EN: cabin fever -->
+  <NeedOutdoors_Centaur.stages.cabin_fever.label>幽居病（中度）</NeedOutdoors_Centaur.stages.cabin_fever.label>
+  <!-- EN: I've spent so long indoors I feel like the roof is pressing in. I need to get out and see the sky. -->
+  <NeedOutdoors_Centaur.stages.cabin_fever.description>我在室内待了这么久，感觉都要被屋顶压住了。我需要去出去感受外面的天空。</NeedOutdoors_Centaur.stages.cabin_fever.description>
+  <!-- EN: trapped indoors -->
+  <NeedOutdoors_Centaur.stages.trapped_indoors.label>幽居病（较轻）</NeedOutdoors_Centaur.stages.trapped_indoors.label>
+  <!-- EN: It's been too long since I've seen the sky. -->
+  <NeedOutdoors_Centaur.stages.trapped_indoors.description>我已经有很长时间没见到外面的天空了。</NeedOutdoors_Centaur.stages.trapped_indoors.description>
+  <!-- EN: stuck indoors -->
+  <NeedOutdoors_Centaur.stages.stuck_indoors.label>幽居病（轻微）</NeedOutdoors_Centaur.stages.stuck_indoors.label>
+  <!-- EN: I'd like to go outside and get some fresh air. -->
+  <NeedOutdoors_Centaur.stages.stuck_indoors.description>我想出去透透气。</NeedOutdoors_Centaur.stages.stuck_indoors.description>
+  
+  
+</LanguageData>

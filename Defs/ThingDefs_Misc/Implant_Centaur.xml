@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Linguisticsuppressor</defName>
+    <label>linguisticsuppressor</label>
+    <labelNoun>a linguisticsuppressor</labelNoun>
+    <defaultLabelColor>(0.4, 0.75, 1)</defaultLabelColor>
+    <stages>
+      <li>
+        <painFactor>0.15</painFactor>
+        <painOffset>-0.05</painOffset>
+		<partEfficiencyOffset>1.05</partEfficiencyOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>1.05</postFactor>
+          </li>
+          <li>
+            <capacity>Talking</capacity>
+            <setMax>0</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <spawnThingOnRemoved>Linguisticsuppressor</spawnThingOnRemoved>
+  </HediffDef>
+  
+  <ThingDef ParentName="ImplantBase">
+    <defName>Linguisticsuppressor</defName>
+    <label>linguisticsuppressor</label>
+    <description>A brain implant which inhibits used to improve one's consciousness at cost of the talking ability.</description>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItemBionic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MarketValue>800</MarketValue>
+      <Mass>0.08</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallLinguisticsuppressor</defName>
+    <label>install linguisticsuppressor</label>
+    <description>Install a linguisticsuppressor.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing linguisticsuppressor.</jobString>
+    <workAmount>3700</workAmount>
+    <deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Linguisticsuppressor</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>Linguisticsuppressor</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Linguisticsuppressor</addsHediff>
+  </RecipeDef>
+</Defs>

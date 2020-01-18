@@ -1,6 +1,92 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+<!--
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_Base</defName>
+    <title>CentaurCivil_Base_SHOULDNOTAPPEAR</title>
+    <titleShort>ExploriterSHOULDNOTAPPEAR</titleShort>
+    <baseDescription>[PAWN_nameDef] the Exploriter. [PAWN_pronoun] is the end-art. [PAWN_possessive] author is [PAWN_possessive]self. SHOULDNOTAPPEAR</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+	<bioAgeRange>
+        <min>1</min>
+        <max>19</max>
+    </bioAgeRange>
+    
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>0</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>0</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>0</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>0</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>0</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>0</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>0</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>0</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>0</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>0</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>0</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>0</amount>
+      </li>
+    </skillGains>
+	<workDisables>
+	</workDisables>
+	<workAllows>
+	</workAllows>
+	<forcedTraits>
+	</forcedTraits>
+	<disallowedTraits>
+	</disallowedTraits>
+	
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+		
+	<maleCommonality>100</maleCommonality>
+	<femaleCommonality>100</femaleCommonality>
+    
+</AlienRace.BackstoryDef>
+-->
+
 <AlienRace.BackstoryDef>
 
     <defName>Backstory_Mayinas_Exploriter</defName>
@@ -63,12 +149,10 @@
         <amount>20</amount>
       </li>
     </skillGains>
-	<forcedTraits>
-	  <!--<li>
-		<defName>SpeedOffset</defName>
-	    <degree>1</degree>
-	  </li>-->
-	</forcedTraits>
+	<workDisables />
+	<workAllows />
+	<forcedTraits />
+	<disallowedTraits />
 	
     <spawnCategories>
       <li>Mayinas</li>
@@ -78,12 +162,12 @@
 	<femaleCommonality>0</femaleCommonality>
     
 </AlienRace.BackstoryDef>	
-<!--
-			<!- -=====Adulthood=====- ->
 
-<!- - Generic - ->
+			<!--=====Adulthood=====-->
 
-<!- - Placeholder Backstory
+<!-- Generic -->
+
+<!-- Placeholder Backstory
 <AlienRace.BackstoryDef>
 
     <defName>CentaurCivil_Base</defName>
@@ -101,9 +185,9 @@
     </spawnCategories>
 
 </AlienRace.BackstoryDef>
-- ->
+-->
 
-
+<!--
 
 <AlienRace.BackstoryDef>
 
@@ -161,8 +245,8 @@
 <AlienRace.BackstoryDef>
 
     <defName>CentaurCivil_Mercenary</defName>
-    <title>Processionist</title>
-    <titleShort>Processionist</titleShort>
+    <title>Mercenary</title>
+    <titleShort>Mercenary</titleShort>
     <baseDescription>There's nothing better than killing for [PAWN_nameDef], and so the life of a career mercenary suited them just fine.</baseDescription>
 	
     <bodyTypeMale>CentaurMale</bodyTypeMale>
@@ -192,77 +276,8 @@
 </AlienRace.BackstoryDef>
 
 
-<AlienRace.BackstoryDef>
-
-    <defName>CentaurCivil_Lobotomite</defName>
-    <title>Lobotomite</title>
-    <titleShort>Lobotomite</titleShort>
-    <baseDescription>[PAWN_nameDef] was just one of many centaurs abducted for scientific experimentation. Portions of [PAWN_possessive] brain removed and altered, [PAWN_pronoun] has made most complex tasks downright impossible to focus on.</baseDescription>
-	
-    <bodyTypeMale>CentaurMale</bodyTypeMale>
-    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
-
-    <slot>Adulthood</slot>
-	
-    <skillGains>
-      <li>
-        <defName>Mining</defName>
-        <amount>8</amount>
-      </li>
-      <li>
-        <defName>Social</defName>
-        <amount>4</amount>
-      </li>
-    </skillGains>
-    <spawnCategories>
-      <li>CentaurCivil</li>
-    </spawnCategories>
-
-	<requiredWorkTags>
-        <li>ManualDumb</li>
-		<li>Caring</li>
-		<li>Social</li>
-		<li>Mining</li>
-	</requiredWorkTags>
-	
-</AlienRace.BackstoryDef>
 
 
-<AlienRace.BackstoryDef>
-
-    <defName>CentaurCivil_Scout</defName>
-    <title>Centaur scout</title>
-    <titleShort>Scout</titleShort>
-    <baseDescription>[PAWN_nameDef] found themselves a part of a rimworld scouting regiment, hooves thundering across all variety of landscape. Every scout showed some competency in both combat and foraging, or alternatively being a corpse.</baseDescription>
-	
-    <bodyTypeMale>CentaurMale</bodyTypeMale>
-    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
-
-    <slot>Adulthood</slot>
-	
-    <skillGains>
-      <li>
-        <defName>Plants</defName>
-        <amount>4</amount>
-      </li>
-      <li>
-        <defName>Shooting</defName>
-        <amount>4</amount>
-      </li>
-      <li>
-        <defName>Melee</defName>
-        <amount>4</amount>
-      </li>
-      <li>
-        <defName>Social</defName>
-        <amount>-4</amount>
-      </li>
-    </skillGains>
-    <spawnCategories>
-      <li>CentaurCivil</li>
-    </spawnCategories>
-	
-</AlienRace.BackstoryDef>
 
 
 <AlienRace.BackstoryDef>
@@ -336,11 +351,102 @@
     </spawnCategories>
 
 </AlienRace.BackstoryDef>
+-->
 
+			<!--=====Childhood=====-->
 
-			<!- -=====Childhood=====- ->
 <AlienRace.BackstoryDef>
 
+	<defName>CentaurCivil_Lobotomite</defName>
+	<title>Lobotomite</title>
+	<titleShort>Lobotomite</titleShort>
+	<baseDescription>[PAWN_nameDef] was just one of many centaurs abducted for scientific experimentation. Portions of [PAWN_possessive] brain removed and altered, [PAWN_pronoun] has made most complex tasks downright impossible to focus on.</baseDescription>
+	
+	<bodyTypeMale>CentaurMale</bodyTypeMale>
+	<bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+	<slot>Childhood</slot>
+	
+	<skillGains>
+	  <li>
+		<defName>Shooting</defName>
+		<amount>-6</amount>
+	  </li>
+	  <li>
+		<defName>Melee</defName>
+		<amount>8</amount>
+	  </li>
+	  <li>
+		<defName>Construction</defName>
+		<amount>-6</amount>
+	  </li>
+	  <li>
+		<defName>Mining</defName>
+		<amount>-6</amount>
+	  </li>
+	  <li>
+		<defName>Animals</defName>
+		<amount>16</amount>
+	  </li>
+	</skillGains>
+	<workDisables>
+		<li>Cooking</li>
+		<li>PlantWork</li>
+		<li>Crafting</li>
+		<li>Artistic</li>
+		<li>Caring</li>
+		<li>Social</li>
+		<li>Intellectual</li>
+	</workDisables>
+	<spawnCategories>
+	  <li>CentaurCivil</li>
+	</spawnCategories>
+
+	<!--<requiredWorkTags>
+		<li>ManualDumb</li>
+		<li>Caring</li>
+		<li>Social</li>
+		<li>Mining</li>
+	</requiredWorkTags>-->
+	
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+	<defName>CentaurCivil_Scout</defName>
+	<title>Centaur scout</title>
+	<titleShort>Scout</titleShort>
+	<baseDescription>[PAWN_nameDef] found themselves a part of a rimworld scouting regiment, hooves thundering across all variety of landscape. Every scout showed some competency in both combat and foraging, or alternatively being a corpse.</baseDescription>
+	
+	<bodyTypeMale>CentaurMale</bodyTypeMale>
+	<bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+	<slot>Childhood</slot>
+	
+	<skillGains>
+	  <li>
+		<defName>Plants</defName>
+		<amount>4</amount>
+	  </li>
+	  <li>
+		<defName>Shooting</defName>
+		<amount>4</amount>
+	  </li>
+	  <li>
+		<defName>Melee</defName>
+		<amount>4</amount>
+	  </li>
+	  <li>
+		<defName>Social</defName>
+		<amount>-4</amount>
+	  </li>
+	</skillGains>
+	<spawnCategories>
+	  <li>CentaurCivil</li>
+	</spawnCategories>
+	
+</AlienRace.BackstoryDef>
+<AlienRace.BackstoryDef>
     <defName>CentaurCivil_RacingCentaur</defName>
     <title>Race centaur</title>
     <titleShort>Racer</titleShort>
@@ -350,39 +456,40 @@
     <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
 
     <slot>Childhood</slot>
+	<bioAgeRange>
+        <min>1</min>
+        <max>19</max>
+    </bioAgeRange>
+		
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-1</amount>
+      </li>
+    </skillGains>
+	<workDisables />
+	<workAllows />
+	
     
-		<forcedTraits>
+	<forcedTraits>
 		<li>
 			<defName>SpeedOffset</defName>
-			<degree>1</degree>
+			<degree>2</degree>
 		</li>
 	</forcedTraits>
-	
-    <spawnCategories>
-      <li>CentaurCivil</li>
-    </spawnCategories>
-    
-</AlienRace.BackstoryDef>	
-			
-			
-<AlienRace.BackstoryDef>
-
-    <defName>CentaurCivil_RacingCentaur</defName>
-    <title>Race centaur</title>
-    <titleShort>Racer</titleShort>
-    <baseDescription>[PAWN_nameDef] was bred for speed, racing in both underground and public tracks.</baseDescription>
-	
-    <bodyTypeMale>CentaurMale</bodyTypeMale>
-    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
-
-    <slot>Childhood</slot>
-    
-		<forcedTraits>
-		<li>
-			<defName>SpeedOffset</defName>
-			<degree>1</degree>
-		</li>
-	</forcedTraits>
+	<disallowedTraits />
 	
     <spawnCategories>
       <li>CentaurCivil</li>
@@ -402,13 +509,45 @@
     <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
 
     <slot>Childhood</slot>
-	
+	<bioAgeRange>
+        <min>1</min>
+        <max>19</max>
+    </bioAgeRange>
+		
     <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-4</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-4</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>4</amount>
+      </li>
       <li>
         <defName>Plants</defName>
         <amount>5</amount>
       </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-4</amount>
+      </li>
     </skillGains>
+	<workDisables>
+      <li>Social</li>
+	</workDisables>
+	<workAllows />
     
     <spawnCategories>
       <li>CentaurCivil</li>
@@ -428,15 +567,23 @@
     <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
 
     <slot>Childhood</slot>
+	<bioAgeRange>
+        <min>1</min>
+        <max>19</max>
+    </bioAgeRange>
 	
     <skillGains>
       <li>
         <defName>Shooting</defName>
-        <amount>3</amount>
+        <amount>4</amount>
       </li>
 	  <li>
         <defName>Melee</defName>
-        <amount>3</amount>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
       </li>
     </skillGains>
     
@@ -458,11 +605,43 @@
     <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
 
     <slot>Childhood</slot>
+	<bioAgeRange>
+        <min>1</min>
+        <max>19</max>
+    </bioAgeRange>
 	
     <skillGains>
       <li>
+        <defName>Shooting</defName>
+        <amount>-3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-3</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>-6</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>-6</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>8</amount>
+      </li>
+      <li>
         <defName>Social</defName>
-        <amount>4</amount>
+        <amount>12</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>6</amount>
       </li>
     </skillGains>
     
@@ -485,11 +664,498 @@
     <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
 
     <slot>Childhood</slot>
+	<bioAgeRange>
+        <min>1</min>
+        <max>19</max>
+    </bioAgeRange>
+	
+    <skillGains>
+      <li>
+        <defName>Artistic</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
 	
     <spawnCategories>
       <li>CentaurCivil</li>
     </spawnCategories>
 
 </AlienRace.BackstoryDef>
--->
+
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_WildCentaur</defName>
+    <title>Unique Pony</title>
+    <titleShort>Wild Pony</titleShort>
+    <baseDescription>[PAWN_nameDef][PAWN_pronoun][PAWN_possessive]TODO-TODO</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+	<bioAgeRange>
+        <min>1</min>
+        <max>19</max>
+    </bioAgeRange>
+    
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>8</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>-4</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>-4</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>-4</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>12</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>-4</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>-6</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>-5</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-6</amount>
+      </li>
+    </skillGains>
+	<workDisables>
+      <li>Social</li>
+      <li>Cleaning</li>
+	</workDisables>
+	<forcedTraits>
+	</forcedTraits>
+	<disallowedTraits>
+	</disallowedTraits>
+	
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+		
+	<maleCommonality>100</maleCommonality>
+	<femaleCommonality>100</femaleCommonality>
+    
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_ChillCentaur</defName>
+    <title>Ice Pony</title>
+    <titleShort>Ice Pony</titleShort>
+    <baseDescription>[PAWN_nameDef][PAWN_pronoun][PAWN_possessive]TODO-TODO</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+	<bioAgeRange>
+        <min>1</min>
+        <max>19</max>
+    </bioAgeRange>
+    
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>16</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>8</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>8</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>-12</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>-4</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-8</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+	
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+		
+	<maleCommonality>100</maleCommonality>
+	<femaleCommonality>100</femaleCommonality>
+    
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_BirthdayPony</defName>
+    <title>Glitterworld Pony</title>
+    <titleShort>Birthday Pony</titleShort>
+    <baseDescription>[PAWN_nameDef][PAWN_pronoun][PAWN_possessive]TODO-TODO</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+	<bioAgeRange>
+        <min>1</min>
+        <max>19</max>
+    </bioAgeRange>
+    
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>7</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>14</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+	<workDisables>
+	</workDisables>
+	<workAllows>
+	</workAllows>
+	<forcedTraits>
+	</forcedTraits>
+	<disallowedTraits>
+	</disallowedTraits>
+	
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+		
+	<maleCommonality>100</maleCommonality>
+	<femaleCommonality>100</femaleCommonality>
+    
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_GlitterworldPony</defName>
+    <title>Glitterworld Pony</title>
+    <titleShort>Glitterworld Pony</titleShort>
+    <baseDescription>[PAWN_nameDef][PAWN_pronoun][PAWN_possessive]TODO-TODO</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+	<bioAgeRange>
+        <min>1</min>
+        <max>19</max>
+    </bioAgeRange>
+    
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>7</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>8</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>8</amount>
+      </li>
+    </skillGains>
+	
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+		
+	<maleCommonality>100</maleCommonality>
+	<femaleCommonality>100</femaleCommonality>
+    
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_FalloutPony</defName>
+    <title>Fallout Pony</title>
+    <titleShort>Fallout Pony</titleShort>
+    <baseDescription>[PAWN_nameDef][PAWN_pronoun][PAWN_possessive]TODO-TODO</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+	<bioAgeRange>
+        <min>1</min>
+        <max>19</max>
+    </bioAgeRange>
+    
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>12</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>7</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>-6</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>-4</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>8</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-6</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+	
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+		
+	<maleCommonality>100</maleCommonality>
+	<femaleCommonality>100</femaleCommonality>
+    
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_TribePonySlave</defName>
+    <title>Tribe Slave Pony</title>
+    <titleShort>Tribe Slave Pony</titleShort>
+    <baseDescription>[PAWN_nameDef][PAWN_pronoun][PAWN_possessive]TODO-TODO</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+	<bioAgeRange>
+        <min>1</min>
+        <max>19</max>
+    </bioAgeRange>
+    
+	
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>10</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>20</amount>
+      </li>
+      <!-- <li>
+        <defName>Intellectual</defName>
+        <amount>0</amount>
+      </li> -->
+    </skillGains>
+	<workAllows>
+      <li>Animals</li>
+      <li>ManualDumb</li>
+      <li>Hauling</li>
+      <li>Social</li>
+      <li>Intellectual</li>
+	</workAllows>
+	
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+		
+	<maleCommonality>100</maleCommonality>
+	<femaleCommonality>100</femaleCommonality>
+    
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>CentaurCivil_TribePonyShine</defName>
+    <title>Tribe Beyond Pony</title>
+    <titleShort>Beyond Pony</titleShort>
+    <baseDescription>[PAWN_nameDef][PAWN_pronoun][PAWN_possessive]TODO-TODO</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+	<bioAgeRange>
+        <min>1</min>
+        <max>19</max>
+    </bioAgeRange>
+    
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>12</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+	
+    <spawnCategories>
+      <li>CentaurCivil</li>
+    </spawnCategories>
+		
+	<maleCommonality>100</maleCommonality>
+	<femaleCommonality>100</femaleCommonality>
+    
+</AlienRace.BackstoryDef>
+
 </Defs>

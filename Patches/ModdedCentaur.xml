@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Centaur"]/alienRace/raceRestriction/whiteApparelList</xpath>
+				<value>
+					<li>ABC</li>
+				</value>
+			</li>
+		</operations>
+	</Operation> -->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Human"]/recipes</xpath>
+				<value>
+					<li>InstallLinguisticsuppressor</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[label="artillery error"]/building/defaultStorageSettings/filter/disallowedThingDefs</xpath>
+				<value>
+					<li>ThermoDamper</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Frostblash.label>冻伤</Frostblash.label>
+  <Frostblash.deathMessage>{0}被冻死了。</Frostblash.deathMessage>
+  <FrostblashSuper.label>冻伤</FrostblashSuper.label>
+  <FrostblashSuper.deathMessage>{0}被冻死了。</FrostblashSuper.deathMessage>
+
+</LanguageData>
