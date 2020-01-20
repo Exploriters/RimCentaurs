@@ -13,6 +13,8 @@
     <backstoryCategories>
 	<li>CentaurCivil</li>
     </backstoryCategories>
+    <!-- <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks> -->
 	
     <chemicalAddictionChance>0.06</chemicalAddictionChance>
     <apparelTags>

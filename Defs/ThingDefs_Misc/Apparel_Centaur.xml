@@ -567,8 +567,9 @@
       <ArmorRating_Heat>2.00</ArmorRating_Heat>
       <EnergyShieldRechargeRate>1.0</EnergyShieldRechargeRate>
       <EnergyShieldEnergyMax>3.0</EnergyShieldEnergyMax>
+      <Insulation_Cold>3000</Insulation_Cold>
       <!-- <Insulation_Cold>51</Insulation_Cold> -->
-      <Insulation_Cold>-Infinite</Insulation_Cold>
+      <!-- <Insulation_Cold>Infinite</Insulation_Cold> -->
       <Insulation_Heat>22</Insulation_Heat>
       <EquipDelay>20</EquipDelay>
     </statBases>
