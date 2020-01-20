@@ -545,6 +545,7 @@
 	<thingClass>D9ASB.RangedShieldBelt</thingClass>
     <tickerType>Normal</tickerType>
     <techLevel>Spacer</techLevel>
+	<useHitPoints>false</useHitPoints>
     <recipeMaker>
       <researchPrerequisite>PoweredArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -560,13 +561,14 @@
       <WorkToMake>100000</WorkToMake>
       <MaxHitPoints>600</MaxHitPoints>
       <Mass>20</Mass>
-      <Flammability>0.2</Flammability>
-      <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
-      <ArmorRating_Blunt>1.00</ArmorRating_Blunt>
-      <ArmorRating_Heat>1.00</ArmorRating_Heat>
-      <EnergyShieldRechargeRate>0.5</EnergyShieldRechargeRate>
-      <EnergyShieldEnergyMax>1.5</EnergyShieldEnergyMax>
-      <Insulation_Cold>51</Insulation_Cold>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>2.00</ArmorRating_Sharp>
+      <ArmorRating_Blunt>2.00</ArmorRating_Blunt>
+      <ArmorRating_Heat>2.00</ArmorRating_Heat>
+      <EnergyShieldRechargeRate>1.0</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>3.0</EnergyShieldEnergyMax>
+      <!-- <Insulation_Cold>51</Insulation_Cold> -->
+      <Insulation_Cold>-Infinite</Insulation_Cold>
       <Insulation_Heat>22</Insulation_Heat>
       <EquipDelay>20</EquipDelay>
     </statBases>
@@ -574,6 +576,7 @@
       <ToxicSensitivity>-0.45</ToxicSensitivity>
       <PainShockThreshold>0.95</PainShockThreshold>
 	  <PsychicSensitivity>0.0</PsychicSensitivity>
+      <Flammability>-2</Flammability>
       <!--<MoveSpeed>0.05</MoveSpeed>
       <SocialImpact>0.0</SocialImpact>-->
     </equippedStatOffsets>
@@ -587,6 +590,7 @@
       <ComponentSpacer>10</ComponentSpacer>
       <Plasteel>150</Plasteel>
       <Uranium>50</Uranium>
+	  <ThermoDamper>1</ThermoDamper>
     </costList>
     <apparel>
       <bodyPartGroups>
@@ -1107,6 +1111,83 @@
     </thingSetMakerTags>
   </ThingDef>
   
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparel_CentaurAntimassBelt</defName>
+		<label>antimass belt</label>
+    <description>A anti-mass device. It helps reduce the mass of a centaur to allows them getting into transporters.</description>
+    <techLevel>Spacer</techLevel>
+	<graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/ShieldBelt/ShieldBelt</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <Mass>3</Mass>
+      <WorkToMake>28000</WorkToMake>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>4</EquipDelay>
+    </statBases>
+	<equippedStatOffsets>
+      <Mass>-100</Mass>
+	</equippedStatOffsets>
+    <costList>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <Plasteel>100</Plasteel>
+	  <Gold>5</Gold>
+    </costList>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+			<researchPrerequisite>ShieldBelt</researchPrerequisite>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+		</recipeMaker>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <!-- <li>BeltDefense</li> -->
+        <li>CentaurBeltAntimass</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  
  <!-- Weapons -->
  
   <ThingDef ParentName="BaseHumanMakeableGun">
@@ -1197,15 +1278,13 @@
     </projectile>
   </ThingDef>
  
-
- 
   <ThingDef ParentName="ResourceBase">
     <defName>ThermoDamper</defName>
     <label>thermo damper</label>
-    <description>A powerful power core that generates energy by absorb environment thermo. When you placing it indoor, it will drain heat in the room. This technology is developed by unknowns but likly centaurs, and is beyond even most glitterworld societies. Its internal workings are a mystery to all minds, althought it likly extracts energy directly from a singularity in it, means it likly explode on hit.</description>
+    <description>A powerful power core, AKA "Environment Thermoelectric Reactor", that generates energy by absorb environment thermo. When you placing it indoor, it will drain heat in the room. This technology is developed by unknowns but likly centaurs, and is beyond even most glitterworld societies. Its internal workings are a mystery to all minds, althought it likly extracts energy directly from a singularity in it, means it likly explode on hit.</description>
     <graphicData>
-      <!-- <texPath>Things/Item/Special/AIPersonaCore</texPath> -->
-      <texPath>Things/Projectile/Arrow_Trishot</texPath>
+      <texPath>Things/Item/Special/ThermoDamper</texPath>
+      <!-- <texPath>Things/Projectile/Arrow_Trishot</texPath> -->
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
@@ -1217,7 +1296,7 @@
     <statBases>
       <MarketValue>5000</MarketValue>
       <MaxHitPoints>800</MaxHitPoints>
-      <Mass>1</Mass>
+      <Mass>3</Mass>
       <Flammability>0</Flammability>
       <Beauty>0</Beauty>
     </statBases>
@@ -1261,13 +1340,23 @@
         <startWickHitPointsPercent>0.25</startWickHitPointsPercent>
         <chanceToStartFire>0</chanceToStartFire>
         <damageFalloff>true</damageFalloff>
-        <explosionEffect>GiantExplosion</explosionEffect>
+        <!-- <explosionEffect>GiantExplosion</explosionEffect> -->
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <explosionEffect>GiantExplosion</explosionEffect>
         <explosionSound>Explosion_GiantBomb</explosionSound>
         <wickTicks>
           <min>180</min>
           <max>600</max>
         </wickTicks>
       </li>
+	  
+	  
+      <!-- <li Class="CompProperties_TemperatureRuinable">
+        <minSafeTemperature>19</minSafeTemperature>
+        <!- - <maxSafeTemperature>32</maxSafeTemperature> - ->
+        <progressPerDegreePerTick>-0.001</progressPerDegreePerTick>
+      </li> -->
+	  
     </comps>
     <projectileWhenLoaded>Arrow_Trishot_Super</projectileWhenLoaded>
   </ThingDef>
@@ -1287,8 +1376,8 @@
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
     <explosionHeatEnergyPerCell>-80</explosionHeatEnergyPerCell>
     <explosionCellMote>Mote_BlastFlame</explosionCellMote>
-    <explosionColorCenter>(1.0, 0.75, 0.0, 0.2)</explosionColorCenter>
-    <explosionColorEdge>(0.5, 0.75, 1.0, 0.2)</explosionColorEdge>
+    <explosionColorCenter>(1.0, 0.75, 0.0, 0.5)</explosionColorCenter>
+    <explosionColorEdge>(0.5, 0.75, 1.0, 0.5)</explosionColorEdge>
     <soundExplosion>Explosion_Flame</soundExplosion>
     <canUseDeflectMetalEffect>true</canUseDeflectMetalEffect>
     <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
@@ -1314,7 +1403,7 @@
     <defName>TrishotProject</defName>
     <label>trishot</label>
     <description>Allows you craft an ultra weapon that used by centaur, Trishot, a powerful massive bow with long range that fires triple heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst.</description>
-    <baseCost>12500</baseCost>
+    <baseCost>10000</baseCost>
     <techLevel>Spacer</techLevel>
     <prerequisites>
       <li>ChargedShot</li>
@@ -1371,6 +1460,12 @@
     <weaponTags>
       <li>CentaurRanged</li>
     </weaponTags>
+    <comps>
+      <!-- <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li Class="CompProperties_ChangeableProjectile" /> -->
+    </comps>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -1382,6 +1477,7 @@
 		<noiseRadius>20</noiseRadius>
 		<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
         <warmupTime>4.2</warmupTime>
+		<!-- <cooldownTime>8.0</cooldownTime> -->
         <range>79.95</range>
         <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
         <burstShotCount>3</burstShotCount>
@@ -1467,6 +1563,7 @@
       <postExplosionSpawnChance>0.5</postExplosionSpawnChance>
       <postExplosionSpawnThingCount>5</postExplosionSpawnThingCount>
       <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <!-- <explosionEffect>GiantExplosion</explosionEffect> -->
       <ai_IsIncendiary>false</ai_IsIncendiary>
 	  <explosionDelay>20</explosionDelay>
 	  
@@ -1475,11 +1572,40 @@
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
       <soundAmbient>MortarRound_Ambient</soundAmbient>
     </projectile>
+	<comps>
+	  <li Class="CompProperties_HeatPusher">
+		<compClass>CompHeatPusherPowered</compClass>
+		<heatPerSecond>-100</heatPerSecond>
+		<!-- <heatPushMinTemperature>-273</heatPushMinTemperature> -->
+	  </li>
+	  <li Class="CompProperties_Glower">
+		<glowRadius>3</glowRadius>
+		<glowColor>(127,192,255,0)</glowColor>
+	  </li>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>Filth_FrostdustBlue</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>
+			<min>1</min>
+			<max>3</max>
+		</spawnIntervalRange>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>Filth_FrostdustOrange</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>
+			<min>1</min>
+			<max>3</max>
+		</spawnIntervalRange>
+      </li>
+	</comps>
   </ThingDef>
   
   <ThingDef ParentName="BaseProjectileNeolithic">
     <defName>Arrow_Trishot_Hyper</defName>
-    <label>trishot bombarrow</label>
+    <label>trishot hyper arrow</label>
     <useHitPoints>false</useHitPoints>
     <neverMultiSelect>false</neverMultiSelect>
     <statBases>
@@ -1509,6 +1635,7 @@
       <postExplosionSpawnChance>0.5</postExplosionSpawnChance>
       <postExplosionSpawnThingCount>5</postExplosionSpawnThingCount>
       <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <!-- <explosionEffect>GiantExplosion</explosionEffect> -->
       <ai_IsIncendiary>false</ai_IsIncendiary>
 	  <explosionDelay>60</explosionDelay>
 	  
@@ -1517,11 +1644,40 @@
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
       <soundAmbient>MortarRound_Ambient</soundAmbient>
     </projectile>
+	<comps>
+	  <li Class="CompProperties_HeatPusher">
+		<compClass>CompHeatPusherPowered</compClass>
+		<heatPerSecond>-250</heatPerSecond>
+		<!-- <heatPushMinTemperature>-273</heatPushMinTemperature> -->
+	  </li>
+	  <li Class="CompProperties_Glower">
+		<glowRadius>10</glowRadius>
+		<glowColor>(127,192,255,0)</glowColor>
+	  </li>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>Filth_FrostdustBlue</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>
+			<min>1</min>
+			<max>2</max>
+		</spawnIntervalRange>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>Filth_FrostdustOrange</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>
+			<min>1</min>
+			<max>2</max>
+		</spawnIntervalRange>
+      </li>
+	</comps>
   </ThingDef>
   
   <ThingDef ParentName="BaseProjectileNeolithic">
     <defName>Arrow_Trishot_Super</defName>
-    <label>trishot bombarrow</label>
+    <label>trishot super arrow</label>
     <useHitPoints>false</useHitPoints>
     <neverMultiSelect>false</neverMultiSelect>
     <statBases>
@@ -1551,6 +1707,7 @@
 		<postExplosionSpawnChance>0.25</postExplosionSpawnChance>
 		<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
       <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <explosionEffect>GiantExplosion</explosionEffect>
       <ai_IsIncendiary>false</ai_IsIncendiary>
 	  <explosionDelay>180</explosionDelay>
 	  
@@ -1559,11 +1716,54 @@
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
       <soundAmbient>MortarRound_Ambient</soundAmbient>
     </projectile>
+	<comps>
+	  <li Class="CompProperties_HeatPusher">
+		<compClass>CompHeatPusherPowered</compClass>
+		<heatPerSecond>-600</heatPerSecond>
+		<!-- <heatPushMinTemperature>-273</heatPushMinTemperature> -->
+	  </li>
+	  <li Class="CompProperties_Glower">
+		<glowRadius>20</glowRadius>
+		<glowColor>(127,192,255,0)</glowColor>
+	  </li>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>Filth_FrostdustBlue</thingToSpawn>
+        <spawnCount>4</spawnCount>
+        <spawnIntervalRange>
+			<min>1</min>
+			<max>2</max>
+		</spawnIntervalRange>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>Filth_FrostdustOrange</thingToSpawn>
+        <spawnCount>4</spawnCount>
+        <spawnIntervalRange>
+			<min>1</min>
+			<max>2</max>
+		</spawnIntervalRange>
+      </li>
+      <!-- <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>ThermoDamper</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>
+			<min>60</min>
+			<max>60</max>
+		</spawnIntervalRange>
+        <spawnMaxAdjacent>1</spawnMaxAdjacent>
+        <spawnForbidden>true</spawnForbidden>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li> -->
+	</comps>
   </ThingDef>
   
   <ThingDef ParentName="BaseFilth">
     <defName>Filth_FrostdustBlue</defName>
     <label>blue frozen matter</label>
+    <!-- <thingClass>ThingWithComps</thingClass> -->
     <description>A puddle of sticky freezing chemfuel, likly from Trishot.</description>
     <useHitPoints>false</useHitPoints>
     <statBases>
@@ -1582,10 +1782,22 @@
       <canFilthAttach>true</canFilthAttach>
       <maxThickness>20</maxThickness>
     </filth>
+	<!-- <comps>
+	  <li Class="CompProperties_HeatPusher">
+		<compClass>CompHeatPusherPowered</compClass>
+		<heatPerSecond>-10</heatPerSecond>
+		<heatPushMinTemperature>-273</heatPushMinTemperature>
+	  </li>
+	  <li Class="CompProperties_Glower">
+		<glowRadius>3</glowRadius>
+		<glowColor>(127,192,255,0)</glowColor>
+	  </li>
+	</comps> -->
   </ThingDef>
   <ThingDef ParentName="BaseFilth">
     <defName>Filth_FrostdustOrange</defName>
     <label>orange frozen matter</label>
+    <!-- <thingClass>ThingWithComps</thingClass> -->
     <description>A puddle of sticky freezing chemfuel, likly from Trishot.</description>
     <useHitPoints>false</useHitPoints>
     <statBases>
@@ -1604,6 +1816,17 @@
       <canFilthAttach>true</canFilthAttach>
       <maxThickness>20</maxThickness>
     </filth>
+	<!-- <comps>
+	  <li Class="CompProperties_HeatPusher">
+		<compClass>CompHeatPusherPowered</compClass>
+		<heatPerSecond>-10</heatPerSecond>
+		<heatPushMinTemperature>-273</heatPushMinTemperature>
+	  </li>
+	  <li Class="CompProperties_Glower">
+		<glowRadius>3</glowRadius>
+		<glowColor>(255, 192, 0, 0)</glowColor>
+	  </li>
+	</comps> -->
   </ThingDef>
   
 </Defs>

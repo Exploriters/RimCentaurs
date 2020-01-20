@@ -58,6 +58,9 @@
   <Apparel_PowerArmorHelmet_Clocked.label>隐形动力头盔</Apparel_PowerArmorHelmet_Clocked.label>
   <Apparel_PowerArmorHelmet_Clocked.description>一个为半人马穿戴者设计的动力装甲头盔，内置了状态检测计算机并且覆盖了玻璃钢装甲，提供完整的头部防护。\n\n动力装甲通常由来自太空时代军队的重甲士兵和空间海军突击队员使用。\n\n这个修改过的版本是隐形的，利用了隐迹护盾技术，但行为和与正常的动力头盔一致，并且需要更高的技术来制造，能够展示一个人最佳的面容和头发而不必承受暴露头部的风险，原本设计给半人马但所有种族都能使用。</Apparel_PowerArmorHelmet_Clocked.description>
   
+  <Apparel_CentaurAntimassBelt.label>反重力腰带</Apparel_CentaurAntimassBelt.label>
+  <Apparel_CentaurAntimassBelt.description>一个反重力设备。其能帮助一个半人马减轻重量并进入运输舱。</Apparel_CentaurAntimassBelt.description>
+  
   <!-- EN: charge shotgun -->
   <Gun_CentaurChargeShotgun.label>电荷霰弹枪</Gun_CentaurChargeShotgun.label>
   <!-- EN: A charged-shot shotgun. Pulse-charge technology charges each shot with unstable energy as it leaves the barrel. Released on impact, the charged energy greatly increases the damage done. -->
@@ -71,7 +74,7 @@
   <Bullet_CentaurChargeShotgun.label>电荷弹</Bullet_CentaurChargeShotgun.label>
   
   <ThermoDamper.label>失温器</ThermoDamper.label>
-  <ThermoDamper.description>一个通过吸收环境热能来生成能量的强大能源核心。当你将其放在室内时，它会吸走房间的热量。这种技术由未知势力但很可能是半人马开发，甚至超越了绝大多数闪耀世界。它的内部结构对于所有人来说都是个迷，尽管看上去它是从奇点中直接提取能量的，意味着它在受损时可能会爆炸。</ThermoDamper.description>
+  <ThermoDamper.description>一个通过吸收环境热能来生成能量的强大能源核心，也称"环境热能反应堆"。当你将其放在室内时，它会吸走房间的热量。这种技术由未知势力但很可能是半人马开发，甚至超越了绝大多数闪耀世界。它的内部结构对于所有人来说都是个迷，尽管看上去它是从奇点中直接提取能量的，意味着它在受损时可能会爆炸。</ThermoDamper.description>
   
   <Bow_Trishot.label>三射弓</Bow_Trishot.label>
   <Bow_Trishot.description>一把强大的远距离重型弓，能在单次爆发射击中射出三只携带延迟起爆热能释放爆炸物的远距离重箭。其需要强大的双臂因而只有半人马可以使用。由于其锋利边缘和沉重的质量，这把武器也可以是一个致命的近战武器。</Bow_Trishot.description>
