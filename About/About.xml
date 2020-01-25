@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-	<name>Centaurs</name>
+	<name>RimCentaurs</name>
 	<author>Magnus siiftun1857 Frankline</author>
 	<targetVersion>1.0.2096</targetVersion>
-<description>A genetically engineered solution to anyone's labor problems, a centaur is the obvious choice.
+<description>Magnus' Modify. Original author was Zedralan: Published File Id 1576793761.
+======
+A genetically engineered solution to anyone's labor problems, a centaur is the obvious choice.
 
 Centaur biology makes them fast and durable but may or may not be balanced by their larger size and inability to wear heavy armours. Probably way more OP when player controller with a sniper rifle than anyone could have guessed.
 
 Mostly just a personal project, something is definitely broken in this version.
-======
-Magnus' Modify. Original author was Zedralan.
 </description>
 </ModMetaData>

@@ -78,4 +78,17 @@
 			</value>
 		</li>
 	</Operation> -->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<!-- <li Class="PatchOperationReplace">
+				<xpath>Defs/ThoughtDef[defName="SpaceThoughts"]/workerClass</xpath>
+				<value isNull="true" />
+			</li> -->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThoughtDef[defName="SpaceThoughts"]/workerClass</xpath>
+			</li>
+		</operations>
+	</Operation>
 </Patch>

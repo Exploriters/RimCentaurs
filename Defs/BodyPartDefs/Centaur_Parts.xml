@@ -4,7 +4,7 @@
 <BodyPartDef>
    	 <defName>CentaurTail</defName>
    	 <label>equine tail</label>
-   	 <hitPoints>5</hitPoints>
+   	 <hitPoints>10</hitPoints>
    	 <frostbiteVulnerability>1</frostbiteVulnerability>
    	 <skinCovered>true</skinCovered>
    	 <beautyRelated>true</beautyRelated>

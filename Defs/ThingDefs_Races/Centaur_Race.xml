@@ -1,802 +1,804 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!-- ============================ Mostly Stolen Orassan Stuff ========================== -->
-
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-        <defName>Alien_Centaur</defName>
-        <label>Centaur</label>
-        <description>The result of extensive gene modding done by the ultra-wealthy as a hobby, now recognised as a distinct species. Despite their equine appearance, centaurs are omnivorous.</description>
+	<defName>Alien_Centaur</defName>
+	<label>Centaur</label>
+	<description>The result of extensive gene modding done by the ultra-wealthy as a hobby, now recognised as a distinct species. Despite their equine appearance, centaurs are omnivorous.</description>
 
-		<comps>
-			<li Class="HediffCompProperties_HealPermanentWounds" />
-		</comps>
+	<comps>
+		<li Class="HediffCompProperties_HealPermanentWounds" />
+	</comps>
+	<tradeTags>
+	  <li>AnimalInsectSpace</li><!-- To allows Centaurs survive in SOS2 Space. I didn't have anyother choice. -->
+	</tradeTags>
+	
+	<alienRace>
+		<generalSettings>
 		
-		<alienRace>
-			<generalSettings>
-			
-			<immuneToAge>true</immuneToAge>
-			<allowHumanBios>true</allowHumanBios>
-			<maxDamageForSocialfight>7</maxDamageForSocialfight>
-			<canLayDown>true</canLayDown>
-			<!--<validBeds>
-				<li>DoubleSleepingSpot</li>
-				<li>DoubleBed</li>
-				<li>RoyalBed</li>
-				<li>HospitalBed</li>
-				<li>BedrollDouble</li>
-		    </validBeds>-->
-			
-			<disallowedTraits>
-               <li>BodyPurist</li>
-            </disallowedTraits>
-			
-				<alienPartGenerator>
-					<headOffset>(0.0, 0.0)</headOffset>
-                    <alienbodytypes>
-                        <li>CentaurMale</li>
-						<li>CentaurFemale</li>
-                    </alienbodytypes>
-					<useGenderedBodies>false</useGenderedBodies>
-                    <bodyAddons>
-						<li>
-						<drawSize>1</drawSize>
-							<path>Things/Centaur/Ears/EarLeft</path>
-							<bodyPart>left ear</bodyPart>
-							<inFrontOfBody>true</inFrontOfBody>
-							<useSkinColor>false</useSkinColor>
-							<drawnInBed>true</drawnInBed>
-							<hiddenUnderApparelTag>
-								<li>HideCentaurEar</li>
-							</hiddenUnderApparelTag>
-							<offsets>
-								<south>
-									<bodyTypes>
-										<CentaurMale>(-.425,0.95)</CentaurMale>
-										<CentaurFemale>(-.425,0.95)</CentaurFemale>
-									</bodyTypes>
-									<portraitBodyTypes>
-										<CentaurMale>(-.425,0.95)</CentaurMale>
-										<CentaurFemale>(-.425,0.95)</CentaurFemale>
-									</portraitBodyTypes>
-									<crownTypes>
-										<Normal_Average>(0,0)</Normal_Average>
-										<Normal_Pointy>(0,0)</Normal_Pointy>
-										<Normal_Wide>(0,0)</Normal_Wide>
-										<Narrow_Average>(0,0)</Narrow_Average>
-										<Narrow_Pointy>(0,0)</Narrow_Pointy>
-										<Narrow_Wide>(0,0)</Narrow_Wide>
-									</crownTypes>
-								</south>
-								<north>
-									<bodyTypes>
-										<CentaurMale>(0,0.95)</CentaurMale>
-										<CentaurFemale>(0,0.95)</CentaurFemale>
-									</bodyTypes>
-									<portraitBodyTypes>
-										<CentaurMale>(0,0.95)</CentaurMale>
-										<CentaurFemale>(0,0.95)</CentaurFemale>
-									</portraitBodyTypes>
-									<crownTypes>
-										<Normal_Average>(0,0)</Normal_Average>
-										<Normal_Pointy>(0,0)</Normal_Pointy>
-										<Normal_Wide>(0,0)</Normal_Wide>
-										<Narrow_Average>(0,0)</Narrow_Average>
-										<Narrow_Pointy>(0,0)</Narrow_Pointy>
-										<Narrow_Wide>(0,0)</Narrow_Wide>
-									</crownTypes>
-								</north>
-								<east>
-									<bodyTypes>
-										<CentaurMale>(-.425,0.95)</CentaurMale>
-										<CentaurFemale>(-.425,0.95)</CentaurFemale>
-									</bodyTypes>
-									<portraitBodyTypes>
-										<CentaurMale>(-.425,0.95)</CentaurMale>
-										<CentaurFemale>(-.425,0.95)</CentaurFemale>
-									</portraitBodyTypes>
-									<crownTypes>
-										<Normal_Average>(0,0)</Normal_Average>
-										<Normal_Pointy>(0,0)</Normal_Pointy>
-										<Normal_Wide>(0,0)</Normal_Wide>
-										<Narrow_Average>(0,0)</Narrow_Average>
-										<Narrow_Pointy>(0,0)</Narrow_Pointy>
-										<Narrow_Wide>(0,0)</Narrow_Wide>
-									</crownTypes>
-								</east>
-							</offsets>
-						</li>
-						
-						
-						
-						<li>
-						<drawSize>1</drawSize>
-							<path>Things/Centaur/Ears/EarRight</path>
-							<bodyPart>right ear</bodyPart>
-							<inFrontOfBody>true</inFrontOfBody>
-							<useSkinColor>false</useSkinColor>
-							<drawnInBed>true</drawnInBed>
-							<hiddenUnderApparelTag>
-								<li>HideCentaurEar</li>
-							</hiddenUnderApparelTag>
-							<offsets>
-								<south>
-									<bodyTypes>
-										<CentaurMale>(-.425,0.95)</CentaurMale>
-										<CentaurFemale>(-.425,0.95)</CentaurFemale>
-									</bodyTypes>
-									<portraitBodyTypes>
-										<CentaurMale>(-.425,0.95)</CentaurMale>
-										<CentaurFemale>(-.425,0.95)</CentaurFemale>
-									</portraitBodyTypes>
-									<crownTypes>
-										<Normal_Average>(0,0)</Normal_Average>
-										<Normal_Pointy>(0,0)</Normal_Pointy>
-										<Normal_Wide>(0,0)</Normal_Wide>
-										<Narrow_Average>(0,0)</Narrow_Average>
-										<Narrow_Pointy>(0,0)</Narrow_Pointy>
-										<Narrow_Wide>(0,0)</Narrow_Wide>
-									</crownTypes>
-								</south>
-								<north>
-									<bodyTypes>
-										<CentaurMale>(0,0.95)</CentaurMale>
-										<CentaurFemale>(0,0.95)</CentaurFemale>
-									</bodyTypes>
-									<portraitBodyTypes>
-										<CentaurMale>(0,0.95)</CentaurMale>
-										<CentaurFemale>(0,0.95)</CentaurFemale>
-									</portraitBodyTypes>
-									<crownTypes>
-										<Normal_Average>(0,0)</Normal_Average>
-										<Normal_Pointy>(0,0)</Normal_Pointy>
-										<Normal_Wide>(0,0)</Normal_Wide>
-										<Narrow_Average>(0,0)</Narrow_Average>
-										<Narrow_Pointy>(0,0)</Narrow_Pointy>
-										<Narrow_Wide>(0,0)</Narrow_Wide>
-									</crownTypes>
-								</north>
-								<east>
-									<bodyTypes>
-										<CentaurMale>(-.425,0.95)</CentaurMale>
-										<CentaurFemale>(-.425,0.95)</CentaurFemale>
-									</bodyTypes>
-									<portraitBodyTypes>
-										<CentaurMale>(-.425,0.95)</CentaurMale>
-										<CentaurFemale>(-.425,0.95)</CentaurFemale>
-									</portraitBodyTypes>
-									<crownTypes>
-										<Normal_Average>(0,0)</Normal_Average>
-										<Normal_Pointy>(0,0)</Normal_Pointy>
-										<Normal_Wide>(0,0)</Normal_Wide>
-										<Narrow_Average>(0,0)</Narrow_Average>
-										<Narrow_Pointy>(0,0)</Narrow_Pointy>
-										<Narrow_Wide>(0,0)</Narrow_Wide>
-									</crownTypes>
-								</east>
-							</offsets>
-						</li>
-						
-						
-						
-						<li>
-						<drawSize>1</drawSize>
-							<path>Things/Centaur/Tail/Tail</path>
-							<bodyPart>tail</bodyPart>
-							<inFrontOfBody>false</inFrontOfBody>
-							<useSkinColor>false</useSkinColor>
-							<drawnInBed>false</drawnInBed>
-							<offsets>
-								<south>
-									<bodyTypes>
-										<CentaurMale>(-.425,0.92)</CentaurMale>
-										<CentaurFemale>(-.425,0.92)</CentaurFemale>
-									</bodyTypes>
-									<portraitBodyTypes>
-										<CentaurMale>(-.425,0.92)</CentaurMale>
-										<CentaurFemale>(-.425,0.92)</CentaurFemale>
-									</portraitBodyTypes>
-									<crownTypes>
-										<Normal_Average>(0,0)</Normal_Average>
-										<Normal_Pointy>(0,0)</Normal_Pointy>
-										<Normal_Wide>(0,0)</Normal_Wide>
-										<Narrow_Average>(0,0)</Narrow_Average>
-										<Narrow_Pointy>(0,0)</Narrow_Pointy>
-										<Narrow_Wide>(0,0)</Narrow_Wide>
-									</crownTypes>
-								</south>
-								<north>
-									<bodyTypes>
-										<CentaurMale>(0,0.20)</CentaurMale>
-										<CentaurFemale>(0,0.20)</CentaurFemale>
-									</bodyTypes>
-									<portraitBodyTypes>
-										<CentaurMale>(0,0.20)</CentaurMale>
-										<CentaurFemale>(0,0.20)</CentaurFemale>
-									</portraitBodyTypes>
-									<crownTypes>
-										<Normal_Average>(0,0)</Normal_Average>
-										<Normal_Pointy>(0,0)</Normal_Pointy>
-										<Normal_Wide>(0,0)</Normal_Wide>
-										<Narrow_Average>(0,0)</Narrow_Average>
-										<Narrow_Pointy>(0,0)</Narrow_Pointy>
-										<Narrow_Wide>(0,0)</Narrow_Wide>
-									</crownTypes>
-								</north>
-								<east>
-									<bodyTypes>
-										<CentaurMale>(.925,0.05)</CentaurMale>
-										<CentaurFemale>(.925,0.05)</CentaurFemale>
-									</bodyTypes>
-									<portraitBodyTypes>
-										<CentaurMale>(.925,0.10)</CentaurMale>
-										<CentaurFemale>(.925,0.10)</CentaurFemale>
-									</portraitBodyTypes>
-									<crownTypes>
-										<Normal_Average>(0,0)</Normal_Average>
-										<Normal_Pointy>(0,0)</Normal_Pointy>
-										<Normal_Wide>(0,0)</Normal_Wide>
-										<Narrow_Average>(0,0)</Narrow_Average>
-										<Narrow_Pointy>(0,0)</Narrow_Pointy>
-										<Narrow_Wide>(0,0)</Narrow_Wide>
-									</crownTypes>
-								</east>
-							</offsets>
-						</li>						
-						
-						<!--<li>
-						<drawSize>1</drawSize>
-							<path>Things/Centaur/Fur/Fur</path>
-							<colorChannel>hair</colorChannel>
-							<!- -<bodyPart>Torso</bodyPart>- ->
-							<inFrontOfBody>true</inFrontOfBody>
-							<useSkinColor>false</useSkinColor>
-							<drawnInBed>false</drawnInBed>
-							<hiddenUnderApparelFor>
-								<li>Torso</li>
-							</hiddenUnderApparelFor>
-							<offsets>
-								<south>
-									<bodyTypes>
-										<CentaurMale>(0,0)</CentaurMale>
-										<CentaurFemale>(0,0)</CentaurFemale>
-									</bodyTypes>
-									<portraitBodyTypes>
-										<CentaurMale>(0,0)</CentaurMale>
-										<CentaurFemale>(0,0)</CentaurFemale>
-									</portraitBodyTypes>
-									<crownTypes>
-										<Normal_Average>(0,0)</Normal_Average>
-										<Normal_Pointy>(0,0)</Normal_Pointy>
-										<Normal_Wide>(0,0)</Normal_Wide>
-										<Narrow_Average>(0,0)</Narrow_Average>
-										<Narrow_Pointy>(0,0)</Narrow_Pointy>
-										<Narrow_Wide>(0,0)</Narrow_Wide>
-									</crownTypes>
-								</south>
-								<north>
-									<bodyTypes>
-										<CentaurMale>(0,0)</CentaurMale>
-										<CentaurFemale>(0,0)</CentaurFemale>
-									</bodyTypes>
-									<portraitBodyTypes>
-										<CentaurMale>(0,0)</CentaurMale>
-										<CentaurFemale>(0,0)</CentaurFemale>
-									</portraitBodyTypes>
-									<crownTypes>
-										<Normal_Average>(0,0)</Normal_Average>
-										<Normal_Pointy>(0,0)</Normal_Pointy>
-										<Normal_Wide>(0,0)</Normal_Wide>
-										<Narrow_Average>(0,0)</Narrow_Average>
-										<Narrow_Pointy>(0,0)</Narrow_Pointy>
-										<Narrow_Wide>(0,0)</Narrow_Wide>
-									</crownTypes>
-								</north>
-								<east>
-									<bodyTypes>
-										<CentaurMale>(0,0)</CentaurMale>
-										<CentaurFemale>(0,0)</CentaurFemale>
-									</bodyTypes>
-									<portraitBodyTypes>
-										<CentaurMale>(0,0)</CentaurMale>
-										<CentaurFemale>(0,0)</CentaurFemale>
-									</portraitBodyTypes>
-									<crownTypes>
-										<Normal_Average>(0,0)</Normal_Average>
-										<Normal_Pointy>(0,0)</Normal_Pointy>
-										<Normal_Wide>(0,0)</Normal_Wide>
-										<Narrow_Average>(0,0)</Narrow_Average>
-										<Narrow_Pointy>(0,0)</Narrow_Pointy>
-										<Narrow_Wide>(0,0)</Narrow_Wide>
-									</crownTypes>
-								</east>
-							</offsets>
-						</li>-->
+		<immuneToAge>true</immuneToAge>
+		<allowHumanBios>true</allowHumanBios>
+		<maxDamageForSocialfight>7</maxDamageForSocialfight>
+		<canLayDown>true</canLayDown>
+		<!--<validBeds>
+			<li>DoubleSleepingSpot</li>
+			<li>DoubleBed</li>
+			<li>RoyalBed</li>
+			<li>HospitalBed</li>
+			<li>BedrollDouble</li>
+		</validBeds>-->
+		
+		<disallowedTraits>
+		   <li>BodyPurist</li>
+		</disallowedTraits>
+		
+			<alienPartGenerator>
+				<headOffset>(0.0, 0.0)</headOffset>
+				<alienbodytypes>
+					<li>CentaurMale</li>
+					<li>CentaurFemale</li>
+				</alienbodytypes>
+				<useGenderedBodies>false</useGenderedBodies>
+				<bodyAddons>
+					<li>
+					<drawSize>1</drawSize>
+						<path>Things/Centaur/Ears/EarLeft</path>
+						<bodyPart>left ear</bodyPart>
+						<inFrontOfBody>true</inFrontOfBody>
+						<useSkinColor>false</useSkinColor>
+						<drawnInBed>true</drawnInBed>
+						<hiddenUnderApparelTag>
+							<li>HideCentaurEar</li>
+						</hiddenUnderApparelTag>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<CentaurMale>(-.425,0.95)</CentaurMale>
+									<CentaurFemale>(-.425,0.95)</CentaurFemale>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<CentaurMale>(-.425,0.95)</CentaurMale>
+									<CentaurFemale>(-.425,0.95)</CentaurFemale>
+								</portraitBodyTypes>
+								<crownTypes>
+									<Normal_Average>(0,0)</Normal_Average>
+									<Normal_Pointy>(0,0)</Normal_Pointy>
+									<Normal_Wide>(0,0)</Normal_Wide>
+									<Narrow_Average>(0,0)</Narrow_Average>
+									<Narrow_Pointy>(0,0)</Narrow_Pointy>
+									<Narrow_Wide>(0,0)</Narrow_Wide>
+								</crownTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<CentaurMale>(0,1.1)</CentaurMale>
+									<CentaurFemale>(0,1.1)</CentaurFemale>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<CentaurMale>(0,1.1)</CentaurMale>
+									<CentaurFemale>(0,1.1)</CentaurFemale>
+								</portraitBodyTypes>
+								<crownTypes>
+									<Normal_Average>(0,0)</Normal_Average>
+									<Normal_Pointy>(0,0)</Normal_Pointy>
+									<Normal_Wide>(0,0)</Normal_Wide>
+									<Narrow_Average>(0,0)</Narrow_Average>
+									<Narrow_Pointy>(0,0)</Narrow_Pointy>
+									<Narrow_Wide>(0,0)</Narrow_Wide>
+								</crownTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<CentaurMale>(-.425,0.95)</CentaurMale>
+									<CentaurFemale>(-.425,0.95)</CentaurFemale>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<CentaurMale>(-.425,0.95)</CentaurMale>
+									<CentaurFemale>(-.425,0.95)</CentaurFemale>
+								</portraitBodyTypes>
+								<crownTypes>
+									<Normal_Average>(0,0)</Normal_Average>
+									<Normal_Pointy>(0,0)</Normal_Pointy>
+									<Normal_Wide>(0,0)</Normal_Wide>
+									<Narrow_Average>(0,0)</Narrow_Average>
+									<Narrow_Pointy>(0,0)</Narrow_Pointy>
+									<Narrow_Wide>(0,0)</Narrow_Wide>
+								</crownTypes>
+							</east>
+						</offsets>
+					</li>
 					
-					</bodyAddons>
-
-                    <!--<alienskincolorgen Class="ColorGenerator_StandardApparel">
-                    <!- -    <options>
-                        <li>
-                            <weight>10</weight>
-                            <only>RGBA(0.2,0.2,0.2,1)</only>
-                        </li>
-						
-                        <li>
-                            <weight>10</weight>
-                            <only>RGBA(1,0.7,0.5,1)</only>
-                        </li>
-						<!- - Cute Colours - ->
-                        <li>
-                            <weight>10</weight>
-                            <only>RGBA(0.5,0.9,1,1)</only>
-                        </li>						
-                        </options>- ->
-
-                    </alienskincolorgen>
-                    <alienhaircolorgen Class="ColorGenerator_StandardApparel">
-                    <!- -    <options>
-                        <li>
-                            <weight>10</weight>
-                            <only>RGBA(0.2,0.2,0.2,1)</only>
-                        </li>
-						
-                        <li>
-                            <weight>10</weight>
-                            <only>RGBA(1,0.7,0.5,1)</only>
-                        </li>
-						<!- - Cute Colours - ->
-                        <li>
-                            <weight>10</weight>
-                            <only>RGBA(0.5,0.9,1,1)</only>
-                        </li>						
-                        </options>- ->
-
-                    </alienhaircolorgen>-->
-					<useSkincolorForHair>false</useSkincolorForHair>
-					<customHeadDrawSize>(1, 1)</customHeadDrawSize>
-                    <customDrawSize>(1.35, 1.35)</customDrawSize>
-                </alienPartGenerator>
-				<humanRecipeImport>true</humanRecipeImport>
-		    </generalSettings>
-			
-			<thoughtSettings>
-				<cannotReceiveThoughts>
-					<li>AteWithoutTable</li>
-					<li>SoakingWet</li>
-					<li>SleptOnGround</li>
-					<li>SleptOutside</li>
 					
-					<!-- <li>EnvironmentCold</li>
-					<li>EnvironmentHot</li>
-					<li>NeedOutdoors</li> -->
-					<li>SleptInCold</li>
-					<li>SleptInHeat</li>
-					<li>AteKibble</li>
-					<li>WasImprisoned</li>
-				</cannotReceiveThoughts>
-				<replacerList>
-					<!-- <li>
-						<original>EnvironmentCold</original>
-						<replacer>EnvironmentCold_Centaur</replacer> 
-					</li>
-					<li>
-						<original>EnvironmentHot</original>
-						<replacer>EnvironmentHot_Centaur</replacer> 
-					</li>
-					<li>
-						<original>NeedOutdoors</original>
-						<replacer>NeedOutdoors_Centaur</replacer> 
-					</li> -->
-					<li>
-						<original>SleptInCold</original>
-						<replacer>SleptInCold_Centaur</replacer> 
-					</li>
-					<li>
-						<original>SleptInHeat</original>
-						<replacer>SleptInHeat_Centaur</replacer> 
-					</li>
-					<li>
-						<original>AteKibble</original>
-						<replacer>AteKibble_Centaur</replacer> 
-					</li>
-					<li>
-						<original>WasImprisoned</original>
-						<replacer>WasImprisoned_Centaur</replacer> 
-					</li>
-				</replacerList>
-
-			</thoughtSettings>
-            <hairSettings>
-                <getsGreyAt>93.75</getsGreyAt>
-            </hairSettings>
-			
-			<relationSettings>
-				<relationChanceModifierLover>1</relationChanceModifierLover>
-				<relationChanceModifierExLover>1</relationChanceModifierExLover>
-
-				<relationChanceModifierFiance>1</relationChanceModifierFiance>
-				<relationChanceModifierSpouse>1</relationChanceModifierSpouse>
-				<relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
-
-				<relationChanceModifierParent>0</relationChanceModifierParent>
-				<relationChanceModifierChild>0</relationChanceModifierChild>
-				<relationChanceModifierSibling>1</relationChanceModifierSibling>
-				<!-- <renamer>
-				   <li>
-					  <relation>Parent</relation>
-					  <label>Adoptive Father</label>
-					  <femaleLabel>Adoptive Mother</femaleLabel>
-				   </li>
-				</renamer> -->
-			</relationSettings>
-			
-			
-			<raceRestriction>
-				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
-				<apparelList>
-					<li>Apparel_CentaurPants</li>
-					<li>Apparel_CentaurBasicShirt</li>
-					<li>Apparel_CentaurCollarShirt</li>
-					<li>Apparel_CentaurFlakJacket</li>
-					<li>Apparel_CentaurFlakVest</li>
-					<li>Apparel_CentaurFlakPants</li>
 					
-					<li>Apparel_CentaurParka</li>
-					<li>Apparel_CentaurJacket</li>
-					<li>Apparel_CentaurDuster</li>
-					<li>Apparel_CentaurPlateArmor</li>
-					<li>Apparel_CentaurPowerArmor</li>
-					<li>Apparel_CentaurPowerArmorHelmet</li>
+					<li>
+					<drawSize>1</drawSize>
+						<path>Things/Centaur/Ears/EarRight</path>
+						<bodyPart>right ear</bodyPart>
+						<inFrontOfBody>true</inFrontOfBody>
+						<useSkinColor>false</useSkinColor>
+						<drawnInBed>true</drawnInBed>
+						<hiddenUnderApparelTag>
+							<li>HideCentaurEar</li>
+						</hiddenUnderApparelTag>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<CentaurMale>(-.425,0.95)</CentaurMale>
+									<CentaurFemale>(-.425,0.95)</CentaurFemale>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<CentaurMale>(-.425,0.95)</CentaurMale>
+									<CentaurFemale>(-.425,0.95)</CentaurFemale>
+								</portraitBodyTypes>
+								<crownTypes>
+									<Normal_Average>(0,0)</Normal_Average>
+									<Normal_Pointy>(0,0)</Normal_Pointy>
+									<Normal_Wide>(0,0)</Normal_Wide>
+									<Narrow_Average>(0,0)</Narrow_Average>
+									<Narrow_Pointy>(0,0)</Narrow_Pointy>
+									<Narrow_Wide>(0,0)</Narrow_Wide>
+								</crownTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<CentaurMale>(0,1.1)</CentaurMale>
+									<CentaurFemale>(0,1.1)</CentaurFemale>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<CentaurMale>(0,1.1)</CentaurMale>
+									<CentaurFemale>(0,1.1)</CentaurFemale>
+								</portraitBodyTypes>
+								<crownTypes>
+									<Normal_Average>(0,0)</Normal_Average>
+									<Normal_Pointy>(0,0)</Normal_Pointy>
+									<Normal_Wide>(0,0)</Normal_Wide>
+									<Narrow_Average>(0,0)</Narrow_Average>
+									<Narrow_Pointy>(0,0)</Narrow_Pointy>
+									<Narrow_Wide>(0,0)</Narrow_Wide>
+								</crownTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<CentaurMale>(-.425,0.95)</CentaurMale>
+									<CentaurFemale>(-.425,0.95)</CentaurFemale>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<CentaurMale>(-.425,0.95)</CentaurMale>
+									<CentaurFemale>(-.425,0.95)</CentaurFemale>
+								</portraitBodyTypes>
+								<crownTypes>
+									<Normal_Average>(0,0)</Normal_Average>
+									<Normal_Pointy>(0,0)</Normal_Pointy>
+									<Normal_Wide>(0,0)</Normal_Wide>
+									<Narrow_Average>(0,0)</Narrow_Average>
+									<Narrow_Pointy>(0,0)</Narrow_Pointy>
+									<Narrow_Wide>(0,0)</Narrow_Wide>
+								</crownTypes>
+							</east>
+						</offsets>
+					</li>
 					
-					<!--<li>Apparel_CentaurCollarShirt_Raised</li>-->
-					<li>Apparel_CentaurShieldArmor</li>
-					<li>Apparel_CentaurAntimassBelt</li>
-				</apparelList>
-				<whiteApparelList>
-				<li>Apparel_CowboyHat</li>
-				<li>Apparel_BowlerHat</li>
-				<li>Apparel_TribalHeaddress</li>
-				<li>Apparel_Tuque</li>
-				<li>Apparel_WarMask</li>
-				<li>Apparel_WarVeil</li>
-				<li>Apparel_SimpleHelmet</li>
-				<li>Apparel_AdvancedHelmet</li>
-				<li>Apparel_PsychicFoilHelmet</li>
-				<!--<li>Apparel_PowerArmorHelmet</li>-->
-				<li>Apparel_ShieldBelt</li>
-				<li>Apparel_SmokepopBelt</li>
+					
+					
+					<li>
+					<drawSize>1</drawSize>
+						<path>Things/Centaur/Tail/Tail</path>
+						<bodyPart>tail</bodyPart>
+						<inFrontOfBody>false</inFrontOfBody>
+						<useSkinColor>false</useSkinColor>
+						<drawnInBed>false</drawnInBed>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<CentaurMale>(-.425,0.92)</CentaurMale>
+									<CentaurFemale>(-.425,0.92)</CentaurFemale>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<CentaurMale>(-.425,0.92)</CentaurMale>
+									<CentaurFemale>(-.425,0.92)</CentaurFemale>
+								</portraitBodyTypes>
+								<crownTypes>
+									<Normal_Average>(0,0)</Normal_Average>
+									<Normal_Pointy>(0,0)</Normal_Pointy>
+									<Normal_Wide>(0,0)</Normal_Wide>
+									<Narrow_Average>(0,0)</Narrow_Average>
+									<Narrow_Pointy>(0,0)</Narrow_Pointy>
+									<Narrow_Wide>(0,0)</Narrow_Wide>
+								</crownTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<CentaurMale>(0,0.20)</CentaurMale>
+									<CentaurFemale>(0,0.20)</CentaurFemale>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<CentaurMale>(0,0.20)</CentaurMale>
+									<CentaurFemale>(0,0.20)</CentaurFemale>
+								</portraitBodyTypes>
+								<crownTypes>
+									<Normal_Average>(0,0)</Normal_Average>
+									<Normal_Pointy>(0,0)</Normal_Pointy>
+									<Normal_Wide>(0,0)</Normal_Wide>
+									<Narrow_Average>(0,0)</Narrow_Average>
+									<Narrow_Pointy>(0,0)</Narrow_Pointy>
+									<Narrow_Wide>(0,0)</Narrow_Wide>
+								</crownTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<CentaurMale>(.925,0.05)</CentaurMale>
+									<CentaurFemale>(.925,0.05)</CentaurFemale>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<CentaurMale>(.925,0.10)</CentaurMale>
+									<CentaurFemale>(.925,0.10)</CentaurFemale>
+								</portraitBodyTypes>
+								<crownTypes>
+									<Normal_Average>(0,0)</Normal_Average>
+									<Normal_Pointy>(0,0)</Normal_Pointy>
+									<Normal_Wide>(0,0)</Normal_Wide>
+									<Narrow_Average>(0,0)</Narrow_Average>
+									<Narrow_Pointy>(0,0)</Narrow_Pointy>
+									<Narrow_Wide>(0,0)</Narrow_Wide>
+								</crownTypes>
+							</east>
+						</offsets>
+					</li>						
+					
+					<!--<li>
+					<drawSize>1</drawSize>
+						<path>Things/Centaur/Fur/Fur</path>
+						<colorChannel>hair</colorChannel>
+						<!- -<bodyPart>Torso</bodyPart>- ->
+						<inFrontOfBody>true</inFrontOfBody>
+						<useSkinColor>false</useSkinColor>
+						<drawnInBed>false</drawnInBed>
+						<hiddenUnderApparelFor>
+							<li>Torso</li>
+						</hiddenUnderApparelFor>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<CentaurMale>(0,0)</CentaurMale>
+									<CentaurFemale>(0,0)</CentaurFemale>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<CentaurMale>(0,0)</CentaurMale>
+									<CentaurFemale>(0,0)</CentaurFemale>
+								</portraitBodyTypes>
+								<crownTypes>
+									<Normal_Average>(0,0)</Normal_Average>
+									<Normal_Pointy>(0,0)</Normal_Pointy>
+									<Normal_Wide>(0,0)</Normal_Wide>
+									<Narrow_Average>(0,0)</Narrow_Average>
+									<Narrow_Pointy>(0,0)</Narrow_Pointy>
+									<Narrow_Wide>(0,0)</Narrow_Wide>
+								</crownTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<CentaurMale>(0,0)</CentaurMale>
+									<CentaurFemale>(0,0)</CentaurFemale>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<CentaurMale>(0,0)</CentaurMale>
+									<CentaurFemale>(0,0)</CentaurFemale>
+								</portraitBodyTypes>
+								<crownTypes>
+									<Normal_Average>(0,0)</Normal_Average>
+									<Normal_Pointy>(0,0)</Normal_Pointy>
+									<Normal_Wide>(0,0)</Normal_Wide>
+									<Narrow_Average>(0,0)</Narrow_Average>
+									<Narrow_Pointy>(0,0)</Narrow_Pointy>
+									<Narrow_Wide>(0,0)</Narrow_Wide>
+								</crownTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<CentaurMale>(0,0)</CentaurMale>
+									<CentaurFemale>(0,0)</CentaurFemale>
+								</bodyTypes>
+								<portraitBodyTypes>
+									<CentaurMale>(0,0)</CentaurMale>
+									<CentaurFemale>(0,0)</CentaurFemale>
+								</portraitBodyTypes>
+								<crownTypes>
+									<Normal_Average>(0,0)</Normal_Average>
+									<Normal_Pointy>(0,0)</Normal_Pointy>
+									<Normal_Wide>(0,0)</Normal_Wide>
+									<Narrow_Average>(0,0)</Narrow_Average>
+									<Narrow_Pointy>(0,0)</Narrow_Pointy>
+									<Narrow_Wide>(0,0)</Narrow_Wide>
+								</crownTypes>
+							</east>
+						</offsets>
+					</li>-->
 				
-				<li>Apparel_PowerArmorHelmet_Clocked</li>
-				<!--<li>Apparel_Parka</li>
-				<li>Apparel_Jacket</li>
-				<li>Apparel_Duster</li>-->
-				
-				
-				</whiteApparelList>
-				
-				<onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
-				<weaponList>
-					<!--<li>Gun_CentaurChargeShotgun</li>-->
-					<li>Bow_Trishot</li>
-				</weaponList>
-				
-				
-				<!--<onlyDoRaceRestrictedRecipes>false</onlyDoRaceRestrictedRecipes>
-				<recipeList>
-				</recipeList>
+				</bodyAddons>
 
-				<onlyGetRaceRestrictedTraits>false</onlyGetRaceRestrictedTraits>
-				<traitList>
-				</traitList>            
+				<!--<alienskincolorgen Class="ColorGenerator_StandardApparel">
+				<!- -    <options>
+					<li>
+						<weight>10</weight>
+						<only>RGBA(0.2,0.2,0.2,1)</only>
+					</li>
+					
+					<li>
+						<weight>10</weight>
+						<only>RGBA(1,0.7,0.5,1)</only>
+					</li>
+					<!- - Cute Colours - ->
+					<li>
+						<weight>10</weight>
+						<only>RGBA(0.5,0.9,1,1)</only>
+					</li>						
+					</options>- ->
 
-				<onlyEatRaceRestrictedFood>false</onlyEatRaceRestrictedFood>
-				<foodList>
-				</foodList> 
-				
-				<onlyBuildRaceRestrictedBuildings>false</onlyBuildRaceRestrictedBuildings>
-				<buildingList>
-				</buildingList>
-				
-				<onlyDoRaceRestrictedPlants>false</onlyDoRaceRestrictedPlants>
-				<plantList>
-				</plantList>
-				
-				<conceptList>
-				</conceptList>
+				</alienskincolorgen>
+				<alienhaircolorgen Class="ColorGenerator_StandardApparel">
+				<!- -    <options>
+					<li>
+						<weight>10</weight>
+						<only>RGBA(0.2,0.2,0.2,1)</only>
+					</li>
+					
+					<li>
+						<weight>10</weight>
+						<only>RGBA(1,0.7,0.5,1)</only>
+					</li>
+					<!- - Cute Colours - ->
+					<li>
+						<weight>10</weight>
+						<only>RGBA(0.5,0.9,1,1)</only>
+					</li>						
+					</options>- ->
 
-				<workGiverList>
-				</workGiverList>-->
-			
-			</raceRestriction>
-			
-        </alienRace>
+				</alienhaircolorgen>-->
+				<useSkincolorForHair>false</useSkincolorForHair>
+				<customHeadDrawSize>(1, 1)</customHeadDrawSize>
+				<customDrawSize>(1.35, 1.35)</customDrawSize>
+			</alienPartGenerator>
+			<humanRecipeImport>true</humanRecipeImport>
+		</generalSettings>
+		
+		<thoughtSettings>
+			<cannotReceiveThoughts>
+				<li>AteWithoutTable</li>
+				<li>SoakingWet</li>
+				<li>SleptOnGround</li>
+				<li>SleptOutside</li>
+				
+				<!-- <li>EnvironmentCold</li>
+				<li>EnvironmentHot</li>
+				<li>NeedOutdoors</li> -->
+				<li>SleptInCold</li>
+				<li>SleptInHeat</li>
+				<li>AteKibble</li>
+				<li>WasImprisoned</li>
+			</cannotReceiveThoughts>
+			<replacerList>
+				<!-- <li>
+					<original>EnvironmentCold</original>
+					<replacer>EnvironmentCold_Centaur</replacer> 
+				</li>
+				<li>
+					<original>EnvironmentHot</original>
+					<replacer>EnvironmentHot_Centaur</replacer> 
+				</li>
+				<li>
+					<original>NeedOutdoors</original>
+					<replacer>NeedOutdoors_Centaur</replacer> 
+				</li> -->
+				<li>
+					<original>SleptInCold</original>
+					<replacer>SleptInCold_Centaur</replacer> 
+				</li>
+				<li>
+					<original>SleptInHeat</original>
+					<replacer>SleptInHeat_Centaur</replacer> 
+				</li>
+				<li>
+					<original>AteKibble</original>
+					<replacer>AteKibble_Centaur</replacer> 
+				</li>
+				<li>
+					<original>WasImprisoned</original>
+					<replacer>WasImprisoned_Centaur</replacer> 
+				</li>
+			</replacerList>
+
+		</thoughtSettings>
+		<hairSettings>
+			<getsGreyAt>93.75</getsGreyAt>
+		</hairSettings>
+		
+		<relationSettings>
+			<relationChanceModifierLover>1</relationChanceModifierLover>
+			<relationChanceModifierExLover>1</relationChanceModifierExLover>
+
+			<relationChanceModifierFiance>1</relationChanceModifierFiance>
+			<relationChanceModifierSpouse>1</relationChanceModifierSpouse>
+			<relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
+
+			<relationChanceModifierParent>0</relationChanceModifierParent>
+			<relationChanceModifierChild>0</relationChanceModifierChild>
+			<relationChanceModifierSibling>1</relationChanceModifierSibling>
+			<!-- <renamer>
+			   <li>
+				  <relation>Parent</relation>
+				  <label>Adoptive Father</label>
+				  <femaleLabel>Adoptive Mother</femaleLabel>
+			   </li>
+			</renamer> -->
+		</relationSettings>
 		
 		
-		
-        <statBases>
-            <MarketValue>38000</MarketValue> <!-- 1900 -->
-            <MoveSpeed>13.5</MoveSpeed> <!--Nyooooooooom--> <!-- 9.0 -->
-            <Flammability>1.0</Flammability>
-            <ComfyTemperatureMin>-36</ComfyTemperatureMin><!-- 14 -->
-            <ComfyTemperatureMax>20.2</ComfyTemperatureMax><!-- 24 -->
-            <LeatherAmount>90</LeatherAmount>
-			<MeleeDodgeChance>1.25</MeleeDodgeChance>
-            <ToxicSensitivity>0.5</ToxicSensitivity>
-			<MaxHitPoints>250</MaxHitPoints>
+		<raceRestriction>
+			<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+			<apparelList>
+				<li>Apparel_CentaurPants</li>
+				<li>Apparel_CentaurHorseshoesSet</li>
+				<li>Apparel_CentaurBasicShirt</li>
+				<li>Apparel_CentaurCollarShirt</li>
+				<li>Apparel_CentaurFlakJacket</li>
+				<li>Apparel_CentaurFlakVest</li>
+				<li>Apparel_CentaurFlakPants</li>
+				
+				<li>Apparel_CentaurParka</li>
+				<li>Apparel_CentaurJacket</li>
+				<li>Apparel_CentaurDuster</li>
+				<li>Apparel_CentaurPlateArmor</li>
+				<li>Apparel_CentaurPowerArmor</li>
+				<li>Apparel_CentaurPowerArmorHelmet</li>
+				
+				<!--<li>Apparel_CentaurCollarShirt_Raised</li>-->
+				<li>Apparel_CentaurShieldArmor</li>
+				<li>Apparel_CentaurAntimassBelt</li>
+			</apparelList>
+			<whiteApparelList>
+			<li>Apparel_CowboyHat</li>
+			<li>Apparel_BowlerHat</li>
+			<li>Apparel_TribalHeaddress</li>
+			<li>Apparel_Tuque</li>
+			<li>Apparel_WarMask</li>
+			<li>Apparel_WarVeil</li>
+			<li>Apparel_SimpleHelmet</li>
+			<li>Apparel_AdvancedHelmet</li>
+			<li>Apparel_PsychicFoilHelmet</li>
+			<!--<li>Apparel_PowerArmorHelmet</li>-->
+			<li>Apparel_ShieldBelt</li>
+			<li>Apparel_SmokepopBelt</li>
 			
-			<WorkSpeedGlobal>1.5</WorkSpeedGlobal>
-			<GlobalLearningFactor>1.5</GlobalLearningFactor>
-			<EatingSpeed>1.5</EatingSpeed>
-			<MentalBreakThreshold>0.02</MentalBreakThreshold>
-			<AimingDelayFactor>0.8</AimingDelayFactor>
-			<ShootingAccuracyPawn>20</ShootingAccuracyPawn>
-			<SocialImpact>3.0</SocialImpact>
-			<ImmunityGainSpeed>1.75</ImmunityGainSpeed>
-			<PainShockThreshold>0.95</PainShockThreshold>
-			<TameAnimalChance>1.5</TameAnimalChance>
-			<TrainAnimalChance>1.5</TrainAnimalChance>
-			<!-- <HungerRateMultiplier>1.0</HungerRateMultiplier> -->
-			<CarryingCapacity>150</CarryingCapacity>
-        </statBases>
-		<tools>
-      <li>
-        <label>left fist</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>8.2</power>
-        <cooldownTime>1.4</cooldownTime>
-        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>18</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <label>right fist</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>8.2</power>
-        <cooldownTime>1.4</cooldownTime>
-        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>18</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <label>teeth</label>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>12</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.07</chanceFactor>
-      </li>
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>10</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-      </li>
-      <li>
-        <label>front left hoove</label>
+			<li>Apparel_PowerArmorHelmet_Clocked</li>
+			<!--<li>Apparel_Parka</li>
+			<li>Apparel_Jacket</li>
+			<li>Apparel_Duster</li>-->
+			
+			
+			</whiteApparelList>
+			
+			<onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
+			<weaponList>
+				<!--<li>Gun_CentaurChargeShotgun</li>-->
+				<li>Bow_Trishot</li>
+			</weaponList>
+			
+			
+			<!--<onlyDoRaceRestrictedRecipes>false</onlyDoRaceRestrictedRecipes>
+			<recipeList>
+			</recipeList>
+
+			<onlyGetRaceRestrictedTraits>false</onlyGetRaceRestrictedTraits>
+			<traitList>
+			</traitList>            
+
+			<onlyEatRaceRestrictedFood>false</onlyEatRaceRestrictedFood>
+			<foodList>
+			</foodList> 
+			
+			<onlyBuildRaceRestrictedBuildings>false</onlyBuildRaceRestrictedBuildings>
+			<buildingList>
+			</buildingList>
+			
+			<onlyDoRaceRestrictedPlants>false</onlyDoRaceRestrictedPlants>
+			<plantList>
+			</plantList>
+			
+			<conceptList>
+			</conceptList>
+
+			<workGiverList>
+			</workGiverList>-->
+		
+		</raceRestriction>
+		
+	</alienRace>
+	
+	
+	
+	<statBases>
+		<MarketValue>38000</MarketValue> <!-- 1900 -->
+		<MoveSpeed>13.5</MoveSpeed> <!--Nyooooooooom--> <!-- 9.0 -->
+		<Flammability>1.0</Flammability>
+		<ComfyTemperatureMin>-36</ComfyTemperatureMin><!-- 14 -->
+		<ComfyTemperatureMax>20.2</ComfyTemperatureMax><!-- 24 -->
+		<LeatherAmount>90</LeatherAmount>
+		<MeleeDodgeChance>1.25</MeleeDodgeChance>
+		<ToxicSensitivity>0.5</ToxicSensitivity>
+		<MaxHitPoints>250</MaxHitPoints>
+		
+		<WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+		<GlobalLearningFactor>1.5</GlobalLearningFactor>
+		<EatingSpeed>1.5</EatingSpeed>
+		<MentalBreakThreshold>0.02</MentalBreakThreshold>
+		<AimingDelayFactor>0.8</AimingDelayFactor>
+		<ShootingAccuracyPawn>20</ShootingAccuracyPawn>
+		<SocialImpact>3.0</SocialImpact>
+		<ImmunityGainSpeed>1.75</ImmunityGainSpeed>
+		<PainShockThreshold>0.95</PainShockThreshold>
+		<TameAnimalChance>1.5</TameAnimalChance>
+		<TrainAnimalChance>1.5</TrainAnimalChance>
+		<!-- <HungerRateMultiplier>1.0</HungerRateMultiplier> -->
+		<CarryingCapacity>150</CarryingCapacity>
+	</statBases>
+	<tools>
+	  <li>
+		<label>left fist</label>
 		<capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>14</power>
-        <cooldownTime>2.5</cooldownTime>
-        <linkedBodyPartsGroup>FrontLeftHoove</linkedBodyPartsGroup>
+		  <li>Blunt</li>
+		</capacities>
+		<power>8.2</power>
+		<cooldownTime>1.4</cooldownTime>
+		<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+		<surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>18</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+	  </li>
+	  <li>
+		<label>right fist</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>8.2</power>
+		<cooldownTime>1.4</cooldownTime>
+		<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+		<surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>18</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+	  </li>
+	  <li>
+		<label>teeth</label>
+		<capacities>
+		  <li>Bite</li>
+		</capacities>
+		<power>12</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+		<chanceFactor>0.07</chanceFactor>
+	  </li>
+	  <li>
+		<label>head</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>10</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<chanceFactor>0.2</chanceFactor>
+	  </li>
+	  <li>
+		<label>front left hoove</label>
+		<capacities>
+		  <li>Blunt</li>
+		  <li>Poke</li>
+		</capacities>
+		<power>14</power>
+		<cooldownTime>2.5</cooldownTime>
+		<linkedBodyPartsGroup>FrontLeftHoove</linkedBodyPartsGroup>
 		<chanceFactor>0.3</chanceFactor>
 		<surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>26</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-      </li>
-      <li>
-        <label>front right hoove</label>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>26</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+		<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+	  </li>
+	  <li>
+		<label>front right hoove</label>
 		<capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>14</power>
-        <cooldownTime>2.5</cooldownTime>
-        <linkedBodyPartsGroup>FrontRightHoove</linkedBodyPartsGroup>
+		  <li>Blunt</li>
+		  <li>Poke</li>
+		</capacities>
+		<power>14</power>
+		<cooldownTime>2.5</cooldownTime>
+		<linkedBodyPartsGroup>FrontRightHoove</linkedBodyPartsGroup>
 		<chanceFactor>0.3</chanceFactor>
 		<surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>26</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-      </li>
-      <li>
-        <label>rear left hoove</label>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>26</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+		<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+	  </li>
+	  <li>
+		<label>rear left hoove</label>
 		<capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>14</power>
-        <cooldownTime>2.5</cooldownTime>
-        <linkedBodyPartsGroup>RearLeftHoove</linkedBodyPartsGroup>
+		  <li>Blunt</li>
+		  <li>Poke</li>
+		</capacities>
+		<power>14</power>
+		<cooldownTime>2.5</cooldownTime>
+		<linkedBodyPartsGroup>RearLeftHoove</linkedBodyPartsGroup>
 		<chanceFactor>0.2</chanceFactor>
 		<surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>26</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-      </li>
-      <li>
-        <label>rear right hoove</label>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>26</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+		<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+	  </li>
+	  <li>
+		<label>rear right hoove</label>
 		<capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>14</power>
-        <cooldownTime>2.5</cooldownTime>
-        <linkedBodyPartsGroup>RearRightHoove</linkedBodyPartsGroup>
+		  <li>Blunt</li>
+		  <li>Poke</li>
+		</capacities>
+		<power>14</power>
+		<cooldownTime>2.5</cooldownTime>
+		<linkedBodyPartsGroup>RearRightHoove</linkedBodyPartsGroup>
 		<chanceFactor>0.2</chanceFactor>
 		<surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>26</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-      </li>
-    </tools>
-        <race>
-            <thinkTreeMain>Humanlike</thinkTreeMain>
-            <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
-            <intelligence>Humanlike</intelligence>
-            <makesFootprints>false</makesFootprints>
-			<lifeExpectancy>150</lifeExpectancy>
-            <nameCategory>HumanStandard</nameCategory>
-			<leatherDef>Leather_Human</leatherDef>
-            <body>Centaur</body>
-			<!--<Mass>106.5</Mass>-->
-            <baseBodySize>3.0</baseBodySize><!-- 1.5 -->
-            <baseHealthScale>6.0</baseHealthScale><!-- 1.2 -->
-            <foodType>OmnivoreHuman, CarnivoreAnimal, OmnivoreAnimal, OvivoreAnimal</foodType>
-			<!-- <gestationPeriodDays>45</gestationPeriodDays> --><!-- 32.5 -->
-			<gestationPeriodDays isNull="True" />
-			<meatMarketValue>0.8</meatMarketValue>
-			<useMeatFrom>Human</useMeatFrom>
-			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
-			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
-			<baseHungerRate>1.5</baseHungerRate>
-			<herdAnimal>false</herdAnimal>
-			<packAnimal>true</packAnimal>
-			<predator>true</predator>
-			<litterSizeCurve>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>26</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+		<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+	  </li>
+	</tools>
+	<race>
+		<thinkTreeMain>Humanlike</thinkTreeMain>
+		<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+		<intelligence>Humanlike</intelligence>
+		<makesFootprints>false</makesFootprints>
+		<lifeExpectancy>150</lifeExpectancy>
+		<nameCategory>HumanStandard</nameCategory>
+		<leatherDef>Leather_Human</leatherDef>
+		<body>Centaur</body>
+		<!--<Mass>106.5</Mass>-->
+		<baseBodySize>3.0</baseBodySize><!-- 1.5 -->
+		<baseHealthScale>3.0</baseHealthScale><!-- 1.2 -->
+		<foodType>OmnivoreHuman, CarnivoreAnimal, OmnivoreAnimal, OvivoreAnimal</foodType>
+		<!-- <gestationPeriodDays>45</gestationPeriodDays> --><!-- 32.5 -->
+		<gestationPeriodDays isNull="True" />
+		<meatMarketValue>0.8</meatMarketValue>
+		<useMeatFrom>Human</useMeatFrom>
+		<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+		<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+		<baseHungerRate>1.5</baseHungerRate>
+		<herdAnimal>false</herdAnimal>
+		<packAnimal>false</packAnimal>
+		<predator>false</predator>
+		<litterSizeCurve>
+			<points>
+			  <li>(0.5, 0)</li>
+			  <li>(1, .30)</li>
+			  <li>(2, .40)</li>
+			  <li>(3, .10)</li>
+			  <li>(4, .20)</li>
+			  <li>(5, 0)</li>
+			</points>
+		</litterSizeCurve>
+		<lifeStageAges>
+			<li>
+			  <def>HumanlikeBaby</def>
+			  <minAge>0</minAge>
+			</li>
+			<li>
+			  <def>HumanlikeToddler</def>
+			  <minAge>1.2</minAge>
+			</li>
+			<li>
+			  <def>HumanlikeChild</def>
+			  <minAge>4</minAge>
+			</li>
+			<li>
+			  <def>HumanlikeTeenager</def>
+			  <minAge>13</minAge>
+			</li>
+			<li>
+			  <def>HumanlikeAdult</def>
+			  <minAge>18</minAge>
+			</li>
+		</lifeStageAges>
+		<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+		<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+		<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+		<specialShadowData>
+			<volume>(0.3, 0.8, 0.4)</volume>
+			<offset>(0,0,-0.3)</offset>
+		</specialShadowData>
+			  <!-- <ageGenerationCurve>
 				<points>
-				  <li>(0.5, 0)</li>
-				  <li>(1, .30)</li>
-				  <li>(2, .40)</li>
-				  <li>(3, .10)</li>
-				  <li>(4, .20)</li>
-				  <li>(5, 0)</li>
+				  <li>(26.25,0)</li>
+				  <li>(30,100)</li>
+				  <li>(93.75,100)</li>
+				  <li>(112.5,30)</li>
+				  <li>(131.25,18)</li>
+				  <li>(150,10)</li>
+				  <li>(168.75,3)</li>
+				  <li>(187.5,0)</li>
 				</points>
-			</litterSizeCurve>
-            <lifeStageAges>
-				<li>
-				  <def>HumanlikeBaby</def>
-				  <minAge>0</minAge>
-				</li>
-				<li>
-				  <def>HumanlikeToddler</def>
-				  <minAge>1.2</minAge>
-				</li>
-				<li>
-				  <def>HumanlikeChild</def>
-				  <minAge>4</minAge>
-				</li>
-				<li>
-				  <def>HumanlikeTeenager</def>
-				  <minAge>13</minAge>
-				</li>
-				<li>
-				  <def>HumanlikeAdult</def>
-				  <minAge>18</minAge>
-				</li>
-            </lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
-            <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
-            <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
-            <specialShadowData>
-                <volume>(0.3, 0.8, 0.4)</volume>
-                <offset>(0,0,-0.3)</offset>
-            </specialShadowData>
-			      <!-- <ageGenerationCurve>
-					<points>
-					  <li>(26.25,0)</li>
-					  <li>(30,100)</li>
-					  <li>(93.75,100)</li>
-					  <li>(112.5,30)</li>
-					  <li>(131.25,18)</li>
-					  <li>(150,10)</li>
-					  <li>(168.75,3)</li>
-					  <li>(187.5,0)</li>
-					</points>
-				  </ageGenerationCurve> -->
-				  <ageGenerationCurve>
-					<points>
-					  <li>(14,0)</li>
-					  <li>(16,100)</li>
-					  <li>(93.75,100)</li>
-					  <li>(112.5,30)</li>
-					  <li>(131.25,18)</li>
-					  <li>(150,10)</li>
-					  <li>(168.75,3)</li>
-					  <li>(187.5,0)</li>
-					</points>
-				  </ageGenerationCurve>
-			<hediffGiverSets>
-                <li>OrganicStandard</li>
-            </hediffGiverSets>
-        </race>
-		<!-- humanRecipeImport enabled
-		<recipes>
-		  <li>InstallArchotechEye</li>
-		  <li>InstallArchotechArm</li>
-		  <li>InstallArchotechLeg</li>
-		  <li>InstallPowerClaw</li>
-		  <li>InstallBionicEye</li>
-		  <li>InstallBionicArm</li>
-		  <li>InstallBionicLeg</li>
-		  <li>InstallBionicSpine</li>
-		  <li>InstallBionicHeart</li>
-		  <li>InstallBionicStomach</li>
-		  <li>InstallBionicEar</li>
-		  <li>InstallSimpleProstheticArm</li>
-		  <li>InstallSimpleProstheticLeg</li>
-		  <li>InstallSimpleProstheticHeart</li>
-		  <li>InstallCochlearImplant</li>
-		  <li>InstallPegLeg</li>
-		  <li>InstallWoodenFoot</li>
-		  <li>InstallDenture</li>
-		  <li>InstallJoywire</li>
-		  <li>InstallPainstopper</li>
-		  <li>InstallNaturalHeart</li>
-		  <li>InstallNaturalLung</li>
-		  <li>InstallNaturalKidney</li>
-		  <li>InstallNaturalLiver</li>
-		  <li>ExciseCarcinoma</li>
-		  <li>AdministerMechSerumHealer</li>
-		  <li>RemoveBodyPart</li>
-		  <li>Euthanize</li>
-		  <li>Anesthetize</li>
-		</recipes>-->
+			  </ageGenerationCurve> -->
+			  <ageGenerationCurve>
+				<points>
+				  <li>(14,0)</li>
+				  <li>(16,100)</li>
+				  <li>(93.75,100)</li>
+				  <li>(112.5,30)</li>
+				  <li>(131.25,18)</li>
+				  <li>(150,10)</li>
+				  <li>(168.75,3)</li>
+				  <li>(187.5,0)</li>
+				</points>
+			  </ageGenerationCurve>
+		<hediffGiverSets>
+			<li>OrganicStandard</li>
+		</hediffGiverSets>
+	</race>
+	<!-- humanRecipeImport enabled
+	<recipes>
+	  <li>InstallArchotechEye</li>
+	  <li>InstallArchotechArm</li>
+	  <li>InstallArchotechLeg</li>
+	  <li>InstallPowerClaw</li>
+	  <li>InstallBionicEye</li>
+	  <li>InstallBionicArm</li>
+	  <li>InstallBionicLeg</li>
+	  <li>InstallBionicSpine</li>
+	  <li>InstallBionicHeart</li>
+	  <li>InstallBionicStomach</li>
+	  <li>InstallBionicEar</li>
+	  <li>InstallSimpleProstheticArm</li>
+	  <li>InstallSimpleProstheticLeg</li>
+	  <li>InstallSimpleProstheticHeart</li>
+	  <li>InstallCochlearImplant</li>
+	  <li>InstallPegLeg</li>
+	  <li>InstallWoodenFoot</li>
+	  <li>InstallDenture</li>
+	  <li>InstallJoywire</li>
+	  <li>InstallPainstopper</li>
+	  <li>InstallNaturalHeart</li>
+	  <li>InstallNaturalLung</li>
+	  <li>InstallNaturalKidney</li>
+	  <li>InstallNaturalLiver</li>
+	  <li>ExciseCarcinoma</li>
+	  <li>AdministerMechSerumHealer</li>
+	  <li>RemoveBodyPart</li>
+	  <li>Euthanize</li>
+	  <li>Anesthetize</li>
+	</recipes>-->
 </AlienRace.ThingDef_AlienRace>
 </Defs>

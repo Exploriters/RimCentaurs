@@ -2,7 +2,10 @@
 <LanguageData>
 
   <CentaurPlayerColony.label>半人马新移民</CentaurPlayerColony.label>
+  <CentaurPlayerColony.leaderTitle>主要成员</CentaurPlayerColony.leaderTitle>
   <CentaurPlayerColony.description>最近来到边缘世界的一群殖民者。</CentaurPlayerColony.description>
+  <CentaurPlayerColony.pawnsPlural>殖民者</CentaurPlayerColony.pawnsPlural>
+  <CentaurPlayerColony.pawnSingular>殖民者</CentaurPlayerColony.pawnSingular>
   <CentaurPlayerColony.pawnsPlural>殖民者</CentaurPlayerColony.pawnsPlural>
 
 
