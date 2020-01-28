@@ -98,4 +98,8 @@
   <Slingline.verbs.0.label>投索</Slingline.verbs.0.label>
   <Slingline_Stone.label>投索石</Slingline_Stone.label>
   
+  <TriBattery.label>三联电池</TriBattery.label>
+  <TriBattery.description>储存电力以便稍后使用。充能的电池暴露在雨水或火焰中会爆炸。这个修改过的版本具有三倍的储量</TriBattery.description>
+  
+  
 </LanguageData>

@@ -139,21 +139,29 @@
  -->
 	<ScenarioDef>
 		<defName>TheRichExplorerCentaur</defName>
-		<label>The Rich Centaur Explorer</label>
-		<description>People called you crazy for leaving your glitterworld home, but you always yearned to explore the stars - outside the neurosimulator. Now you're at the end of your long journey in cryptosleep, landing on an unknown rimworld to see what it's like.\n\nNote: Since your starting character will lack some skills, this is an especially difficult scenario in the early game.</description>
+		<label>The Centaur Explorer</label>
+		<description>Centaur is a fantastic urban legend. None really believes that centaurs are exists in the world, and no one has witnessed the appearance of centaurs, or even thought about it.\n\nUntil you showed up.\n\nTechnically, centaurs have a complete human genome and have been added extra patches made them from growing into normal humans, but no one knows where they exactly came from. Apart from the extra two legs and horrifying physical strength, centaurs and humans are the same in most ways. But people were more willing to pay attention to the part of this larger difference.\n\nThe lack of ftl-communication means makes the circulation of information extremely difficult. You couldn't find same kind, nor inquired about any valuable information about the other centaur. In fact, most people haven't even heard of centaurs stuff before you show up.\n\nAt the beginning of your memory as a centaur, you were the focal point of the whole region. Kinds of people, for kinds of purposes, whether you like want to or not, want to have a relationship with you, or dragged you down. Then, when they got bored, they started repel you. Finally, just because you are not human, you were not even treated as an individual with rights.\n\nPeople didn't really try to force you out, but you chose to leave, as this place doesn't welcome you. After heard the witness of other centaur, you packed up all your things, left the place where you felt no intimacy, and went to find your own race.\n\nNow, you land in an unknown wilderness. There's nothing else to bother you here, most areas have not been developed, and no one will stop you.\n\nWelcome to Rimworld. --Mayinas</description>
 		<scenario>
-			<summary>One rich centaur explorer out to experience the universe. Extra difficult.</summary>
+			<summary>A centaur who abandoned hometown to seeks a companion in the universe.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
 				<factionDef>CentaurPlayerColony</factionDef>
 			</playerFaction>
 			<parts>
 
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>None will join you way to rimworld, they may consider you are committing a mad suicide, but you left without saying goodbye. Maybe they will miss you? You didn't left anything there. After taking everything you can bring, you don't care about it anymore.\n\nImportant is, you finally got some valuable information, more or less. You got a witness report of centaur activity, which located at a rimworld. After a long and lonely journey of decades, you are now closer to your destination than ever before.\n\nAlthough it is desolate here, it is not completely no human activities. Actually, the population here is much larger than you thought, and includes the one you yearn for - although you haven't know who the other party is, yet. In any case, this is almost your only chance to find a partner.\n\nCan you fulfill this dream?</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+
 				<!-- Config pages -->
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
 					<def>ConfigPage_ConfigureStartingPawns</def>
 					<pawnCount>1</pawnCount>
-          <pawnChoiceCount>0</pawnChoiceCount>
+					<pawnChoiceCount>0</pawnChoiceCount>
+					<visible>false</visible>
 				</li>
 
 				<!-- Player starting stuff spawn method-->
@@ -166,63 +174,67 @@
 				<!-- Starting research -->
 				<li Class="ScenPart_StartingResearch">
 					<def>StartingResearch</def>
-					<project>GunTurrets</project>
+					<visible>false</visible>
+					<project>Fabrication</project>
 				</li>
 
 				<!-- Player starting things -->
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
+					<visible>false</visible>
 					<thingDef>Silver</thingDef>
-					<count>2000</count>
+					<count>5000</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>Gold</thingDef>
-					<count>30</count>
+					<visible>false</visible>
+					<thingDef>Plasteel</thingDef>
+					<count>750</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
+					<visible>false</visible>
+					<thingDef>ComponentSpacer</thingDef>
+					<count>50</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<visible>false</visible>
 					<thingDef>MealSurvivalPack</thingDef>
 					<count>40</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>MedicineUltratech</thingDef>
-					<count>30</count>
-				</li>
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>ComponentIndustrial</thingDef>
-					<count>30</count>
-				</li>
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>Gun_ChargeRifle</thingDef>
-				</li>
-				<!--<li Class="ScenPart_StartingAnimal">
-					<def>StartingAnimal</def>
+					<visible>false</visible>
+					<thingDef>MealLavish</thingDef>
 					<count>1</count>
-					<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
-				</li>-->
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<visible>false</visible>
+					<thingDef>MedicineUltratech</thingDef>
+					<count>50</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<visible>false</visible>
+					<thingDef>TriBattery</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<visible>false</visible>
+					<thingDef>VanometricPowerCell</thingDef>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<visible>false</visible>
+					<thingDef>Gun_CentaurChargeShotgun</thingDef>
+					<count>1</count>
+				</li>
 
 				<!-- Scatter some things near player start -->
-				<li Class="ScenPart_ScatterThingsNearPlayerStart">
-					<def>ScatterThingsNearPlayerStart</def>
-					<thingDef>Steel</thingDef>
-					<count>450</count>
-				</li>
-				<li Class="ScenPart_ScatterThingsNearPlayerStart">
-					<def>ScatterThingsNearPlayerStart</def>
-					<thingDef>WoodLog</thingDef>
-					<count>300</count>
-				</li>
-
-				<!-- Game start dialog -->
-				<li Class="ScenPart_GameStartDialog">
-					<def>GameStartDialog</def>
-					<text>The neurosimulations, holo-games, and free-orgies were never enough for you. You wanted more - the grit and consequence of real life, like they talk about in the history books. You wanted to know what real challenge and consequence feel like.\n\nNow, after a journey of decades in cryptosleep, you're landing on this unknown rimworld. Real consequences await you.</text>
-					<closeSound>GameStartSting</closeSound>
-				</li>
 
 			</parts>
 		</scenario>

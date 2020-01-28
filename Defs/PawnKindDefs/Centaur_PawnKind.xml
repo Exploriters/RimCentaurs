@@ -6,7 +6,6 @@
     <label>colonist</label>
 	<race>Alien_Centaur</race>
     <defaultFactionType>PlayerColony</defaultFactionType>
-	<leaderTitle>head member</leaderTitle>
 	
     <minGenerationAge>0</minGenerationAge>
     <maxGenerationAge>18</maxGenerationAge>
