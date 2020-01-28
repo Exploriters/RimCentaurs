@@ -1,0 +1,15 @@
+*~
+*.vim
+
+.vs
+Debug
+Develop
+Release
+
+*.user
+
+magnuassembly
+magnuassembly.sln
+
+.ssh/
+.gnupg/
