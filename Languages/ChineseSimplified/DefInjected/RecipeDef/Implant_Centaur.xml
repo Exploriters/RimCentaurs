@@ -1,9 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <InstallLinguisticsuppressor.label>安装语言阻塞器</InstallLinguisticsuppressor.label>
-  <InstallLinguisticsuppressor.description>安装语言阻塞器。</InstallLinguisticsuppressor.description>
-  <InstallLinguisticsuppressor.jobString>正在安装语言阻塞器。</InstallLinguisticsuppressor.jobString>
+  <InstallHyperManipulator.label>安装高级操作器</InstallHyperManipulator.label>
+  <InstallHyperManipulator.description>安装高级操作器。</InstallHyperManipulator.description>
+  <InstallHyperManipulator.jobString>正在安装高级操作器。</InstallHyperManipulator.jobString>
+
+  <InstallMentalBurster.label>安装精神爆发芯片</InstallMentalBurster.label>
+  <InstallMentalBurster.description>安装精神爆发芯片。</InstallMentalBurster.description>
+  <InstallMentalBurster.jobString>正在安装精神爆发芯片。</InstallMentalBurster.jobString>
 
 
 </LanguageData>

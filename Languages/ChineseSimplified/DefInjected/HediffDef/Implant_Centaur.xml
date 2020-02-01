@@ -1,8 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <Linguisticsuppressor.label>语言阻塞器</Linguisticsuppressor.label>
-  <Linguisticsuppressor.labelNoun>一个语言阻塞器</Linguisticsuppressor.labelNoun>
+  <MentalBurster.label>精神爆发芯片</MentalBurster.label>
+  <MentalBurster.labelNoun>一个精神爆发芯片</MentalBurster.labelNoun>
+  <MentalBurster.description>一个为人马提供的大脑植入物用于增强感知并降低疼痛。</MentalBurster.description>
+
+  <HyperManipulator.label>高级操作器</HyperManipulator.label>
+  <HyperManipulator.labelNoun>一个高级操作器</HyperManipulator.labelNoun>
+  <HyperManipulator.description>一套替换手臂的远程操作器。</HyperManipulator.description>
 
 
 </LanguageData>
