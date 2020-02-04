@@ -4,7 +4,7 @@
 
   <ThoughtDef>
     <defName>EnvironmentCold_Centaur</defName>
-    <!-- <workerClass>ThoughtWorker_Cold</workerClass> -->
+     <workerClass>ThoughtWorker_Cold</workerClass>
     <validWhileDespawned>true</validWhileDespawned>
 	<stackLimit>1</stackLimit>
     <stages>
@@ -33,7 +33,7 @@
 
   <ThoughtDef>
     <defName>EnvironmentHot_Centaur</defName>
-    <!-- <workerClass>ThoughtWorker_Hot</workerClass> -->
+    <workerClass>ThoughtWorker_Hot</workerClass>
     <validWhileDespawned>true</validWhileDespawned>
 	<stackLimit>1</stackLimit>
     <stages>
@@ -94,8 +94,8 @@
 		<stages>
 			<li>
 				<label>slept in the cold</label>
-				<description>I had to sleep in the cold.</description>
-				<baseMoodEffect>-2</baseMoodEffect>
+				<description>I had to sleep in a unbearable chill.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>
@@ -116,7 +116,7 @@
 
   <ThoughtDef>
     <defName>NeedOutdoors_Centaur</defName>
-    <!-- <workerClass>ThoughtWorker_NeedOutdoors</workerClass> -->
+    <workerClass>ThoughtWorker_NeedOutdoors</workerClass>
 	<stackLimit>1</stackLimit>
     <stages>
       <li>
@@ -146,5 +146,33 @@
       </li>
     </stages>
   </ThoughtDef>
+  
+  
+
+  <ThoughtDef>
+    <defName>BothCentaur</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <!-- <workerClass>ThoughtWorker_AlwaysActive</workerClass> -->
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>both centaur</label>
+        <baseOpinionOffset>40</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+	<ThoughtDef>
+		<defName>SpotCentaur</defName>
+		<durationDays>15</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>spot other centaur</label>
+				<description>We got company. I am not alone, never more.</description>
+				<baseMoodEffect>25</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
   
 </Defs>

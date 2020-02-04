@@ -68,14 +68,12 @@
   <!-- <Bow_Trishot.verbs.Verb_Shoot.label>三射弓</Bow_Trishot.verbs.Verb_Shoot.label> -->
   <Bow_Trishot.verbs.0.label>三重打击</Bow_Trishot.verbs.0.label>
   <Bow_Trishot.verbs.0.desc>标准三射模式。</Bow_Trishot.verbs.0.desc>
-  <Bow_Trishot.verbs.1.label>抛射打击</Bow_Trishot.verbs.1.label>
+  <Bow_Trishot.verbs.1.label>廿射打击</Bow_Trishot.verbs.1.label>
   <Bow_Trishot.verbs.1.desc>发射高能射击的强力模式，造成更多伤害并且射击距离更远，能够越墙射击但不能对近距离目标开火。</Bow_Trishot.verbs.1.desc>
-  <Bow_Trishot.verbs.2.label>散射打击</Bow_Trishot.verbs.2.label>
-  <Bow_Trishot.verbs.2.desc>一把预先安装了的霰弹仍然可以使用。</Bow_Trishot.verbs.2.desc>
 
   <Arrow_Trishot.label>三射弓爆炸箭</Arrow_Trishot.label>
   <Arrow_Trishot_Hyper.label>高级爆炸箭</Arrow_Trishot_Hyper.label>
-  <Arrow_Trishot_Hyper_D20.label>高级爆炸箭</Arrow_Trishot_Hyper_D20.label>
+  <Arrow_Trishot_Hyper_20D.label>高级爆炸箭</Arrow_Trishot_Hyper_20D.label>
   <Arrow_Trishot_Super.label>超级爆炸箭</Arrow_Trishot_Super.label>
 
   <Filth_FrostdustBlue.label>蓝色冷凝物质</Filth_FrostdustBlue.label>

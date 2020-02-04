@@ -1,34 +1,265 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <HediffDef ParentName="ImplantHediffBase">
-    <defName>Linguisticsuppressor</defName>
-    <label>linguisticsuppressor</label>
-    <labelNoun>a linguisticsuppressor</labelNoun>
+  
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>HyperManipulator</defName>
+    <label>physic manipulator</label>
+    <labelNoun>a physic manipulator</labelNoun>
+	<description>An pair of devices replacing arms with a powerful remote manipulator.</description>
     <defaultLabelColor>(0.4, 0.75, 1)</defaultLabelColor>
     <stages>
       <li>
-        <painFactor>0.15</painFactor>
-        <painOffset>-0.05</painOffset>
-		<partEfficiencyOffset>1.05</partEfficiencyOffset>
+        <!-- <opinionOfOthersFactor>1</opinionOfOthersFactor> -->
+        <partIgnoreMissingHP>false</partIgnoreMissingHP>
+        <!-- <painFactor>0.85</painFactor>
+        <painOffset>-0.15</painOffset>
+		<partEfficiencyOffset>0.15</partEfficiencyOffset>
         <capMods>
           <li>
-            <capacity>Consciousness</capacity>
+            <capacity>Moving</capacity>
             <postFactor>1.05</postFactor>
           </li>
           <li>
-            <capacity>Talking</capacity>
-            <setMax>0</setMax>
+            <capacity>Manipulation</capacity>
+            <offset>0.5</offset>
+            <postFactor>2</postFactor>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <postFactor>2</postFactor>
+          </li>
+          <li>
+            <capacity>Hearing</capacity>
+            <postFactor>2</postFactor>
           </li>
         </capMods>
+		<statOffsets>
+			<GlobalLearningFactor>1.5</GlobalLearningFactor>
+			<PainShockThreshold>99999</PainShockThreshold>
+		</statOffsets> -->
+		<hediffGivers>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>HyperManipulator</hediff>
+				<minSeverity>0.50</minSeverity>
+				<baseMtbDays>0.00002</baseMtbDays>
+				<!-- <mtbDays>0.00002</mtbDays> -->
+				<partsToAffect>
+					<li>Shoulder</li>
+				</partsToAffect>
+				<countToAffect>2</countToAffect>
+			</li>
+		</hediffGivers>
       </li>
     </stages>
-    <spawnThingOnRemoved>Linguisticsuppressor</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>5</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+	  <hitPoints>35</hitPoints>
+    </addedPartProps>
+    <comps>
+	  <li Class="HediffCompProperties_HealPermanentWounds" />
+      <li Class="HediffCompProperties_VerbGiver">
+        <!-- <tools>
+		  <li>
+			<label>frost smasher</label>
+			<capacities>
+			  <li>Cut</li>
+			</capacities>
+			<power>20</power>
+			<cooldownTime>1</cooldownTime>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>20</amount>
+				</li>
+				<li>
+				  <def>EMP</def>
+				  <amount>20</amount>
+				</li>
+				<li>
+				  <def>Frostblast</def>
+				  <amount>20</amount>
+				</li>
+				<li>
+				  <def>Blunt</def>
+				  <amount>3</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+        </tools> -->
+      </li>
+    </comps>
+    <!-- <spawnThingOnRemoved>HyperManipulator</spawnThingOnRemoved> -->
+  </HediffDef>
+  
+    <ThingDef ParentName="BodyPartArchotechBase">
+    <defName>HyperManipulator</defName>
+    <label>physic manipulator</label>
+    <description>An pair of arm-replacing devices built by an unknown centaur-archotech. It removes one's arms, replacing it's shoulders with a powerful remote manipulator that can interact objects around without directly contect, strong enough to crush a thick hardwood branch, and precise enough to write a sonnet on a grain of rice. It can controllably generating Holographic projection which looks and feels like natural flesh, and dynamically reposition center of mass to keep balance. If it is harmed, it repairs itself over time. Its internal workings are a mystery to all minds.</description>
+    <techLevel>Archotech</techLevel>
+    <thingSetMakerTags>
+      <!-- <li>RewardSpecial</li> -->
+    </thingSetMakerTags>
+    <statBases>
+      <MarketValue>8000</MarketValue>
+      <Mass>20</Mass>
+    </statBases>
+    <techHediffsTags>
+      <!-- <li>Advanced</li> -->
+    </techHediffsTags>
+    <tradeability>Sellable</tradeability>
+	
+    <!--<ingestible>
+      <preferability>NeverForNutrition</preferability>
+      <!- - <drugCategory>Medical</drugCategory> - ->
+      <baseIngestTicks>600</baseIngestTicks>
+      <chairSearchRadius>0</chairSearchRadius>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <!- - <ingestSound>None</ingestSound> - ->
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+		  <hediffDef>HyperManipulator</hediffDef>
+          <severity>1.0</severity>
+          <partsToAffect>
+			<li>Shoulder</li>
+			<li>Shoulder</li>
+          </partsToAffect>
+		  <divideByBodySize>false</divideByBodySize>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+		  <hediffDef>HyperManipulator</hediffDef>
+          <severity>1.0</severity>
+          <partsToAffect>
+			<li>Shoulder</li>
+			<li>Shoulder</li>
+          </partsToAffect>
+		  <divideByBodySize>false</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible> -->
+    <!-- <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem_NonInturruptible</useJob>
+        <useLabel>assemble physic manipulator on self</useLabel>
+        <useDuration>6000</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>IngestionOutcomeDoer_GiveHediff</compClass>
+		<hediffDef>HyperManipulator</hediffDef>
+		<severity>1</severity>
+		<divideByBodySize>true</divideByBodySize>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>IngestionOutcomeDoer_GiveHediff</compClass>
+		<hediffDef>HyperManipulator</hediffDef>
+		<severity>1</severity>
+		<divideByBodySize>true</divideByBodySize>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_DestroySelf</compClass>
+      </li>
+    </comps> -->
+  </ThingDef>
+  
+  <JobDef>
+    <defName>UseItem_NonInturruptible</defName>
+    <driverClass>JobDriver_UseItem</driverClass>
+    <reportString>using TargetA.</reportString>
+    <playerInterruptible>false</playerInterruptible>
+    <casualInterruptible>false</casualInterruptible>
+	<suspendable>false</suspendable>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallHyperManipulator</defName>
+    <label>install physic manipulator</label>
+    <description>Install a physic manipulator.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing physic manipulator.</jobString>
+    <workAmount>6000</workAmount>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>HyperManipulator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>HyperManipulator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Shoulder</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>HyperManipulator</addsHediff>
+  </RecipeDef>
+  
+<HediffDef ParentName="ImplantHediffBase">
+    <defName>MentalBurster</defName>
+    <label>mental burster</label>
+    <labelNoun>a mental burster</labelNoun>
+	<description>A brain implant for centaurs to increase one's consciousness and reduce pain.</description>
+    <defaultLabelColor>(0.4, 0.75, 1)</defaultLabelColor>
+	<comps>
+		<li Class="HediffCompProperties_HealPermanentWounds" />
+	</comps>
+    <stages>
+      <li>
+        <painFactor>0.85</painFactor>
+        <painOffset>-0.15</painOffset>
+		<partEfficiencyOffset>0.15</partEfficiencyOffset>
+        <partIgnoreMissingHP>true</partIgnoreMissingHP>
+        <capMods>
+          <li>
+            <capacity>Talking</capacity>
+            <offset>-0.05</offset>
+            <!-- <postFactor>2</postFactor> -->
+            <!-- <setMax>0</setMax> -->
+          </li>
+        </capMods>
+		<statOffsets>
+			<PainShockThreshold>99999</PainShockThreshold>
+		</statOffsets>
+      </li>
+    </stages>
+    <!-- <addedPartProps>
+      <solid>false</solid>
+      <partEfficiency>1.15</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps> -->
+    <spawnThingOnRemoved>MentalBurster</spawnThingOnRemoved>
   </HediffDef>
   
   <ThingDef ParentName="ImplantBase">
-    <defName>Linguisticsuppressor</defName>
-    <label>linguisticsuppressor</label>
-    <description>A brain implant which inhibits used to improve one's consciousness at cost of the talking ability.</description>
+    <defName>MentalBurster</defName>
+    <label>mental burster</label>
+    <!-- <description>A brain implant for centaurs which inhibits used to reactivate one's remote manipulate ability.</description> -->
+	<description>A brain implant for centaurs to increase one's consciousness and reduce pain, but not completely removes pain as what painstopper do.</description>
     <graphicData>
       <texPath>Things/Item/Health/HealthItemBionic</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -44,14 +275,15 @@
     <techHediffsTags>
       <!-- <li>Advanced</li> -->
     </techHediffsTags>
+    <tradeability>Sellable</tradeability>
   </ThingDef>
 
   <RecipeDef ParentName="SurgeryFlesh">
-    <defName>InstallLinguisticsuppressor</defName>
-    <label>install linguisticsuppressor</label>
-    <description>Install a linguisticsuppressor.</description>
+    <defName>InstallMentalBurster</defName>
+    <label>install mental burster</label>
+    <description>Install a mental burster.</description>
     <workerClass>Recipe_InstallImplant</workerClass>
-    <jobString>Installing linguisticsuppressor.</jobString>
+    <jobString>Installing mental burster.</jobString>
     <workAmount>3700</workAmount>
     <deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
     <skillRequirements>
@@ -69,7 +301,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Linguisticsuppressor</li>
+            <li>MentalBurster</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -80,12 +312,12 @@
         <li>Medicine</li>
       </categories>
       <thingDefs>
-        <li>Linguisticsuppressor</li>
+        <li>MentalBurster</li>
       </thingDefs>
     </fixedIngredientFilter>
     <appliedOnFixedBodyParts>
       <li>Brain</li>
     </appliedOnFixedBodyParts>
-    <addsHediff>Linguisticsuppressor</addsHediff>
+    <addsHediff>MentalBurster</addsHediff>
   </RecipeDef>
 </Defs>

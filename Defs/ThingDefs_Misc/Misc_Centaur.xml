@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <!-- ====================================== Centaur Civilian =========================================== -->
@@ -575,7 +575,7 @@
         <li>Arms</li>
         <li>CentaurLegs</li>
       </bodyPartGroups>
-      <!-- <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurPlateArmor/CentaurPlateArmor</wornGraphicPath> Texture Unfinished -->
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurPlateArmor/CentaurPlateArmor</wornGraphicPath>
       <layers>
         <li>Middle</li>
         <li>Shell</li>
@@ -660,7 +660,7 @@
     </graphicData>
     <statBases>
       <WorkToMake>100000</WorkToMake>
-      <MaxHitPoints>600</MaxHitPoints>
+      <MaxHitPoints>1800</MaxHitPoints>
       <Mass>20</Mass>
       <Flammability>0</Flammability>
       <ArmorRating_Sharp>2.00</ArmorRating_Sharp>
@@ -693,6 +693,7 @@
     </costList>
     <apparel>
       <bodyPartGroups>
+			<li>FullHead</li>
         <li>Torso</li>
         <li>Neck</li>
         <li>Shoulders</li>
@@ -1440,7 +1441,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ThermoDamper</defName>
     <label>thermo damper</label>
-    <description>A durable container, act as a powerful power core, AKA "Environment Thermoelectric Reactor", that generates energy by absorb environment heat. When you placing it indoor, it will drain heat in the room. This technology is developed by unknowns but likly centaurs, and is beyond even most glitterworld societies. Its internal workings are a mystery to all minds, althought it likly extracts energy directly from a singularity in it, means it likly explode on hit.\n\nThis device is however much lighter than it looks like.\n\nAlthought it was crazy but you did can load it into mortar and launch it out.</description>
+    <description>A durable container, act as a powerful power core, AKA "Environment Thermoelectric Reactor", that generates energy by absorb environment heat. When you placing it indoor, it will drain heat in the room. This technology is developed by unknowns but likly centaurs, and is beyond even most glitterworld societies. Its internal workings are a mystery to all minds, althought it likly extracts energy directly from a singularity in it, means it likly explode on hit.\n\nThis device is however much lighter than it looks like.</description>
     <graphicData>
       <texPath>Things/Item/Special/ThermoDamper</texPath>
       <!-- <texPath>Things/Projectile/Arrow_Trishot</texPath> -->
@@ -1462,7 +1463,7 @@
     </statBases>
     <thingCategories>
       <li>Items</li>
-      <li>MortarShells</li>
+      <!-- <li>MortarShells</li> -->
     </thingCategories>
     <drawGUIOverlay>false</drawGUIOverlay>
     <tradeability>Sellable</tradeability>
@@ -1470,7 +1471,7 @@
     <specialDisplayRadius>39.95</specialDisplayRadius>
     <tradeTags>
       <li>ExoticMisc</li>
-      <li>MortarShell</li>
+      <!-- <li>MortarShell</li> -->
       <li>ThermoDamper</li>
     </tradeTags>
     <comps>
@@ -1496,7 +1497,7 @@
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
         <heatPerSecond>-20</heatPerSecond>
-        <heatPushMinTemperature>-273</heatPushMinTemperature>
+        <!-- <heatPushMinTemperature>-273</heatPushMinTemperature> -->
       </li>
       <li Class="CompProperties_Glower">
         <glowRadius>20</glowRadius>
@@ -1515,7 +1516,6 @@
         <startWickHitPointsPercent>0.25</startWickHitPointsPercent>
         <chanceToStartFire>0</chanceToStartFire>
         <damageFalloff>true</damageFalloff>
-        <!-- <explosionEffect>GiantExplosion</explosionEffect> -->
       <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
       <explosionEffect>GiantExplosion</explosionEffect>
         <explosionSound>Explosion_GiantBomb</explosionSound>
@@ -1523,6 +1523,21 @@
           <min>180</min>
           <max>600</max>
         </wickTicks>
+      </li>
+      <li Class="CompProperties_Usable">
+        <useJob>DetonateThermoDamper</useJob>
+        <useLabel>Detonate thermo damper</useLabel>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_StartWick</compClass>
+      </li>
+      <li Class="CompProperties_ProximityFuse">
+        <target>Filth_FrostdustBlue</target>
+        <radius>0.05</radius>
+      </li>
+      <li Class="CompProperties_ProximityFuse">
+        <target>Filth_FrostdustOrange</target>
+        <radius>0.05</radius>
       </li>
 	  
 	  
@@ -1533,14 +1548,22 @@
       </li> -->
 	  
     </comps>
-    <projectileWhenLoaded>Arrow_Trishot_Super</projectileWhenLoaded>
+    <!-- <projectileWhenLoaded>Arrow_Trishot_Super</projectileWhenLoaded> -->
   </ThingDef>
+  
+  <JobDef>
+    <defName>DetonateThermoDamper</defName>
+    <driverClass>JobDriver_UseItem</driverClass>
+    <reportString>detonating thermo damper.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
   
   <DamageDef Name="Frostblast">
     <defName>Frostblast</defName>
     <label>frostbite</label>
     <defaultDamage>20</defaultDamage>
-    <workerClass>DamageWorker_Frostbite</workerClass>
+    <!-- <workerClass>DamageWorker_Frostbite</workerClass> -->
+    <workerClass>DamageWorker_AddInjury</workerClass>
     <makesBlood>false</makesBlood>
     <canInterruptJobs>false</canInterruptJobs>
     <externalViolence>true</externalViolence>
@@ -1680,25 +1703,25 @@
 		<label>triple shot</label>
 		<!-- <texPath>UI/Commands/Pew</texPath> -->
 		<texPath>Things/Item/Equipment/WeaponRanged/BowTrishot</texPath>
-		<accuracyTouch>0.425</accuracyTouch>
+		<!-- <accuracyTouch>0.425</accuracyTouch>
 		<accuracyShort>0.383</accuracyShort>
 		<accuracyMedium>0.525</accuracyMedium>
-		<accuracyLong>0.35</accuracyLong>
+		<accuracyLong>0.35</accuracyLong> -->
       </li>
       <li Class="AdditionalVerb.VerbProperties_Custom">
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
 		<requireLineOfSight>false</requireLineOfSight>
-        <defaultProjectile>Arrow_Trishot_Hyper</defaultProjectile>
-        <forcedMissRadius>6</forcedMissRadius>
-        <ai_AvoidFriendlyFireRadius>10</ai_AvoidFriendlyFireRadius>
+        <defaultProjectile>Arrow_Trishot_Hyper_20D</defaultProjectile>
+        <forcedMissRadius>3</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>7</ai_AvoidFriendlyFireRadius>
 		<noiseRadius>20</noiseRadius>
 		<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
         <warmupTime>9</warmupTime>
         <minRange>11.95</minRange>
         <range>119.95</range>
-        <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
-        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>20</burstShotCount>
         <soundAiming>OrbitalTargeter_Aiming</soundAiming>
         <soundCast>Bow_Large</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -1711,16 +1734,16 @@
         </targetParams>
         <!-- <consumeFuelPerShot>0.25</consumeFuelPerShot> -->
 		
-		<desc>Bola mode that launch empowered hyper shot, deals more damage and shoot longer range, blast over walls but can't fire at close-up targets.</desc>
-		<label>bola shot</label>
+		<desc>Icos mode that launch empowered hyper shot, deals more damage and shoot longer range, blast over walls but can't fire at close-up targets.</desc>
+		<label>icos shot</label>
 		<!-- <texPath>UI/Commands/Pew</texPath> -->
-		<texPath>Things/Item/Equipment/WeaponRanged/Slingline</texPath>
-		<accuracyTouch>0.425</accuracyTouch>
+		<texPath>Things/Item/Equipment/WeaponRanged/CentaurChargeShotgun</texPath>
+		<!-- <accuracyTouch>0.425</accuracyTouch>
 		<accuracyShort>0.383</accuracyShort>
 		<accuracyMedium>0.525</accuracyMedium>
-		<accuracyLong>0.35</accuracyLong>
+		<accuracyLong>0.35</accuracyLong> -->
       </li>
-      <li Class="AdditionalVerb.VerbProperties_Custom">
+      <!-- <li Class="AdditionalVerb.VerbProperties_Custom">
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_CentaurChargeShotgun</defaultProjectile>
@@ -1736,13 +1759,13 @@
 		
 		<desc>A shotgun that pre-instilled in it is still available.</desc>
 		<label>scatter shot</label>
-		<!-- <texPath>UI/Commands/Pew</texPath> -->
+		<!- - <texPath>UI/Commands/Pew</texPath> - ->
 		<texPath>Things/Item/Equipment/WeaponRanged/CentaurChargeShotgun</texPath>
 		<accuracyTouch>0.95</accuracyTouch>
 		<accuracyShort>0.32</accuracyShort>
 		<accuracyMedium>0.275</accuracyMedium>
 		<accuracyLong>0.225</accuracyLong>
-      </li>
+      </li> -->
     </verbs>
     <tools>
       <li>
@@ -1855,6 +1878,77 @@
   </ThingDef>
   
   <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Arrow_Trishot_Hyper_20D</defName>
+    <label>trishot hyper arrow</label>
+    <useHitPoints>false</useHitPoints>
+    <neverMultiSelect>false</neverMultiSelect>
+    <statBases>
+      <MaxHitPoints>0</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Trishot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <flyOverhead>true</flyOverhead>
+      <damageDef>Frostblast</damageDef>
+      <damageAmountBase>3</damageAmountBase>
+      <stoppingPower>20</stoppingPower>
+      <armorPenetrationBase>0.0</armorPenetrationBase>
+      <speed>180</speed>
+      <explosionRadius>2.5</explosionRadius>
+      <preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.125</preExplosionSpawnChance>
+      <preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
+      <postExplosionSpawnThingDef>Filth_FrostdustOrange</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>0.125</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <!-- <explosionEffect>GiantExplosion</explosionEffect> -->
+      <ai_IsIncendiary>false</ai_IsIncendiary>
+	  <explosionDelay>0</explosionDelay>
+	  
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+	<comps>
+	  <li Class="CompProperties_HeatPusher">
+		<compClass>CompHeatPusherPowered</compClass>
+		<heatPerSecond>-12.5</heatPerSecond>
+	  </li>
+	  <li Class="CompProperties_Glower">
+		<glowRadius>10</glowRadius>
+		<glowColor>(127,192,255,0)</glowColor>
+	  </li>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>Filth_FrostdustBlue</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>
+			<min>1</min>
+			<max>89</max>
+		</spawnIntervalRange>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>Filth_FrostdustOrange</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>
+			<min>1</min>
+			<max>89</max>
+		</spawnIntervalRange>
+      </li>
+	</comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseProjectileNeolithic">
     <defName>Arrow_Trishot_Hyper</defName>
     <label>trishot hyper arrow</label>
     <useHitPoints>false</useHitPoints>
@@ -1899,13 +1993,12 @@
 	  <li Class="CompProperties_HeatPusher">
 		<compClass>CompHeatPusherPowered</compClass>
 		<heatPerSecond>-250</heatPerSecond>
-		<!-- <heatPushMinTemperature>-273</heatPushMinTemperature> -->
 	  </li>
 	  <li Class="CompProperties_Glower">
 		<glowRadius>10</glowRadius>
 		<glowColor>(127,192,255,0)</glowColor>
 	  </li>
-      <li Class="CompProperties_Spawner">
+      <!-- <li Class="CompProperties_Spawner">
         <requiresPower>false</requiresPower>
         <thingToSpawn>Filth_FrostdustBlue</thingToSpawn>
         <spawnCount>1</spawnCount>
@@ -1922,7 +2015,7 @@
 			<min>1</min>
 			<max>2</max>
 		</spawnIntervalRange>
-      </li>
+      </li> -->
 	</comps>
   </ThingDef>
   
@@ -1971,13 +2064,12 @@
 	  <li Class="CompProperties_HeatPusher">
 		<compClass>CompHeatPusherPowered</compClass>
 		<heatPerSecond>-600</heatPerSecond>
-		<!-- <heatPushMinTemperature>-273</heatPushMinTemperature> -->
 	  </li>
 	  <li Class="CompProperties_Glower">
 		<glowRadius>20</glowRadius>
 		<glowColor>(127,192,255,0)</glowColor>
 	  </li>
-      <li Class="CompProperties_Spawner">
+      <!-- <li Class="CompProperties_Spawner">
         <requiresPower>false</requiresPower>
         <thingToSpawn>Filth_FrostdustBlue</thingToSpawn>
         <spawnCount>4</spawnCount>
@@ -1994,7 +2086,7 @@
 			<min>1</min>
 			<max>2</max>
 		</spawnIntervalRange>
-      </li>
+      </li> -->
       <!-- <li Class="CompProperties_Spawner">
         <requiresPower>false</requiresPower>
         <thingToSpawn>ThermoDamper</thingToSpawn>
@@ -2098,22 +2190,25 @@
       <ComponentSpacer>300</ComponentSpacer>
       <ThermoDamper>1</ThermoDamper>
     </costList>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
     <minifiedDef>MinifiedThing</minifiedDef>
     <!-- <minifiedDef>ThermoDamper</minifiedDef> -->
 	<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <resourcesFractionWhenDeconstructed>0.5</resourcesFractionWhenDeconstructed>
     <killedLeavings>
-      <ThermoDamper>1</ThermoDamper>
+      <ThermoDamper>0</ThermoDamper>
       <ComponentSpacer>25</ComponentSpacer>
       <ChunkSlagSteel>1</ChunkSlagSteel>
     </killedLeavings>
     <comps Inherit="False">
-      <li Class="CompProperties_Explosive">
+      <!-- <li Class="CompProperties_Explosive">
         <explosiveRadius>5.9</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
         <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
-      </li>
-      <!-- <li Class="CompProperties_Explosive">
+      </li> -->
+      <li Class="CompProperties_Explosive">
         <explosiveDamageType>FrostblastSuper</explosiveDamageType>
         <explosiveRadius>39.95</explosiveRadius>
 		<preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
@@ -2133,7 +2228,7 @@
           <min>180</min>
           <max>600</max>
         </wickTicks>
-      </li> -->
+      </li>
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -2681,7 +2776,7 @@
 -->
   <ThingDef ParentName="BuildingBase">
     <defName>TriBattery</defName>
-    <label>tri battery</label>
+    <label>triple battery</label>
     <description>Stores electricity for later use. Charged batteries explode when exposed to rain or fire. This modified version has triple storage than normal one.</description>
     <thingClass>Building_Battery</thingClass>
     <graphicData>
@@ -2742,6 +2837,81 @@
     </researchPrerequisites>
   </ThingDef>
   
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>ArtificialHivebox</defName>
+    <label>artificial hivebox</label>
+    <description>Slowly producing insect jelly by breeding insects in it. If it got destroyed, it may release these dangerous mega insect everywhere.</description>
+    <graphicData>
+      <texPath>Things/Building/Special/InfiniteChemreactor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3, 3)</drawSize>
+      <shadowData>
+        <volume>(1.8, 1.0, 0.2)</volume>
+        <offset>(0.0, 0.0, -0.4)</offset>
+      </shadowData>
+    </graphicData>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <costList>
+      <ComponentSpacer>4</ComponentSpacer>
+      <Uranium>12</Uranium>
+	  <Hyperweave>48</Hyperweave>
+    </costList>
+    <resourcesFractionWhenDeconstructed>0.5</resourcesFractionWhenDeconstructed>
+    <killedLeavings>
+      <InsectJelly>30</InsectJelly>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Uranium>5</Uranium>
+	  <Hyperweave>10</Hyperweave>
+      <Hive>1</Hive>
+	  <Filth_Slime>20</Filth_Slime>
+    </killedLeavings>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>true</requiresPower>
+        <thingToSpawn>InsectJelly</thingToSpawn>
+        <spawnCount>75</spawnCount>
+        <spawnIntervalRange><min>600000</min><max>600000</max></spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>true</showMessageIfOwned>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>9</glowRadius>
+        <glowColor>(113,141,117,0)</glowColor>
+      </li>
+    </comps>
+    <altitudeLayer>Building</altitudeLayer>
+    <building>
+      <uninstallWork>1200</uninstallWork>
+    </building>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Mass>20</Mass>
+      <WorkToBuild>16000</WorkToBuild>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+    <tickerType>Normal</tickerType>
+    <size>(2, 2)</size>
+    <fillPercent>1.0</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <passability>PassThroughOnly</passability>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <tradeability>Sellable</tradeability>
+  </ThingDef>
   
   
 </Defs>

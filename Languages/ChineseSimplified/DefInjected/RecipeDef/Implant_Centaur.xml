@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <InstallHyperManipulator.label>安装高级操作器</InstallHyperManipulator.label>
-  <InstallHyperManipulator.description>安装高级操作器。</InstallHyperManipulator.description>
-  <InstallHyperManipulator.jobString>正在安装高级操作器。</InstallHyperManipulator.jobString>
+  <InstallHyperManipulator.label>安装物理操作仪</InstallHyperManipulator.label>
+  <InstallHyperManipulator.description>安装物理操作仪。</InstallHyperManipulator.description>
+  <InstallHyperManipulator.jobString>正在安装物理操作仪。</InstallHyperManipulator.jobString>
 
   <InstallMentalBurster.label>安装精神爆发芯片</InstallMentalBurster.label>
   <InstallMentalBurster.description>安装精神爆发芯片。</InstallMentalBurster.description>
