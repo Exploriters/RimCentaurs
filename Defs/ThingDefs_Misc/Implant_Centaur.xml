@@ -1,12 +1,107 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
+  <HediffDef>
+    <defName>HyperManipulator_EnvironmentalHeat</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.95, 0.6, 0.75)</defaultLabelColor>
+    <label>manipulator overheating failure</label>
+    <!-- <taleOnVisible>HypothermiaRevealed</taleOnVisible> -->
+	<maxSeverity>10.0</maxSeverity>
+    <isBad>true</isBad>
+	<hediffGivers>
+		<li Class="HediffGiver_Heat">
+		  <hediff>HyperManipulator_EnvironmentalHeat</hediff>
+		</li>
+	</hediffGivers>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.1</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_Discoverable">
+        <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
+        <discoverLetterLabel>Manipulator overheating :{0}</discoverLetterLabel>
+        <discoverLetterText>The physic manipulator on {0} has begun to fail due to overheating ambient temperature. If it is not cooled on time, the manipulator will soon be seriously out of alignment and affect manipulate ability.\n\nEffects of overheating are temporary. The manipulator returned to a safe environmental temperature will eventually backs to normal and will not leave permanent damage, but the colonist may still be heatstroke or burned due to the high temperature.</discoverLetterText>
+        <letterType>NegativeEvent</letterType>
+        <messageType>NegativeEvent</messageType>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>initial</label>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <label>minor</label>
+        <minSeverity>0.05</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.92</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>moderate</label>
+        <minSeverity>0.2</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.8</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>serious</label>
+        <minSeverity>0.35</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.5</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>extreme</label>
+        <minSeverity>0.62</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.1</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>critical</label>
+        <minSeverity>0.95</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.05</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>fatal</label>
+        <minSeverity>3</minSeverity>
+        <!-- <lifeThreatening>true</lifeThreatening> -->
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.01</postFactor>
+            <setMax>0.05</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>HyperManipulator</defName>
     <label>physic manipulator</label>
     <labelNoun>a physic manipulator</labelNoun>
 	<description>An pair of devices replacing arms with a powerful remote manipulator.</description>
-    <defaultLabelColor>(0.4, 0.75, 1)</defaultLabelColor>
+    <defaultLabelColor>(0.5, 0.75, 1)</defaultLabelColor>
     <stages>
       <li>
         <!-- <opinionOfOthersFactor>1</opinionOfOthersFactor> -->
@@ -38,15 +133,18 @@
 			<PainShockThreshold>99999</PainShockThreshold>
 		</statOffsets> -->
 		<hediffGivers>
-			<li Class="HediffGiver_RandomDrugEffect">
+			<!-- <li Class="HediffGiver_RandomDrugEffect">
 				<hediff>HyperManipulator</hediff>
 				<minSeverity>0.50</minSeverity>
 				<baseMtbDays>0.00002</baseMtbDays>
-				<!-- <mtbDays>0.00002</mtbDays> -->
+				<!- - <mtbDays>0.00002</mtbDays> - ->
 				<partsToAffect>
 					<li>Shoulder</li>
 				</partsToAffect>
 				<countToAffect>2</countToAffect>
+			</li> -->
+			<li Class="HediffGiver_Heat">
+			  <hediff>HyperManipulator_EnvironmentalHeat</hediff>
 			</li>
 		</hediffGivers>
       </li>
@@ -55,16 +153,15 @@
       <solid>true</solid>
       <partEfficiency>5</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
-	  <hitPoints>35</hitPoints>
     </addedPartProps>
     <comps>
-	  <li Class="HediffCompProperties_HealPermanentWounds" />
+	  <!-- <li Class="HediffCompProperties_HealPermanentWounds" /> -->
       <li Class="HediffCompProperties_VerbGiver">
-        <!-- <tools>
+        <tools>
 		  <li>
 			<label>frost smasher</label>
 			<capacities>
-			  <li>Cut</li>
+			  <li>Frostblast</li>
 			</capacities>
 			<power>20</power>
 			<cooldownTime>1</cooldownTime>
@@ -78,18 +175,10 @@
 				  <def>EMP</def>
 				  <amount>20</amount>
 				</li>
-				<li>
-				  <def>Frostblast</def>
-				  <amount>20</amount>
-				</li>
-				<li>
-				  <def>Blunt</def>
-				  <amount>3</amount>
-				</li>
 			  </extraMeleeDamages>
 			</surpriseAttack>
 		  </li>
-        </tools> -->
+        </tools>
       </li>
     </comps>
     <!-- <spawnThingOnRemoved>HyperManipulator</spawnThingOnRemoved> -->
@@ -183,7 +272,7 @@
     <jobString>Installing physic manipulator.</jobString>
     <workAmount>6000</workAmount>
     <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
-    <targetCountAdjustment>1</targetCountAdjustment>
+    <!-- <targetCountAdjustment>1</targetCountAdjustment> -->
     <skillRequirements>
       <Medicine>8</Medicine>
     </skillRequirements>
@@ -214,7 +303,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <appliedOnFixedBodyParts>
-      <li>Shoulder</li>
+      <li>CentaurScapular</li>
     </appliedOnFixedBodyParts>
     <addsHediff>HyperManipulator</addsHediff>
   </RecipeDef>
@@ -224,7 +313,7 @@
     <label>mental burster</label>
     <labelNoun>a mental burster</labelNoun>
 	<description>A brain implant for centaurs to increase one's consciousness and reduce pain.</description>
-    <defaultLabelColor>(0.4, 0.75, 1)</defaultLabelColor>
+    <defaultLabelColor>(0.5, 0.75, 1)</defaultLabelColor>
 	<comps>
 		<li Class="HediffCompProperties_HealPermanentWounds" />
 	</comps>

@@ -10,9 +10,9 @@
    	 <beautyRelated>true</beautyRelated>
     <pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>
    	 <tags>
-		<li>MovingLimbSegment</li>
+		<!-- <li>MovingLimbSegment</li>
 		<li>ManipulationLimbSegment</li>
-		<!-- <li>MovingLimbDigit</li> -->
+		<li>MovingLimbDigit</li> -->
    	 </tags>
 	</BodyPartDef>
 
@@ -30,15 +30,19 @@
   </BodyPartDef>
 
   <BodyPartDef>
-    <defName>CentaurBiShouder</defName>
-    <label>shouders</label>
+    <defName>CentaurScapular</defName>
+    <label>scapular</label>
     <hitPoints>40</hitPoints>
     <skinCovered>true</skinCovered>
     <conceptual>true</conceptual>
     <solid>true</solid>
 	<bleedRate>0</bleedRate>
+    <canSuggestAmputation>false</canSuggestAmputation>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <frostbiteVulnerability>0</frostbiteVulnerability>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
   </BodyPartDef>
 
   <!-- <BodyPartDef>

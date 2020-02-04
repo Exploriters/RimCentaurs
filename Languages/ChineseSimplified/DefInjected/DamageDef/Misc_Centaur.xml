@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <Frostblash.label>冻伤</Frostblash.label>
-  <Frostblash.deathMessage>{0}被冻死了。</Frostblash.deathMessage>
-  <FrostblashSuper.label>冻伤</FrostblashSuper.label>
-  <FrostblashSuper.deathMessage>{0}被冻死了。</FrostblashSuper.deathMessage>
+  <Frostblast.label>穿透性冻伤</Frostblast.label>
+  <Frostblast.deathMessage>{0}被穿透性冻伤杀死了。</Frostblast.deathMessage>
+  <FrostblastSuper.label>穿透性冻伤</FrostblastSuper.label>
+  <FrostblastSuper.deathMessage>{0}被穿透性冻伤杀死了。</FrostblastSuper.deathMessage>
+  <Frostmelee.label>穿透性冻伤</Frostmelee.label>
+  <Frostmelee.deathMessage>{0}被穿透性冻伤杀死了。</Frostmelee.deathMessage>
 
 </LanguageData>
