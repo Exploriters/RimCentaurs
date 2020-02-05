@@ -104,29 +104,14 @@
     <defaultLabelColor>(0.5, 0.75, 1)</defaultLabelColor>
     <stages>
       <li>
-        <!-- <opinionOfOthersFactor>1</opinionOfOthersFactor> -->
         <partIgnoreMissingHP>false</partIgnoreMissingHP>
-        <!-- <painFactor>0.85</painFactor>
-        <painOffset>-0.15</painOffset>
-		<partEfficiencyOffset>0.15</partEfficiencyOffset>
-        <capMods>
-          <li>
-            <capacity>Moving</capacity>
-            <postFactor>1.05</postFactor>
-          </li>
+        <!-- 
+        <capMods>=
           <li>
             <capacity>Manipulation</capacity>
             <offset>0.5</offset>
             <postFactor>2</postFactor>
-          </li>
-          <li>
-            <capacity>Sight</capacity>
-            <postFactor>2</postFactor>
-          </li>
-          <li>
-            <capacity>Hearing</capacity>
-            <postFactor>2</postFactor>
-          </li>
+          </li>=
         </capMods>
 		<statOffsets>
 			<GlobalLearningFactor>1.5</GlobalLearningFactor>

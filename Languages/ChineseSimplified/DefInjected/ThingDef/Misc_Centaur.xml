@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <Orangice_Blue.label>蓝色橙冰</Orangice_Blue.label>
+  <Orangice_Blue.description>一种强大而罕见的物质，像冰一样但却是橙色的而不会熔化。能够被塑造成几乎任何形态，但真的需要耗费很长时间。\n\n这个被加工过的版本是蓝色的。</Orangice_Blue.description>
+  <Orangice_Blue.stuffProps.stuffAdjective>蓝冰制</Orangice_Blue.stuffProps.stuffAdjective>
+  
+  <Orangice.label>橙冰</Orangice.label>
+  <Orangice.description>一种强大而罕见的物质，像冰一样但却是橙色的而不会熔化。能够被塑造成几乎任何形态，但真的需要耗费很长时间。</Orangice.description>
+  <Orangice.stuffProps.stuffAdjective>橙冰制</Orangice.stuffProps.stuffAdjective>
 
   <Apparel_CentaurPants.label>半人马裤子</Apparel_CentaurPants.label>
   <Apparel_CentaurPants.description>一条给马穿的裤子。现在我们知道一只马要如何穿裤子了。</Apparel_CentaurPants.description>

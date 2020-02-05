@@ -1,6 +1,310 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <RecipeDef>
+    <defName>Make_Orangice</defName>
+    <label>make orangice</label>
+    <description>Make orangice by deassemble thermo damper. Needs excess thermo damper to do.</description>
+    <jobString>Making orangice.</jobString>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>200000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ThermoDamper</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hyperweave</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentSpacer</li>
+        <li>ThermoDamper</li>
+        <li>Uranium</li>
+        <li>Hyperweave</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Orangice>400</Orangice>
+      <ThermoDamper>2</ThermoDamper>
+    </products>
+    <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>20</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<recipeUsers Inherit="False">
+	  <li>FabricationBench</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>Recolor_Orangice_Blue</defName>
+    <label>recolor orangice to blue</label>
+    <description>Recolor orangice to blue. Needs excess thermo damper to do.</description>
+    <jobString>Recoloring orangice.</jobString>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>400</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Orangice</li>
+          </thingDefs>
+        </filter>
+        <count>400</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ThermoDamper</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Orangice</li>
+        <li>ThermoDamper</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Orangice_Blue>400</Orangice_Blue>
+      <ThermoDamper>1</ThermoDamper>
+    </products>
+    <skillRequirements>
+      <Crafting>13</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<recipeUsers Inherit="False">
+	  <li>FabricationBench</li>
+	  <li>TableMachining</li>
+	  <li>CraftingSpot</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>Recolor_Orangice_Orange</defName>
+    <label>recolor orangice to orange</label>
+    <description>Recolor orangice back to blue.</description>
+    <jobString>Recoloring orangice.</jobString>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>0</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Orangice_Blue</li>
+          </thingDefs>
+        </filter>
+        <count>400</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Orangice_Blue</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Orangice>400</Orangice>
+    </products>
+    <skillRequirements>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<recipeUsers Inherit="False">
+	  <li>FabricationBench</li>
+	  <li>TableMachining</li>
+	  <li>CraftingSpot</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>Recolor_Orangice_Orange_Single</defName>
+    <label>recolor single orangice to orange</label>
+    <description>Recolor a singe orangice back to orange.</description>
+    <jobString>Recoloring orangice.</jobString>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>0</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Orangice_Blue</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Orangice_Blue</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Orangice>1</Orangice>
+    </products>
+    <skillRequirements>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+	<recipeUsers Inherit="False">
+	  <li>FabricationBench</li>
+	  <li>TableMachining</li>
+	  <li>CraftingSpot</li>
+	</recipeUsers>
+  </RecipeDef>
+
+  <ThingDef ParentName="ResourceBase" Name="OrangiceBase">
+    <defName>Orangice</defName>
+    <label>orangice</label>
+    <description>A powerful rare material, icy stuff but orange and doesn't melt. Can be shaped into nearly any form, but takes really long time to do this.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/Orangice</texPath>
+      <!-- <graphicClass>Graphic_StackCount</graphicClass> -->
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tradeability>Sellable</tradeability>
+	<techLevel>Archotech</techLevel>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>200</MarketValue>
+      <Mass>0.05</Mass>
+      <StuffPower_Armor_Sharp>3.00</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>3.00</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>3.00</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>51</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>39</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>3.0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>3.0</BluntDamageMultiplier>
+      <HeatDamageMultiplier>3.0</HeatDamageMultiplier>
+      <Beauty>0</Beauty>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <deepCommonality>0</deepCommonality>
+    <deepCountPerPortion>1</deepCountPerPortion>
+    <stackLimit>400</stackLimit>
+    <deepLumpSizeRange>
+      <min>2</min>
+      <max>10</max>
+    </deepLumpSizeRange>
+    <stuffProps>
+      <stuffAdjective>orangicy</stuffAdjective>
+      <categories>
+        <li>Metallic</li>
+        <li>Fabric</li>
+        <li>Leathery</li>
+        <li>Stony</li>
+        <li>Woody</li>
+      </categories>
+      <commonality>0</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(255,184,86)</color>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <MaxHitPoints>120</MaxHitPoints>
+        <Beauty>20.0</Beauty>
+        <Flammability>-0.15</Flammability>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>20.0</MaxHitPoints>
+        <Beauty>5.0</Beauty>
+        <Flammability>0.05</Flammability>
+        <WorkToMake>20.0</WorkToMake>
+		<WorkToBuild>20.0</WorkToBuild>
+        <MeleeWeapon_CooldownMultiplier>0.85</MeleeWeapon_CooldownMultiplier>
+		<Mass>1</Mass>
+        <DoorOpenSpeed>3.0</DoorOpenSpeed>
+		<Comfort>3.0</Comfort>
+		<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+		<MedicalTendQualityOffset>0.05</MedicalTendQualityOffset>
+		<SurgerySuccessChanceFactor>1.05</SurgerySuccessChanceFactor>
+		<DeteriorationRate>0.05</DeteriorationRate>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <!-- <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+    <colorGeneratorInTraderStock Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>5</weight>
+          <only>(0.5,0.75,1)</only>
+        </li>
+        <li>
+          <weight>5</weight>
+          <only>(1.0,0.75,0)</only>
+        </li>
+      </options>
+    </colorGeneratorInTraderStock> -->
+  </ThingDef>
+  
+  <ThingDef ParentName="OrangiceBase">
+    <defName>Orangice_Blue</defName>
+    <label>blue orangice</label>
+    <description>A powerful rare material, icy stuff but orange and doesn't melt. Can be shaped into nearly any form, but takes really long time to do this.\n\nThis processed verison is blue.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/Orangice_Blue</texPath>
+      <!-- <graphicClass>Graphic_StackCount</graphicClass> -->
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <deepCommonality>0</deepCommonality>
+    <stuffProps>
+      <stuffAdjective>bluicy</stuffAdjective>
+      <color>(143,184,255)</color>
+    </stuffProps>
+  </ThingDef>
+
   <!-- ====================================== Centaur Civilian =========================================== -->
 
   <ThingDef Name="ApparelMakeableArtableBase" ParentName="ApparelMakeableBase" Abstract="True">
@@ -1462,12 +1766,12 @@
     <useHitPoints>true</useHitPoints>
 	<tickerType>Normal</tickerType>
     <statBases>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>10000</MarketValue>
       <MaxHitPoints>800</MaxHitPoints>
       <Mass>3</Mass>
       <Flammability>0</Flammability>
       <Beauty>0</Beauty>
-      <DeteriorationRate>0</DeteriorationRate>
+      <DeteriorationRate>-16000</DeteriorationRate>
     </statBases>
     <thingCategories>
       <li>Items</li>
@@ -1621,6 +1925,11 @@
     <isRanged>true</isRanged>
     <makesAnimalsFlee>true</makesAnimalsFlee>
 	
+    <minDamageToFragment>3</minDamageToFragment>
+    <defaultStoppingPower>1.05</defaultStoppingPower>
+    <buildingDamageFactor>1.5</buildingDamageFactor>
+    <plantDamageFactor>1.5</plantDamageFactor>
+	
     <combatLogRules>Damage_Flame</combatLogRules>
     <additionalHediffs>
       <li>
@@ -1665,8 +1974,10 @@
     <label>penetrative frostbite</label>
     <deathMessage>{0} has succumbed to penetrative frostbite.</deathMessage>
     <defaultDamage>200</defaultDamage>
-    <defaultStoppingPower>20.0</defaultStoppingPower>
-    <defaultArmorPenetration>0.0</defaultArmorPenetration>
+    <defaultStoppingPower>20.05</defaultStoppingPower>
+    <defaultArmorPenetration>1.0</defaultArmorPenetration>
+    <buildingDamageFactor>1.5</buildingDamageFactor>
+    <plantDamageFactor>1.5</plantDamageFactor>
   </DamageDef>
  
   <ToolCapacityDef>
@@ -2022,7 +2333,7 @@
 		<glowRadius>10</glowRadius>
 		<glowColor>(127,192,255,0)</glowColor>
 	  </li>
-      <li Class="CompProperties_Spawner">
+      <!-- <li Class="CompProperties_Spawner">
         <requiresPower>false</requiresPower>
         <thingToSpawn>Filth_FrostdustBlue</thingToSpawn>
         <spawnCount>1</spawnCount>
@@ -2039,7 +2350,7 @@
 			<min>1</min>
 			<max>89</max>
 		</spawnIntervalRange>
-      </li>
+      </li> -->
 	</comps>
   </ThingDef>
   
@@ -2220,6 +2531,7 @@
       <canFilthAttach>true</canFilthAttach>
       <maxThickness>3</maxThickness>
     </filth>
+    <pathCost>3</pathCost>
 	<!-- <comps>
 	  <li Class="CompProperties_HeatPusher">
 		<compClass>CompHeatPusherPowered</compClass>
@@ -2254,6 +2566,7 @@
       <canFilthAttach>true</canFilthAttach>
       <maxThickness>3</maxThickness>
     </filth>
+    <pathCost>3</pathCost>
 	<!-- <comps>
 	  <li Class="CompProperties_HeatPusher">
 		<compClass>CompHeatPusherPowered</compClass>
@@ -2962,6 +3275,7 @@
 	  <Hyperweave>10</Hyperweave>
       <Hive>1</Hive>
 	  <Filth_Slime>20</Filth_Slime>
+	  <Fire>4</Fire>
     </killedLeavings>
     <comps>
       <li Class="CompProperties_Power">
@@ -3002,6 +3316,7 @@
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
     <rotatable>false</rotatable>
     <canOverlapZones>false</canOverlapZones>
     <minifiedDef>MinifiedThing</minifiedDef>

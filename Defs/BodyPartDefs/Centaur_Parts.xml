@@ -21,8 +21,10 @@
     <label>hoof</label>
     <hitPoints>25</hitPoints>
 	<bleedRate>0</bleedRate>
+    <frostbiteVulnerability>0.5</frostbiteVulnerability>
     <skinCovered>false</skinCovered>
     <solid>true</solid>
+    <!-- <alive>false</alive> -->
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <tags>
       <li>MovingLimbSegment</li>
@@ -35,11 +37,11 @@
     <hitPoints>40</hitPoints>
     <skinCovered>true</skinCovered>
     <conceptual>true</conceptual>
-    <solid>true</solid>
-	<bleedRate>0</bleedRate>
-    <canSuggestAmputation>false</canSuggestAmputation>
+    <!-- <solid>true</solid> -->
+	<!-- <bleedRate>0</bleedRate> -->
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <frostbiteVulnerability>0</frostbiteVulnerability>
+    <canSuggestAmputation>false</canSuggestAmputation>
     <tags>
       <li>ManipulationLimbSegment</li>
     </tags>

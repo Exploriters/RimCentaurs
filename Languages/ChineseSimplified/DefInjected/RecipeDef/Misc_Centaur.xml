@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Make_Orangice.label>制作橙冰</Make_Orangice.label>
+  <Make_Orangice.description>拆解失温器来制作橙冰。需要富余的失温器。</Make_Orangice.description>
+  <Make_Orangice.jobString>正在制作橙冰。</Make_Orangice.jobString>
+
+  <Recolor_Orangice_Blue.label>将橙冰染为蓝色</Recolor_Orangice_Blue.label>
+  <Recolor_Orangice_Blue.description>将橙冰染成蓝色。需要富余的失温器。</Recolor_Orangice_Blue.description>
+  <Recolor_Orangice_Blue.jobString>正在对橙冰染色。</Recolor_Orangice_Blue.jobString>
+
+  <Recolor_Orangice_Orange.label>将橙冰染为橙色</Recolor_Orangice_Orange.label>
+  <Recolor_Orangice_Orange.description>将橙冰染回蓝色。</Recolor_Orangice_Orange.description>
+  <Recolor_Orangice_Orange.jobString>正在对橙冰染色。</Recolor_Orangice_Orange.jobString>
+
+  <Recolor_Orangice_Orange.label>将橙冰染为橙色</Recolor_Orangice_Orange.label>
+  <Recolor_Orangice_Orange.description>将橙冰染回蓝色。</Recolor_Orangice_Orange.description>
+  <Recolor_Orangice_Orange.jobString>正在对橙冰染色。</Recolor_Orangice_Orange.jobString>
+
+  <Recolor_Orangice_Orange_Single.label>将单个橙冰染为橙色</Recolor_Orangice_Orange_Single.label>
+  <Recolor_Orangice_Orange_Single.description>将单个橙冰染回蓝色。</Recolor_Orangice_Orange_Single.description>
+  <Recolor_Orangice_Orange_Single.jobString>正在对橙冰染色。</Recolor_Orangice_Orange_Single.jobString>
+
+</LanguageData>
