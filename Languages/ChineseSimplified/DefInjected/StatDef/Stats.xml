@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ToxicHypothermiaSensitivity.label>毒性低温症敏感度</ToxicHypothermiaSensitivity.label>
+  <ToxicHypothermiaSensitivity.description>毒性低温症累积对此生物造成影响的乘数，其主要来自毒性武器。</ToxicHypothermiaSensitivity.description>
+  
+</LanguageData>

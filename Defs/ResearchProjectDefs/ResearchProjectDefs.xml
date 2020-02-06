@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>TrishotProject</defName>
+    <label>trishot</label>
+    <description>Allows you craft an ultra weapon that used by centaur, Trishot, a powerful massive bow with long range that fires triple heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst.</description>
+    <baseCost>10000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>ChargedShot</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>14</researchViewX>
+    <researchViewY>4</researchViewY>
+    <!-- <discoveredLetterTitle>About: Trishot</discoveredLetterTitle>
+    <discoveredLetterText>????</discoveredLetterText>
+    <discoveredLetterMinDifficulty>1</discoveredLetterMinDifficulty> -->
+  </ResearchProjectDef>
+  
+</Defs>

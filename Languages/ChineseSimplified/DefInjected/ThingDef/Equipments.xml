@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Gun_CentaurChargeShotgun.label>电荷霰弹枪</Gun_CentaurChargeShotgun.label>
+  <Gun_CentaurChargeShotgun.description>发射高能电荷弹的霰弹枪。电荷弹科技使得每发子弹在离开枪管时都由不稳定能量进行充能，并且在击中物体的时候完全释放出来，大大增加了子弹的伤害。</Gun_CentaurChargeShotgun.description>
+  <Gun_CentaurChargeShotgun.tools.stock.label>弹匣</Gun_CentaurChargeShotgun.tools.stock.label>
+  <Gun_CentaurChargeShotgun.tools.barrel.label>枪管</Gun_CentaurChargeShotgun.tools.barrel.label>
+  <Gun_CentaurChargeShotgun.verbs.Verb_Shoot.label>电荷霰弹枪</Gun_CentaurChargeShotgun.verbs.Verb_Shoot.label>
+  <Bullet_CentaurChargeShotgun.label>电荷弹</Bullet_CentaurChargeShotgun.label>
+
+  <Bow_Trishot.label>三射弓</Bow_Trishot.label>
+  <Bow_Trishot.description>一把强大的远距离重型弓，能在单次爆发射击中射出三只携带延迟起爆热能释放爆炸物的远距离重箭。其需要强大的双臂因而只有半人马可以使用。由于其锋利边缘和沉重的质量，这把武器也可以是一个致命的近战武器。</Bow_Trishot.description>
+  <Bow_Trishot.tools.0.label>弓背</Bow_Trishot.tools.0.label>
+  <Bow_Trishot.tools.1.label>切割刃</Bow_Trishot.tools.1.label>
+  <Bow_Trishot.tools.2.label>制冰器</Bow_Trishot.tools.2.label>
+  <!-- <Bow_Trishot.verbs.Verb_Shoot.label>三射弓</Bow_Trishot.verbs.Verb_Shoot.label> -->
+  <Bow_Trishot.verbs.0.label>三重打击</Bow_Trishot.verbs.0.label>
+  <Bow_Trishot.verbs.0.desc>标准三射模式。</Bow_Trishot.verbs.0.desc>
+  <Bow_Trishot.verbs.1.label>廿射打击</Bow_Trishot.verbs.1.label>
+  <Bow_Trishot.verbs.1.desc>发射高能射击的强力模式，造成更多伤害并且射击距离更远，能够越墙射击但不能对近距离目标开火。</Bow_Trishot.verbs.1.desc>
+
+  <Arrow_Trishot.label>三射弓爆炸箭</Arrow_Trishot.label>
+  <Arrow_Trishot_Hyper.label>高级爆炸箭</Arrow_Trishot_Hyper.label>
+  <Arrow_Trishot_Hyper_20D.label>高级爆炸箭</Arrow_Trishot_Hyper_20D.label>
+  <Arrow_Trishot_Super.label>超级爆炸箭</Arrow_Trishot_Super.label>
+
+  <Slingline.label>投索</Slingline.label>
+  <Slingline.description>一个能将坚硬物体扔出去的简单武器，同时也是一个致命的近战武器。</Slingline.description>
+  <Slingline.tools.0.label>顶部</Slingline.tools.0.label>
+  <Slingline.verbs.0.label>投索</Slingline.verbs.0.label>
+
+  <Slingline_Stone.label>投索石</Slingline_Stone.label>
+
+</LanguageData>

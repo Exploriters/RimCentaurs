@@ -560,6 +560,7 @@ Centaur has a stronger physique, generally better appearance, larger appetite, s
 		<LeatherAmount>90</LeatherAmount>
 		<MeleeDodgeChance>1.25</MeleeDodgeChance>
 		<ToxicSensitivity>0.5</ToxicSensitivity>
+		<ToxicHypothermiaSensitivity>0</ToxicHypothermiaSensitivity>
 		<MaxHitPoints>250</MaxHitPoints>
 		
 		<WorkSpeedGlobal>1.5</WorkSpeedGlobal>
@@ -576,6 +577,7 @@ Centaur has a stronger physique, generally better appearance, larger appetite, s
 		<!-- <HungerRateMultiplier>1.0</HungerRateMultiplier> -->
 		<CarryingCapacity>150</CarryingCapacity>
 	</statBases>
+    <size>(2,2)</size>
 	<tools>
 	  <li>
 		<label>left fist</label>
@@ -806,6 +808,7 @@ Centaur has a stronger physique, generally better appearance, larger appetite, s
 	</race>
 	<recipes>
 	  <li>InstallHyperManipulator</li>
+	  <li>AdministerHyperManipulator</li>
 	  <li>InstallMentalBurster</li>
 	<!-- humanRecipeImport enabled
 	  <li>InstallArchotechEye</li>

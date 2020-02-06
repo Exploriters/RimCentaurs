@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseFilth">
+    <defName>Filth_FrostdustBlue</defName>
+    <label>blue frozen matter</label>
+    <!-- <thingClass>ThingWithComps</thingClass> -->
+    <description>A puddle of sticky freezing chemfuel.</description>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <Beauty>-11</Beauty>
+      <Cleanliness>-15</Cleanliness>
+      <MaxHitPoints>0</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(127, 192, 255, 127)</color>
+    </graphicData>
+    <filth>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>25</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <maxThickness>3</maxThickness>
+    </filth>
+    <pathCost>3</pathCost>
+	<!-- <comps>
+	  <li Class="CompProperties_HeatPusher">
+		<compClass>CompHeatPusherPowered</compClass>
+		<heatPerSecond>-10</heatPerSecond>
+		<heatPushMinTemperature>-273</heatPushMinTemperature>
+	  </li>
+	  <li Class="CompProperties_Glower">
+		<glowRadius>3</glowRadius>
+		<glowColor>(127,192,255,0)</glowColor>
+	  </li>
+	</comps> -->
+  </ThingDef>
+  <ThingDef ParentName="BaseFilth">
+    <defName>Filth_FrostdustOrange</defName>
+    <label>orange frozen matter</label>
+    <!-- <thingClass>ThingWithComps</thingClass> -->
+    <description>A puddle of sticky freezing chemfuel.</description>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <Beauty>-11</Beauty>
+      <Cleanliness>-15</Cleanliness>
+      <MaxHitPoints>0</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(255, 192, 0, 127)</color>
+    </graphicData>
+    <filth>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>25</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <maxThickness>3</maxThickness>
+    </filth>
+    <pathCost>3</pathCost>
+	<!-- <comps>
+	  <li Class="CompProperties_HeatPusher">
+		<compClass>CompHeatPusherPowered</compClass>
+		<heatPerSecond>-10</heatPerSecond>
+		<heatPushMinTemperature>-273</heatPushMinTemperature>
+	  </li>
+	  <li Class="CompProperties_Glower">
+		<glowRadius>3</glowRadius>
+		<glowColor>(255, 192, 0, 0)</glowColor>
+	  </li>
+	</comps> -->
+  </ThingDef>
+  
+</Defs>

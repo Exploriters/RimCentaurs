@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <MentalBurster.label>精神爆发芯片</MentalBurster.label>
+  <MentalBurster.labelNoun>一个精神爆发芯片</MentalBurster.labelNoun>
+  <MentalBurster.description>一个为人马提供的大脑植入物用于增强感知并降低疼痛。</MentalBurster.description>
+
+  <HyperManipulator.label>物理操作仪</HyperManipulator.label>
+  <HyperManipulator.labelNoun>一个物理操作仪</HyperManipulator.labelNoun>
+  <HyperManipulator.description>一套替换手臂的远程操作器。</HyperManipulator.description>
+  <HyperManipulator.comps.HediffComp_VerbGiver.tools.0.label>冷碎器</HyperManipulator.comps.HediffComp_VerbGiver.tools.0.label>
+  <HyperManipulator.stages.assembling.label>组装中</HyperManipulator.stages.assembling.label>
+  <HyperManipulator.stages.initial.label>初安装</HyperManipulator.stages.initial.label>
+  <HyperManipulator.stages.adapting.label>适应中</HyperManipulator.stages.adapting.label>
+  
+  <ToxicHypothermia.label>毒性低温症</ToxicHypothermia.label>
+  <ToxicHypothermia.stages.initial.label>轻微</ToxicHypothermia.stages.initial.label>
+  <ToxicHypothermia.stages.minor.label>较轻</ToxicHypothermia.stages.minor.label>
+  <ToxicHypothermia.stages.moderate.label>中度</ToxicHypothermia.stages.moderate.label>
+  <ToxicHypothermia.stages.serious.label>严重</ToxicHypothermia.stages.serious.label>
+  <ToxicHypothermia.stages.extreme.label>极重</ToxicHypothermia.stages.extreme.label>
+  <ToxicHypothermia.stages.critical.label>危急</ToxicHypothermia.stages.critical.label>
+  <ToxicHypothermia.stages.fatal.label>致命</ToxicHypothermia.stages.fatal.label>
+  
+  <HyperManipulator_EnvironmentalHeat.label>操作器过热失效</HyperManipulator_EnvironmentalHeat.label>
+  <HyperManipulator_EnvironmentalHeat.stages.initial.label>轻微</HyperManipulator_EnvironmentalHeat.stages.initial.label>
+  <HyperManipulator_EnvironmentalHeat.stages.minor.label>较轻</HyperManipulator_EnvironmentalHeat.stages.minor.label>
+  <HyperManipulator_EnvironmentalHeat.stages.moderate.label>中度</HyperManipulator_EnvironmentalHeat.stages.moderate.label>
+  <HyperManipulator_EnvironmentalHeat.stages.serious.label>严重</HyperManipulator_EnvironmentalHeat.stages.serious.label>
+  <HyperManipulator_EnvironmentalHeat.stages.extreme.label>极重</HyperManipulator_EnvironmentalHeat.stages.extreme.label>
+  <HyperManipulator_EnvironmentalHeat.stages.critical.label>危急</HyperManipulator_EnvironmentalHeat.stages.critical.label>
+  <HyperManipulator_EnvironmentalHeat.stages.fatal.label>失效</HyperManipulator_EnvironmentalHeat.stages.fatal.label>
+  <HyperManipulator_EnvironmentalHeat.comps.HediffComp_Discoverable.discoverLetterLabel>物理操作仪过热：{0}</HyperManipulator_EnvironmentalHeat.comps.HediffComp_Discoverable.discoverLetterLabel>
+  <HyperManipulator_EnvironmentalHeat.comps.HediffComp_Discoverable.discoverLetterText>{0}安装的物理操作仪已经因环境温度过热而开始失灵。如果不为其及时降温，操作仪很快就会严重失准，并影响操作能力。\n\n过热影响是暂时性的。恢复了安全温度环境的操作仪最终会恢复正常，并不会留下永久性损伤，但殖民者仍然可能会因为高温而中暑或灼伤。</HyperManipulator_EnvironmentalHeat.comps.HediffComp_Discoverable.discoverLetterText>
+
+  <HyperManipulator_EnvironmentalCold.label>操作器过冷失效</HyperManipulator_EnvironmentalCold.label>
+  <HyperManipulator_EnvironmentalCold.stages.initial.label>轻微</HyperManipulator_EnvironmentalCold.stages.initial.label>
+  <HyperManipulator_EnvironmentalCold.stages.minor.label>较轻</HyperManipulator_EnvironmentalCold.stages.minor.label>
+  <HyperManipulator_EnvironmentalCold.stages.moderate.label>中度</HyperManipulator_EnvironmentalCold.stages.moderate.label>
+  <HyperManipulator_EnvironmentalCold.stages.serious.label>严重</HyperManipulator_EnvironmentalCold.stages.serious.label>
+  <HyperManipulator_EnvironmentalCold.stages.extreme.label>极重</HyperManipulator_EnvironmentalCold.stages.extreme.label>
+  <HyperManipulator_EnvironmentalCold.stages.critical.label>危急</HyperManipulator_EnvironmentalCold.stages.critical.label>
+  <HyperManipulator_EnvironmentalCold.stages.fatal.label>失效</HyperManipulator_EnvironmentalCold.stages.fatal.label>
+  
+  <HyperManipulator_FatalSequela.label>操作器失效后遗症</HyperManipulator_FatalSequela.label>
+  <HyperManipulator_FatalSequela.stages.initial.label>轻微</HyperManipulator_FatalSequela.stages.initial.label>
+  <HyperManipulator_FatalSequela.stages.minor.label>较轻</HyperManipulator_FatalSequela.stages.minor.label>
+  <HyperManipulator_FatalSequela.stages.moderate.label>中度</HyperManipulator_FatalSequela.stages.moderate.label>
+  <HyperManipulator_FatalSequela.stages.serious.label>严重</HyperManipulator_FatalSequela.stages.serious.label>
+  <HyperManipulator_FatalSequela.stages.extreme.label>极重</HyperManipulator_FatalSequela.stages.extreme.label>
+  <HyperManipulator_FatalSequela.stages.critical.label>危急</HyperManipulator_FatalSequela.stages.critical.label>
+  
+  <HyperManipulator_Dyskinesia.label>运动障碍</HyperManipulator_Dyskinesia.label>
+  <HyperManipulator_Dyskinesia.stages.recovering.label>康复</HyperManipulator_Dyskinesia.stages.recovering.label>
+  <HyperManipulator_Dyskinesia.stages.minor.label>较轻</HyperManipulator_Dyskinesia.stages.minor.label>
+  <HyperManipulator_Dyskinesia.stages.moderate.label>中度</HyperManipulator_Dyskinesia.stages.moderate.label>
+  <HyperManipulator_Dyskinesia.stages.major.label>重度</HyperManipulator_Dyskinesia.stages.major.label>
+  <HyperManipulator_Dyskinesia.stages.disabled.label>残废</HyperManipulator_Dyskinesia.stages.disabled.label>
+  <HyperManipulator_Dyskinesia.stages.initial.label>初现</HyperManipulator_Dyskinesia.stages.initial.label>
+  
+</LanguageData>

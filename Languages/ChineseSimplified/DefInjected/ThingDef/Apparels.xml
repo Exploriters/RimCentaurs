@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Apparel_CentaurPants.label>半人马裤子</Apparel_CentaurPants.label>
+  <Apparel_CentaurPants.description>一条给马穿的裤子。现在我们知道一只马要如何穿裤子了。</Apparel_CentaurPants.description>
+
+  <Apparel_CentaurHorseshoesSet.label>半人马马蹄铁组</Apparel_CentaurHorseshoesSet.label>
+  <Apparel_CentaurHorseshoesSet.description>一套能保护半人马蹄子的马蹄铁组，同时也提供一点移动速度提升。</Apparel_CentaurHorseshoesSet.description>
+
+  <Apparel_CentaurBasicShirt.label>半人马T恤衫</Apparel_CentaurBasicShirt.label>
+  <Apparel_CentaurBasicShirt.description>一件改装过提供给半人马的T恤衫。</Apparel_CentaurBasicShirt.description>
+
+  <Apparel_CentaurCollarShirt.label>半人马衬衫</Apparel_CentaurCollarShirt.label>
+  <Apparel_CentaurCollarShirt.description>一件好看的、带有纽扣的有领衬衫，为半人马而设计。</Apparel_CentaurCollarShirt.description>
+
+  <Apparel_CentaurParka.label>半人马风雪大衣</Apparel_CentaurParka.label>
+  <Apparel_CentaurParka.description>一件为半人马设计的厚重风雪大衣，即使在最寒冷的温度中也能保持温暖。</Apparel_CentaurParka.description>
+
+  <Apparel_CentaurDuster.label>半人马防尘大衣</Apparel_CentaurDuster.label>
+  <Apparel_CentaurDuster.description>一件为半人马设计的加长防尘大衣，用于在户外阻隔阳光、炎热和沙尘。</Apparel_CentaurDuster.description>
+
+  <Apparel_CentaurJacket.label>半人马夹克</Apparel_CentaurJacket.label>
+  <Apparel_CentaurJacket.description>一件为半人马设计的坚固夹克，可以避免擦伤和刮伤，以及在寒冷天气中保持温暖。</Apparel_CentaurJacket.description>
+
+  <Apparel_CentaurPlateArmor.label>半人马板甲</Apparel_CentaurPlateArmor.label>
+  <Apparel_CentaurPlateArmor.description>一件为半人马设计的重型板甲，从颈部到脚部都用厚实的材料层层堆叠覆盖。</Apparel_CentaurPlateArmor.description>
+
+  <Apparel_CentaurShieldArmor.label>半人马护盾装甲</Apparel_CentaurShieldArmor.label>
+  <Apparel_CentaurShieldArmor.description>为半人马穿戴者的一套轻型动力盔甲，具有投射屏障装置和毒性防护能力。覆盖玻璃钢纤维编制的装甲片，能够十分有效地防御攻击。神经模因机械让人在穿着重型装甲时仍然能够轻松行动。\n\n护盾能阻挡从一定距离外射来的任何高速运动弹头或能量攻击，但对近战攻击或零距离贴近射击无效，同时会被EMP摧毁。不会阻碍穿戴者从内往外的射击。\n\n动力装甲通常由来自太空时代军队的重甲士兵和空间海军突击队员使用。\n\n和人类的相比具有额外的重量和材料，来提供侧面的保护。</Apparel_CentaurShieldArmor.description>
+
+  <Apparel_CentaurFlakVest.label>半人马防弹背心</Apparel_CentaurFlakVest.label>
+  <Apparel_CentaurFlakVest.description>为半人马穿戴者而设计的修改版防弹背心。和人类的相比具有额外的重量和材料，来提供侧面的保护。对四肢没有防护能力。</Apparel_CentaurFlakVest.description>
+
+  <Apparel_CentaurFlakPants.label>半人马防弹裤</Apparel_CentaurFlakPants.label>
+  <Apparel_CentaurFlakPants.description>给半人马穿的修改版防弹裤。主要用于保护腿部，虽然没有全身盔甲严密，但也提供了强大的防护，同时兼顾了舒适性。</Apparel_CentaurFlakPants.description>
+
+  <Apparel_CentaurFlakJacket.label>半人马防弹夹克</Apparel_CentaurFlakJacket.label>
+  <Apparel_CentaurFlakJacket.description>给半人马穿的修改版防弹夹克。虽然没有全身盔甲严密，但也提供了强大的防护，同时兼顾了舒适性。</Apparel_CentaurFlakJacket.description>
+
+  <Apparel_CentaurPowerArmor.label>半人马动力装甲</Apparel_CentaurPowerArmor.label>
+  <Apparel_CentaurPowerArmor.description>为半人马穿戴者的一套轻型动力盔甲。从颈部到脚部都覆盖玻璃钢纤维编制的装甲片，能够十分有效地防御攻击。神经模因机械让人在穿着重型装甲时仍然能够轻松行动。\n\n动力装甲通常由来自太空时代军队的重甲士兵和空间海军突击队员使用。</Apparel_CentaurPowerArmor.description>
+
+  <Apparel_CentaurPowerArmorHelmet.label>半人马动力头盔</Apparel_CentaurPowerArmorHelmet.label>
+  <Apparel_CentaurPowerArmorHelmet.description>一个为半人马穿戴者设计的动力装甲头盔，内置了状态检测计算机并且覆盖了玻璃钢装甲，提供完整的头部防护。\n\n动力装甲通常由来自太空时代军队的重甲士兵和空间海军突击队员使用。</Apparel_CentaurPowerArmorHelmet.description>
+
+  <Apparel_PowerArmorHelmet_Clocked.label>隐形动力头盔</Apparel_PowerArmorHelmet_Clocked.label>
+  <Apparel_PowerArmorHelmet_Clocked.description>一个为半人马穿戴者设计的动力装甲头盔，内置了状态检测计算机并且覆盖了玻璃钢装甲，提供完整的头部防护。\n\n动力装甲通常由来自太空时代军队的重甲士兵和空间海军突击队员使用。\n\n这个修改过的版本是隐形的，利用了隐迹护盾技术，但行为和与正常的动力头盔一致，并且需要更高的技术来制造，能够展示一个人最佳的面容和头发而不必承受暴露头部的风险，原本设计给半人马但所有种族都能使用。</Apparel_PowerArmorHelmet_Clocked.description>
+
+  <Apparel_CentaurAntimassBelt.label>反重力腰带</Apparel_CentaurAntimassBelt.label>
+  <Apparel_CentaurAntimassBelt.description>一个反重力设备。其能帮助一个半人马减轻重量并进入运输舱。</Apparel_CentaurAntimassBelt.description>
+
+</LanguageData>

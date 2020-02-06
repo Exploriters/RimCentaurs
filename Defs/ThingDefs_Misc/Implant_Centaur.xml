@@ -1,135 +1,59 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
-  <HediffDef>
-    <defName>HyperManipulator_EnvironmentalHeat</defName>
-    <hediffClass>HediffWithComps</hediffClass>
-    <defaultLabelColor>(0.95, 0.6, 0.75)</defaultLabelColor>
-    <label>manipulator overheating failure</label>
-    <!-- <taleOnVisible>HypothermiaRevealed</taleOnVisible> -->
-	<maxSeverity>10.0</maxSeverity>
-    <isBad>true</isBad>
-	<hediffGivers>
-		<li Class="HediffGiver_Heat">
-		  <hediff>HyperManipulator_EnvironmentalHeat</hediff>
-		</li>
-	</hediffGivers>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.1</severityPerDay>
-      </li>
-      <li Class="HediffCompProperties_Discoverable">
-        <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
-        <discoverLetterLabel>Manipulator overheating :{0}</discoverLetterLabel>
-        <discoverLetterText>The physic manipulator on {0} has begun to fail due to overheating ambient temperature. If it is not cooled on time, the manipulator will soon be seriously out of alignment and affect manipulate ability.\n\nEffects of overheating are temporary. The manipulator returned to a safe environmental temperature will eventually backs to normal and will not leave permanent damage, but the colonist may still be heatstroke or burned due to the high temperature.</discoverLetterText>
-        <letterType>NegativeEvent</letterType>
-        <messageType>NegativeEvent</messageType>
-      </li>
-    </comps>
-    <stages>
-      <li>
-        <label>initial</label>
-        <becomeVisible>false</becomeVisible>
-      </li>
-      <li>
-        <label>minor</label>
-        <minSeverity>0.05</minSeverity>
-        <capMods>
-          <li>
-            <capacity>Manipulation</capacity>
-            <postFactor>0.92</postFactor>
-          </li>
-        </capMods>
-      </li>
-      <li>
-        <label>moderate</label>
-        <minSeverity>0.2</minSeverity>
-        <capMods>
-          <li>
-            <capacity>Manipulation</capacity>
-            <postFactor>0.8</postFactor>
-          </li>
-        </capMods>
-      </li>
-      <li>
-        <label>serious</label>
-        <minSeverity>0.35</minSeverity>
-        <capMods>
-          <li>
-            <capacity>Manipulation</capacity>
-            <postFactor>0.5</postFactor>
-          </li>
-        </capMods>
-      </li>
-      <li>
-        <label>extreme</label>
-        <minSeverity>0.62</minSeverity>
-        <capMods>
-          <li>
-            <capacity>Manipulation</capacity>
-            <postFactor>0.1</postFactor>
-          </li>
-        </capMods>
-      </li>
-      <li>
-        <label>critical</label>
-        <minSeverity>0.95</minSeverity>
-        <capMods>
-          <li>
-            <capacity>Manipulation</capacity>
-            <postFactor>0.05</postFactor>
-          </li>
-        </capMods>
-      </li>
-      <li>
-        <label>fatal</label>
-        <minSeverity>3</minSeverity>
-        <!-- <lifeThreatening>true</lifeThreatening> -->
-        <capMods>
-          <li>
-            <capacity>Manipulation</capacity>
-            <postFactor>0.01</postFactor>
-            <setMax>0.05</setMax>
-          </li>
-        </capMods>
-      </li>
-    </stages>
-  </HediffDef>
-  
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>HyperManipulator</defName>
     <label>physic manipulator</label>
     <labelNoun>a physic manipulator</labelNoun>
 	<description>An pair of devices replacing arms with a powerful remote manipulator.</description>
     <defaultLabelColor>(0.5, 0.75, 1)</defaultLabelColor>
+	<maxSeverity>1.0</maxSeverity>
+	<initialSeverity>0.001</initialSeverity>
     <stages>
       <li>
-        <partIgnoreMissingHP>false</partIgnoreMissingHP>
-        <!-- 
-        <capMods>=
-          <li>
-            <capacity>Manipulation</capacity>
-            <offset>0.5</offset>
-            <postFactor>2</postFactor>
-          </li>=
-        </capMods>
-		<statOffsets>
-			<GlobalLearningFactor>1.5</GlobalLearningFactor>
-			<PainShockThreshold>99999</PainShockThreshold>
-		</statOffsets> -->
+        <label>assembling</label>
+        <minSeverity>0</minSeverity>
+		<partEfficiencyOffset>-5</partEfficiencyOffset>
+		<!-- <partEfficiencyOffset>0</partEfficiencyOffset> -->
+	  </li>
+      <li>
+        <label>initial</label>
+        <minSeverity>0.15</minSeverity>
+		<partEfficiencyOffset>-4.95</partEfficiencyOffset>
+		<!-- <partEfficiencyOffset>0.01</partEfficiencyOffset> -->
+	  </li>
+      <li>
+        <label>adapting</label>
+        <minSeverity>0.50</minSeverity>
+		<partEfficiencyOffset>-4.5</partEfficiencyOffset>
+		<!-- <partEfficiencyOffset>0.1</partEfficiencyOffset> -->
+	  </li>
+      <li>
+        <label>adapting</label>
+        <minSeverity>0.85</minSeverity>
+		<partEfficiencyOffset>-4</partEfficiencyOffset>
+		<!-- <partEfficiencyOffset>0.2</partEfficiencyOffset> -->
+	  </li>
+      <li>
+        <label>adapting</label>
+        <minSeverity>0.9</minSeverity>
+		<partEfficiencyOffset>-3</partEfficiencyOffset>
+		<!-- <partEfficiencyOffset>0.3</partEfficiencyOffset> -->
+	  </li>
+      <li>
+        <label>adapting</label>
+        <minSeverity>0.95</minSeverity>
+		<partEfficiencyOffset>-2.5</partEfficiencyOffset>
+		<!-- <partEfficiencyOffset>0.5</partEfficiencyOffset> -->
+	  </li>
+	  <li>
+        <minSeverity>1</minSeverity>
 		<hediffGivers>
-			<!-- <li Class="HediffGiver_RandomDrugEffect">
-				<hediff>HyperManipulator</hediff>
-				<minSeverity>0.50</minSeverity>
-				<baseMtbDays>0.00002</baseMtbDays>
-				<!- - <mtbDays>0.00002</mtbDays> - ->
-				<partsToAffect>
-					<li>Shoulder</li>
-				</partsToAffect>
-				<countToAffect>2</countToAffect>
-			</li> -->
 			<li Class="HediffGiver_Heat">
 			  <hediff>HyperManipulator_EnvironmentalHeat</hediff>
+			</li>
+			<li Class="HediffGiver_Hypothermia">
+			  <hediff>HyperManipulator_EnvironmentalCold</hediff>
 			</li>
 		</hediffGivers>
       </li>
@@ -140,7 +64,9 @@
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
     <comps>
-	  <!-- <li Class="HediffCompProperties_HealPermanentWounds" /> -->
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>0.05</severityPerDay>
+      </li>
       <li Class="HediffCompProperties_VerbGiver">
         <tools>
 		  <li>
@@ -215,28 +141,23 @@
         </li>
       </outcomeDoers>
     </ingestible> -->
-    <!-- <comps>
+    <comps>
       <li Class="CompProperties_Usable">
+        <!-- <compClass>CentaurTheMagnuassembly.CompUsable_HediffApply_HManipulator</compClass> -->
         <useJob>UseItem_NonInturruptible</useJob>
         <useLabel>assemble physic manipulator on self</useLabel>
-        <useDuration>6000</useDuration>
+        <useDuration>600</useDuration>
       </li>
       <li Class="CompProperties_UseEffect">
-        <compClass>IngestionOutcomeDoer_GiveHediff</compClass>
-		<hediffDef>HyperManipulator</hediffDef>
+        <compClass>CentaurTheMagnuassembly.CompUseEffect_HediffApply_HManipulator</compClass>
+		<!-- <hediffDef>HyperManipulator</hediffDef>
 		<severity>1</severity>
-		<divideByBodySize>true</divideByBodySize>
+		<divideByBodySize>true</divideByBodySize> -->
       </li>
-      <li Class="CompProperties_UseEffect">
-        <compClass>IngestionOutcomeDoer_GiveHediff</compClass>
-		<hediffDef>HyperManipulator</hediffDef>
-		<severity>1</severity>
-		<divideByBodySize>true</divideByBodySize>
-      </li>
-      <li Class="CompProperties_UseEffect">
+      <!-- <li Class="CompProperties_UseEffect">
         <compClass>CompUseEffect_DestroySelf</compClass>
-      </li>
-    </comps> -->
+      </li> -->
+    </comps>
   </ThingDef>
   
   <JobDef>
@@ -249,7 +170,7 @@
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
   
-  <RecipeDef ParentName="SurgeryFlesh">
+  <!-- <RecipeDef ParentName="SurgeryFlesh">
     <defName>InstallHyperManipulator</defName>
     <label>install physic manipulator</label>
     <description>Install a physic manipulator.</description>
@@ -257,7 +178,6 @@
     <jobString>Installing physic manipulator.</jobString>
     <workAmount>6000</workAmount>
     <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
-    <!-- <targetCountAdjustment>1</targetCountAdjustment> -->
     <skillRequirements>
       <Medicine>8</Medicine>
     </skillRequirements>
@@ -291,6 +211,68 @@
       <li>CentaurScapular</li>
     </appliedOnFixedBodyParts>
     <addsHediff>HyperManipulator</addsHediff>
+  </RecipeDef> -->
+  
+  <!-- <RecipeDef>
+    <defName>InstallHyperManipulator</defName>
+    <label>install physic manipulator</label>
+    <description>Install a physic manipulator.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing physic manipulator.</jobString>
+    <workAmount>180</workAmount>
+    <targetsBodyPart>true</targetsBodyPart>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <anesthetize>false</anesthetize>
+    <skillRequirements />
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>HyperManipulator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>HyperManipulator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>CentaurScapular</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>HyperManipulator</addsHediff>
+  </RecipeDef> -->
+
+  <RecipeDef>
+    <defName>InstallHyperManipulator</defName>
+    <label>install physic manipulator</label>
+    <description>Install a physic manipulator.</description>
+    <workerClass>Recipe_AdministerUsableItem</workerClass>
+    <jobString>Installing physic manipulator.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>600</workAmount>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>HyperManipulator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>HyperManipulator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
   </RecipeDef>
   
 <HediffDef ParentName="ImplantHediffBase">
