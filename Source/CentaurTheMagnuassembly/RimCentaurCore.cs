@@ -10,14 +10,30 @@ namespace CentaurTheMagnuassembly
     public class RimCentaurCore
     {
     }
+
     class CompUseEffect_HediffApply_HManipulator : CompUseEffect_FixWorstHealthCondition
     {
+        public override bool CanBeUsedBy(Pawn usedBy, out string failReason)
+        {
+            HediffDef HyperManipulatorHediff = DefDatabase<HediffDef>.GetNamed("HyperManipulator");
+
+            if (usedBy.health.hediffSet.HasHediff(HyperManipulatorHediff))
+            {
+                failReason = "Magnuassembly_CompUseEffect_HediffApply_HManipulator_UseReject_AlreadyInstalled".Translate(usedBy.Name.ToStringShort);
+                return false;
+            }
+
+            if (usedBy.def != DefDatabase<ThingDef>.GetNamed("Alien_Centaur"))
+            {
+                failReason = "Magnuassembly_CompUseEffect_HediffApply_HManipulator_UseReject_NonCentaur".Translate(usedBy.def.LabelCap);
+                return false;
+            }
+
+            failReason = "";
+            return true;
+        }
         public override void DoEffect(Pawn usedBy)
         {
-            for (int i = 0; i < 1000; i++)
-            {
-                base.DoEffect(usedBy);
-            }
 
             HediffDef HyperManipulatorHediff = DefDatabase<HediffDef>.GetNamed("HyperManipulator");
             Hediff hediff = HediffMaker.MakeHediff(HyperManipulatorHediff, usedBy, null);
@@ -27,14 +43,30 @@ namespace CentaurTheMagnuassembly
             //CentaurScapularRecord.body = DefDatabase<BodyDef>.GetNamed("Centaur");
             //CentaurScapularRecord.def = CentaurScapular;
             //CentaurScapularRecord.parts.Count = 1;
-
+            bool PartNotFound = true;
 
             IEnumerable<BodyPartRecord> parts = usedBy.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined);
-            foreach (BodyPartRecord part in parts)
+            
+            if (!CanBeUsedBy(usedBy, out _))
+                return;
+
+            for(int i =0; i <1000;i++)
             {
-                if (part.def == CentaurScapular)
+                foreach (BodyPartRecord part in parts)
                 {
-                    CentaurScapularRecord = part;
+                    if (part.def == CentaurScapular)
+                    {
+                        CentaurScapularRecord = part;
+                        PartNotFound = false;
+                        break;
+                    }
+                }
+                if (PartNotFound)
+                {
+                    base.DoEffect(usedBy);
+                }
+                else
+                {
                     break;
                 }
             }

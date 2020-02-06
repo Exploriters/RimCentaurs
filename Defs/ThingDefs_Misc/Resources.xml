@@ -212,6 +212,7 @@
       <li Class="CompProperties_Usable">
         <useJob>DetonateThermoDamper</useJob>
         <useLabel>Detonate thermo damper</useLabel>
+        <useDuration>180</useDuration>
       </li>
       <li Class="CompProperties_UseEffect">
         <compClass>CompUseEffect_StartWick</compClass>

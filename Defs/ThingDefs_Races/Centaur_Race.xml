@@ -808,7 +808,6 @@ Centaur has a stronger physique, generally better appearance, larger appetite, s
 	</race>
 	<recipes>
 	  <li>InstallHyperManipulator</li>
-	  <li>AdministerHyperManipulator</li>
 	  <li>InstallMentalBurster</li>
 	<!-- humanRecipeImport enabled
 	  <li>InstallArchotechEye</li>
