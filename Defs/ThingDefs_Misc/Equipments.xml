@@ -144,7 +144,7 @@
         <minQualityForArtistic>Awful</minQualityForArtistic>
       </li> -->
       <li>
-        <compClass>AdditionalVerb.Comp_VerbSaveable</compClass>
+        <compClass>CentaurTheMagnuassembly.Comp_VerbSaveable</compClass>
       </li>
     </comps>
     <verbs>
@@ -175,7 +175,7 @@
         <desc>Standard Trishot mode.</desc>
         <label>triple shot</label>
         <texPath>UI/Commands/BowTrishot_ModeTri</texPath>
-        <texPathSeleted>UI/Commands/BowTrishot_ModeTri_Select</texPathSeleted>
+        <texPathSelected>UI/Commands/BowTrishot_ModeTri_Select</texPathSelected>
         <!-- <accuracyTouch>0.425</accuracyTouch>
 		<accuracyShort>0.383</accuracyShort>
 		<accuracyMedium>0.525</accuracyMedium>
@@ -210,7 +210,7 @@
         <desc>Icos mode that launch empowered hyper shot, deals more damage and shoot longer range, blast over walls but can't fire at close-up targets.</desc>
         <label>icos shot</label>
         <texPath>UI/Commands/BowTrishot_ModeIcos</texPath>
-        <texPathSeleted>UI/Commands/BowTrishot_ModeIcos_Select</texPathSeleted>
+        <texPathSelected>UI/Commands/BowTrishot_ModeIcos_Select</texPathSelected>
         <!-- <accuracyTouch>0.425</accuracyTouch>
 		<accuracyShort>0.383</accuracyShort>
 		<accuracyMedium>0.525</accuracyMedium>

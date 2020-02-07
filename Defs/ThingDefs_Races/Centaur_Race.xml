@@ -725,18 +725,15 @@
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
       <intelligence>Humanlike</intelligence>
       <makesFootprints>false</makesFootprints>
-      <!-- <lifeExpectancy>150</lifeExpectancy> -->
+      <lifeExpectancy>150</lifeExpectancy>
       <nameCategory>HumanStandard</nameCategory>
       <leatherDef>Leather_Human</leatherDef>
       <body>Centaur</body>
       <!--<Mass>106.5</Mass>-->
-      <baseBodySize>3.0</baseBodySize>
-      <!-- 1.5 -->
-      <baseHealthScale>3.0</baseHealthScale>
-      <!-- 1.2 -->
+      <baseBodySize>3.0</baseBodySize><!-- 1.5 -->
+      <baseHealthScale>3.0</baseHealthScale><!-- 1.2 -->
       <foodType>OmnivoreHuman, CarnivoreAnimal, OmnivoreAnimal, OvivoreAnimal</foodType>
-      <!-- <gestationPeriodDays>45</gestationPeriodDays> -->
-      <!-- 32.5 -->
+      <!-- <gestationPeriodDays>45</gestationPeriodDays> --><!-- 32.5 -->
       <gestationPeriodDays isNull="True" />
       <meatMarketValue>0.8</meatMarketValue>
       <useMeatFrom>Human</useMeatFrom>

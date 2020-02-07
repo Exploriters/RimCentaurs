@@ -23,8 +23,8 @@ namespace CentaurTheMagnuassembly
         private static readonly Type patchType = typeof(AdditionalVerbPatch);
         static AdditionalVerbPatch()
         {
-            HarmonyInstance harmonyInstance = HarmonyInstance.Create("com.AdditionalVerb.rimworld.mod");
-            if (!harmonyInstance.HasAnyPatches("com.AdditionalVerb.rimworld.mod"))
+            HarmonyInstance harmonyInstance = HarmonyInstance.Create("com.CentaurTheMagnuassembly.rimworld.mod");
+            if (!harmonyInstance.HasAnyPatches("com.CentaurTheMagnuassembly.rimworld.mod"))
             {
                 harmonyInstance.Patch(AccessTools.Method(typeof(Pawn_EquipmentTracker), "GetGizmos", null, null), null, new HarmonyMethod(patchType, "GetGizmosPostfix", null));
 
@@ -40,13 +40,13 @@ namespace CentaurTheMagnuassembly
 
                 harmonyInstance.Patch(AccessTools.Method(typeof(TooltipUtility), "ShotCalculationTipString", null, null), new HarmonyMethod(patchType, "ShotCalculationTipStringPrefix", null));
 
-                LongEventHandler.ExecuteWhenFinished
+                /*LongEventHandler.ExecuteWhenFinished
                 (
                     delegate
                     {
-                        //currentCommandTexture = ContentFinder<Texture2D>.Get("UI/Commands/Select");
+                        currentCommandTexture = ContentFinder<Texture2D>.Get("UI/Commands/Select");
                     }
-                );
+                );*/
             }
         }
         //public static Texture2D currentCommandTexture;
@@ -169,7 +169,7 @@ namespace CentaurTheMagnuassembly
                 if (comp_VerbSaveable != null && comp_VerbSaveable.currentVerb == verb)
                 {
                     //command_VerbTarget.icon = currentCommandTexture;
-                    command_VerbTarget.icon = verbProps.textureSeleted;
+                    command_VerbTarget.icon = verbProps.textureSelected;
                 }
                 else
                 {
@@ -348,9 +348,9 @@ namespace CentaurTheMagnuassembly
     {
         public string desc;
         public string texPath;
-        public string texPathSeleted;
+        public string texPathSelected;
         public Texture2D texture;
-        public Texture2D textureSeleted;
+        public Texture2D textureSelected;
         public int maxMagazine;
 
         public VerbProperties_Custom()
@@ -361,9 +361,9 @@ namespace CentaurTheMagnuassembly
                 {
                     texture = ContentFinder<Texture2D>.Get(texPath);
                 }
-                if (!texPathSeleted.NullOrEmpty())
+                if (!texPathSelected.NullOrEmpty())
                 {
-                    textureSeleted = ContentFinder<Texture2D>.Get(texPathSeleted);
+                    textureSelected = ContentFinder<Texture2D>.Get(texPathSelected);
                 }
             });
         }
