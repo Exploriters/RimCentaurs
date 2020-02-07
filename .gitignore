@@ -1,15 +1,7 @@
 *~
 *.vim
 
-.vs
-Debug
-Develop
-Release
-
-*.user
-
-magnuassembly
-magnuassembly.sln
-
+obj/
+.vs/
 .ssh/
 .gnupg/
