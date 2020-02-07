@@ -25,7 +25,7 @@
     <isRanged>true</isRanged>
     <makesAnimalsFlee>true</makesAnimalsFlee>
   </DamageDef> -->
-  
+
   <DamageDef Name="Frostblast">
     <defName>Frostblast</defName>
     <workerClass>DamageWorker_AddInjury</workerClass>
@@ -39,7 +39,7 @@
     <hediffSkin>Frostbite</hediffSkin>
     <hediffSolid>Frostbite</hediffSolid>
     <armorCategory>Heat</armorCategory>
-	<impactSoundType>Electric</impactSoundType>
+    <impactSoundType>Electric</impactSoundType>
     <!-- <impactSoundType>Slice</impactSoundType> -->
     <!-- <minDamageToFragment>0</minDamageToFragment> -->
     <defaultDamage>20</defaultDamage>
@@ -54,12 +54,12 @@
     <overkillPctToDestroyPart>0</overkillPctToDestroyPart>
     <isRanged>true</isRanged>
     <makesAnimalsFlee>true</makesAnimalsFlee>
-	
+
     <minDamageToFragment>3</minDamageToFragment>
     <defaultStoppingPower>1.05</defaultStoppingPower>
     <buildingDamageFactor>1.5</buildingDamageFactor>
     <plantDamageFactor>1.5</plantDamageFactor>
-	
+
     <combatLogRules>Damage_Flame</combatLogRules>
     <additionalHediffs>
       <li>
@@ -79,7 +79,7 @@
       </li>
     </additionalHediffs>
   </DamageDef>
-  
+
   <!-- <DamageDef>
     <defName>Frostmelee</defName>
     <label>penetrative frostbite</label>
@@ -103,7 +103,7 @@
     </cutExtraTargetsCurve>
     <cutCleaveBonus>1.4</cutCleaveBonus>
   </DamageDef> -->
-  
+
   <DamageDef ParentName="Frostblast">
     <defName>FrostblastSuper</defName>
     <label>penetrative frostbite</label>
@@ -114,7 +114,7 @@
     <buildingDamageFactor>1.5</buildingDamageFactor>
     <plantDamageFactor>1.5</plantDamageFactor>
   </DamageDef>
- 
+
   <ToolCapacityDef>
     <defName>Frostblast</defName>
   </ToolCapacityDef>

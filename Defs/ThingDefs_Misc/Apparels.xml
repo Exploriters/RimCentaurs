@@ -4,24 +4,24 @@
   <!-- ====================================== Centaur Civilian =========================================== -->
 
   <ThingDef Name="ApparelMakeableArtableBase" ParentName="ApparelMakeableBase" Abstract="True">
-	<comps>
-	  <li Class="CompProperties_Art">
-		<nameMaker>NamerArtWeapon</nameMaker>
-		<descriptionMaker>ArtDescription_CentaurArmor</descriptionMaker>
-		<minQualityForArtistic>Excellent</minQualityForArtistic>
-	  </li>
-	</comps>
+    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeapon</nameMaker>
+        <descriptionMaker>ArtDescription_CentaurArmor</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
     <inspectorTabs>
       <li>ITab_Art</li>
     </inspectorTabs>
   </ThingDef>
-  
-	<ThingDef ParentName="ApparelMakeableArtableBase">
+
+  <ThingDef ParentName="ApparelMakeableArtableBase">
     <defName>Apparel_CentaurPants</defName>
     <label>centaur pants</label>
     <tradeability>Sellable</tradeability>
     <description>A pair of pants suited for an equine body. Now we know how a horse would wear pants.</description>
-	<!--<generateCommonality>0.0</generateCommonality>-->
+    <!--<generateCommonality>0.0</generateCommonality>-->
     <!-- <commonality>0</commonality> -->
     <recipeMaker>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
@@ -39,8 +39,8 @@
       <li>Apparel</li>
     </thingCategories>
     <statBases>
-	  <MaxHitPoints>200</MaxHitPoints>
-	  <WorkToMake>3000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToMake>3000</WorkToMake>
       <Mass>1</Mass>
       <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
@@ -64,21 +64,21 @@
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
- 
-	<ThingDef ParentName="ApparelMakeableArtableBase">
+
+  <ThingDef ParentName="ApparelMakeableArtableBase">
     <defName>Apparel_CentaurHorseshoesSet</defName>
     <label>centaur horseshoes Set</label>
     <tradeability>Sellable</tradeability>
     <description>A set of horseshoes for a centaur to protect their hooves, also gives them a minor moving speed boost.</description>
-	<!--<generateCommonality>0.0</generateCommonality>-->
+    <!--<generateCommonality>0.0</generateCommonality>-->
     <!-- <commonality>0</commonality> -->
     <recipeMaker>
-	  <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+      <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
       <researchPrerequisite></researchPrerequisite>
-	<recipeUsers>
-    <li>TableMachining</li>
-	<li>CraftingSpot</li>
-	</recipeUsers>
+      <recipeUsers>
+        <li>TableMachining</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
     </recipeMaker>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/CentaurPants/CentaurHorseshoesSet</texPath>
@@ -96,8 +96,8 @@
       <li>Apparel</li>
     </thingCategories>
     <statBases>
-	  <MaxHitPoints>100</MaxHitPoints>
-	  <WorkToMake>400</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>400</WorkToMake>
       <Mass>1</Mass>
       <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
@@ -124,13 +124,13 @@
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
- 
+
   <ThingDef ParentName="ApparelMakeableArtableBase">
     <defName>Apparel_CentaurBasicShirt</defName>
     <label>centaur T-shirt</label>
     <tradeability>Sellable</tradeability>
     <description>A modified T-shirt for use by centaurs.</description>
-	<!--<generateCommonality>0.0</generateCommonality>-->
+    <!--<generateCommonality>0.0</generateCommonality>-->
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/CentaurBasicShirt/CentaurBasicShirt</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -144,8 +144,8 @@
       <li>Apparel</li>
     </thingCategories>
     <statBases>
-	  <MaxHitPoints>200</MaxHitPoints>
-	  <WorkToMake>3200</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToMake>3200</WorkToMake>
       <Mass>0.50</Mass>
       <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
@@ -171,13 +171,13 @@
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
-  
 
-  
+
+
   <ThingDef ParentName="ApparelMakeableArtableBase">
     <defName>Apparel_CentaurCollarShirt</defName>
     <description>Designed for centaurs, this collared shirt comes with skirting and tiedowns to suit.</description>
-	<!--<generateCommonality>0.0</generateCommonality>-->
+    <!--<generateCommonality>0.0</generateCommonality>-->
     <label>button-down centaur shirt</label>
     <tradeability>Sellable</tradeability>
     <recipeMaker>
@@ -196,15 +196,15 @@
       <li>Apparel</li>
     </thingCategories>
     <statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToMake>5000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToMake>5000</WorkToMake>
       <Mass>0.6</Mass>
       <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>3</EquipDelay>
     </statBases>
-		<apparel>
+    <apparel>
       <bodyPartGroups>
         <li>Torso</li>
         <li>Neck</li>
@@ -237,8 +237,8 @@
       </options>
     </colorGenerator>
   </ThingDef>
-  
-  
+
+
   <!-- TESTING_REMOVED
   <ThingDef ParentName="ApparelMakeableArtableBase">
     <defName>Apparel_CentaurCollarShirt_Raised</defName>
@@ -300,83 +300,83 @@
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>-->
-  
-	<ThingDef ParentName="ApparelMakeableArtableBase">
-		<defName>Apparel_CentaurParka</defName>
-		<label>centaur parka</label>
-		<description>A parka for staying warm in even the coldest of temperatures. Modified for a centaur wearer.</description>
+
+  <ThingDef ParentName="ApparelMakeableArtableBase">
+    <defName>Apparel_CentaurParka</defName>
+    <label>centaur parka</label>
+    <description>A parka for staying warm in even the coldest of temperatures. Modified for a centaur wearer.</description>
     <tradeability>Sellable</tradeability>
-		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/CentaurParka/CentaurParka</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/CentaurParka/CentaurParka</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.90</drawSize>
-		</graphicData>
-		<techLevel>Neolithic</techLevel>
-		<costStuffCount>160</costStuffCount>
-		<stuffCategories>
-			<li>Fabric</li>
-			<li>Leathery</li>
-		</stuffCategories>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
-		<statBases>
-			<MaxHitPoints>360</MaxHitPoints>
-			<WorkToMake>14000</WorkToMake>
-			<Mass>7.6</Mass>
+    </graphicData>
+    <techLevel>Neolithic</techLevel>
+    <costStuffCount>160</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>360</MaxHitPoints>
+      <WorkToMake>14000</WorkToMake>
+      <Mass>7.6</Mass>
       <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>2.00</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>5</EquipDelay>
-		</statBases>
-		<apparel>
-			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Neck</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurParka/CentaurParka</wornGraphicPath>
-			<layers>
-				<li>Shell</li>
-			</layers>
-			<tags>
-				<li>CentaurIndustrialBasic</li>
-				<li>CentaurNeolithic</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Worker</li>
-				<li>Soldier</li>
-			</defaultOutfitTags>
-		</apparel>
-		<colorGenerator Class="ColorGenerator_Options">
-			<options>
-				<li>
-					<weight>10</weight>
-					<only>(0.33,0.33,0.33)</only>
-				</li>
-				<li>
-					<weight>10</weight>
-					<only>(0.65,0.65,0.65)</only>
-				</li>
-				<li>
-					<weight>10</weight>
-					<only>(0.4,0.3,0.15)</only>
-				</li>
-				<li>
-					<weight>15</weight>
-					<min>(0.3,0.3,0.3)</min>
-					<max>(0.5,0.5,0.5)</max>
-				</li>
-				<li>
-					<weight>6</weight>
-					<min>(0.5,0.5,0.5)</min>
-					<max>(1,1,1)</max>
-				</li>
-			</options>
-		</colorGenerator>
-	</ThingDef>
-	
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurParka/CentaurParka</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>CentaurIndustrialBasic</li>
+        <li>CentaurNeolithic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.4,0.3,0.15)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <min>(0.3,0.3,0.3)</min>
+          <max>(0.5,0.5,0.5)</max>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.5,0.5,0.5)</min>
+          <max>(1,1,1)</max>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
   <ThingDef ParentName="ApparelMakeableArtableBase">
     <defName>Apparel_CentaurDuster</defName>
     <description>A long duster coat for blocking the sun and grit of the outdoors. Modified for a centaur wearer.</description>
@@ -454,7 +454,7 @@
       </options>
     </colorGenerator>
   </ThingDef>
-  
+
   <ThingDef ParentName="ApparelMakeableArtableBase">
     <defName>Apparel_CentaurJacket</defName>
     <label>centaur jacket</label>
@@ -527,10 +527,10 @@
       </options>
     </colorGenerator>
   </ThingDef>
-  
-   <!-- ====================================== Centaur Armour =========================================== -->
- 
-  
+
+  <!-- ====================================== Centaur Armour =========================================== -->
+
+
   <ThingDef ParentName="ArmorSmithableBase">
     <defName>Apparel_CentaurPlateArmor</defName>
     <label>centaur plate armor</label>
@@ -604,45 +604,45 @@
         </li>
       </options>
     </colorGenerator>
-	<comps>
-	  <li Class="CompProperties_Art">
-		<nameMaker>NamerArtWeapon</nameMaker>
-		<descriptionMaker>ArtDescription_CentaurArmor</descriptionMaker>
-		<minQualityForArtistic>Excellent</minQualityForArtistic>
-	  </li>
-	</comps>
+    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeapon</nameMaker>
+        <descriptionMaker>ArtDescription_CentaurArmor</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
     <inspectorTabs>
       <li>ITab_Art</li>
     </inspectorTabs>
   </ThingDef>
-  
+
   <ThingDef Name="ArmorMachineableArtableBase" ParentName="ArmorMachineableBase" Abstract="True">
-	<comps>
-	  <li Class="CompProperties_Art">
-		<nameMaker>NamerArtWeapon</nameMaker>
-		<descriptionMaker>ArtDescription_CentaurArmor</descriptionMaker>
-		<minQualityForArtistic>Excellent</minQualityForArtistic>
-	  </li>
-	</comps>
+    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeapon</nameMaker>
+        <descriptionMaker>ArtDescription_CentaurArmor</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
     <inspectorTabs>
       <li>ITab_Art</li>
     </inspectorTabs>
   </ThingDef>
-  
+
   <!-- VERY TEST FOR MAYINAS -->
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>Apparel_CentaurShieldArmor</defName>
     <label>centaur shield armor</label>
     <tradeability>Sellable</tradeability>
     <description>A suit of light powered armor for a centaur wearer with projectile-repulsion device and toxic defense. Layered plasteel-weave plates are very effective at stopping attacks, with few vulnerable joint sections. Neuro-memetic assistors allow a centaur to wear the armor and still move easily.\n\nThe shield of it will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks or heat. It shuts down instantly if hit by EMP. It DOES NOT prevents the wearer from firing out.\n\nArmor like this is often used by imperial janissaries and rapid-incursion space marines.\n\nAdditional weight and materials are required when compared to humanoid armor, allowing for protection of the flanks.</description>
-	<!-- <generateCommonality>0.0</generateCommonality> -->
-	<thingClass>D9ASB.RangedShieldBelt</thingClass>
+    <!-- <generateCommonality>0.0</generateCommonality> -->
+    <thingClass>D9ASB.RangedShieldBelt</thingClass>
     <tickerType>Normal</tickerType>
     <techLevel>Spacer</techLevel>
-	<useHitPoints>false</useHitPoints>
+    <useHitPoints>false</useHitPoints>
     <tradeTags>
       <li>ExoticMisc</li>
-	  <li>CentaurEndgame</li>
+      <li>CentaurEndgame</li>
     </tradeTags>
     <recipeMaker>
       <researchPrerequisite>PoweredArmor</researchPrerequisite>
@@ -678,7 +678,7 @@
     <equippedStatOffsets>
       <ToxicSensitivity>-0.45</ToxicSensitivity>
       <PainShockThreshold>0.95</PainShockThreshold>
-	  <PsychicSensitivity>0.0</PsychicSensitivity>
+      <PsychicSensitivity>0.0</PsychicSensitivity>
       <Flammability>-2</Flammability>
       <!--<MoveSpeed>0.05</MoveSpeed>
       <SocialImpact>0.0</SocialImpact>-->
@@ -693,14 +693,14 @@
     </costList>
     <apparel>
       <bodyPartGroups>
-			<li>FullHead</li>
+        <li>FullHead</li>
         <li>Torso</li>
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
         <li>CentaurLegs</li>
-		<li>Hands</li>
-		<li>CentaurHooves</li>
+        <li>Hands</li>
+        <li>CentaurHooves</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmor/CentaurPowerArmor</wornGraphicPath>
       <layers>
@@ -749,13 +749,13 @@
       </options>
     </colorGenerator>
   </ThingDef>
-  
+
   <ThingDef ParentName="ArmorMachineableArtableBase">
     <defName>Apparel_CentaurFlakVest</defName>
     <label>centaur flak vest</label>
     <tradeability>Sellable</tradeability>
     <description>Flak armor modified for a centaur wearer. Additional weight and materials are required when compared to humanoid vests, allowing for protection of the flanks. This armor design does not protect the limbs.</description>
-	<!--<generateCommonality>0.0</generateCommonality>-->
+    <!--<generateCommonality>0.0</generateCommonality>-->
     <techLevel>Industrial</techLevel>
     <recipeMaker>
       <researchPrerequisite>FlakArmor</researchPrerequisite>
@@ -823,14 +823,14 @@
       </options>
     </colorGenerator>
   </ThingDef>
-	
-	
-<ThingDef ParentName="ArmorMachineableArtableBase">
+
+
+  <ThingDef ParentName="ArmorMachineableArtableBase">
     <defName>Apparel_CentaurFlakPants</defName>
     <label>centaur flak pants</label>
     <tradeability>Sellable</tradeability>
     <description>Modified pants suited to a centaur. The addition of armored plating grants effective protection from attacks without restricting movements.</description>
-	<!--<generateCommonality>0.0</generateCommonality>-->
+    <!--<generateCommonality>0.0</generateCommonality>-->
     <recipeMaker>
       <researchPrerequisite>FlakArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -893,14 +893,14 @@
     </colorGenerator>
   </ThingDef>
 
- 
- 
- <ThingDef ParentName="ArmorMachineableArtableBase">
+
+
+  <ThingDef ParentName="ArmorMachineableArtableBase">
     <defName>Apparel_CentaurFlakJacket</defName>
     <label>centaur flak jacket</label>
     <tradeability>Sellable</tradeability>
     <description>An armoured overcoat suited for a centaur. A step below plate armor, the defense offered is by no means insignificant and still doesn't impede movement.</description>
-	<!--<generateCommonality>0.0</generateCommonality>-->
+    <!--<generateCommonality>0.0</generateCommonality>-->
     <recipeMaker>
       <researchPrerequisite>FlakArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -929,7 +929,8 @@
       <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
       <ArmorRating_Heat>0.10</ArmorRating_Heat>
-      <Insulation_Cold>14.4</Insulation_Cold> <!-- like a cloth jacket -->
+      <Insulation_Cold>14.4</Insulation_Cold>
+      <!-- like a cloth jacket -->
       <Insulation_Heat>3</Insulation_Heat>
       <EquipDelay>6</EquipDelay>
     </statBases>
@@ -965,8 +966,8 @@
       </options>
     </colorGenerator>
   </ThingDef>
- 
-	<ThingDef ParentName="ArmorMachineableArtableBase">
+
+  <ThingDef ParentName="ArmorMachineableArtableBase">
     <defName>Apparel_CentaurPowerArmor</defName>
     <label>centaur marine armor</label>
     <tradeability>Sellable</tradeability>
@@ -1010,22 +1011,22 @@
       <Plasteel>200</Plasteel>
       <Uranium>40</Uranium>
     </costList>
-	<apparel>
-	  <bodyPartGroups>
-		<li>Torso</li>
-		<li>Neck</li>
-		<li>Shoulders</li>
-		<li>Arms</li>
-		<li>CentaurLegs</li>
-		<li>Hands</li>
-		<li>CentaurHooves</li>
-	  </bodyPartGroups>
-	  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmor/CentaurPowerArmor</wornGraphicPath>
-	  <layers>
-		<li>Middle</li>
-		<li>Shell</li>
-	  </layers>
-	  <tags>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>CentaurLegs</li>
+        <li>Hands</li>
+        <li>CentaurHooves</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmor/CentaurPowerArmor</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <tags>
         <li>CentaurSpacerMilitary</li>
       </tags>
       <defaultOutfitTags>
@@ -1093,24 +1094,24 @@
       <Insulation_Heat>2</Insulation_Heat>
       <EquipDelay>4</EquipDelay>
     </statBases>
-	<equippedStatOffsets>
+    <equippedStatOffsets>
       <ToxicSensitivity>-0.45</ToxicSensitivity>
-	</equippedStatOffsets>
+    </equippedStatOffsets>
     <costList>
       <ComponentSpacer>2</ComponentSpacer>
       <Plasteel>80</Plasteel>
     </costList>
-	<apparel>
-		<bodyPartGroups>
-			<li>FullHead</li>
-		</bodyPartGroups>
-		<wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmorHelmet/CentaurPowerArmorHelmet</wornGraphicPath>
-		<layers>
-			<li>Overhead</li>
-		</layers>
-	  <tags>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmorHelmet/CentaurPowerArmorHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
         <li>CentaurSpacerMilitary</li>
-		<li>HideCentaurEar</li>
+        <li>HideCentaurEar</li>
         <li>SOS2_SpaceHelmet</li>
       </tags>
       <defaultOutfitTags>
@@ -1166,7 +1167,7 @@
       <li>RewardSpecial</li>
     </thingSetMakerTags>
   </ThingDef>
-  
+
   <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>Apparel_PowerArmorHelmet_Clocked</defName>
     <label>marine clocked helmet</label>
@@ -1204,15 +1205,15 @@
       <ComponentSpacer>1</ComponentSpacer>
       <Plasteel>40</Plasteel>
     </costList>
-	<apparel>
-		<bodyPartGroups>
-			<li>FullHead</li>
-		</bodyPartGroups>
-		<!-- <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmorHelmet/PowerArmorHelmet</wornGraphicPath> -->
-		<layers>
-			<li>Overhead</li>
-		</layers>
-		<tags>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <!-- <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmorHelmet/PowerArmorHelmet</wornGraphicPath> -->
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
         <li>CentaurSpacerMilitary</li>
         <li>SOS2_SpaceHelmet</li>
       </tags>
@@ -1269,46 +1270,46 @@
       <li>RewardSpecial</li>
     </thingSetMakerTags>
   </ThingDef>
-  
+
   <ThingDef ParentName="ApparelBase">
     <defName>Apparel_CentaurAntimassBelt</defName>
-		<label>antimass belt</label>
+    <label>antimass belt</label>
     <description>A anti-mass device. It helps reduce the mass of a centaur to allows them getting into transporters.</description>
     <techLevel>Spacer</techLevel>
-	<graphicData>
+    <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/ShieldBelt/ShieldBelt</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <tickerType>Normal</tickerType>
-	<tradeability>Sellable</tradeability>
+    <tradeability>Sellable</tradeability>
     <statBases>
       <Mass>3</Mass>
       <WorkToMake>28000</WorkToMake>
       <Flammability>0.4</Flammability>
       <EquipDelay>4</EquipDelay>
     </statBases>
-	<equippedStatOffsets>
+    <equippedStatOffsets>
       <Mass>-100</Mass>
-	</equippedStatOffsets>
+    </equippedStatOffsets>
     <costList>
       <ComponentIndustrial>5</ComponentIndustrial>
       <Plasteel>100</Plasteel>
-	  <Gold>5</Gold>
+      <Gold>5</Gold>
     </costList>
-		<recipeMaker>
-			<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
-			<researchPrerequisite>ShieldBelt</researchPrerequisite>
-			<workSpeedStat>SmithingSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
-			<effectWorking>Smith</effectWorking>
-			<soundWorking>Recipe_Machining</soundWorking>
-			<recipeUsers>
-				<li>TableMachining</li>
-			</recipeUsers>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+      <researchPrerequisite>ShieldBelt</researchPrerequisite>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
       <skillRequirements>
         <Crafting>12</Crafting>
       </skillRequirements>
-		</recipeMaker>
+    </recipeMaker>
     <thingCategories>
       <li>Apparel</li>
     </thingCategories>
@@ -1347,5 +1348,5 @@
       </options>
     </colorGenerator>
   </ThingDef>
-  
+
 </Defs>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: baby -->
+  <CentaurBaby.label>婴儿</CentaurBaby.label>
+  <!-- EN: toddler -->
+  <CentaurToddler.label>幼儿</CentaurToddler.label>
+  <!-- EN: child -->
+  <CentaurChild.label>孩童</CentaurChild.label>
+  <!-- EN: teenager -->
+  <CentaurTeenager.label>少年</CentaurTeenager.label>
+  <!-- EN: teenage -->
+  <CentaurTeenager.adjective>少年</CentaurTeenager.adjective>
+  <!-- EN: adult -->
+  <CentaurAdult.label>成人</CentaurAdult.label>
+
+</LanguageData>

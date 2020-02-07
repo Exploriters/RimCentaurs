@@ -62,11 +62,11 @@
       <Crafting>20</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
-	<recipeUsers Inherit="False">
-	  <li>FabricationBench</li>
-	</recipeUsers>
+    <recipeUsers Inherit="False">
+      <li>FabricationBench</li>
+    </recipeUsers>
   </RecipeDef>
-  
+
   <RecipeDef>
     <defName>Recolor_Orangice_Blue</defName>
     <label>recolor orangice to blue</label>
@@ -109,13 +109,13 @@
       <Crafting>13</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
-	<recipeUsers Inherit="False">
-	  <li>FabricationBench</li>
-	  <li>TableMachining</li>
-	  <li>CraftingSpot</li>
-	</recipeUsers>
+    <recipeUsers Inherit="False">
+      <li>FabricationBench</li>
+      <li>TableMachining</li>
+      <li>CraftingSpot</li>
+    </recipeUsers>
   </RecipeDef>
-  
+
   <RecipeDef>
     <defName>Recolor_Orangice_Orange</defName>
     <label>recolor orangice to orange</label>
@@ -147,13 +147,13 @@
     <skillRequirements>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
-	<recipeUsers Inherit="False">
-	  <li>FabricationBench</li>
-	  <li>TableMachining</li>
-	  <li>CraftingSpot</li>
-	</recipeUsers>
+    <recipeUsers Inherit="False">
+      <li>FabricationBench</li>
+      <li>TableMachining</li>
+      <li>CraftingSpot</li>
+    </recipeUsers>
   </RecipeDef>
-  
+
   <RecipeDef>
     <defName>Recolor_Orangice_Orange_Single</defName>
     <label>recolor single orangice to orange</label>
@@ -185,11 +185,11 @@
     <skillRequirements>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
-	<recipeUsers Inherit="False">
-	  <li>FabricationBench</li>
-	  <li>TableMachining</li>
-	  <li>CraftingSpot</li>
-	</recipeUsers>
+    <recipeUsers Inherit="False">
+      <li>FabricationBench</li>
+      <li>TableMachining</li>
+      <li>CraftingSpot</li>
+    </recipeUsers>
   </RecipeDef>
 
 </Defs>

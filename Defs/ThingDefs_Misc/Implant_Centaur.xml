@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
+
   <HediffDef ParentName="AddedBodyPartBase">
     <defName>HyperManipulator</defName>
     <label>physic manipulator</label>
     <labelNoun>a physic manipulator</labelNoun>
-	<description>An pair of devices replacing arms with a powerful remote manipulator.</description>
+    <description>An pair of devices replacing arms with a powerful remote manipulator.</description>
     <defaultLabelColor>(0.5, 0.75, 1)</defaultLabelColor>
-	<maxSeverity>1.0</maxSeverity>
-	<initialSeverity>0.001</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+    <initialSeverity>0.001</initialSeverity>
     <stages>
       <li>
         <label>assembling</label>
         <minSeverity>0</minSeverity>
-		<partEfficiencyOffset>-5</partEfficiencyOffset>
-		<!-- <partEfficiencyOffset>0</partEfficiencyOffset> -->
-	  </li>
+        <partEfficiencyOffset>-5</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0</partEfficiencyOffset> -->
+      </li>
       <li>
         <label>initial</label>
         <minSeverity>0.15</minSeverity>
-		<partEfficiencyOffset>-4.95</partEfficiencyOffset>
-		<!-- <partEfficiencyOffset>0.01</partEfficiencyOffset> -->
-	  </li>
+        <partEfficiencyOffset>-4.95</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0.01</partEfficiencyOffset> -->
+      </li>
       <li>
         <label>adapting</label>
         <minSeverity>0.50</minSeverity>
-		<partEfficiencyOffset>-4.5</partEfficiencyOffset>
-		<!-- <partEfficiencyOffset>0.1</partEfficiencyOffset> -->
-	  </li>
+        <partEfficiencyOffset>-4.5</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0.1</partEfficiencyOffset> -->
+      </li>
       <li>
         <label>adapting</label>
         <minSeverity>0.85</minSeverity>
-		<partEfficiencyOffset>-4</partEfficiencyOffset>
-		<!-- <partEfficiencyOffset>0.2</partEfficiencyOffset> -->
-	  </li>
+        <partEfficiencyOffset>-4</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0.2</partEfficiencyOffset> -->
+      </li>
       <li>
         <label>adapting</label>
         <minSeverity>0.9</minSeverity>
-		<partEfficiencyOffset>-3</partEfficiencyOffset>
-		<!-- <partEfficiencyOffset>0.3</partEfficiencyOffset> -->
-	  </li>
+        <partEfficiencyOffset>-3</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0.3</partEfficiencyOffset> -->
+      </li>
       <li>
         <label>adapting</label>
         <minSeverity>0.95</minSeverity>
-		<partEfficiencyOffset>-2.5</partEfficiencyOffset>
-		<!-- <partEfficiencyOffset>0.5</partEfficiencyOffset> -->
-	  </li>
-	  <li>
+        <partEfficiencyOffset>-2.5</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0.5</partEfficiencyOffset> -->
+      </li>
+      <li>
         <minSeverity>1</minSeverity>
-		<hediffGivers>
-			<li Class="HediffGiver_Heat">
-			  <hediff>HyperManipulator_EnvironmentalHeat</hediff>
-			</li>
-			<li Class="HediffGiver_Hypothermia">
-			  <hediff>HyperManipulator_EnvironmentalCold</hediff>
-			</li>
-		</hediffGivers>
+        <hediffGivers>
+          <li Class="HediffGiver_Heat">
+            <hediff>HyperManipulator_EnvironmentalHeat</hediff>
+          </li>
+          <li Class="HediffGiver_Hypothermia">
+            <hediff>HyperManipulator_EnvironmentalCold</hediff>
+          </li>
+        </hediffGivers>
       </li>
     </stages>
     <addedPartProps>
@@ -69,33 +69,33 @@
       </li>
       <li Class="HediffCompProperties_VerbGiver">
         <tools>
-		  <li>
-			<label>frost smasher</label>
-			<capacities>
-			  <li>Frostblast</li>
-			</capacities>
-			<power>20</power>
-			<cooldownTime>1</cooldownTime>
-			<surpriseAttack>
-			  <extraMeleeDamages>
-				<li>
-				  <def>Stun</def>
-				  <amount>20</amount>
-				</li>
-				<li>
-				  <def>EMP</def>
-				  <amount>20</amount>
-				</li>
-			  </extraMeleeDamages>
-			</surpriseAttack>
-		  </li>
+          <li>
+            <label>frost smasher</label>
+            <capacities>
+              <li>Frostblast</li>
+            </capacities>
+            <power>20</power>
+            <cooldownTime>1</cooldownTime>
+            <surpriseAttack>
+              <extraMeleeDamages>
+                <li>
+                  <def>Stun</def>
+                  <amount>20</amount>
+                </li>
+                <li>
+                  <def>EMP</def>
+                  <amount>20</amount>
+                </li>
+              </extraMeleeDamages>
+            </surpriseAttack>
+          </li>
         </tools>
       </li>
     </comps>
     <!-- <spawnThingOnRemoved>HyperManipulator</spawnThingOnRemoved> -->
   </HediffDef>
-  
-    <ThingDef ParentName="BodyPartArchotechBase">
+
+  <ThingDef ParentName="BodyPartArchotechBase">
     <defName>HyperManipulator</defName>
     <label>physic manipulator</label>
     <description>An pair of arm-replacing devices built by an unknown centaur-archotech. It removes one's arms, replacing it's shoulders with a powerful remote manipulator that can interact objects around without directly contect, strong enough to crush a thick hardwood branch, and precise enough to write a sonnet on a grain of rice. It can controllably generating Holographic projection which looks and feels like natural flesh, and dynamically reposition center of mass to keep balance. If it is harmed, it repairs itself over time. Its internal workings are a mystery to all minds.</description>
@@ -111,7 +111,7 @@
       <!-- <li>Advanced</li> -->
     </techHediffsTags>
     <tradeability>Sellable</tradeability>
-	
+
     <!--<ingestible>
       <preferability>NeverForNutrition</preferability>
       <!- - <drugCategory>Medical</drugCategory> - ->
@@ -150,7 +150,7 @@
       </li>
       <li Class="CompProperties_UseEffect">
         <compClass>CentaurTheMagnuassembly.CompUseEffect_HediffApply_HManipulator</compClass>
-		<!-- <hediffDef>HyperManipulator</hediffDef>
+        <!-- <hediffDef>HyperManipulator</hediffDef>
 		<severity>1</severity>
 		<divideByBodySize>true</divideByBodySize> -->
       </li>
@@ -159,17 +159,17 @@
       </li> -->
     </comps>
   </ThingDef>
-  
+
   <JobDef>
     <defName>UseItem_NonInturruptible</defName>
     <driverClass>JobDriver_UseItem</driverClass>
     <reportString>using TargetA.</reportString>
     <playerInterruptible>false</playerInterruptible>
     <casualInterruptible>false</casualInterruptible>
-	<suspendable>false</suspendable>
+    <suspendable>false</suspendable>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
-  
+
   <!-- <RecipeDef ParentName="SurgeryFlesh">
     <defName>InstallHyperManipulator</defName>
     <label>install physic manipulator</label>
@@ -212,7 +212,7 @@
     </appliedOnFixedBodyParts>
     <addsHediff>HyperManipulator</addsHediff>
   </RecipeDef> -->
-  
+
   <!-- <RecipeDef>
     <defName>InstallHyperManipulator</defName>
     <label>install physic manipulator</label>
@@ -274,21 +274,21 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
-  
-<HediffDef ParentName="ImplantHediffBase">
+
+  <HediffDef ParentName="ImplantHediffBase">
     <defName>MentalBurster</defName>
     <label>mental burster</label>
     <labelNoun>a mental burster</labelNoun>
-	<description>A brain implant for centaurs to increase one's consciousness and reduce pain.</description>
+    <description>A brain implant for centaurs to increase one's consciousness and reduce pain.</description>
     <defaultLabelColor>(0.5, 0.75, 1)</defaultLabelColor>
-	<comps>
-		<li Class="HediffCompProperties_HealPermanentWounds" />
-	</comps>
+    <comps>
+      <li Class="HediffCompProperties_HealPermanentWounds" />
+    </comps>
     <stages>
       <li>
         <painFactor>0.85</painFactor>
         <painOffset>-0.15</painOffset>
-		<partEfficiencyOffset>0.15</partEfficiencyOffset>
+        <partEfficiencyOffset>0.15</partEfficiencyOffset>
         <partIgnoreMissingHP>true</partIgnoreMissingHP>
         <capMods>
           <li>
@@ -298,9 +298,9 @@
             <!-- <setMax>0</setMax> -->
           </li>
         </capMods>
-		<statOffsets>
-			<PainShockThreshold>99999</PainShockThreshold>
-		</statOffsets>
+        <statOffsets>
+          <PainShockThreshold>99999</PainShockThreshold>
+        </statOffsets>
       </li>
     </stages>
     <!-- <addedPartProps>
@@ -310,12 +310,12 @@
     </addedPartProps> -->
     <spawnThingOnRemoved>MentalBurster</spawnThingOnRemoved>
   </HediffDef>
-  
+
   <ThingDef ParentName="ImplantBase">
     <defName>MentalBurster</defName>
     <label>mental burster</label>
     <!-- <description>A brain implant for centaurs which inhibits used to reactivate one's remote manipulate ability.</description> -->
-	<description>A brain implant for centaurs to increase one's consciousness and reduce pain, but not completely removes pain as what painstopper do.</description>
+    <description>A brain implant for centaurs to increase one's consciousness and reduce pain, but not completely removes pain as what painstopper do.</description>
     <graphicData>
       <texPath>Things/Item/Health/HealthItemBionic</texPath>
       <graphicClass>Graphic_Single</graphicClass>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
- <FactionDef ParentName="PlayerFactionBase">
+  <FactionDef ParentName="PlayerFactionBase">
     <defName>CentaurPlayerColony</defName>
     <label>Centaur New Arrivals</label>
     <description>A colony of recently-arrived off-worlders.</description>
@@ -11,24 +11,24 @@
     <pawnsPlural>colonists</pawnsPlural>
     <techLevel>Industrial</techLevel>
     <backstoryCategories>
-	  <li>CentaurCivil</li>
+      <li>CentaurCivil</li>
     </backstoryCategories>
     <expandingIconTexture>World/WorldObjects/Expanding/Town</expandingIconTexture>
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-	<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
     <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
     <geneticVariance>1</geneticVariance>
-		<startingResearchTags>
-			<li>ClassicStart</li>
-		</startingResearchTags>
-		<hairTags>
-			<li>Urban</li>
-		</hairTags>
-		<apparelStuffFilter>
-			<thingDefs>
-				<li>Synthread</li>
-			</thingDefs>
-		</apparelStuffFilter>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>Urban</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
   </FactionDef>
 
 </Defs>

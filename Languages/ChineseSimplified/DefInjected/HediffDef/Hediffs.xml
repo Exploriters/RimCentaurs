@@ -12,7 +12,7 @@
   <HyperManipulator.stages.assembling.label>组装中</HyperManipulator.stages.assembling.label>
   <HyperManipulator.stages.initial.label>初安装</HyperManipulator.stages.initial.label>
   <HyperManipulator.stages.adapting.label>适应中</HyperManipulator.stages.adapting.label>
-  
+
   <ToxicHypothermia.label>毒性低温症</ToxicHypothermia.label>
   <ToxicHypothermia.stages.initial.label>轻微</ToxicHypothermia.stages.initial.label>
   <ToxicHypothermia.stages.minor.label>较轻</ToxicHypothermia.stages.minor.label>
@@ -21,7 +21,7 @@
   <ToxicHypothermia.stages.extreme.label>极重</ToxicHypothermia.stages.extreme.label>
   <ToxicHypothermia.stages.critical.label>危急</ToxicHypothermia.stages.critical.label>
   <ToxicHypothermia.stages.fatal.label>致命</ToxicHypothermia.stages.fatal.label>
-  
+
   <HyperManipulator_EnvironmentalHeat.label>操作器过热失效</HyperManipulator_EnvironmentalHeat.label>
   <HyperManipulator_EnvironmentalHeat.stages.initial.label>轻微</HyperManipulator_EnvironmentalHeat.stages.initial.label>
   <HyperManipulator_EnvironmentalHeat.stages.minor.label>较轻</HyperManipulator_EnvironmentalHeat.stages.minor.label>
@@ -41,7 +41,7 @@
   <HyperManipulator_EnvironmentalCold.stages.extreme.label>极重</HyperManipulator_EnvironmentalCold.stages.extreme.label>
   <HyperManipulator_EnvironmentalCold.stages.critical.label>危急</HyperManipulator_EnvironmentalCold.stages.critical.label>
   <HyperManipulator_EnvironmentalCold.stages.fatal.label>失效</HyperManipulator_EnvironmentalCold.stages.fatal.label>
-  
+
   <HyperManipulator_FatalSequela.label>操作器失效后遗症</HyperManipulator_FatalSequela.label>
   <HyperManipulator_FatalSequela.stages.initial.label>轻微</HyperManipulator_FatalSequela.stages.initial.label>
   <HyperManipulator_FatalSequela.stages.minor.label>较轻</HyperManipulator_FatalSequela.stages.minor.label>
@@ -49,7 +49,7 @@
   <HyperManipulator_FatalSequela.stages.serious.label>严重</HyperManipulator_FatalSequela.stages.serious.label>
   <HyperManipulator_FatalSequela.stages.extreme.label>极重</HyperManipulator_FatalSequela.stages.extreme.label>
   <HyperManipulator_FatalSequela.stages.critical.label>危急</HyperManipulator_FatalSequela.stages.critical.label>
-  
+
   <HyperManipulator_Dyskinesia.label>运动障碍</HyperManipulator_Dyskinesia.label>
   <HyperManipulator_Dyskinesia.stages.recovering.label>康复</HyperManipulator_Dyskinesia.stages.recovering.label>
   <HyperManipulator_Dyskinesia.stages.minor.label>较轻</HyperManipulator_Dyskinesia.stages.minor.label>
@@ -57,5 +57,5 @@
   <HyperManipulator_Dyskinesia.stages.major.label>重度</HyperManipulator_Dyskinesia.stages.major.label>
   <HyperManipulator_Dyskinesia.stages.disabled.label>残废</HyperManipulator_Dyskinesia.stages.disabled.label>
   <HyperManipulator_Dyskinesia.stages.initial.label>初现</HyperManipulator_Dyskinesia.stages.initial.label>
-  
+
 </LanguageData>

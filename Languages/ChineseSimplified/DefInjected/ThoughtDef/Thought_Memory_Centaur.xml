@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  
+
   <!-- EN: ate kibble -->
   <AteKibble_Centaur.stages.ate_kibble.label>吃了饲料</AteKibble_Centaur.stages.ate_kibble.label>
   <!-- EN: I had to eat animal kibble. It feels like .. not being considered as a intelligent species any more. -->
   <AteKibble_Centaur.stages.ate_kibble.description>我不得不吃下动物饲料。感觉像是...不再被当作一个有智慧的物种看待。</AteKibble_Centaur.stages.ate_kibble.description>
-  
+
   <!-- EN: was imprisoned -->
   <WasImprisoned_Centaur.stages.was_imprisoned.label>被囚禁</WasImprisoned_Centaur.stages.was_imprisoned.label>
   <!-- EN: The colony had me in jail for a while, like a caged animal. -->
   <WasImprisoned_Centaur.stages.was_imprisoned.description>这个殖民地把我丢进监狱关了起来，像只笼子里的动物一样。</WasImprisoned_Centaur.stages.was_imprisoned.description>
-  
+
   <!-- EN: slept in the cold -->
   <SleptInCold_Centaur.stages.slept_in_the_cold.label>在寒冷中睡觉</SleptInCold_Centaur.stages.slept_in_the_cold.label>
   <!-- EN: I had to sleep in the cold. We really need some heaters. -->
   <SleptInCold_Centaur.stages.slept_in_the_cold.description>我睡觉的时候有点冷。</SleptInCold_Centaur.stages.slept_in_the_cold.description>
-  
+
   <!-- EN: slept in the heat -->
   <SleptInHeat_Centaur.stages.slept_in_the_heat.label>在炎热中睡觉</SleptInHeat_Centaur.stages.slept_in_the_heat.label>
   <!-- EN: I had to sleep in unbearable heat. Can't we have air conditioning? -->
   <SleptInHeat_Centaur.stages.slept_in_the_heat.description>我睡觉的时候太热了，我们的空调哪去了？</SleptInHeat_Centaur.stages.slept_in_the_heat.description>
-  
+
   <!-- EN: chilly -->
   <EnvironmentCold_Centaur.stages.chilly.label>有点冷</EnvironmentCold_Centaur.stages.chilly.label>
   <!-- EN: I'm uncomfortably cold. -->
@@ -37,7 +37,7 @@
   <EnvironmentCold_Centaur.stages.absolutely_freezing.label>要冻僵了</EnvironmentCold_Centaur.stages.absolutely_freezing.label>
   <!-- EN: My teeth are chattering so hard I can barely speak. My toes are numb. I need to get warm. -->
   <EnvironmentCold_Centaur.stages.absolutely_freezing.description>这已经完全超出了我承受寒冷的能力。我的蹄子冻僵了，牙齿在打架。为什么寒冷可以变得这么痛苦？</EnvironmentCold_Centaur.stages.absolutely_freezing.description>
-  
+
   <!-- EN: sweaty -->
   <EnvironmentHot_Centaur.stages.sweaty.label>有点热</EnvironmentHot_Centaur.stages.sweaty.label>
   <!-- EN: It's too hot here. I'm sweating. -->
@@ -54,8 +54,8 @@
   <EnvironmentHot_Centaur.stages.blistering_hot.label>要烤熟了</EnvironmentHot_Centaur.stages.blistering_hot.label>
   <!-- EN: This place is searing hot. I think I could die from this heat! -->
   <EnvironmentHot_Centaur.stages.blistering_hot.description>我快要被烤熟了，在这种温度下我肯定会死的。</EnvironmentHot_Centaur.stages.blistering_hot.description>
-  
-  
+
+
   <!-- EN: entombed underground -->
   <NeedOutdoors_Centaur.stages.entombed_underground.label>幽居病（极重）</NeedOutdoors_Centaur.stages.entombed_underground.label>
   <!-- EN: I've been underground too long. I feel like the weight of this mountain is crushing me. I need to see the sky and feel the wind. -->
@@ -76,6 +76,6 @@
   <NeedOutdoors_Centaur.stages.stuck_indoors.label>幽居病（轻微）</NeedOutdoors_Centaur.stages.stuck_indoors.label>
   <!-- EN: I'd like to go outside and get some fresh air. -->
   <NeedOutdoors_Centaur.stages.stuck_indoors.description>我想出去透透气。</NeedOutdoors_Centaur.stages.stuck_indoors.description>
-  
-  
+
+
 </LanguageData>

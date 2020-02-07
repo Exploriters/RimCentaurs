@@ -24,7 +24,7 @@
       <maxThickness>3</maxThickness>
     </filth>
     <pathCost>3</pathCost>
-	<!-- <comps>
+    <!-- <comps>
 	  <li Class="CompProperties_HeatPusher">
 		<compClass>CompHeatPusherPowered</compClass>
 		<heatPerSecond>-10</heatPerSecond>
@@ -59,7 +59,7 @@
       <maxThickness>3</maxThickness>
     </filth>
     <pathCost>3</pathCost>
-	<!-- <comps>
+    <!-- <comps>
 	  <li Class="CompProperties_HeatPusher">
 		<compClass>CompHeatPusherPowered</compClass>
 		<heatPerSecond>-10</heatPerSecond>
@@ -71,5 +71,5 @@
 	  </li>
 	</comps> -->
   </ThingDef>
-  
+
 </Defs>

@@ -11,7 +11,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <tradeability>Sellable</tradeability>
-	<techLevel>Archotech</techLevel>
+    <techLevel>Archotech</techLevel>
     <soundInteract>Standard_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <useHitPoints>false</useHitPoints>
@@ -61,15 +61,15 @@
         <Beauty>5.0</Beauty>
         <Flammability>0.05</Flammability>
         <WorkToMake>20.0</WorkToMake>
-		<WorkToBuild>20.0</WorkToBuild>
+        <WorkToBuild>20.0</WorkToBuild>
         <MeleeWeapon_CooldownMultiplier>0.85</MeleeWeapon_CooldownMultiplier>
-		<Mass>1</Mass>
+        <Mass>1</Mass>
         <DoorOpenSpeed>3.0</DoorOpenSpeed>
-		<Comfort>3.0</Comfort>
-		<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
-		<MedicalTendQualityOffset>0.05</MedicalTendQualityOffset>
-		<SurgerySuccessChanceFactor>1.05</SurgerySuccessChanceFactor>
-		<DeteriorationRate>0.05</DeteriorationRate>
+        <Comfort>3.0</Comfort>
+        <ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+        <MedicalTendQualityOffset>0.05</MedicalTendQualityOffset>
+        <SurgerySuccessChanceFactor>1.05</SurgerySuccessChanceFactor>
+        <DeteriorationRate>0.05</DeteriorationRate>
       </statFactors>
       <smeltable>false</smeltable>
     </stuffProps>
@@ -97,7 +97,7 @@
       </options>
     </colorGeneratorInTraderStock> -->
   </ThingDef>
-  
+
   <ThingDef ParentName="OrangiceBase">
     <defName>Orangice_Blue</defName>
     <label>blue orangice</label>
@@ -114,14 +114,14 @@
     </stuffProps>
   </ThingDef>
 
-    <ThingCategoryDef>
-      <defName>ThermoDamper</defName>
-      <label>thermo damper</label>
-      <parent>Items</parent>
-      <iconPath>Things/Item/Special/ThermoDamper</iconPath>
-      <resourceReadoutRoot>false</resourceReadoutRoot>
-    </ThingCategoryDef>
-	
+  <ThingCategoryDef>
+    <defName>ThermoDamper</defName>
+    <label>thermo damper</label>
+    <parent>Items</parent>
+    <iconPath>Things/Item/Special/ThermoDamper</iconPath>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+  </ThingCategoryDef>
+
   <ThingDef ParentName="ResourceBase">
     <defName>ThermoDamper</defName>
     <label>thermo damper</label>
@@ -136,9 +136,9 @@
     <soundDrop>Metal_Drop</soundDrop>
     <stackLimit>1</stackLimit>
     <useHitPoints>true</useHitPoints>
-	<tickerType>Normal</tickerType>
+    <tickerType>Normal</tickerType>
     <statBases>
-      <MarketValue>10000</MarketValue>
+      <MarketValue>77961</MarketValue>
       <MaxHitPoints>800</MaxHitPoints>
       <Mass>3</Mass>
       <Flammability>0</Flammability>
@@ -178,7 +178,7 @@
         <transmitsPower>false</transmitsPower>
       </li>
       <li Class="CompProperties_Breakdownable"/> -->
-	  <li Class="CompProperties_SnowExpand" />
+      <li Class="CompProperties_SnowExpand" />
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
         <heatPerSecond>-20</heatPerSecond>
@@ -191,18 +191,18 @@
       <li Class="CompProperties_Explosive">
         <explosiveDamageType>FrostblastSuper</explosiveDamageType>
         <explosiveRadius>39.95</explosiveRadius>
-		<preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
-		<preExplosionSpawnChance>0.25</preExplosionSpawnChance>
-		<preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
-		<postExplosionSpawnThingDef>Filth_FrostdustOrange</postExplosionSpawnThingDef>
-		<postExplosionSpawnChance>0.25</postExplosionSpawnChance>
-		<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        <preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
+        <preExplosionSpawnChance>0.25</preExplosionSpawnChance>
+        <preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
+        <postExplosionSpawnThingDef>Filth_FrostdustOrange</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>0.25</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
         <explosiveExpandPerStackcount>0.2</explosiveExpandPerStackcount>
         <startWickHitPointsPercent>0.25</startWickHitPointsPercent>
         <chanceToStartFire>0</chanceToStartFire>
         <damageFalloff>true</damageFalloff>
-      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-      <explosionEffect>GiantExplosion</explosionEffect>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>GiantExplosion</explosionEffect>
         <explosionSound>Explosion_GiantBomb</explosionSound>
         <wickTicks>
           <min>180</min>
@@ -225,23 +225,23 @@
         <target>Filth_FrostdustOrange</target>
         <radius>0.05</radius>
       </li>
-	  
-	  
+
+
       <!-- <li Class="CompProperties_TemperatureRuinable">
         <minSafeTemperature>19</minSafeTemperature>
         <!- - <maxSafeTemperature>32</maxSafeTemperature> - ->
         <progressPerDegreePerTick>-0.001</progressPerDegreePerTick>
       </li> -->
-	  
+
     </comps>
     <!-- <projectileWhenLoaded>Arrow_Trishot_Super</projectileWhenLoaded> -->
   </ThingDef>
-  
+
   <JobDef>
     <defName>DetonateThermoDamper</defName>
     <driverClass>JobDriver_UseItem</driverClass>
     <reportString>detonating thermo damper.</reportString>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
-  
+
 </Defs>

@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>  
+<Defs>
 
-<BodyPartDef>
-   	<defName>CentaurTail</defName>
-   	 <label>equine tail</label>
-   	 <hitPoints>10</hitPoints>
-   	 <frostbiteVulnerability>1</frostbiteVulnerability>
-   	 <skinCovered>true</skinCovered>
-   	 <beautyRelated>true</beautyRelated>
+  <BodyPartDef>
+    <defName>CentaurTail</defName>
+    <label>equine tail</label>
+    <hitPoints>10</hitPoints>
+    <frostbiteVulnerability>1</frostbiteVulnerability>
+    <skinCovered>true</skinCovered>
+    <beautyRelated>true</beautyRelated>
     <pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>
-   	 <tags>
-		<!-- <li>MovingLimbSegment</li>
+    <tags>
+      <!-- <li>MovingLimbSegment</li>
 		<li>ManipulationLimbSegment</li>
 		<li>MovingLimbDigit</li> -->
-   	 </tags>
-	</BodyPartDef>
+    </tags>
+  </BodyPartDef>
 
   <BodyPartDef>
     <defName>CentaurHoof</defName>
     <label>hoof</label>
     <hitPoints>25</hitPoints>
-	<bleedRate>0</bleedRate>
+    <bleedRate>0</bleedRate>
     <frostbiteVulnerability>0.5</frostbiteVulnerability>
     <skinCovered>false</skinCovered>
     <solid>true</solid>
@@ -38,7 +38,7 @@
     <skinCovered>true</skinCovered>
     <conceptual>true</conceptual>
     <!-- <solid>true</solid> -->
-	<!-- <bleedRate>0</bleedRate> -->
+    <!-- <bleedRate>0</bleedRate> -->
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <frostbiteVulnerability>0</frostbiteVulnerability>
     <canSuggestAmputation>false</canSuggestAmputation>
@@ -59,5 +59,5 @@
     <spawnThingOnRemoved>Heart</spawnThingOnRemoved>
     <canSuggestAmputation>false</canSuggestAmputation>
   </BodyPartDef> -->
-  
+
 </Defs>

@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-  
+
   <BodyTypeDef>
-  <defName>CentaurMale</defName>
-  <headOffset>(0.04, 0.54)</headOffset>
-  <!-- <bodyNakedGraphicPath>Things/Centaur/Bodies/Naked_Centaur</bodyNakedGraphicPath> -->
-  <bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_CentaurMale</bodyNakedGraphicPath>
-  <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_CentaurMale</bodyDessicatedGraphicPath>
+    <defName>CentaurMale</defName>
+    <headOffset>(0.04, 0.54)</headOffset>
+    <!-- <bodyNakedGraphicPath>Things/Centaur/Bodies/Naked_Centaur</bodyNakedGraphicPath> -->
+    <bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_CentaurMale</bodyNakedGraphicPath>
+    <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_CentaurMale</bodyDessicatedGraphicPath>
   </BodyTypeDef>
-  
-   <BodyTypeDef>
-   <defName>CentaurFemale</defName>
-   <headOffset>(0.04, 0.54)</headOffset>
-   <!-- <bodyNakedGraphicPath>Things/Centaur/Bodies/Naked_Centaur</bodyNakedGraphicPath> -->
-   <bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_CentaurFemale</bodyNakedGraphicPath>
-   <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_CentaurFemale</bodyDessicatedGraphicPath>
+
+  <BodyTypeDef>
+    <defName>CentaurFemale</defName>
+    <headOffset>(0.04, 0.54)</headOffset>
+    <!-- <bodyNakedGraphicPath>Things/Centaur/Bodies/Naked_Centaur</bodyNakedGraphicPath> -->
+    <bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_CentaurFemale</bodyNakedGraphicPath>
+    <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_CentaurFemale</bodyDessicatedGraphicPath>
   </BodyTypeDef>
-  
+
 </Defs>

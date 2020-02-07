@@ -6,11 +6,11 @@
     <label>auto crossbow turret</label>
     <description>A ultra-long-ranged mass blasting crossbow turret that can shoot over walls, fires quadruple heavy arrows with delay-setoff thermal-discharging-bomb in a single burst. It requires advanced component to be replaced after overuse. It can't fire at close-up targets, and may explode when damaged.</description>
     <uiIconPath>Things/Building/Security/TurretHyperTrishot_MenuIcon</uiIconPath>
-	<category>Building</category>
+    <category>Building</category>
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
-	<tradeability>Sellable</tradeability>
+    <tradeability>Sellable</tradeability>
     <statBases>
       <ShootingAccuracyTurret>0.95</ShootingAccuracyTurret>
     </statBases>
@@ -23,7 +23,7 @@
     </thingCategories>
     <minifiedDef>MinifiedThing</minifiedDef>
     <!-- <minifiedDef>ThermoDamper</minifiedDef> -->
-	<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <resourcesFractionWhenDeconstructed>0.5</resourcesFractionWhenDeconstructed>
     <killedLeavings>
       <ThermoDamper>0</ThermoDamper>
@@ -39,18 +39,18 @@
       <li Class="CompProperties_Explosive">
         <explosiveDamageType>FrostblastSuper</explosiveDamageType>
         <explosiveRadius>39.95</explosiveRadius>
-		<preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
-		<preExplosionSpawnChance>0.25</preExplosionSpawnChance>
-		<preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
-		<postExplosionSpawnThingDef>Filth_FrostdustOrange</postExplosionSpawnThingDef>
-		<postExplosionSpawnChance>0.25</postExplosionSpawnChance>
-		<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        <preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
+        <preExplosionSpawnChance>0.25</preExplosionSpawnChance>
+        <preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
+        <postExplosionSpawnThingDef>Filth_FrostdustOrange</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>0.25</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
         <explosiveExpandPerStackcount>0.2</explosiveExpandPerStackcount>
         <startWickHitPointsPercent>0.25</startWickHitPointsPercent>
         <chanceToStartFire>0</chanceToStartFire>
         <damageFalloff>true</damageFalloff>
-      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-      <explosionEffect>GiantExplosion</explosionEffect>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>GiantExplosion</explosionEffect>
         <explosionSound>Explosion_GiantBomb</explosionSound>
         <wickTicks>
           <min>180</min>
@@ -123,7 +123,7 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <outOfFuelMessage>Cannot shoot: Needs new Thermo Damper</outOfFuelMessage>
         <fuelIconPath>Things/Item/Special/ThermoDamper</fuelIconPath>
-      </li> -->	  
+      </li> -->
     </comps>
     <inspectorTabs>
       <!-- <li>ITab_Shells</li> -->
@@ -131,7 +131,7 @@
     </inspectorTabs>
     <!-- <specialDisplayRadius>119.95</specialDisplayRadius> -->
     <building>
-	  <!-- <deconstructible>false</deconstructible> -->
+      <!-- <deconstructible>false</deconstructible> -->
       <!-- <mineableThing>ThermoDamper</mineableThing>
       <mineableYield>1</mineableYield>
       <isResourceRock>true</isResourceRock> -->
@@ -143,18 +143,18 @@
       <turretGunDef>Gun_TurretHyperCrossbow</turretGunDef>
       <turretBurstCooldownTime>0.6666666</turretBurstCooldownTime>
       <turretTopGraphicPath>Things/Building/Security/TurretHyperTrishot_Top</turretTopGraphicPath>
-    
+
       <fixedStorageSettings>
         <filter>
           <categories>
-			<li>ThermoDamper</li>
+            <li>ThermoDamper</li>
           </categories>
         </filter>
       </fixedStorageSettings>
       <defaultStorageSettings>
         <filter>
           <categories>
-			<li>ThermoDamper</li>
+            <li>ThermoDamper</li>
           </categories>
           <disallowedThingDefs />
         </filter>
@@ -200,12 +200,12 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-		<requireLineOfSight>false</requireLineOfSight>
+        <requireLineOfSight>false</requireLineOfSight>
         <defaultProjectile>Arrow_Trishot_Hyper</defaultProjectile>
         <forcedMissRadius>9</forcedMissRadius>
         <ai_AvoidFriendlyFireRadius>10</ai_AvoidFriendlyFireRadius>
-		<noiseRadius>20</noiseRadius>
-		<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <noiseRadius>20</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
         <warmupTime>0</warmupTime>
         <minRange>11.5</minRange>
         <range>119.95</range>
@@ -225,8 +225,8 @@
       </li>
     </verbs>
   </ThingDef>
-  
-<!--
+
+  <!--
   <ThingDef ParentName="BuildingBase">
     <defName>StarterBox</defName>
     <label>starter box</label>
@@ -422,17 +422,17 @@
     <costList>
       <ComponentSpacer>4</ComponentSpacer>
       <Uranium>12</Uranium>
-	  <Hyperweave>48</Hyperweave>
+      <Hyperweave>48</Hyperweave>
     </costList>
     <resourcesFractionWhenDeconstructed>0.5</resourcesFractionWhenDeconstructed>
     <killedLeavings>
       <InsectJelly>30</InsectJelly>
       <ComponentSpacer>1</ComponentSpacer>
       <Uranium>5</Uranium>
-	  <Hyperweave>10</Hyperweave>
+      <Hyperweave>10</Hyperweave>
       <Hive>1</Hive>
-	  <Filth_Slime>20</Filth_Slime>
-	  <Fire>4</Fire>
+      <Filth_Slime>20</Filth_Slime>
+      <Fire>4</Fire>
     </killedLeavings>
     <comps>
       <li Class="CompProperties_Power">
@@ -445,7 +445,10 @@
         <requiresPower>true</requiresPower>
         <thingToSpawn>InsectJelly</thingToSpawn>
         <spawnCount>75</spawnCount>
-        <spawnIntervalRange><min>600000</min><max>600000</max></spawnIntervalRange>
+        <spawnIntervalRange>
+          <min>600000</min>
+          <max>600000</max>
+        </spawnIntervalRange>
         <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
         <showMessageIfOwned>true</showMessageIfOwned>
       </li>
@@ -479,5 +482,5 @@
     <minifiedDef>MinifiedThing</minifiedDef>
     <tradeability>Sellable</tradeability>
   </ThingDef>
-  
+
 </Defs>

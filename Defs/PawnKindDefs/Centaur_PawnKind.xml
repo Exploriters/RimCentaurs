@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<PawnKindDef ParentName="BasePlayerPawnKind">
+  <PawnKindDef ParentName="BasePlayerPawnKind">
     <defName>CentaurColonist</defName>
     <label>colonist</label>
-	<race>Alien_Centaur</race>
+    <race>Alien_Centaur</race>
     <defaultFactionType>PlayerColony</defaultFactionType>
-	
+
     <minGenerationAge>0</minGenerationAge>
     <maxGenerationAge>18</maxGenerationAge>
     <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-	
+
     <backstoryCategories>
-	<li>CentaurCivil</li>
+      <li>CentaurCivil</li>
     </backstoryCategories>
-	
+
     <chemicalAddictionChance>0.06</chemicalAddictionChance>
     <apparelTags>
       <li>CentaurIndustrialBasic</li>
     </apparelTags>
-	
+
     <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-	
+
     <!-- <itemQuality>Legendary</itemQuality> -->
     <apparelMoney>
       <min>4000</min>
@@ -31,11 +31,11 @@
       <min>1000</min>
       <max>20000</max>
     </weaponMoney> -->
-	
+
     <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
-	
+
     <techHediffsChance>0.03</techHediffsChance>
-	
+
     <techHediffsMoney>
       <min>50</min>
       <max>800</max>
@@ -45,7 +45,7 @@
       <li>Simple</li>
     </techHediffsTags>
     <apparelColor>(0.5,0.75,1)</apparelColor>
-	
-</PawnKindDef>
- 
+
+  </PawnKindDef>
+
 </Defs>

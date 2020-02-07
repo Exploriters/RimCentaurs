@@ -46,11 +46,11 @@ namespace CentaurTheMagnuassembly
             bool PartNotFound = true;
 
             IEnumerable<BodyPartRecord> parts = usedBy.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined);
-            
+
             if (!CanBeUsedBy(usedBy, out _))
                 return;
 
-            for(int i =0; i <1000;i++)
+            for (int i = 0; i < 1000; i++)
             {
                 foreach (BodyPartRecord part in parts)
                 {
