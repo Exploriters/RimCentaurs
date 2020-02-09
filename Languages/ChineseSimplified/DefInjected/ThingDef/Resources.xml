@@ -10,6 +10,6 @@
 
   <ThermoDamper.label>失温器</ThermoDamper.label>
   <ThermoDamper.description>一个坚固的容器，通过吸收环境热能来生成能量的强大能源核心，也称"环境热能反应堆"。当你将其放在室内时，它会吸走房间的热量。这种技术由未知势力但很可能是半人马开发，甚至超越了绝大多数闪耀世界。它的内部结构对于所有人来说都是个迷，尽管看上去它是从奇点中直接提取能量的，意味着它在受损时可能会爆炸。\n\n这个装置比看上去要轻盈很多。</ThermoDamper.description>
-  <ThermoDamper.comps.CompProperties_Usable.useLabel>引爆失温器</ThermoDamper.comps.CompProperties_Usable.useLabel>
+  <ThermoDamper.comps.0.useLabel>引爆失温器</ThermoDamper.comps.0.useLabel>
 
 </LanguageData>

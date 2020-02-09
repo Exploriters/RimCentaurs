@@ -160,6 +160,22 @@
       <li>ThermoDamper</li>
     </tradeTags>
     <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>DetonateThermoDamper</useJob>
+        <useLabel>Detonate thermo damper</useLabel>
+        <useDuration>180</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_StartWick</compClass>
+      </li>
+      <li Class="CompProperties_ProximityFuse">
+        <target>Filth_FrostdustBlue</target>
+        <radius>0.05</radius>
+      </li>
+      <li Class="CompProperties_ProximityFuse">
+        <target>Filth_FrostdustOrange</target>
+        <radius>0.05</radius>
+      </li>
       <!-- <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
         <heatPerSecond>20</heatPerSecond>
@@ -217,22 +233,6 @@
           <min>180</min>
           <max>600</max>
         </wickTicks>
-      </li>
-      <li Class="CompProperties_Usable">
-        <useJob>DetonateThermoDamper</useJob>
-        <useLabel>Detonate thermo damper</useLabel>
-        <useDuration>180</useDuration>
-      </li>
-      <li Class="CompProperties_UseEffect">
-        <compClass>CompUseEffect_StartWick</compClass>
-      </li>
-      <li Class="CompProperties_ProximityFuse">
-        <target>Filth_FrostdustBlue</target>
-        <radius>0.05</radius>
-      </li>
-      <li Class="CompProperties_ProximityFuse">
-        <target>Filth_FrostdustOrange</target>
-        <radius>0.05</radius>
       </li>
 
 
