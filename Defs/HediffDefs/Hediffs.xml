@@ -9,6 +9,7 @@
     <!-- <taleOnVisible>HypothermiaRevealed</taleOnVisible> -->
     <maxSeverity>10.0</maxSeverity>
     <isBad>true</isBad>
+	<makesAlert>true</makesAlert>
     <hediffGivers>
       <li Class="HediffGiver_Heat">
         <hediff>HyperManipulator_EnvironmentalHeat</hediff>
@@ -16,7 +17,7 @@
     </hediffGivers>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.1</severityPerDay>
+        <severityPerDay>-1</severityPerDay>
       </li>
       <li Class="HediffCompProperties_Discoverable">
         <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
@@ -50,6 +51,13 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.00020833333333333333333333333333333</baseMtbDays>
 		  </li> -->
+          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.08</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
         </hediffGivers>
       </li>
       <li>
@@ -71,6 +79,13 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.000083333333333333333333333333333333</baseMtbDays>
 		  </li> -->
+          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.2</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
         </hediffGivers>
       </li>
       <li>
@@ -92,6 +107,13 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.000033333333333333333333333333333333</baseMtbDays>
 		  </li> -->
+          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.5</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
         </hediffGivers>
       </li>
       <li>
@@ -113,6 +135,13 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.000018518518518518518518518518518519</baseMtbDays>
 		  </li> -->
+          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.9</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
         </hediffGivers>
       </li>
       <li>
@@ -134,6 +163,13 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.000017543859649122807017543859649123</baseMtbDays>
 		  </li> -->
+          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.95</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
         </hediffGivers>
       </li>
       <li>
@@ -157,6 +193,13 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.000016835016835016835016835016835</baseMtbDays>
 		  </li> -->
+          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.99</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
         </hediffGivers>
       </li>
     </stages>
@@ -177,7 +220,7 @@
     </hediffGivers>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.1</severityPerDay>
+        <severityPerDay>-1</severityPerDay>
       </li>
     </comps>
     <stages>
@@ -199,6 +242,13 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.00020833333333333333333333333333333</baseMtbDays>
 		  </li> -->
+          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.08</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
         </hediffGivers>
       </li>
       <li>
@@ -215,6 +265,13 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.000083333333333333333333333333333333</baseMtbDays>
 		  </li> -->
+          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.2</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
         </hediffGivers>
       </li>
       <li>
@@ -231,6 +288,13 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.000033333333333333333333333333333333</baseMtbDays>
 		  </li> -->
+          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.5</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
         </hediffGivers>
       </li>
       <li>
@@ -247,6 +311,13 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.000018518518518518518518518518518519</baseMtbDays>
 		  </li> -->
+          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.9</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
         </hediffGivers>
       </li>
       <li>
@@ -263,6 +334,13 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.000017543859649122807017543859649123</baseMtbDays>
 		  </li> -->
+          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.95</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
         </hediffGivers>
       </li>
       <li>
@@ -279,6 +357,13 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.000016835016835016835016835016835</baseMtbDays>
 		  </li> -->
+          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.99</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
         </hediffGivers>
       </li>
     </stages>
@@ -290,7 +375,7 @@
     <defaultLabelColor>(0.95, 0.6, 0.75)</defaultLabelColor>
     <label>manipulator failure sequela</label>
     <maxSeverity>1.0</maxSeverity>
-    <!-- <initialSeverity>0.01</initialSeverity> -->
+    <initialSeverity>0.001</initialSeverity>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.05</severityPerDay>
@@ -298,12 +383,12 @@
     </comps>
     <stages>
       <li>
-        <label>initial</label>
+        <!-- <label>initial</label> -->
         <minSeverity>0.0</minSeverity>
         <becomeVisible>false</becomeVisible>
       </li>
       <li>
-        <label>minor</label>
+        <!-- <label>minor</label> -->
         <minSeverity>0.06</minSeverity>
         <becomeVisible>false</becomeVisible>
         <hediffGivers>
@@ -314,7 +399,7 @@
         </hediffGivers>
       </li>
       <li>
-        <label>moderate</label>
+        <!-- <label>moderate</label> -->
         <minSeverity>0.2</minSeverity>
         <becomeVisible>false</becomeVisible>
         <hediffGivers>
@@ -325,7 +410,7 @@
         </hediffGivers>
       </li>
       <li>
-        <label>serious</label>
+        <!-- <label>serious</label> -->
         <minSeverity>0.35</minSeverity>
         <becomeVisible>false</becomeVisible>
         <hediffGivers>
@@ -336,7 +421,7 @@
         </hediffGivers>
       </li>
       <li>
-        <label>extreme</label>
+        <!-- <label>extreme</label> -->
         <minSeverity>0.62</minSeverity>
         <becomeVisible>false</becomeVisible>
         <hediffGivers>
@@ -347,7 +432,7 @@
         </hediffGivers>
       </li>
       <li>
-        <label>critical</label>
+        <!-- <label>critical</label> -->
         <minSeverity>0.95</minSeverity>
         <becomeVisible>false</becomeVisible>
         <hediffGivers>

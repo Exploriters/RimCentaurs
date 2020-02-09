@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <HediffDef ParentName="AddedBodyPartBase">
+  <HediffDef>
+    <hediffClass>CentaurTheMagnuassembly.Hediff_AddedPart_HManipulator</hediffClass>
+    <defaultLabelColor>(0.5, 0.75, 1)</defaultLabelColor>
+    <isBad>false</isBad>
     <defName>HyperManipulator</defName>
     <label>physic manipulator</label>
     <labelNoun>a physic manipulator</labelNoun>
     <description>An pair of devices replacing arms with a powerful remote manipulator.</description>
-    <defaultLabelColor>(0.5, 0.75, 1)</defaultLabelColor>
     <maxSeverity>1.0</maxSeverity>
     <initialSeverity>0.001</initialSeverity>
     <stages>
@@ -92,10 +94,10 @@
         </tools>
       </li>
     </comps>
-    <!-- <spawnThingOnRemoved>HyperManipulator</spawnThingOnRemoved> -->
+    <spawnThingOnRemoved>HyperManipulator</spawnThingOnRemoved>
   </HediffDef>
 
-  <ThingDef ParentName="BodyPartArchotechBase">
+  <ThingDef>
     <defName>HyperManipulator</defName>
     <label>physic manipulator</label>
     <description>An pair of arm-replacing devices built by an unknown centaur-archotech. It removes one's arms, replacing it's shoulders with a powerful remote manipulator that can interact objects around without directly contect, strong enough to crush a thick hardwood branch, and precise enough to write a sonnet on a grain of rice. It can controllably generating Holographic projection which looks and feels like natural flesh, and dynamically reposition center of mass to keep balance. If it is harmed, it repairs itself over time. Its internal workings are a mystery to all minds.</description>
@@ -104,13 +106,42 @@
       <!-- <li>RewardSpecial</li> -->
     </thingSetMakerTags>
     <statBases>
-      <MarketValue>8000</MarketValue>
+	  <DeteriorationRate>0</DeteriorationRate>
+      <MarketValue>100000</MarketValue>
       <Mass>20</Mass>
+	  
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+	  <Beauty>-4</Beauty>
     </statBases>
     <techHediffsTags>
       <!-- <li>Advanced</li> -->
     </techHediffsTags>
-    <tradeability>Sellable</tradeability>
+    <tradeability>None</tradeability>
+	
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItemArchotech</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+	
+    <thingCategories>
+      <li>BodyPartsArtificial</li>
+    </thingCategories>
+	
+	<thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Never</tickerType>
+    <alwaysHaulable>true</alwaysHaulable>
+    <isTechHediff>true</isTechHediff>
+    <tradeTags>
+      <li>TechHediff</li>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <pathCost>10</pathCost>
 
     <!--<ingestible>
       <preferability>NeverForNutrition</preferability>
@@ -142,9 +173,10 @@
       </outcomeDoers>
     </ingestible> -->
     <comps>
+      <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Usable">
         <!-- <compClass>CentaurTheMagnuassembly.CompUsable_HediffApply_HManipulator</compClass> -->
-        <useJob>UseItem_NonInturruptible</useJob>
+        <useJob>UseItem_HManipulator</useJob>
         <useLabel>assemble physic manipulator on self</useLabel>
         <useDuration>600</useDuration>
       </li>
@@ -159,6 +191,21 @@
       </li> -->
     </comps>
   </ThingDef>
+
+  <JobDef>
+    <defName>UseItem_HManipulator</defName>
+    <driverClass>CentaurTheMagnuassembly.JobDriver_UseItem_AlwasAvaible</driverClass>
+    <reportString>Installing physic manipulator on self.</reportString>
+    <playerInterruptible>false</playerInterruptible>
+    <casualInterruptible>false</casualInterruptible>
+    <suspendable>false</suspendable>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	<neverFleeFromEnemies>true</neverFleeFromEnemies>
+	<neverShowWeapon>true</neverShowWeapon>
+    <alwaysShowWeapon>false</alwaysShowWeapon>
+	<!-- <taleOnCompletion /> -->
+    <!-- <CheckJobOverrideOnDamageMode>Never</CheckJobOverrideOnDamageMode> -->
+  </JobDef>
 
   <JobDef>
     <defName>UseItem_NonInturruptible</defName>

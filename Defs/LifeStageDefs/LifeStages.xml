@@ -6,7 +6,6 @@
     <label>baby</label>
     <bodySizeFactor>0.2</bodySizeFactor>
     <!-- <foodMaxFactor>1.5</foodMaxFactor> -->
-    <foodMaxFactor>3</foodMaxFactor>
     <!-- <healthScaleFactor>0.2</healthScaleFactor> -->
     <hungerRateFactor>0.2</hungerRateFactor>
     <!-- <marketValueFactor>0.5</marketValueFactor> -->
@@ -21,7 +20,6 @@
     <label>toddler</label>
     <bodySizeFactor>0.32</bodySizeFactor>
     <!-- <foodMaxFactor>1.5</foodMaxFactor> -->
-    <foodMaxFactor>3</foodMaxFactor>
     <!-- <healthScaleFactor>0.4</healthScaleFactor> -->
     <hungerRateFactor>0.4</hungerRateFactor>
     <!-- <marketValueFactor>0.7</marketValueFactor> -->
@@ -34,7 +32,6 @@
   <LifeStageDef>
     <defName>CentaurChild</defName>
     <label>child</label>
-    <foodMaxFactor>2</foodMaxFactor>
     <bodySizeFactor>0.5</bodySizeFactor>
     <!-- <healthScaleFactor>0.5</healthScaleFactor> -->
     <hungerRateFactor>0.6</hungerRateFactor>
@@ -47,7 +44,6 @@
 
   <LifeStageDef>
     <defName>CentaurTeenager</defName>
-    <foodMaxFactor>2</foodMaxFactor>
     <label>teenager</label>
     <adjective>teenage</adjective>
     <reproductive>false</reproductive>
@@ -61,7 +57,6 @@
 
   <LifeStageDef>
     <defName>CentaurAdult</defName>
-    <foodMaxFactor>2</foodMaxFactor>
     <label>adult</label>
     <visible>false</visible>
     <reproductive>false</reproductive>

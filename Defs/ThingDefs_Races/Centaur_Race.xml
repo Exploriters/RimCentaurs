@@ -582,7 +582,7 @@
       <!-- <HungerRateMultiplier>1.0</HungerRateMultiplier> -->
       <CarryingCapacity>150</CarryingCapacity>
     </statBases>
-    <size>(2,2)</size>
+    <size>(1,1)</size>
     <tools>
       <li>
         <label>left fist</label>

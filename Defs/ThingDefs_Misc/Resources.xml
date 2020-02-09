@@ -178,11 +178,20 @@
         <transmitsPower>false</transmitsPower>
       </li>
       <li Class="CompProperties_Breakdownable"/> -->
-      <li Class="CompProperties_SnowExpand" />
+      <li Class="CompProperties_SnowExpand">
+      <compClass>CentaurTheMagnuassembly.CompSnowExpand_Overtick</compClass>
+	  <expandInterval>100</expandInterval>
+	  <addAmount>100</addAmount>
+	  <maxRadius>2.5</maxRadius>
+	  </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
         <heatPerSecond>-20</heatPerSecond>
         <!-- <heatPushMinTemperature>-273</heatPushMinTemperature> -->
+      </li>
+      <li Class="CentaurTheMagnuassembly.CompProperties_SelfHealOvertime">
+        <!-- <compClass>CentaurTheMagnuassembly.CompSelfHealOvertime</compClass> -->
+        <detlaHpPerSec>3</detlaHpPerSec>
       </li>
       <li Class="CompProperties_Glower">
         <glowRadius>20</glowRadius>

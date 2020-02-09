@@ -2,6 +2,7 @@
 <LanguageData>
 
   <UseItem_NonInturruptible.reportString>正在使用TargetA。</UseItem_NonInturruptible.reportString>
+  <UseItem_HManipulator.reportString>正在为自己安装物理操作仪。</UseItem_HManipulator.reportString>
 
 
 </LanguageData>
