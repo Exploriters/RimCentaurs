@@ -4,11 +4,17 @@ using System.Linq;
 using System.Text;
 using RimWorld;
 using Verse;
+using System.Diagnostics;
 
 namespace CentaurTheMagnuassembly
 {
+    /*public class FilthWithComps : ThingWithComps, Filth
+    { 
+    
+    }*/
     public class RimCentaurCore
     {
+        
     }
     public class CompProperties_SelfHealOvertime : CompProperties
     {
@@ -18,7 +24,6 @@ namespace CentaurTheMagnuassembly
         public CompProperties_SelfHealOvertime() : base(typeof(CompSelfHealOvertime))
         {
         }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("", "IDE0051")]
         public CompProperties_SelfHealOvertime(Type cc) : base(cc == typeof(ThingComp) ? typeof(CompSelfHealOvertime) : cc)
         {
         }
@@ -31,7 +36,7 @@ namespace CentaurTheMagnuassembly
             {
                 if (cp.GetType() == typeof(CompProperties_SelfHealOvertime))
                 {
-                    if (((CompProperties_SelfHealOvertime)cp).detlaHpPerSec != null && ((CompProperties_SelfHealOvertime)cp) != null)
+                    if (((CompProperties_SelfHealOvertime)cp)?.detlaHpPerSec != null && ((CompProperties_SelfHealOvertime)cp) != null)
                     {
                         detlaHpPerSec = ((CompProperties_SelfHealOvertime)cp).detlaHpPerSec;
                         if (detlaHpPerSec != 0D)
@@ -73,11 +78,30 @@ namespace CentaurTheMagnuassembly
             return result;
         }*/
     }
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("", "IDE1006")]
     public class CompSelfHealOvertime : ThingComp
     {
-        public double detlaHpPerSec = 0;
-        public int ticksBetweenHeal = 60;
         public int ticksWithoutHeal = 0;
+        public double detlaHpPerSec { get { return ((CompProperties_SelfHealOvertime)props).detlaHpPerSec; } }
+        public int ticksBetweenHeal
+        {
+            get
+            {
+                if (((CompProperties_SelfHealOvertime)props).ticksBetweenHeal <= 0)
+                {
+                    return (int)(60 / detlaHpPerSec + 0.5);
+                }
+                else
+                {
+                    return ((CompProperties_SelfHealOvertime)props).ticksBetweenHeal;
+                }
+            }
+        }
+        public override void PostExposeData()
+        {
+            base.PostExposeData();
+            Scribe_Values.Look(ref ticksWithoutHeal, "ticksWithoutHeal", 0);
+        }
         private void OnTickAction(double tickRateFactor = 60.0)
         {
             if (detlaHpPerSec == 0 || parent.HitPoints == parent.MaxHitPoints || parent.HitPoints <= 0)
@@ -123,15 +147,6 @@ namespace CentaurTheMagnuassembly
         public override void CompTick()
         {
             base.CompTick();
-            detlaHpPerSec = ((CompProperties_SelfHealOvertime)props).detlaHpPerSec;
-            if (((CompProperties_SelfHealOvertime)props).ticksBetweenHeal <= 0)
-            {
-                ticksBetweenHeal = (int)(60 / detlaHpPerSec + 0.5);
-            }
-            else
-            {
-                ticksBetweenHeal = ((CompProperties_SelfHealOvertime)props).ticksBetweenHeal;
-            }
             OnTickAction(60);
         }
         /*public override void CompTickRare()
@@ -198,11 +213,15 @@ namespace CentaurTheMagnuassembly
         public override bool CanBeUsedBy(Pawn usedBy, out string failReason)
         {
             HediffDef HyperManipulatorHediff = DefDatabase<HediffDef>.GetNamed("HyperManipulator");
+            BodyPartDef CentaurScapular = DefDatabase<BodyPartDef>.GetNamed("CentaurScapular");
 
             if (usedBy.health.hediffSet.HasHediff(HyperManipulatorHediff))
             {
-                failReason = "Magnuassembly_CompUseEffect_HediffApply_HManipulator_UseReject_AlreadyInstalled".Translate(usedBy.Name.ToStringShort);
-                return false;
+                if (usedBy.health.hediffSet.GetFirstHediffOfDef(HyperManipulatorHediff)?.Part.def == CentaurScapular)
+                {
+                    failReason = "Magnuassembly_CompUseEffect_HediffApply_HManipulator_UseReject_AlreadyInstalled".Translate(usedBy.Name.ToStringShort);
+                    return false;
+                }
             }
 
             if (usedBy.def != DefDatabase<ThingDef>.GetNamed("Alien_Centaur"))
@@ -268,18 +287,39 @@ namespace CentaurTheMagnuassembly
     }
     public class Hediff_AddedPart_HManipulator : Hediff_AddedPart
     {
-
+        //TODO: Prevent remove part surgery targeting HM
     }
-    public class HediffCompProperties_AgeStop : HediffCompProperties_SeverityPerDay
+
+    public class HediffCompProperties_AgeStop : HediffCompProperties
     {
-        
+        public HediffCompProperties_AgeStop() : base()
+        {
+            compClass = typeof(HediffCompAgeStop);
+        }
+        //TODO: Supress pawn's age
+    }
+    public class HediffCompAgeStop : HediffComp
+    {
+        //TODO: Supress pawn's age
+    }
+
+    public class CompUsable_AlwasAvaible : CompUsable
+    {
+        public override IEnumerable<FloatMenuOption> CompFloatMenuOptions(Pawn myPawn)
+        {
+            IEnumerable<FloatMenuOption> preret = base.CompFloatMenuOptions(myPawn);
+            foreach (FloatMenuOption fmo in preret)
+            {
+                Log.Message("FMO LABEL: " + fmo.Label);
+                fmo.Disabled = false;
+            }
+            return preret;
+        }
     }
     public class JobDriver_UseItem_AlwasAvaible : JobDriver_UseItem
     {
 
     }
-
-
     public class HediffGiver_Overtime : HediffGiver
     {
         public float chancePerTick = 1;
@@ -315,6 +355,58 @@ namespace CentaurTheMagnuassembly
                     if (doTryApply)
                         TryApply(pawn);
                     HealthUtility.AdjustSeverity(pawn, hediff, severityAdjust);
+                }
+            }
+        }
+    }
+    /*public class HediffGiver_FactorBySeverity : HediffGiver
+    {
+        public float chancePerTick = 1;
+        public float severityAdjust = -0.001f;
+        public float doCount = 1;
+
+        public override void OnIntervalPassed(Pawn pawn, Hediff cause)
+        {
+            if (cause == null)
+                return;
+            Random rnd = new Random();
+            for (int k = 0; k < doCount; k++)
+            {
+                if (rnd.Next(0, 9999) / 10000f < chancePerTick * cause.Severity)
+                {
+                    cause.Severity += severityAdjust;
+                }
+            }
+        }
+    }*/
+
+    public class HediffCompProperties_FactorBySeverity : HediffCompProperties
+    {
+        public float chancePerTick = 1;
+        public float severityAdjust = -0.001f;
+        public float doCount = 1;
+        public HediffCompProperties_FactorBySeverity() : base()
+        {
+            compClass = typeof(HediffComp_FactorBySeverity);
+        }
+    }
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("", "IDE1006")]
+    public class HediffComp_FactorBySeverity : HediffComp
+    {
+        public float chancePerTick { get { return ((HediffCompProperties_FactorBySeverity)props).chancePerTick; } }
+        public float severityAdjust { get { return ((HediffCompProperties_FactorBySeverity)props).severityAdjust; } }
+        public float doCount { get { return ((HediffCompProperties_FactorBySeverity)props).doCount; } }
+        public override void CompPostTick(ref float severityAdjustment)
+        {
+            if (parent == null)
+                return;
+            Random rnd = new Random();
+            for (int k = 0; k < doCount; k++)
+            {
+                if (rnd.Next(0, 9999) / 10000f < chancePerTick * parent.Severity)
+                {
+                    parent.Severity += severityAdjust;
                 }
             }
         }

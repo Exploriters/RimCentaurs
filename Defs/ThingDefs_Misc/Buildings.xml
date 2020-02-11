@@ -326,7 +326,7 @@
       <li>Batteries</li>
     </researchPrerequisites>
     <thingSetMakerTags>
-      <li>RewardSpecial</li>
+      <!- - <li>RewardSpecial</li> - ->
     </thingSetMakerTags>
     <building>
 	  <deconstructible>false</deconstructible>
@@ -468,7 +468,7 @@
       <WorkToBuild>16000</WorkToBuild>
     </statBases>
     <thingSetMakerTags>
-      <li>RewardSpecial</li>
+      <!-- <li>RewardSpecial</li> -->
     </thingSetMakerTags>
     <tickerType>Normal</tickerType>
     <size>(2, 2)</size>

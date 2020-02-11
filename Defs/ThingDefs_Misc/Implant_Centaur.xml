@@ -74,10 +74,12 @@
           <li>
             <label>frost smasher</label>
             <capacities>
-              <li>Frostblast</li>
+              <li>FrostblastMelee</li>
             </capacities>
             <power>20</power>
             <cooldownTime>1</cooldownTime>
+			<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			<hediff>Frostbite</hediff>
             <surpriseAttack>
               <extraMeleeDamages>
                 <li>
@@ -90,6 +92,8 @@
                 </li>
               </extraMeleeDamages>
             </surpriseAttack>
+			<chanceFactor>10</chanceFactor>
+			<armorPenetration>1.1</armorPenetration>
           </li>
         </tools>
       </li>
@@ -100,7 +104,7 @@
   <ThingDef>
     <defName>HyperManipulator</defName>
     <label>physic manipulator</label>
-    <description>An pair of arm-replacing devices built by an unknown centaur-archotech. It removes one's arms, replacing it's shoulders with a powerful remote manipulator that can interact objects around without directly contect, strong enough to crush a thick hardwood branch, and precise enough to write a sonnet on a grain of rice. It can controllably generating Holographic projection which looks and feels like natural flesh, and dynamically reposition center of mass to keep balance. If it is harmed, it repairs itself over time. Its internal workings are a mystery to all minds.</description>
+    <description>An pair of arm replacement built by an unknown centaur-archotech. It removes one's arms, replacing it's shoulders with a powerful remote manipulator that can interact objects around without directly contect, strong enough to crush a thick hardwood branch, and precise enough to write a sonnet on a grain of rice. It can controllably generating Holographic projection which looks and feels like natural flesh, and dynamically reposition center of mass to keep balance. If it is harmed, it repairs itself over time. Its internal workings are a mystery to all minds.\n\nIt can be assemble by oneself without surgery, but not very comfortable at begining, take times to become adapted, and then it will be incredibly effective than anyother types of bionic parts.</description>
     <techLevel>Archotech</techLevel>
     <thingSetMakerTags>
       <!-- <li>RewardSpecial</li> -->
@@ -120,7 +124,7 @@
     <tradeability>None</tradeability>
 	
     <graphicData>
-      <texPath>Things/Item/Health/HealthItemArchotech</texPath>
+      <texPath>Things/Item/Health/HealthItemMagnualand_Double</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.80</drawSize>
     </graphicData>
@@ -175,7 +179,7 @@
     <comps>
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Usable">
-        <!-- <compClass>CentaurTheMagnuassembly.CompUsable_HediffApply_HManipulator</compClass> -->
+        <compClass>CentaurTheMagnuassembly.CompUsable_AlwasAvaible</compClass>
         <useJob>UseItem_HManipulator</useJob>
         <useLabel>assemble physic manipulator on self</useLabel>
         <useDuration>600</useDuration>
@@ -194,7 +198,7 @@
 
   <JobDef>
     <defName>UseItem_HManipulator</defName>
-    <driverClass>CentaurTheMagnuassembly.JobDriver_UseItem_AlwasAvaible</driverClass>
+    <driverClass>JobDriver_UseItem</driverClass>
     <reportString>Installing physic manipulator on self.</reportString>
     <playerInterruptible>false</playerInterruptible>
     <casualInterruptible>false</casualInterruptible>
@@ -329,19 +333,19 @@
     <description>A brain implant for centaurs to increase one's consciousness and reduce pain.</description>
     <defaultLabelColor>(0.5, 0.75, 1)</defaultLabelColor>
     <comps>
-      <li Class="HediffCompProperties_HealPermanentWounds" />
+      <!-- <li Class="HediffCompProperties_HealPermanentWounds" /> -->
     </comps>
     <stages>
       <li>
-        <painFactor>0.85</painFactor>
-        <painOffset>-0.15</painOffset>
+        <painFactor>0.1</painFactor>
+        <painOffset>-0.5</painOffset>
         <partEfficiencyOffset>0.15</partEfficiencyOffset>
         <partIgnoreMissingHP>true</partIgnoreMissingHP>
         <capMods>
           <li>
             <capacity>Talking</capacity>
-            <offset>-0.05</offset>
-            <!-- <postFactor>2</postFactor> -->
+            <!-- <offset>-0.05</offset> -->
+            <postFactor>0.869566</postFactor>
             <!-- <setMax>0</setMax> -->
           </li>
         </capMods>
@@ -364,7 +368,7 @@
     <!-- <description>A brain implant for centaurs which inhibits used to reactivate one's remote manipulate ability.</description> -->
     <description>A brain implant for centaurs to increase one's consciousness and reduce pain, but not completely removes pain as what painstopper do.</description>
     <graphicData>
-      <texPath>Things/Item/Health/HealthItemBionic</texPath>
+      <texPath>Things/Item/Health/HealthItemMagnualand</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.80</drawSize>
     </graphicData>

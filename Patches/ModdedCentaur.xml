@@ -91,4 +91,17 @@
 			</li>
 		</operations>
 	</Operation>
+	
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[race/fleshType="Mechanoid"]/statBases</xpath>
+				<value>
+					<ToxicHypothermiaSensitivity>0</ToxicHypothermiaSensitivity>
+				</value>
+			</li>
+		</operations>
+	</Operation>
 </Patch>

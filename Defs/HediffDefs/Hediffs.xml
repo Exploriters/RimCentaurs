@@ -557,8 +557,13 @@
     <isBad>true</isBad>
     <hediffGivers />
     <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
+      <!-- <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-1.0</severityPerDay>
+      </li> -->
+      <li Class="CentaurTheMagnuassembly.HediffCompProperties_FactorBySeverity">
+        <chancePerTick>0.05</chancePerTick>
+        <severityAdjust>-0.001</severityAdjust>
+        <doCount>20</doCount>
       </li>
     </comps>
     <stages>
@@ -603,7 +608,7 @@
       </li>
       <li>
         <label>moderate</label>
-        <minSeverity>20</minSeverity>
+        <minSeverity>0.2</minSeverity>
         <painFactor>0.8</painFactor>
         <capMods>
           <li>
@@ -638,7 +643,7 @@
       </li>
       <li>
         <label>serious</label>
-        <minSeverity>35</minSeverity>
+        <minSeverity>0.35</minSeverity>
         <painFactor>0.5</painFactor>
         <capMods>
           <li>
@@ -673,7 +678,7 @@
       </li>
       <li>
         <label>extreme</label>
-        <minSeverity>62</minSeverity>
+        <minSeverity>0.62</minSeverity>
         <painFactor>0.1</painFactor>
         <capMods>
           <li>
@@ -708,7 +713,7 @@
       </li>
       <li>
         <label>critical</label>
-        <minSeverity>95</minSeverity>
+        <minSeverity>0.95</minSeverity>
         <painFactor>0.05</painFactor>
         <capMods>
           <li>
@@ -743,7 +748,7 @@
       </li>
       <li>
         <label>fatal</label>
-        <minSeverity>300</minSeverity>
+        <minSeverity>3</minSeverity>
         <!-- <lifeThreatening>true</lifeThreatening> -->
         <painFactor>0.05</painFactor>
         <capMods>

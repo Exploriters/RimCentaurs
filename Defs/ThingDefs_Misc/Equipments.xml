@@ -5,7 +5,8 @@
     <defName>Gun_CentaurChargeShotgun</defName>
     <label>charge shotgun</label>
     <tradeability>Sellable</tradeability>
-    <description>A charged-shot shotgun. Pulse-charge technology charges each shot with unstable energy as it leaves the barrel. Released on impact, the charged energy greatly increases the damage done.</description>
+    <!-- <description>A charged-shot shotgun. Pulse-charge technology charges each shot with unstable energy as it leaves the barrel. Released on impact, the charged energy greatly increases the damage done.</description> -->
+    <description>A charged-shot shotgun. This shotgun-styled-design pulse-charge weapon launch massive of charge shot in a single burst, hunts many parts on the one got hits.</description>
     <techLevel>Spacer</techLevel>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/CentaurChargeShotgun</texPath>
@@ -78,7 +79,7 @@
     <defName>Bullet_CentaurChargeShotgun</defName>
     <label>charge shot</label>
     <graphicData>
-      <texPath>Things/Projectile/Charge_Small</texPath>
+      <texPath>Things/Projectile/Charge_Shotgun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -91,9 +92,109 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_CentaurPlasmaBlaster</defName>
+    <label>overkill</label>
+    <description>A powerful energy weapon that deals thermo damage, takes a bit long time to fires plasma shots with high armor penetration ability. It somehow looks like a quadruple missile tube by the front, but actually a plasma projectile cannon. It is really heavy and oddly doesn't have much recoil as it looks like.\n\nDue to its horrible weight, only centaurs can handle it.</description>
+    <techLevel>Spacer</techLevel>
+    <tradeability>Sellable</tradeability>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/CentaurChargeShotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>135000</WorkToMake>
+      <Mass>20.0</Mass>
+      <AccuracyTouch>0.45</AccuracyTouch>
+      <AccuracyShort>0.435</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.44</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Gun_CentaurChargeShotgun>1</Gun_CentaurChargeShotgun>
+      <ComponentSpacer>200</ComponentSpacer>
+      <Uranium>600</Uranium>
+      <Chemfuel>150</Chemfuel>
+      <Hyperweave>75</Hyperweave>
+    </costList>
+    <weaponTags>
+      <li>CentaurSpacerGun</li>
+      <li>CentaurRanged</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_CentaurPlasmaBlaster</defaultProjectile>
+        <warmupTime>4.0</warmupTime>
+        <range>56.4</range>
+        <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+        <burstShotCount>2</burstShotCount>
+        <soundCast>Shot_TurretSniper</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>16</muzzleFlashScale>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>1.3</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>1.3</cooldownTime>
+      </li>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>1.3</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_CentaurPlasmaBlaster</defName>
+    <label>plasma shot</label>
+    <graphicData>
+      <texPath>Things/Projectile/Charge_ShotgunDouble</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>BulletHeat</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <armorPenetrationBase>0.95</armorPenetrationBase>
+      <stoppingPower>1.05</stoppingPower>
+      <speed>120</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Bow_Trishot</defName>
     <label>trishot</label>
-    <tradeability>None</tradeability>
+    <tradeability>Sellable</tradeability>
     <description>A powerful massive bow with long range that fires triple heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst. It requires powerful arms to use it that only available to Centaurs. With a massive weight and sharp edge on it, it can also be a deadly melee weapon.</description>
     <techLevel>Archotech</techLevel>
     <tradeTags>
@@ -107,29 +208,36 @@
     <soundInteract>Bow_Large</soundInteract>
     <soundDrop>Bow_Large</soundDrop>
     <useHitPoints>false</useHitPoints>
-    <costList>
+    <!--<costList>
       <Hyperweave>75</Hyperweave>
       <Uranium>600</Uranium>
-      <!-- <Plasteel>150</Plasteel>
-      <Gold>50</Gold> -->
       <ComponentSpacer>200</ComponentSpacer>
       <Gun_CentaurChargeShotgun>1</Gun_CentaurChargeShotgun>
       <ThermoDamper>1</ThermoDamper>
+    </costList>-->
+    <costList>
+      <ThermoDamper>1</ThermoDamper>
+      <Orangice_Blue>10</Orangice_Blue>
+      <Orangice>10</Orangice>
+      <MedicineUltratech>25</MedicineUltratech>
+      <MechSerumHealer>1</MechSerumHealer>
+	  <Gun_CentaurPlasmaBlaster>1</Gun_CentaurPlasmaBlaster>
     </costList>
     <statBases>
-      <WorkToMake>150000</WorkToMake>
+      <WorkToMake>200000</WorkToMake>
       <MaxHitPoints>250</MaxHitPoints>
-      <MarketValue>30000</MarketValue>
+      <MarketValue>130000</MarketValue>
       <Mass>12.5</Mass>
-      <AccuracyTouch>0.425</AccuracyTouch>
+      <!-- <AccuracyTouch>0.425</AccuracyTouch>
       <AccuracyShort>0.383</AccuracyShort>
       <AccuracyMedium>0.525</AccuracyMedium>
-      <AccuracyLong>0.35</AccuracyLong>
+      <AccuracyLong>0.35</AccuracyLong> -->
       <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
       <!-- <EquipDelay>3</EquipDelay> -->
       <Flammability>0</Flammability>
       <DeteriorationRate>0</DeteriorationRate>
     </statBases>
+	<stackLimit>1</stackLimit>
     <weaponTags>
       <li>CentaurRanged</li>
     </weaponTags>
@@ -149,6 +257,7 @@
     </comps>
     <verbs>
       <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
+		<!-- DPS: 9.6256684491978609625668449197861 -->
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <requireLineOfSight>true</requireLineOfSight>
@@ -191,26 +300,62 @@
         <noiseRadius>20</noiseRadius>
         <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
         <warmupTime>9</warmupTime>
-        <minRange>11.95</minRange>
+        <!-- <minRange>11.95</minRange> -->
         <range>119.95</range>
         <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
         <burstShotCount>20</burstShotCount>
         <soundAiming>OrbitalTargeter_Aiming</soundAiming>
         <soundCast>Bow_Large</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>20</muzzleFlashScale>
+        <!-- <muzzleFlashScale>20</muzzleFlashScale> -->
         <onlyManualCast>false</onlyManualCast>
-        <stopBurstWithoutLos>true</stopBurstWithoutLos>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
         <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
         <!-- <consumeFuelPerShot>0.25</consumeFuelPerShot> -->
 
-        <desc>Icos mode that launch empowered hyper shot, deals more damage and shoot longer range, blast over walls but can't fire at close-up targets.</desc>
+        <desc>Icos mode that launch empowered hyper shot, shoot longer range and blast over walls.</desc>
         <label>icos shot</label>
         <texPath>UI/Commands/BowTrishot_ModeIcos</texPath>
         <texPathSelected>UI/Commands/BowTrishot_ModeIcos_Select</texPathSelected>
+        <!-- <accuracyTouch>0.425</accuracyTouch>
+		<accuracyShort>0.383</accuracyShort>
+		<accuracyMedium>0.525</accuracyMedium>
+		<accuracyLong>0.35</accuracyLong> -->
+      </li>
+      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <requireLineOfSight>false</requireLineOfSight>
+        <defaultProjectile>Arrow_Trishot_Super</defaultProjectile>
+        <forcedMissRadius>0.05</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>50</ai_AvoidFriendlyFireRadius>
+        <noiseRadius>20</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>37.5</warmupTime>
+        <!-- <minRange>38.95</minRange> -->
+        <range>9999.95</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>20</muzzleFlashScale>
+        <onlyManualCast>false</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+          <!-- <canTargetSelf>true</canTargetSelf> -->
+        </targetParams>
+        <!-- <consumeFuelPerShot>0.25</consumeFuelPerShot> -->
+
+        <desc>One shot mode that launch a extremely powerful singe shot, deals devastative damage and shoot ultra long range blast over walls. Takes really long time to take a shot.</desc>
+        <label>one shot</label>
+        <texPath>UI/Commands/BowTrishot_ModeOne</texPath>
+        <texPathSelected>UI/Commands/BowTrishot_ModeOne_Select</texPathSelected>
         <!-- <accuracyTouch>0.425</accuracyTouch>
 		<accuracyShort>0.383</accuracyShort>
 		<accuracyMedium>0.525</accuracyMedium>

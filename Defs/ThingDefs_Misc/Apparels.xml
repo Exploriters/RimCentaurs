@@ -633,7 +633,7 @@
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>Apparel_CentaurShieldArmor</defName>
     <label>centaur shield armor</label>
-    <tradeability>Sellable</tradeability>
+    <tradeability>None</tradeability>
     <description>A suit of light powered armor for a centaur wearer with projectile-repulsion device and toxic defense. Layered plasteel-weave plates are very effective at stopping attacks, with few vulnerable joint sections. Neuro-memetic assistors allow a centaur to wear the armor and still move easily.\n\nThe shield of it will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks or heat. It shuts down instantly if hit by EMP. It DOES NOT prevents the wearer from firing out.\n\nArmor like this is often used by imperial janissaries and rapid-incursion space marines.\n\nAdditional weight and materials are required when compared to humanoid armor, allowing for protection of the flanks.</description>
     <!-- <generateCommonality>0.0</generateCommonality> -->
     <thingClass>D9ASB.RangedShieldBelt</thingClass>
@@ -644,7 +644,7 @@
       <li>ExoticMisc</li>
       <li>CentaurEndgame</li>
     </tradeTags>
-    <recipeMaker>
+    <!-- <recipeMaker>
       <researchPrerequisite>PoweredArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
@@ -653,7 +653,7 @@
       <recipeUsers Inherit="False">
         <li>FabricationBench</li>
       </recipeUsers>
-    </recipeMaker>
+    </recipeMaker> -->
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmor/CentaurPowerArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1056,7 +1056,7 @@
       </options>
     </colorGenerator>
     <thingSetMakerTags>
-      <li>RewardSpecial</li>
+      <!-- <li>RewardSpecial</li> -->
     </thingSetMakerTags>
   </ThingDef>
 
@@ -1164,7 +1164,7 @@
       </options>
     </colorGenerator>
     <thingSetMakerTags>
-      <li>RewardSpecial</li>
+      <!-- <li>RewardSpecial</li> -->
     </thingSetMakerTags>
   </ThingDef>
 
@@ -1267,7 +1267,7 @@
       </options>
     </colorGenerator>
     <thingSetMakerTags>
-      <li>RewardSpecial</li>
+      <!-- <li>RewardSpecial</li> -->
     </thingSetMakerTags>
   </ThingDef>
 

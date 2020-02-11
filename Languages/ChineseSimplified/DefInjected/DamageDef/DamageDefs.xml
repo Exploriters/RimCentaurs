@@ -7,5 +7,8 @@
   <FrostblastSuper.deathMessage>{0}被穿透性冻伤杀死了。</FrostblastSuper.deathMessage>
   <Frostmelee.label>穿透性冻伤</Frostmelee.label>
   <Frostmelee.deathMessage>{0}被穿透性冻伤杀死了。</Frostmelee.deathMessage>
+  
+  <BulletHeat.label>子弹伤</BulletHeat.label>
+  <BulletHeat.deathMessage>{0}被枪射杀了。</BulletHeat.deathMessage>
 
 </LanguageData>

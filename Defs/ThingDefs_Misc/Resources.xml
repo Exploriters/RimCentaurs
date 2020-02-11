@@ -6,9 +6,8 @@
     <label>orangice</label>
     <description>A powerful rare material, icy stuff but orange and doesn't melt. Can be shaped into nearly any form, but takes really long time to do this.</description>
     <graphicData>
-      <texPath>Things/Item/Special/Orangice</texPath>
-      <!-- <graphicClass>Graphic_StackCount</graphicClass> -->
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Item/Resource/Orangice</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <tradeability>Sellable</tradeability>
     <techLevel>Archotech</techLevel>
@@ -103,9 +102,8 @@
     <label>blue orangice</label>
     <description>A powerful rare material, icy stuff but orange and doesn't melt. Can be shaped into nearly any form, but takes really long time to do this.\n\nThis processed verison is blue.</description>
     <graphicData>
-      <texPath>Things/Item/Special/Orangice_Blue</texPath>
-      <!-- <graphicClass>Graphic_StackCount</graphicClass> -->
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Item/Resource/Bluice</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <deepCommonality>0</deepCommonality>
     <stuffProps>

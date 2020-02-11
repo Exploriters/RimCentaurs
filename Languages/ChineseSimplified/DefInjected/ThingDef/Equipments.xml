@@ -2,11 +2,19 @@
 <LanguageData>
 
   <Gun_CentaurChargeShotgun.label>电荷霰弹枪</Gun_CentaurChargeShotgun.label>
-  <Gun_CentaurChargeShotgun.description>发射高能电荷弹的霰弹枪。电荷弹科技使得每发子弹在离开枪管时都由不稳定能量进行充能，并且在击中物体的时候完全释放出来，大大增加了子弹的伤害。</Gun_CentaurChargeShotgun.description>
+  <Gun_CentaurChargeShotgun.description>发射高能电荷弹的霰弹枪。这把霰弹枪造型设计的电荷武器能够在单次爆发中发射大量电荷弹，伤害被命中的人很多部位。</Gun_CentaurChargeShotgun.description>
   <Gun_CentaurChargeShotgun.tools.stock.label>弹匣</Gun_CentaurChargeShotgun.tools.stock.label>
   <Gun_CentaurChargeShotgun.tools.barrel.label>枪管</Gun_CentaurChargeShotgun.tools.barrel.label>
   <Gun_CentaurChargeShotgun.verbs.Verb_Shoot.label>电荷霰弹枪</Gun_CentaurChargeShotgun.verbs.Verb_Shoot.label>
   <Bullet_CentaurChargeShotgun.label>电荷弹</Bullet_CentaurChargeShotgun.label>
+  
+  <Gun_CentaurPlasmaBlaster.label>绝杀轰击炮</Gun_CentaurPlasmaBlaster.label>
+  <Gun_CentaurPlasmaBlaster.description>一把造成热能伤害的强大能量武器，花费一些时间发射高度穿甲的电浆弹。它从正面看上去有点像四联导弹筒，但实际上是一个电浆弹射物重炮。这个武器很重，但很奇怪的是它并不像看上去那样有多少后坐力。\n\n由于其可怕般的重量，只有半人马可以使用它。</Gun_CentaurPlasmaBlaster.description>
+  <Gun_CentaurPlasmaBlaster.tools.grip.label>握把</Gun_CentaurPlasmaBlaster.tools.grip.label>
+  <Gun_CentaurPlasmaBlaster.tools.stock.label>弹匣</Gun_CentaurPlasmaBlaster.tools.stock.label>
+  <Gun_CentaurPlasmaBlaster.tools.barrel.label>发射管</Gun_CentaurPlasmaBlaster.tools.barrel.label>
+  <Gun_CentaurPlasmaBlaster.verbs.Verb_Shoot.label>绝杀轰击炮</Gun_CentaurPlasmaBlaster.verbs.Verb_Shoot.label>
+  <Bullet_CentaurPlasmaBlaster.label>电浆霰弹</Bullet_CentaurPlasmaBlaster.label>
 
   <Bow_Trishot.label>三射弓</Bow_Trishot.label>
   <Bow_Trishot.description>一把强大的远距离重型弓，能在单次爆发射击中射出三只携带延迟起爆热能释放爆炸物的远距离重箭。其需要强大的双臂因而只有半人马可以使用。由于其锋利边缘和沉重的质量，这把武器也可以是一个致命的近战武器。</Bow_Trishot.description>
@@ -17,7 +25,9 @@
   <Bow_Trishot.verbs.0.label>三重打击</Bow_Trishot.verbs.0.label>
   <Bow_Trishot.verbs.0.desc>标准三射模式。</Bow_Trishot.verbs.0.desc>
   <Bow_Trishot.verbs.1.label>廿射打击</Bow_Trishot.verbs.1.label>
-  <Bow_Trishot.verbs.1.desc>发射高能射击的强力模式，造成更多伤害并且射击距离更远，能够越墙射击但不能对近距离目标开火。</Bow_Trishot.verbs.1.desc>
+  <Bow_Trishot.verbs.1.desc>发射高能射击的模式，射击距离更远，能够越墙射击。</Bow_Trishot.verbs.1.desc>
+  <Bow_Trishot.verbs.2.label>单射打击</Bow_Trishot.verbs.2.label>
+  <Bow_Trishot.verbs.2.desc>发射极强单发射击的模式，造成毁灭性的伤害并拥有极端射程，能够越墙射击。需要花很长的时间来发射。</Bow_Trishot.verbs.2.desc>
 
   <Arrow_Trishot.label>三射弓爆炸箭</Arrow_Trishot.label>
   <Arrow_Trishot_Hyper.label>高级爆炸箭</Arrow_Trishot_Hyper.label>
