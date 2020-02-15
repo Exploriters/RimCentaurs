@@ -8,6 +8,7 @@ namespace CentaurTheMagnuassembly
 {
     public class Projectile_Explosive_Teleshot : Projectile_Explosive
     {
+        //TODO: Fix Teleport
         protected override void Explode()
         {
             Map map = Map;
@@ -50,12 +51,13 @@ namespace CentaurTheMagnuassembly
     }
     public class Projectile_Explosive_Waggingshot : Projectile_Explosive
     {
+        static Random Randy = new Random();
         public override void Tick()
         {
             base.Tick();
             if (!landed)
             {
-                ticksToImpact = Math.Max(ticksToImpact + new Random().Next(-10, 10), 0);
+                ticksToImpact = Math.Max(ticksToImpact + Randy.Next(-1, 1), 0);
             }
         }
     }

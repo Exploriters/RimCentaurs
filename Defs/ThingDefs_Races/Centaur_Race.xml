@@ -273,26 +273,8 @@
 					</li>						
 					</options>- ->
 
-				</alienskincolorgen>
-				<alienhaircolorgen Class="ColorGenerator_StandardApparel">
-				<!- -    <options>
-					<li>
-						<weight>10</weight>
-						<only>RGBA(0.2,0.2,0.2,1)</only>
-					</li>
-					
-					<li>
-						<weight>10</weight>
-						<only>RGBA(1,0.7,0.5,1)</only>
-					</li>
-					<!- - Cute Colours - ->
-					<li>
-						<weight>10</weight>
-						<only>RGBA(0.5,0.9,1,1)</only>
-					</li>						
-					</options>- ->
-
-				</alienhaircolorgen>-->
+				</alienskincolorgen>-->
+		  <alienhaircolorgen Class="CentaurTheMagnuassembly.ColorGenerator_CentaurHair"/>
           <useSkincolorForHair>false</useSkincolorForHair>
           <customHeadDrawSize>(1, 1)</customHeadDrawSize>
           <customDrawSize>(1.35, 1.35)</customDrawSize>
@@ -383,7 +365,7 @@
       <hairSettings>
 			<!-- <getsGreyAt>93.75</getsGreyAt> -->
 			<!-- <getsGreyAt>2147483647</getsGreyAt> -->
-			<getsGreyAt>200.55</getsGreyAt>
+			<!-- <getsGreyAt>200.55</getsGreyAt> -->
 		</hairSettings>
 
       <relationSettings>

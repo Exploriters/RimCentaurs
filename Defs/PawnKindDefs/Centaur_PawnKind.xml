@@ -7,8 +7,8 @@
     <race>Alien_Centaur</race>
     <defaultFactionType>PlayerColony</defaultFactionType>
 
-    <minGenerationAge>20</minGenerationAge>
-    <maxGenerationAge>49</maxGenerationAge>
+    <minGenerationAge>100</minGenerationAge>
+    <maxGenerationAge>199</maxGenerationAge>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 
     <backstoryCategories>
@@ -43,8 +43,8 @@
 
     <!-- <itemQuality>Legendary</itemQuality> -->
     <apparelMoney>
-      <min>150000000</min>
-      <max>1650000000</max>
+      <min>1500000000</min>
+      <max>16500000000</max>
     </apparelMoney>
     <!-- <weaponMoney>
       <min>1000</min>

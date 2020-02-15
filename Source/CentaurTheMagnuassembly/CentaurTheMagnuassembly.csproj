@@ -71,6 +71,8 @@
     <Compile Include="AdditionalVerbRemaster.cs" />
     <Compile Include="BackstoryCracker.cs" />
     <Compile Include="AlienRace.cs" />
+    <Compile Include="Building_TriBattery.cs" />
+    <Compile Include="ColorGenerator_CentaurHair.cs" />
     <Compile Include="CompHealWearedOvertime.cs" />
     <Compile Include="CompSelfHealOvertime.cs" />
     <Compile Include="CompSnowExpand_Overtick.cs" />
