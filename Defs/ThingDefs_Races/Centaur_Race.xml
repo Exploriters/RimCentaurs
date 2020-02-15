@@ -17,7 +17,7 @@
 
     <alienRace>
       <generalSettings>
-
+		<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>
         <immuneToAge>true</immuneToAge>
         <allowHumanBios>true</allowHumanBios>
         <maxDamageForSocialfight>7</maxDamageForSocialfight>
@@ -32,6 +32,10 @@
 
         <disallowedTraits>
           <li>BodyPurist</li>
+          <li>ShootingAccuracy</li>
+          <li>Brawler</li>
+          <li>Wimp</li>
+          <li>Xenophobia</li>
         </disallowedTraits>
 
         <alienPartGenerator>
@@ -42,7 +46,7 @@
           </alienbodytypes>
           <useGenderedBodies>false</useGenderedBodies>
           <bodyAddons>
-            <li>
+            <li Class="CentaurTheMagnuassembly.BodyAddon_MX">
               <drawSize>1</drawSize>
               <path>Things/Centaur/Ears/EarLeft</path>
               <bodyPart>left ear</bodyPart>
@@ -112,7 +116,7 @@
 
 
 
-            <li>
+            <li Class="CentaurTheMagnuassembly.BodyAddon_MX">
               <drawSize>1</drawSize>
               <path>Things/Centaur/Ears/EarRight</path>
               <bodyPart>right ear</bodyPart>
@@ -182,7 +186,7 @@
 
 
 
-            <li>
+            <li Class="CentaurTheMagnuassembly.BodyAddon_MX">
               <drawSize>1</drawSize>
               <path>Things/Centaur/Tail/Tail</path>
               <bodyPart>tail</bodyPart>
@@ -247,74 +251,7 @@
               </offsets>
             </li>
 
-            <!--<li>
-					<drawSize>1</drawSize>
-						<path>Things/Centaur/Fur/Fur</path>
-						<colorChannel>hair</colorChannel>
-						<!- -<bodyPart>Torso</bodyPart>- ->
-						<inFrontOfBody>true</inFrontOfBody>
-						<useSkinColor>false</useSkinColor>
-						<drawnInBed>false</drawnInBed>
-						<hiddenUnderApparelFor>
-							<li>Torso</li>
-						</hiddenUnderApparelFor>
-						<offsets>
-							<south>
-								<bodyTypes>
-									<CentaurMale>(0,0)</CentaurMale>
-									<CentaurFemale>(0,0)</CentaurFemale>
-								</bodyTypes>
-								<portraitBodyTypes>
-									<CentaurMale>(0,0)</CentaurMale>
-									<CentaurFemale>(0,0)</CentaurFemale>
-								</portraitBodyTypes>
-								<crownTypes>
-									<Normal_Average>(0,0)</Normal_Average>
-									<Normal_Pointy>(0,0)</Normal_Pointy>
-									<Normal_Wide>(0,0)</Normal_Wide>
-									<Narrow_Average>(0,0)</Narrow_Average>
-									<Narrow_Pointy>(0,0)</Narrow_Pointy>
-									<Narrow_Wide>(0,0)</Narrow_Wide>
-								</crownTypes>
-							</south>
-							<north>
-								<bodyTypes>
-									<CentaurMale>(0,0)</CentaurMale>
-									<CentaurFemale>(0,0)</CentaurFemale>
-								</bodyTypes>
-								<portraitBodyTypes>
-									<CentaurMale>(0,0)</CentaurMale>
-									<CentaurFemale>(0,0)</CentaurFemale>
-								</portraitBodyTypes>
-								<crownTypes>
-									<Normal_Average>(0,0)</Normal_Average>
-									<Normal_Pointy>(0,0)</Normal_Pointy>
-									<Normal_Wide>(0,0)</Normal_Wide>
-									<Narrow_Average>(0,0)</Narrow_Average>
-									<Narrow_Pointy>(0,0)</Narrow_Pointy>
-									<Narrow_Wide>(0,0)</Narrow_Wide>
-								</crownTypes>
-							</north>
-							<east>
-								<bodyTypes>
-									<CentaurMale>(0,0)</CentaurMale>
-									<CentaurFemale>(0,0)</CentaurFemale>
-								</bodyTypes>
-								<portraitBodyTypes>
-									<CentaurMale>(0,0)</CentaurMale>
-									<CentaurFemale>(0,0)</CentaurFemale>
-								</portraitBodyTypes>
-								<crownTypes>
-									<Normal_Average>(0,0)</Normal_Average>
-									<Normal_Pointy>(0,0)</Normal_Pointy>
-									<Normal_Wide>(0,0)</Normal_Wide>
-									<Narrow_Average>(0,0)</Narrow_Average>
-									<Narrow_Pointy>(0,0)</Narrow_Pointy>
-									<Narrow_Wide>(0,0)</Narrow_Wide>
-								</crownTypes>
-							</east>
-						</offsets>
-					</li>-->
+            <!--   -->
 
           </bodyAddons>
 
@@ -443,9 +380,11 @@
             </ateThoughtSpecific>-->
 
       </thoughtSettings>
-      <!-- <hairSettings>
-			<getsGreyAt>93.75</getsGreyAt>
-		</hairSettings> -->
+      <hairSettings>
+			<!-- <getsGreyAt>93.75</getsGreyAt> -->
+			<!-- <getsGreyAt>2147483647</getsGreyAt> -->
+			<getsGreyAt>200.55</getsGreyAt>
+		</hairSettings>
 
       <relationSettings>
         <relationChanceModifierLover>0</relationChanceModifierLover>
@@ -515,6 +454,7 @@
         <onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
         <weaponList>
           <!--<li>Gun_CentaurChargeShotgun</li>-->
+          <li>Gun_CentaurPlasmaBlaster</li>
           <li>Bow_Trishot</li>
         </weaponList>
 
@@ -725,7 +665,9 @@
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
       <intelligence>Humanlike</intelligence>
       <makesFootprints>false</makesFootprints>
-      <lifeExpectancy>150</lifeExpectancy>
+      <!-- <lifeExpectancy>150</lifeExpectancy> -->
+      <lifeExpectancy>2147483647</lifeExpectancy>
+      <!-- <lifeExpectancy isNull="true" /> -->
       <nameCategory>HumanStandard</nameCategory>
       <leatherDef>Leather_Human</leatherDef>
       <body>Centaur</body>
@@ -807,13 +749,14 @@
         </points>
       </ageGenerationCurve>
       <hediffGiverSets>
-        <li>OrganicStandard</li>
+        <li>OrganicStandard_NoAgingProblem</li>
         <li>Human</li>
       </hediffGiverSets>
     </race>
     <recipes>
       <li>InstallHyperManipulator</li>
       <li>InstallMentalBurster</li>
+      <!-- <li>RemoveBodyPart_ExcludingScapular</li> -->
       <!-- humanRecipeImport enabled
 	  <li>InstallArchotechEye</li>
 	  <li>InstallArchotechArm</li>

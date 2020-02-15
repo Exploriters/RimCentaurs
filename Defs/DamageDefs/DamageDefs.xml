@@ -93,13 +93,18 @@
     <hediffSolid>Crack</hediffSolid>
   </DamageDef>
 
-  <DamageDef ParentName="Frostblast">
+  <DamageDef ParentName="Frostblast" Name="FrostblastSuper">
     <defName>FrostblastSuper</defName>
     <defaultDamage>200</defaultDamage>
     <defaultStoppingPower>20.05</defaultStoppingPower>
     <defaultArmorPenetration>1.0</defaultArmorPenetration>
     <buildingDamageFactor>1.5</buildingDamageFactor>
     <plantDamageFactor>5</plantDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="FrostblastSuper">
+    <defName>FrostblastSuper_LauncherSafe</defName>
+    <workerClass>CentaurTheMagnuassembly.DamageWorker_Frostbite_LauncherSafe</workerClass>
   </DamageDef>
 
   <ToolCapacityDef>

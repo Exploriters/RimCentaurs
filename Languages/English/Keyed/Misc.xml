@@ -6,4 +6,6 @@
   
   <Magnuassembly_CompProperties_SelfHealOvertime_detlaHpPerSec_label>Hitpoint change rate</Magnuassembly_CompProperties_SelfHealOvertime_detlaHpPerSec_label>
   <Magnuassembly_CompProperties_SelfHealOvertime_detlaHpPerSec_description>The rate at which the hitpoint of this item changes overtime. This effect is unaffected by deterioration, and happens anytime anywhere.</Magnuassembly_CompProperties_SelfHealOvertime_detlaHpPerSec_description>
+  
+  <Magnuassembly_AdditionalVerbPatch_CooldownDisableReason>Cooldown remains {0}.</Magnuassembly_AdditionalVerbPatch_CooldownDisableReason>
 </LanguageData>

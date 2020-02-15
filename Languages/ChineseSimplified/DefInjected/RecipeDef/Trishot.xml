@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Remaster_Trishot.label>重制三射弓</Remaster_Trishot.label>
+  <Remaster_Trishot.description>以微小的材料代价来重制三射弓。</Remaster_Trishot.description>
+  <Remaster_Trishot.jobString>正在重制三射弓。</Remaster_Trishot.jobString>
+
+  <!-- <Make_Bow_Trishot_2Stage.label>制作三射弓</Make_Bow_Trishot_2Stage.label>
+  <Make_Bow_Trishot_2Stage.description>制作三射弓。</Make_Bow_Trishot_2Stage.description>
+  <Make_Bow_Trishot_2Stage.jobString>正在制作三射弓。</Make_Bow_Trishot_2Stage.jobString>
+
+  <Make_Bow_Trishot.label>制作三射弓</Make_Bow_Trishot.label>
+  <Make_Bow_Trishot.description>制作三射弓。</Make_Bow_Trishot.description>
+  <Make_Bow_Trishot.jobString>正在制作三射弓。</Make_Bow_Trishot.jobString> -->
+  
+  <Repair_Trishot_1Stage.label>为三射弓更换失温器</Repair_Trishot_1Stage.label>
+  <Repair_Trishot_1Stage.description>通过更换其失温器来修复三射弓。这将会恢复其射程并轻度恢复其额外攻击能力。</Repair_Trishot_1Stage.description>
+  <Repair_Trishot_1Stage.jobString>正在修复三射弓。</Repair_Trishot_1Stage.jobString>
+
+  <Repair_Trishot_2Stage.label>修复三射弓</Repair_Trishot_2Stage.label>
+  <Repair_Trishot_2Stage.description>完全修复三射弓并恢复其所有功能，解锁一个极强的额外攻击方式。</Repair_Trishot_2Stage.description>
+  <Repair_Trishot_2Stage.jobString>正在修复三射弓。</Repair_Trishot_2Stage.jobString>
+  
+</LanguageData>

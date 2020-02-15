@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Text;
-using RimWorld;
 using Verse;
+using RimWorld;
 using System.Diagnostics;
+using System;
+using static CentaurTheMagnuassembly.RimCentaurCore;
+using UnityEngine;
 
 namespace CentaurTheMagnuassembly
 {
@@ -12,404 +13,182 @@ namespace CentaurTheMagnuassembly
     { 
     
     }*/
-    public class RimCentaurCore
+    public class Trishot_ResearchProjectDef : ResearchProjectDef
     {
-        
-    }
-    public class CompProperties_SelfHealOvertime : CompProperties
-    {
-        public double detlaHpPerSec = 0;
-        public int ticksBetweenHeal = -1;
-
-        public CompProperties_SelfHealOvertime() : base(typeof(CompSelfHealOvertime))
-        {
-        }
-        public CompProperties_SelfHealOvertime(Type cc) : base(cc == typeof(ThingComp) ? typeof(CompSelfHealOvertime) : cc)
-        {
-        }
-        //GIVE UP FOR NOW TILL I K HOW TO DO
-        /*public override IEnumerable<StatDrawEntry> SpecialDisplayStats(StatRequest req)
-        {
-            IEnumerable<StatDrawEntry> result = base.SpecialDisplayStats(req);
-            double detlaHpPerSec=0;
-            foreach (object cp in req.Thing.def.comps)
-            {
-                if (cp.GetType() == typeof(CompProperties_SelfHealOvertime))
-                {
-                    if (((CompProperties_SelfHealOvertime)cp)?.detlaHpPerSec != null && ((CompProperties_SelfHealOvertime)cp) != null)
-                    {
-                        detlaHpPerSec = ((CompProperties_SelfHealOvertime)cp).detlaHpPerSec;
-                        if (detlaHpPerSec != 0D)
-                        {
-
-                            string valueString;
-                            if (1 / Math.Abs(detlaHpPerSec) > 60000D)
-                            {
-                                valueString = "PeriodYears".Translate(detlaHpPerSec * 60000 + " /");
-                            }
-                            else if (1 / Math.Abs(detlaHpPerSec) > 15000D)
-                            {
-                                valueString = "PeriodQuadrums".Translate(detlaHpPerSec * 15000 + " /");
-                            }
-                            else if (1 / Math.Abs(detlaHpPerSec) > 1000D)
-                            {
-                                valueString = "PeriodDays".Translate(detlaHpPerSec * 1000 + " /");
-                            }
-                            else if (1 / Math.Abs(detlaHpPerSec) > 41.666666666666666666666666666667)
-                            {
-                                valueString = "PeriodHours".Translate(detlaHpPerSec * 41.666666666666666666666666666667 + " /");
-                            }
-                            else
-                            {
-                                valueString = "PeriodSeconds".Translate(detlaHpPerSec + " /");
-                            }
-
-                            StatDrawEntry stat_detla = new StatDrawEntry(
-                                StatCategoryDefOf.Basics,
-                                "Magnuassembly_CompProperties_SelfHealOvertime_detlaHpPerSec_label".Translate(),
-                                valueString,
-                                0,
-                                "Magnuassembly_CompProperties_SelfHealOvertime_detlaHpPerSec_description".Translate());
-                            (result as List<StatDrawEntry>).Add(stat_detla);
-                        }
-                    }
-                }
-            }
-            return result;
-        }*/
-    }
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("", "IDE1006")]
-    public class CompSelfHealOvertime : ThingComp
-    {
-        public int ticksWithoutHeal = 0;
-        public double detlaHpPerSec { get { return ((CompProperties_SelfHealOvertime)props).detlaHpPerSec; } }
-        public int ticksBetweenHeal
-        {
-            get
-            {
-                if (((CompProperties_SelfHealOvertime)props).ticksBetweenHeal <= 0)
-                {
-                    return (int)(60 / detlaHpPerSec + 0.5);
-                }
-                else
-                {
-                    return ((CompProperties_SelfHealOvertime)props).ticksBetweenHeal;
-                }
-            }
-        }
-        public override void PostExposeData()
-        {
-            base.PostExposeData();
-            Scribe_Values.Look(ref ticksWithoutHeal, "ticksWithoutHeal", 0);
-        }
-        private void OnTickAction(double tickRateFactor = 60.0)
-        {
-            if (detlaHpPerSec == 0 || parent.HitPoints == parent.MaxHitPoints || parent.HitPoints <= 0)
-                return;
-
-            ticksWithoutHeal++;
-
-            if (ticksWithoutHeal >= ticksBetweenHeal)
-            {
-                double detlaHpAmount = detlaHpPerSec * (ticksWithoutHeal / tickRateFactor);
-
-
-                double absheal = detlaHpAmount;
-                int leastamount;
-                if (detlaHpAmount < 0)
-                {
-                    absheal = -absheal;
-                    leastamount = -(int)absheal;
-                }
-                else
-                {
-                    leastamount = (int)absheal;
-                }
-
-                Random rnd = new Random();
-
-                double chancePerTick = detlaHpAmount % 1;
-                parent.HitPoints += leastamount;
-
-                for (int k = 0; k < chancePerTick; k++)
-                {
-                    if (rnd.Next(0, 9999) / 10000.0 < chancePerTick)
-                    {
-                        parent.HitPoints += 1;
-                    }
-                }
-                if (parent.HitPoints > parent.MaxHitPoints)
-                    parent.HitPoints = parent.MaxHitPoints;
-
-                ticksWithoutHeal -= ticksBetweenHeal;
-            }
-        }
-        public override void CompTick()
-        {
-            base.CompTick();
-            OnTickAction(60);
-        }
-        /*public override void CompTickRare()
-        {
-            base.CompTickRare();
-            OnTickAction(60);
-        }*/
-    }
-    public class CompSnowExpand_Overtick : CompSnowExpand
-    {
-        public override void CompTick()
-        {
-            base.CompTick();
-            base.CompTick();
-            base.CompTick();
-            base.CompTick();
-            base.CompTick();
-            base.CompTick();
-            base.CompTick();
-            base.CompTick();
-            base.CompTick();
-            base.CompTick();
-            base.CompTick();
-            base.CompTick();
-            base.CompTick();
-            base.CompTick();
-            base.CompTick();
-            base.CompTick();
-            base.CompTick();
-            base.CompTick();
-            base.CompTick();
-            base.CompTick();
-        }
-        public override void CompTickRare()
-        {
-            base.CompTickRare();
-            base.CompTickRare();
-            base.CompTickRare();
-            base.CompTickRare();
-            base.CompTickRare();
-            base.CompTickRare();
-            base.CompTickRare();
-            base.CompTickRare();
-            base.CompTickRare();
-            base.CompTickRare();
-            base.CompTickRare();
-            base.CompTickRare();
-            base.CompTickRare();
-            base.CompTickRare();
-            base.CompTickRare();
-            base.CompTickRare();
-            base.CompTickRare();
-            base.CompTickRare();
-            base.CompTickRare();
-            base.CompTickRare();
-        }
-    }
-    public class CompUseEffect_HediffApply_HManipulator : CompUseEffect_FixWorstHealthCondition
-    {
-        /*public override void CompTick()
-        {
-            base.CompTick();
-        }*/
-        public override bool CanBeUsedBy(Pawn usedBy, out string failReason)
-        {
-            HediffDef HyperManipulatorHediff = DefDatabase<HediffDef>.GetNamed("HyperManipulator");
-            BodyPartDef CentaurScapular = DefDatabase<BodyPartDef>.GetNamed("CentaurScapular");
-
-            if (usedBy.health.hediffSet.HasHediff(HyperManipulatorHediff))
-            {
-                if (usedBy.health.hediffSet.GetFirstHediffOfDef(HyperManipulatorHediff)?.Part.def == CentaurScapular)
-                {
-                    failReason = "Magnuassembly_CompUseEffect_HediffApply_HManipulator_UseReject_AlreadyInstalled".Translate(usedBy.Name.ToStringShort);
-                    return false;
-                }
-            }
-
-            if (usedBy.def != DefDatabase<ThingDef>.GetNamed("Alien_Centaur"))
-            {
-                failReason = "Magnuassembly_CompUseEffect_HediffApply_HManipulator_UseReject_NonCentaur".Translate(usedBy.def.LabelCap);
+        /*public override bool CanStartNow {
+            get {
                 return false;
             }
-
-            failReason = "";
-            return true;
-        }
-        public override void DoEffect(Pawn usedBy)
+        }*/
+    }
+    public static class RimCentaurCore
+    {
+        public static readonly HediffDef HyperManipulatorHediffDef = DefDatabase<HediffDef>.GetNamed("HyperManipulator");
+        public static readonly BodyPartDef CentaurScapularDef = DefDatabase<BodyPartDef>.GetNamed("CentaurScapular");
+        public static readonly ThingDef AlienCentaurDef = DefDatabase<ThingDef>.GetNamed("Alien_Centaur");
+        public static int InGameTick { get { return Find.TickManager.TicksGame; } }
+        public static int InGameTickAbs { get { return Find.TickManager.TicksAbs; } }
+        public static string FormattingTickTimeDiv(double number, string ToStringFormat = "0.00")
         {
-
-            HediffDef HyperManipulatorHediff = DefDatabase<HediffDef>.GetNamed("HyperManipulator");
-            Hediff hediff = HediffMaker.MakeHediff(HyperManipulatorHediff, usedBy, null);
-
-            BodyPartDef CentaurScapular = DefDatabase<BodyPartDef>.GetNamed("CentaurScapular");
-            BodyPartRecord CentaurScapularRecord = new BodyPartRecord();
-            //CentaurScapularRecord.body = DefDatabase<BodyDef>.GetNamed("Centaur");
-            //CentaurScapularRecord.def = CentaurScapular;
-            //CentaurScapularRecord.parts.Count = 1;
-            bool PartNotFound = true;
-
-            IEnumerable<BodyPartRecord> parts = usedBy.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined);
-
-            if (!CanBeUsedBy(usedBy, out _))
-                return;
-
-            for (int i = 0; i < 1000; i++)
+            string valueString = "PeriodSeconds".Translate("NaN /");
+            if (number != 0D)
             {
-                foreach (BodyPartRecord part in parts)
+                if (1 / Math.Abs(number) >= 60000D)
                 {
-                    if (part.def == CentaurScapular)
-                    {
-                        CentaurScapularRecord = part;
-                        PartNotFound = false;
-                        break;
-                    }
+                    valueString = "PeriodYears".Translate((number * 60000).ToString(ToStringFormat) + " /");
                 }
-                if (PartNotFound)
+                else if (1 / Math.Abs(number) >= 15000D)
                 {
-                    base.DoEffect(usedBy);
+                    valueString = "PeriodQuadrums".Translate((number * 15000).ToString(ToStringFormat) + " /");
+                }
+                else if (1 / Math.Abs(number) >= 1000D)
+                {
+                    valueString = "PeriodDays".Translate((number * 1000).ToString(ToStringFormat) + " /");
+                }
+                else if (1 / Math.Abs(number) >= 41.666666666666666666666666666667)
+                {
+                    valueString = "PeriodHours".Translate((number * 41.666666666666666666666666666667).ToString(ToStringFormat) + " /");
                 }
                 else
                 {
-                    break;
+                    valueString = "PeriodSeconds".Translate(number.ToString(ToStringFormat) + " /");
                 }
             }
-
-            if (!usedBy.health.hediffSet.HasHediff(HyperManipulatorHediff) && usedBy.def == DefDatabase<ThingDef>.GetNamed("Alien_Centaur"))
+            return valueString;
+        }
+        public static string FormattingTickTime(double number, string ToStringFormat = "0.00")
+        {
+            string valueString;
+            if (Math.Abs(number) >= 60000D)
             {
-                //   HealthUtility.AdjustSeverity(usedBy, HyperManipulatorHediff, 0.001f);
-
-                usedBy.health.RestorePart(CentaurScapularRecord);
-                usedBy.health.AddHediff(hediff, CentaurScapularRecord, null);
-                //usedBy.health.AddHediff(hediff, null, null);
-                hediff.Severity = 0.001f;
-
-                this.parent.Destroy();
+                valueString = "PeriodYears".Translate((number / 60000).ToString(ToStringFormat));
             }
-        }
-    }
-    public class Hediff_AddedPart_HManipulator : Hediff_AddedPart
-    {
-        //TODO: Prevent remove part surgery targeting HM
-    }
-
-    public class HediffCompProperties_AgeStop : HediffCompProperties
-    {
-        public HediffCompProperties_AgeStop() : base()
-        {
-            compClass = typeof(HediffCompAgeStop);
-        }
-        //TODO: Supress pawn's age
-    }
-    public class HediffCompAgeStop : HediffComp
-    {
-        //TODO: Supress pawn's age
-    }
-
-    public class CompUsable_AlwasAvaible : CompUsable
-    {
-        public override IEnumerable<FloatMenuOption> CompFloatMenuOptions(Pawn myPawn)
-        {
-            IEnumerable<FloatMenuOption> preret = base.CompFloatMenuOptions(myPawn);
-            foreach (FloatMenuOption fmo in preret)
+            else if (Math.Abs(number) >= 15000D)
             {
-                Log.Message("FMO LABEL: " + fmo.Label);
-                fmo.Disabled = false;
+                valueString = "PeriodQuadrums".Translate((number / 15000).ToString(ToStringFormat));
             }
-            return preret;
-        }
-    }
-    public class JobDriver_UseItem_AlwasAvaible : JobDriver_UseItem
-    {
-
-    }
-    public class HediffGiver_Overtime : HediffGiver
-    {
-        public float chancePerTick = 1;
-        public float severityAdjust = 0.001f;
-        public float doCount = 1;
-        public bool doTryApply = true;
-
-
-        public override void OnIntervalPassed(Pawn pawn, Hediff cause)
-        {
-            /* FOOLED
-            IEnumerable<BodyPartRecord> parts = pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined);
-
-            BodyPartRecord Record = new BodyPartRecord();
-
-            foreach (BodyPartRecord part in parts)
+            else if (Math.Abs(number) >= 1000D)
             {
-                if (partsToAffect.Contains(part.def))
+                valueString = "PeriodDays".Translate((number / 1000).ToString(ToStringFormat));
+            }
+            /*else if (Math.Abs(number) > 416.66666666666666666666666666667)
+            {
+                valueString = "PeriodHours".Translate((number / 41.666666666666666666666666666667).ToString(ToStringFormat));
+            }*/
+            else
+            {
+                valueString = "PeriodSeconds".Translate(number.ToString(ToStringFormat));
+            }
+            return valueString;
+        }
+        public static Color CastingPixel(Color color)
+        {
+            System.Random Randy = new System.Random();
+            if (Randy.Next(0, 1) == 1)
+                return color;
+            color.r = (color.r * (1 - color.a)) + (0.5f * color.a);
+            color.g = (color.g * (1 - color.a)) + (0.5f * color.a);
+            color.b = (color.b * (1 - color.a)) + (0.5f * color.a);
+            color.a = Math.Max(0.5f, color.a);
+            return color;
+        }
+        /// <summary>
+        /// https://blog.csdn.net/qq_39776199/article/details/81506293
+        /// </summary>
+        /*public static Texture2D duplicateTexture(Texture2D source)
+        {
+            RenderTexture renderTex = RenderTexture.GetTemporary(
+                        source.width,
+                        source.height,
+                        0,
+                        RenderTextureFormat.Default,
+                        RenderTextureReadWrite.Linear);
+
+            Graphics.Blit(source, renderTex);
+            RenderTexture previous = RenderTexture.active;
+            RenderTexture.active = renderTex;
+            Texture2D readableText = new Texture2D(source.width, source.height);
+            readableText.ReadPixels(new Rect(0, 0, renderTex.width, renderTex.height), 0, 0);
+            readableText.Apply();
+            RenderTexture.active = previous;
+            RenderTexture.ReleaseTemporary(renderTex);
+            return readableText;
+        }
+        public static Texture2D duplicateTexture(Texture2D source)
+        {
+            byte[] pix = source.GetRawTextureData();
+            Texture2D readableText = new Texture2D(source.width, source.height, source.format, false);
+            readableText.LoadRawTextureData(pix);
+            readableText.Apply();
+            return readableText;
+        }
+        public static Texture2D FloodingTexture(Texture2D inputtex, float range)
+        {
+            Texture2D target = duplicateTexture(inputtex);
+            //range = new System.Random().Next(0,10000)/10000f;\
+            //Log.Message("[Magnuassembly]Casting " + target + " by " + range + ".", true);
+            if (range <= 0f)
+                return target;
+            if (range > 1f)
+                range = 1f;
+            int width = target.width;
+            int height = target.height;
+            int heightLevel = (int)(height * range);
+            int counter = 0;
+
+            for (int X = 0; X < width; X++)
+            {
+                for (int Y = heightLevel; Y < height; Y++)
                 {
-                    Record = part;
-                    break;
+                    target.SetPixel(X, Y, CastingPixel(target.GetPixel(X, Y)));
+                    counter++;
                 }
             }
+            //Log.Message("[Magnuassembly]Casted " + counter + " pixels. ", true);
+            return target;
+        }*/
+        public static Texture2D FloodingTexture(Texture2D inputtex, float range)
+        {
+            return inputtex;
 
-             pawn.health.AddHediff(this.hediff, null, null);
-            HealthUtility.AdjustSeverity(pawn, this.hediff, 1f);*/
-
-            Random rnd = new Random();
-            for (int k = 0; k < doCount; k++)
-            {
-                if (rnd.Next(0, 9999) / 10000f < chancePerTick)
-                {
-                    if (doTryApply)
-                        TryApply(pawn);
-                    HealthUtility.AdjustSeverity(pawn, hediff, severityAdjust);
-                }
-            }
+            /*if (range <= 0f)
+                return inputtex;
+            if (range > 1f)
+                range = 1f;
+            int width = inputtex.width;
+            int height = inputtex.height;
+            int heightLevel = (int)(height * range);
+            int counter = 0;*/
         }
     }
-    /*public class HediffGiver_FactorBySeverity : HediffGiver
+    public class Verb_DoNothing : Verb
     {
-        public float chancePerTick = 1;
-        public float severityAdjust = -0.001f;
-        public float doCount = 1;
-
-        public override void OnIntervalPassed(Pawn pawn, Hediff cause)
+        protected override bool TryCastShot()
         {
-            if (cause == null)
-                return;
-            Random rnd = new Random();
-            for (int k = 0; k < doCount; k++)
-            {
-                if (rnd.Next(0, 9999) / 10000f < chancePerTick * cause.Severity)
-                {
-                    cause.Severity += severityAdjust;
-                }
-            }
-        }
-    }*/
-
-    public class HediffCompProperties_FactorBySeverity : HediffCompProperties
-    {
-        public float chancePerTick = 1;
-        public float severityAdjust = -0.001f;
-        public float doCount = 1;
-        public HediffCompProperties_FactorBySeverity() : base()
-        {
-            compClass = typeof(HediffComp_FactorBySeverity);
+            //throw new NotImplementedException();
+            return false;
         }
     }
-
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("", "IDE1006")]
-    public class HediffComp_FactorBySeverity : HediffComp
+    /// <summary>
+    /// TODO: Fix relation
+    /// </summary>
+    public class ThoughtWorker_AlwaysActive_Centaur : ThoughtWorker // ThoughtWorker_AlwaysActive
     {
-        public float chancePerTick { get { return ((HediffCompProperties_FactorBySeverity)props).chancePerTick; } }
-        public float severityAdjust { get { return ((HediffCompProperties_FactorBySeverity)props).severityAdjust; } }
-        public float doCount { get { return ((HediffCompProperties_FactorBySeverity)props).doCount; } }
-        public override void CompPostTick(ref float severityAdjustment)
+        protected override ThoughtState CurrentSocialStateInternal(Pawn p, Pawn otherPawn)
         {
-            if (parent == null)
-                return;
-            Random rnd = new Random();
-            for (int k = 0; k < doCount; k++)
+            Log.Message("[Magnuassembly]Soving CurrentSocialStateInternal between \"" + p.Name.ToStringShort + "(" + p.def.defName + ")\" and " + otherPawn.Name.ToStringShort + "(" + otherPawn.def.defName + ")\".");
+            if (p.def == AlienCentaurDef && otherPawn.def == AlienCentaurDef)
             {
-                if (rnd.Next(0, 9999) / 10000f < chancePerTick * parent.Severity)
-                {
-                    parent.Severity += severityAdjust;
-                }
+                //return base.CurrentSocialStateInternal(p, otherPawn);
+                return ThoughtState.ActiveAtStage(stageIndex: 0);
             }
+            else
+                return false;
         }
+        /*protected override ThoughtState CurrentStateInternal(Pawn p)
+        { 
+            
+        }*/
     }
 
 }

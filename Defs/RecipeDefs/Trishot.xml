@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Remaster_Trishot</defName>
+    <label>remaster trishot</label>
+    <description>Remaster trishot at cost of a slight material.</description>
+    <jobString>Remastering trishot.</jobString>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>10000</workAmount>
+    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+	<productHasIngredientStuff>false</productHasIngredientStuff>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Bow_Trishot</li>
+          </thingDefs>
+		  <!-- <allowedHitPointsPercents>0~1</allowedHitPointsPercents> -->
+		  <!-- <qualityLevels>Awful~Masterwork</qualityLevels> -->
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Orangice_Blue</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineUltratech</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hyperweave</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Bow_Trishot</li>
+        <li>Orangice_Blue</li>
+        <li>MedicineUltratech</li>
+        <li>ComponentSpacer</li>
+        <li>Hyperweave</li>
+        <li>Chemfuel</li>
+      </thingDefs>
+	  <!-- <qualityLevels>Awful~Masterwork</qualityLevels> -->
+    </fixedIngredientFilter>
+    <products>
+      <Bow_Trishot>1</Bow_Trishot>
+    </products>
+    <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>12</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <recipeUsers Inherit="False">
+      <li>FabricationBench</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Repair_Trishot_1Stage</defName>
+	<label>replace thermo damper for trishot</label>
+	<description>Repair trishot by replacing its thermo damper. This will restore it's normal range and sightly restore an alternative attact</description>
+	<jobString>Repairing trishot.</jobString>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+	<effectWorking>Smith</effectWorking>
+	<soundWorking>Recipe_Machining</soundWorking>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    <workAmount>6000</workAmount>
+	<productHasIngredientStuff>false</productHasIngredientStuff>  
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Bow_Trishot_1Stage</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ThermoDamper</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Bow_Trishot_1Stage</li>
+        <li>ThermoDamper</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Bow_Trishot_2Stage>1</Bow_Trishot_2Stage>
+    </products>
+	<!-- <researchPrerequisite>TrishotProject</researchPrerequisite> -->
+    <skillRequirements>
+      <Crafting>9</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <recipeUsers Inherit="False">
+      <li>FabricationBench</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Repair_Trishot_2Stage</defName>
+	<label>repair trishot</label>
+	<description>Compelely repair trishot and restore its all functional, unlock a extremely powerful alternative attact.</description>
+	<jobString>Repairing trishot.</jobString>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+	<effectWorking>Smith</effectWorking>
+	<soundWorking>Recipe_Machining</soundWorking>
+	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	  
+    <workAmount>200000</workAmount>
+	<productHasIngredientStuff>false</productHasIngredientStuff>  
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Bow_Trishot_2Stage</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Orangice_Blue</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Orangice</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineUltratech</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MechSerumHealer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gun_CentaurPlasmaBlaster</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Bow_Trishot_2Stage</li>
+        <li>Orangice_Blue</li>
+        <li>Orangice</li>
+        <li>MedicineUltratech</li>
+        <li>MechSerumHealer</li>
+        <li>Gun_CentaurPlasmaBlaster</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Bow_Trishot>1</Bow_Trishot>
+    </products>
+	<researchPrerequisite>TrishotProject</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>12</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <recipeUsers Inherit="False">
+      <li>FabricationBench</li>
+    </recipeUsers>
+  </RecipeDef>
+
+</Defs>

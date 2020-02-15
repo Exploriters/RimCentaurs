@@ -13,20 +13,23 @@ using UnityEngine;
 using Verse.AI;
 using Verse;
 using Verse.Sound;
+using static CentaurTheMagnuassembly.RimCentaurCore;
 
 namespace CentaurTheMagnuassembly
 {
 
     [StaticConstructorOnStartup]
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("", "IDE0060")]
     public static class AdditionalVerbPatch
     {
         private static readonly Type patchType = typeof(AdditionalVerbPatch);
         static AdditionalVerbPatch()
         {
-            HarmonyInstance harmonyInstance = HarmonyInstance.Create("com.CentaurTheMagnuassembly.rimworld.mod");
-            if (!harmonyInstance.HasAnyPatches("com.CentaurTheMagnuassembly.rimworld.mod"))
+            HarmonyInstance harmonyInstance = HarmonyInstance.Create("CentaurTheMagnuassembly.rimworld.mod.AdditionalVerbPatch");
+            if (!harmonyInstance.HasAnyPatches("CentaurTheMagnuassembly.rimworld.mod.AdditionalVerbPatch"))
             {
                 harmonyInstance.Patch(AccessTools.Method(typeof(Pawn_EquipmentTracker), "GetGizmos", null, null), null, new HarmonyMethod(patchType, "GetGizmosPostfix", null));
+                //harmonyInstance.Patch(AccessTools.Method(typeof(Gizmo), "GizmoOnGUI", null, null), null, new HarmonyMethod(patchType, "GizmoOnGUIPostfix", null));
 
                 harmonyInstance.Patch(AccessTools.Method(typeof(Targeter), "BeginTargeting", new Type[] { typeof(Verb) }), new HarmonyMethod(patchType, "BeginTargetingPrefix", null));
                 harmonyInstance.Patch(AccessTools.Method(typeof(Targeter), "OrderPawnForceTarget", null, null), null, new HarmonyMethod(patchType, "OrderPawnForceTargetPostfix", null));
@@ -64,39 +67,19 @@ namespace CentaurTheMagnuassembly
             {
                 if (g is Command)
                 {
-                    switch (count)
+                    ((Command)g).hotKey = count switch
                     {
-                        case 0:
-                            ((Command)g).hotKey = KeyBindingDefOf.Misc1;
-                            break;
-                        case 1:
-                            ((Command)g).hotKey = KeyBindingDefOf.Misc3;
-                            break;
-                        case 2:
-                            ((Command)g).hotKey = KeyBindingDefOf.Misc4;
-                            break;
-                        case 3:
-                            ((Command)g).hotKey = KeyBindingDefOf.Misc5;
-                            break;
-                        case 4:
-                            ((Command)g).hotKey = KeyBindingDefOf.Misc7;
-                            break;
-                        case 5:
-                            ((Command)g).hotKey = KeyBindingDefOf.Misc8;
-                            break;
-                        case 6:
-                            ((Command)g).hotKey = KeyBindingDefOf.Misc9;
-                            break;
-                        case 7:
-                            ((Command)g).hotKey = KeyBindingDefOf.Misc10;
-                            break;
-                        case 8:
-                            ((Command)g).hotKey = KeyBindingDefOf.Misc11;
-                            break;
-                        default:
-                            ((Command)g).hotKey = KeyBindingDefOf.Misc12;
-                            break;
-                    }
+                        0 => KeyBindingDefOf.Misc1,
+                        1 => KeyBindingDefOf.Misc3,
+                        2 => KeyBindingDefOf.Misc4,
+                        3 => KeyBindingDefOf.Misc5,
+                        4 => KeyBindingDefOf.Misc7,
+                        5 => KeyBindingDefOf.Misc8,
+                        6 => KeyBindingDefOf.Misc9,
+                        7 => KeyBindingDefOf.Misc10,
+                        8 => KeyBindingDefOf.Misc11,
+                        _ => KeyBindingDefOf.Misc12,
+                    };
                 }
                 yield return g;
                 count++;
@@ -120,7 +103,7 @@ namespace CentaurTheMagnuassembly
                 Comp_VerbSaveable comp = ((CompEquippable)verb.DirectOwner).parent.GetComp<Comp_VerbSaveable>();
                 if (comp != null)
                 {
-                    if (!(Traverse.Create(__instance).Method("CurrentTargetUnderMouse", true).GetValue<LocalTargetInfo>().IsValid))
+                    if (!Traverse.Create(__instance).Method("CurrentTargetUnderMouse", true).GetValue<LocalTargetInfo>().IsValid)
                     {
                         return;
                     }
@@ -129,9 +112,10 @@ namespace CentaurTheMagnuassembly
             }
 
         }
+
         public static bool GetTargetingVerbPrefix(ref Verb __result, Pawn pawn, Verb ___targetingVerb)
         {
-            //Log.Message("pawn: " + "___targetingVerb")
+            //Log.Message($"pawn: {___targetingVerb}")
             /*__result = pawn.equipment.AllEquipmentVerbs.FirstOrDefault((Verb x) => x.verbProps == ___targetingVerb.verbProps);
             Comp_VerbSaveable comp = pawn.equipment.Primary.GetComp<Comp_VerbSaveable>();
             if (comp != null)
@@ -145,8 +129,7 @@ namespace CentaurTheMagnuassembly
         {
             if (___targetingVerb != null && ___targetingVerb.verbTracker != null && ___targetingVerb.verbTracker.directOwner != null)
             {
-                CompEquippable compEquip = ___targetingVerb.DirectOwner as CompEquippable;
-                if (compEquip != null)
+                if (___targetingVerb.DirectOwner is CompEquippable compEquip)
                 {
                     Comp_VerbSaveable compVerbSave = compEquip.parent.GetComp<Comp_VerbSaveable>();
                     if (compVerbSave != null)
@@ -157,23 +140,71 @@ namespace CentaurTheMagnuassembly
             }
         }
 
+        public static void GizmoOnGUIPostfix(ref GizmoResult __result, Command_VerbTarget __instance, Vector2 topLeft, float maxWidth)
+        {
+            GizmoResult gizmoResult = __instance.GizmoOnGUI(topLeft, maxWidth);
+
+            var rect = new Rect(topLeft.x, topLeft.y, __instance.GetWidth(maxWidth), 75f);
+            if (((Verb_Shoot_Cooldown)__instance.verb).RemainingProgressBeforeFire() != 0)
+            {
+                Widgets.FillableBar(rect,
+                    ((Verb_Shoot_Cooldown)__instance.verb).RemainingProgressBeforeFire(),
+                    ((VerbProperties_Custom)((Verb_Shoot_Cooldown)__instance.verb).verbProps).texture,
+                    ((VerbProperties_Custom)((Verb_Shoot_Cooldown)__instance.verb).verbProps).textureCooldown,
+                    false
+                    );
+            }
+
+            __result = gizmoResult;
+        }
+
         public static bool CreateVerbTargetCommandPrefix(ref Command_VerbTarget __result, Thing ownerThing, Verb verb)
         {
             Command_VerbTarget command_VerbTarget = new Command_VerbTarget();
             VerbProperties_Custom verbProps = verb.verbProps as VerbProperties_Custom;
+            Verb_Shoot_Cooldown verb_with_cooldown = verb is Verb_Shoot_Cooldown ? verb as Verb_Shoot_Cooldown : null;
             if (verbProps != null)
             {
                 command_VerbTarget.defaultDesc = verbProps.desc;
                 command_VerbTarget.defaultLabel = verbProps.label;
                 Comp_VerbSaveable comp_VerbSaveable = ownerThing.TryGetComp<Comp_VerbSaveable>();
+                if (!verbProps.disable)
+                {
+                    if (verb_with_cooldown != null)
+                    {
+                        if (!verb_with_cooldown.CanFire())
+                        {
+                            command_VerbTarget.Disable("Magnuassembly_AdditionalVerbPatch_CooldownDisableReason".Translate(
+                                FormattingTickTime(verb_with_cooldown.RemainingTickBeforeFire() / 60.0D)
+                                )
+                                );
+                        }
+                        else
+                        {
+                            command_VerbTarget.disabled = false;
+                        }
+                    }
+                }
                 if (comp_VerbSaveable != null && comp_VerbSaveable.currentVerb == verb)
                 {
-                    //command_VerbTarget.icon = currentCommandTexture;
-                    command_VerbTarget.icon = verbProps.textureSelected;
+                    command_VerbTarget.icon = verb_with_cooldown != null ?
+                        FloodingTexture(
+                            verbProps.textureSelected,
+                            verb_with_cooldown.RemainingProgressBeforeFire()
+                            ) : verbProps.textureSelected;
+
+                    if (command_VerbTarget.disabled && verb_with_cooldown != null)
+                    {
+                        comp_VerbSaveable.SwitchVerb(verbProps.redirectVerbAfterShoot);
+                    }
                 }
                 else
                 {
-                    command_VerbTarget.icon = verbProps.texture;
+                    command_VerbTarget.icon = verb_with_cooldown != null ?
+                        FloodingTexture(
+                            verbProps.texture,
+                            verb_with_cooldown.RemainingProgressBeforeFire()
+                            ) : verbProps.texture;
                 }
             }
             else
@@ -185,20 +216,45 @@ namespace CentaurTheMagnuassembly
             command_VerbTarget.iconOffset = ownerThing.def.uiIconOffset;
             command_VerbTarget.tutorTag = "VerbTarget";
             command_VerbTarget.verb = verb;
-            if (verb.caster.Faction != Faction.OfPlayer)
+            bool disableReasonOverwrite = false;
+            if (verb.caster.Faction == Faction.OfPlayer)
+            {
+                if (verb.CasterIsPawn)
+                {
+                    if (verb.CasterPawn.story.WorkTagIsDisabled(WorkTags.Violent))
+                    {
+                        command_VerbTarget.Disable("IsIncapableOfViolence".Translate(verb.CasterPawn.LabelShort, verb.CasterPawn));
+                        disableReasonOverwrite = true;
+                    }
+                    else if (!verb.CasterPawn.drafter.Drafted)
+                    {
+                        command_VerbTarget.Disable("IsNotDrafted".Translate(verb.CasterPawn.LabelShort, verb.CasterPawn));
+                        disableReasonOverwrite = true;
+                    }
+                }
+            }
+            else
             {
                 command_VerbTarget.Disable("CannotOrderNonControlled".Translate());
+                disableReasonOverwrite = true;
             }
-            else if (verb.CasterIsPawn)
+            if (disableReasonOverwrite)
             {
-                if (verb.CasterPawn.story.WorkTagIsDisabled(WorkTags.Violent))
+                if (verbProps != null && verbProps.disable)
                 {
-                    command_VerbTarget.Disable("IsIncapableOfViolence".Translate(verb.CasterPawn.LabelShort, verb.CasterPawn));
+                    command_VerbTarget.disabledReason = verbProps.disableReason + "\n" + command_VerbTarget.disabledReason;
                 }
-                else if (!verb.CasterPawn.drafter.Drafted)
+                else if (verb_with_cooldown != null && !verb_with_cooldown.CanFire())
                 {
-                    command_VerbTarget.Disable("IsNotDrafted".Translate(verb.CasterPawn.LabelShort, verb.CasterPawn));
+                    command_VerbTarget.disabledReason =
+                        "Magnuassembly_AdditionalVerbPatch_CooldownDisableReason".Translate(
+                            FormattingTickTime(verb_with_cooldown.RemainingTickBeforeFire() / 60.0D)
+                        ) + "\n" + command_VerbTarget.disabledReason;
                 }
+            }
+            else if (verbProps != null && verbProps.disable)
+            {
+                command_VerbTarget.Disable(verbProps.disableReason);
             }
             __result = command_VerbTarget;
             return false;
@@ -221,23 +277,14 @@ namespace CentaurTheMagnuassembly
         {
             if (__instance is VerbProperties_Custom)
             {
-                switch (cat)
+                __result += cat switch
                 {
-                    case RangeCategory.Touch:
-                        __result += __instance.accuracyTouch;
-                        break;
-                    case RangeCategory.Short:
-                        __result += __instance.accuracyShort;
-                        break;
-                    case RangeCategory.Medium:
-                        __result += __instance.accuracyMedium;
-                        break;
-                    case RangeCategory.Long:
-                        __result += __instance.accuracyLong;
-                        break;
-                    default:
-                        throw new InvalidOperationException();
-                }
+                    RangeCategory.Touch => __instance.accuracyTouch,
+                    RangeCategory.Short => __instance.accuracyShort,
+                    RangeCategory.Medium => __instance.accuracyMedium,
+                    RangeCategory.Long => __instance.accuracyLong,
+                    _ => throw new InvalidOperationException(),
+                };
             }
         }
 
@@ -248,8 +295,7 @@ namespace CentaurTheMagnuassembly
             {
                 Thing singleSelectedThing = Find.Selector.SingleSelectedThing;
                 Verb verb = null;
-                Pawn pawn = singleSelectedThing as Pawn;
-                if (pawn != null && pawn != target && pawn.equipment != null && pawn.equipment.Primary != null)
+                if (singleSelectedThing is Pawn pawn && pawn != target && pawn.equipment != null && pawn.equipment.Primary != null)
                 {
                     Comp_VerbSaveable compsav = pawn.equipment.Primary.GetComp<Comp_VerbSaveable>();
                     if (compsav != null && compsav.tempVerb != null && compsav.tempVerb is Verb_LaunchProjectile)
@@ -261,8 +307,7 @@ namespace CentaurTheMagnuassembly
                         verb = pawn.equipment.PrimaryEq.PrimaryVerb;
                     }
                 }
-                Building_TurretGun building_TurretGun = singleSelectedThing as Building_TurretGun;
-                if (building_TurretGun != null && building_TurretGun != target)
+                if (singleSelectedThing is Building_TurretGun building_TurretGun && building_TurretGun != target)
                 {
                     verb = building_TurretGun.AttackVerb;
                 }
@@ -277,8 +322,7 @@ namespace CentaurTheMagnuassembly
                     {
                         stringBuilder.AppendLine("CannotHit".Translate());
                     }
-                    Pawn pawn2 = target as Pawn;
-                    if (pawn2 != null && pawn2.Faction == null && !pawn2.InAggroMentalState)
+                    if (target is Pawn pawn2 && pawn2.Faction == null && !pawn2.InAggroMentalState)
                     {
                         float manhunterOnDamageChance;
                         if (verb.IsMeleeAttack)
@@ -306,9 +350,62 @@ namespace CentaurTheMagnuassembly
     {
         public Verb currentVerb;
         public Verb tempVerb;
-        public override void PostSpawnSetup(bool respawningAfterLoad)
+        public void SwitchVerb(int index = -1)
         {
             CompEquippable comp = parent.GetComp<CompEquippable>();
+            List<Verb> verbs = comp.AllVerbs;
+            if (index <= verbs.Count && index >= 0)
+            {
+                currentVerb = verbs[index];
+            }
+            else
+            {
+                CurrVerbReset();
+            }
+        }
+        public void CurrVerbReset()
+        {
+            CompEquippable comp = parent.GetComp<CompEquippable>();
+            List<Verb> verbs = comp.AllVerbs;
+            if (comp == null)
+            {
+                Log.ErrorOnce("[Magnuassembly]CurrVerbReset Error: comp is null.", 41422);
+                return;
+            }
+            if (verbs == null)
+            {
+                Log.ErrorOnce("[Magnuassembly]CurrVerbReset Error: verbs is null, at comp: " + comp + ".", 41421);
+                return;
+            }
+            if (verbs.Count == 0)
+            {
+                Log.ErrorOnce("[Magnuassembly]CurrVerbReset Error: verbs contains no verb, at comp: " + comp + ", verbs:"+ verbs + ".", 41423);
+                return;
+            }
+            if (currentVerb != null)
+            {
+                for (int i = 0; i < verbs.Count; i++)
+                {
+                    if (currentVerb == verbs[i])
+                    {
+                        return;
+                    }
+                }
+            }
+            for (int i = 0; i < verbs.Count; i++)
+            {
+                if (verbs[i].verbProps.isPrimary)
+                {
+                    currentVerb = verbs[i];
+                    return;
+                }
+            }
+            currentVerb = verbs[0];
+        }
+        public override void PostSpawnSetup(bool respawningAfterLoad)
+        {
+            base.PostSpawnSetup(respawningAfterLoad);
+            /*CompEquippable comp = parent.GetComp<CompEquippable>();
             if (currentVerb == null)
             {
                 List<Verb> verbs = comp.AllVerbs;
@@ -320,15 +417,18 @@ namespace CentaurTheMagnuassembly
                         return;
                     }
                 }
-            }
+            }*/
+            CurrVerbReset();
         }
         public override void PostExposeData()
         {
             base.PostExposeData();
             Scribe_References.Look(ref currentVerb, "currentVerb");
-            if (Scribe.mode == LoadSaveMode.PostLoadInit && currentVerb == null)
+            if (Scribe.mode == LoadSaveMode.PostLoadInit
+                //&& currentVerb == null
+                )
             {
-                CompEquippable comp = parent.GetComp<CompEquippable>();
+                /*CompEquippable comp = parent.GetComp<CompEquippable>();
                 List<Verb> verbs = comp.AllVerbs;
                 for (int i = 0; i < verbs.Count; i++)
                 {
@@ -337,21 +437,31 @@ namespace CentaurTheMagnuassembly
                         currentVerb = verbs[i];
                         return;
                     }
-                }
+                }*/
+                CurrVerbReset();
             }
         }
     }
 
+    interface IVerbPropertiesCustom
+    {
+    }
 
     [StaticConstructorOnStartup]
     public class VerbProperties_Custom : VerbProperties
     {
         public string desc;
         public string texPath;
-        public string texPathSelected;
+        public string texPathSelected = "UI/Commands/Select";
+        public string texPathCooldown;
+        public bool disable = false;
+        public string disableReason = null;
         public Texture2D texture;
         public Texture2D textureSelected;
+        public Texture2D textureCooldown;
         public int maxMagazine;
+        public int redirectVerbAfterShoot = -1;
+        public int cooldownTick = -1;
 
         public VerbProperties_Custom()
         {
@@ -365,11 +475,112 @@ namespace CentaurTheMagnuassembly
                 {
                     textureSelected = ContentFinder<Texture2D>.Get(texPathSelected);
                 }
+                if (!texPathCooldown.NullOrEmpty())
+                {
+                    textureCooldown = ContentFinder<Texture2D>.Get(texPathCooldown);
+                }
+                if (verbClass == typeof(Verb_Shoot_Cooldown) && cooldownTick <= 0)
+                {
+                    Log.Warning("[Magnuassembly]Detected cooldownTick " + cooldownTick + ", which is not more than 0.");
+                }
             });
         }
-
-
     }
+    public class Verb_Shoot_Cooldown : Verb_Shoot
+    {
+        public int lastFireTick = -1;
+        public int CooldownTick => ((VerbProperties_Custom)verbProps).cooldownTick;
+        public bool CooldownTickValid => CooldownTick > 0;
+        public int TickSinceLastFire(int currentTime = -1)
+        {
+            if (!CooldownTickValid || lastFireTick == -1)
+                return -1;
+            if (currentTime < 0)
+            {
+                currentTime = InGameTick;
+            }
+            return currentTime - lastFireTick;
+        }
+        public bool CanFire(int currentTime = -1)
+        {
+            if (!CooldownTickValid)
+                return true;
+            if (currentTime < 0)
+            {
+                currentTime = InGameTick;
+            }
+            return lastFireTick == -1 || currentTime - lastFireTick > CooldownTick;
+        }
+        public int RemainingTickBeforeFire(int currentTime = -1)
+        {
+            if (currentTime < 0)
+            {
+                currentTime = InGameTick;
+            }
+            if (lastFireTick == -1)
+                return 0;
+            return Math.Max(0, CooldownTick - (currentTime - lastFireTick));
+        }
+        public float RemainingProgressBeforeFire(int currentTime = -1) => CooldownTickValid ? RemainingTickBeforeFire(currentTime) / ((float)CooldownTick) : 0;
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Values.Look(ref lastFireTick, "lastFireTick", -1, true);
+        }
+        protected override bool TryCastShot()
+        {
+            if (!CooldownTickValid)
+                return base.TryCastShot();
+            bool result = false;
+            int currentTime = InGameTick;
+            if (CanFire(currentTime))
+            {
+                result = base.TryCastShot();
+                if (result)
+                {
+                    lastFireTick = currentTime;
+                    /*if (CasterIsPawn)
+                    {
+                        CasterPawn.jobs.EndCurrentJob(JobCondition.None);
+                    }*/
+                }
+            }
+            return result;
+        }
+        public override void WarmupComplete()
+        {
+            if (CanFire())
+            {
+                base.WarmupComplete();
+            }
+        }
+        public override bool Available()
+        {
+            if (CanFire())
+            {
+                return base.Available();
+            }
+            return false;
+        }
+    }
+    public class Verb_Shoot_OvertickShotgun : Verb_Shoot
+    {
+        protected override int ShotsPerBurst => 1;
+        protected int ShotsPerBurstAccture => ((VerbProperties)verbProps).burstShotCount;
+
+        protected override bool TryCastShot()
+        {
+            bool SuccessedOnce = false;
+            for (int i = 0; i < ShotsPerBurstAccture; i++)
+            {
+                if (base.TryCastShot())
+                    SuccessedOnce = true;
+            }
+            return SuccessedOnce;
+        }
+    }
+
     public class Verb_ShootConsumeable : Verb_Shoot
     {
         public int remainBullet = 0;

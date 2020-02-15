@@ -11,6 +11,7 @@
     <description>An pair of devices replacing arms with a powerful remote manipulator.</description>
     <maxSeverity>1.0</maxSeverity>
     <initialSeverity>0.001</initialSeverity>
+	<everCurableByItem>false</everCurableByItem>
     <stages>
       <li>
         <label>assembling</label>
@@ -179,7 +180,7 @@
     <comps>
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Usable">
-        <compClass>CentaurTheMagnuassembly.CompUsable_AlwasAvaible</compClass>
+        <compClass>CentaurTheMagnuassembly.CompUsable_IgnoreManipulation</compClass>
         <useJob>UseItem_HManipulator</useJob>
         <useLabel>assemble physic manipulator on self</useLabel>
         <useDuration>600</useDuration>
@@ -198,7 +199,7 @@
 
   <JobDef>
     <defName>UseItem_HManipulator</defName>
-    <driverClass>JobDriver_UseItem</driverClass>
+    <driverClass>CentaurTheMagnuassembly.JobDriver_UseItem_IgnoreManipulation</driverClass>
     <reportString>Installing physic manipulator on self.</reportString>
     <playerInterruptible>false</playerInterruptible>
     <casualInterruptible>false</casualInterruptible>
@@ -332,6 +333,7 @@
     <labelNoun>a mental burster</labelNoun>
     <description>A brain implant for centaurs to increase one's consciousness and reduce pain.</description>
     <defaultLabelColor>(0.5, 0.75, 1)</defaultLabelColor>
+	<everCurableByItem>false</everCurableByItem>
     <comps>
       <!-- <li Class="HediffCompProperties_HealPermanentWounds" /> -->
     </comps>

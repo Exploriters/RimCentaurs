@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Magnuassembler")]
 [assembly: AssemblyProduct("RimCentaur")]
-[assembly: AssemblyCopyright("Copyright (C) Magnuassembler 2020")]
+[assembly: AssemblyCopyright("Copyright (C) Magnus siiftun1857 Frankline 2019 - 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -21,7 +21,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("3c6ca8dd-9747-43b8-88cb-71b8562cc754")]
+[assembly: Guid("69b9a798-f053-4094-8a1a-a0f7f4a018b7")]
 
 // 程序集的版本信息由下列四个值组成: 
 //

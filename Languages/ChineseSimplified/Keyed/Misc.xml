@@ -6,5 +6,7 @@
   
   <Magnuassembly_CompProperties_SelfHealOvertime_detlaHpPerSec_label>耐久度变化速率</Magnuassembly_CompProperties_SelfHealOvertime_detlaHpPerSec_label>
   <Magnuassembly_CompProperties_SelfHealOvertime_detlaHpPerSec_description>耐久度随着时间自动变化的速率。这个效果不受老化的影响，并且放在任何地方都会持续作用。</Magnuassembly_CompProperties_SelfHealOvertime_detlaHpPerSec_description>
+  
+  <Magnuassembly_AdditionalVerbPatch_CooldownDisableReason>仍需冷却{0}。</Magnuassembly_AdditionalVerbPatch_CooldownDisableReason>
 
 </LanguageData>

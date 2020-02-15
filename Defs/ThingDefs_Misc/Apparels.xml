@@ -7,7 +7,7 @@
     <comps>
       <li Class="CompProperties_Art">
         <nameMaker>NamerArtWeapon</nameMaker>
-        <descriptionMaker>ArtDescription_CentaurArmor</descriptionMaker>
+        <descriptionMaker>ArtDescription_CentaurApparel</descriptionMaker>
         <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li>
     </comps>
@@ -116,6 +116,7 @@
       </layers>
       <tags>
         <li>CentaurIndustrialBasic</li>
+        <li>CentaurRetroStart</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -217,6 +218,7 @@
       </layers>
       <tags>
         <li>CentaurIndustrialBasic</li>
+        <li>CentaurRetroStart</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -802,6 +804,7 @@
       </layers>
       <tags>
         <li>CentaurIndustrialMilitaryBasic</li>
+        <li>CentaurRetroStart</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -876,6 +879,7 @@
       </layers>
       <tags>
         <li>CentaurIndustrialMilitaryBasic</li>
+        <li>CentaurRetroStart</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -950,6 +954,7 @@
       </layers>
       <tags>
         <li>CentaurIndustrialAdvanced</li>
+        <li>CentaurRetroStart</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -1348,5 +1353,83 @@
       </options>
     </colorGenerator>
   </ThingDef>
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparel_CentaurShieldBelt</defName>
+    <label>centaur shield belt</label>
+    <description>A projectile-repulsion device designed for centaur. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks or heat. It shuts down instantly if hit by EMP. This DOES NOT prevents the wearer from firing out.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/ShieldBelt/ShieldBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <thingClass>D9ASB.RangedShieldBelt</thingClass>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <Mass>6</Mass>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToMake>28000</WorkToMake>
+      <Flammability>0.4</Flammability>
+      <EnergyShieldRechargeRate>0.5</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>1.5</EnergyShieldEnergyMax>
+      <EquipDelay>4</EquipDelay>
+    </statBases>
+    <costList>
+      <ComponentSpacer>20</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+      <researchPrerequisite>ShieldBelt</researchPrerequisite>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>CentaurBeltDefense</li>
+        <li>CentaurRetroStart</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
 
 </Defs>

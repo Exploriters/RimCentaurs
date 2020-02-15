@@ -2,6 +2,10 @@
 <Defs>
 
   <FactionDef ParentName="PlayerFactionBase">
+    <colorSpectrum>
+      <!-- <li>(0, 0.737, 0.847)</li> -->
+      <li>(0.851, 0.537, 0)</li>
+    </colorSpectrum>
     <defName>CentaurPlayerColony</defName>
     <label>Centaur New Arrivals</label>
     <description>A colony of recently-arrived off-worlders.</description>
@@ -26,7 +30,10 @@
     </hairTags>
     <apparelStuffFilter>
       <thingDefs>
-        <li>Synthread</li>
+        <!-- <li>Synthread</li>
+		<li>Hyperweave</li>
+		<li>Plasteel</li> -->
+		<li>Orangice_Blue</li>
       </thingDefs>
     </apparelStuffFilter>
   </FactionDef>

@@ -76,6 +76,12 @@
   <NeedOutdoors_Centaur.stages.stuck_indoors.label>幽居病（轻微）</NeedOutdoors_Centaur.stages.stuck_indoors.label>
   <!-- EN: I'd like to go outside and get some fresh air. -->
   <NeedOutdoors_Centaur.stages.stuck_indoors.description>我想出去透透气。</NeedOutdoors_Centaur.stages.stuck_indoors.description>
+  
+  
+  <BothCentaur.stages.centaur_aliker.label>半人马同族</BothCentaur.stages.centaur_aliker.label>
+  
+  <SpotCentaur.stages.spot_other_centaur.label>目击到其它半人马</SpotCentaur.stages.spot_other_centaur.label>
+  <SpotCentaur.stages.spot_other_centaur.description>我们找到伙伴了。不再孤独了，不再了...... 半人马不再是一个令人困惑的梦，除了我以外他们是存在的！</SpotCentaur.stages.spot_other_centaur.description>
 
 
 </LanguageData>

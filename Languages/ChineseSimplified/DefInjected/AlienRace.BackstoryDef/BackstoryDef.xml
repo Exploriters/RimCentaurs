@@ -5,6 +5,8 @@
   <Backstory_Mayinas_Exploriter.titleShort>探解者</Backstory_Mayinas_Exploriter.titleShort>
   <Backstory_Mayinas_Exploriter.baseDescription>探解者[PAWN_nameDef]。[PAWN_pronoun]即是最终制作。[PAWN_pronoun]的作者是[PAWN_pronoun]自己。</Backstory_Mayinas_Exploriter.baseDescription>
 
+  <!-- Adulthood -->
+  
   <CentaurCivil_Laborer.title>劳工</CentaurCivil_Laborer.title>
   <CentaurCivil_Laborer.titleShort>劳工</CentaurCivil_Laborer.titleShort>
   <CentaurCivil_Laborer.baseDescription>[PAWN_nameDef]的工作是一名普通的劳工，支援市中心的建设和拆迁并常常在下班后打架。</CentaurCivil_Laborer.baseDescription>
@@ -25,13 +27,8 @@
   <CentaurCivil_Police.titleShort>警察</CentaurCivil_Police.titleShort>
   <CentaurCivil_Police.baseDescription>在下层世界执法的经验使[PAWN_nameDef]学会了快速射击的价值。这也让[PAWN_pronoun]变得多疑。</CentaurCivil_Police.baseDescription>
 
-
   <!-- Childhood -->
-
-  <!--[Duplicated] <CentaurCivil_RacingCentaur.title>Race centaur</CentaurCivil_RacingCentaur.title>-->
-  <!--[Duplicated] <CentaurCivil_RacingCentaur.titleShort>Racer</CentaurCivil_RacingCentaur.titleShort>-->
-  <!--[Duplicated] <CentaurCivil_RacingCentaur.baseDescription>[PAWN_nameDef] was bred for speed, racing in both underground and public tracks.</CentaurCivil_RacingCentaur.baseDescription>-->
-
+  
   <CentaurCivil_Lobotomite.title>枕叶切除受害者</CentaurCivil_Lobotomite.title>
   <CentaurCivil_Lobotomite.titleShort>枕叶切除</CentaurCivil_Lobotomite.titleShort>
   <CentaurCivil_Lobotomite.baseDescription>[PAWN_nameDef]只是为了科学实验而被绑架的半人马之一。[PAWN_pronoun]大脑的一部分被切除和改变，在最复杂的任务中完全无法集中注意力。</CentaurCivil_Lobotomite.baseDescription>
@@ -70,7 +67,7 @@
 
   <CentaurCivil_BirthdayPony.title>闪耀世界小马</CentaurCivil_BirthdayPony.title>
   <CentaurCivil_BirthdayPony.titleShort>生日小马</CentaurCivil_BirthdayPony.titleShort>
-  <CentaurCivil_BirthdayPony.baseDescription>生活在闪耀世界的[PAWN_nameDef]在生日前向父母许愿要一只属于自己的小马。在[PAWN_pronoun]生日那天醒来的时候，[PAWN_nameDef]惊奇的发现自己成为了[PAWN_pronoun]梦寐以求的事物。</CentaurCivil_BirthdayPony.baseDescription>
+  <CentaurCivil_BirthdayPony.baseDescription>生活在闪耀世界的[PAWN_nameDef]在生日前向父母许愿要一只属于自己的小马。在[PAWN_pronoun]生日那天醒来的时候，[PAWN_nameDef]惊奇的发现自己成为了[PAWN_pronoun]梦寐以求的事物，但自己的父母却不知去向。</CentaurCivil_BirthdayPony.baseDescription>
 
   <CentaurCivil_GlitterworldPony.title>闪耀世界小马</CentaurCivil_GlitterworldPony.title>
   <CentaurCivil_GlitterworldPony.titleShort>闪耀小马</CentaurCivil_GlitterworldPony.titleShort>
@@ -82,10 +79,14 @@
 
   <CentaurCivil_TribePonySlave.title>部落奴马</CentaurCivil_TribePonySlave.title>
   <CentaurCivil_TribePonySlave.titleShort>部落奴马</CentaurCivil_TribePonySlave.titleShort>
-  <CentaurCivil_TribePonySlave.baseDescription>[PAWN_nameDef]在一个部落中长大。[PAWN_pronoun]从小就被束缚住双手，安装了沉重的豪华座椅供部落长老乘骑。当[PAWN_pronoun]撞见一座外来者殖民地时，[PAWN_nameDef]果断地甩掉了背上的首领，爆发出作为人马的超高奔跑速度逃离了部落。\n\n[PAWN_nameDef]因长期束缚而重度萎缩的双臂却再也无法承受几乎任何工作。</CentaurCivil_TribePonySlave.baseDescription>
+  <CentaurCivil_TribePonySlave.baseDescription></CentaurCivil_TribePonySlave.baseDescription>
 
   <CentaurCivil_TribePonyShine.title>闪耀部落神马</CentaurCivil_TribePonyShine.title>
   <CentaurCivil_TribePonyShine.titleShort>闪耀部落神马</CentaurCivil_TribePonyShine.titleShort>
-  <CentaurCivil_TribePonyShine.baseDescription>出生在闪耀世界的[PAWN_nameDef]是其父母出于共同爱好而创造的基因改造儿童。当他们在边缘世界旅游时，尚不满一岁的[PAWN_nameDef]被当地的一群部落视为神灵下凡。[PAWN_pronoun]在[PAWN_pronoun]的父母被残忍地杀害后被部落夺去，而部落首领也被[PAWN_pronoun]的父母杀死，[PAWN_nameDef]随后被奉为部落首领。\n\n在[PAWN_nameDef]长大的过程中，[PAWN_pronoun]逐渐地发现了自己的来历可怕般异常。在一次海盗袭击中，[PAWN_pronoun]抛下了部落的所有人，拾回了父母的脉冲步枪并逃离了部落，而剩下的部落成员无一幸存。</CentaurCivil_TribePonyShine.baseDescription>
+  <CentaurCivil_TribePonyShine.baseDescription></CentaurCivil_TribePonyShine.baseDescription>
+  
+  <CentaurCivil_Retro.title>半人马</CentaurCivil_Retro.title>
+  <CentaurCivil_Retro.titleShort>半人马</CentaurCivil_Retro.titleShort>
+  <CentaurCivil_Retro.baseDescription>当[PAWN_nameDef]第一次从冬眠中醒来时，[PAWN_pronoun]发现自己在一共湿冷的舰船里面。[PAWN_pronoun]不知道自己是怎么到了这里。[PAWN_nameDef]记得的唯一一件事，是[PAWN_pronoun]曾经有一个人的生活...... 并且获得了一个全新的身子有一条毛茸茸的尾巴和一对额外的腿，并且异常般地拥有许多工作技能。\n\n[PAWN_pronoun]将[PAWN_possessive]舰船驾驶到了一个被殖民的星球，并开始在在那里生活。在那之后，[PAWN_nameDef]花了一些时间来让自己适应人类世界，并且找到[PAWN_possessive]位置。</CentaurCivil_Retro.baseDescription>
 
 </LanguageData>

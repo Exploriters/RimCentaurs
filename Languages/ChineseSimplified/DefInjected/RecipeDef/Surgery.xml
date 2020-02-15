@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RemoveBodyPart_ExcludingScapular.label>移除身体部件</RemoveBodyPart_ExcludingScapular.label>
+  <RemoveBodyPart_ExcludingScapular.description>移除身体部件。</RemoveBodyPart_ExcludingScapular.description>
+  <RemoveBodyPart_ExcludingScapular.jobString>正在移除身体部件。</RemoveBodyPart_ExcludingScapular.jobString>
+  
+</LanguageData>

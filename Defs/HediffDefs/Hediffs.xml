@@ -9,6 +9,7 @@
     <!-- <taleOnVisible>HypothermiaRevealed</taleOnVisible> -->
     <maxSeverity>10.0</maxSeverity>
     <isBad>true</isBad>
+	<everCurableByItem>false</everCurableByItem>
 	<makesAlert>true</makesAlert>
     <hediffGivers>
       <li Class="HediffGiver_Heat">
@@ -213,6 +214,7 @@
     <!-- <taleOnVisible>HypothermiaRevealed</taleOnVisible> -->
     <maxSeverity>10.0</maxSeverity>
     <isBad>true</isBad>
+	<everCurableByItem>false</everCurableByItem>
     <hediffGivers>
       <li Class="HediffGiver_Hypothermia">
         <hediff>HyperManipulator_EnvironmentalCold</hediff>
@@ -376,6 +378,7 @@
     <label>manipulator failure sequela</label>
     <maxSeverity>1.0</maxSeverity>
     <initialSeverity>0.001</initialSeverity>
+	<everCurableByItem>false</everCurableByItem>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.05</severityPerDay>
@@ -452,6 +455,7 @@
     <label>dyskinesia</label>
     <maxSeverity>1.0</maxSeverity>
     <initialSeverity>1</initialSeverity>
+	<everCurableByItem>false</everCurableByItem>
     <hediffGivers>
     </hediffGivers>
     <comps>

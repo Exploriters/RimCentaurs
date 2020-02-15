@@ -152,14 +152,15 @@
   <ThoughtDef>
     <defName>BothCentaur</defName>
     <thoughtClass>Thought_SituationalSocial</thoughtClass>
-    <!-- <workerClass>ThoughtWorker_AlwaysActive</workerClass> -->
+    <!-- <workerClass>CentaurTheMagnuassembly.ThoughtWorker_AlwaysActive_Centaur</workerClass> -->
     <validWhileDespawned>true</validWhileDespawned>
     <stages>
       <li>
-        <label>both centaur</label>
+        <label>centaur aliker</label>
         <baseOpinionOffset>40</baseOpinionOffset>
       </li>
     </stages>
+	<thoughtToMake>SpotCentaur</thoughtToMake>
   </ThoughtDef>
 
   <ThoughtDef>
@@ -169,8 +170,21 @@
     <stages>
       <li>
         <label>spot other centaur</label>
-        <description>We got company. I am not alone, never more.</description>
+        <description>We got company. I am not alone, never more... Centaur is not just a confusing dream, they actually exit besides me!</description>
         <baseMoodEffect>25</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>NewCentaurJoin</defName>
+    <durationDays>15</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>new centaur joined</label>
+        <description>We got company. I am not alone, never more.</description>
+        <baseMoodEffect>60</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

@@ -36,12 +36,15 @@
     <label>scapular</label>
     <hitPoints>40</hitPoints>
     <skinCovered>true</skinCovered>
-    <conceptual>true</conceptual>
-    <!-- <solid>true</solid> -->
-    <!-- <bleedRate>0</bleedRate> -->
+    <!-- <conceptual>true</conceptual> -->
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <frostbiteVulnerability>0</frostbiteVulnerability>
     <canSuggestAmputation>false</canSuggestAmputation>
+    <destroyableByDamage>false</destroyableByDamage>
+    <!-- <alive>false</alive> -->
+    <delicate>false</delicate>
     <tags>
       <li>ManipulationLimbSegment</li>
     </tags>

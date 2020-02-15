@@ -20,9 +20,5 @@
   <Recolor_Orangice_Orange_Single.label>将单个橙冰染为橙色</Recolor_Orangice_Orange_Single.label>
   <Recolor_Orangice_Orange_Single.description>将单个橙冰染回蓝色。</Recolor_Orangice_Orange_Single.description>
   <Recolor_Orangice_Orange_Single.jobString>正在对橙冰染色。</Recolor_Orangice_Orange_Single.jobString>
-
-  <Remaster_Trishot.label>重制三射弓</Remaster_Trishot.label>
-  <Remaster_Trishot.description>以微小的材料代价来重制三射弓。</Remaster_Trishot.description>
-  <Remaster_Trishot.jobString>正在重制三射弓。</Remaster_Trishot.jobString>
   
 </LanguageData>
