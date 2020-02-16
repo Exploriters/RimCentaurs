@@ -58,6 +58,7 @@ namespace CentaurTheMagnuassembly
         public override void Tick()
         {
             base.Tick();
+            //BackstoryCracker.TestforIncorrectChildhood();
             if (this.ticksToExplode > 0)
             {
                 if (this.wickSustainer == null)

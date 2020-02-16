@@ -7,8 +7,8 @@
     <race>Alien_Centaur</race>
     <defaultFactionType>PlayerColony</defaultFactionType>
 
-    <minGenerationAge>100</minGenerationAge>
-    <maxGenerationAge>199</maxGenerationAge>
+    <minGenerationAge>20</minGenerationAge>
+    <maxGenerationAge>39</maxGenerationAge>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 
     <backstoryCategories>

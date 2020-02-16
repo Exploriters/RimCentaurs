@@ -215,7 +215,7 @@
         <label>one shot</label>
         <texPath>UI/Commands/BowTrishot_ModeOne</texPath>
         <texPathSelected>UI/Commands/BowTrishot_ModeOne_Select</texPathSelected>
-        <texPathCooldown>UI/Commands/BowTrishot_ModeOne_Cooldown</texPathCooldown>
+        <!-- <texPathCooldown>UI/Commands/BowTrishot_ModeOne_Cooldown</texPathCooldown> -->
       </li>
     </verbs>
   </ThingDef>

@@ -26,6 +26,7 @@ namespace CentaurTheMagnuassembly
         public static readonly HediffDef HyperManipulatorHediffDef = DefDatabase<HediffDef>.GetNamed("HyperManipulator");
         public static readonly BodyPartDef CentaurScapularDef = DefDatabase<BodyPartDef>.GetNamed("CentaurScapular");
         public static readonly ThingDef AlienCentaurDef = DefDatabase<ThingDef>.GetNamed("Alien_Centaur");
+        public static readonly PawnKindDef CentaurColonistDef = DefDatabase<PawnKindDef>.GetNamed("CentaurColonist");
         public static int InGameTick { get { return Find.TickManager.TicksGame; } }
         public static int InGameTickAbs { get { return Find.TickManager.TicksAbs; } }
         public static string FormattingTickTimeDiv(double number, string ToStringFormat = "0.00")

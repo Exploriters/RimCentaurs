@@ -7,9 +7,8 @@
     <!-- The result of extensive gene modding done by the ultra-wealthy as a hobby, now recognised as a distinct species. Despite their equine appearance, centaurs are omnivorous. -->
     <description>An extremely rare, unknown source of bioengineered species that possesses a human genome with additional patches, centaur is now recognised as a distinct mammal species.\n\nCentaur has a stronger physique, generally better appearance, larger appetite, stronger immunity, more difficult to be knocked down than humans, also a natural shooter - although it is not ruled out that there may be a few ones who prefer melee combat - but Centaur's extremely hard body and extraordinary unarmed damage can also make it a deadly melee combat unit. Despite their equine appearance, centaurs are omnivorous. \n\nCentaur is more adaptable to cold environments than humans. Although they have the same skin as humans, centaurs are less likely to endure heat than humans.</description>
 
-    <!-- <comps>
-		<li Class="HediffCompProperties_HealPermanentWounds" />
-	</comps> -->
+    <comps>
+	</comps>
     <tradeTags>
       <li>AnimalInsectSpace</li>
       <!-- To allows Centaurs survive in SOS2 Space. I didn't have anyother choice. -->
@@ -275,6 +274,13 @@
 
 				</alienskincolorgen>-->
 		  <alienhaircolorgen Class="CentaurTheMagnuassembly.ColorGenerator_CentaurHair"/>
+		  <colorChannels>
+				<li>
+					<name>hair</name>
+					<first Class="CentaurTheMagnuassembly.ColorGenerator_CentaurHair"/>
+					<second Class="CentaurTheMagnuassembly.ColorGenerator_CentaurHair"/>
+				</li>
+			</colorChannels>
           <useSkincolorForHair>false</useSkincolorForHair>
           <customHeadDrawSize>(1, 1)</customHeadDrawSize>
           <customDrawSize>(1.35, 1.35)</customDrawSize>
@@ -426,9 +432,6 @@
           <li>Apparel_SmokepopBelt</li>
 
           <li>Apparel_PowerArmorHelmet_Clocked</li>
-          <!--<li>Apparel_Parka</li>
-			<li>Apparel_Jacket</li>
-			<li>Apparel_Duster</li>-->
 
 
         </whiteApparelList>

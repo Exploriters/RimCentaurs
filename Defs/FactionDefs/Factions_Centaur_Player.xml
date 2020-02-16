@@ -31,9 +31,9 @@
     <apparelStuffFilter>
       <thingDefs>
         <!-- <li>Synthread</li>
+		<li>Orangice_Blue</li> -->
 		<li>Hyperweave</li>
-		<li>Plasteel</li> -->
-		<li>Orangice_Blue</li>
+		<li>Plasteel</li>
       </thingDefs>
     </apparelStuffFilter>
   </FactionDef>

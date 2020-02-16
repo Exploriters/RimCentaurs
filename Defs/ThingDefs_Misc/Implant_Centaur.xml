@@ -99,7 +99,7 @@
         </tools>
       </li>
     </comps>
-    <spawnThingOnRemoved>HyperManipulator</spawnThingOnRemoved>
+    <!-- <spawnThingOnRemoved>HyperManipulator</spawnThingOnRemoved> -->
   </HediffDef>
 
   <ThingDef>
