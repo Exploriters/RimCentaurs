@@ -29,7 +29,7 @@ namespace CentaurTheMagnuassembly
             if (!harmonyInstance.HasAnyPatches("CentaurTheMagnuassembly.rimworld.mod.AdditionalVerbPatch"))
             {
                 harmonyInstance.Patch(AccessTools.Method(typeof(Pawn_EquipmentTracker), "GetGizmos", null, null), null, new HarmonyMethod(patchType, "GetGizmosPostfix", null));
-                //harmonyInstance.Patch(AccessTools.Method(typeof(Gizmo), "GizmoOnGUI", null, null), null, new HarmonyMethod(patchType, "GizmoOnGUIPostfix", null));
+                //harmonyInstance.Patch(AccessTools.Method(typeof(Command_VerbTarget), "GizmoOnGUI", null, null), null, new HarmonyMethod(patchType, "GizmoOnGUIPostfix", null));
 
                 harmonyInstance.Patch(AccessTools.Method(typeof(Targeter), "BeginTargeting", new Type[] { typeof(Verb) }), new HarmonyMethod(patchType, "BeginTargetingPrefix", null));
                 harmonyInstance.Patch(AccessTools.Method(typeof(Targeter), "OrderPawnForceTarget", null, null), null, new HarmonyMethod(patchType, "OrderPawnForceTargetPostfix", null));
@@ -139,10 +139,139 @@ namespace CentaurTheMagnuassembly
                 }
             }
         }
+        /*public static void GizmoOnGUIPostfix(ref GizmoResult __result, Vector2 topLeft, float maxWidth, Command_VerbTarget __instance)
+        {
+            Text.Font = GameFont.Tiny;
+            Rect rect = new Rect(topLeft.x, topLeft.y, __instance.GetWidth(maxWidth), 75f);
+            
+            if (((Verb_Shoot_Cooldown)__instance.verb).RemainingProgressBeforeFire() != 0)
+            {
+                Widgets.FillableBar(rect,
+                    ((Verb_Shoot_Cooldown)__instance.verb).RemainingProgressBeforeFire(),
+                    ((VerbProperties_Custom)((Verb_Shoot_Cooldown)__instance.verb).verbProps).texture,
+                    ((VerbProperties_Custom)((Verb_Shoot_Cooldown)__instance.verb).verbProps).textureCooldown,
+                    false
+                    );
+            }
+
+            bool flag = false;
+            if (Mouse.IsOver(rect))
+            {
+                flag = true;
+                if (!__instance.disabled)
+                {
+                    GUI.color = GenUI.MouseoverColor;
+                }
+            }
+            Texture2D badTex = __instance.icon;
+            if (badTex == null)
+            {
+                badTex = BaseContent.BadTex;
+            }
+            Material material = (!__instance.disabled) ? null : TexUI.GrayscaleGUI;
+            GenUI.DrawTextureWithMaterial(rect, Command.BGTex, material, default(Rect));
+            MouseoverSounds.DoRegion(rect, SoundDefOf.Mouseover_Command);
+            Rect outerRect = rect;
+            outerRect.position += new Vector2(__instance.iconOffset.x * outerRect.size.x, __instance.iconOffset.y * outerRect.size.y);
+            GUI.color = __instance.IconDrawColor;
+            Widgets.DrawTextureFitted(outerRect, badTex, __instance.iconDrawScale * 0.85f, __instance.iconProportions, __instance.iconTexCoords, __instance.iconAngle, material);
+            GUI.color = Color.white;
+            bool flag2 = false;
+            KeyCode keyCode = (__instance.hotKey != null) ? __instance.hotKey.MainKey : KeyCode.None;
+            if (keyCode != KeyCode.None && !GizmoGridDrawer.drawnHotKeys.Contains(keyCode))
+            {
+                Rect rect2 = new Rect(rect.x + 5f, rect.y + 5f, rect.width - 10f, 18f);
+                Widgets.Label(rect2, keyCode.ToStringReadable());
+                GizmoGridDrawer.drawnHotKeys.Add(keyCode);
+                if (__instance.hotKey.KeyDownEvent)
+                {
+                    flag2 = true;
+                    Event.current.Use();
+                }
+            }
+            if (Widgets.ButtonInvisible(rect, false))
+            {
+                flag2 = true;
+            }
+            string labelCap = __instance.LabelCap;
+            if (!labelCap.NullOrEmpty())
+            {
+                float num = Text.CalcHeight(labelCap, rect.width);
+                Rect rect3 = new Rect(rect.x, rect.yMax - num + 12f, rect.width, num);
+                GUI.DrawTexture(rect3, TexUI.GrayTextBG);
+                GUI.color = Color.white;
+                Text.Anchor = TextAnchor.UpperCenter;
+                Widgets.Label(rect3, labelCap);
+                Text.Anchor = TextAnchor.UpperLeft;
+                GUI.color = Color.white;
+            }
+            GUI.color = Color.white;
+            if (true)
+            {
+                TipSignal tip = __instance.Desc;
+                if (__instance.disabled && !__instance.disabledReason.NullOrEmpty())
+                {
+                    string text = tip.text;
+                    tip.text = string.Concat(new string[]
+                    {
+                        text,
+                        "\n\n",
+                        "DisabledCommand".Translate(),
+                        ": ",
+                        __instance.disabledReason
+                    });
+                }
+                TooltipHandler.TipRegion(rect, tip);
+            }
+            if (!__instance.HighlightTag.NullOrEmpty() && (Find.WindowStack.FloatMenu == null || !Find.WindowStack.FloatMenu.windowRect.Overlaps(rect)))
+            {
+                UIHighlighter.HighlightOpportunity(rect, __instance.HighlightTag);
+            }
+            Text.Font = GameFont.Small;
+            if (flag2)
+            {
+                if (__instance.disabled)
+                {
+                    if (!__instance.disabledReason.NullOrEmpty())
+                    {
+                        Messages.Message(__instance.disabledReason, MessageTypeDefOf.RejectInput, false);
+                    }
+                    __result = new GizmoResult(GizmoState.Mouseover, null);
+                    return;
+                }
+                GizmoResult result;
+                if (Event.current.button == 1)
+                {
+                    result = new GizmoResult(GizmoState.OpenedFloatMenu, Event.current);
+                }
+                else
+                {
+                    if (!TutorSystem.AllowAction(__instance.TutorTagSelect))
+                    {
+                        __result = new GizmoResult(GizmoState.Mouseover, null);
+                        return;
+                    }
+                    result = new GizmoResult(GizmoState.Interacted, Event.current);
+                    TutorSystem.Notify_Event(__instance.TutorTagSelect);
+                }
+                __result = result;
+                return;
+            }
+            else
+            {
+                if (flag)
+                {
+                    __result = new GizmoResult(GizmoState.Mouseover, null);
+                    return;
+                }
+                __result = new GizmoResult(GizmoState.Clear, null);
+                return;
+            }
+        }
 
         public static void GizmoOnGUIPostfix(ref GizmoResult __result, Command_VerbTarget __instance, Vector2 topLeft, float maxWidth)
         {
-            GizmoResult gizmoResult = __instance.GizmoOnGUI(topLeft, maxWidth);
+            GizmoOnGUIPostfixPRE(ref __result, __instance, topLeft, maxWidth);
 
             var rect = new Rect(topLeft.x, topLeft.y, __instance.GetWidth(maxWidth), 75f);
             if (((Verb_Shoot_Cooldown)__instance.verb).RemainingProgressBeforeFire() != 0)
@@ -154,9 +283,7 @@ namespace CentaurTheMagnuassembly
                     false
                     );
             }
-
-            __result = gizmoResult;
-        }
+        }*/
 
         public static bool CreateVerbTargetCommandPrefix(ref Command_VerbTarget __result, Thing ownerThing, Verb verb)
         {
@@ -462,6 +589,7 @@ namespace CentaurTheMagnuassembly
         public int maxMagazine;
         public int redirectVerbAfterShoot = -1;
         public int cooldownTick = -1;
+        public bool ownByPawnEquipment = false;
 
         public VerbProperties_Custom()
         {

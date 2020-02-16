@@ -1,11 +1,11 @@
 ﻿using System.Linq;
 using System.Text;
 using Verse;
-using RimWorld;
 using System.Diagnostics;
 using System;
-using static CentaurTheMagnuassembly.RimCentaurCore;
 using UnityEngine;
+using RimWorld;
+//using AbilityUser;
 
 namespace CentaurTheMagnuassembly
 {
@@ -27,6 +27,11 @@ namespace CentaurTheMagnuassembly
         public static readonly BodyPartDef CentaurScapularDef = DefDatabase<BodyPartDef>.GetNamed("CentaurScapular");
         public static readonly ThingDef AlienCentaurDef = DefDatabase<ThingDef>.GetNamed("Alien_Centaur");
         public static readonly PawnKindDef CentaurColonistDef = DefDatabase<PawnKindDef>.GetNamed("CentaurColonist");
+
+
+        //public static readonly AbilityDef AbilityTrishot_TrishotDef = DefDatabase<AbilityDef>.GetNamed("AbilityTrishot_Trishot");
+        //public static readonly AbilityDef AbilityTrishot_IcoshotDef = DefDatabase<AbilityDef>.GetNamed("AbilityTrishot_Icoshot");
+        //public static readonly AbilityDef AbilityTrishot_OneshotDef = DefDatabase<AbilityDef>.GetNamed("AbilityTrishot_Oneshot");
         public static int InGameTick { get { return Find.TickManager.TicksGame; } }
         public static int InGameTickAbs { get { return Find.TickManager.TicksAbs; } }
         public static string FormattingTickTimeDiv(double number, string ToStringFormat = "0.00")
@@ -161,35 +166,54 @@ namespace CentaurTheMagnuassembly
             int heightLevel = (int)(height * range);
             int counter = 0;*/
         }
-    }
-    public class Verb_DoNothing : Verb
-    {
-        protected override bool TryCastShot()
+        public static bool PawnCanOccupy(Pawn pawn, IntVec3 c)
         {
-            //throw new NotImplementedException();
-            return false;
-        }
-    }
-    /// <summary>
-    /// TODO: Fix relation
-    /// </summary>
-    public class ThoughtWorker_AlwaysActive_Centaur : ThoughtWorker // ThoughtWorker_AlwaysActive
-    {
-        protected override ThoughtState CurrentSocialStateInternal(Pawn p, Pawn otherPawn)
-        {
-            Log.Message("[Magnuassembly]Soving CurrentSocialStateInternal between \"" + p.Name.ToStringShort + "(" + p.def.defName + ")\" and " + otherPawn.Name.ToStringShort + "(" + otherPawn.def.defName + ")\".");
-            if (p.def == AlienCentaurDef && otherPawn.def == AlienCentaurDef)
+            if (!c.Walkable(pawn.Map))
             {
-                //return base.CurrentSocialStateInternal(p, otherPawn);
-                return ThoughtState.ActiveAtStage(stageIndex: 0);
-            }
-            else
                 return false;
+            }
+            Building edifice = c.GetEdifice(pawn.Map);
+            if (edifice != null)
+            {
+                Building_Door building_Door = edifice as Building_Door;
+                if (building_Door != null && !building_Door.PawnCanOpen(pawn) && !building_Door.Open)
+                {
+                    return false;
+                }
+            }
+            return true;
         }
-        /*protected override ThoughtState CurrentStateInternal(Pawn p)
-        { 
-            
-        }*/
+        public static IntVec3? ScanOccupiablePosition(Pawn pawn, IntVec3 target)
+        {
+            IntVec3? flag = null;
+            IntVec3 intVec;
+            for (int i = 0; i < GenRadial.RadialPattern.Length; i++)
+            {
+                intVec = target + GenRadial.RadialPattern[i];
+                if (PawnCanOccupy(pawn, intVec))
+                {
+                    if (intVec == target)
+                    {
+                        return target;
+                    }
+                    flag = intVec;
+                    break;
+                }
+            }
+            return flag;
+        }
+        public static bool TeleportPawn(Pawn pawn, IntVec3 target)
+        {
+            bool flag = false;
+            IntVec3? relocated = ScanOccupiablePosition(pawn, target);
+            if (relocated != null)
+            {
+                pawn.SetPositionDirect((IntVec3)relocated);
+                flag = true;
+            }
+
+            return flag;
+        }
     }
 
 }

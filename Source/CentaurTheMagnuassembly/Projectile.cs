@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using Verse;
 using Verse.AI;
@@ -6,30 +7,25 @@ using static CentaurTheMagnuassembly.RimCentaurCore;
 
 namespace CentaurTheMagnuassembly
 {
-    public class Projectile_Explosive_Teleshot : Projectile_Explosive
+    public class Projectile_Explosive_Teleshot : Projectile_Explosive_RoofBypass
     {
         //TODO: Fix Teleport
         protected override void Explode()
         {
-            Map map = Map;
-            IntVec3 pos = Position;
-            base.Explode();
-            if (launcher.Map.uniqueID == map.uniqueID)
+            if (launcher is Pawn)
             {
-                //if ((map.AllCells as List<IntVec3>).Contains(pos)
-                //&& map.pathGrid.Walkable(pos)
-                //    )
+                Map map = Map;
+                IntVec3 pos = Position;
+                if (launcher.Map.uniqueID == map.uniqueID)
                 {
-                    launcher.SetPositionDirect(pos);
-                    //if (launcher is Pawn)
-                    //{
-                        //if (((Pawn)launcher).CanReach(intendedTarget, PathEndMode.OnCell, Danger.Unspecified))
-                        ((Pawn)launcher)?.pather?.TryRecoverFromUnwalkablePosition(false);
-                        //((Pawn)launcher).Draw();
-                    //}
-                    map.fogGrid.Unfog(launcher.Position);
+                    if (TeleportPawn(launcher as Pawn, pos))
+                    {
+                        //map.fogGrid.Unfog(launcher.Position);
+                        map.fogGrid.Notify_FogBlockerRemoved(launcher.Position);
+                    }
                 }
             }
+            base.Explode();
         }
         /*public override void Tick()
         {
@@ -38,6 +34,19 @@ namespace CentaurTheMagnuassembly
             {
                 origin = Position.ToVector3();
                 destination = intendedTarget.Thing.Position.ToVector3();
+            }
+        }*/
+        /*private void TickBASEBASE()
+        {
+            if (AllComps != null)
+            {
+                int i = 0;
+                int count = AllComps.Count;
+                while (i < count)
+                {
+                    AllComps[i].CompTick();
+                    i++;
+                }
             }
         }*/
     }

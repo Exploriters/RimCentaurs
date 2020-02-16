@@ -71,6 +71,7 @@
     <Compile Include="Building_TriBattery.cs" />
     <Compile Include="ColorGenerator_CentaurHair.cs" />
     <Compile Include="CompHealWearedOvertime.cs" />
+    <Compile Include="CompHMTrishotUser.cs" />
     <Compile Include="CompSelfHealOvertime.cs" />
     <Compile Include="CompSnowExpand_Overtick.cs" />
     <Compile Include="DamageWorker_Frostbite_LauncherSafe.cs" />
@@ -81,9 +82,12 @@
     <Compile Include="PatchCentaurRecipe.cs" />
     <Compile Include="PawnGeneratorPatch.cs" />
     <Compile Include="Projectile.cs" />
+    <Compile Include="Projectile_Explosive_RoofBypass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RimCentaurCore.cs" />
     <Compile Include="SomeThingBlank.cs" />
+    <Compile Include="ThoughtWorker_AlwaysActive_Centaur.cs" />
+    <Compile Include="Verb_DoNothing.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
