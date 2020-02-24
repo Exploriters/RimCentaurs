@@ -31,20 +31,23 @@
       <li>CentaurTrishot</li>
     </weaponTags>
     <comps>
+      <!-- <li Class="CentaurTheMagnuassembly.CompProperties_SelfHealOvertime">
+        <detlaHpPerSec>3</detlaHpPerSec>
+      </li> -->
       <!-- <li>
         <compClass>CompEquippable</compClass>
       </li> -->
       <li>
         <compClass>CentaurTheMagnuassembly.Comp_VerbSaveable</compClass>
       </li>
+      <!-- <li>
+        <compClass>CentaurTheMagnuassembly.CompUnbreakableViaDamage</compClass>
+      </li> -->
     </comps>
     <smeltable>false</smeltable>
     <thingCategories>
       <li>WeaponsRanged</li>
     </thingCategories>
-    <inspectorTabs>
-      <li>ITab_Art</li>
-    </inspectorTabs>
     <tools>
       <li>
         <label>limb</label>
@@ -101,6 +104,7 @@
     </weaponTags>
     <comps>
       <li Class="CompProperties_Art">
+		<compClass>CentaurTheMagnuassembly.CompArt_Qualityless</compClass>
         <nameMaker>NamerArtWeaponGun</nameMaker>
         <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
         <!-- <minQualityForArtistic>Excellent</minQualityForArtistic> -->
@@ -110,6 +114,9 @@
         <compClass>CompQuality</compClass>
       </li> -->
     </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
 	<!-- <recipeMaker> 	
       <researchPrerequisite>TrishotProject</researchPrerequisite>
       <skillRequirements>

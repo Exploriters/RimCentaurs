@@ -124,12 +124,11 @@ namespace CentaurTheMagnuassembly
 			List<ThingComp> allComps = this.parent.AllComps;
 			for (int i = 0; i < allComps.Count; i++)
 			{
-				CompUseEffect compUseEffect = allComps[i] as CompUseEffect;
-				if (compUseEffect != null && !compUseEffect.CanBeUsedBy(p, out failReason))
-				{
-					return false;
-				}
-			}
+                if (allComps[i] is CompUseEffect compUseEffect && !compUseEffect.CanBeUsedBy(p, out failReason))
+                {
+                    return false;
+                }
+            }
 			failReason = null;
 			return true;
 		}

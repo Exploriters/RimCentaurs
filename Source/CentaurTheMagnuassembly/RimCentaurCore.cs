@@ -175,8 +175,7 @@ namespace CentaurTheMagnuassembly
             Building edifice = c.GetEdifice(pawn.Map);
             if (edifice != null)
             {
-                Building_Door building_Door = edifice as Building_Door;
-                if (building_Door != null && !building_Door.PawnCanOpen(pawn) && !building_Door.Open)
+                if (edifice is Building_Door building_Door && !building_Door.PawnCanOpen(pawn) && !building_Door.Open)
                 {
                     return false;
                 }
