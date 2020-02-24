@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AlienRace.RaceSettings>
+    <defName>CentaurRaceSettings</defName>
+
+    <!-- <backstoryTagInsertion>
+    <li>
+        <backstories>
+            <li>Adventurer</li>
+        </backstories>
+        <spawnCategories>
+            <li>myCategory</li>
+        </spawnCategories>
+    </li>
+	</backstoryTagInsertion> -->
+
+    <!-- <PawnKindDef>
+		<defName>CentaurColonist</defName>
+		<label>colonist</label>
+		<race>Alien_Centaur</race>
+	</PawnKindDef> -->
+
+    <pawnKindSettings>
+      <!-- <alienslavekinds>
+			<li>
+				<kindDefs>
+					<li>CentaurColonist</li>
+				</kindDefs>
+				<chance>0</chance>
+			</li>
+		</alienslavekinds>
+
+		<alienrefugeekinds>
+			<li>
+				<kindDefs>
+					<li>CentaurColonist</li>
+				</kindDefs>
+				<chance>0</chance>
+			</li>
+		</alienrefugeekinds> -->
+      <!-- <startingColonists>
+			<li>
+				<pawnKindEntries>
+					<li>
+						<kindDefs>
+							<li>CentaurColonist</li>
+						</kindDefs>
+						<chance>10.0</chance>
+					</li>
+				</pawnKindEntries>
+				<factionDefs>
+					<li>PlayerColony</li> 
+				</factionDefs>
+			</li>
+		</startingColonists> -->
+      <!-- <alienwandererkinds>
+			<li>
+				<pawnKindEntries>
+					<li>
+						<kindDefs>
+							<li>CentaurColonist</li>
+						</kindDefs>
+						<chance>0</chance>
+					</li>
+				</pawnKindEntries>
+				<factionDefs>
+					<li>PlayerColony</li> 
+				</factionDefs>
+			</li>
+		</alienwandererkinds> -->
+    </pawnKindSettings>
+
+  </AlienRace.RaceSettings>
+</Defs>

@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseWeapon" Name="TrishotBase" Abstract="True">
+    <techLevel>Archotech</techLevel>
+    <tradeability>None</tradeability>
+    <tradeTags>
+      <li>ExoticMisc</li>
+      <li>CentaurEndgame</li>
+    </tradeTags>
+    <soundInteract>Bow_Large</soundInteract>
+    <soundDrop>Bow_Large</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Mass>12.5</Mass>
+      <!-- <AccuracyTouch>0.425</AccuracyTouch>
+      <AccuracyShort>0.383</AccuracyShort>
+      <AccuracyMedium>0.525</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong> -->
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+      <!-- <EquipDelay>3</EquipDelay> -->
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+	  <SellPriceFactor>1</SellPriceFactor>
+    </statBases>
+	<stackLimit>1</stackLimit>
+    <weaponTags>
+      <li>Gun</li>
+      <li>CentaurRanged</li>
+      <li>CentaurTrishot</li>
+    </weaponTags>
+    <comps>
+      <!-- <li>
+        <compClass>CompEquippable</compClass>
+      </li> -->
+      <li>
+        <compClass>CentaurTheMagnuassembly.Comp_VerbSaveable</compClass>
+      </li>
+    </comps>
+    <smeltable>false</smeltable>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>ice constructor</label>
+        <capacities>
+          <li>Frostblast</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="TrishotBase">
+    <defName>Bow_Trishot</defName>
+    <label>trishot</label>
+    <description>A powerful massive bow with long range that fires heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst. It requires powerful arms to use it that only available to Centaurs. With a massive weight and sharp edge on it, it can also be a deadly melee weapon.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/BowTrishot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>200000</WorkToMake>
+      <MarketValue>250000</MarketValue>
+    </statBases>
+    <tradeability>None</tradeability>
+    <costList>
+      <ThermoDamper>1</ThermoDamper>
+	  <!-- <Bow_Trishot_2Stage>1</Bow_Trishot_2Stage> -->
+      <Orangice_Blue>10</Orangice_Blue>
+      <Orangice>10</Orangice>
+      <MedicineUltratech>25</MedicineUltratech>
+      <MechSerumHealer>1</MechSerumHealer>
+	  <Gun_CentaurPlasmaBlaster>1</Gun_CentaurPlasmaBlaster>
+    </costList>
+    <weaponTags>
+      <li>CentaurTrishotFully</li>
+    </weaponTags>
+    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <!-- <minQualityForArtistic>Excellent</minQualityForArtistic> -->
+        <minQualityForArtistic>Awful</minQualityForArtistic>
+      </li>
+      <!-- <li>
+        <compClass>CompQuality</compClass>
+      </li> -->
+    </comps>
+	<!-- <recipeMaker> 	
+      <researchPrerequisite>TrishotProject</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    </recipeMaker> -->
+	<verbs>
+      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
+        <verbClass>CentaurTheMagnuassembly.Verb_Shoot_OvertickShotgun</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <requireLineOfSight>true</requireLineOfSight>
+        <defaultProjectile>Arrow_Trishot</defaultProjectile>
+        <forcedMissRadius>3</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <noiseRadius>20</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>4.2</warmupTime>
+        <range>79.95</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <onlyManualCast>false</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+
+		<isPrimary>true</isPrimary>
+        <desc>Standard Trishot mode, fires triple heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst.</desc>
+        <label>triple shot</label>
+        <texPath>UI/Commands/BowTrishot_ModeTri</texPath>
+        <texPathSelected>UI/Commands/BowTrishot_ModeTri_Select</texPathSelected>
+      </li>
+      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
+        <verbClass>CentaurTheMagnuassembly.Verb_Shoot_OvertickShotgun</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <requireLineOfSight>false</requireLineOfSight>
+        <defaultProjectile>Arrow_Trishot_Hyper_20D</defaultProjectile>
+        <forcedMissRadius>3</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>7</ai_AvoidFriendlyFireRadius>
+        <noiseRadius>20</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>9</warmupTime>
+        <range>119.95</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>20</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <onlyManualCast>false</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+
+        <desc>Icos mode that launch empowered scatting hyper shot in massive amount but deals low damage each, shoot longer range and pass over walls.</desc>
+        <label>icos shot</label>
+        <texPath>UI/Commands/BowTrishot_ModeIcos</texPath>
+        <texPathSelected>UI/Commands/BowTrishot_ModeIcos_Select</texPathSelected>
+      </li>
+      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
+        <verbClass>CentaurTheMagnuassembly.Verb_Shoot_Cooldown</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <requireLineOfSight>false</requireLineOfSight>
+        <defaultProjectile>Arrow_Trishot_Super</defaultProjectile>
+        <forcedMissRadius>0.05</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>50</ai_AvoidFriendlyFireRadius>
+        <noiseRadius>20</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>37.5</warmupTime>
+        <range>9999.95</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>20</muzzleFlashScale>
+        <onlyManualCast>false</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+		
+        <cooldownTick>18000</cooldownTick>
+        <redirectVerbAfterShoot>0</redirectVerbAfterShoot>
+
+        <desc>One shot mode that launch a extremely powerful singe shot, shoot ultra long range fly over walls. Deals devastative damage and teleport the caster to the destnation, without letting the caster taking damage from own's shot. Takes really long time to take a shot, and needs cooldown after a cast.</desc>
+        <label>one shot</label>
+        <texPath>UI/Commands/BowTrishot_ModeOne</texPath>
+        <texPathSelected>UI/Commands/BowTrishot_ModeOne_Select</texPathSelected>
+        <!-- <texPathCooldown>UI/Commands/BowTrishot_ModeOne_Cooldown</texPathCooldown> -->
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <ThingDef ParentName="TrishotBase">
+    <defName>Bow_Trishot_1Stage</defName>
+    <label>trishot brokedown</label>
+    <description>A powerful massive bow with long range that fires heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst. It requires powerful arms to use it that only available to Centaurs. With a massive weight and sharp edge on it, it can also be a deadly melee weapon.\n\nThis weapon is currently badly damaged, some functional is unavailable now.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/BowTrishotDamaged</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>100000</MarketValue>
+    </statBases>
+    <tradeability>None</tradeability>
+    <weaponTags />
+	
+	<verbs>
+      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
+        <verbClass>CentaurTheMagnuassembly.Verb_Shoot_OvertickShotgun</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <requireLineOfSight>true</requireLineOfSight>
+        <defaultProjectile>Arrow_Trishot</defaultProjectile>
+        <forcedMissRadius>3</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <noiseRadius>20</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>4.2</warmupTime>
+        <range>39.95</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <onlyManualCast>false</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+
+		<isPrimary>true</isPrimary>
+        <desc>Standard Trishot mode, fires triple heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst.\n\nDamaged:\nRange is halved.</desc>
+        <label>triple shot</label>
+        <texPath>UI/Commands/BowTrishot_ModeTri</texPath>
+        <texPathSelected>UI/Commands/BowTrishot_ModeTri_Select</texPathSelected>
+      </li>
+      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
+        <verbClass>CentaurTheMagnuassembly.Verb_DoNothing</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <requireLineOfSight>false</requireLineOfSight>
+        <defaultProjectile>Arrow_Trishot_Hyper_20D</defaultProjectile>
+        <forcedMissRadius>3</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>7</ai_AvoidFriendlyFireRadius>
+        <noiseRadius>20</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>9</warmupTime>
+        <range>119.95</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>20</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <onlyManualCast>false</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+
+        <desc>Icos mode that launch empowered scatting hyper shot in massive amount but deals low damage each, shoot longer range and pass over walls.</desc>
+        <label>icos shot</label>
+        <texPath>UI/Commands/BowTrishot_ModeIcos</texPath>
+        <texPathSelected>UI/Commands/BowTrishot_ModeIcos_Select</texPathSelected>
+		
+		<disable>true</disable>
+		<disableReason>This weapon needs to be repaired before this mode available.</disableReason>
+      </li>
+      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
+        <verbClass>CentaurTheMagnuassembly.Verb_DoNothing</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <requireLineOfSight>false</requireLineOfSight>
+        <defaultProjectile>Arrow_Trishot_Super</defaultProjectile>
+        <forcedMissRadius>0.05</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>50</ai_AvoidFriendlyFireRadius>
+        <noiseRadius>20</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>37.5</warmupTime>
+        <range>9999.95</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>20</muzzleFlashScale>
+        <onlyManualCast>false</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+
+        <desc>One shot mode that launch a extremely powerful singe shot, shoot ultra long range fly over walls. Deals devastative damage and teleport the caster to the destnation, without letting the caster taking damage from own's shot. Takes really long time to take a shot, and needs cooldown after a cast.</desc>
+        <label>one shot</label>
+        <texPath>UI/Commands/BowTrishot_ModeOne</texPath>
+        <texPathSelected>UI/Commands/BowTrishot_ModeOne_Select</texPathSelected>
+		
+		<disable>true</disable>
+		<disableReason>This weapon needs to be repaired before this mode available.</disableReason>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <ThingDef ParentName="TrishotBase">
+    <defName>Bow_Trishot_2Stage</defName>
+    <label>trishot prototype</label>
+    <description>A powerful massive bow with long range that fires heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst. It requires powerful arms to use it that only available to Centaurs. With a massive weight and sharp edge on it, it can also be a deadly melee weapon.\n\nThis weapon is currently damaged, some functional is unavailable now.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/BowTrishotDamaged2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <MarketValue>1750000</MarketValue>
+    </statBases>
+    <tradeability>None</tradeability>
+    <weaponTags />
+	<verbs>
+      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
+        <verbClass>CentaurTheMagnuassembly.Verb_Shoot_OvertickShotgun</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <requireLineOfSight>true</requireLineOfSight>
+        <defaultProjectile>Arrow_Trishot</defaultProjectile>
+        <forcedMissRadius>3</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <noiseRadius>20</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>4.2</warmupTime>
+        <range>79.95</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <onlyManualCast>false</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+
+		<isPrimary>true</isPrimary>
+        <desc>Standard Trishot mode, fires triple heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst.</desc>
+        <label>triple shot</label>
+        <texPath>UI/Commands/BowTrishot_ModeTri</texPath>
+        <texPathSelected>UI/Commands/BowTrishot_ModeTri_Select</texPathSelected>
+      </li>
+      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
+        <verbClass>CentaurTheMagnuassembly.Verb_Shoot_OvertickShotgun</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <requireLineOfSight>false</requireLineOfSight>
+        <defaultProjectile>Arrow_Trishot_Hyper_20D</defaultProjectile>
+        <forcedMissRadius>3</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>7</ai_AvoidFriendlyFireRadius>
+        <noiseRadius>20</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>9</warmupTime>
+        <range>59.95</range>
+        <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+        <burstShotCount>10</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <onlyManualCast>false</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+
+        <desc>Icos mode that launch empowered scatting hyper shot in massive amount but deals low damage each, shoot longer range and pass over walls.\n\nDamaged:\nRange and damage are halved.</desc>
+        <label>icos shot</label>
+        <texPath>UI/Commands/BowTrishot_ModeIcos</texPath>
+        <texPathSelected>UI/Commands/BowTrishot_ModeIcos_Select</texPathSelected>
+      </li>
+      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
+        <verbClass>CentaurTheMagnuassembly.Verb_DoNothing</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <requireLineOfSight>false</requireLineOfSight>
+        <defaultProjectile>Arrow_Trishot_Super</defaultProjectile>
+        <forcedMissRadius>0.05</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>50</ai_AvoidFriendlyFireRadius>
+        <noiseRadius>20</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>37.5</warmupTime>
+        <range>9999.95</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>20</muzzleFlashScale>
+        <onlyManualCast>false</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+
+        <desc>One shot mode that launch a extremely powerful singe shot, shoot ultra long range fly over walls. Deals devastative damage and teleport the caster to the destnation, without letting the caster taking damage from own's shot. Takes really long time to take a shot, and needs cooldown after a cast.</desc>
+        <label>one shot</label>
+        <texPath>UI/Commands/BowTrishot_ModeOne</texPath>
+        <texPathSelected>UI/Commands/BowTrishot_ModeOne_Select</texPathSelected>
+		
+		<disable>true</disable>
+		<disableReason>This weapon needs to be repaired before this mode available.</disableReason>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- Arrows -->
+  
+  <ThingDef ParentName="BaseProjectileNeolithic" Name="Arrow_Trishot">
+    <defName>Arrow_Trishot</defName>
+    <label>trishot bombarrow</label>
+    <useHitPoints>false</useHitPoints>
+    <neverMultiSelect>false</neverMultiSelect>
+    <statBases>
+      <MaxHitPoints>0</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Trishot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Frostblast</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <stoppingPower>10.05</stoppingPower>
+      <armorPenetrationBase>0.0</armorPenetrationBase>
+      <speed>60</speed>
+      <explosionRadius>1.5</explosionRadius>
+      <preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+      <preExplosionSpawnThingCount>5</preExplosionSpawnThingCount>
+      <postExplosionSpawnThingDef>Filth_FrostdustOrange</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>0.5</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>5</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <!-- <explosionEffect>GiantExplosion</explosionEffect> -->
+      <ai_IsIncendiary>false</ai_IsIncendiary>
+      <explosionDelay>20</explosionDelay>
+
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+    <comps>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-100</heatPerSecond>
+        <!-- <heatPushMinTemperature>-273</heatPushMinTemperature> -->
+      </li>
+      <!-- <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(127,192,255,0)</glowColor>
+      </li> -->
+      <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>Filth_FrostdustBlue</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>
+          <min>1</min>
+          <max>3</max>
+        </spawnIntervalRange>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>Filth_FrostdustOrange</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>
+          <min>1</min>
+          <max>3</max>
+        </spawnIntervalRange>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Arrow_Trishot_Hyper_20D</defName>
+    <label>trishot hyper arrow</label>
+    <useHitPoints>false</useHitPoints>
+    <neverMultiSelect>false</neverMultiSelect>
+    <statBases>
+      <MaxHitPoints>0</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Trishot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>CentaurTheMagnuassembly.Projectile_Explosive_Waggingshot</thingClass>
+    <projectile>
+      <flyOverhead>true</flyOverhead>
+      <damageDef>Frostblast</damageDef>
+      <damageAmountBase>3</damageAmountBase>
+      <stoppingPower>20</stoppingPower>
+      <armorPenetrationBase>0.0</armorPenetrationBase>
+      <speed>180</speed>
+      <explosionRadius>2.5</explosionRadius>
+      <preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.125</preExplosionSpawnChance>
+      <preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
+      <postExplosionSpawnThingDef>Filth_FrostdustOrange</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>0.125</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <!-- <explosionEffect>GiantExplosion</explosionEffect> -->
+      <ai_IsIncendiary>false</ai_IsIncendiary>
+      <explosionDelay>0</explosionDelay>
+
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+    <comps>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-12.5</heatPerSecond>
+      </li>
+      <!-- <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(127,192,255,0)</glowColor>
+      </li> -->
+      <!-- <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>Filth_FrostdustBlue</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>
+			<min>1</min>
+			<max>89</max>
+		</spawnIntervalRange>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>Filth_FrostdustOrange</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>
+			<min>1</min>
+			<max>89</max>
+		</spawnIntervalRange>
+      </li> -->
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Arrow_Trishot_Hyper</defName>
+    <label>trishot hyper arrow</label>
+    <useHitPoints>false</useHitPoints>
+    <neverMultiSelect>false</neverMultiSelect>
+    <statBases>
+      <MaxHitPoints>0</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Trishot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <flyOverhead>true</flyOverhead>
+      <damageDef>Frostblast</damageDef>
+      <damageAmountBase>60</damageAmountBase>
+      <stoppingPower>20</stoppingPower>
+      <armorPenetrationBase>0.0</armorPenetrationBase>
+      <speed>180</speed>
+      <explosionRadius>2.5</explosionRadius>
+      <preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+      <preExplosionSpawnThingCount>5</preExplosionSpawnThingCount>
+      <postExplosionSpawnThingDef>Filth_FrostdustOrange</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>0.5</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>5</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <!-- <explosionEffect>GiantExplosion</explosionEffect> -->
+      <ai_IsIncendiary>false</ai_IsIncendiary>
+      <explosionDelay>60</explosionDelay>
+
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+    <comps>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-250</heatPerSecond>
+      </li>
+      <!-- <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(127,192,255,0)</glowColor>
+      </li> -->
+      <!-- <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>Filth_FrostdustBlue</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>
+			<min>1</min>
+			<max>2</max>
+		</spawnIntervalRange>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>Filth_FrostdustOrange</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>
+			<min>1</min>
+			<max>2</max>
+		</spawnIntervalRange>
+      </li> -->
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>Arrow_Trishot_Super</defName>
+    <label>trishot super arrow</label>
+    <useHitPoints>false</useHitPoints>
+    <neverMultiSelect>false</neverMultiSelect>
+    <statBases>
+      <MaxHitPoints>0</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Trishot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>CentaurTheMagnuassembly.Projectile_Explosive_Teleshot</thingClass>
+    <projectile>
+      <flyOverhead>true</flyOverhead>
+      <damageDef>FrostblastSuper_LauncherSafe</damageDef>
+      <damageAmountBase>200</damageAmountBase>
+      <stoppingPower>20</stoppingPower>
+      <armorPenetrationBase>0.0</armorPenetrationBase>
+      <speed>120</speed>
+      <explosionRadius>39.95</explosionRadius>
+      <preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.25</preExplosionSpawnChance>
+      <preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
+      <postExplosionSpawnThingDef>Filth_FrostdustOrange</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>0.25</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <explosionEffect>GiantExplosion</explosionEffect>
+      <ai_IsIncendiary>false</ai_IsIncendiary>
+      <explosionDelay>180</explosionDelay>
+
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_GiantBomb</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+    <comps>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-600</heatPerSecond>
+      </li>
+      <!-- <li Class="CompProperties_Glower">
+        <glowRadius>20</glowRadius>
+        <glowColor>(127,192,255,0)</glowColor>
+      </li> -->
+      <!-- <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>Filth_FrostdustBlue</thingToSpawn>
+        <spawnCount>4</spawnCount>
+        <spawnIntervalRange>
+			<min>1</min>
+			<max>2</max>
+		</spawnIntervalRange>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>Filth_FrostdustOrange</thingToSpawn>
+        <spawnCount>4</spawnCount>
+        <spawnIntervalRange>
+			<min>1</min>
+			<max>2</max>
+		</spawnIntervalRange>
+      </li> -->
+      <!-- <li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>ThermoDamper</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>
+			<min>60</min>
+			<max>60</max>
+		</spawnIntervalRange>
+        <spawnMaxAdjacent>1</spawnMaxAdjacent>
+        <spawnForbidden>true</spawnForbidden>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li> -->
+    </comps>
+  </ThingDef>
+  
+</Defs>

@@ -348,7 +348,7 @@ namespace CentaurTheMagnuassembly
             {
                 if (verb.CasterIsPawn)
                 {
-                    if (verb.CasterPawn.story.WorkTagIsDisabled(WorkTags.Violent))
+                    if (verb.CasterPawn.WorkTagIsDisabled(WorkTags.Violent))
                     {
                         command_VerbTarget.Disable("IsIncapableOfViolence".Translate(verb.CasterPawn.LabelShort, verb.CasterPawn));
                         disableReasonOverwrite = true;

@@ -14,6 +14,7 @@
   <HyperManipulator.stages.adapting.label>适应中</HyperManipulator.stages.adapting.label>
 
   <ToxicHypothermia.label>毒性低温症</ToxicHypothermia.label>
+  <ToxicHypothermia.description>血液中有低温症毒素。这可以由毒性武器造成。\n毒性低温症不会致命，并且在降低意识以外没有任何副作用和后遗症。</ToxicHypothermia.description>
   <ToxicHypothermia.stages.initial.label>轻微</ToxicHypothermia.stages.initial.label>
   <ToxicHypothermia.stages.minor.label>较轻</ToxicHypothermia.stages.minor.label>
   <ToxicHypothermia.stages.moderate.label>中度</ToxicHypothermia.stages.moderate.label>
@@ -32,6 +33,7 @@
   <HyperManipulator_EnvironmentalHeat.stages.fatal.label>失效</HyperManipulator_EnvironmentalHeat.stages.fatal.label>
   <HyperManipulator_EnvironmentalHeat.comps.HediffComp_Discoverable.discoverLetterLabel>物理操作仪过热：{0}</HyperManipulator_EnvironmentalHeat.comps.HediffComp_Discoverable.discoverLetterLabel>
   <HyperManipulator_EnvironmentalHeat.comps.HediffComp_Discoverable.discoverLetterText>{0}安装的物理操作仪已经因环境温度过热而开始失灵。如果不为其及时降温，操作仪很快就会严重失准，并影响操作能力。\n\n过热影响是暂时性的。恢复了安全温度环境的操作仪最终会恢复正常，并不会留下永久性损伤，但殖民者仍然可能会因为高温而中暑或灼伤。</HyperManipulator_EnvironmentalHeat.comps.HediffComp_Discoverable.discoverLetterText>
+  <HyperManipulator_EnvironmentalHeat.description>物理操作仪已经因环境温度过热而开始失灵。如果不为其及时降温，操作仪很快就会严重失准，并影响操作能力。\n\n过热影响是暂时性的。恢复了安全温度环境的操作仪最终会恢复正常，并不会留下永久性损伤，但殖民者仍然可能会因为高温而中暑或灼伤。</HyperManipulator_EnvironmentalHeat.description>
 
   <HyperManipulator_EnvironmentalCold.label>操作器过冷失效</HyperManipulator_EnvironmentalCold.label>
   <HyperManipulator_EnvironmentalCold.stages.initial.label>轻微</HyperManipulator_EnvironmentalCold.stages.initial.label>
@@ -41,8 +43,10 @@
   <HyperManipulator_EnvironmentalCold.stages.extreme.label>极重</HyperManipulator_EnvironmentalCold.stages.extreme.label>
   <HyperManipulator_EnvironmentalCold.stages.critical.label>危急</HyperManipulator_EnvironmentalCold.stages.critical.label>
   <HyperManipulator_EnvironmentalCold.stages.fatal.label>失效</HyperManipulator_EnvironmentalCold.stages.fatal.label>
+  <HyperManipulator_EnvironmentalHeat.description>物理操作仪已经因环境温度过冷而开始失灵。如果不为其及时降温，操作仪很快就会严重失准，并影响操作能力。\n\n过冷影响是暂时性的。恢复了安全温度环境的操作仪最终会恢复正常，并不会留下永久性损伤，但殖民者仍然可能会因为低温而冻伤或获得低温症。</HyperManipulator_EnvironmentalHeat.description>
 
   <HyperManipulator_FatalSequela.label>操作器失效后遗症</HyperManipulator_FatalSequela.label>
+  <HyperManipulator_FatalSequela.description>物理操作仪曾经处于恶劣温度而失效，并且可能在最近的任何时候失效。</HyperManipulator_FatalSequela.description>
   <HyperManipulator_FatalSequela.stages.initial.label>轻微</HyperManipulator_FatalSequela.stages.initial.label>
   <HyperManipulator_FatalSequela.stages.minor.label>较轻</HyperManipulator_FatalSequela.stages.minor.label>
   <HyperManipulator_FatalSequela.stages.moderate.label>中度</HyperManipulator_FatalSequela.stages.moderate.label>
@@ -51,6 +55,7 @@
   <HyperManipulator_FatalSequela.stages.critical.label>危急</HyperManipulator_FatalSequela.stages.critical.label>
 
   <HyperManipulator_Dyskinesia.label>运动障碍</HyperManipulator_Dyskinesia.label>
+  <HyperManipulator_Dyskinesia.description>物理操作仪因曾经处于恶劣温度而失效。这将会在不超过两天的时间内恢复，并且不会留下后遗症。</HyperManipulator_Dyskinesia.description>
   <HyperManipulator_Dyskinesia.stages.recovering.label>康复</HyperManipulator_Dyskinesia.stages.recovering.label>
   <HyperManipulator_Dyskinesia.stages.minor.label>较轻</HyperManipulator_Dyskinesia.stages.minor.label>
   <HyperManipulator_Dyskinesia.stages.moderate.label>中度</HyperManipulator_Dyskinesia.stages.moderate.label>

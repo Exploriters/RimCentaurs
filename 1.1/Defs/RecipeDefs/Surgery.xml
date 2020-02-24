@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>RemoveBodyPart_ExcludingScapular</defName>
+    <label>remove part</label>
+    <description>Remove a body part.</description>
+    <workerClass>CentaurTheMagnuassembly.Recipe_RemoveBodyPart_MX</workerClass>
+    <jobString>Removing body part.</jobString>
+    <workAmount>2000</workAmount>
+    <surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
+    <!-- <targetsBodyPart>true</targetsBodyPart> -->
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+    <!-- <appliedOnFixedBodyParts>
+		<li>Torso</li>
+		<li>Ribcage</li>
+		<li>Sternum</li>
+		<li>Pelvis</li>
+		<li>CentaurTail</li>
+		<li>Spine</li>
+		<li>Stomach</li>
+		<li>Heart</li>
+		<li>Lung</li>
+		<li>Kidney</li>
+		<li>Liver</li>
+		<li>Neck</li>
+		<li>Head</li>
+		<li>Skull</li>
+		<li>Brain</li>
+		<li>Eye</li>
+		<li>Ear</li>
+		<li>Nose</li>
+		<li>Jaw</li>
+		<li>Shoulder</li>
+		<li>Clavicle</li>
+		<li>Arm</li>
+		<li>Humerus</li>
+		<li>Radius</li>
+		<li>Hand</li>
+		<li>Finger</li>
+		<li>Leg</li>
+		<li>Femur</li>
+		<li>Tibia</li>
+		<li>CentaurHoof</li>
+    </appliedOnFixedBodyParts> -->
+  </RecipeDef>
+  
+</Defs>
