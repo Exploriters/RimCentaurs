@@ -8,5 +8,11 @@
   <Magnuassembly_CompProperties_SelfHealOvertime_detlaHpPerSec_description>耐久度随着时间自动变化的速率。这个效果不受老化的影响，并且放在任何地方都会持续作用。</Magnuassembly_CompProperties_SelfHealOvertime_detlaHpPerSec_description>
   
   <Magnuassembly_AdditionalVerbPatch_CooldownDisableReason>仍需冷却{0}。</Magnuassembly_AdditionalVerbPatch_CooldownDisableReason>
+  
+  <Magnuassembly_Ability_MassPsychicDeafCentaur_DeafnessCantCast>在自身受到的心灵失聪效果消散前无法再次释放。仍需冷却{0}。</Magnuassembly_Ability_MassPsychicDeafCentaur_DeafnessCantCast>
+  
+  <Magnuassembly_ScenPart_FillBattery_StaticSummary>地图上所有的电容器都会在游戏开始时被填满。</Magnuassembly_ScenPart_FillBattery_StaticSummary>
+  
+  <Magnuassembly_CompRefuelable_PassiveRecharge_ChargeCompleted>{0}已经完成了充能。</Magnuassembly_CompRefuelable_PassiveRecharge_ChargeCompleted>
 
 </LanguageData>

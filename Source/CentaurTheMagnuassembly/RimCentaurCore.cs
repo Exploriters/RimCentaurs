@@ -27,6 +27,8 @@ namespace CentaurTheMagnuassembly
         public static readonly BodyPartDef CentaurScapularDef = DefDatabase<BodyPartDef>.GetNamed("CentaurScapular");
         public static readonly ThingDef AlienCentaurDef = DefDatabase<ThingDef>.GetNamed("Alien_Centaur");
         public static readonly PawnKindDef CentaurColonistDef = DefDatabase<PawnKindDef>.GetNamed("CentaurColonist");
+        public static readonly Backstory CentaurCivilRetro = BackstoryDatabase.allBackstories.TryGetValue("CentaurCivil_Retro");
+        public static readonly Backstory CentaurCivilMayinas = BackstoryDatabase.allBackstories.TryGetValue("Backstory_Mayinas_Exploriter");
 
 
         //public static readonly AbilityDef AbilityTrishot_TrishotDef = DefDatabase<AbilityDef>.GetNamed("AbilityTrishot_Trishot");
@@ -34,56 +36,56 @@ namespace CentaurTheMagnuassembly
         //public static readonly AbilityDef AbilityTrishot_OneshotDef = DefDatabase<AbilityDef>.GetNamed("AbilityTrishot_Oneshot");
         public static int InGameTick { get { return Find.TickManager.TicksGame; } }
         public static int InGameTickAbs { get { return Find.TickManager.TicksAbs; } }
-        public static string FormattingTickTimeDiv(double number, string ToStringFormat = "0.00")
+        public static string FormattingTickTimeDiv(double tickNumber, string ToStringFormat = "0.00", string midFix = " /")
         {
             string valueString = "PeriodSeconds".Translate("NaN /");
-            if (number != 0D)
+            if (tickNumber != 0D)
             {
-                if (1 / Math.Abs(number) >= 60000D)
+                if (1 / Math.Abs(tickNumber) >= 60000D)
                 {
-                    valueString = "PeriodYears".Translate((number * 60000).ToString(ToStringFormat) + " /");
+                    valueString = "Period's".Translate((tickNumber * 60000).ToString(ToStringFormat) + midFix);
                 }
-                else if (1 / Math.Abs(number) >= 15000D)
+                else if (1 / Math.Abs(tickNumber) >= 15000D)
                 {
-                    valueString = "PeriodQuadrums".Translate((number * 15000).ToString(ToStringFormat) + " /");
+                    valueString = "PeriodQuadrums".Translate((tickNumber * 15000).ToString(ToStringFormat) + midFix);
                 }
-                else if (1 / Math.Abs(number) >= 1000D)
+                else if (1 / Math.Abs(tickNumber) >= 1000D)
                 {
-                    valueString = "PeriodDays".Translate((number * 1000).ToString(ToStringFormat) + " /");
+                    valueString = "PeriodDays".Translate((tickNumber * 1000).ToString(ToStringFormat) + midFix);
                 }
-                else if (1 / Math.Abs(number) >= 41.666666666666666666666666666667)
+                else if (1 / Math.Abs(tickNumber) >= 41.666666666666666666666666666667)
                 {
-                    valueString = "PeriodHours".Translate((number * 41.666666666666666666666666666667).ToString(ToStringFormat) + " /");
+                    valueString = "PeriodHours".Translate((tickNumber * 41.666666666666666666666666666667).ToString(ToStringFormat) + midFix);
                 }
                 else
                 {
-                    valueString = "PeriodSeconds".Translate(number.ToString(ToStringFormat) + " /");
+                    valueString = "PeriodSeconds".Translate(tickNumber.ToString(ToStringFormat) + midFix);
                 }
             }
             return valueString;
         }
-        public static string FormattingTickTime(double number, string ToStringFormat = "0.00")
+        public static string FormattingTickTime(double tickNumber, string ToStringFormat = "0.00")
         {
             string valueString;
-            if (Math.Abs(number) >= 60000D)
+            if (Math.Abs(tickNumber) >= 60000D)
             {
-                valueString = "PeriodYears".Translate((number / 60000).ToString(ToStringFormat));
+                valueString = "PeriodYears".Translate((tickNumber / 60000).ToString(ToStringFormat));
             }
-            else if (Math.Abs(number) >= 15000D)
+            else if (Math.Abs(tickNumber) >= 15000D)
             {
-                valueString = "PeriodQuadrums".Translate((number / 15000).ToString(ToStringFormat));
+                valueString = "PeriodQuadrums".Translate((tickNumber / 15000).ToString(ToStringFormat));
             }
-            else if (Math.Abs(number) >= 1000D)
+            else if (Math.Abs(tickNumber) >= 1000D)
             {
-                valueString = "PeriodDays".Translate((number / 1000).ToString(ToStringFormat));
+                valueString = "PeriodDays".Translate((tickNumber / 1000).ToString(ToStringFormat));
             }
-            /*else if (Math.Abs(number) > 416.66666666666666666666666666667)
+            /*else if (Math.Abs(tickNumber) > 416.66666666666666666666666666667)
             {
-                valueString = "PeriodHours".Translate((number / 41.666666666666666666666666666667).ToString(ToStringFormat));
+                valueString = "PeriodHours".Translate((tickNumber / 41.666666666666666666666666666667).ToString(ToStringFormat));
             }*/
             else
             {
-                valueString = "PeriodSeconds".Translate(number.ToString(ToStringFormat));
+                valueString = "PeriodSeconds".Translate(tickNumber.ToString(ToStringFormat));
             }
             return valueString;
         }
@@ -213,6 +215,60 @@ namespace CentaurTheMagnuassembly
 
             return flag;
         }
+        public static Color hsb2rgb(float h, float s, float v)
+        {
+            //if ()
+            //{
+            //    throw new ArgumentOutOfRangeException();
+            //}
+            h = Math.Max(Math.Min(h, 360f), 0f);
+            s = Math.Max(Math.Min(s, 1f), 0f);
+            v = Math.Max(Math.Min(v, 1f), 0f);
+
+            float r = 0, g = 0, b = 0;
+            int i = (int)((h / 60) % 6);
+            float f = (h / 60) - i;
+            float p = v * (1 - s);
+            float q = v * (1 - f * s);
+            float t = v * (1 - (1 - f) * s);
+            switch (i)
+            {
+                case 0:
+                    r = v;
+                    g = t;
+                    b = p;
+                    break;
+                case 1:
+                    r = q;
+                    g = v;
+                    b = p;
+                    break;
+                case 2:
+                    r = p;
+                    g = v;
+                    b = t;
+                    break;
+                case 3:
+                    r = p;
+                    g = q;
+                    b = v;
+                    break;
+                case 4:
+                    r = t;
+                    g = p;
+                    b = v;
+                    break;
+                case 5:
+                    r = v;
+                    g = p;
+                    b = q;
+                    break;
+                default:
+                    break;
+            }
+            return new Color(r, g, b);
+        }
+
     }
 
 }

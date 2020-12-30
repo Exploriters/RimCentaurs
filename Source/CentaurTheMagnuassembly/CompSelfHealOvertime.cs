@@ -74,11 +74,15 @@ namespace CentaurTheMagnuassembly
             base.CompTick();
             OnTickAction(GenTicks.TicksPerRealSecond);
         }
-        /*public override void CompTickRare()
+        public override void CompTickRare()
         {
             base.CompTickRare();
-            OnTickAction(60);
-        }*/
+            //OnTickAction((float)GenTicks.TicksPerRealSecond / (float)GenTicks.TickRareInterval);
+            for (int i = 0; i < 250; i++)
+            {
+                OnTickAction(GenTicks.TicksPerRealSecond);
+            }
+        }
     }
     public class CompProperties_SelfHealOvertime : CompProperties
     {

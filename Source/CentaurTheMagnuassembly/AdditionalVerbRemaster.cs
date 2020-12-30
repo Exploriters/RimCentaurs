@@ -8,7 +8,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using RimWorld;
-using Harmony;
+//using Harmony;
+using HarmonyLib;
 using UnityEngine;
 using Verse.AI;
 using Verse;
@@ -17,7 +18,6 @@ using static CentaurTheMagnuassembly.RimCentaurCore;
 
 namespace CentaurTheMagnuassembly
 {
-
     [StaticConstructorOnStartup]
     [System.Diagnostics.CodeAnalysis.SuppressMessage("", "IDE0060")]
     public static class AdditionalVerbPatch
@@ -25,15 +25,18 @@ namespace CentaurTheMagnuassembly
         private static readonly Type patchType = typeof(AdditionalVerbPatch);
         static AdditionalVerbPatch()
         {
-            HarmonyInstance harmonyInstance = HarmonyInstance.Create("CentaurTheMagnuassembly.rimworld.mod.AdditionalVerbPatch");
-            if (!harmonyInstance.HasAnyPatches("CentaurTheMagnuassembly.rimworld.mod.AdditionalVerbPatch"))
-            {
-                harmonyInstance.Patch(AccessTools.Method(typeof(Pawn_EquipmentTracker), "GetGizmos", null, null), null, new HarmonyMethod(patchType, "GetGizmosPostfix", null));
+            //HarmonyInstance harmonyInstance = HarmonyInstance.Create("CentaurTheMagnuassembly.rimworld.mod.AdditionalVerbPatch");
+            Harmony harmonyInstance = new Harmony("CentaurTheMagnuassembly.rimworld.mod.AdditionalVerbPatch");
+            //if (!Harmony.HasAnyPatches("CentaurTheMagnuassembly.rimworld.mod.AdditionalVerbPatch"))
+            //{
+                /*
                 //harmonyInstance.Patch(AccessTools.Method(typeof(Command_VerbTarget), "GizmoOnGUI", null, null), null, new HarmonyMethod(patchType, "GizmoOnGUIPostfix", null));
-
-                harmonyInstance.Patch(AccessTools.Method(typeof(Targeter), "BeginTargeting", new Type[] { typeof(Verb) }), new HarmonyMethod(patchType, "BeginTargetingPrefix", null));
-                harmonyInstance.Patch(AccessTools.Method(typeof(Targeter), "OrderPawnForceTarget", null, null), null, new HarmonyMethod(patchType, "OrderPawnForceTargetPostfix", null));
                 //harmonyInstance.Patch(AccessTools.Method(typeof(Targeter), "GetTargetingVerb", null, null), new HarmonyMethod(patchType, "GetTargetingVerbPrefix", null));
+
+                harmonyInstance.Patch(AccessTools.Method(typeof(Pawn_EquipmentTracker), "GetGizmos", null, null), null, new HarmonyMethod(patchType, "GetGizmosPostfix", null));
+
+                harmonyInstance.Patch(AccessTools.Method(typeof(Targeter), "BeginTargeting", new Type[] { typeof(ITargetingSource), typeof(ITargetingSource) }), new HarmonyMethod(patchType, "BeginTargetingPrefix", null));
+                harmonyInstance.Patch(AccessTools.Method(typeof(Targeter), "OrderPawnForceTarget"), null, new HarmonyMethod(patchType, "OrderPawnForceTargetPostfix", null));
                 harmonyInstance.Patch(AccessTools.Method(typeof(Targeter), "StopTargeting", null, null), new HarmonyMethod(patchType, "StopTargetingPrefix", null));
 
                 harmonyInstance.Patch(AccessTools.Method(typeof(VerbTracker), "CreateVerbTargetCommand", null, null), new HarmonyMethod(patchType, "CreateVerbTargetCommandPrefix", null));
@@ -42,7 +45,19 @@ namespace CentaurTheMagnuassembly
                 harmonyInstance.Patch(AccessTools.Method(typeof(VerbProperties), "AdjustedAccuracy", null, null), null, new HarmonyMethod(patchType, "AdjustedAccuracyPostfix", null));
 
                 harmonyInstance.Patch(AccessTools.Method(typeof(TooltipUtility), "ShotCalculationTipString", null, null), new HarmonyMethod(patchType, "ShotCalculationTipStringPrefix", null));
+                */
+                harmonyInstance.Patch(AccessTools.Method(typeof(Pawn_EquipmentTracker), "GetGizmos", null, null), null, new HarmonyMethod(patchType, "GetGizmosPostfix", null));
 
+                harmonyInstance.Patch(AccessTools.Method(typeof(Targeter), "BeginTargeting", new Type[] { typeof(ITargetingSource), typeof(ITargetingSource) }), new HarmonyMethod(patchType, "BeginTargetingPrefix", null));
+                harmonyInstance.Patch(AccessTools.Method(typeof(Targeter), "OrderPawnForceTarget"), null, new HarmonyMethod(patchType, "OrderPawnForceTargetPostfix", null));
+                harmonyInstance.Patch(AccessTools.Method(typeof(Targeter), "StopTargeting", null, null), new HarmonyMethod(patchType, "StopTargetingPrefix", null));
+
+                harmonyInstance.Patch(AccessTools.Method(typeof(VerbTracker), "CreateVerbTargetCommand", null, null), new HarmonyMethod(patchType, "CreateVerbTargetCommandPrefix", null));
+                harmonyInstance.Patch(AccessTools.Property(typeof(CompEquippable), "PrimaryVerb").GetGetMethod(), new HarmonyMethod(patchType, "PrimaryVerbPrefix", null));
+
+                harmonyInstance.Patch(AccessTools.Method(typeof(VerbProperties), "AdjustedAccuracy", null, null), null, new HarmonyMethod(patchType, "AdjustedAccuracyPostfix", null));
+
+                harmonyInstance.Patch(AccessTools.Method(typeof(TooltipUtility), "ShotCalculationTipString", null, null), new HarmonyMethod(patchType, "ShotCalculationTipStringPrefix", null));
                 /*LongEventHandler.ExecuteWhenFinished
                 (
                     delegate
@@ -50,7 +65,7 @@ namespace CentaurTheMagnuassembly
                         currentCommandTexture = ContentFinder<Texture2D>.Get("UI/Commands/Select");
                     }
                 );*/
-            }
+            //}
         }
         //public static Texture2D currentCommandTexture;
         public enum RangeCategory
@@ -60,8 +75,34 @@ namespace CentaurTheMagnuassembly
             Medium,
             Long
         }
+        public static void GetGizmosPrefix(ref Pawn_EquipmentTracker __instance, ref IEnumerable<Gizmo> __result)
+        {
+            if (__instance.Primary != null)
+            {
+                foreach (ThingComp tc in __instance.Primary.AllComps)
+                {
+                    foreach (Gizmo g in tc.CompGetGizmosExtra())
+                    {
+                        __result.AddItem(g);
+                    }
+                }
+            }
+        }
         public static IEnumerable<Gizmo> GetGizmosPostfix(IEnumerable<Gizmo> __result, Pawn_EquipmentTracker __instance)
         {
+            if (__instance.Primary != null && __instance.Primary.def.weaponTags != null && __instance.Primary.def.weaponTags.Contains("AV"))
+            {
+                foreach (ThingComp tc in __instance.Primary.AllComps)
+                {
+                    if (!(tc is CompForbiddable))
+                    {
+                        foreach (Gizmo g in tc.CompGetGizmosExtra())
+                        {
+                            yield return g;
+                        }
+                    }
+                }
+            }
             int count = 0;
             foreach (Gizmo g in __result)
             {
@@ -85,9 +126,14 @@ namespace CentaurTheMagnuassembly
                 count++;
             }
         }
-        public static void BeginTargetingPrefix(Verb verb)
+        public static void BeginTargetingPrefix(ITargetingSource source)
         {
-            if (verb != null && verb.verbTracker != null && verb.verbTracker.directOwner != null && verb.DirectOwner is CompEquippable)
+            Verb verb = source as Verb;
+            if (verb == null)
+            {
+                return;
+            }
+            if (verb.verbTracker != null && verb.verbTracker.directOwner != null && verb.DirectOwner is CompEquippable)
             {
                 Comp_VerbSaveable comp = ((CompEquippable)verb.DirectOwner).parent.GetComp<Comp_VerbSaveable>();
                 if (comp != null)
@@ -96,14 +142,19 @@ namespace CentaurTheMagnuassembly
                 }
             }
         }
-        public static void OrderPawnForceTargetPostfix(Targeter __instance, Verb verb)
+        public static void OrderPawnForceTargetPostfix(Targeter __instance, ITargetingSource targetingSource)
         {
-            if (verb != null && verb.verbTracker != null && verb.verbTracker.directOwner != null && verb.DirectOwner is CompEquippable)
+            Verb verb = targetingSource as Verb;
+            if (verb == null)
+            {
+                return;
+            }
+            if (verb.verbTracker != null && verb.verbTracker.directOwner != null && verb.DirectOwner is CompEquippable)
             {
                 Comp_VerbSaveable comp = ((CompEquippable)verb.DirectOwner).parent.GetComp<Comp_VerbSaveable>();
                 if (comp != null)
                 {
-                    if (!Traverse.Create(__instance).Method("CurrentTargetUnderMouse", true).GetValue<LocalTargetInfo>().IsValid)
+                    if (!(Traverse.Create(__instance).Method("CurrentTargetUnderMouse", true).GetValue<LocalTargetInfo>().IsValid))
                     {
                         return;
                     }
@@ -112,24 +163,21 @@ namespace CentaurTheMagnuassembly
             }
 
         }
-
         public static bool GetTargetingVerbPrefix(ref Verb __result, Pawn pawn, Verb ___targetingVerb)
         {
-            //Log.Message($"pawn: {___targetingVerb}")
-            /*__result = pawn.equipment.AllEquipmentVerbs.FirstOrDefault((Verb x) => x.verbProps == ___targetingVerb.verbProps);
-            Comp_VerbSaveable comp = pawn.equipment.Primary.GetComp<Comp_VerbSaveable>();
-            if (comp != null)
-            {
-                __result = comp.currentVerb;
-                return false;
-            }*/
             return true;
         }
-        public static void StopTargetingPrefix(Verb ___targetingVerb)
+        public static void StopTargetingPrefix(Verb ___targetingSource)
         {
-            if (___targetingVerb != null && ___targetingVerb.verbTracker != null && ___targetingVerb.verbTracker.directOwner != null)
+            Verb verb = ___targetingSource as Verb;
+            if (verb == null)
             {
-                if (___targetingVerb.DirectOwner is CompEquippable compEquip)
+                return;
+            }
+            if (verb.verbTracker != null && verb.verbTracker.directOwner != null)
+            {
+                CompEquippable compEquip = verb.DirectOwner as CompEquippable;
+                if (compEquip != null && compEquip.parent != null)
                 {
                     Comp_VerbSaveable compVerbSave = compEquip.parent.GetComp<Comp_VerbSaveable>();
                     if (compVerbSave != null)
@@ -386,9 +434,10 @@ namespace CentaurTheMagnuassembly
             __result = command_VerbTarget;
             return false;
         }
-        public static bool PrimaryVerbPrefix(VerbTracker __instance, ref Verb __result)
+        public static bool PrimaryVerbPrefix(CompEquippable __instance, ref Verb __result)
         {
-            Comp_VerbSaveable comp = ((CompEquippable)__instance.directOwner).parent.GetComp<Comp_VerbSaveable>();
+            //Comp_VerbSaveable comp = ((CompEquippable)(__instance.directOwner)).parent.GetComp<Comp_VerbSaveable>();//VerbTracker
+            Comp_VerbSaveable comp = __instance.parent.GetComp<Comp_VerbSaveable>();
             if (comp != null)
             {
                 __result = comp.currentVerb;
@@ -590,6 +639,7 @@ namespace CentaurTheMagnuassembly
         public int redirectVerbAfterShoot = -1;
         public int cooldownTick = -1;
         public bool ownByPawnEquipment = false;
+        public ThingDef secondaryProjectile;
 
         public VerbProperties_Custom()
         {
@@ -609,7 +659,7 @@ namespace CentaurTheMagnuassembly
                 }
                 if (verbClass == typeof(Verb_Shoot_Cooldown) && cooldownTick <= 0)
                 {
-                    Log.Warning("[Magnuassembly]Detected cooldownTick " + cooldownTick + ", which is not more than 0.");
+                    Log.Warning($"[Magnuassembly]Detected cooldownTick {cooldownTick}, which is not more than 0.");
                 }
             });
         }
@@ -706,6 +756,41 @@ namespace CentaurTheMagnuassembly
                     SuccessedOnce = true;
             }
             return SuccessedOnce;
+        }
+    }
+    
+    public class Verb_Shoot_Rainbow2 : Verb_Shoot
+    {
+        protected int lastFireTick = -1;
+        public ThingDef secondaryProjectile => ((VerbProperties_Custom)verbProps).secondaryProjectile;
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Values.Look(ref lastFireTick, "lastFireTick", -1);
+        }
+        public override ThingDef Projectile 
+        {
+            get
+            {
+                if (lastFireTick >= 0 && lastFireTick + Math.Max(0, (ShotsPerBurst-1) * verbProps.ticksBetweenBurstShots) >= InGameTick)
+                {
+                    return secondaryProjectile;
+                }
+                else
+                {
+                    return base.Projectile; 
+                }
+            }
+        }
+        protected override bool TryCastShot()
+        {
+            bool result = base.TryCastShot();
+            if (lastFireTick < 0 || lastFireTick + Math.Max(0, (ShotsPerBurst - 1) * verbProps.ticksBetweenBurstShots) < InGameTick)
+            {
+                lastFireTick = InGameTick;
+            }
+            return result;
         }
     }
 

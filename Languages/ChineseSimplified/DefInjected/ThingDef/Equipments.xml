@@ -13,8 +13,12 @@
   <Gun_CentaurPlasmaBlaster.tools.grip.label>握把</Gun_CentaurPlasmaBlaster.tools.grip.label>
   <Gun_CentaurPlasmaBlaster.tools.stock.label>弹匣</Gun_CentaurPlasmaBlaster.tools.stock.label>
   <Gun_CentaurPlasmaBlaster.tools.barrel.label>发射管</Gun_CentaurPlasmaBlaster.tools.barrel.label>
-  <Gun_CentaurPlasmaBlaster.verbs.Verb_Shoot.label>绝杀</Gun_CentaurPlasmaBlaster.verbs.Verb_Shoot.label>
+  <Gun_CentaurPlasmaBlaster.verbs.0.label>穿透炮</Gun_CentaurPlasmaBlaster.verbs.0.label>
+  <Gun_CentaurPlasmaBlaster.verbs.0.desc>发射高度穿甲的电浆弹。</Gun_CentaurPlasmaBlaster.verbs.0.desc>
+  <Gun_CentaurPlasmaBlaster.verbs.1.label>破片炮</Gun_CentaurPlasmaBlaster.verbs.1.label>
+  <Gun_CentaurPlasmaBlaster.verbs.1.desc>在单次爆发中发射大量电荷弹。</Gun_CentaurPlasmaBlaster.verbs.1.desc>
   <Bullet_CentaurPlasmaBlaster.label>电浆霰弹</Bullet_CentaurPlasmaBlaster.label>
+  <Bullet_CentaurPlasmaBlasterSingle.label>电浆霰弹</Bullet_CentaurPlasmaBlasterSingle.label>
 
   <Bow_Trishot.label>三射弓</Bow_Trishot.label>
   <Bow_Trishot.description>一把强大的远距离重型弓，能在单次爆发射击中射出携带延迟起爆热能释放爆炸物的远距离重箭。其需要强大的双臂因而只有半人马可以使用。由于其锋利边缘和沉重的质量，这把武器也可以是一个致命的近战武器。</Bow_Trishot.description>
@@ -70,5 +74,9 @@
   <Slingline.verbs.0.label>投索</Slingline.verbs.0.label>
 
   <Slingline_Stone.label>投索石</Slingline_Stone.label>
+
+  <MeleeWeapon_PsyfocusStaffCentaur.label>灵质半人马法杖</MeleeWeapon_PsyfocusStaffCentaur.label>
+  <MeleeWeapon_PsyfocusStaffCentaur.description>这根极致科技级别的半人马法杖由心灵聚合物编织而成。虽然它不太适合作为作武器使用，但当一个使用心灵能力的个体持有它时，除了会增加心灵敏感度外，还能够提高心灵熵降低速率。</MeleeWeapon_PsyfocusStaffCentaur.description>
+  <MeleeWeapon_PsyfocusStaffCentaur.tools.0.label>杖头</MeleeWeapon_PsyfocusStaffCentaur.tools.0.label>
 
 </LanguageData>

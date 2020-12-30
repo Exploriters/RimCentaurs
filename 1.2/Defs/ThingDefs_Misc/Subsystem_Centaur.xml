@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JobDef>
+    <defName>UseItem_AttachSubsystemOnself</defName>
+    <driverClass>CentaurTheMagnuassembly.JobDriver_UseItem_IgnoreManipulation</driverClass>
+    <reportString>Installing subsystem on self.</reportString>
+    <playerInterruptible>false</playerInterruptible>
+    <casualInterruptible>false</casualInterruptible>
+    <suspendable>false</suspendable>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	<neverFleeFromEnemies>true</neverFleeFromEnemies>
+	<neverShowWeapon>true</neverShowWeapon>
+    <alwaysShowWeapon>false</alwaysShowWeapon>
+  </JobDef>
+  
+  <HediffDef Name="SubsystemHediffBase" Abstract="true">
+    <hediffClass>Hediff_AddedPart</hediffClass>
+    <defaultLabelColor>(0.5, 0.75, 1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <maxSeverity>1.0</maxSeverity>
+    <initialSeverity>1.0</initialSeverity>
+	<everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <label>initial</label>
+        <minSeverity>0</minSeverity>
+        <partEfficiencyOffset>-1.0</partEfficiencyOffset>
+      </li>
+      <li>
+        <minSeverity>1</minSeverity>
+      </li>
+    </stages>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<comps>
+	  <!--<li Class="HediffCompProperties_SeverityPerDay">
+		<severityPerDay>1</severityPerDay>
+	  </li>-->
+	</comps>
+    <!-- <spawnThingOnRemoved>HyperManipulator</spawnThingOnRemoved> -->
+  </HediffDef>
+
+  <ThingDef Name="SubsystemItemBase" Abstract="true">
+    <techLevel>Archotech</techLevel>
+    <thingSetMakerTags>
+      <!-- <li>RewardSpecial</li> -->
+    </thingSetMakerTags>
+    <statBases>
+	  <DeteriorationRate>0</DeteriorationRate>
+      <MarketValue>30000</MarketValue>
+      <Mass>1</Mass>
+	  
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+	  <Beauty>-4</Beauty>
+    </statBases>
+    <techHediffsTags>
+      <!-- <li>Advanced</li> -->
+    </techHediffsTags>
+    <tradeability>None</tradeability>
+	
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItemMagnualand_Double</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+	
+    <thingCategories>
+      <li>BodyPartsProsthetic</li>
+    </thingCategories>
+	
+	<thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Never</tickerType>
+    <alwaysHaulable>true</alwaysHaulable>
+    <isTechHediff>true</isTechHediff>
+    <tradeTags>
+      <li>TechHediff</li>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <pathCost>10</pathCost>
+	
+    <comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem_AttachSubsystemOnself</useJob>
+        <useLabel>assemble subsystem on self</useLabel>
+        <useDuration>600</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>PsychicAmplifier</hediffDef>
+        <bodyPart>Brain</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>PsyAmpInstalled</soundOnUsed>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_DestroySelf</compClass>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef ParentName="SubsystemHediffBase" Abstract="true">
+    <stages>
+      <li>
+        <label>initial</label>
+        <minSeverity>0</minSeverity>
+        <partEfficiencyOffset>-1.0</partEfficiencyOffset>
+      </li>
+      <li>
+        <minSeverity>1</minSeverity>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  </Defs>

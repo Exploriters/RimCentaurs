@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ScenPartDef>
+    <defName>StartInSpaceCentaurs</defName>
+    <label>start in centaurs cruiser</label>
+    <category>Misc</category>
+    <scenPartClass>CentaurTheMagnuassembly.ScenPart_StartInSpaceCentaur</scenPartClass>
+    <maxUses>1</maxUses>
+  </ScenPartDef>
+
+  <ScenPartDef>
+    <defName>FillTriBattery</defName>
+    <label>fill batteries</label>
+    <category>Misc</category>
+    <scenPartClass>CentaurTheMagnuassembly.ScenPart_FillBattery</scenPartClass>
+    <maxUses>1</maxUses>
+  </ScenPartDef>
+
+  <!--<ScenPartDef>
+    <defName>StartingThing_Defined_FillBattery</defName>
+    <label>start with</label>
+    <scenPartClass>CentaurTheMagnuassembly.ScenPart_StartingThing_Defined_FillBattery</scenPartClass>
+    <category>StartingItem</category>
+  </ScenPartDef>-->
+  
+</Defs>

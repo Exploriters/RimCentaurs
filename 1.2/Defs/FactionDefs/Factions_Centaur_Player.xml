@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="FactionBase">
+    <colorSpectrum Inherit="False">
+      <li>(0.847, 0.541, 0)</li>
+    </colorSpectrum>
+    <defName>CentaurPlayerColony</defName>
+    <label>Centaur New Arrivals</label>
+    <description>A colony of recently-arrived off-worlders.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>CentaurColonist</basicMemberKind>
+    <pawnSingular>colonist</pawnSingular>
+    <pawnsPlural>colonists</pawnsPlural>
+    <techLevel>Archotech</techLevel>
+    <backstoryCategories>
+      <li>CentaurCivil</li>
+    </backstoryCategories>
+    <factionIconPath>World/WorldObjects/Expanding/EASTREND</factionIconPath>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <geneticVariance>1</geneticVariance>
+    <startingResearchTags>
+      <li>CentaurStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>CentaurStart</li>
+      <li>CentaurStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>CentaurCivil</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <hairTags>
+      <li>Urban</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <!-- <li>Synthread</li>
+		<li>Orangice_Blue</li> -->
+		<li>Hyperweave</li>
+		<li>Plasteel</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+
+  <FactionDef ParentName="FactionBase">
+    <colorSpectrum Inherit="False">
+      <li>(0.847, 0.541, 0)</li>
+    </colorSpectrum>
+    <defName>CentaurFactionDummy</defName>
+    <categoryTag>CentaurFactionDummy</categoryTag>
+    <label>Centaurs</label>
+    <fixedName>Centaurs</fixedName>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <techLevel>Archotech</techLevel>
+    <factionIconPath>World/WorldObjects/Expanding/EASTREND</factionIconPath>
+    <hidden>true</hidden>
+    <humanlikeFaction>false</humanlikeFaction>
+  </FactionDef>
+  
+</Defs>

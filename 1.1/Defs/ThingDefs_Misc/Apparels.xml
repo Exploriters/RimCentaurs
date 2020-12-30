@@ -1304,7 +1304,7 @@
     <recipeMaker>
       <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
       <researchPrerequisite>ShieldBelt</researchPrerequisite>
-      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSpeedStat>SmeltingSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
       <effectWorking>Smith</effectWorking>
       <soundWorking>Recipe_Machining</soundWorking>
@@ -1381,7 +1381,7 @@
     <recipeMaker>
       <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
       <researchPrerequisite>ShieldBelt</researchPrerequisite>
-      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSpeedStat>SmeltingSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
       <effectWorking>Smith</effectWorking>
       <soundWorking>Recipe_Machining</soundWorking>

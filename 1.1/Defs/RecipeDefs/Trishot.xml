@@ -6,7 +6,7 @@
     <label>remaster trishot</label>
     <description>Remaster trishot at cost of a slight material.</description>
     <jobString>Remastering trishot.</jobString>
-    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
     <workAmount>10000</workAmount>
@@ -93,7 +93,7 @@
 	<label>replace thermo damper for trishot</label>
 	<description>Repair trishot by replacing its thermo damper. This will restore it's normal range and sightly restore an alternative attact</description>
 	<jobString>Repairing trishot.</jobString>
-	<workSpeedStat>SmithingSpeed</workSpeedStat>
+	<workSpeedStat>SmeltingSpeed</workSpeedStat>
 	<effectWorking>Smith</effectWorking>
 	<soundWorking>Recipe_Machining</soundWorking>
 	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
@@ -141,7 +141,7 @@
 	<label>repair trishot</label>
 	<description>Compelely repair trishot and restore its all functional, unlock a extremely powerful alternative attact.</description>
 	<jobString>Repairing trishot.</jobString>
-	<workSpeedStat>SmithingSpeed</workSpeedStat>
+	<workSpeedStat>SmeltingSpeed</workSpeedStat>
 	<effectWorking>Smith</effectWorking>
 	<soundWorking>Recipe_Machining</soundWorking>
 	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>

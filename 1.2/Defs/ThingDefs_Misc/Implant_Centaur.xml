@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef>
+    <hediffClass>CentaurTheMagnuassembly.Hediff_AddedPart_HManipulator</hediffClass>
+    <defaultLabelColor>(0.5, 0.75, 1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <defName>HyperManipulator</defName>
+    <label>physic manipulator</label>
+    <labelNoun>a physic manipulator</labelNoun>
+    <description>An pair of devices replacing arms with a powerful remote manipulator.</description>
+    <descriptionHyperlinks><ThingDef>HyperManipulator</ThingDef></descriptionHyperlinks>
+    <maxSeverity>1.0</maxSeverity>
+    <initialSeverity>0.001</initialSeverity>
+	<everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <label>assembling</label>
+        <minSeverity>0</minSeverity>
+        <partEfficiencyOffset>-5</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0</partEfficiencyOffset> -->
+      </li>
+      <li>
+        <label>initial</label>
+        <minSeverity>0.15</minSeverity>
+        <partEfficiencyOffset>-4.95</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0.01</partEfficiencyOffset> -->
+      </li>
+      <li>
+        <label>adapting</label>
+        <minSeverity>0.50</minSeverity>
+        <partEfficiencyOffset>-4.5</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0.1</partEfficiencyOffset> -->
+      </li>
+      <li>
+        <label>adapting</label>
+        <minSeverity>0.85</minSeverity>
+        <partEfficiencyOffset>-4</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0.2</partEfficiencyOffset> -->
+      </li>
+      <li>
+        <label>adapting</label>
+        <minSeverity>0.9</minSeverity>
+        <partEfficiencyOffset>-3</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0.3</partEfficiencyOffset> -->
+      </li>
+      <li>
+        <label>adapting</label>
+        <minSeverity>0.95</minSeverity>
+        <partEfficiencyOffset>-2.5</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0.5</partEfficiencyOffset> -->
+      </li>
+      <li>
+        <minSeverity>1</minSeverity>
+        <hediffGivers>
+          <li Class="HediffGiver_Heat">
+            <hediff>HyperManipulator_EnvironmentalHeat</hediff>
+          </li>
+          <li Class="HediffGiver_Hypothermia">
+            <hediff>HyperManipulator_EnvironmentalCold</hediff>
+          </li>
+        </hediffGivers>
+      </li>
+    </stages>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>5</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>0.05</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>frost smasher</label>
+            <capacities>
+              <li>FrostblastMelee</li>
+            </capacities>
+            <power>20</power>
+            <cooldownTime>1</cooldownTime>
+			<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			<hediff>Frostbite</hediff>
+            <surpriseAttack>
+              <extraMeleeDamages>
+                <li>
+                  <def>Stun</def>
+                  <amount>20</amount>
+                </li>
+                <li>
+                  <def>EMP</def>
+                  <amount>20</amount>
+                </li>
+              </extraMeleeDamages>
+            </surpriseAttack>
+			<chanceFactor>10</chanceFactor>
+			<armorPenetration>1.1</armorPenetration>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <!-- <spawnThingOnRemoved>HyperManipulator</spawnThingOnRemoved> -->
+  </HediffDef>
+
+  <ThingDef>
+    <defName>HyperManipulator</defName>
+    <label>physic manipulator</label>
+    <description>An pair of arm replacement built by an unknown centaur-archotech. It removes one's arms, replacing it's shoulders with a powerful remote manipulator that can interact objects around without directly contect, strong enough to crush a thick hardwood branch, and precise enough to write a sonnet on a grain of rice. It can controllably generating Holographic projection which looks and feels like natural flesh, and dynamically reposition center of mass to keep balance. If it is harmed, it repairs itself over time. Its internal workings are a mystery to all minds.\n\nIt can be assemble by oneself without surgery, but not very comfortable at begining, take times to become adapted, and then it will be incredibly effective than anyother types of bionic parts.</description>
+    <techLevel>Archotech</techLevel>
+    <thingSetMakerTags>
+      <!-- <li>RewardSpecial</li> -->
+    </thingSetMakerTags>
+    <statBases>
+	  <DeteriorationRate>0</DeteriorationRate>
+      <MarketValue>100000</MarketValue>
+      <Mass>20</Mass>
+	  
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+	  <Beauty>-4</Beauty>
+    </statBases>
+    <techHediffsTags>
+      <!-- <li>Advanced</li> -->
+    </techHediffsTags>
+    <tradeability>None</tradeability>
+	
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItemMagnualand_Double</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+	
+    <thingCategories>
+      <li>BodyPartsProsthetic</li>
+    </thingCategories>
+	
+	<thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Never</tickerType>
+    <alwaysHaulable>true</alwaysHaulable>
+    <isTechHediff>true</isTechHediff>
+    <tradeTags>
+      <li>TechHediff</li>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <pathCost>10</pathCost>
+
+    <!--<ingestible>
+      <preferability>NeverForNutrition</preferability>
+      <!- - <drugCategory>Medical</drugCategory> - ->
+      <baseIngestTicks>600</baseIngestTicks>
+      <chairSearchRadius>0</chairSearchRadius>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <!- - <ingestSound>None</ingestSound> - ->
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+		  <hediffDef>HyperManipulator</hediffDef>
+          <severity>1.0</severity>
+          <partsToAffect>
+			<li>Shoulder</li>
+			<li>Shoulder</li>
+          </partsToAffect>
+		  <divideByBodySize>false</divideByBodySize>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+		  <hediffDef>HyperManipulator</hediffDef>
+          <severity>1.0</severity>
+          <partsToAffect>
+			<li>Shoulder</li>
+			<li>Shoulder</li>
+          </partsToAffect>
+		  <divideByBodySize>false</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible> -->
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Usable">
+        <compClass>CentaurTheMagnuassembly.CompUsable_IgnoreManipulation</compClass>
+        <useJob>UseItem_HManipulator</useJob>
+        <useLabel>assemble physic manipulator on self</useLabel>
+        <useDuration>600</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CentaurTheMagnuassembly.CompUseEffect_HediffApply_HManipulator</compClass>
+        <!-- <hediffDef>HyperManipulator</hediffDef>
+		<severity>1</severity>
+		<divideByBodySize>true</divideByBodySize> -->
+      </li>
+      <!-- <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_DestroySelf</compClass>
+      </li> -->
+    </comps>
+  </ThingDef>
+
+  <JobDef>
+    <defName>UseItem_HManipulator</defName>
+    <driverClass>CentaurTheMagnuassembly.JobDriver_UseItem_IgnoreManipulation</driverClass>
+    <reportString>Installing physic manipulator on self.</reportString>
+    <playerInterruptible>false</playerInterruptible>
+    <casualInterruptible>false</casualInterruptible>
+    <suspendable>false</suspendable>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	<neverFleeFromEnemies>true</neverFleeFromEnemies>
+	<neverShowWeapon>true</neverShowWeapon>
+    <alwaysShowWeapon>false</alwaysShowWeapon>
+	<!-- <taleOnCompletion /> -->
+    <!-- <CheckJobOverrideOnDamageMode>Never</CheckJobOverrideOnDamageMode> -->
+  </JobDef>
+
+  <JobDef>
+    <defName>UseItem_NonInturruptible</defName>
+    <driverClass>JobDriver_UseItem</driverClass>
+    <reportString>using TargetA.</reportString>
+    <playerInterruptible>false</playerInterruptible>
+    <casualInterruptible>false</casualInterruptible>
+    <suspendable>false</suspendable>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <!-- <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallHyperManipulator</defName>
+    <label>install physic manipulator</label>
+    <description>Install a physic manipulator.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing physic manipulator.</jobString>
+    <workAmount>6000</workAmount>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>HyperManipulator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>HyperManipulator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>CentaurScapular</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>HyperManipulator</addsHediff>
+  </RecipeDef> -->
+
+  <!-- <RecipeDef>
+    <defName>InstallHyperManipulator</defName>
+    <label>install physic manipulator</label>
+    <description>Install a physic manipulator.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing physic manipulator.</jobString>
+    <workAmount>180</workAmount>
+    <targetsBodyPart>true</targetsBodyPart>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <anesthetize>false</anesthetize>
+    <skillRequirements />
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>HyperManipulator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>HyperManipulator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>CentaurScapular</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>HyperManipulator</addsHediff>
+  </RecipeDef> -->
+
+  <RecipeDef>
+    <defName>InstallHyperManipulator</defName>
+    <label>install physic manipulator</label>
+    <description>Install a physic manipulator.</description>
+    <workerClass>Recipe_AdministerUsableItem</workerClass>
+    <jobString>Installing physic manipulator.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>600</workAmount>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>HyperManipulator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>HyperManipulator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+</Defs>

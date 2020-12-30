@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <CentaurTechRootProject.label>半人马科技</CentaurTechRootProject.label>
+  <CentaurTechRootProject.description>允许你制造更多的半人马限定科技。</CentaurTechRootProject.description>
+
+  <CentaurReverseEngineeringHumanTech.label>半人马限定装备</CentaurReverseEngineeringHumanTech.label>
+  <CentaurReverseEngineeringHumanTech.description>重制人类的装备以制造适用于半人马的版本。</CentaurReverseEngineeringHumanTech.description>
+
   <TrishotProject.label>三射弓</TrishotProject.label>
   <TrishotProject.description>允许你制造一种由半人马使用的强大武器，三射弓，一把强大的远距离重型弓，能在单次爆发射击中射出三只携带延迟起爆热能释放爆炸物的远距离重箭。</TrishotProject.description>
 

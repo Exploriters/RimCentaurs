@@ -109,6 +109,7 @@ namespace CentaurTheMagnuassembly
             }
         }
     }
+
     public class Hediff_AddedPart_HManipulator : Hediff_AddedPart
     {
         //T___O_NOMORE__D____O: Prevent remove part surgery targeting HM

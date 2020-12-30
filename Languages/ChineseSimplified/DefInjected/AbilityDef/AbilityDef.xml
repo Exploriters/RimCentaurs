@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <MassPsychicDeafCentaur.label>群体心灵失聪</MassPsychicDeafCentaur.label>
+  <MassPsychicDeafCentaur.description>释放出巨量的心灵脉冲干扰所有人的头脑，阻塞地图上所有生物的启灵神经持续一天——包括施法者自身。释放这个能力需要三个小时的冥想，并且也会导致施法者在受影响期间无法再释放任何其他技能。</MassPsychicDeafCentaur.description>
+  <!--<MassPsychicDeafCentaur.confirmationDialogText>如果你使用群体心灵失聪，这个地区的所有人都会变得心灵失聪。\n\n群体心灵失聪需要三个小时的释放时间，并且不能被打断。\n\n地图上所有生物都会受到影响，包括施法者。施法者在受影响期间无法再释放任何其他技能。\n\n你真的要释放群体心灵失聪吗？</MassPsychicDeafCentaur.confirmationDialogText>-->
+</LanguageData>

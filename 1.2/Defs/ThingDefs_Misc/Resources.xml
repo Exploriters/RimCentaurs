@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase" Name="OrangiceBase">
+    <defName>Orangice</defName>
+    <label>orangice</label>
+    <description>A powerful rare material, icy stuff but orange and doesn't melt. Can be shaped into nearly any form, but takes really long time to do this.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Orangice</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <tradeability>Sellable</tradeability>
+    <techLevel>Archotech</techLevel>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>200</MarketValue>
+      <Mass>0.05</Mass>
+      <StuffPower_Armor_Sharp>3.00</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>3.00</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>3.00</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>51</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>39</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>3.0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>3.0</BluntDamageMultiplier>
+      <!-- <HeatDamageMultiplier>3.0</HeatDamageMultiplier> -->
+      <Beauty>0</Beauty>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <stackLimit>400</stackLimit>
+    <!-- <deepCommonality>0</deepCommonality>
+    <deepCountPerPortion>1</deepCountPerPortion>
+    <deepLumpSizeRange>
+      <min>2</min>
+      <max>10</max>
+    </deepLumpSizeRange> -->
+    <stuffProps>
+      <stuffAdjective>orangicy</stuffAdjective>
+      <categories>
+        <li>Metallic</li>
+        <li>Fabric</li>
+        <li>Leathery</li>
+        <li>Stony</li>
+        <li>Woody</li>
+      </categories>
+      <commonality>0</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(255,184,86)</color>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statOffsets>
+        <MaxHitPoints>120</MaxHitPoints>
+        <Beauty>20.0</Beauty>
+        <Flammability>-0.15</Flammability>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>20.0</MaxHitPoints>
+        <Beauty>5.0</Beauty>
+        <Flammability>0.05</Flammability>
+        <WorkToMake>20.0</WorkToMake>
+        <WorkToBuild>20.0</WorkToBuild>
+        <MeleeWeapon_CooldownMultiplier>0.85</MeleeWeapon_CooldownMultiplier>
+        <Mass>1</Mass>
+        <DoorOpenSpeed>3.0</DoorOpenSpeed>
+        <Comfort>3.0</Comfort>
+        <ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+        <MedicalTendQualityOffset>0.05</MedicalTendQualityOffset>
+        <SurgerySuccessChanceFactor>1.05</SurgerySuccessChanceFactor>
+        <DeteriorationRate>0.05</DeteriorationRate>
+      </statFactors>
+      <!-- <smeltable>false</smeltable> -->
+    </stuffProps>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <!-- <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+    <colorGeneratorInTraderStock Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>5</weight>
+          <only>(0.5,0.75,1)</only>
+        </li>
+        <li>
+          <weight>5</weight>
+          <only>(1.0,0.75,0)</only>
+        </li>
+      </options>
+    </colorGeneratorInTraderStock> -->
+  </ThingDef>
+
+  <ThingDef ParentName="OrangiceBase">
+    <defName>Orangice_Blue</defName>
+    <label>blue orangice</label>
+    <description>A powerful rare material, icy stuff but orange and doesn't melt. Can be shaped into nearly any form, but takes really long time to do this.\n\nThis processed verison is blue.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Bluice</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <deepCommonality>0</deepCommonality>
+    <stuffProps>
+      <stuffAdjective>bluicy</stuffAdjective>
+      <color>(143,184,255)</color>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Orangice_Compound</defName>
+    <label>compoundice</label>
+    <description>A powerful rare material, icy stuff but orange and doesn't melt. Can be shaped into nearly any form, but takes really long time to do this. \n\nThis variant is prepared to shape and very light.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Compoundice</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <tradeability>Sellable</tradeability>
+    <techLevel>Archotech</techLevel>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <Mass>0.0025</Mass>
+      <StuffPower_Armor_Sharp>1.00</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>1.00</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>1.00</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>51</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>39</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.0</BluntDamageMultiplier>
+      <!-- <HeatDamageMultiplier>1.0</HeatDamageMultiplier> -->
+      <Beauty>0</Beauty>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <stackLimit>8000</stackLimit>
+    <!-- <deepCommonality>0</deepCommonality>
+    <deepCountPerPortion>1</deepCountPerPortion>
+    <deepLumpSizeRange>
+      <min>2</min>
+      <max>10</max>
+    </deepLumpSizeRange> -->
+    <stuffProps>
+      <stuffAdjective>compoundicy</stuffAdjective>
+      <categories>
+        <li>Metallic</li>
+        <li>Fabric</li>
+        <li>Leathery</li>
+        <li>Stony</li>
+        <li>Woody</li>
+      </categories>
+      <commonality>0</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(127,127,127)</color>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <Flammability>0.05</Flammability>
+        <WorkToMake>0.05</WorkToMake>
+        <WorkToBuild>0.05</WorkToBuild>
+        <Mass>0.05</Mass>
+        <DeteriorationRate>0.05</DeteriorationRate>
+        <MeleeWeapon_CooldownMultiplier>0.33333333333333333333</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+      <!-- <smeltable>false</smeltable> -->
+    </stuffProps>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingCategoryDef>
+    <defName>ThermoDamper</defName>
+    <label>thermo damper</label>
+    <parent>Items</parent>
+    <iconPath>Things/Item/Special/ThermoDamper</iconPath>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+  </ThingCategoryDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ThermoDamper</defName>
+    <label>thermo damper</label>
+    <description>A durable container, act as a powerful power core, AKA "Environment Thermoelectric Reactor", that generates energy by absorb environment heat. When you placing it indoor, it will drain heat in the room. This technology is developed by unknowns but likly centaurs, and is beyond even most glitterworld societies. Its internal workings are a mystery to all minds, althought it likly extracts energy directly from a singularity in it, means it likly explode on hit.\n\nThis device is however much lighter than it looks like.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/ThermoDamper</texPath>
+      <!-- <texPath>Things/Projectile/Arrow_Trishot</texPath> -->
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MarketValue>77961</MarketValue>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Mass>3</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+      <DeteriorationRate>-16000</DeteriorationRate>
+    </statBases>
+    <thingCategories Inherit="False">
+      <li>ThermoDamper</li>
+      <!-- <li>MortarShells</li> -->
+    </thingCategories>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <tradeability>Sellable</tradeability>
+    <techLevel>Archotech</techLevel>
+    <specialDisplayRadius>39.95</specialDisplayRadius>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <tradeTags>
+      <li>ExoticMisc</li>
+      <!-- <li>MortarShell</li> -->
+      <li>ThermoDamper</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>DetonateThermoDamper</useJob>
+        <useLabel>Detonate thermo damper</useLabel>
+        <useDuration>180</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_StartWick</compClass>
+      </li>
+      <li Class="CompProperties_ProximityFuse">
+        <target>Filth_FrostdustBlue</target>
+        <radius>0.05</radius>
+      </li>
+      <li Class="CompProperties_ProximityFuse">
+        <target>Filth_FrostdustOrange</target>
+        <radius>0.05</radius>
+      </li>
+      <!-- <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>20</heatPerSecond>
+        <heatPushMaxTemperature>-273</heatPushMaxTemperature>
+      </li> -->
+      <!-- <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-1257</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+      <li Class="CompProperties_Battery">
+        <storedEnergyMax>1257</storedEnergyMax>
+        <efficiency>1.0</efficiency>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <transmitsPower>false</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable"/> -->
+      <li Class="CompProperties_SnowExpand">
+      <compClass>CentaurTheMagnuassembly.CompSnowExpand_Overtick</compClass>
+	  <expandInterval>100</expandInterval>
+	  <addAmount>100</addAmount>
+	  <maxRadius>2.5</maxRadius>
+	  </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-20</heatPerSecond>
+        <!-- <heatPushMinTemperature>-273</heatPushMinTemperature> -->
+      </li>
+      <li Class="CentaurTheMagnuassembly.CompProperties_SelfHealOvertime">
+        <!-- <compClass>CentaurTheMagnuassembly.CompSelfHealOvertime</compClass> -->
+        <detlaHpPerSec>3</detlaHpPerSec>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>20</glowRadius>
+        <glowColor>(127,192,255,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <explosiveDamageType>FrostblastSuper</explosiveDamageType>
+        <explosiveRadius>39.95</explosiveRadius>
+        <preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
+        <preExplosionSpawnChance>0.25</preExplosionSpawnChance>
+        <preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
+        <postExplosionSpawnThingDef>Filth_FrostdustOrange</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>0.25</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        <explosiveExpandPerStackcount>0.2</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.25</startWickHitPointsPercent>
+        <chanceToStartFire>0</chanceToStartFire>
+        <damageFalloff>true</damageFalloff>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>GiantExplosion</explosionEffect>
+        <explosionSound>Explosion_GiantBomb</explosionSound>
+        <wickTicks>
+          <min>180</min>
+          <max>600</max>
+        </wickTicks>
+      </li>
+
+
+      <!-- <li Class="CompProperties_TemperatureRuinable">
+        <minSafeTemperature>19</minSafeTemperature>
+        <!- - <maxSafeTemperature>32</maxSafeTemperature> - ->
+        <progressPerDegreePerTick>-0.001</progressPerDegreePerTick>
+      </li> -->
+
+    </comps>
+    <!-- <projectileWhenLoaded>Arrow_Trishot_Super</projectileWhenLoaded> -->
+  </ThingDef>
+
+  <JobDef>
+    <defName>DetonateThermoDamper</defName>
+    <driverClass>JobDriver_UseItem</driverClass>
+    <reportString>detonating thermo damper.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+</Defs>

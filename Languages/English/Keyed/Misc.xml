@@ -8,4 +8,10 @@
   <Magnuassembly_CompProperties_SelfHealOvertime_detlaHpPerSec_description>The rate at which the hitpoint of this item changes overtime. This effect is unaffected by deterioration, and happens anytime anywhere.</Magnuassembly_CompProperties_SelfHealOvertime_detlaHpPerSec_description>
   
   <Magnuassembly_AdditionalVerbPatch_CooldownDisableReason>Cooldown remains {0}.</Magnuassembly_AdditionalVerbPatch_CooldownDisableReason>
+  
+  <Magnuassembly_Ability_MassPsychicDeafCentaur_DeafnessCantCast>Can't cast before this effect is gone on self. Cooldown remains {0}.</Magnuassembly_Ability_MassPsychicDeafCentaur_DeafnessCantCast>
+  
+  <Magnuassembly_ScenPart_FillBattery_StaticSummary>All batteries on map will be filled on the game start.</Magnuassembly_ScenPart_FillBattery_StaticSummary>
+  
+  <Magnuassembly_CompRefuelable_PassiveRecharge_ChargeCompleted>{0} has completely charged.</Magnuassembly_CompRefuelable_PassiveRecharge_ChargeCompleted>
 </LanguageData>

@@ -6,7 +6,7 @@
   <Make_Orangice.jobString>正在制作橙冰。</Make_Orangice.jobString>
 
   <Recolor_Orangice_Blue.label>将橙冰染为蓝色</Recolor_Orangice_Blue.label>
-  <Recolor_Orangice_Blue.description>将橙冰染成蓝色。需要富余的失温器。</Recolor_Orangice_Blue.description>
+  <Recolor_Orangice_Blue.description>将橙冰染成蓝色。</Recolor_Orangice_Blue.description>
   <Recolor_Orangice_Blue.jobString>正在对橙冰染色。</Recolor_Orangice_Blue.jobString>
 
   <Recolor_Orangice_Orange.label>将橙冰染为橙色</Recolor_Orangice_Orange.label>
@@ -20,5 +20,9 @@
   <Recolor_Orangice_Orange_Single.label>将单个橙冰染为橙色</Recolor_Orangice_Orange_Single.label>
   <Recolor_Orangice_Orange_Single.description>将单个橙冰染回蓝色。</Recolor_Orangice_Orange_Single.description>
   <Recolor_Orangice_Orange_Single.jobString>正在对橙冰染色。</Recolor_Orangice_Orange_Single.jobString>
+
+  <Make_Compoundice.label>制作复合冰</Make_Compoundice.label>
+  <Make_Compoundice.description>制作复合冰。</Make_Compoundice.description>
+  <Make_Compoundice.jobString>正在制作复合冰。</Make_Compoundice.jobString>
   
 </LanguageData>

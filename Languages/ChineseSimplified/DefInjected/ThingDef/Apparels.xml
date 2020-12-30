@@ -1,6 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <Apparel_CentaurShieldArmor.label>半人马护盾装甲</Apparel_CentaurShieldArmor.label>
+  <Apparel_CentaurShieldArmor.description>为半人马穿戴者的一套轻型动力盔甲，具有投射屏障装置和毒性防护能力。覆盖玻璃钢纤维编制的装甲片，能够十分有效地防御攻击。神经模因机械让人在穿着重型装甲时仍然能够轻松行动。\n\n护盾能阻挡从一定距离外射来的任何高速运动弹头或能量攻击，但对近战攻击或零距离贴近射击无效，同时会被EMP摧毁。不会阻碍穿戴者从内往外的射击。\n\n动力装甲通常由来自太空时代军队的重甲士兵和空间海军突击队员使用。\n\n和人类的相比具有额外的重量和材料，来提供侧面的保护。</Apparel_CentaurShieldArmor.description>
+
+  <Apparel_CentaurPowerArmorHelmet.label>半人马隐形头盔</Apparel_CentaurPowerArmorHelmet.label>
+  <Apparel_CentaurPowerArmorHelmet.description>一个为半人马穿戴者设计的动力装甲头盔，内置了状态检测计算机并且覆盖了玻璃钢装甲，提供完整的头部防护。\n\n动力装甲通常由来自太空时代军队的重甲士兵和空间海军突击队员使用。</Apparel_CentaurPowerArmorHelmet.description>
+
+  <Apparel_PowerArmorHelmet_Clocked.label>海军隐形头盔</Apparel_PowerArmorHelmet_Clocked.label>
+  <Apparel_PowerArmorHelmet_Clocked.description>一个从外观上不可见的动力装甲头盔，内置了状态检测计算机并且覆盖了玻璃钢装甲，提供完整的头部防护。\n\n动力装甲通常由来自太空时代军队的重甲士兵和空间海军突击队员使用。\n\n这个修改过的版本是隐形的，利用了隐迹护盾技术，但行为和与正常的动力头盔一致，并且需要更高的技术来制造，能够展示一个人最佳的面容和头发而不必承受暴露头部的风险，原本设计给半人马但所有种族都能使用。</Apparel_PowerArmorHelmet_Clocked.description>
+
   <Apparel_CentaurPants.label>半人马裤子</Apparel_CentaurPants.label>
   <Apparel_CentaurPants.description>一条给马穿的裤子。现在我们知道一只马要如何穿裤子了。</Apparel_CentaurPants.description>
 
@@ -25,9 +34,14 @@
   <Apparel_CentaurPlateArmor.label>半人马板甲</Apparel_CentaurPlateArmor.label>
   <Apparel_CentaurPlateArmor.description>一件为半人马设计的重型板甲，从颈部到脚部都用厚实的材料层层堆叠覆盖。</Apparel_CentaurPlateArmor.description>
 
-  <Apparel_CentaurShieldArmor.label>半人马护盾装甲</Apparel_CentaurShieldArmor.label>
-  <Apparel_CentaurShieldArmor.description>为半人马穿戴者的一套轻型动力盔甲，具有投射屏障装置和毒性防护能力。覆盖玻璃钢纤维编制的装甲片，能够十分有效地防御攻击。神经模因机械让人在穿着重型装甲时仍然能够轻松行动。\n\n护盾能阻挡从一定距离外射来的任何高速运动弹头或能量攻击，但对近战攻击或零距离贴近射击无效，同时会被EMP摧毁。不会阻碍穿戴者从内往外的射击。\n\n动力装甲通常由来自太空时代军队的重甲士兵和空间海军突击队员使用。\n\n和人类的相比具有额外的重量和材料，来提供侧面的保护。</Apparel_CentaurShieldArmor.description>
+  
+  <Apparel_CentaurAntimassBelt.label>反重力腰带</Apparel_CentaurAntimassBelt.label>
+  <Apparel_CentaurAntimassBelt.description>一个反重力设备。其能帮助一个半人马减轻重量并进入运输舱。</Apparel_CentaurAntimassBelt.description>
 
+  <Apparel_CentaurShieldBelt.label>半人马护盾腰带</Apparel_CentaurShieldBelt.label>
+  <Apparel_CentaurShieldBelt.description>一个为半人马设计的能量护盾装置。它能阻挡从一定距离外射来的任何高速运动弹头或能量攻击。但对近战攻击或零距离贴近射击无效，同时会被EMP摧毁。不会阻碍穿戴者从内往外的射击。</Apparel_CentaurShieldBelt.description>
+
+  
   <Apparel_CentaurFlakVest.label>半人马防弹背心</Apparel_CentaurFlakVest.label>
   <Apparel_CentaurFlakVest.description>为半人马穿戴者而设计的修改版防弹背心。和人类的相比具有额外的重量和材料，来提供侧面的保护。对四肢没有防护能力。</Apparel_CentaurFlakVest.description>
 
@@ -36,20 +50,62 @@
 
   <Apparel_CentaurFlakJacket.label>半人马防弹夹克</Apparel_CentaurFlakJacket.label>
   <Apparel_CentaurFlakJacket.description>给半人马穿的修改版防弹夹克。虽然没有全身盔甲严密，但也提供了强大的防护，同时兼顾了舒适性。</Apparel_CentaurFlakJacket.description>
-
-  <Apparel_CentaurPowerArmor.label>半人马动力装甲</Apparel_CentaurPowerArmor.label>
-  <Apparel_CentaurPowerArmor.description>为半人马穿戴者的一套轻型动力盔甲。从颈部到脚部都覆盖玻璃钢纤维编制的装甲片，能够十分有效地防御攻击。神经模因机械让人在穿着重型装甲时仍然能够轻松行动。\n\n动力装甲通常由来自太空时代军队的重甲士兵和空间海军突击队员使用。</Apparel_CentaurPowerArmor.description>
-
-  <Apparel_CentaurPowerArmorHelmet.label>半人马动力头盔</Apparel_CentaurPowerArmorHelmet.label>
-  <Apparel_CentaurPowerArmorHelmet.description>一个为半人马穿戴者设计的动力装甲头盔，内置了状态检测计算机并且覆盖了玻璃钢装甲，提供完整的头部防护。\n\n动力装甲通常由来自太空时代军队的重甲士兵和空间海军突击队员使用。</Apparel_CentaurPowerArmorHelmet.description>
-
-  <Apparel_PowerArmorHelmet_Clocked.label>隐形动力头盔</Apparel_PowerArmorHelmet_Clocked.label>
-  <Apparel_PowerArmorHelmet_Clocked.description>一个为半人马穿戴者设计的动力装甲头盔，内置了状态检测计算机并且覆盖了玻璃钢装甲，提供完整的头部防护。\n\n动力装甲通常由来自太空时代军队的重甲士兵和空间海军突击队员使用。\n\n这个修改过的版本是隐形的，利用了隐迹护盾技术，但行为和与正常的动力头盔一致，并且需要更高的技术来制造，能够展示一个人最佳的面容和头发而不必承受暴露头部的风险，原本设计给半人马但所有种族都能使用。</Apparel_PowerArmorHelmet_Clocked.description>
-
-  <Apparel_CentaurAntimassBelt.label>反重力腰带</Apparel_CentaurAntimassBelt.label>
-  <Apparel_CentaurAntimassBelt.description>一个反重力设备。其能帮助一个半人马减轻重量并进入运输舱。</Apparel_CentaurAntimassBelt.description>
-
-  <Apparel_CentaurShieldBelt.label>半人马护盾腰带</Apparel_CentaurShieldBelt.label>
-  <Apparel_CentaurShieldBelt.description>一个为半人马设计的能量护盾装置。它能阻挡从一定距离外射来的任何高速运动弹头或能量攻击。但对近战攻击或零距离贴近射击无效，同时会被EMP摧毁。不会阻碍穿戴者从内往外的射击。</Apparel_CentaurShieldBelt.description>
+  
+  <Apparel_CentaurArmorRecon.label>半人马斥候装甲</Apparel_CentaurArmorRecon.label>
+  <Apparel_CentaurArmorRecon.description>为半人马穿戴者设计的一套轻量化的阉割版动力装甲，但轻量化的设计也使其相较于其他动力装甲具备更优越的机动性，配置的轻型玻璃钢装甲可以在不影响穿戴者灵活性的情况下提供可靠的防护，位于装甲中段的神经模因装置可以让使用者更容易地穿戴和使用它。\n\n这种装甲服被闪耀世界的警方和侦查部队大量使用。</Apparel_CentaurArmorRecon.description>
+  
+  <Apparel_CentaurPowerArmor.label>半人马海军装甲</Apparel_CentaurPowerArmor.label>
+  <Apparel_CentaurPowerArmor.description>为半人马穿戴者设计的一套轻型动力盔甲。从颈部到脚部都覆盖玻璃钢纤维编制的装甲片，能够十分有效地防御攻击。神经模因机械让人在穿着重型装甲时仍然能够轻松行动。\n\n动力装甲通常由来自太空时代军队的重甲士兵和空间海军突击队员使用。</Apparel_CentaurPowerArmor.description>
+  
+  <Apparel_CentaurArmorCataphract.label>半人马禁卫装甲</Apparel_CentaurArmorCataphract.label>
+  <Apparel_CentaurArmorCataphract.description>为半人马穿戴者设计的一件以牺牲机动性为前提而设计的重型动力装甲，它的玻璃钢纤维复合装甲和抗烧蚀防护层几乎可以抵御任何伤害。尽管有神经模因装置的辅助让穿戴者不至于因为太重而无法移动，但是这件动力装甲依然相当的笨重。\n\n在别无选择时，帝国的甲胄骑士会将使用这类装备来突破被严密防守的区域。</Apparel_CentaurArmorCataphract.description>
+  
+  <Apparel_CentaurArmorReconPrestige.label>半人马圣装斥候装甲</Apparel_CentaurArmorReconPrestige.label>
+  <Apparel_CentaurArmorReconPrestige.description>为半人马穿戴者设计的一套轻量化的阉割版动力装甲，但轻量化的设计也使其相较于其他动力装甲具备更优越的机动性，配置的轻型玻璃钢装甲可以在不影响穿戴者灵活性的情况下提供可靠的防护，位于装甲中段的神经模因装置可以让使用者更容易地穿戴和使用它。\n\n这种昂贵且华丽的圣装装甲通常是为地位显赫的人而制造。镌刻的灵质秘纹可以增强使用者的心灵能力。</Apparel_CentaurArmorReconPrestige.description>
+  
+  <Apparel_CentaurArmorMarinePrestige.label>半人马圣装海军装甲</Apparel_CentaurArmorMarinePrestige.label>
+  <Apparel_CentaurArmorMarinePrestige.description>为半人马穿戴者设计的一套强调机动性的动力装甲。从颈部到脚部都覆盖玻璃钢纤维编制的装甲片，能够十分有效地防御攻击。神经模因机械让人在穿着重型装甲时仍然能够轻松行动。\n\n这种昂贵且华丽的圣装装甲通常是为地位显赫的人而制造。镌刻的灵质秘纹可以增强使用者的心灵能力。</Apparel_CentaurArmorMarinePrestige.description>
+  
+  <Apparel_CentaurArmorCataphractPrestige.label>半人马圣装禁卫装甲</Apparel_CentaurArmorCataphractPrestige.label>
+  <Apparel_CentaurArmorCataphractPrestige.description>为半人马穿戴者设计的一件以牺牲机动性为前提而设计的重型动力装甲，它的玻璃钢纤维复合装甲和抗烧蚀防护层几乎可以抵御任何伤害。尽管有神经模因装置的辅助让穿戴者不至于因为太重而无法移动，但是这件动力装甲依然相当的笨重。\n\n这种昂贵且华丽的圣装装甲通常是为地位显赫的人而制造。镌刻的灵质秘纹可以增强使用者的心灵能力。</Apparel_CentaurArmorCataphractPrestige.description>
+  
+  
+  
+  
+  <Apparel_PsyfocusCentaursuit.label>灵质半人马装</Apparel_PsyfocusCentaursuit.label>
+  <Apparel_PsyfocusCentaursuit.description>镶嵌有心灵聚合物的半人马连身衣。除了会增加心灵敏感度外，还能够提高心灵熵降低速率。</Apparel_PsyfocusCentaursuit.description>
+  
+  <Apparel_ArmorReconCentaur.label>半人马斥候装甲</Apparel_ArmorReconCentaur.label>
+  <Apparel_ArmorReconCentaur.description>为半人马穿戴者设计的一套轻量化动力装甲，但轻量化的设计也使其相较于其他动力装甲具备更优越的机动性，配置的轻型玻璃钢装甲可以在不影响穿戴者灵活性的情况下提供可靠的防护，位于装甲中段的神经模因装置可以让使用者更容易地穿戴和使用它。\n\n半人马种族的强大负重能力允许其装甲无需削弱其防御能力就能携带强大的额外装置，集成了能够让使用者短距离飞行的短程喷射火箭，能够进行船舰破袭作战。这一装甲还额外镌刻了昂贵且华丽的灵质秘纹用于增强使用者的心灵能力。</Apparel_ArmorReconCentaur.description>
+  <Apparel_ArmorReconCentaur.comps.CompReloadable.chargeNoun>跳跃</Apparel_ArmorReconCentaur.comps.CompReloadable.chargeNoun>
+  <Apparel_ArmorReconCentaur.verbs.0.label>跳跃</Apparel_ArmorReconCentaur.verbs.0.label>
+  
+  <Apparel_ArmorMarineCentaur.label>半人马海军装甲</Apparel_ArmorMarineCentaur.label>
+  <Apparel_ArmorMarineCentaur.description>为半人马穿戴者设计的一套轻型动力盔甲。从颈部到脚部都覆盖玻璃钢纤维编制的装甲片，能够十分有效地防御攻击。神经模因机械让人在穿着重型装甲时仍然能够轻松行动。\n\n半人马种族的强大负重能力允许其装甲无需削弱其防御能力就能携带强大的额外装置，这一装甲装备了背负式破片榴弹发射器，可以用于破拆防御建筑和舰船舱壁，在狭窄的区域内可怕得令人发指。这一装甲还额外镌刻了昂贵且华丽的灵质秘纹用于增强使用者的心灵能力。</Apparel_ArmorMarineCentaur.description>
+  <Apparel_ArmorMarineCentaur.comps.CompReloadable.chargeNoun>榴弹</Apparel_ArmorMarineCentaur.comps.CompReloadable.chargeNoun>
+  <Apparel_ArmorMarineCentaur.verbs.0.label>发射破片弹</Apparel_ArmorMarineCentaur.verbs.0.label>
+  <Apparel_ArmorMarineCentaur.verbs.1.label>发射电磁脉冲弹</Apparel_ArmorMarineCentaur.verbs.1.label>
+  <Proj_CentaurGrenadierGrenade.label>破片榴弹</Proj_CentaurGrenadierGrenade.label>
+  <Proj_CentaurGrenadierEMP.label>电磁脉冲榴弹</Proj_CentaurGrenadierEMP.label>
+  
+  <Apparel_ArmorCataphractCentaur.label>半人马禁卫装甲</Apparel_ArmorCataphractCentaur.label>
+  <Apparel_ArmorCataphractCentaur.description>为半人马穿戴者设计的一件以牺牲机动性为前提而设计的重型动力装甲，它的玻璃钢纤维复合装甲和抗烧蚀防护层几乎可以抵御任何伤害。尽管有神经模因装置的辅助让穿戴者不至于因为太重而无法移动，但是这件动力装甲依然相当的笨重。\n\n半人马种族的强大负重能力允许其装甲无需削弱其防御能力就能携带强大的额外装置，这一装甲在背部安装了燃烧弹发射装置，特别适用于山洞内部或者舰载作战等狭窄地区作战清除行动，在战士冲入狭窄走廊的时候提供足量保护，并且迅速焚烧整个空间。这一装甲还额外镌刻了昂贵且华丽的灵质秘纹用于增强使用者的心灵能力。</Apparel_ArmorCataphractCentaur.description>
+  <Apparel_ArmorCataphractCentaur.comps.CompReloadable.chargeNoun>燃烧弹</Apparel_ArmorCataphractCentaur.comps.CompReloadable.chargeNoun>
+  <Apparel_ArmorCataphractCentaur.verbs.0.label>发射燃烧弹</Apparel_ArmorCataphractCentaur.verbs.0.label>
+  
+  <Apparel_ArmorHelmetReconClocked.label>隐形斥候头盔</Apparel_ArmorHelmetReconClocked.label>
+  <Apparel_ArmorHelmetReconClocked.description>一种带有内置状态检测计算机和玻璃钢装甲的高科技头盔。\n\n这个修改过的版本是隐形的，利用了隐迹护盾技术，但行为和与正常的动力头盔一致，并且需要更高的技术来制造，能够展示一个人最佳的面容和头发而不必承受暴露头部的风险。</Apparel_ArmorHelmetReconClocked.description>
+  
+  <Apparel_ArmorMarineHelmetClocked.label>隐形海军头盔</Apparel_ArmorMarineHelmetClocked.label>
+  <Apparel_ArmorMarineHelmetClocked.description>一个海军装甲配套的头盔，内置了状态检测计算机并且覆盖了玻璃钢装甲，提供完整的头部防护。\n\n这个修改过的版本是隐形的，利用了隐迹护盾技术，但行为和与正常的动力头盔一致，并且需要更高的技术来制造，能够展示一个人最佳的面容和头发而不必承受暴露头部的风险。</Apparel_ArmorMarineHelmetClocked.description>
+  
+  <Apparel_ArmorHelmetCataphractClocked.label>隐形禁卫头盔</Apparel_ArmorHelmetCataphractClocked.label>
+  <Apparel_ArmorHelmetCataphractClocked.description>重型高科技头盔，拥有玻璃钢纤维防护外壳并且内置视觉系统，它几乎可以抵御任何伤害。\n\n这个修改过的版本是隐形的，利用了隐迹护盾技术，但行为和与正常的动力头盔一致，并且需要更高的技术来制造，能够展示一个人最佳的面容和头发而不必承受暴露头部的风险。</Apparel_ArmorHelmetCataphractClocked.description>
+  
+  <Apparel_CentaurArchotechArmor.label>半人马古代装甲</Apparel_CentaurArchotechArmor.label>
+  <Apparel_CentaurArchotechArmor.description>为半人马穿戴者设计的一件强大动力装甲，采用了古代的未知技术使穿戴者能够与极寒融为一体。它强大到比玻璃钢还坚不可摧，几乎可以抵御任何伤害，却又非常灵活轻便，不会阻碍移动速度。这一装甲的原理仍然是个谜。</Apparel_CentaurArchotechArmor.description>
+  
+  <Apparel_CentaurHeaddress.label>半人马头饰</Apparel_CentaurHeaddress.label>
+  <Apparel_CentaurHeaddress.description>为半人马那一双壮观的耳朵准备的装饰品。</Apparel_CentaurHeaddress.description>
 
 </LanguageData>
