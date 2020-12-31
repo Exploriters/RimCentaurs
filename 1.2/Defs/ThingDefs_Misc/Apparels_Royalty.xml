@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
-  <ThingDef>
+  <ThingDef MayRequire="Ludeon.RimWorld.Royalty">
     <defName>Apparel_CentaurHeaddress</defName>
     <label>centaurs headdress</label>
     <description>A decorative headdress for centaur's pair of great ears.</description>
@@ -102,7 +102,7 @@
     </comps>
   </ThingDef>
   
-  <ThingDef ParentName="ApparelMakeableBase">
+  <ThingDef ParentName="ApparelMakeableBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>Apparel_PsyfocusCentaursuit</defName>
     <label>eltex centaur suit</label>
     <description>A suit embedded with special psychic focusing materials for centaurs. These enhance psychic sensitivity and help dissipate neural heat.</description>

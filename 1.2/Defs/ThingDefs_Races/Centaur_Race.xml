@@ -565,9 +565,9 @@
           <li>Apparel_CentaurHeaddress</li>
           <li>Apparel_ArmorReconCentaur</li>
           <li>Apparel_ArmorMarineCentaur</li>
-          <li>Apparel_ArmorCataphractCentaur</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorCataphractCentaur</li>
 		  
-          <li>Apparel_PsyfocusCentaursuit</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsyfocusCentaursuit</li>
 		  
           <!--<li>Apparel_CentaurArchotechArmor</li>-->
         </apparelList>
@@ -586,38 +586,38 @@
 
 		  
 		  
-          <li>Apparel_PackBroadshield</li>
-          <li>Apparel_PackJump</li>
-          <li>Apparel_Gunlink</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PackBroadshield</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PackJump</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_Gunlink</li>
 		  
-          <li>Apparel_Beret</li>
-          <li>Apparel_Coronet</li>
-          <li>Apparel_Crown</li>
-          <li>Apparel_CrownStellic</li>
-          <li>Apparel_HatHood</li>
-          <li>Apparel_HatLadies</li>
-          <li>Apparel_HatTop</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_Beret</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_Coronet</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_Crown</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_CrownStellic</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_HatHood</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_HatLadies</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_HatTop</li>
 		  
-          <li>Apparel_EltexSkullcap</li>
-          <li>Apparel_PsyfocusHelmet</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_EltexSkullcap</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsyfocusHelmet</li>
 		  
           <li>Apparel_ArmorHelmetRecon</li>
           <li>Apparel_PowerArmorHelmet</li>
-          <li>Apparel_ArmorHelmetCataphract</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphract</li>
 		  
           <li>Apparel_ArmorHelmetReconPrestige</li>
           <li>Apparel_ArmorMarineHelmetPrestige</li>
-          <li>Apparel_ArmorHelmetCataphractPrestige</li>
-          <!--<li>Apparel_PowerArmorHelmet_Clocked</li>-->
+          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphractPrestige</li>
           <li>Apparel_ArmorHelmetReconClocked</li>
           <li>Apparel_ArmorMarineHelmetClocked</li>
-          <li>Apparel_ArmorHelmetCataphractClocked</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphractClocked</li>
 		  
+          <!--<li>Apparel_PowerArmorHelmet_Clocked</li>-->
 		  
           <li>OrbitalTargeterBombardment</li>
           <li>OrbitalTargeterPowerBeam</li>
           <li>TornadoGenerator</li>
-          <li>OrbitalTargeterMechCluster</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">OrbitalTargeterMechCluster</li>
           <li>Apparel_PsychicInsanityLance</li>
           <li>Apparel_PsychicShockLance</li>
         </whiteApparelList>
@@ -698,14 +698,14 @@
       <CarryingCapacity>150</CarryingCapacity>
 	  
       <PsychicSensitivity>1.8</PsychicSensitivity>
-      <PsychicEntropyMax>90</PsychicEntropyMax>
-      <PsychicEntropyRecoveryRate>1.62</PsychicEntropyRecoveryRate>
-      <MeditationFocusGain>1.5</MeditationFocusGain>
+      <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">90</PsychicEntropyMax>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">1.62</PsychicEntropyRecoveryRate>
+      <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">1.5</MeditationFocusGain>
 	  
-      <!-- <EnergyShieldRechargeRate>0</EnergyShieldRechargeRate>
-      <EnergyShieldEnergyMax>0</EnergyShieldEnergyMax> -->
-      <EnergyShieldEnergyMax>3.0</EnergyShieldEnergyMax>
-	  <EnergyShieldRechargeRate>1.0</EnergyShieldRechargeRate>
+      <EnergyShieldRechargeRate>0</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0</EnergyShieldEnergyMax>
+      <!-- <EnergyShieldEnergyMax>3.0</EnergyShieldEnergyMax>
+	  <EnergyShieldRechargeRate>1.0</EnergyShieldRechargeRate> -->
     </statBases>
     <size>(1,1)</size>
     <tools>

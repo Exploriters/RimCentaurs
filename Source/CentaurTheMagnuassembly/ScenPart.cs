@@ -10,7 +10,6 @@ using Verse.AI;
 using Verse;
 using Verse.Sound;
 using static CentaurTheMagnuassembly.RimCentaurCore;
-using SaveOurShip2;
 using RimworldMod.VacuumIsNotFun;
 
 namespace CentaurTheMagnuassembly

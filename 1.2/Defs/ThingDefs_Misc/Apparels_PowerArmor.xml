@@ -1,409 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
-  <!--<ThingDef ParentName="ArmorHelmetMakeableBase">
-    <defName>Apparel_CentaurAdvancedHelmet</defName>
-    <label>flak helmet</label>
-    <description>A lightweight combat helmet with a complex design, reinforced with plasteel. Not effective against blunt weapons.</description>
-    <techLevel>Industrial</techLevel>
-    <recipeMaker>
-      <researchPrerequisite>FlakArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-    </recipeMaker>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/AdvancedHelmet/AdvancedHelmet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <uiIconScale>1.4</uiIconScale>
-    <statBases>
-      <Mass>1.2</Mass>
-	  
-      <WorkToMake>17600</WorkToMake>
-      <MaxHitPoints>336</MaxHitPoints>
-	  <ArmorRating_Sharp>0.798</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.385</ArmorRating_Blunt>
-	  <ArmorRating_Heat>0.455</ArmorRating_Heat>
-      <Insulation_Cold>0.15</Insulation_Cold>
-	  
-      <Insulation_Heat>0</Insulation_Heat>
-      <EquipDelay>1.5</EquipDelay>
-    </statBases>
-    <costList>
-      <ComponentIndustrial>2</ComponentIndustrial>
-      <Plasteel>50</Plasteel>
-    </costList>
-    <apparel>
-      <bodyPartGroups>
-        <li>UpperHead</li>
-      </bodyPartGroups>
-      <wornGraphicPath isNull="True" Inherit="False"/>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <tags />
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-    <recipeMaker>
-	  <researchPrerequisites>
-		<li>CentaurReverseEngineeringHumanTech</li>
-	  </researchPrerequisites>
-    </recipeMaker>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.5,0.5,0.5,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
-    <thingCategories Inherit="False">
-      <li>CentaurApparels</li>
-    </thingCategories>
-  </ThingDef>-->
-  
-  <!-- <ThingDef ParentName="ApparelArmorHelmetPowerBase">
-    <defName>Apparel_PowerArmorHelmet_Clocked</defName>
-    <label>marine clocked helmet</label>
-    <description>A marine armor helmet, with a built-in status computer and layered plasteel-weave plates.\n\nArmor like this is often used by imperial janissaries and rapid-incursion space marines. \n\nThis modified verison is invisible, powered by clocking shield technology, but behaviored as a normal helmet and requires more skills to make, allowing someone showing it best face and hair without the thread of exposing head, original designed for centaur but available to all species.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmorHelmet/ClockedPowerArmorHelmet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <apparel>
-      <wornGraphicPath isNull="True" />
-    </apparel>
-    <thingCategories Inherit="False">
-      <li>CentaurApparels</li>
-    </thingCategories>
-  </ThingDef>-->
-  
-  <!-- ====================================== Centaur Power Armor =========================================== -->
-  <!--
-  <ThingDef ParentName="ApparelArmorReconBase">
-    <defName>Apparel_CentaurArmorRecon</defName>
-    <tradeability>Sellable</tradeability>
-    <label>centaur prestige recon armor</label>
-    <description>A suit of light partially-powered armor for centaurs, designed to permit quick movement. Lightweight plasteel-weave plates block attacks without compromising mobility, and neuro-memetic assistors in the lower body allow a human to wear the armor and still move easily.\n\nArmor like this is often used by imperial scout troops and glitterworld police forces.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/ReconArmor/ReconArmor</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <statBases>
-      <WorkToMake>90000</WorkToMake>
-      <Mass>18</Mass>
-      <EquipDelay>22</EquipDelay>
-      <MaxHitPoints>560</MaxHitPoints>
-    </statBases>
-    <costList>
-      <ComponentSpacer>6</ComponentSpacer>
-      <Plasteel>160</Plasteel>
-      <Uranium>20</Uranium>
-    </costList>
-    <apparel>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-        <li>CentaurLegs</li>
-        <li>Hands</li>
-        <li>CentaurHooves</li>
-      </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmor/CentaurPowerArmor</wornGraphicPath>
-      <layers>
-        <li>Middle</li>
-        <li>Shell</li>
-      </layers>
-      <tags>
-        <li>CentaurSpacerMilitary</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-      <useDeflectMetalEffect>true</useDeflectMetalEffect>
-      <useWornGraphicMask>true</useWornGraphicMask>
-    </apparel>
-    <thingCategories Inherit="False">
-      <li>CentaurApparels</li>
-    </thingCategories>
-  </ThingDef>
-
-  <ThingDef ParentName="ApparelArmorPowerBase">
-    <defName>Apparel_CentaurPowerArmor</defName>
-    <tradeability>Sellable</tradeability>
-    <label>centaur prestige marine armor</label>
-    <description>A suit of powered armor for centaurs. Layered plasteel-weave plates are very effective at stopping attacks, with few vulnerable joint sections. Neuro-memetic assistors allow a human to wear the armor and still move easily.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <statBases>
-      <WorkToMake>240000</WorkToMake>
-      <MaxHitPoints>560</MaxHitPoints>
-      <EquipDelay>22</EquipDelay>
-      <Mass>24</Mass>
-    </statBases>
-    <equippedStatOffsets>
-      <MoveSpeed>-1.2</MoveSpeed>
-    </equippedStatOffsets>
-    <costList>
-      <ComponentSpacer>8</ComponentSpacer>
-      <Plasteel>240</Plasteel>
-      <Uranium>40</Uranium>
-      <Gold>20</Gold>
-    </costList>
-    <apparel>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-        <li>CentaurLegs</li>
-        <li>Hands</li>
-        <li>CentaurHooves</li>
-      </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmor/CentaurPowerArmor</wornGraphicPath>
-      <layers>
-        <li>Middle</li>
-        <li>Shell</li>
-      </layers>
-      <tags>
-        <li>CentaurSpacerMilitary</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-      <useDeflectMetalEffect>true</useDeflectMetalEffect>
-      <useWornGraphicMask>true</useWornGraphicMask>
-    </apparel>
-    <thingCategories Inherit="False">
-      <li>CentaurApparels</li>
-    </thingCategories>
-  </ThingDef>
-  
-  <ThingDef ParentName="ApparelArmorCataphractBase">
-  
-  <ThingDef ParentName="ApparelArmorReconBase">
-    <defName>Apparel_CentaurArmorReconPrestige</defName>
-    <tradeability>Sellable</tradeability>
-    <label>centaur prestige recon armor</label>
-    <description>A suit of light partially-powered armor for centaurs, designed to permit quick movement. Plasteel-weave plates block attacks without compromising mobility, and neuro-memetic assistors in the lower body allow a human to wear the armor and still move easily.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/PrestigeReconArmor/PrestigeReconArmor</texPath>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <statBases>
-      <WorkToMake>180000</WorkToMake>
-      <EquipDelay>22</EquipDelay>
-      <MaxHitPoints>560</MaxHitPoints>
-      <Mass>18</Mass>
-    </statBases>
-    <equippedStatOffsets>
-      <PsychicSensitivity>0.05</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate>0.166</PsychicEntropyRecoveryRate>
-    </equippedStatOffsets>
-    <costList>
-      <ComponentSpacer>6</ComponentSpacer>
-      <Uranium>20</Uranium>
-      <Plasteel>200</Plasteel>
-      <Gold>18</Gold>
-    </costList>
-    <apparel>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-        <li>CentaurLegs</li>
-        <li>Hands</li>
-        <li>CentaurHooves</li>
-      </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmor/CentaurPowerArmor</wornGraphicPath>
-      <layers>
-        <li>Middle</li>
-        <li>Shell</li>
-      </layers>
-      <tags>
-        <li>CentaurPrestigeCombatGear</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-      <useDeflectMetalEffect>true</useDeflectMetalEffect>
-      <useWornGraphicMask>true</useWornGraphicMask>
-    </apparel>
-    <thingCategories Inherit="False">
-      <li>CentaurApparels</li>
-    </thingCategories>
-  </ThingDef>
-
-  <ThingDef ParentName="ApparelArmorPowerBase">
-    <defName>Apparel_CentaurArmorMarinePrestige</defName>
-    <tradeability>Sellable</tradeability>
-    <label>centaur prestige marine armor</label>
-    <description>A suit of powered armor for centaurs. Layered plasteel-weave plates are very effective at stopping attacks, with few vulnerable joint sections. Neuro-memetic assistors allow a human to wear the armor and still move easily.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/PrestigeMarineArmor/PrestigeMarineArmor</texPath>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <statBases>
-      <WorkToMake>240000</WorkToMake>
-      <MaxHitPoints>560</MaxHitPoints>
-      <EquipDelay>22</EquipDelay>
-      <Mass>24</Mass>
-    </statBases>
-    <equippedStatOffsets>
-      <MoveSpeed>-1.2</MoveSpeed>
-      <PsychicSensitivity>0.05</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate>0.166</PsychicEntropyRecoveryRate>
-    </equippedStatOffsets>
-    <costList>
-      <ComponentSpacer>8</ComponentSpacer>
-      <Plasteel>240</Plasteel>
-      <Uranium>40</Uranium>
-      <Gold>20</Gold>
-    </costList>
-    <apparel>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-        <li>CentaurLegs</li>
-        <li>Hands</li>
-        <li>CentaurHooves</li>
-      </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmor/CentaurPowerArmor</wornGraphicPath>
-      <layers>
-        <li>Middle</li>
-        <li>Shell</li>
-      </layers>
-      <tags>
-        <li>CentaurPrestigeCombatGear</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-      <useDeflectMetalEffect>true</useDeflectMetalEffect>
-      <useWornGraphicMask>true</useWornGraphicMask>
-    </apparel>
-    <thingCategories Inherit="False">
-      <li>CentaurApparels</li>
-    </thingCategories>
-  </ThingDef>
-  
-  <ThingDef ParentName="ApparelArmorCataphractBase">
-    <defName>Apparel_CentaurArmorCataphractPrestige</defName>
-    <tradeability>Sellable</tradeability>
-    <label>centaur prestige cataphract armor</label>
-    <description>A suit of heavy powered armor for centaurs, built for maximum protection at the cost of mobility. Heavy layered plasteel-weave plates with solid ablative coatings stop all but the most well-aimed or powerful attacks. Neuro-memetic assistors prevent the suit's massive weight from immobilizing the wearer entirely, but the suit is still quite cumbersome.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/PrestigeCataphractArmor/PrestigeCataphractArmor</texPath>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <statBases>
-      <WorkToMake>300000</WorkToMake>
-      <MaxHitPoints>800</MaxHitPoints>
-      <Mass>30</Mass>
-      <EquipDelay>34</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <MoveSpeed>-2.4</MoveSpeed>
-      <PsychicSensitivity>0.05</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate>0.166</PsychicEntropyRecoveryRate>
-    </equippedStatOffsets>
-    <costList>
-      <ComponentSpacer>12</ComponentSpacer>
-      <Plasteel>380</Plasteel>
-      <Uranium>100</Uranium>
-      <Gold>36</Gold>
-    </costList>
-    <apparel>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-        <li>CentaurLegs</li>
-        <li>Hands</li>
-        <li>CentaurHooves</li>
-      </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmor/CentaurPowerArmor</wornGraphicPath>
-      <layers>
-        <li>Middle</li>
-        <li>Shell</li>
-      </layers>
-      <tags>
-        <li>CentaurPrestigeCombatGear</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-      <useDeflectMetalEffect>true</useDeflectMetalEffect>
-      <useWornGraphicMask>true</useWornGraphicMask>
-    </apparel>
-    <thingCategories Inherit="False">
-      <li>CentaurApparels</li>
-    </thingCategories>
-  </ThingDef>
-  
-    <defName>Apparel_CentaurArmorCataphract</defName>
-    <tradeability>Sellable</tradeability>
-    <label>centaur prestige cataphract armor</label>
-    <description>A suit of heavy powered armor for centaurs, built for maximum protection at the cost of mobility. Heavy layered plasteel-weave plates with solid ablative coatings stop all but the most well-aimed or powerful attacks. Neuro-memetic assistors prevent the suit's massive weight from immobilizing the wearer entirely, but the suit is still quite cumbersome.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/CataphractArmor/CataphractArmor</texPath>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <statBases>
-      <WorkToMake>300000</WorkToMake>
-      <MaxHitPoints>800</MaxHitPoints>
-      <Mass>30</Mass>
-      <EquipDelay>34</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <MoveSpeed>-2.4</MoveSpeed>
-    </equippedStatOffsets>
-    <costList>
-      <ComponentSpacer>12</ComponentSpacer>
-      <Plasteel>300</Plasteel>
-      <Uranium>100</Uranium>
-    </costList>
-    <apparel>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-        <li>CentaurLegs</li>
-        <li>Hands</li>
-        <li>CentaurHooves</li>
-      </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmor/CentaurPowerArmor</wornGraphicPath>
-      <layers>
-        <li>Middle</li>
-        <li>Shell</li>
-      </layers>
-      <tags>
-        <li>CentaurPrestigeCombatGear</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-      <useDeflectMetalEffect>true</useDeflectMetalEffect>
-      <useWornGraphicMask>true</useWornGraphicMask>
-    </apparel>
-    <thingCategories Inherit="False">
-      <li>CentaurApparels</li>
-    </thingCategories>
-  </ThingDef>
-  -->
-  
   <ThingDef ParentName="ApparelArmorReconBase">
     <defName>Apparel_ArmorReconCentaur</defName>
     <tradeability>Sellable</tradeability>
@@ -421,8 +17,8 @@
       <JumpRange>23.9</JumpRange>
     </statBases>
     <equippedStatOffsets>
-      <PsychicSensitivity>0.05</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate>0.166</PsychicEntropyRecoveryRate>
+      <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.166</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <costList>
       <ComponentSpacer>6</ComponentSpacer>
@@ -528,8 +124,8 @@
     </statBases>
     <equippedStatOffsets>
       <MoveSpeed>-1.2</MoveSpeed>
-      <PsychicSensitivity>0.05</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate>0.166</PsychicEntropyRecoveryRate>
+      <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.166</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <costList>
       <ComponentSpacer>8</ComponentSpacer>
@@ -672,7 +268,7 @@
     </thingCategories>
   </ThingDef>
   
-  <ThingDef ParentName="ApparelArmorCataphractBase">
+  <ThingDef ParentName="ApparelArmorCataphractBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>Apparel_ArmorCataphractCentaur</defName>
     <tradeability>Sellable</tradeability>
     <label>centaur cataphract armor</label>
@@ -694,8 +290,8 @@
     <equippedStatOffsets>
       <Flammability>-0.68</Flammability>
       <MoveSpeed>-2.4</MoveSpeed>
-      <PsychicSensitivity>0.05</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate>0.166</PsychicEntropyRecoveryRate>
+      <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.166</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <costList>
       <ComponentSpacer>12</ComponentSpacer>
@@ -905,8 +501,8 @@
       <WorkToMake>31500</WorkToMake>
     </statBases>
     <equippedStatOffsets>
-      <PsychicSensitivity>0.05</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
+      <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.033</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <recipeMaker>
       <skillRequirements>
@@ -957,8 +553,8 @@
       <WorkToMake>10500</WorkToMake>
     </statBases>
     <equippedStatOffsets>
-      <PsychicSensitivity>0.05</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
+      <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.033</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <recipeMaker>
       <skillRequirements>
@@ -996,7 +592,7 @@
     </thingCategories>
   </ThingDef>
 
-  <ThingDef ParentName="ApparelArmorHelmetCataphractBase">
+  <ThingDef ParentName="ApparelArmorHelmetCataphractBase" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>Apparel_ArmorHelmetCataphractClocked</defName>
     <tradeability>Sellable</tradeability>
     <label>clocked cataphract helmet</label>
@@ -1010,8 +606,8 @@
       <WorkToMake>10500</WorkToMake>
     </statBases>
     <equippedStatOffsets>
-      <PsychicSensitivity>0.05</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
+      <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.033</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <recipeMaker>
       <skillRequirements>

@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef ParentName="BaseShipArtilleryBuilding">
+  <ThingDef ParentName="BaseShipArtilleryBuilding" MayRequire="kentington.saveourship2">
     <defName>ShipSpinalBarrelCentaurTorpedo</defName>
     <thingClass>Building_ShipTurretTorpedo</thingClass>
     <label>spinal barrel: torpedo</label>
-    <description>The final segment of a spinal-mount cannon. A modified series of tubes that launch all kinds of torpedoes that highly accurate and devastating against shields, also fast enough to reach targets and bypass point-defenses. Should be placed outside the ship, unless you want a new hole in your hull.</description>
+    <description>The final segment of a spinal-mount cannon. A modified series of tubes that launch all kinds of torpedoes that highly accurate and devastating against shields, also fast enough to reach targets and bypass point-defenses.</description>
     <graphicData>
       <texPath>Things/Building/Ship/SpinalMountBarrel_Missile</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -111,7 +112,7 @@
   </ThingDef>
   
 
-  <ThingDef ParentName="BaseShipArtilleryWeapon">
+  <ThingDef ParentName="BaseShipArtilleryWeapon" MayRequire="kentington.saveourship2">
     <defName>Artillery_ShipTorpedo_CentaurSpinal</defName>
     <label>torpedo tubes spinal</label>
     <description>Torpedo launcher. Accurate and devastating against shields, but vulnerable to point-defense lasers.</description>

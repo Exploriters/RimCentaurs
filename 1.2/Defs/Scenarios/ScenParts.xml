@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ScenPartDef>
+  <ScenPartDef MayRequire="kentington.saveourship2">
     <defName>StartInSpaceCentaurs</defName>
     <label>start in centaurs cruiser</label>
     <category>Misc</category>

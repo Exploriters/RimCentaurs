@@ -204,6 +204,10 @@
         <li Class="CentaurTheMagnuassembly.ScenPart_FillBattery">
           <def>FillTriBattery</def>
         </li>
+		
+		<li Class="CentaurTheMagnuassembly.ScenPart_StartInSpaceCentaur" MayRequire="kentington.saveourship2">
+			<def>StartInSpaceCentaurs</def>
+		</li>
       </parts>
     </scenario>
   </ScenarioDef>

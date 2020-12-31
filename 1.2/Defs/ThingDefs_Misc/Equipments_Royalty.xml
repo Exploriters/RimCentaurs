@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BaseWeapon">
+  <ThingDef ParentName="BaseWeapon" MayRequire="Ludeon.RimWorld.Royalty">
     <defName>MeleeWeapon_PsyfocusStaffCentaur</defName>
 	<tradeability>Sellable</tradeability>
     <label>eltex centaur staff</label>
@@ -25,7 +25,6 @@
       <MaxHitPoints>300</MaxHitPoints>
       <MarketValue>30000</MarketValue>
       <Mass>3.6</Mass>
-      <DeteriorationRate>0</DeteriorationRate>
       <WorkToMake>0</WorkToMake>
     </statBases>
     <equippedAngleOffset>-65</equippedAngleOffset>
@@ -66,13 +65,8 @@
         <cooldownTime>1</cooldownTime>
       </li>
     </tools>
-	
-    <tickerType>Rare</tickerType>
     <comps>
       <li Class="CompProperties_BiocodableWeapon"/>
-      <li Class="CentaurTheMagnuassembly.CompProperties_SelfHealOvertime">
-        <detlaHpPerSec>0.1</detlaHpPerSec>
-	  </li>
     </comps>
     <burnableByRecipe>true</burnableByRecipe>
     <thingCategories>
