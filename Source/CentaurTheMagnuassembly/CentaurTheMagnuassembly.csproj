@@ -117,7 +117,6 @@
     <Compile Include="SkillRecordPatch.cs" />
     <Compile Include="SomeThingBlank.cs" />
     <Compile Include="Sos2Patch.cs" />
-    <Compile Include="SoS2RenderPlanetBehindMapPatch.cs" />
     <Compile Include="StatPart_ApparelStatOffset_PsychicDeafIncluded.cs" />
     <Compile Include="ThoughtWorker_AlwaysActive_Centaur.cs" />
     <Compile Include="Verb_DoNothing.cs" />
