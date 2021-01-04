@@ -67,6 +67,7 @@
     </tools>
     <comps>
       <li Class="CompProperties_BiocodableWeapon"/>
+      <li Class="CentaurTheMagnuassembly.CompProperties_OversizedWeapon"/>
     </comps>
     <burnableByRecipe>true</burnableByRecipe>
     <thingCategories>

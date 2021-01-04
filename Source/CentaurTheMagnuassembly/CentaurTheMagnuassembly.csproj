@@ -93,6 +93,7 @@
     <Compile Include="CompAbilityEffect_TogglePsySensitivity.cs" />
     <Compile Include="CompHealWearedOvertime.cs" />
     <Compile Include="CompHMTrishotUser.cs" />
+    <Compile Include="CompOversizedWeapon.cs" />
     <Compile Include="CompPassiveMeditationFocusGain.cs" />
     <Compile Include="CompPawnRepairApparelsOvertime.cs" />
     <Compile Include="CompPawnShield.cs" />
