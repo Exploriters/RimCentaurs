@@ -30,9 +30,10 @@ namespace CentaurTheMagnuassembly
         public override void CompTick()
         {
             base.CompTick();
-            if (!valid)
+            if (invalid)
             {
                 ticksToReset = StartingTicksToReset;
+                energy = Math.Min(0f, energy);
                 pendingCharge = 0;
                 return;
             }
@@ -86,7 +87,7 @@ namespace CentaurTheMagnuassembly
 
         public float Energy => energy;
 
-        public bool valid => EnergyMax >= 0;
+        public bool invalid => EnergyMax <= 0;
 
         public ShieldState ShieldState
         {
@@ -104,7 +105,7 @@ namespace CentaurTheMagnuassembly
         {
             get
             {
-                if (!valid)
+                if (invalid)
                 {
                     return false;
                 }
@@ -163,7 +164,7 @@ namespace CentaurTheMagnuassembly
 
         public override void PostPreApplyDamage(DamageInfo dinfo, out bool absorbed)
         {
-            if (!valid)
+            if (invalid)
             {
                 absorbed = false;
                 return;
@@ -293,37 +294,31 @@ namespace CentaurTheMagnuassembly
     public class Gizmo_EnergyShieldStatusPawn : Gizmo
     {
         public CompPawnShield shield;
-
         private static readonly Texture2D FullShieldBarTex = SolidColorMaterials.NewSolidColorTexture(new Color(0.2f, 0.2f, 0.24f));
-
         private static readonly Texture2D EmptyShieldBarTex = SolidColorMaterials.NewSolidColorTexture(Color.clear);
-
-        public Gizmo_EnergyShieldStatusPawn()
-        {
-            order = -2000f;
-        }
-
-        public override float GetWidth(float maxWidth)
-        {
-            return 140f;
-        }
+        public bool valid => !shield.invalid;
+        public Gizmo_EnergyShieldStatusPawn() => order = -2000f;
+        public override float GetWidth(float maxWidth)=> valid?140f:0f;
 
         public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth)
         {
-            Rect rect = new Rect(topLeft.x, topLeft.y, GetWidth(maxWidth), 75f);
-            Rect rect2 = rect.ContractedBy(6f);
-            Widgets.DrawWindowBackground(rect);
-            Rect rect3 = rect2;
-            rect3.height = rect.height / 2f;
-            Text.Font = GameFont.Tiny;
-            Widgets.Label(rect3, ((Pawn)shield.parent)?.Name?.ToStringShort);
-            Rect rect4 = rect2;
-            rect4.yMin = rect2.y + rect2.height / 2f;
-            Widgets.FillableBar(rect4, shield.energyPrecent, FullShieldBarTex, EmptyShieldBarTex, doBorder: false);
-            Text.Font = GameFont.Small;
-            Text.Anchor = TextAnchor.MiddleCenter;
-            Widgets.Label(rect4, (shield.Energy * 100f).ToString("F0") + " / " + (shield.EnergyMax * 100f).ToString("F0"));
-            Text.Anchor = TextAnchor.UpperLeft;
+            if (valid)
+            {
+                Rect rect = new Rect(topLeft.x, topLeft.y, GetWidth(maxWidth), 75f);
+                Rect rect2 = rect.ContractedBy(6f);
+                Widgets.DrawWindowBackground(rect);
+                Rect rect3 = rect2;
+                rect3.height = rect.height / 2f;
+                Text.Font = GameFont.Tiny;
+                Widgets.Label(rect3, ((Pawn)shield.parent)?.Name?.ToStringShort);
+                Rect rect4 = rect2;
+                rect4.yMin = rect2.y + rect2.height / 2f;
+                Widgets.FillableBar(rect4, shield.energyPrecent, FullShieldBarTex, EmptyShieldBarTex, doBorder: false);
+                Text.Font = GameFont.Small;
+                Text.Anchor = TextAnchor.MiddleCenter;
+                Widgets.Label(rect4, (shield.Energy * 100f).ToString("F0") + " / " + (shield.EnergyMax * 100f).ToString("F0"));
+                Text.Anchor = TextAnchor.UpperLeft;
+            }
             return new GizmoResult(GizmoState.Clear);
         }
     }

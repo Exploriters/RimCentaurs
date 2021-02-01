@@ -25,6 +25,7 @@ namespace CentaurTheMagnuassembly
     {
     }
     */
+    /*
     [StaticConstructorOnStartup]
     public class PawnWithShield : Pawn
     {
@@ -122,10 +123,10 @@ namespace CentaurTheMagnuassembly
             yield return (Gizmo)new Gizmo_RangedShieldStatus(this);
         }
 
-        /*public override float GetSpecialApparelScoreOffset()
+        / *public override float GetSpecialApparelScoreOffset()
         {
             return EnergyMax * ApparelScorePerEnergyMax;
-        }*/
+        }* /
 
         public override void Tick()
         {
@@ -255,10 +256,10 @@ namespace CentaurTheMagnuassembly
             }
         }
 
-        /*public override bool AllowVerbCast(IntVec3 root, Map map, LocalTargetInfo targ, Verb v)
+        / *public override bool AllowVerbCast(IntVec3 root, Map map, LocalTargetInfo targ, Verb v)
         {
             return true;
-        }*/
+        }* /
     }
     [StaticConstructorOnStartup]
     class Gizmo_RangedShieldStatus : Gizmo
@@ -306,4 +307,5 @@ namespace CentaurTheMagnuassembly
             return new GizmoResult(GizmoState.Clear);
         }
     }
+    */
 }

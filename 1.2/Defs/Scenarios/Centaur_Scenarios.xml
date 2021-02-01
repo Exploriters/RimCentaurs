@@ -201,11 +201,17 @@
           <thingDef>TriBattery</thingDef>
           <count>1</count>
         </li>
+        <li Class="CentaurTheMagnuassembly.ScenPart_WipeoutChunkSlag">
+          <def>RemoveChunkSlag</def>
+        </li>
         <li Class="CentaurTheMagnuassembly.ScenPart_FillBattery">
           <def>FillTriBattery</def>
         </li>
+        <li Class="CentaurTheMagnuassembly.ScenPart_DumpThingsToPawnInv">
+          <def>DumpThingsToPawnInv</def>
+        </li>
 		
-		<li Class="CentaurTheMagnuassembly.ScenPart_StartInSpaceCentaur" MayRequire="kentington.saveourship2">
+		<li Class="CentaurTheMagnuassembly.ScenPart_StartInSpaceCentaur">
 			<def>StartInSpaceCentaurs</def>
 		</li>
       </parts>

@@ -64,10 +64,10 @@ namespace CentaurTheMagnuassembly
             }
         }
     }
-    public class ColorGenerator_3E66B5 : ColorGenerator
+    /*public class ColorGenerator_3E66B5 : ColorGenerator
     {
         public List<ColorOption> options;
-        public ColorGenerator_3E66B5()
+        protected ColorGenerator_3E66B5()
         {
         }
         public override Color ExemplaryColor
@@ -82,7 +82,7 @@ namespace CentaurTheMagnuassembly
         {
             return new Color(62 / 255f, 102 / 255f, 181 / 255f);
         }
-    }
+    }*/
 
 
 

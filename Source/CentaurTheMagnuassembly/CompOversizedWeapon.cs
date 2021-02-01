@@ -23,27 +23,6 @@ namespace CentaurTheMagnuassembly
 {
     public class CompProperties_OversizedWeapon : CompProperties
     {
-        //public SoundDef soundMiss;
-        //public SoundDef soundHitPawn;
-        //public SoundDef soundHitBuilding;
-        //public SoundDef soundExtra;
-        //public SoundDef soundExtraTwo;
-
-        public Vector3 offset = new Vector3(0, 0, 0); //No longer in-use.
-        public Vector3 northOffset = new Vector3(0, 0, 0);
-        public Vector3 eastOffset = new Vector3(0, 0, 0);
-        public Vector3 southOffset = new Vector3(0, 0, 0);
-        public Vector3 westOffset = new Vector3(0, 0, 0);
-        public bool verticalFlipOutsideCombat = false;
-        public bool verticalFlipNorth = false;
-        public bool isDualWeapon = false;
-        public float angleAdjustmentEast = 0f;
-        public float angleAdjustmentWest = 0f;
-        public float angleAdjustmentNorth = 0f;
-        public float angleAdjustmentSouth = 0f;
-
-        public GraphicData groundGraphic = null;
-
         public CompProperties_OversizedWeapon() : base( typeof(CompOversizedWeapon) )
         { }
     }
@@ -142,15 +121,6 @@ namespace CentaurTheMagnuassembly
                     {
                         num = AdjustOffsetAtPeace(eq, pawn, compOversizedWeapon, num);
                     }
-
-                    if (compOversizedWeapon.Props != null && (!pawn.IsFighting() && (compOversizedWeapon.Props.verticalFlipNorth && pawn.Rotation == Rot4.North)))
-                    {
-                        num += 180f;
-                    }
-                    if (!pawn.IsFighting())
-                    {
-                        num = AdjustNonCombatRotation(pawn, num, compOversizedWeapon);
-                    }
                     num %= 360f;
 
 
@@ -166,29 +136,9 @@ namespace CentaurTheMagnuassembly
                     var s = new Vector3(eq.def.graphicData.drawSize.x, 1f, eq.def.graphicData.drawSize.y);
                     var matrix = default(Matrix4x4);
 
-
-                    Vector3 curOffset = AdjustRenderOffsetFromDir(pawn, compOversizedWeapon);
-                    matrix.SetTRS(drawLoc + curOffset, Quaternion.AngleAxis(num, Vector3.up), s);
+                    matrix.SetTRS(drawLoc, Quaternion.AngleAxis(num, Vector3.up), s);
 
                     Graphics.DrawMesh(!flip ? MeshPool.plane10 : MeshPool.plane10Flip, matrix, matSingle, 0);
-                    if (compOversizedWeapon.Props != null && compOversizedWeapon.Props.isDualWeapon)
-                    {
-                        curOffset = new Vector3(-1f * curOffset.x, curOffset.y, curOffset.z);
-                        Mesh curPool;
-                        if (pawn.Rotation == Rot4.North || pawn.Rotation == Rot4.South)
-                        {
-                            num += 135f;
-                            num %= 360f;
-                            curPool = !flip ? MeshPool.plane10Flip : MeshPool.plane10;
-                        }
-                        else
-                        {
-                            curOffset = new Vector3(curOffset.x, curOffset.y - 0.1f, curOffset.z + 0.15f);
-                            curPool = !flip ? MeshPool.plane10 : MeshPool.plane10Flip;
-                        }
-                        matrix.SetTRS(drawLoc + curOffset, Quaternion.AngleAxis(num, Vector3.up), s);
-                        Graphics.DrawMesh(curPool, matrix, matSingle, 0);
-                    }
                     return false;
                 }
             }
@@ -201,63 +151,8 @@ namespace CentaurTheMagnuassembly
             Mesh mesh;
             mesh = MeshPool.plane10;
             var offsetAtPeace = eq.def.equippedAngleOffset;
-            if (compOversizedWeapon.Props != null && (!pawn.IsFighting() && compOversizedWeapon.Props.verticalFlipOutsideCombat))
-            {
-                offsetAtPeace += 180f;
-            }
             num += offsetAtPeace;
             return num;
-        }
-
-        private static float AdjustNonCombatRotation(Pawn pawn, float num, CompOversizedWeapon compOversizedWeapon)
-        {
-            if (compOversizedWeapon.Props != null)
-            {
-                if (pawn.Rotation == Rot4.North)
-                {
-                    num += compOversizedWeapon.Props.angleAdjustmentNorth;
-                }
-                else if (pawn.Rotation == Rot4.East)
-                {
-                    num += compOversizedWeapon.Props.angleAdjustmentEast;
-                }
-                else if (pawn.Rotation == Rot4.West)
-                {
-                    num += compOversizedWeapon.Props.angleAdjustmentWest;
-                }
-                else if (pawn.Rotation == Rot4.South)
-                {
-                    num += compOversizedWeapon.Props.angleAdjustmentSouth;
-                }
-            }
-            return num;
-        }
-
-        private static Vector3 AdjustRenderOffsetFromDir(Pawn pawn, CompOversizedWeapon compOversizedWeapon)
-        {
-            var curDir = pawn.Rotation;
-
-            Vector3 curOffset = Vector3.zero;
-
-            if (compOversizedWeapon.Props != null)
-            {
-
-                curOffset = compOversizedWeapon.Props.northOffset;
-                if (curDir == Rot4.East)
-                {
-                    curOffset = compOversizedWeapon.Props.eastOffset;
-                }
-                else if (curDir == Rot4.South)
-                {
-                    curOffset = compOversizedWeapon.Props.southOffset;
-                }
-                else if (curDir == Rot4.West)
-                {
-                    curOffset = compOversizedWeapon.Props.westOffset;
-                }
-            }
-
-            return curOffset;
         }
 
         public static void get_Graphic_PostFix(Thing __instance, ref Graphic __result)
@@ -280,33 +175,8 @@ namespace CentaurTheMagnuassembly
                     var compOversizedWeapon = thingWithComps.TryGetComp<CompOversizedWeapon>();
                     if (compOversizedWeapon != null)
                     {
-                        if (compOversizedWeapon.Props?.groundGraphic == null)
-                        {
-                            tempGraphic.drawSize = __instance.def.graphicData.drawSize;
-                            __result = tempGraphic;
-                        }
-                        else
-                        {
-                            if (compOversizedWeapon.IsEquipped)
-                            {
-                                tempGraphic.drawSize = __instance.def.graphicData.drawSize;
-                                __result = tempGraphic;
-                            }
-                            else
-                            {
-                                if (compOversizedWeapon.Props?.groundGraphic?.GraphicColoredFor(__instance) is Graphic
-                                    newResult)
-                                {
-                                    newResult.drawSize = compOversizedWeapon.Props.groundGraphic.drawSize;
-                                    __result = newResult;
-                                }
-                                else
-                                {
-                                    tempGraphic.drawSize = __instance.def.graphicData.drawSize;
-                                    __result = tempGraphic;
-                                }
-                            }
-                        }
+                        tempGraphic.drawSize = __instance.def.graphicData.drawSize;
+                        __result = tempGraphic;
                     }
                 }
         }

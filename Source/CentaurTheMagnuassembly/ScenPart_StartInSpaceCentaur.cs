@@ -15,11 +15,13 @@ using RimworldMod.VacuumIsNotFun;
 
 namespace CentaurTheMagnuassembly
 {
-    [StaticConstructorOnStartup]
     public class ScenPart_StartInSpaceCentaur : ScenPart
     {
         public override void PostGameStart()
         {
+            if (SoS2Tester.inaccessible)
+                return;
+
             //if (!ModLister.HasActiveModWithName("")) return;
             if (WorldSwitchUtility.SelectiveWorldGenFlag)
                 return;
