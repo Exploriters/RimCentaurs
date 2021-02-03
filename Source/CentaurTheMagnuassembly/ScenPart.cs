@@ -26,7 +26,7 @@ namespace CentaurTheMagnuassembly
             //if (battery.def == DefDatabase<ThingDef>.GetNamed("TriBattery"))
             try
             {
-                ((ThingWithComps)battery)?.TryGetComp<CompPowerBattery>()?.AddEnergy(36000);
+                ((ThingWithComps)battery)?.TryGetComp<CompPowerBattery>()?.AddEnergy(float.PositiveInfinity);
             }
             catch
             { }
@@ -40,14 +40,14 @@ namespace CentaurTheMagnuassembly
                 //if (thing.def == DefDatabase<ThingDef>.GetNamed("TriBattery"))
                 //if (thing.TryGetComp<CompPowerBattery>() != null)
                 //{
-                //    thing?.TryGetComp<CompPowerBattery>()?.AddEnergy(36000);
+                //    thing?.TryGetComp<CompPowerBattery>()?.AddEnergy(float.PositiveInfinity);
                 //}
                 if (thing.def == ThingDefOf.MinifiedThing)
                 {
                     Thing thingInside = ((MinifiedThing)thing).InnerThing;
                     if (thingInside.TryGetComp<CompPowerBattery>() != null)
                     {
-                        thingInside?.TryGetComp<CompPowerBattery>()?.AddEnergy(36000);
+                        thingInside?.TryGetComp<CompPowerBattery>()?.AddEnergy(float.PositiveInfinity);
                     }
                 }
                 if (thing.def == ThingDefOf.DropPodIncoming)
@@ -56,14 +56,14 @@ namespace CentaurTheMagnuassembly
                     {
                         if (thing3.TryGetComp<CompPowerBattery>() != null)
                         {
-                            thing3?.TryGetComp<CompPowerBattery>()?.AddEnergy(36000);
+                            thing3?.TryGetComp<CompPowerBattery>()?.AddEnergy(float.PositiveInfinity);
                         }
                         if (thing3.def == ThingDefOf.MinifiedThing)
                         {
                             Thing thingInside = ((MinifiedThing)thing3).InnerThing;
                             if (thingInside.TryGetComp<CompPowerBattery>() != null)
                             {
-                                thingInside?.TryGetComp<CompPowerBattery>()?.AddEnergy(36000);
+                                thingInside?.TryGetComp<CompPowerBattery>()?.AddEnergy(float.PositiveInfinity);
                             }
                         }
                     }
@@ -88,13 +88,7 @@ namespace CentaurTheMagnuassembly
             {
                 if (thing.def == ThingDefOf.DropPodIncoming)
                 {
-                    foreach (Thing thing2 in ((DropPodIncoming)thing).Contents.innerContainer)
-                    {
-                        if (thing2.def == ThingDefOf.ChunkSlagSteel)
-                        {
-                            thing2.Destroy();
-                        }
-                    }
+                    ((DropPodIncoming)thing).Contents.leaveSlag = false;
                 }
             }
             return;
@@ -137,7 +131,7 @@ namespace CentaurTheMagnuassembly
                 if (thing.def == ThingDefOf.DropPodIncoming)
                 {
                     Thing tribattery = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("TriBattery"));
-                    tribattery?.TryGetComp<CompPowerBattery>()?.AddEnergy(36000);
+                    tribattery?.TryGetComp<CompPowerBattery>()?.AddEnergy(float.PositiveInfinity);
                     ((DropPodIncoming)thing).Contents.innerContainer.TryAdd(tribattery,1);
                     break;
                 }

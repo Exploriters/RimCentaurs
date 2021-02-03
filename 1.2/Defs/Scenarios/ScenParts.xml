@@ -17,7 +17,7 @@
     <maxUses>1</maxUses>
   </ScenPartDef>
   
-  <ScenPartDef><!-- MALFUNCTION -->
+  <ScenPartDef>
     <defName>RemoveChunkSlag</defName>
     <label>remove steel slag chunk in drop pod</label>
     <category>Misc</category>
@@ -40,6 +40,14 @@
     <scenPartClass>CentaurTheMagnuassembly.ScenPart_DumpThingsToPawnInv</scenPartClass>
     <maxUses>1</maxUses>
   </ScenPartDef>
+  
+  <!--<ScenPartDef>
+    <defName>StartInSpace_Defined</defName>
+    <label>start in defined spaceship</label>
+    <category>Misc</category>
+    <scenPartClass>ScenPart_GameStartDialog</scenPartClass>
+    <maxUses>1</maxUses>
+  </ScenPartDef>-->
   
   
   <!--<ScenPartDef>

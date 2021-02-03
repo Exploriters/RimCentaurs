@@ -93,7 +93,7 @@
 			<need>Joy</need>
 			<levelRange>0.7~0.7</levelRange>
 		</li>
-		<li Class="ScenPart_DisableIncident">
+		<!-- <li Class="ScenPart_DisableIncident">
 			<def>DisableIncident</def>
             <visible>false</visible>
 			<incident>WandererJoin</incident>
@@ -102,7 +102,7 @@
 			<def>DisableIncident</def>
             <visible>false</visible>
 			<incident>WandererJoinAbasia</incident>
-		</li>
+		</li> -->
 
         <!-- Starting research -->
         <!--

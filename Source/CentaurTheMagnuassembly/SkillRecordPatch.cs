@@ -1,82 +1,39 @@
 ﻿using System;
+using System.Reflection;
 //using Harmony;
 using HarmonyLib;
 using RimWorld;
 using Verse;
+using static CentaurTheMagnuassembly.RimCentaurCore;
 
 namespace CentaurTheMagnuassembly
 {
+    [StaticConstructorOnStartup]
     public static class SkillRecordPatch
     {
-        /*
-        private static readonly Type patchType = typeof(AdditionalVerbPatch);
+        private static readonly Type patchType = typeof(SkillRecordPatch);
         static SkillRecordPatch()
         {
-            HarmonyInstance harmonyInstance = HarmonyInstance.Create("CentaurTheMagnuassembly.rimworld.mod.SkillRecordPatch");
-            if (!harmonyInstance.HasAnyPatches("CentaurTheMagnuassembly.rimworld.mod.SkillRecordPatch"))
-            {
-                harmonyInstance.Patch(
-                    AccessTools.Method(
-                        typeof(Pawn_EquipmentTracker), 
-                        "GetGizmos", null, null), 
-                    null, 
-                    new HarmonyMethod(
-                        patchType, 
-                        "GetGizmosPostfix",
-                        null)
-                    );
+            Harmony harmonyInstance = new Harmony("CentaurTheMagnuassembly.rimworld.mod.SkillRecordPatch");
 
-                harmonyInstance.Patch(
-                    AccessTools.Property(
-                        typeof(VerbTracker),
-                        "PrimaryVerb").GetGetMethod(), 
-                    new HarmonyMethod(
-                        patchType, 
-                        "PrimaryVerbPrefix",
-                        null)
-                    );
-            }
+            harmonyInstance.Patch(AccessTools.Method(typeof(SkillRecord), nameof(SkillRecord.Learn), new[] { typeof(float), typeof(bool) }),
+                prefix: new HarmonyMethod(patchType, nameof(SkillLearnPrefix)));
+            harmonyInstance.Patch(AccessTools.Method(typeof(SkillRecord), nameof(SkillRecord.Interval), new Type[] { }),
+                postfix: new HarmonyMethod(patchType, nameof(SkillIntervalPostfix)));
         }
-        public static void Interval(SkillRecord __instance)
+        public static void SkillLearnPrefix(SkillRecord __instance, ref float xp)
         {
-            float num = (!__instance.pawn.story.traits.HasTrait(TraitDefOf.GreatMemory)) ? 1f : 0.5f;
-            switch (__instance.levelInt)
+            if (__instance.GetType().GetField("pawn", BindingFlags.NonPublic | BindingFlags.Instance).GetValue(__instance) is Pawn pawn)
             {
-                case 10:
-                    __instance.Learn(-0.1f * num, false);
-                    break;
-                case 11:
-                    __instance.Learn(-0.2f * num, false);
-                    break;
-                case 12:
-                    __instance.Learn(-0.4f * num, false);
-                    break;
-                case 13:
-                    __instance.Learn(-0.6f * num, false);
-                    break;
-                case 14:
-                    __instance.Learn(-1f * num, false);
-                    break;
-                case 15:
-                    __instance.Learn(-1.8f * num, false);
-                    break;
-                case 16:
-                    __instance.Learn(-2.8f * num, false);
-                    break;
-                case 17:
-                    __instance.Learn(-4f * num, false);
-                    break;
-                case 18:
-                    __instance.Learn(-6f * num, false);
-                    break;
-                case 19:
-                    __instance.Learn(-8f * num, false);
-                    break;
-                case 20:
-                    __instance.Learn(-12f * num, false);
-                    break;
+                if (pawn.def == AlienCentaurDef)
+                {
+                    xp = Math.Max(0, xp);
+                }
             }
         }
-        */
+        public static void SkillIntervalPostfix(SkillRecord __instance)
+        {
+            __instance.xpSinceMidnight = 0f;
+        }
     }
 }

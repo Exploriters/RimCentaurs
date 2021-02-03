@@ -50,6 +50,29 @@ namespace CentaurTheMagnuassembly
             base.CompTickRare();
             base.CompTickRare();
         }
+        public override void CompTickLong()
+        {
+            base.CompTickLong();
+            base.CompTickLong();
+            base.CompTickLong();
+            base.CompTickLong();
+            base.CompTickLong();
+            base.CompTickLong();
+            base.CompTickLong();
+            base.CompTickLong();
+            base.CompTickLong();
+            base.CompTickLong();
+            base.CompTickLong();
+            base.CompTickLong();
+            base.CompTickLong();
+            base.CompTickLong();
+            base.CompTickLong();
+            base.CompTickLong();
+            base.CompTickLong();
+            base.CompTickLong();
+            base.CompTickLong();
+            base.CompTickLong();
+        }
     }
 
 }

@@ -19,7 +19,7 @@ namespace CentaurTheMagnuassembly
     {
         public override void PostGameStart()
         {
-            if (SoS2Tester.inaccessible)
+            if (SoS2Reflection.inaccessible)
                 return;
 
             //if (!ModLister.HasActiveModWithName("")) return;
@@ -42,9 +42,9 @@ namespace CentaurTheMagnuassembly
             Map spaceMap = GetOrGenerateMapUtility.GetOrGenerateMap(newTile, DefDatabase<WorldObjectDef>.GetNamed("ShipOrbiting"));
             ((WorldObjectOrbitingShip)spaceMap.Parent).radius = 150;
             ((WorldObjectOrbitingShip)spaceMap.Parent).theta = 2.75f;
-            Building core = null;
+            //Building core = null;
             Current.ProgramState = ProgramState.MapInitializing;
-            ShipCombatManager.GenerateShip(DefDatabase<EnemyShipDef>.GetNamed("CentaursScenarioRetroCruise"), spaceMap, null, Faction.OfPlayer, null, out core);
+            SoS2Reflection.GenerateShip(DefDatabase<EnemyShipDef>.GetNamed("CentaursScenarioRetroCruise"), spaceMap, null, Faction.OfPlayer, null, out _);
             Current.ProgramState = ProgramState.Playing;
             IntVec2 secs = (IntVec2)typeof(MapDrawer).GetProperty("SectionCount", System.Reflection.BindingFlags.NonPublic | BindingFlags.Instance).GetValue(spaceMap.mapDrawer);
             Section[,] secArray = new Section[secs.x, secs.z];
@@ -139,7 +139,7 @@ namespace CentaurTheMagnuassembly
                         Thing thingInside = ((MinifiedThing)thing).InnerThing;
                         if (thingInside.TryGetComp<CompPowerBattery>() != null)
                         {
-                            thingInside?.TryGetComp<CompPowerBattery>()?.AddEnergy(36000);
+                            thingInside?.TryGetComp<CompPowerBattery>()?.AddEnergy(float.PositiveInfinity);
                         }
                     } 
                     if (thing?.TryGetComp<CompForbiddable>() != null)
@@ -194,6 +194,10 @@ namespace CentaurTheMagnuassembly
                     {
                         thing.TryGetComp<CompFlickable>().SwitchIsOn = false;
                         thing.TryGetComp<CompBreakdownable>()?.DoBreakdown();
+                    }
+                    if (thing.def == DefDatabase<ThingDef>.GetNamed("ShipTurret_Laser"))
+                    {
+                        ((Building_ShipTurret)thing).PointDefenseMode = true;
                     }
                     if (thing.def == DefDatabase<ThingDef>.GetNamed("Plant_Potato"))
                     {
@@ -268,6 +272,7 @@ namespace CentaurTheMagnuassembly
             }
             targetTorpedo.Position = torpedoToLocation;
 
+
             /*
             Thing InterplanetaryEngineL = ThingMaker.MakeThing(ThingDef.Named("Ship_Engine_Interplanetary"));
             InterplanetaryEngineL.SetFaction(Faction.OfPlayer);
@@ -276,6 +281,16 @@ namespace CentaurTheMagnuassembly
             InterplanetaryEngineR.SetFaction(Faction.OfPlayer);
             GenSpawn.Spawn(InterplanetaryEngineR, new IntVec3(18,0,-28), spaceMap);
             */
+
+            Thing InterplanetaryEngineL = ThingMaker.MakeThing(ThingDef.Named("Blueprint_Ship_Engine_Interplanetary"));
+            InterplanetaryEngineL.SetFaction(Faction.OfPlayer);
+            //((Blueprint_Build)InterplanetaryEngineL).;
+            GenSpawn.Spawn(InterplanetaryEngineL, new IntVec3(-18,0,-28), spaceMap);
+
+            Thing InterplanetaryEngineR = ThingMaker.MakeThing(ThingDef.Named("Blueprint_Ship_Engine_Interplanetary"));
+            InterplanetaryEngineR.SetFaction(Faction.OfPlayer);
+            GenSpawn.Spawn(InterplanetaryEngineR, new IntVec3(18,0,-28), spaceMap);
+            
 
             /*
             List<Building> thingsRocket = spaceMap.listerBuildings.allBuildingsColonist;
