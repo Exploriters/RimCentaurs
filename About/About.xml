@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ModMetaData>
-	<name>RimCentaurs</name>
-	<author>Magnus siiftun1857 Frankline</author>
-	<!-- <targetVersion>1.0</targetVersion> -->
+  <packageId>Exploriters.siiftun1857.CentaurTheMagnuassembly</packageId>
+  <name>RimCentaurs</name>
+  <author>Magnus siiftun1857 Frankline</author>
+  <!-- <targetVersion>1.0</targetVersion> -->
   <supportedVersions>
     <li>1.0</li>
     <li>1.1</li>
@@ -47,11 +47,12 @@
 	<li>Ludeon.RimWorld.Royalty</li>
 	<li>UnlimitedHugs.HugsLib</li>
 	<li>erdelf.HumanoidAlienRaces</li>
+	<li>kentington.saveourship2</li>
+	<li>jecrell.jecstools</li>
   </loadAfter>
-  <packageId>Magnux.siiftun1857.RimWorld.CentaurTheMagnuassembly</packageId>
+  <loadBefore />
+  <incompatibleWith />
   <url>https://github.com/siiftun1857/RimCentaurs</url>
-<description>Magnus' Modify. Original author was Zedralan: Published Id 1576793761.
-
-A genetically engineered solution to anyone's labor problems, a centaur is the obvious choice.
-</description>
+  <!-- Magnus' Modify. Original author was Zedralan: Published Id 1576793761. -->
+  <description>A genetically engineered solution to anyone's labor problems, a centaur is the obvious choice.</description>
 </ModMetaData>

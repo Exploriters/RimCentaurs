@@ -34,6 +34,12 @@
 			<li>BedrollDouble</li>
 		</validBeds>-->
 
+        <forcedRaceTraitEntries>
+          <li>
+            <defName>Asexual</defName>
+            <chance>100</chance>
+          </li>
+        </forcedRaceTraitEntries>
         <disallowedTraits>
           <li><defName>BodyPurist</defName></li>
           <li><defName>ShootingAccuracy</defName></li>
@@ -60,6 +66,8 @@
 		  <li><defName>DislikesMen</defName></li>
 		  <li><defName>DislikesWomen</defName></li>
 		  <li><defName>Gourmand</defName></li>
+		  
+		  <li><defName>GreatMemory</defName></li>
 		  
 		  <li>
 			<defName>DrugDesire</defName>
