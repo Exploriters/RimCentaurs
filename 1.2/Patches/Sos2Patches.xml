@@ -87,7 +87,7 @@
 				<xpath>Defs/ScenarioDef[defName="TheRichExplorerCentaur"]/scenario/parts
 				</xpath>
 				<value>
-					<li Class="CentaurTheMagnuassembly.ScenPart_StartInSpaceCentaur">
+					<li Class="Explorite.ScenPart_StartInSpaceCentaur">
 						<def>StartInSpaceCentaurs</def>
 					</li>
 				</value>

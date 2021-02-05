@@ -3,7 +3,7 @@
 
   <AbilityDef ParentName="PsycastBase">
     <defName>MassPsychicDeafCentaur</defName>
-    <!--<abilityClass>CentaurTheMagnuassembly.Ability_MassPsychicDeafCentaur</abilityClass>-->
+    <!--<abilityClass>Explorite.Ability_MassPsychicDeafCentaur</abilityClass>-->
     <abilityClass>Ability</abilityClass>
     <category>CentaurRacal</category>
     <label>mass psychically deafness</label>
@@ -24,14 +24,14 @@
     <warmupPreEndSoundSeconds>5</warmupPreEndSoundSeconds>
     <displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
-    <!--<gizmoClass>CentaurTheMagnuassembly.Command_AbilityMassPsychicDeafCentaur</gizmoClass>-->
+    <!--<gizmoClass>Explorite.Command_AbilityMassPsychicDeafCentaur</gizmoClass>-->
     <statBases>
       <!--<Ability_EntropyGain>0</Ability_EntropyGain>
       <Ability_PsyfocusCost>0</Ability_PsyfocusCost>-->
       <Ability_Duration>480</Ability_Duration>
     </statBases>
     <verbProperties>
-      <!--<verbClass>CentaurTheMagnuassembly.Verb_CastAbility_MassPsychicDeafCentaur</verbClass>-->
+      <!--<verbClass>Explorite.Verb_CastAbility_MassPsychicDeafCentaur</verbClass>-->
       <warmupTime>24</warmupTime>
       <range>-1</range>
       <drawAimPie>False</drawAimPie>
@@ -45,7 +45,7 @@
     </verbProperties>
     <comps>
       <li Class="CompProperties_AbilityGiveHediff">
-        <compClass>CentaurTheMagnuassembly.CompAbilityEffect_GiveHediff_WholeMap</compClass>
+        <compClass>Explorite.CompAbilityEffect_GiveHediff_WholeMap</compClass>
         <hediffDef>PsychicDeafCentaur</hediffDef>
         <durationMultiplier>PsychicSensitivity</durationMultiplier>
         <psychic>True</psychic>

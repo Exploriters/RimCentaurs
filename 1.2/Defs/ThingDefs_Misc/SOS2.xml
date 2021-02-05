@@ -34,7 +34,7 @@
 	  <ThermoDamper>1</ThermoDamper>
     </costList>
     <comps>
-      <li Class="CentaurTheMagnuassembly.CompProperties_Refuelable_PassiveRecharge">
+      <li Class="Explorite.CompProperties_Refuelable_PassiveRecharge">
         <fuelLabel>Charge progress</fuelLabel>
         <fuelGizmoLabel>Charge progress</fuelGizmoLabel>
         <fuelFilter>

@@ -201,17 +201,17 @@
           <thingDef>TriBattery</thingDef>
           <count>1</count>
         </li>
-        <li Class="CentaurTheMagnuassembly.ScenPart_WipeoutChunkSlag">
+        <li Class="Explorite.ScenPart_WipeoutChunkSlag">
           <def>RemoveChunkSlag</def>
         </li>
-        <li Class="CentaurTheMagnuassembly.ScenPart_FillBattery">
+        <li Class="Explorite.ScenPart_FillBattery">
           <def>FillTriBattery</def>
         </li>
-        <li Class="CentaurTheMagnuassembly.ScenPart_DumpThingsToPawnInv">
+        <li Class="Explorite.ScenPart_DumpThingsToPawnInv">
           <def>DumpThingsToPawnInv</def>
         </li>
 		
-		<li Class="CentaurTheMagnuassembly.ScenPart_StartInSpaceCentaur">
+		<li Class="Explorite.ScenPart_StartInSpaceCentaur">
 			<def>StartInSpaceCentaurs</def>
 		</li>
       </parts>

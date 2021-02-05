@@ -110,7 +110,7 @@
 
   <DamageDef ParentName="FrostblastSuper">
     <defName>FrostblastSuper_LauncherSafe</defName>
-    <workerClass>CentaurTheMagnuassembly.DamageWorker_Frostbite_LauncherSafe</workerClass>
+    <workerClass>Explorite.DamageWorker_Frostbite_LauncherSafe</workerClass>
   </DamageDef>
 
   <ToolCapacityDef>

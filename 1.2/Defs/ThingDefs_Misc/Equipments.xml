@@ -45,7 +45,7 @@
     </weaponTags>
     <verbs>
       <li>
-        <verbClass>CentaurTheMagnuassembly.Verb_Shoot_OvertickShotgun</verbClass>
+        <verbClass>Explorite.Verb_Shoot_OvertickShotgun</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_CentaurChargeShotgun</defaultProjectile>
         <warmupTime>2.0</warmupTime>
@@ -138,8 +138,8 @@
       <li>CentaurRanged</li>
     </weaponTags>
     <verbs>
-      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
-        <verbClass>CentaurTheMagnuassembly.Verb_Shoot_Rainbow2</verbClass>
+      <li Class="Explorite.VerbProperties_Custom">
+        <verbClass>Explorite.Verb_Shoot_Rainbow2</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_CentaurPlasmaBlaster</defaultProjectile>
         <secondaryProjectile>Bullet_CentaurPlasmaBlasterSingle</secondaryProjectile>
@@ -158,8 +158,8 @@
         <texPath>Things/Item/Equipment/WeaponRanged/CentaurOverkill</texPath>
         <texPathSelected>Things/Item/Equipment/WeaponRanged/CentaurOverkill</texPathSelected>
       </li>
-      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
-        <verbClass>CentaurTheMagnuassembly.Verb_Shoot_OvertickShotgun</verbClass>
+      <li Class="Explorite.VerbProperties_Custom">
+        <verbClass>Explorite.Verb_Shoot_OvertickShotgun</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_CentaurChargeShotgun</defaultProjectile>
         <warmupTime>2.0</warmupTime>
@@ -206,7 +206,7 @@
     </tools>
     <comps>
       <li>
-        <compClass>CentaurTheMagnuassembly.Comp_VerbSaveable</compClass>
+        <compClass>Explorite.Comp_VerbSaveable</compClass>
       </li>
     </comps>
   </ThingDef>

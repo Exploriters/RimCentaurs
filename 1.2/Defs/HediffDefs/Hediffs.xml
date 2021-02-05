@@ -54,7 +54,7 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.00020833333333333333333333333333333</baseMtbDays>
 		  </li> -->
-          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+          <li Class="Explorite.HediffGiver_Overtime">
 			<hediff>HyperManipulator_FatalSequela</hediff>
 			<chancePerTick>0.08</chancePerTick>
 			<doCount>2</doCount>
@@ -82,7 +82,7 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.000083333333333333333333333333333333</baseMtbDays>
 		  </li> -->
-          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+          <li Class="Explorite.HediffGiver_Overtime">
 			<hediff>HyperManipulator_FatalSequela</hediff>
 			<chancePerTick>0.2</chancePerTick>
 			<doCount>2</doCount>
@@ -110,7 +110,7 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.000033333333333333333333333333333333</baseMtbDays>
 		  </li> -->
-          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+          <li Class="Explorite.HediffGiver_Overtime">
 			<hediff>HyperManipulator_FatalSequela</hediff>
 			<chancePerTick>0.5</chancePerTick>
 			<doCount>2</doCount>
@@ -138,7 +138,7 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.000018518518518518518518518518518519</baseMtbDays>
 		  </li> -->
-          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+          <li Class="Explorite.HediffGiver_Overtime">
 			<hediff>HyperManipulator_FatalSequela</hediff>
 			<chancePerTick>0.9</chancePerTick>
 			<doCount>2</doCount>
@@ -166,7 +166,7 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.000017543859649122807017543859649123</baseMtbDays>
 		  </li> -->
-          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+          <li Class="Explorite.HediffGiver_Overtime">
 			<hediff>HyperManipulator_FatalSequela</hediff>
 			<chancePerTick>0.95</chancePerTick>
 			<doCount>2</doCount>
@@ -196,7 +196,7 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.000016835016835016835016835016835</baseMtbDays>
 		  </li> -->
-          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+          <li Class="Explorite.HediffGiver_Overtime">
 			<hediff>HyperManipulator_FatalSequela</hediff>
 			<chancePerTick>0.99</chancePerTick>
 			<doCount>2</doCount>
@@ -248,7 +248,7 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.00020833333333333333333333333333333</baseMtbDays>
 		  </li> -->
-          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+          <li Class="Explorite.HediffGiver_Overtime">
 			<hediff>HyperManipulator_FatalSequela</hediff>
 			<chancePerTick>0.08</chancePerTick>
 			<doCount>2</doCount>
@@ -271,7 +271,7 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.000083333333333333333333333333333333</baseMtbDays>
 		  </li> -->
-          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+          <li Class="Explorite.HediffGiver_Overtime">
 			<hediff>HyperManipulator_FatalSequela</hediff>
 			<chancePerTick>0.2</chancePerTick>
 			<doCount>2</doCount>
@@ -294,7 +294,7 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.000033333333333333333333333333333333</baseMtbDays>
 		  </li> -->
-          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+          <li Class="Explorite.HediffGiver_Overtime">
 			<hediff>HyperManipulator_FatalSequela</hediff>
 			<chancePerTick>0.5</chancePerTick>
 			<doCount>2</doCount>
@@ -317,7 +317,7 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.000018518518518518518518518518518519</baseMtbDays>
 		  </li> -->
-          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+          <li Class="Explorite.HediffGiver_Overtime">
 			<hediff>HyperManipulator_FatalSequela</hediff>
 			<chancePerTick>0.9</chancePerTick>
 			<doCount>2</doCount>
@@ -340,7 +340,7 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.000017543859649122807017543859649123</baseMtbDays>
 		  </li> -->
-          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+          <li Class="Explorite.HediffGiver_Overtime">
 			<hediff>HyperManipulator_FatalSequela</hediff>
 			<chancePerTick>0.95</chancePerTick>
 			<doCount>2</doCount>
@@ -363,7 +363,7 @@
 			<minSeverity>0.001</minSeverity>
 			<baseMtbDays>0.000016835016835016835016835016835</baseMtbDays>
 		  </li> -->
-          <li Class="CentaurTheMagnuassembly.HediffGiver_Overtime">
+          <li Class="Explorite.HediffGiver_Overtime">
 			<hediff>HyperManipulator_FatalSequela</hediff>
 			<chancePerTick>0.99</chancePerTick>
 			<doCount>2</doCount>
@@ -573,7 +573,7 @@
       <!-- <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-1.0</severityPerDay>
       </li> -->
-      <li Class="CentaurTheMagnuassembly.HediffCompProperties_FactorBySeverity">
+      <li Class="Explorite.HediffCompProperties_FactorBySeverity">
         <chancePerTick>0.05</chancePerTick>
         <severityAdjust>-0.001</severityAdjust>
         <doCount>20</doCount>

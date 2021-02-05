@@ -66,7 +66,7 @@
         <compClass>CompQuality</compClass>
       </li>
       <li>
-        <compClass>CentaurTheMagnuassembly.Comp_VerbSaveable</compClass>
+        <compClass>Explorite.Comp_VerbSaveable</compClass>
       </li>
     </comps>
     <!-- <smeltable>false</smeltable> -->
@@ -77,7 +77,7 @@
       <li>ITab_Art</li>
     </inspectorTabs>
     <verbs>
-      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
+      <li Class="Explorite.VerbProperties_Custom">
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <requireLineOfSight>true</requireLineOfSight>
@@ -106,7 +106,7 @@
         <texPath>UI/Commands/BowTrishot_ModeTri</texPath>
         <texPathSelected>UI/Commands/BowTrishot_ModeTri_Select</texPathSelected>
       </li>
-      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
+      <li Class="Explorite.VerbProperties_Custom">
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <requireLineOfSight>false</requireLineOfSight>
@@ -135,7 +135,7 @@
         <texPath>UI/Commands/BowTrishot_ModeIcos</texPath>
         <texPathSelected>UI/Commands/BowTrishot_ModeIcos_Select</texPathSelected>
       </li>
-      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
+      <li Class="Explorite.VerbProperties_Custom">
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <requireLineOfSight>false</requireLineOfSight>

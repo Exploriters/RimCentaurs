@@ -22,7 +22,7 @@
     </verbProperties>
     <comps>
       <li Class="CompProperties_AbilityEffect">
-        <compClass>CentaurTheMagnuassembly.CompAbilityEffect_TogglePsySensitivity</compClass>
+        <compClass>Explorite.CompAbilityEffect_TogglePsySensitivity</compClass>
         <psychic>False</psychic>
       </li>
     </comps>

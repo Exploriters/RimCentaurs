@@ -9,7 +9,7 @@
     <comps>
       <li Class="HediffCompProperties_DisappearsOnDeath"/>
       <li Class="HediffCompProperties_SeverityFromEntropy">
-        <compClass>CentaurTheMagnuassembly.HediffComp_SeverityFromEntropy_CentarusOnly</compClass>
+        <compClass>Explorite.HediffComp_SeverityFromEntropy_CentarusOnly</compClass>
 	  </li>
     </comps>
     <stages>

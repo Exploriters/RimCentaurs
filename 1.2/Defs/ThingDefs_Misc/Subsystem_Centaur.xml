@@ -3,7 +3,7 @@
 
   <JobDef>
     <defName>UseItem_AttachSubsystemOnself</defName>
-    <driverClass>CentaurTheMagnuassembly.JobDriver_UseItem_IgnoreManipulation</driverClass>
+    <driverClass>Explorite.JobDriver_UseItem_IgnoreManipulation</driverClass>
     <reportString>Installing subsystem on self.</reportString>
     <playerInterruptible>false</playerInterruptible>
     <casualInterruptible>false</casualInterruptible>

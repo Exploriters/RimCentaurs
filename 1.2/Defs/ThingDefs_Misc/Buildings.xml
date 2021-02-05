@@ -448,7 +448,7 @@
     <defName>TriBattery</defName>
     <label>triple battery</label>
     <description>Stores electricity for later use. Charged batteries explode when exposed to rain or fire. This modified version has triple storage than normal one.</description>
-    <thingClass>CentaurTheMagnuassembly.Building_TriBattery</thingClass>
+    <thingClass>Explorite.Building_TriBattery</thingClass>
     <graphicData>
       <texPath>Things/Building/Power/TriBattery</texPath>
       <graphicClass>Graphic_Multi</graphicClass>

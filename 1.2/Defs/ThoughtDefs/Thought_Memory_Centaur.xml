@@ -152,7 +152,7 @@
   <ThoughtDef>
     <defName>BothCentaur</defName>
     <thoughtClass>Thought_SituationalSocial</thoughtClass>
-    <!-- <workerClass>CentaurTheMagnuassembly.ThoughtWorker_AlwaysActive_Centaur</workerClass> -->
+    <!-- <workerClass>Explorite.ThoughtWorker_AlwaysActive_Centaur</workerClass> -->
     <validWhileDespawned>true</validWhileDespawned>
     <stages>
       <li>

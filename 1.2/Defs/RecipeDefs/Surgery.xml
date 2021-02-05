@@ -5,7 +5,7 @@
     <defName>RemoveBodyPart_ExcludingScapular</defName>
     <label>remove part</label>
     <description>Remove a body part.</description>
-    <workerClass>CentaurTheMagnuassembly.Recipe_RemoveBodyPart_MX</workerClass>
+    <workerClass>Explorite.Recipe_RemoveBodyPart_MX</workerClass>
     <jobString>Removing body part.</jobString>
     <workAmount>2000</workAmount>
     <surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>

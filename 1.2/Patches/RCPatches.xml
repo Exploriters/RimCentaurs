@@ -30,7 +30,7 @@
 				<xpath>Defs/StatDef[defName="PsychicSensitivity"]/parts</xpath>
 				<value>
 					<parts>
-					  <li Class="CentaurTheMagnuassembly.StatPart_ApparelStatOffset_PsychicDeafIncluded">
+					  <li Class="Explorite.StatPart_ApparelStatOffset_PsychicDeafIncluded">
 						<apparelStat>PsychicSensitivityOffset</apparelStat>
 						<includeWeapon>true</includeWeapon>
 					  </li>
@@ -45,7 +45,7 @@
   <Operation Class="PatchOperationAttributeSet">
     <xpath>Defs/StatDef[defName="PsychicSensitivity"]/parts/li[@Class="StatPart_ApparelStatOffset"]</xpath>
     <attribute>Class</attribute>
-    <value>CentaurTheMagnuassembly.StatPart_ApparelStatOffset_PsychicDeafIncluded</value>
+    <value>Explorite.StatPart_ApparelStatOffset_PsychicDeafIncluded</value>
   </Operation>
 				
 				

@@ -2,7 +2,7 @@
 <Defs>
 
   <HediffDef>
-    <hediffClass>CentaurTheMagnuassembly.Hediff_AddedPart_HManipulator</hediffClass>
+    <hediffClass>Explorite.Hediff_AddedPart_HManipulator</hediffClass>
     <defaultLabelColor>(0.5, 0.75, 1)</defaultLabelColor>
     <isBad>false</isBad>
     <defName>HyperManipulator</defName>
@@ -181,13 +181,13 @@
     <comps>
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Usable">
-        <compClass>CentaurTheMagnuassembly.CompUsable_IgnoreManipulation</compClass>
+        <compClass>Explorite.CompUsable_IgnoreManipulation</compClass>
         <useJob>UseItem_HManipulator</useJob>
         <useLabel>assemble physic manipulator on self</useLabel>
         <useDuration>600</useDuration>
       </li>
       <li Class="CompProperties_UseEffect">
-        <compClass>CentaurTheMagnuassembly.CompUseEffect_HediffApply_HManipulator</compClass>
+        <compClass>Explorite.CompUseEffect_HediffApply_HManipulator</compClass>
         <!-- <hediffDef>HyperManipulator</hediffDef>
 		<severity>1</severity>
 		<divideByBodySize>true</divideByBodySize> -->
@@ -200,7 +200,7 @@
 
   <JobDef>
     <defName>UseItem_HManipulator</defName>
-    <driverClass>CentaurTheMagnuassembly.JobDriver_UseItem_IgnoreManipulation</driverClass>
+    <driverClass>Explorite.JobDriver_UseItem_IgnoreManipulation</driverClass>
     <reportString>Installing physic manipulator on self.</reportString>
     <playerInterruptible>false</playerInterruptible>
     <casualInterruptible>false</casualInterruptible>

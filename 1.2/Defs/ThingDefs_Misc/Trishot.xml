@@ -31,17 +31,17 @@
       <li>CentaurTrishot</li>
     </weaponTags>
     <comps>
-      <!-- <li Class="CentaurTheMagnuassembly.CompProperties_SelfHealOvertime">
+      <!-- <li Class="Explorite.CompProperties_SelfHealOvertime">
         <detlaHpPerSec>3</detlaHpPerSec>
       </li> -->
       <!-- <li>
         <compClass>CompEquippable</compClass>
       </li> -->
       <li>
-        <compClass>CentaurTheMagnuassembly.Comp_VerbSaveable</compClass>
+        <compClass>Explorite.Comp_VerbSaveable</compClass>
       </li>
       <!-- <li>
-        <compClass>CentaurTheMagnuassembly.CompUnbreakableViaDamage</compClass>
+        <compClass>Explorite.CompUnbreakableViaDamage</compClass>
       </li> -->
     </comps>
     <!-- <smeltable>false</smeltable> -->
@@ -104,7 +104,7 @@
     </weaponTags>
     <comps>
       <li Class="CompProperties_Art">
-		<compClass>CentaurTheMagnuassembly.CompArt_Qualityless</compClass>
+		<compClass>Explorite.CompArt_Qualityless</compClass>
         <nameMaker>NamerArtWeaponGun</nameMaker>
         <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
         <!-- <minQualityForArtistic>Excellent</minQualityForArtistic> -->
@@ -135,8 +135,8 @@
       <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
     </recipeMaker> -->
 	<verbs>
-      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
-        <verbClass>CentaurTheMagnuassembly.Verb_Shoot_OvertickShotgun</verbClass>
+      <li Class="Explorite.VerbProperties_Custom">
+        <verbClass>Explorite.Verb_Shoot_OvertickShotgun</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <requireLineOfSight>true</requireLineOfSight>
         <defaultProjectile>Arrow_Trishot</defaultProjectile>
@@ -165,8 +165,8 @@
         <texPath>UI/Commands/BowTrishot_ModeTri</texPath>
         <texPathSelected>UI/Commands/BowTrishot_ModeTri_Select</texPathSelected>
       </li>
-      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
-        <verbClass>CentaurTheMagnuassembly.Verb_Shoot_OvertickShotgun</verbClass>
+      <li Class="Explorite.VerbProperties_Custom">
+        <verbClass>Explorite.Verb_Shoot_OvertickShotgun</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <requireLineOfSight>false</requireLineOfSight>
         <defaultProjectile>Arrow_Trishot_Hyper_20D</defaultProjectile>
@@ -194,8 +194,8 @@
         <texPath>UI/Commands/BowTrishot_ModeIcos</texPath>
         <texPathSelected>UI/Commands/BowTrishot_ModeIcos_Select</texPathSelected>
       </li>
-      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
-        <verbClass>CentaurTheMagnuassembly.Verb_Shoot_Cooldown</verbClass>
+      <li Class="Explorite.VerbProperties_Custom">
+        <verbClass>Explorite.Verb_Shoot_Cooldown</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <requireLineOfSight>false</requireLineOfSight>
         <defaultProjectile>Arrow_Trishot_Super</defaultProjectile>
@@ -245,8 +245,8 @@
     <weaponTags />
 	
 	<verbs>
-      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
-        <verbClass>CentaurTheMagnuassembly.Verb_Shoot_OvertickShotgun</verbClass>
+      <li Class="Explorite.VerbProperties_Custom">
+        <verbClass>Explorite.Verb_Shoot_OvertickShotgun</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <requireLineOfSight>true</requireLineOfSight>
         <defaultProjectile>Arrow_Trishot</defaultProjectile>
@@ -275,8 +275,8 @@
         <texPath>UI/Commands/BowTrishot_ModeTri</texPath>
         <texPathSelected>UI/Commands/BowTrishot_ModeTri_Select</texPathSelected>
       </li>
-      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
-        <verbClass>CentaurTheMagnuassembly.Verb_DoNothing</verbClass>
+      <li Class="Explorite.VerbProperties_Custom">
+        <verbClass>Explorite.Verb_DoNothing</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <requireLineOfSight>false</requireLineOfSight>
         <defaultProjectile>Arrow_Trishot_Hyper_20D</defaultProjectile>
@@ -307,8 +307,8 @@
 		<disable>true</disable>
 		<disableReason>This weapon needs to be repaired before this mode available.</disableReason>
       </li>
-      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
-        <verbClass>CentaurTheMagnuassembly.Verb_DoNothing</verbClass>
+      <li Class="Explorite.VerbProperties_Custom">
+        <verbClass>Explorite.Verb_DoNothing</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <requireLineOfSight>false</requireLineOfSight>
         <defaultProjectile>Arrow_Trishot_Super</defaultProjectile>
@@ -357,8 +357,8 @@
     <tradeability>None</tradeability>
     <weaponTags />
 	<verbs>
-      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
-        <verbClass>CentaurTheMagnuassembly.Verb_Shoot_OvertickShotgun</verbClass>
+      <li Class="Explorite.VerbProperties_Custom">
+        <verbClass>Explorite.Verb_Shoot_OvertickShotgun</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <requireLineOfSight>true</requireLineOfSight>
         <defaultProjectile>Arrow_Trishot</defaultProjectile>
@@ -387,8 +387,8 @@
         <texPath>UI/Commands/BowTrishot_ModeTri</texPath>
         <texPathSelected>UI/Commands/BowTrishot_ModeTri_Select</texPathSelected>
       </li>
-      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
-        <verbClass>CentaurTheMagnuassembly.Verb_Shoot_OvertickShotgun</verbClass>
+      <li Class="Explorite.VerbProperties_Custom">
+        <verbClass>Explorite.Verb_Shoot_OvertickShotgun</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <requireLineOfSight>false</requireLineOfSight>
         <defaultProjectile>Arrow_Trishot_Hyper_20D</defaultProjectile>
@@ -416,8 +416,8 @@
         <texPath>UI/Commands/BowTrishot_ModeIcos</texPath>
         <texPathSelected>UI/Commands/BowTrishot_ModeIcos_Select</texPathSelected>
       </li>
-      <li Class="CentaurTheMagnuassembly.VerbProperties_Custom">
-        <verbClass>CentaurTheMagnuassembly.Verb_DoNothing</verbClass>
+      <li Class="Explorite.VerbProperties_Custom">
+        <verbClass>Explorite.Verb_DoNothing</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <requireLineOfSight>false</requireLineOfSight>
         <defaultProjectile>Arrow_Trishot_Super</defaultProjectile>
@@ -564,7 +564,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
-    <thingClass>CentaurTheMagnuassembly.Projectile_Explosive_Waggingshot</thingClass>
+    <thingClass>Explorite.Projectile_Explosive_Waggingshot</thingClass>
     <projectile>
       <flyOverhead>true</flyOverhead>
       <damageDef>Frostblast</damageDef>
@@ -706,7 +706,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
-    <thingClass>CentaurTheMagnuassembly.Projectile_Explosive_Teleshot</thingClass>
+    <thingClass>Explorite.Projectile_Explosive_Teleshot</thingClass>
     <projectile>
       <flyOverhead>true</flyOverhead>
       <damageDef>FrostblastSuper_LauncherSafe</damageDef>

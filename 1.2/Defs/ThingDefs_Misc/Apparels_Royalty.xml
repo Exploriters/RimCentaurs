@@ -50,7 +50,7 @@
       <wornGraphicPath isNull="True" />
       <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
     </apparel>
-    <colorGenerator isNull="True" />
+    <colorGenerator Inherit="False" isNull="True" />
     <thingCategories Inherit="False">
       <li>CentaurApparels</li>
     </thingCategories>
@@ -96,7 +96,7 @@
     <smeltable>true</smeltable>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-      <li Class="CentaurTheMagnuassembly.CompProperties_SelfHealOvertime">
+      <li Class="Explorite.CompProperties_SelfHealOvertime">
         <detlaHpPerSec>0.1</detlaHpPerSec>
 	  </li>
     </comps>
@@ -190,7 +190,7 @@
       <li>
         <compClass>CompColorable</compClass>
       </li>
-      <li Class="CentaurTheMagnuassembly.CompProperties_SelfHealOvertime">
+      <li Class="Explorite.CompProperties_SelfHealOvertime">
         <detlaHpPerSec>0.1</detlaHpPerSec>
 	  </li>
     </comps>
