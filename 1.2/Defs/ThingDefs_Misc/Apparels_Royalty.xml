@@ -50,7 +50,7 @@
       <wornGraphicPath isNull="True" />
       <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
     </apparel>
-    <colorGenerator Inherit="False" isNull="True" />
+    <!--<colorGenerator Inherit="False" isNull="True" />-->
     <thingCategories Inherit="False">
       <li>CentaurApparels</li>
     </thingCategories>

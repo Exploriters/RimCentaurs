@@ -14,7 +14,7 @@
         <ticksBetweenHeal>3000</ticksBetweenHeal>
 	  </li>
       <li Class="Explorite.CompProperties_PassiveMeditationFocusGain">
-        <focusPerDay>1000</focusPerDay>
+        <focusPerDay>1</focusPerDay>
 	  </li>
 	</comps>
     <tradeTags>

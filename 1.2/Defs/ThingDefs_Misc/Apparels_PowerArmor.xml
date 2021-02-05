@@ -467,7 +467,7 @@
 		<li>CentaurReverseEngineeringHumanTech</li>
 	  </researchPrerequisites>
     </recipeMaker>
-    <colorGenerator Class="ColorGenerator_Options">
+    <colorGenerator Inherit="False" Class="ColorGenerator_Options">
       <options>
         <li>
           <only>(0.5,0.75,1)</only>
