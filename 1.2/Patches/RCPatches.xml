@@ -6,11 +6,6 @@
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[defName="Apparel_ArmorMarineHelmetClocked" or defName="Apparel_ArmorHelmetCataphractClocked"]/costList/ComponentSpacer</xpath>
 			</li>
-		</operations>
-	</Operation>-->
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/MeditationFocusDef[defName="Natural"]/requiredBackstoriesAny</xpath>
 				<value>
@@ -20,12 +15,6 @@
 					</li>
 				</value>
 			</li>
-		</operations>
-	</Operation>
-	
-	<!--<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/StatDef[defName="PsychicSensitivity"]/parts</xpath>
 				<value>
@@ -37,16 +26,16 @@
 					</parts>
 				</value>
 			</li>
+			<li Class="PatchOperationAttributeSet">
+				<xpath>Defs/StatDef[defName="PsychicSensitivity"]/parts/li[@Class="StatPart_ApparelStatOffset"]</xpath>
+				<attribute>Class</attribute>
+				<value>Explorite.StatPart_ApparelStatOffset_PsychicDeafIncluded</value>
+			</li>
 		</operations>
-	</Operation>-->
+	</Operation>
 	
 	
-
-  <Operation Class="PatchOperationAttributeSet">
-    <xpath>Defs/StatDef[defName="PsychicSensitivity"]/parts/li[@Class="StatPart_ApparelStatOffset"]</xpath>
-    <attribute>Class</attribute>
-    <value>Explorite.StatPart_ApparelStatOffset_PsychicDeafIncluded</value>
-  </Operation>
+-->
 				
 				
 				

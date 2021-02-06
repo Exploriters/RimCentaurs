@@ -9,15 +9,9 @@
 					<li>CentaurPlayerColony</li>
 				</value>
 			</li>
-		</operations>
-	</Operation>
-	
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationRemove">
+			<!--<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[defName="Psytrainer_MassPsychicDeafCentaur"]</xpath>
-			</li>
+			</li>-->
 		</operations>
 	</Operation>
 </Patch>

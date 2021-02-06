@@ -9,12 +9,6 @@
 					<li>ABC</li>
 				</value>
 			</li>
-		</operations>
-	</Operation> -->
-	
-	<!-- <Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="Human"]/recipes</xpath>
 				<value>
