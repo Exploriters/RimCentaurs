@@ -5,7 +5,7 @@
     <defName>MassPsychicDeafCentaur</defName>
     <!--<abilityClass>Explorite.Ability_MassPsychicDeafCentaur</abilityClass>-->
     <abilityClass>Ability</abilityClass>
-    <category>CentaurRacal</category>
+    <category>ExploriteRacal</category>
     <label>mass psychically deafness</label>
     <description>Release a massive psychic pulse that disturbs minds, block the psylink of every creature on the map for days - including the caster self.\n\nNeuroquake takes three hours to cast, and cannot be interrupted. The caster will also being disabled to cast anything else during it's effect.</description>
     <level>0</level>
@@ -25,6 +25,9 @@
     <displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
     <gizmoClass>Command_Ability</gizmoClass>
+	
+    <sendLetterOnCooldownComplete>True</sendLetterOnCooldownComplete>
+    <cooldownTicksRange>1200~1200</cooldownTicksRange>
     <!--<gizmoClass>Explorite.Command_AbilityMassPsychicDeafCentaur</gizmoClass>-->
     <statBases>
       <Ability_EntropyGain>0</Ability_EntropyGain>
