@@ -23,15 +23,17 @@
     <warmupPreEndSound>Psycast_Neuroquake_CastEnd</warmupPreEndSound>
     <warmupPreEndSoundSeconds>5</warmupPreEndSoundSeconds>
     <displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
-    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+    <gizmoClass>Command_Ability</gizmoClass>
     <!--<gizmoClass>Explorite.Command_AbilityMassPsychicDeafCentaur</gizmoClass>-->
     <statBases>
-      <!--<Ability_EntropyGain>0</Ability_EntropyGain>
-      <Ability_PsyfocusCost>0</Ability_PsyfocusCost>-->
+      <Ability_EntropyGain>0</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0</Ability_PsyfocusCost>
       <Ability_Duration>480</Ability_Duration>
     </statBases>
     <verbProperties>
       <!--<verbClass>Explorite.Verb_CastAbility_MassPsychicDeafCentaur</verbClass>-->
+      <verbClass>Verb_CastAbility</verbClass>
       <warmupTime>24</warmupTime>
       <range>-1</range>
       <drawAimPie>False</drawAimPie>
