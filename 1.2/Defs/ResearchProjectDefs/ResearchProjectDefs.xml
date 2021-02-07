@@ -3,7 +3,7 @@
 
   <ResearchProjectDef>
     <defName>CentaurTechRootProject</defName>
-    <tab>Centaurs</tab>
+    <tab>Explorite</tab>
     <label>trishot</label>
     <description>Allowing you researching future more centaurs exclusive technology.</description>
     <baseCost>100</baseCost>
@@ -25,7 +25,7 @@
 
   <ResearchProjectDef>
     <defName>CentaurReverseEngineeringHumanTech</defName>
-    <tab>Centaurs</tab>
+    <tab>Explorite</tab>
     <label>centaurs exclusive equipments</label>
     <description>Remastery human equipments to make things fit centaurs.</description>
     <baseCost>100</baseCost>
@@ -42,7 +42,7 @@
 
   <ResearchProjectDef>
     <defName>TrishotProject</defName>
-    <tab>Centaurs</tab>
+    <tab>Explorite</tab>
     <label>trishot</label>
     <description>Allows you craft an ultra weapon that used by centaur, Trishot, a powerful massive bow with long range that fires triple heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst.</description>
     <baseCost>10000</baseCost>
