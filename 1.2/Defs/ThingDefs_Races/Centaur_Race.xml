@@ -16,6 +16,11 @@
       <li Class="Explorite.CompProperties_PassiveMeditationFocusGain">
         <focusPerDay>1</focusPerDay>
 	  </li>
+      <li Class="Explorite.CompProperties_EnsureAbility">
+        <abilities>
+          <li>MassPsychicDeafCentaur</li>
+		</abilities>
+	  </li>
 	</comps>
     <tradeTags>
       <!-- <li>AnimalInsectSpace</li> -->
