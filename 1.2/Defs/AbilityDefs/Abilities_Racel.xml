@@ -46,6 +46,7 @@
           <canTargetHumans>false</canTargetHumans>
           <canTargetAnimals>false</canTargetAnimals>
           <canTargetMechs>false</canTargetMechs>
+          <canTargetBuildings>false</canTargetBuildings>
         </targetParams>
     </verbProperties>
     <comps>

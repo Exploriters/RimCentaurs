@@ -718,10 +718,8 @@
       <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">1.62</PsychicEntropyRecoveryRate>
       <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">1.5</MeditationFocusGain>
 	  
-      <EnergyShieldRechargeRate>0</EnergyShieldRechargeRate>
-      <EnergyShieldEnergyMax>0</EnergyShieldEnergyMax>
-      <!-- <EnergyShieldEnergyMax>3.0</EnergyShieldEnergyMax>
-	  <EnergyShieldRechargeRate>1.0</EnergyShieldRechargeRate> -->
+      <PawnShieldRechargeRate>0</PawnShieldRechargeRate>
+      <PawnShieldEnergyMax>0</PawnShieldEnergyMax>
     </statBases>
     <size>(1,1)</size>
     <tools>
