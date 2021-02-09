@@ -203,17 +203,16 @@
         </li>
         <li Class="Explorite.ScenPart_WipeoutChunkSlag">
           <def>RemoveChunkSlag</def>
+          <visible>false</visible>
         </li>
         <li Class="Explorite.ScenPart_FillBattery">
           <def>FillTriBattery</def>
+          <visible>false</visible>
         </li>
         <li Class="Explorite.ScenPart_DumpThingsToPawnInv">
           <def>DumpThingsToPawnInv</def>
+          <visible>false</visible>
         </li>
-		
-		<li Class="Explorite.ScenPart_StartInSpaceCentaur">
-			<def>StartInSpaceCentaurs</def>
-		</li>
       </parts>
     </scenario>
   </ScenarioDef>

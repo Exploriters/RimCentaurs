@@ -2,14 +2,6 @@
 <Defs>
 
   <ScenPartDef>
-    <defName>StartInSpaceCentaurs</defName>
-    <label>start in centaurs cruiser</label>
-    <category>Misc</category>
-    <scenPartClass>Explorite.ScenPart_StartInSpaceCentaur</scenPartClass>
-    <maxUses>1</maxUses>
-  </ScenPartDef>
-
-  <ScenPartDef>
     <defName>FillTriBattery</defName>
     <label>fill batteries</label>
     <category>Misc</category>
@@ -26,18 +18,18 @@
   </ScenPartDef>
   
   <ScenPartDef>
-    <defName>UnpackMinified</defName>
-    <label>unpack minified things in drop pod</label>
-    <category>Misc</category>
-    <scenPartClass>Explorite.ScenPart_UnpackMinified</scenPartClass>
-    <maxUses>1</maxUses>
-  </ScenPartDef>
-  
-  <ScenPartDef>
     <defName>DumpThingsToPawnInv</defName>
     <label>transfer things to pawn inventory</label>
     <category>Misc</category>
     <scenPartClass>Explorite.ScenPart_DumpThingsToPawnInv</scenPartClass>
+    <maxUses>1</maxUses>
+  </ScenPartDef>
+  
+  <ScenPartDef>
+    <defName>UnpackMinified</defName>
+    <label>unpack minified things in drop pod</label>
+    <category>Misc</category>
+    <scenPartClass>Explorite.ScenPart_UnpackMinified</scenPartClass>
     <maxUses>1</maxUses>
   </ScenPartDef>
   
