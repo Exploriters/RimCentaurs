@@ -76,6 +76,17 @@
 		  <li><defName>Gourmand</defName></li>
 		  
 		  <li><defName>GreatMemory</defName></li>
+		  <li><defName>Undergrounder</defName></li>
+		  <li><defName>Tough</defName></li>
+		  
+		  <li>
+			<defName>NaturalMood</defName>
+			<degree>1</degree>
+		  </li>
+		  <li>
+			<defName>NaturalMood</defName>
+			<degree>-1</degree>
+		  </li>
 		  
 		  <li>
 			<defName>DrugDesire</defName>
@@ -860,7 +871,7 @@
       </li>
     </tools>
     <race>
-      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeMain>Centaur</thinkTreeMain>
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
       <intelligence>Humanlike</intelligence>
       <makesFootprints>false</makesFootprints>
@@ -884,6 +895,7 @@
       <herdAnimal>false</herdAnimal>
       <packAnimal>true</packAnimal>
       <predator>false</predator>
+      <nuzzleMtbHours>12</nuzzleMtbHours>
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>
