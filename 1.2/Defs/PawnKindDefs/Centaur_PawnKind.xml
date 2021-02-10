@@ -27,14 +27,13 @@
 
     <!-- <chemicalAddictionChance>0.06</chemicalAddictionChance> -->
     <chemicalAddictionChance>0</chemicalAddictionChance>
-    <!--<apparelRequired>
+    <apparelRequired>
       <li>Apparel_CentaurHorseshoesSet</li>
       <li>Apparel_CentaurCollarShirt</li>
       <li>Apparel_CentaurFlakVest</li>
       <li>Apparel_CentaurFlakPants</li>
       <li>Apparel_CentaurFlakJacket</li>
-      <li>Apparel_CentaurShieldBelt</li>
-    </apparelRequired>-->
+    </apparelRequired>
     <apparelTags>
       <!--<li>CentaurIndustrialBasic</li>
       <li>CentaurIndustrialAdvanced</li>
