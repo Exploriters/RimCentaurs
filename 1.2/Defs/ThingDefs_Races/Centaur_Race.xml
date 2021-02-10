@@ -882,7 +882,7 @@
       <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
       <baseHungerRate>1.5</baseHungerRate>
       <herdAnimal>false</herdAnimal>
-      <packAnimal>false</packAnimal>
+      <packAnimal>true</packAnimal>
       <predator>false</predator>
       <litterSizeCurve>
         <points>
