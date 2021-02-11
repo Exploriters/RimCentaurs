@@ -50,7 +50,24 @@
     </tags>
   </BodyPartDef>-->
 
+
   <BodyPartDef>
+    <defName>CentaurScapular</defName>
+    <label>clavicle</label>
+    <hitPoints>33</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+    <destroyableByDamage>false</destroyableByDamage>
+    <pawnGeneratorCanAmputate>false</pawnGeneratorCanAmputate>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+  </BodyPartDef>
+
+  <!--<BodyPartDef>
     <defName>CentaurScapular</defName>
     <label>scapular</label>
     <hitPoints>33</hitPoints>
@@ -70,7 +87,7 @@
       <li>ManipulationLimbSegment</li>
 	</tags>
     <hitChanceFactors />
-  </BodyPartDef>
+  </BodyPartDef>-->
 
   <!-- <BodyPartDef>
     <defName>CentaurHeart</defName>

@@ -218,20 +218,20 @@
         <li>
           <def>CentaurScapular</def>
           <coverage>0.24</coverage>
-          <height>Bottom</height>
+          <height>Top</height>
           <groups>
-            <li>Shoulders</li>
+            <li>Torso</li>
           </groups>
           <parts>
             <li>
               <def>Shoulder</def>
               <customLabel>left shoulder</customLabel>
-              <coverage>0.5</coverage>
+              <coverage>0.455</coverage>
               <groups>
                 <li>Shoulders</li>
               </groups>
               <parts>
-                <li>
+                <!--<li>
                   <def>Clavicle</def>
                   <customLabel>left clavicle</customLabel>
                   <coverage>0.09</coverage>
@@ -240,7 +240,7 @@
                   <groups>
                     <li>Torso</li>
                   </groups>
-                </li>
+                </li>-->
                 <li>
                   <def>Arm</def>
                   <customLabel>left arm</customLabel>
@@ -331,12 +331,12 @@
             <li>
               <def>Shoulder</def>
               <customLabel>right shoulder</customLabel>
-              <coverage>0.5</coverage>
+              <coverage>0.455</coverage>
               <groups>
                 <li>Shoulders</li>
               </groups>
               <parts>
-                <li>
+                <!--<li>
                   <def>Clavicle</def>
                   <customLabel>right clavicle</customLabel>
                   <coverage>0.09</coverage>
@@ -345,7 +345,7 @@
                   <groups>
                     <li>Torso</li>
                   </groups>
-                </li>
+                </li>-->
                 <li>
                   <def>Arm</def>
                   <customLabel>right arm</customLabel>
@@ -595,7 +595,7 @@
             <li>Waist</li>
           </groups>
         </li>
-        <li>
+        <!--<li>
           <def>CentaurSubsystem</def>
           <customLabel>subsystem primary</customLabel>
           <coverage>0.05</coverage>
@@ -621,7 +621,7 @@
           <groups>
             <li>Torso</li>
           </groups>
-        </li>
+        </li>-->
       </parts>
     </corePart>
   </BodyDef>
