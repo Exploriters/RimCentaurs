@@ -99,7 +99,7 @@
 	<label>replace thermo damper for trishot</label>
 	<description>Repair trishot by replacing its components. This will restore it's normal range and sightly restore an alternative attact</description>
 	<jobString>Repairing trishot.</jobString>
-	<workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 	<effectWorking>Smith</effectWorking>
 	<soundWorking>Recipe_Machining</soundWorking>
 	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
@@ -151,7 +151,7 @@
 	<label>repair trishot</label>
 	<description>Compelely repair trishot and restore its all functions, unlock a extremely powerful alternative attact.</description>
 	<jobString>Repairing trishot.</jobString>
-	<workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 	<effectWorking>Smith</effectWorking>
 	<soundWorking>Recipe_Machining</soundWorking>
 	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>

@@ -128,7 +128,7 @@
       <recipeUsers Inherit="False">
         <li>FabricationBench</li>
       </recipeUsers>
-      <workSpeedStat>SmeltingSpeed</workSpeedStat>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
       <effectWorking>Smith</effectWorking>
       <soundWorking>Recipe_Machining</soundWorking>
