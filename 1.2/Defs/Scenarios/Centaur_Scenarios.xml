@@ -174,7 +174,7 @@
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <visible>false</visible>
-          <thingDef>Gun_CentaurChargeShotgun</thingDef>
+          <thingDef>Gun_CentaurPlasmaBlaster</thingDef>
           <count>1</count>
         </li>
 		<li Class="ScenPart_StartingThing_Defined">

@@ -135,7 +135,7 @@
 
   <JobDef>
     <defName>DetonateThermoDamper</defName>
-    <driverClass>JobDriver_UseItem</driverClass>
+    <driverClass>Explorite.JobDriver_UseItem_IgnoreManipulation</driverClass>
     <reportString>detonating thermo damper.</reportString>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>

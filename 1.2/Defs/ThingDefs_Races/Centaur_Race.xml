@@ -713,9 +713,9 @@
       <GlobalLearningFactor>1.5</GlobalLearningFactor>
       <EatingSpeed>1.5</EatingSpeed>
       <MentalBreakThreshold>0.02</MentalBreakThreshold>
-      <AimingDelayFactor>0.8</AimingDelayFactor>
+      <AimingDelayFactor>0.5</AimingDelayFactor>
       <ShootingAccuracyPawn>20</ShootingAccuracyPawn>
-      <SocialImpact>3.0</SocialImpact>
+      <SocialImpact>2.0</SocialImpact>
       <PawnBeauty>3.0</PawnBeauty>
       <ImmunityGainSpeed>1.75</ImmunityGainSpeed>
       <PainShockThreshold>0.95</PainShockThreshold>
