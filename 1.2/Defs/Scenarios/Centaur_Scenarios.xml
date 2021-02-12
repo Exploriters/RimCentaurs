@@ -22,9 +22,9 @@
         <!-- Config pages -->
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
           <def>ConfigPage_ConfigureStartingPawns</def>
+          <visible>false</visible>
           <pawnCount>1</pawnCount>
           <pawnChoiceCount>0</pawnChoiceCount>
-          <visible>false</visible>
         </li>
 
         <!-- Starting age -->
@@ -213,6 +213,10 @@
           <def>DumpThingsToPawnInv</def>
           <visible>false</visible>
         </li>
+		<li Class="Explorite.ScenPart_StartInSpaceCentaur">
+		  <def>StartInSpaceCentaurs</def>
+          <visible>false</visible>
+		</li>
       </parts>
     </scenario>
   </ScenarioDef>
