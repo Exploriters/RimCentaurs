@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<!--<Operation Class="PatchOperationSequence">
+	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="Apparel_ArmorMarineHelmetClocked" or defName="Apparel_ArmorHelmetCataphractClocked"]/costList/ComponentSpacer</xpath>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[label="artillery error"]/building/defaultStorageSettings/filter/disallowedThingDefs</xpath>
+				<value>
+					<li>ThermoDamper</li>
+				</value>
 			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[race/fleshType="Mechanoid"]/statBases</xpath>
+				<value>
+					<ToxicHypothermiaSensitivity>0</ToxicHypothermiaSensitivity>
+				</value>
+			</li>
+			
+			<!--
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/MeditationFocusDef[defName="Natural"]/requiredBackstoriesAny</xpath>
 				<value>
@@ -15,33 +27,13 @@
 					</li>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/StatDef[defName="PsychicSensitivity"]/parts</xpath>
-				<value>
-					<parts>
-					  <li Class="Explorite.StatPart_ApparelStatOffset_PsychicDeafIncluded">
-						<apparelStat>PsychicSensitivityOffset</apparelStat>
-						<includeWeapon>true</includeWeapon>
-					  </li>
-					</parts>
-				</value>
-			</li>
 			<li Class="PatchOperationAttributeSet">
 				<xpath>Defs/StatDef[defName="PsychicSensitivity"]/parts/li[@Class="StatPart_ApparelStatOffset"]</xpath>
 				<attribute>Class</attribute>
 				<value>Explorite.StatPart_ApparelStatOffset_PsychicDeafIncluded</value>
 			</li>
-		</operations>
-	</Operation>
-	
-	
--->
-				
-				
-				
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
+			-->
+			
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ResearchProjectDef[(
 						defName="Autodoors" or 
@@ -77,26 +69,16 @@
 					<li>CentaurStartTechprints</li>
 				</value>
 			</li>
-		</operations>
-	</Operation>
-				
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
+			
+			
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[(recipeMaker)]/stuffCategories</xpath>
 				<value>
 					<li>Orangice</li>
 				</value>
 			</li>
-		</operations>
-	</Operation>
-	
-	
-	
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
+			
+			
 			<!--<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[
 						defName="OrbitalTargeterBombardment" or 
@@ -138,6 +120,7 @@
 					<offset>(-0.3, -0.25)</offset>
 				</value>
 			</li>
+
 		</operations>
 	</Operation>
 </Patch>
