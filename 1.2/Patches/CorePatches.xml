@@ -1,126 +1,139 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationSequence">
+	<!--
+	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<operations>
-			
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[label="artillery error"]/building/defaultStorageSettings/filter/disallowedThingDefs</xpath>
-				<value>
-					<li>ThermoDamper</li>
-				</value>
+		<xpath>Defs/ThingDef[label="artillery error"]/building/defaultStorageSettings/filter/disallowedThingDefs</xpath>
+		<value>
+			<li>ThermoDamper</li>
+		</value>
+	</Operation>-->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[race/fleshType="Mechanoid"]/statBases</xpath>
+		<value>
+			<ToxicHypothermiaSensitivity>0</ToxicHypothermiaSensitivity>
+		</value>
+	</Operation>
+	
+	<!--
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/MeditationFocusDef[defName="Natural"]/requiredBackstoriesAny</xpath>
+		<value>
+			<li>
+				<categoryName>CentaurBackstories</categoryName>
+				<slot>Childhood</slot>
 			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[race/fleshType="Mechanoid"]/statBases</xpath>
-				<value>
-					<ToxicHypothermiaSensitivity>0</ToxicHypothermiaSensitivity>
-				</value>
-			</li>
-			
-			<!--
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/MeditationFocusDef[defName="Natural"]/requiredBackstoriesAny</xpath>
-				<value>
-					<li>
-						<categoryName>CentaurBackstories</categoryName>
-						<slot>Childhood</slot>
-					</li>
-				</value>
-			</li>
-			<li Class="PatchOperationAttributeSet">
-				<xpath>Defs/StatDef[defName="PsychicSensitivity"]/parts/li[@Class="StatPart_ApparelStatOffset"]</xpath>
-				<attribute>Class</attribute>
-				<value>Explorite.StatPart_ApparelStatOffset_PsychicDeafIncluded</value>
-			</li>
-			-->
-			
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ResearchProjectDef[(
-						defName="Autodoors" or 
-						defName="Batteries" or 
-						defName="SolarPanels" or 
-						defName="ColoredLights" or 
-						defName="ComplexFurniture" or
-						
-						defName="CataphractArmor") 
-					and not (tags)]</xpath>
-				<value>
-					<tags>
-					</tags>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ResearchProjectDef[
-						defName="Autodoors" or 
-						defName="Batteries" or 
-						defName="SolarPanels" or 
-						defName="ColoredLights" or 
-						defName="ComplexFurniture"]
-					/tags</xpath>
-				<value>
-					<li>CentaurStart</li>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ResearchProjectDef[
-						defName="CataphractArmor"]
-					/tags</xpath>
-				<value>
-					<li>CentaurStartTechprints</li>
-				</value>
-			</li>
-			
-			
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[(recipeMaker)]/stuffCategories</xpath>
-				<value>
-					<li>Orangice</li>
-				</value>
-			</li>
-			
-			
-			<!--<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[
-						defName="OrbitalTargeterBombardment" or 
-						defName="OrbitalTargeterPowerBeam" or 
-						defName="OrbitalTargeterMechCluster" or 
-						defName="BroadshieldPack"]
-					/apparel/wornGraphicData</xpath>
-				<value>
-					<scale>(0.4,0.4)</scale>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[
-						defName="Apparel_PackJump"]
-					/apparel/wornGraphicData</xpath>
-				<value>
-					<scale>(0.75,0.75)</scale>
-				</value>
-			</li>-->
-			
-			
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[
-						defName="OrbitalTargeterBombardment" or 
-						defName="OrbitalTargeterPowerBeam" or 
-						defName="OrbitalTargeterMechCluster"]
-					/apparel/wornGraphicData/north</xpath>
-				<value>
-					<offset>(0.25, -0.25)</offset>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[
-						defName="OrbitalTargeterBombardment" or 
-						defName="OrbitalTargeterPowerBeam" or 
-						defName="OrbitalTargeterMechCluster"]
-					/apparel/wornGraphicData/south</xpath>
-				<value>
-					<offset>(-0.3, -0.25)</offset>
-				</value>
-			</li>
-
-		</operations>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/StatDef[defName="PsychicSensitivity"]/parts/li[@Class="StatPart_ApparelStatOffset"]</xpath>
+		<attribute>Class</attribute>
+		<value>Explorite.StatPart_ApparelStatOffset_PsychicDeafIncluded</value>
+	</Operation>
+	-->
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ResearchProjectDef[(
+				defName="Autodoors" or 
+				defName="Batteries" or 
+				defName="SolarPanels" or 
+				defName="ColoredLights" or 
+				defName="ComplexFurniture" or
+				
+				defName="CataphractArmor") 
+			and not (tags)]</xpath>
+		<value>
+			<tags>
+			</tags>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ResearchProjectDef[
+				defName="Autodoors" or 
+				defName="Batteries" or 
+				defName="SolarPanels" or 
+				defName="ColoredLights" or 
+				defName="ComplexFurniture"]
+			/tags</xpath>
+		<value>
+			<li>CentaurStart</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ResearchProjectDef[
+				defName="CataphractArmor"]
+			/tags</xpath>
+		<value>
+			<li>CentaurStartTechprints</li>
+		</value>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[((recipeMaker) or (tools) or (apparel) or @ParentName="SculptureBase") and (costStuffCount > 0) and not (stuffCategories)]</xpath>
+		<value>
+			<stuffCategories />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[((recipeMaker) or (tools) or (apparel) or @ParentName="SculptureBase") and (costStuffCount > 0)]/stuffCategories</xpath>
+		<value>
+			<li>Orangice</li>
+		</value>
+	</Operation>
+	
+	
+	<!--
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[
+				defName="OrbitalTargeterBombardment" or 
+				defName="OrbitalTargeterPowerBeam" or 
+				defName="OrbitalTargeterMechCluster" or 
+				defName="BroadshieldPack"]
+			/apparel/wornGraphicData</xpath>
+		<value>
+			<scale>(0.4,0.4)</scale>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[
+				defName="Apparel_PackJump"]
+			/apparel/wornGraphicData</xpath>
+		<value>
+			<scale>(0.75,0.75)</scale>
+		</value>
+	</Operation>
+	-->
+	
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[
+				defName="OrbitalTargeterBombardment" or 
+				defName="OrbitalTargeterPowerBeam" or 
+				defName="OrbitalTargeterMechCluster"]
+			/apparel/wornGraphicData/north</xpath>
+		<value>
+			<offset>(0.25, -0.25)</offset>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[
+				defName="OrbitalTargeterBombardment" or 
+				defName="OrbitalTargeterPowerBeam" or 
+				defName="OrbitalTargeterMechCluster"]
+			/apparel/wornGraphicData/south</xpath>
+		<value>
+			<offset>(-0.3, -0.25)</offset>
+		</value>
 	</Operation>
 </Patch>
