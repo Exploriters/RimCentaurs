@@ -5,8 +5,8 @@
   <Orangice_Blue.stuffProps.stuffAdjective>蓝冰制</Orangice_Blue.stuffProps.stuffAdjective>
 
   <Orangice.label>橙冰</Orangice.label>
-  <Orangice.description>一种强大而罕见的物质，像冰一样但却是橙色的而不会熔化。能够被塑造成几乎任何形态，但真的需要耗费很长时间。</Orangice.description>
-  <Orangice.stuffProps.stuffAdjective>橙冰制</Orangice.stuffProps.stuffAdjective>
+  <Orangice.description>一种强大而不同寻常的超流体材料，在接受合适的操纵时能够被塑造成几乎任何形态，但真的需要耗费很长时间来实施。这些材料仍然比玻璃钢更坚固，具有近乎完美的生物兼容性，并在闲置时表现惰性。它的来历对于所有人来说都是个迷。</Orangice.description>
+  <Orangice.stuffProps.stuffAdjective>橙冰</Orangice.stuffProps.stuffAdjective>
 
   <Orangice_Compound.label>复合冰</Orangice_Compound.label>
   <Orangice_Compound.description>一种强大而罕见的物质，像冰一样但却是橙色的而不会熔化。能够被塑造成几乎任何形态，但真的需要耗费很长时间。\n\n这一变种已经做好了被塑形的准备，并且相当轻盈。</Orangice_Compound.description>
@@ -17,6 +17,6 @@
   <ThermoDamper.comps.CompUsable.useLabel>引爆失温器</ThermoDamper.comps.CompUsable.useLabel>
 
   <ComponentArchotech.label>古代零部件</ComponentArchotech.label>
-  <ComponentArchotech.description>各式各样的古代科技部件，包含超导体、物质操纵器、反熵电池、超流体材料、心灵共鸣设备、基因补丁器，等等。虽然其效用不如未被拆解的原装古代神器，但可以按需被设计成任何工具。这些材料仍然比玻璃钢更坚固，受到伤害时也会持续自我修复。它的内部结构对于所有人来说都是个迷，但有流言称这些部件实际上是具有知性的，并且被多个文化视为一个伟大的存在的肢体。</ComponentArchotech.description>
+  <ComponentArchotech.description>各式各样的古代科技部件，包含超导体、物质操纵器、反熵电池、超流体材料、心灵共鸣设备、基因补丁器，等等。虽然其效用不如未被拆解的原装古代神器，但可以按需被设计成任何工具。这些材料仍然比玻璃钢更坚固，具有近乎完美的生物兼容性，受到伤害时也会持续自我修复。它的内部结构对于所有人来说都是个迷，但有流言称这些部件实际上是具有知性的，并且被多个文化视为一个伟大的存在的肢体。</ComponentArchotech.description>
 	
 </LanguageData>

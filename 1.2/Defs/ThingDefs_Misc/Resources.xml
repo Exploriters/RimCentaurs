@@ -4,7 +4,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ComponentArchotech</defName>
     <label>archotech component</label>
-    <description>Miscellaneous of archotech components that including superconductors, matter manipulators, anti-entropic batteries, superfluid materials, psychic symbiosis drives, genetic patchers, et cetera. Although it may not as powerful as original archotech artifacts that have not been dismantled, these components can be shaped into any kind of tool on demand. It's still harder to damage than plasteel, also repairs itself over time if it is harmed. Its internal workings are a mystery to all minds, but according to myth that these components are actually sapiential existence, and are considered as physical extremities of a greatness spirit by multiple cultures.</description>
+    <description>Miscellaneous of archotech components that including superconductors, matter manipulators, anti-entropic batteries, superfluid materials, psychic symbiosis drives, genetic patchers, et cetera. Although it may not as powerful as original archotech artifacts that have not been dismantled, these components can be shaped into any kind of tool on demand. It's still harder to damage than plasteel, nearly perfect biocompatibility, also repairs itself over time if it is harmed. Its internal workings are a mystery to all minds, but according to myth that these components are actually sapiential existence, and are considered as physical extremities of a greatness spirit by multiple cultures.</description>
     <graphicData>
       <texPath>Things/Item/Resource/ComponentArchotech</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>

@@ -7,8 +7,8 @@
 	
   <ThingDef ParentName="ResourceBase" Name="OrangiceBase">
     <defName>Orangice</defName>
-    <label>orangice</label>
-    <description>A powerful rare material, icy stuff but orange and doesn't melt. Can be shaped into nearly any form, but takes really long time to do this.</description>
+    <label>orange ice</label>
+    <description>A powerful exotic superfluid material, can be shaped into nearly any form while under an appropriate manipulation, but takes really long time to preform. It is even harder to damage than plasteel, perfectly biocompatible, and inertia while idle. Its origin is a mystery to all minds.</description>
     <graphicData>
       <!--<texPath>Things/Item/Resource/Orangice</texPath>-->
       <texPath>Things/Item/Resource/Bluice</texPath>
@@ -74,7 +74,7 @@
         <ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
         <MedicalTendQualityOffset>0.05</MedicalTendQualityOffset>
         <SurgerySuccessChanceFactor>1.05</SurgerySuccessChanceFactor>
-        <DeteriorationRate>0.05</DeteriorationRate>
+        <DeteriorationRate>0</DeteriorationRate>
       </statFactors>
       <!-- <smeltable>false</smeltable> -->
     </stuffProps>
