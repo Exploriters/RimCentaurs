@@ -19,4 +19,15 @@
     </hediffGivers>
   </HediffGiverSetDef>
 
+  <HediffGiverSetDef>
+    <defName>Centaur</defName>
+    <hediffGivers>
+      
+      <li Class="Explorite.HediffGiver_EnsureForAlways">
+        <hediff>CentaurHiddenEffect</hediff>
+      </li>
+	  
+    </hediffGivers>
+  </HediffGiverSetDef>
+
 </Defs>

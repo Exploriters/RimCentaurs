@@ -12,16 +12,16 @@
       <li Class="Explorite.CompProperties_PawnShield" />
       <li Class="Explorite.CompProperties_PawnRepairApparelsOvertime">
         <ticksBetweenHeal>3000</ticksBetweenHeal>
-	  </li>
+      </li>
       <li Class="Explorite.CompProperties_PassiveMeditationFocusGain">
         <focusPerDay>1</focusPerDay>
-	  </li>
+      </li>
       <li Class="Explorite.CompProperties_EnsureAbility">
         <abilities>
           <li>MassPsychicDeafCentaur</li>
-		</abilities>
-	  </li>
-	</comps>
+        </abilities>
+      </li>
+    </comps>
     <tradeTags>
       <!-- <li>AnimalInsectSpace</li> -->
       <!-- To allows Centaurs survive in SOS2 Space. I didn't have anyother choice. -->
@@ -29,7 +29,7 @@
 
     <alienRace>
       <generalSettings>
-		<!-- <useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories> -->
+        <!-- <useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories> -->
         <immuneToAge>true</immuneToAge>
         <allowHumanBios>true</allowHumanBios>
         <maxDamageForSocialfight>7</maxDamageForSocialfight>
@@ -41,6 +41,12 @@
 			<li>HospitalBed</li>
 			<li>BedrollDouble</li>
 		</validBeds>-->
+        <!--<chemicalSettings>
+          <li>
+            <chemical>Luciferium</chemical>
+            <ingestible>false</ingestible>
+          </li>
+        </chemicalSettings>-->
 
         <forcedRaceTraitEntries>
           <li>
@@ -49,163 +55,217 @@
           </li>
         </forcedRaceTraitEntries>
         <disallowedTraits>
-          <li><defName>BodyPurist</defName></li>
-          <li><defName>ShootingAccuracy</defName></li>
-          <li><defName>Brawler</defName></li>
-          <li><defName>Wimp</defName></li>
-          <li><defName>Xenophobia</defName></li>
-		  
-		  <li><defName>BodyPurist</defName></li>
-		  <li><defName>Nudist</defName></li>
-		  <li><defName>Bloodlust</defName></li>
-		  <li><defName>Psychopath</defName></li>
-		  <li><defName>Cannibal</defName></li>
-		  <li><defName>Abrasive</defName></li>
-		  <li><defName>Brawler</defName></li>
-		  <li><defName>NightOwl</defName></li>
-		  <li><defName>Greedy</defName></li>
-		  <li><defName>Jealous</defName></li>
-		  <li><defName>Ascetic</defName></li>
-		  <li><defName>Gay</defName></li>
-		  <li><defName>AnnoyingVoice</defName></li>
-		  <li><defName>CreepyBreathing</defName></li>
-		  <li><defName>Pyromaniac</defName></li>
-		  <li><defName>Wimp</defName></li>
-		  <li><defName>DislikesMen</defName></li>
-		  <li><defName>DislikesWomen</defName></li>
-		  <li><defName>Gourmand</defName></li>
-		  
-		  <li><defName>GreatMemory</defName></li>
-		  <li><defName>Undergrounder</defName></li>
-		  <li><defName>Tough</defName></li>
-		  
-		  <li>
-			<defName>NaturalMood</defName>
-			<degree>1</degree>
-		  </li>
-		  <li>
-			<defName>NaturalMood</defName>
-			<degree>-1</degree>
-		  </li>
-		  
-		  <li>
-			<defName>DrugDesire</defName>
-			<degree>2</degree>
-		  </li>
-		  <li>
-			<defName>DrugDesire</defName>
-			<degree>1</degree>
-		  </li>
-		  <li>
-			<defName>Nerves</defName>
-			<degree>-1</degree>
-		  </li>
-		  <li>
-			<defName>Nerves</defName>
-			<degree>-2</degree>
-		  </li>
-		  <li>
-			<defName>Industriousness</defName>
-			<degree>-1</degree>
-		  </li>
-		  <li>
-			<defName>Industriousness</defName>
-			<degree>-2</degree>
-		  </li>
-		  <li>
-			<defName>PsychicSensitivity</defName>
-			<degree>-2</degree>
-		  </li>
-		  <li>
-			<defName>PsychicSensitivity</defName>
-			<degree>-1</degree>
-		  </li>
-		  <li>
-			<defName>PsychicSensitivity</defName>
-			<degree>1</degree>
-		  </li>
-		  <li>
-			<defName>PsychicSensitivity</defName>
-			<degree>2</degree>
-		  </li>
-		  <li>
-			<defName>ShootingAccuracy</defName>
-			<degree>1</degree>
-		  </li>
-		  <li>
-			<defName>ShootingAccuracy</defName>
-			<degree>-1</degree>
-		  </li>
-		  <li>
-			<defName>Beauty</defName>
-			<degree>-1</degree>
-		  </li>
-		  <li>
-			<defName>Beauty</defName>
-			<degree>-2</degree>
-		  </li>
-		  <li>
-			<defName>Immunity</defName>
-			<degree>-1</degree>
-		  </li>
-		  <li>
-			<defName>Xenophobia</defName>
-		  </li>
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  <li>
-			<defName>Bisexual</defName>
-		  </li>
-		  <li>
-			<defName>TooSmart</defName>
-		  </li>
-		  <li>
-			<defName>Neurotic</defName>
-			<degree>1</degree>
-		  </li>
-		  <li>
-			<defName>Neurotic</defName>
-			<degree>2</degree>
-		  </li>
-		  <li>
-			<defName>Nerves</defName>
-			<degree>-2</degree>
-		  </li>
-		  <li>
-			<defName>Nerves</defName>
-			<degree>-1</degree>
-		  </li>
-		  <li>
-			<defName>Nerves</defName>
-			<degree>1</degree>
-		  </li>
-		  <li>
-			<defName>Nerves</defName>
-			<degree>2</degree>
-		  </li>
-		  <li>
-			<defName>SpeedOffset</defName>
-			<degree>-1</degree>
-		  </li>
-		  <li>
-			<defName>SpeedOffset</defName>
-			<degree>1</degree>
-		  </li>
-		  <li>
-			<defName>SpeedOffset</defName>
-			<degree>2</degree>
-		  </li>
-		  <li>
-			<defName>SlowLearner</defName>
-		  </li>
-		  
-		  
+          <li>
+            <defName>BodyPurist</defName>
+          </li>
+          <li>
+            <defName>ShootingAccuracy</defName>
+          </li>
+          <li>
+            <defName>Brawler</defName>
+          </li>
+          <li>
+            <defName>Wimp</defName>
+          </li>
+          <li>
+            <defName>Xenophobia</defName>
+          </li>
+
+          <li>
+            <defName>BodyPurist</defName>
+          </li>
+          <li>
+            <defName>Nudist</defName>
+          </li>
+          <li>
+            <defName>Bloodlust</defName>
+          </li>
+          <li>
+            <defName>Psychopath</defName>
+          </li>
+          <li>
+            <defName>Cannibal</defName>
+          </li>
+          <li>
+            <defName>Abrasive</defName>
+          </li>
+          <li>
+            <defName>Brawler</defName>
+          </li>
+          <li>
+            <defName>NightOwl</defName>
+          </li>
+          <li>
+            <defName>Greedy</defName>
+          </li>
+          <li>
+            <defName>Jealous</defName>
+          </li>
+          <li>
+            <defName>Ascetic</defName>
+          </li>
+          <li>
+            <defName>Gay</defName>
+          </li>
+          <li>
+            <defName>AnnoyingVoice</defName>
+          </li>
+          <li>
+            <defName>CreepyBreathing</defName>
+          </li>
+          <li>
+            <defName>Pyromaniac</defName>
+          </li>
+          <li>
+            <defName>Wimp</defName>
+          </li>
+          <li>
+            <defName>DislikesMen</defName>
+          </li>
+          <li>
+            <defName>DislikesWomen</defName>
+          </li>
+          <li>
+            <defName>Gourmand</defName>
+          </li>
+
+          <li>
+            <defName>GreatMemory</defName>
+          </li>
+          <li>
+            <defName>Undergrounder</defName>
+          </li>
+          <li>
+            <defName>Tough</defName>
+          </li>
+
+          <li>
+            <defName>NaturalMood</defName>
+            <degree>1</degree>
+          </li>
+          <li>
+            <defName>NaturalMood</defName>
+            <degree>-1</degree>
+          </li>
+
+          <li>
+            <defName>DrugDesire</defName>
+            <degree>2</degree>
+          </li>
+          <li>
+            <defName>DrugDesire</defName>
+            <degree>1</degree>
+          </li>
+          <li>
+            <defName>Nerves</defName>
+            <degree>-1</degree>
+          </li>
+          <li>
+            <defName>Nerves</defName>
+            <degree>-2</degree>
+          </li>
+          <li>
+            <defName>Industriousness</defName>
+            <degree>-1</degree>
+          </li>
+          <li>
+            <defName>Industriousness</defName>
+            <degree>-2</degree>
+          </li>
+          <li>
+            <defName>PsychicSensitivity</defName>
+            <degree>-2</degree>
+          </li>
+          <li>
+            <defName>PsychicSensitivity</defName>
+            <degree>-1</degree>
+          </li>
+          <li>
+            <defName>PsychicSensitivity</defName>
+            <degree>1</degree>
+          </li>
+          <li>
+            <defName>PsychicSensitivity</defName>
+            <degree>2</degree>
+          </li>
+          <li>
+            <defName>ShootingAccuracy</defName>
+            <degree>1</degree>
+          </li>
+          <li>
+            <defName>ShootingAccuracy</defName>
+            <degree>-1</degree>
+          </li>
+          <li>
+            <defName>Beauty</defName>
+            <degree>-1</degree>
+          </li>
+          <li>
+            <defName>Beauty</defName>
+            <degree>-2</degree>
+          </li>
+          <li>
+            <defName>Immunity</defName>
+            <degree>-1</degree>
+          </li>
+          <li>
+            <defName>Xenophobia</defName>
+          </li>
+
+
+
+
+
+
+
+
+          <li>
+            <defName>Bisexual</defName>
+          </li>
+          <li>
+            <defName>TooSmart</defName>
+          </li>
+          <li>
+            <defName>Neurotic</defName>
+            <degree>1</degree>
+          </li>
+          <li>
+            <defName>Neurotic</defName>
+            <degree>2</degree>
+          </li>
+          <li>
+            <defName>Nerves</defName>
+            <degree>-2</degree>
+          </li>
+          <li>
+            <defName>Nerves</defName>
+            <degree>-1</degree>
+          </li>
+          <li>
+            <defName>Nerves</defName>
+            <degree>1</degree>
+          </li>
+          <li>
+            <defName>Nerves</defName>
+            <degree>2</degree>
+          </li>
+          <li>
+            <defName>SpeedOffset</defName>
+            <degree>-1</degree>
+          </li>
+          <li>
+            <defName>SpeedOffset</defName>
+            <degree>1</degree>
+          </li>
+          <li>
+            <defName>SpeedOffset</defName>
+            <degree>2</degree>
+          </li>
+          <li>
+            <defName>SlowLearner</defName>
+          </li>
+
+
         </disallowedTraits>
 
         <alienPartGenerator>
@@ -218,7 +278,7 @@
           <bodyAddons>
             <li Class="Explorite.BodyAddon_MX">
               <drawSize>1</drawSize>
-			  <colorChannel>hair</colorChannel>
+              <colorChannel>hair</colorChannel>
               <path>Things/Centaur/Ears/EarLeft</path>
               <bodyPart>left ear</bodyPart>
               <inFrontOfBody>true</inFrontOfBody>
@@ -289,7 +349,7 @@
 
             <li Class="Explorite.BodyAddon_MX">
               <drawSize>1</drawSize>
-			  <colorChannel>hair</colorChannel>
+              <colorChannel>hair</colorChannel>
               <path>Things/Centaur/Ears/EarRight</path>
               <bodyPart>right ear</bodyPart>
               <inFrontOfBody>true</inFrontOfBody>
@@ -360,7 +420,7 @@
 
             <li Class="Explorite.BodyAddon_MX">
               <drawSize>1</drawSize>
-			  <colorChannel>hair</colorChannel>
+              <colorChannel>hair</colorChannel>
               <path>Things/Centaur/Tail/Tail</path>
               <bodyPart>tail</bodyPart>
               <inFrontOfBody>false</inFrontOfBody>
@@ -447,14 +507,14 @@
 					</options>- ->
 
 				</alienskincolorgen>-->
-		  <!--<alienhaircolorgen Class="Explorite.ColorGenerator_CentaurHair"/>-->
-		  <colorChannels>
-				<li>
-					<name>hair</name>
-					<first Class="Explorite.ColorGenerator_CentaurHair"/>
-					<second Class="Explorite.ColorGenerator_CentaurHair"/>
-				</li>
-			</colorChannels>
+          <!--<alienhaircolorgen Class="Explorite.ColorGenerator_CentaurHair"/>-->
+          <colorChannels>
+            <li>
+              <name>hair</name>
+              <first Class="Explorite.ColorGenerator_CentaurHair"/>
+              <second Class="Explorite.ColorGenerator_CentaurHair"/>
+            </li>
+          </colorChannels>
           <!--<useSkincolorForHair>false</useSkincolorForHair>-->
           <customHeadDrawSize>(1, 1)</customHeadDrawSize>
           <customDrawSize>(1.35, 1.35)</customDrawSize>
@@ -543,10 +603,10 @@
 
       </thoughtSettings>
       <hairSettings>
-			<!-- <getsGreyAt>93.75</getsGreyAt> -->
-			<!-- <getsGreyAt>2147483647</getsGreyAt> -->
-			<!-- <getsGreyAt>200.55</getsGreyAt> -->
-		</hairSettings>
+        <!-- <getsGreyAt>93.75</getsGreyAt> -->
+        <!-- <getsGreyAt>2147483647</getsGreyAt> -->
+        <!-- <getsGreyAt>200.55</getsGreyAt> -->
+      </hairSettings>
 
       <relationSettings>
         <relationChanceModifierLover>0</relationChanceModifierLover>
@@ -588,14 +648,14 @@
           <!--<li>Apparel_CentaurCollarShirt_Raised</li>-->
           <li>Apparel_CentaurShieldArmor</li>
           <li>Apparel_CentaurAntimassBelt</li>
-		  
-          <li>Apparel_CentaurHeaddress</li>
+
+          <!--<li>Apparel_CentaurHeaddress</li>-->
           <li>Apparel_ArmorReconCentaur</li>
           <li>Apparel_ArmorMarineCentaur</li>
-          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorCataphractCentaur</li>
-		  
-          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsyfocusCentaursuit</li>
-		  
+          <li ExEx="Royalty">Apparel_ArmorCataphractCentaur</li>
+
+          <li ExEx="Royalty">Apparel_PsyfocusCentaursuit</li>
+
           <!--<li>Apparel_CentaurArchotechArmor</li>-->
         </apparelList>
         <whiteApparelList>
@@ -611,40 +671,40 @@
           <li>Apparel_ShieldBelt</li>
           <li>Apparel_SmokepopBelt</li>
 
-		  
-		  
-          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PackBroadshield</li>
-          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PackJump</li>
-          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_Gunlink</li>
-		  
-          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_Beret</li>
-          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_Coronet</li>
-          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_Crown</li>
-          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_CrownStellic</li>
-          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_HatHood</li>
-          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_HatLadies</li>
-          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_HatTop</li>
-		  
-          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_EltexSkullcap</li>
-          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsyfocusHelmet</li>
-		  
+
+
+          <li ExEx="Royalty">Apparel_PackBroadshield</li>
+          <li ExEx="Royalty">Apparel_PackJump</li>
+          <li ExEx="Royalty">Apparel_Gunlink</li>
+
+          <li ExEx="Royalty">Apparel_Beret</li>
+          <li ExEx="Royalty">Apparel_Coronet</li>
+          <li ExEx="Royalty">Apparel_Crown</li>
+          <li ExEx="Royalty">Apparel_CrownStellic</li>
+          <li ExEx="Royalty">Apparel_HatHood</li>
+          <li ExEx="Royalty">Apparel_HatLadies</li>
+          <li ExEx="Royalty">Apparel_HatTop</li>
+
+          <li ExEx="Royalty">Apparel_EltexSkullcap</li>
+          <li ExEx="Royalty">Apparel_PsyfocusHelmet</li>
+
           <li>Apparel_ArmorHelmetRecon</li>
           <li>Apparel_PowerArmorHelmet</li>
-          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphract</li>
-		  
+          <li ExEx="Royalty">Apparel_ArmorHelmetCataphract</li>
+
           <li>Apparel_ArmorHelmetReconPrestige</li>
           <li>Apparel_ArmorMarineHelmetPrestige</li>
-          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphractPrestige</li>
+          <li ExEx="Royalty">Apparel_ArmorHelmetCataphractPrestige</li>
           <li>Apparel_ArmorHelmetReconClocked</li>
           <li>Apparel_ArmorMarineHelmetClocked</li>
-          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphractClocked</li>
-		  
+          <li ExEx="Royalty">Apparel_ArmorHelmetCataphractClocked</li>
+
           <!--<li>Apparel_PowerArmorHelmet_Clocked</li>-->
-		  
+
           <li>OrbitalTargeterBombardment</li>
           <li>OrbitalTargeterPowerBeam</li>
           <li>TornadoGenerator</li>
-          <li MayRequire="Ludeon.RimWorld.Royalty">OrbitalTargeterMechCluster</li>
+          <li ExEx="Royalty">OrbitalTargeterMechCluster</li>
           <li>Apparel_PsychicInsanityLance</li>
           <li>Apparel_PsychicShockLance</li>
         </whiteApparelList>
@@ -705,7 +765,7 @@
       <MeleeDodgeChance>1.25</MeleeDodgeChance>
       <ToxicSensitivity>0.5</ToxicSensitivity>
       <ToxicHypothermiaSensitivity>0</ToxicHypothermiaSensitivity>
-	  
+
       <MaxHitPoints>250</MaxHitPoints>
       <DeteriorationRate>0.0</DeteriorationRate>
 
@@ -723,12 +783,12 @@
       <TrainAnimalChance>1.5</TrainAnimalChance>
       <!-- <HungerRateMultiplier>1.0</HungerRateMultiplier> -->
       <CarryingCapacity>150</CarryingCapacity>
-	  
+
       <PsychicSensitivity>1.8</PsychicSensitivity>
-      <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">90</PsychicEntropyMax>
-      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">1.62</PsychicEntropyRecoveryRate>
-      <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">1.5</MeditationFocusGain>
-	  
+      <PsychicEntropyMax ExEx="Royalty">90</PsychicEntropyMax>
+      <PsychicEntropyRecoveryRate ExEx="Royalty">1.62</PsychicEntropyRecoveryRate>
+      <MeditationFocusGain ExEx="Royalty">1.5</MeditationFocusGain>
+
       <PawnShieldRechargeRate>0</PawnShieldRechargeRate>
       <PawnShieldEnergyMax>0</PawnShieldEnergyMax>
     </statBases>
@@ -882,10 +942,13 @@
       <leatherDef>Leather_Human</leatherDef>
       <body>Centaur</body>
       <!--<Mass>106.5</Mass>-->
-      <baseBodySize>3.0</baseBodySize><!-- 1.5 -->
-      <baseHealthScale>3.0</baseHealthScale><!-- 1.2 -->
+      <baseBodySize>3.0</baseBodySize>
+      <!-- 1.5 -->
+      <baseHealthScale>3.0</baseHealthScale>
+      <!-- 1.2 -->
       <foodType>OmnivoreHuman, CarnivoreAnimal, OmnivoreAnimal, OvivoreAnimal</foodType>
-      <!-- <gestationPeriodDays>45</gestationPeriodDays> --><!-- 32.5 -->
+      <!-- <gestationPeriodDays>45</gestationPeriodDays> -->
+      <!-- 32.5 -->
       <gestationPeriodDays isNull="True" />
       <meatMarketValue>0.8</meatMarketValue>
       <useMeatFrom>Human</useMeatFrom>
@@ -962,6 +1025,7 @@
       <hediffGiverSets>
         <li>OrganicStandard_NoAgingProblem</li>
         <li>Human</li>
+        <li>Centaur</li>
       </hediffGiverSets>
     </race>
     <recipes>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <NeedDef>
+    <defName>HypothermiaAbsorption</defName>
+    <needClass>Explorite.Need_HypothermiaAbsorption</needClass>
+    <label>Hypothermia Absorption</label>
+    <description>Absorb hypothermia overtime, and allows exposing to chill for a short time.</description>
+    <listPriority>85</listPriority>
+    <major>true</major>
+    <showForCaravanMembers>true</showForCaravanMembers>
+  </NeedDef>
+  
+</Defs>

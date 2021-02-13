@@ -17,8 +17,8 @@
       <JumpRange>23.9</JumpRange>
     </statBases>
     <equippedStatOffsets>
-      <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.05</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.166</PsychicEntropyRecoveryRate>
+      <PsychicSensitivity ExEx="Royalty">0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate ExEx="Royalty">0.166</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <costList>
       <ComponentSpacer>6</ComponentSpacer>
@@ -124,8 +124,8 @@
     </statBases>
     <equippedStatOffsets>
       <MoveSpeed>-1.2</MoveSpeed>
-      <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.05</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.166</PsychicEntropyRecoveryRate>
+      <PsychicSensitivity ExEx="Royalty">0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate ExEx="Royalty">0.166</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <costList>
       <ComponentSpacer>8</ComponentSpacer>
@@ -268,7 +268,7 @@
     </thingCategories>
   </ThingDef>
   
-  <ThingDef ParentName="ApparelArmorCataphractBase" MayRequire="Ludeon.RimWorld.Royalty">
+  <ThingDef ParentName="ApparelArmorCataphractBase" ExEx="Royalty">
     <defName>Apparel_ArmorCataphractCentaur</defName>
     <tradeability>Sellable</tradeability>
     <label>centaur cataphract armor</label>
@@ -290,8 +290,8 @@
     <equippedStatOffsets>
       <Flammability>-0.68</Flammability>
       <MoveSpeed>-2.4</MoveSpeed>
-      <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.05</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.166</PsychicEntropyRecoveryRate>
+      <PsychicSensitivity ExEx="Royalty">0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate ExEx="Royalty">0.166</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <costList>
       <ComponentSpacer>12</ComponentSpacer>
@@ -501,8 +501,8 @@
       <WorkToMake>31500</WorkToMake>
     </statBases>
     <equippedStatOffsets>
-      <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.05</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.033</PsychicEntropyRecoveryRate>
+      <PsychicSensitivity ExEx="Royalty">0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate ExEx="Royalty">0.033</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <recipeMaker>
       <skillRequirements>
@@ -553,8 +553,8 @@
       <WorkToMake>10500</WorkToMake>
     </statBases>
     <equippedStatOffsets>
-      <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.05</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.033</PsychicEntropyRecoveryRate>
+      <PsychicSensitivity ExEx="Royalty">0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate ExEx="Royalty">0.033</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <recipeMaker>
       <skillRequirements>
@@ -592,7 +592,7 @@
     </thingCategories>
   </ThingDef>
 
-  <ThingDef ParentName="ApparelArmorHelmetCataphractBase" MayRequire="Ludeon.RimWorld.Royalty">
+  <ThingDef ParentName="ApparelArmorHelmetCataphractBase" ExEx="Royalty">
     <defName>Apparel_ArmorHelmetCataphractClocked</defName>
     <tradeability>Sellable</tradeability>
     <label>clocked cataphract helmet</label>
@@ -606,15 +606,16 @@
       <WorkToMake>10500</WorkToMake>
     </statBases>
     <equippedStatOffsets>
-      <PsychicSensitivity MayRequire="Ludeon.RimWorld.Royalty">0.05</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.033</PsychicEntropyRecoveryRate>
+      <PsychicSensitivity ExEx="Royalty">0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate ExEx="Royalty">0.033</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <recipeMaker>
       <skillRequirements>
         <Crafting>9</Crafting>
       </skillRequirements>
 	  <researchPrerequisites>
-		<li>CataphractArmor</li>
+		<li ExEx="Royalty">CataphractArmor</li>
+		<li ExEx="~Royalty">PoweredArmor</li>
 		<li>CentaurReverseEngineeringHumanTech</li>
 	  </researchPrerequisites>
     </recipeMaker>

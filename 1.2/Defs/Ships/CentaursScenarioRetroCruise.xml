@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<EnemyShipDef MayRequire="kentington.saveourship2">
+	<EnemyShipDef>
 		<defName>CentaursScenarioRetroCruise</defName>
 		<label>Centauiser</label>
 		<neverRandom>true</neverRandom>
