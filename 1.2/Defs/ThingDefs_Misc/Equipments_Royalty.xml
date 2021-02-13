@@ -33,6 +33,10 @@
       <PsychicEntropyRecoveryRate>0.2475</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <recipeMaker>
+	  <researchPrerequisite Inherit="False" />
+	  <researchPrerequisites>
+		<li>CentaurReverseEngineeringHumanTech</li>
+	  </researchPrerequisites>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
       <effectWorking>Smith</effectWorking>
