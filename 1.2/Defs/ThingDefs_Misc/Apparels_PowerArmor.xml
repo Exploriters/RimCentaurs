@@ -335,7 +335,8 @@
     </apparel>
     <recipeMaker>
 	  <researchPrerequisites>
-		<li>CataphractArmor</li>
+		<li ExEx="Royalty">CataphractArmor</li>
+		<li ExEx="~Royalty">PoweredArmor</li>
 		<li>CentaurReverseEngineeringHumanTech</li>
 	  </researchPrerequisites>
     </recipeMaker>

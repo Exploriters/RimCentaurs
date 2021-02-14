@@ -20,6 +20,14 @@
   <Bullet_CentaurPlasmaBlaster.label>电浆霰弹</Bullet_CentaurPlasmaBlaster.label>
   <Bullet_CentaurPlasmaBlasterSingle.label>电浆霰弹</Bullet_CentaurPlasmaBlasterSingle.label>
 
+  <Gun_CentaurFrostbrainer.label>脑冻者</Gun_CentaurFrostbrainer.label>
+  <Gun_CentaurFrostbrainer.description>一个强大的能量武器，锁定敌人的大脑并吸走热量，甚至包括机械族的仿生大脑。它不会造成全身疤痕，并在对单个目标反复使用后造成脑死亡。其上的利刃能造成严重的近战杀伤，并且也会命中时造成冻伤。</Gun_CentaurFrostbrainer.description>
+  <Gun_CentaurFrostbrainer.tools.stock.label>弹匣</Gun_CentaurFrostbrainer.tools.stock.label>
+  <Gun_CentaurFrostbrainer.tools.barrel.label>枪管</Gun_CentaurFrostbrainer.tools.barrel.label>
+  <Gun_CentaurFrostbrainer.tools.blade.label>利刃</Gun_CentaurFrostbrainer.tools.blade.label>
+  <Gun_CentaurFrostbrainer.verbs.Verb_Shoot.label>脑冻者</Gun_CentaurFrostbrainer.verbs.Verb_Shoot.label>
+  <Bullet_CentaurFrostbrainer.label>熵能激光</Bullet_CentaurFrostbrainer.label>
+
   <Bow_Trishot.label>三射弓</Bow_Trishot.label>
   <Bow_Trishot.description>一把强大的远距离重型弓，能在单次爆发射击中射出携带延迟起爆热能释放爆炸物的远距离重箭。其需要强大的双臂因而只有半人马可以使用。由于其锋利边缘和沉重的质量，这把武器也可以是一个致命的近战武器。</Bow_Trishot.description>
   <Bow_Trishot.tools.0.label>弓背</Bow_Trishot.tools.0.label>

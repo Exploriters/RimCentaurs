@@ -11,4 +11,16 @@
     <showForCaravanMembers>true</showForCaravanMembers>
   </NeedDef>
   
+  <NeedDef>
+    <defName>CentaurCreativityInspiration</defName>
+    <needClass>Explorite.Need_CentaurCreativityInspiration</needClass>
+    <label>creativity inspiration</label>
+    <description>Creativity inspiration reward for having a long time happiness.</description>
+    <listPriority>84</listPriority>
+    <scaleBar>true</scaleBar>
+    <major>false</major>
+    <showForCaravanMembers>false</showForCaravanMembers>
+    <freezeWhileSleeping>true</freezeWhileSleeping>
+  </NeedDef>
+  
 </Defs>

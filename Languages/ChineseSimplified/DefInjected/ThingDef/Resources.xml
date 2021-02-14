@@ -18,5 +18,8 @@
 
   <ComponentArchotech.label>古代零部件</ComponentArchotech.label>
   <ComponentArchotech.description>各式各样的古代科技部件，包含超导体、物质操纵器、反熵电池、超流体材料、心灵共鸣设备、基因补丁器，等等。虽然其效用不如未被拆解的原装古代神器，但可以按需被设计成任何工具。这些材料仍然比玻璃钢更坚固，具有近乎完美的生物兼容性，受到伤害时也会持续自我修复。它的内部结构对于所有人来说都是个迷，但有流言称这些部件实际上是具有知性的，并且被多个文化视为一个伟大的存在的肢体。</ComponentArchotech.description>
+
+  <TriCapacitorCell.label>放射性同位素燃料电池</TriCapacitorCell.label>
+  <TriCapacitorCell.description>由铀制成的电池组包裹，提供稳定的功率输出。这些电池可以由各种设备使用，以支持数千年的使用。</TriCapacitorCell.description>
 	
 </LanguageData>

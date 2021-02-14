@@ -473,15 +473,16 @@
     </thingCategories>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
-      <WorkToBuild>2400</WorkToBuild>
+      <MarketValue>600</MarketValue>
+      <WorkToBuild>1</WorkToBuild>
+      <WorkToMake>1</WorkToMake>
       <Mass>60</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>-15</Beauty>
     </statBases>
     <size>(2,3)</size>
     <costList>
-      <Uranium>60</Uranium>
-      <ComponentSpacer>1</ComponentSpacer>
+      <TriCapacitorCell>20</TriCapacitorCell>
     </costList>
     <comps>
       <li Class="CompProperties_Battery">
@@ -503,12 +504,39 @@
     </building>
     <researchPrerequisites>
       <li>Batteries</li>
-      <li>CentaurReverseEngineeringHumanTech</li>
     </researchPrerequisites>
     <tradeability>Sellable</tradeability>
+    <recipeMaker>
+	  <researchPrerequisite Inherit="False" />
+	  <researchPrerequisites>
+		<li>Batteries</li>
+		<li>CentaurReverseEngineeringHumanTech</li>
+	  </researchPrerequisites>
+      <workSpeedStat>ConstructionSpeed</workSpeedStat>
+      <workSkill>Construction</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <unfinishedThingDef />
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
   </ThingDef>
 
-  <ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="BuildingBase" Abstract="True">
     <defName>ArtificialHivebox</defName>
     <label>artificial hivebox</label>
     <description>Slowly producing insect jelly by breeding insects in it. If it got destroyed, it may release these dangerous mega insect everywhere.</description>

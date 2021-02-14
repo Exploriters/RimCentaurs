@@ -4,7 +4,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ComponentArchotech</defName>
     <label>archotech component</label>
-    <description>Miscellaneous of archotech components that including superconductors, matter manipulators, anti-entropic batteries, superfluid materials, psychic symbiosis drives, genetic patchers, et cetera. Although it may not as powerful as original archotech artifacts that have not been dismantled, these components can be shaped into any kind of tool on demand. It's still harder to damage than plasteel, nearly perfect biocompatibility, also repairs itself over time if it is harmed. Its internal workings are a mystery to all minds, but according to myth that these components are actually sapiential existence, and are considered as physical extremities of a greatness spirit by multiple cultures.</description>
+    <description>Miscellaneous of archotech components that include superconductors, matter manipulators, anti-entropic batteries, superfluid materials, psychic symbiosis drives, genetic patchers, et cetera. Although it may not as powerful as original archotech artifacts that have not been dismantled, these components can be shaped into any kind of tool on demand. It's still harder to damage than plasteel, nearly perfect biocompatibility, also repairs itself over time if it is harmed. Its internal workings are a mystery to all minds, but according to myth, these components are actually sapiential existence, and are considered as physical extremities of a greatness spirit by multiple cultures.</description>
     <graphicData>
       <texPath>Things/Item/Resource/ComponentArchotech</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -17,8 +17,8 @@
       <MaxHitPoints>70</MaxHitPoints>
       <MarketValue>2000</MarketValue>
       <Mass>0.6</Mass>
-      <Flammability>0.6</Flammability>
-      <DeteriorationRate>2.0</DeteriorationRate>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
     </statBases>
     <intricate>true</intricate>
     <thingCategories>
@@ -31,6 +31,73 @@
 	
     <tradeability>Sellable</tradeability>
     <techLevel>Archotech</techLevel>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>TriCapacitorCell</defName>
+    <label>radioisotope fuel cell</label>
+    <description>Packs of batteries made of uranium, which can provide a stable power output. These power cells can be used by varies of devices to support thousands years of use.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/TriCapacitor</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <costList>
+      <Uranium>60</Uranium>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <MarketValue>20</MarketValue>
+      <Mass>3</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+      <WorkToMake>2400</WorkToMake>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags />
+	
+    <tradeability>Sellable</tradeability>
+    <techLevel>Spacer</techLevel>
+    <comps>
+    </comps>
+    <recipeMaker>
+      <productCount>20</productCount>
+	  <researchPrerequisite Inherit="False" />
+	  <researchPrerequisites>
+		<li>Batteries</li>
+		<li>CentaurReverseEngineeringHumanTech</li>
+	  </researchPrerequisites>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
   </ThingDef>
   
 </Defs>

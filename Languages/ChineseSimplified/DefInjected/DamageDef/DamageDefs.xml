@@ -11,4 +11,7 @@
   <BulletHeat.label>子弹伤</BulletHeat.label>
   <BulletHeat.deathMessage>{0}被枪射杀了。</BulletHeat.deathMessage>
 
+  <BulletBrain.label>冻伤</BulletBrain.label>
+  <BulletBrain.deathMessage>{0}被冻死了。</BulletBrain.deathMessage>
+
 </LanguageData>

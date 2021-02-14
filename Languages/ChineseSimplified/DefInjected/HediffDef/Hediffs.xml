@@ -63,4 +63,7 @@
   <HyperManipulator_Dyskinesia.stages.disabled.label>残废</HyperManipulator_Dyskinesia.stages.disabled.label>
   <HyperManipulator_Dyskinesia.stages.initial.label>初现</HyperManipulator_Dyskinesia.stages.initial.label>
 
+  <BrainFrostbite.label>脑冻伤</BrainFrostbite.label>
+  <BrainFrostbite.description>由远古科技武器直接击中指定的身体部位产生的冻结组织。最终会自行治愈，不会留下疤痕。</BrainFrostbite.description>
+
 </LanguageData>

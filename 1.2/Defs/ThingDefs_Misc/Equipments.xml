@@ -508,5 +508,135 @@
   </ThingDef>
   -->
 
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_CentaurFrostbrainer</defName>
+    <label>frostbrainer</label>
+    <description>A powerful energy weapon that targets enemies brain and drain heat from them, including mechanoids artificial brain. It does not cause scars everywhere, and result in a brain death corpse in multiple use on the same target. The blade on it can deal heavy melee damage that also making frostbite on hit.</description>
+    <techLevel>Archotech</techLevel>
+    <tradeability>Sellable</tradeability>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Frostbrainer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>5</Mass>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+	  <researchPrerequisite Inherit="False"/>
+	  <researchPrerequisites>
+		<li>ChargedShot</li>
+		<li>CentaurReverseEngineeringHumanTech</li>
+	  </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <ComponentArchotech>1</ComponentArchotech>
+      <TriCapacitorCell>1</TriCapacitorCell>
+      <Steel>15</Steel>
+    </costList>
+    <weaponTags>
+      <li>CentaurSpacerGun</li>
+      <li>CentaurRanged</li>
+    </weaponTags>
+    <comps Inherit="False">
+      <li Class="CompProperties_Forbiddable"/>      
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>   
+      <li Class="CompProperties_BiocodableWeapon"/>
+      <li Class="Explorite.CompProperties_OversizedWeapon"/>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_CentaurFrostbrainer</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>56.4</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Explosion_EMP</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <requireLineOfSight>false</requireLineOfSight>
+		<accuracyTouch>1</accuracyTouch>
+		<accuracyShort>1</accuracyShort>
+		<accuracyMedium>1</accuracyMedium>
+		<accuracyLong>1</accuracyLong>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <targetParams>
+          <canTargetLocations>false</canTargetLocations>
+          <canTargetMechs>true</canTargetMechs>
+          <canTargetHumans>true</canTargetHumans>
+          <canTargetAnimals>true</canTargetAnimals>
+          <canTargetItems>false</canTargetItems>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetFires>false</canTargetFires>
+          <canTargetPawns>true</canTargetPawns>
+          <canTargetSelf>false</canTargetSelf>
+        </targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+		  <li>FrostblastMelee</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_CentaurFrostbrainer</defName>
+    <thingClass>Explorite.Bullet_Direct</thingClass>
+    <label>entropy laser</label>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Trishot</texPath>
+      <drawSize>(0,0)</drawSize>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>BulletBrain</damageDef>
+      <stoppingPower>3.05</stoppingPower>
+      <speed>500</speed>
+      <flyOverhead>true</flyOverhead>
+    </projectile>
+  </ThingDef>
   
 </Defs>

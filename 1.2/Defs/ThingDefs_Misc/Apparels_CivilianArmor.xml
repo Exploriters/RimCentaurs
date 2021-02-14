@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef Name="ArmorMachineableArtableBase" ParentName="ArmorMachineableBase" Abstract="True">
+    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeapon</nameMaker>
+        <descriptionMaker>ArtDescription_CentaurArmor</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+  </ThingDef>
+  
+  <ThingDef ParentName="ArmorSmithableBase">
+    <defName>Apparel_CentaurPlateArmor</defName>
+    <label>centaur plate armor</label>
+    <description>Overlapping solid plates of armor covering the entire body from neck to feet. Modified for a centaur wearer.</description>
+    <tradeability>Sellable</tradeability>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <researchPrerequisites>
+        <li>PlateArmor</li>
+        <li>CentaurReverseEngineeringHumanTech</li>
+      </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/CentaurPlateArmor/CentaurPlateArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>340</costStuffCount>
+    <statBases>
+      <WorkToMake>75000</WorkToMake>
+      <MaxHitPoints>580</MaxHitPoints>
+      <Mass>30</Mass>
+      <StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>30</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.8</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories Inherit="False">
+      <li>CentaurApparels</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>CentaurLegs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurPlateArmor/CentaurPlateArmor</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>CentaurMedievalMilitary</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3)</min>
+          <max>(0.5,0.5,0.5)</max>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>Apparel_CentaurFlakVest</defName>
+    <label>centaur flak vest</label>
+    <tradeability>Sellable</tradeability>
+    <description>Flak armor modified for a centaur wearer. Additional weight and materials are required when compared to humanoid vests, allowing for protection of the flanks. This armor design does not protect the limbs.</description>
+    <!--<generateCommonality>0.0</generateCommonality>-->
+    <techLevel>Industrial</techLevel>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>FlakArmor</li>
+        <li>CentaurReverseEngineeringHumanTech</li>
+      </researchPrerequisites>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/CentaurFlakVest/CentaurFlakVest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>1800</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>8</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.27</ArmorRating_Heat>
+      <Insulation_Cold>1</Insulation_Cold>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.24</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories Inherit="False">
+      <li>CentaurApparels</li>
+    </thingCategories>
+    <costList>
+      <Cloth>60</Cloth>
+      <Steel>120</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurFlakVest/CentaurFlakVest</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>CentaurIndustrialMilitaryBasic</li>
+        <li>CentaurRetroStart</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <only>(0.33,0.33,0.33)</only>
+        </li>
+        <li>
+          <only>(0.65,0.65,0.65)</only>
+        </li>
+        <li>
+          <weight>0.5</weight>
+          <min>(0.3,0.3,0.3)</min>
+          <max>(0.5,0.5,0.5)</max>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>Apparel_CentaurFlakPants</defName>
+    <label>centaur flak pants</label>
+    <tradeability>Sellable</tradeability>
+    <description>Modified pants suited to a centaur. The addition of armored plating grants effective protection from attacks without restricting movements.</description>
+    <!--<generateCommonality>0.0</generateCommonality>-->
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>FlakArmor</li>
+        <li>CentaurReverseEngineeringHumanTech</li>
+      </researchPrerequisites>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/CentaurPants/CentaurFlakPants</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>16000</WorkToMake>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Mass>8</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.10</ArmorRating_Heat>
+      <Insulation_Cold>3.5</Insulation_Cold>
+      <Insulation_Heat>1</Insulation_Heat>
+      <EquipDelay>10</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.24</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories Inherit="False">
+      <li>CentaurApparels</li>
+    </thingCategories>
+    <costList>
+      <Cloth>60</Cloth>
+      <Steel>120</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>CentaurLegs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>CentaurIndustrialMilitaryBasic</li>
+        <li>CentaurRetroStart</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <only>(0.44,0.44,0.44)</only>
+        </li>
+        <li>
+          <only>(0.62,0.62,0.62)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>Apparel_CentaurFlakJacket</defName>
+    <label>centaur flak jacket</label>
+    <tradeability>Sellable</tradeability>
+    <description>An armoured overcoat suited for a centaur. A step below plate armor, the defense offered is by no means insignificant and still doesn't impede movement.</description>
+    <!--<generateCommonality>0.0</generateCommonality>-->
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>FlakArmor</li>
+        <li>CentaurReverseEngineeringHumanTech</li>
+      </researchPrerequisites>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/CentaurFlakJacket/CentaurFlakJacket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.00</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+      <Steel>140</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <thingCategories Inherit="False">
+      <li>CentaurApparels</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>260</MaxHitPoints>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>14</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.10</ArmorRating_Heat>
+      <Insulation_Cold>14.4</Insulation_Cold>
+      <!-- like a cloth jacket -->
+      <Insulation_Heat>3</Insulation_Heat>
+      <EquipDelay>6</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.24</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurFlakJacket/CentaurFlakJacket</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>CentaurIndustrialAdvanced</li>
+        <li>CentaurRetroStart</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <only>(0.44,0.44,0.44)</only>
+        </li>
+        <li>
+          <only>(0.62,0.62,0.62)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  
+</Defs>

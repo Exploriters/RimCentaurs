@@ -164,5 +164,27 @@
     <makesAnimalsFlee>true</makesAnimalsFlee>
   </DamageDef>
 
+  <DamageDef>
+    <defName>BulletBrain</defName>
+    <label>frostbite</label>
+    <workerClass>Explorite.DamageWorker_Frostbrainer</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has succumbed to frostbite.</deathMessage>
+    <defaultDamage>1</defaultDamage>
+    <defaultStoppingPower>3.05</defaultStoppingPower>
+    <defaultArmorPenetration>2.0</defaultArmorPenetration>
+    <hediff>BrainFrostbite</hediff>
+    <hediffSkin>BrainFrostbite</hediffSkin>
+    <hediffSolid>BrainFrostbite</hediffSolid>
+    <armorCategory>Heat</armorCategory>
+    <harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
+    <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+    <impactSoundType>Electric</impactSoundType>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>false</makesAnimalsFlee>
+	
+  </DamageDef>
+
 
 </Defs>

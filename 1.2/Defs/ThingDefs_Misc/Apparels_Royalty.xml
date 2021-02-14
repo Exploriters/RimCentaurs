@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
-  <ThingDef ExEx="Royalty" Abstract="True">
+  <ThingDef ExEx="Royalty">
     <defName>Apparel_CentaurHeaddress</defName>
     <label>centaurs headdress</label>
     <description>A decorative headdress for centaur's pair of great ears.</description>
@@ -91,15 +91,15 @@
     <drawGUIOverlay>true</drawGUIOverlay>
     <altitudeLayer>Item</altitudeLayer>
     <alwaysHaulable>True</alwaysHaulable>
-    <tickerType>Rare</tickerType>
     <burnableByRecipe>true</burnableByRecipe>
     <smeltable>true</smeltable>
+    <!--<tickerType>Rare</tickerType>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
       <li Class="Explorite.CompProperties_SelfHealOvertime">
         <detlaHpPerSec>0.1</detlaHpPerSec>
 	  </li>
-    </comps>
+    </comps>-->
   </ThingDef>
   
   <ThingDef ParentName="ApparelMakeableBase" ExEx="Royalty">
@@ -183,16 +183,16 @@
 	  </researchPrerequisites>
     </recipeMaker>
 	
-    <tickerType>Rare</tickerType>
+    <!--<tickerType>Rare</tickerType>-->
     <healthAffectsPrice>false</healthAffectsPrice>
     <comps Inherit="False">
       <li Class="CompProperties_Forbiddable"/>
       <li>
         <compClass>CompColorable</compClass>
       </li>
-      <li Class="Explorite.CompProperties_SelfHealOvertime">
+      <!--<li Class="Explorite.CompProperties_SelfHealOvertime">
         <detlaHpPerSec>0.1</detlaHpPerSec>
-	  </li>
+	  </li>-->
     </comps>
   </ThingDef>
   
