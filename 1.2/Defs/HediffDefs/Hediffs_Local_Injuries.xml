@@ -7,21 +7,23 @@
     <description>Frozen tissue caused by archotech weaponry that directly hits on specified body parts. It eventually will cure by it self and not leaving scar.</description>
     <displayWound>false</displayWound>
     <comps>
-      <!--
-      <li Class="Explorite.HediffCompProperties_SeverityHalfLife">
-        <halfLife>3000</halfLife>
-      </li>
 	  <li Class="HediffCompProperties_TendDuration">
+        <compClass>Explorite.HediffComp_TendDuration_CantTend</compClass>
         <labelTendedWell>bandaged</labelTendedWell>
         <labelTendedWellInner>tended</labelTendedWellInner>
         <labelSolidTendedWell>tended</labelSolidTendedWell>
       </li>
+      <!--
       <li Class="HediffCompProperties_Infecter">
         <infectionChance>0.25</infectionChance>
       </li>
       <li Class="HediffCompProperties_GetsPermanent">
         <permanentLabel>frostbite scar</permanentLabel>
-      </li>-->
+      </li>
+      <li Class="Explorite.HediffCompProperties_SeverityHalfLife">
+        <halfLife>60000</halfLife>
+      </li>
+	  -->
     </comps>
     <injuryProps>
       <painPerSeverity>0.0125</painPerSeverity>

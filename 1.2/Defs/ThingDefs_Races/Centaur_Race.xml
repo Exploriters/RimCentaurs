@@ -32,6 +32,7 @@
         <!-- <useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories> -->
         <immuneToAge>true</immuneToAge>
         <allowHumanBios>true</allowHumanBios>
+		<maleGenderProbability>0.5</maleGenderProbability>
         <maxDamageForSocialfight>7</maxDamageForSocialfight>
         <canLayDown>true</canLayDown>
         <!--<validBeds>
@@ -41,232 +42,90 @@
 			<li>HospitalBed</li>
 			<li>BedrollDouble</li>
 		</validBeds>-->
-        <!--<chemicalSettings>
+        <chemicalSettings>
           <li>
             <chemical>Luciferium</chemical>
             <ingestible>false</ingestible>
           </li>
-        </chemicalSettings>-->
-
-        <forcedRaceTraitEntries>
+        </chemicalSettings>
+		
+		<additionalTraits>-10~-10</additionalTraits>
+        <!--<forcedRaceTraitEntries>
           <li>
             <defName>Asexual</defName>
             <chance>100</chance>
           </li>
-        </forcedRaceTraitEntries>
-        <disallowedTraits>
-          <li>
-            <defName>BodyPurist</defName>
-          </li>
-          <li>
-            <defName>ShootingAccuracy</defName>
-          </li>
-          <li>
-            <defName>Brawler</defName>
-          </li>
-          <li>
-            <defName>Wimp</defName>
-          </li>
-          <li>
-            <defName>Xenophobia</defName>
-          </li>
+        </forcedRaceTraitEntries>-->
+        <!--<disallowedTraits>
+          <li><defName>Asexual</defName></li>
+          <li><defName>Kind</defName></li>
+          <li><defName>Transhumanist</defName></li>
+		  
+          <li><defName>FastLearner</defName></li>
+          <li><defName>Nimble</defName></li>
+          <li><defName>QuickSleeper</defName></li>
+          <li><defName>TorturedArtist</defName></li>
+		  
+          <li><defName>Xenophobia</defName></li>
+          <li><defName>Brawler</defName></li>
+          <li><defName>Wimp</defName></li>
+          <li><defName>BodyPurist</defName></li>
+          <li><defName>Nudist</defName></li>
+          <li><defName>Bloodlust</defName></li>
+          <li><defName>Psychopath</defName></li>
+          <li><defName>Cannibal</defName></li>
+          <li><defName>Abrasive</defName></li>
+          <li><defName>NightOwl</defName></li>
+          <li><defName>Greedy</defName></li>
+          <li><defName>Jealous</defName></li>
+          <li><defName>Ascetic</defName></li>
+          <li><defName>Gay</defName></li>
+          <li><defName>Bisexual</defName></li>
+          <li><defName>Pyromaniac</defName></li>
+          <li><defName>AnnoyingVoice</defName></li>
+          <li><defName>CreepyBreathing</defName></li>
+          <li><defName>DislikesMen</defName></li>
+          <li><defName>DislikesWomen</defName></li>
+          <li><defName>Gourmand</defName></li>
+          <li><defName>GreatMemory</defName></li>
+          <li><defName>Undergrounder</defName></li>
+          <li><defName>Tough</defName></li>
+		  
+          <li><defName>TooSmart</defName></li>
+          <li><defName>SlowLearner</defName></li>
+			
+          <li><defName>DrugDesire</defName>
+            <degree>0</degree></li>
 
-          <li>
-            <defName>BodyPurist</defName>
-          </li>
-          <li>
-            <defName>Nudist</defName>
-          </li>
-          <li>
-            <defName>Bloodlust</defName>
-          </li>
-          <li>
-            <defName>Psychopath</defName>
-          </li>
-          <li>
-            <defName>Cannibal</defName>
-          </li>
-          <li>
-            <defName>Abrasive</defName>
-          </li>
-          <li>
-            <defName>Brawler</defName>
-          </li>
-          <li>
-            <defName>NightOwl</defName>
-          </li>
-          <li>
-            <defName>Greedy</defName>
-          </li>
-          <li>
-            <defName>Jealous</defName>
-          </li>
-          <li>
-            <defName>Ascetic</defName>
-          </li>
-          <li>
-            <defName>Gay</defName>
-          </li>
-          <li>
-            <defName>AnnoyingVoice</defName>
-          </li>
-          <li>
-            <defName>CreepyBreathing</defName>
-          </li>
-          <li>
-            <defName>Pyromaniac</defName>
-          </li>
-          <li>
-            <defName>Wimp</defName>
-          </li>
-          <li>
-            <defName>DislikesMen</defName>
-          </li>
-          <li>
-            <defName>DislikesWomen</defName>
-          </li>
-          <li>
-            <defName>Gourmand</defName>
-          </li>
-
-          <li>
-            <defName>GreatMemory</defName>
-          </li>
-          <li>
-            <defName>Undergrounder</defName>
-          </li>
-          <li>
-            <defName>Tough</defName>
-          </li>
-
-          <li>
-            <defName>NaturalMood</defName>
-            <degree>1</degree>
-          </li>
-          <li>
-            <defName>NaturalMood</defName>
-            <degree>-1</degree>
-          </li>
-
-          <li>
-            <defName>DrugDesire</defName>
-            <degree>2</degree>
-          </li>
-          <li>
-            <defName>DrugDesire</defName>
-            <degree>1</degree>
-          </li>
-          <li>
-            <defName>Nerves</defName>
-            <degree>-1</degree>
-          </li>
-          <li>
-            <defName>Nerves</defName>
-            <degree>-2</degree>
-          </li>
-          <li>
-            <defName>Industriousness</defName>
-            <degree>-1</degree>
-          </li>
-          <li>
-            <defName>Industriousness</defName>
-            <degree>-2</degree>
-          </li>
-          <li>
-            <defName>PsychicSensitivity</defName>
-            <degree>-2</degree>
-          </li>
-          <li>
-            <defName>PsychicSensitivity</defName>
-            <degree>-1</degree>
-          </li>
-          <li>
-            <defName>PsychicSensitivity</defName>
-            <degree>1</degree>
-          </li>
-          <li>
-            <defName>PsychicSensitivity</defName>
-            <degree>2</degree>
-          </li>
-          <li>
-            <defName>ShootingAccuracy</defName>
-            <degree>1</degree>
-          </li>
-          <li>
-            <defName>ShootingAccuracy</defName>
-            <degree>-1</degree>
-          </li>
-          <li>
-            <defName>Beauty</defName>
-            <degree>-1</degree>
-          </li>
-          <li>
-            <defName>Beauty</defName>
-            <degree>-2</degree>
-          </li>
-          <li>
-            <defName>Immunity</defName>
-            <degree>-1</degree>
-          </li>
-          <li>
-            <defName>Xenophobia</defName>
-          </li>
+          <li><defName>NaturalMood</defName>
+            <degree>0</degree></li>
+			
+          <li><defName>Nerves</defName>
+            <degree>0</degree></li>
+			
+          <li><defName>Industriousness</defName>
+            <degree>0</degree></li>
+			
+          <li><defName>PsychicSensitivity</defName>
+            <degree>0</degree></li>
+			
+          <li><defName>ShootingAccuracy</defName>
+            <degree>0</degree></li>
+			
+          <li><defName>Beauty</defName>
+            <degree>0</degree></li>
+			
+          <li><defName>Immunity</defName>
+            <degree>0</degree></li>
+			
+          <li><defName>Neurotic</defName>
+            <degree>0</degree></li>
+			
+          <li><defName>SpeedOffset</defName>
+            <degree>0</degree></li>
 
 
-
-
-
-
-
-
-          <li>
-            <defName>Bisexual</defName>
-          </li>
-          <li>
-            <defName>TooSmart</defName>
-          </li>
-          <li>
-            <defName>Neurotic</defName>
-            <degree>1</degree>
-          </li>
-          <li>
-            <defName>Neurotic</defName>
-            <degree>2</degree>
-          </li>
-          <li>
-            <defName>Nerves</defName>
-            <degree>-2</degree>
-          </li>
-          <li>
-            <defName>Nerves</defName>
-            <degree>-1</degree>
-          </li>
-          <li>
-            <defName>Nerves</defName>
-            <degree>1</degree>
-          </li>
-          <li>
-            <defName>Nerves</defName>
-            <degree>2</degree>
-          </li>
-          <li>
-            <defName>SpeedOffset</defName>
-            <degree>-1</degree>
-          </li>
-          <li>
-            <defName>SpeedOffset</defName>
-            <degree>1</degree>
-          </li>
-          <li>
-            <defName>SpeedOffset</defName>
-            <degree>2</degree>
-          </li>
-          <li>
-            <defName>SlowLearner</defName>
-          </li>
-
-
-        </disallowedTraits>
+        </disallowedTraits>-->
 
         <alienPartGenerator>
           <headOffset>(0.0, 0.0)</headOffset>
@@ -524,6 +383,10 @@
 
       <thoughtSettings>
         <cannotReceiveThoughts>
+		  <li>ProsthophileNoProsthetic</li>
+		  <li>Pain</li>
+		  <li>MasochistPain</li>
+		  
           <li>AteWithoutTable</li>
           <li>SoakingWet</li>
           <li>SleptOnGround</li>
@@ -717,7 +580,6 @@
           <li>Bow_Trishot</li>
         </weaponList>
 
-
         <!--<onlyDoRaceRestrictedRecipes>false</onlyDoRaceRestrictedRecipes>
 			<recipeList>
 			</recipeList>
@@ -762,7 +624,9 @@
       <ComfyTemperatureMax>20.2</ComfyTemperatureMax>
       <!-- 24 -->
       <LeatherAmount>90</LeatherAmount>
-      <MeleeDodgeChance>1.25</MeleeDodgeChance>
+      <MeleeDodgeChance>15</MeleeDodgeChance>
+      <PawnTrapSpringChance>0.1</PawnTrapSpringChance>
+      <RestRateMultiplier>1.5</RestRateMultiplier>
       <ToxicSensitivity>0.5</ToxicSensitivity>
       <ToxicHypothermiaSensitivity>0</ToxicHypothermiaSensitivity>
 
@@ -770,13 +634,13 @@
       <DeteriorationRate>0.0</DeteriorationRate>
 
       <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
-      <GlobalLearningFactor>1.5</GlobalLearningFactor>
+      <GlobalLearningFactor>1.75</GlobalLearningFactor>
       <EatingSpeed>1.5</EatingSpeed>
       <MentalBreakThreshold>0.02</MentalBreakThreshold>
       <AimingDelayFactor>0.5</AimingDelayFactor>
       <ShootingAccuracyPawn>20</ShootingAccuracyPawn>
       <SocialImpact>2.0</SocialImpact>
-      <PawnBeauty>3.0</PawnBeauty>
+      <PawnBeauty>10.0</PawnBeauty>
       <ImmunityGainSpeed>1.75</ImmunityGainSpeed>
       <PainShockThreshold>0.95</PainShockThreshold>
       <TameAnimalChance>1.5</TameAnimalChance>

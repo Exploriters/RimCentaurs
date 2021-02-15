@@ -578,6 +578,9 @@
         <severityAdjust>-0.001</severityAdjust>
         <doCount>20</doCount>
       </li>
+      <!-- <li Class="Explorite.HediffCompProperties_SeverityHalfLife">
+        <halfLife>692.8005491784377</halfLife>
+      </li> -->
     </comps>
     <stages>
       <li>

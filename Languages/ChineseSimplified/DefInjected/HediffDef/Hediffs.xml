@@ -65,5 +65,8 @@
 
   <BrainFrostbite.label>脑冻伤</BrainFrostbite.label>
   <BrainFrostbite.description>由远古科技武器直接击中指定的身体部位产生的冻结组织。最终会自行治愈，不会留下疤痕。</BrainFrostbite.description>
+  <BrainFrostbite.comps.HediffComp_TendDuration.labelSolidTendedWell>已简单处理</BrainFrostbite.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <BrainFrostbite.comps.HediffComp_TendDuration.labelTendedWell>已包扎</BrainFrostbite.comps.HediffComp_TendDuration.labelTendedWell>
+  <BrainFrostbite.comps.HediffComp_TendDuration.labelTendedWellInner>已缝合</BrainFrostbite.comps.HediffComp_TendDuration.labelTendedWellInner>
 
 </LanguageData>

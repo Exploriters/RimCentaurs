@@ -571,7 +571,7 @@
         <burstShotCount>1</burstShotCount>
         <soundCast>Explosion_EMP</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
+        <muzzleFlashScale>0</muzzleFlashScale>
         <stopBurstWithoutLos>false</stopBurstWithoutLos>
         <requireLineOfSight>false</requireLineOfSight>
 		<accuracyTouch>1</accuracyTouch>
@@ -627,7 +627,7 @@
     <thingClass>Explorite.Bullet_Direct</thingClass>
     <label>entropy laser</label>
     <graphicData>
-      <texPath>Things/Projectile/Arrow_Trishot</texPath>
+      <texPath>TextureNothing</texPath>
       <drawSize>(0,0)</drawSize>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>

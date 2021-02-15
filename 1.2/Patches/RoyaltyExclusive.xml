@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Royalty</li>
-    </mods>
-    <nomatch Class="PatchOperationSequence">
+  <!--<Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods><li>Royalty</li></mods>
+    <nomatch Class="PatchOperationRemove">
       <success>Always</success>
-      <operations>
-
-        <li Class="PatchOperationRemove">
-          <xpath>
-            *[@ExEx="Royalty"]</xpath>
-        </li>
-
-      </operations>
+      <xpath>*[@ExEx="Royalty"]</xpath>
     </nomatch>
-    <match Class="PatchOperationSequence">
+    <match Class="PatchOperationRemove">
       <success>Always</success>
-      <operations>
-
-        <li Class="PatchOperationRemove">
-          <xpath>
-            *[@ExEx="~Royalty"]</xpath>
-        </li>
-
-      </operations>
+	  <xpath>*[@ExEx="~Royalty"]</xpath>
     </match>
-  </Operation>
+  </Operation>-->
 </Patch>

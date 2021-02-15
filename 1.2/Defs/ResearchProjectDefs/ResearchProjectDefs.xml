@@ -12,7 +12,7 @@
     </prerequisites>
     <hiddenPrerequisites>
     </hiddenPrerequisites>
-    <researchViewX>0.00</researchViewX>
+    <researchViewX>0</researchViewX>
     <researchViewY>2.80</researchViewY>
     <techprintCount>1</techprintCount>
     <techprintCommonality>0</techprintCommonality>
@@ -33,7 +33,7 @@
     <prerequisites>
       <li>AdvancedFabrication</li>
     </prerequisites>
-    <researchViewX>1.00</researchViewX>
+    <researchViewX>1</researchViewX>
     <researchViewY>2.80</researchViewY>
     <tags>
       <li>CentaurStart</li>
@@ -55,7 +55,7 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
-    <researchViewX>6.00</researchViewX>
+    <researchViewX>6</researchViewX>
     <researchViewY>2.80</researchViewY>
     <!-- <discoveredLetterTitle>About: Trishot</discoveredLetterTitle>
     <discoveredLetterText>????</discoveredLetterText>

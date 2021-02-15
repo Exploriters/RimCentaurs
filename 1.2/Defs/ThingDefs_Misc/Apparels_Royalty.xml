@@ -15,7 +15,8 @@
     <statBases>
       <MaxHitPoints>90</MaxHitPoints>
       <!--<MarketValue>200</MarketValue>-->
-      <WorkToMake>300</WorkToMake>
+      <!--<WorkToMake>300</WorkToMake>-->
+      <WorkToMake>1</WorkToMake>
       <Mass>0.05</Mass>
       <Flammability>0.6</Flammability>
       <DeteriorationRate>0.0</DeteriorationRate>
@@ -58,8 +59,8 @@
     <recipeMaker>
 	  <researchPrerequisite Inherit="False" />
 	  <researchPrerequisites>
-		<li ExEx="Royalty">RoyalApparel</li>
-		<li ExEx="~Royalty">ComplexClothing</li>
+		<!--<li ExEx="Royalty">RoyalApparel</li>-->
+		<!--<li ExEx="~Royalty">ComplexClothing</li>-->
 		<li>CentaurReverseEngineeringHumanTech</li>
 	  </researchPrerequisites>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
