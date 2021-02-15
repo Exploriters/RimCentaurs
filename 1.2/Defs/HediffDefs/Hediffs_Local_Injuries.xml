@@ -7,6 +7,9 @@
     <description>Frozen tissue caused by archotech weaponry that directly hits on specified body parts. It eventually will cure by it self and not leaving scar.</description>
     <displayWound>false</displayWound>
     <comps>
+      <li Class="Explorite.HediffCompProperties_SeverityHalfLife">
+        <halfLife>3000</halfLife>
+      </li>
       <!--<li Class="HediffCompProperties_TendDuration">
         <labelTendedWell>bandaged</labelTendedWell>
         <labelTendedWellInner>tended</labelTendedWellInner>

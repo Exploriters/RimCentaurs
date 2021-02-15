@@ -1,6 +1,165 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+  
+  <ThingDef ParentName="ApparelArmorHelmetReconBase">
+    <defName>Apparel_ArmorHelmetReconClocked</defName>
+    <tradeability>Sellable</tradeability>
+    <label>clocked recon helmet</label>
+    <description>A high-tech armored helmet with a built-in status computer and a protective plasteel-weave plate.\n\nThis modified verison is invisible, powered by clocking shield technology, but behaviored as a normal helmet and requires more skills to make, allowing someone showing it best face and hair without the thread of exposing head.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PrestigeReconHelmet/PrestigeReconHelmet</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>31500</WorkToMake>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivity ExEx="Royalty">0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate ExEx="Royalty">0.033</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+	  <researchPrerequisites>
+		<li>ReconArmor</li>
+		<li>CentaurReverseEngineeringHumanTech</li>
+	  </researchPrerequisites>
+    </recipeMaker>
+    <costList Inherit="False">
+      <ComponentSpacer>1</ComponentSpacer>
+      <Plasteel>40</Plasteel>
+      <Gold>4</Gold>
+    </costList>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <tags>
+        <li>PrestigeCombatGear</li>
+      </tags>
+      <wornGraphicPath isNull="True" />
+      <useWornGraphicMask>true</useWornGraphicMask>
+    </apparel>
+    <colorGenerator Inherit="False" Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <only>(0.24313725490196078431372549019608,0.4,0.70980392156862745098039215686275)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <thingCategories Inherit="False">
+      <li>CentaurApparels</li>
+    </thingCategories>
+  </ThingDef>
 
+  <ThingDef ParentName="ApparelArmorHelmetPowerBase">
+    <defName>Apparel_ArmorMarineHelmetClocked</defName>
+    <tradeability>Sellable</tradeability>
+    <label>clocked marine helmet</label>
+    <description>A marine armor helmet, with a built-in status computer and layered plasteel-weave plates.\n\nThis modified verison is invisible, powered by clocking shield technology, but behaviored as a normal helmet and requires more skills to make, allowing someone showing it best face and hair without the thread of exposing head.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PrestigeMarineHelmet/PrestigeMarineHelmet</texPath>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>10500</WorkToMake>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivity ExEx="Royalty">0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate ExEx="Royalty">0.033</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+	  <researchPrerequisites>
+		<li>PoweredArmor</li>
+		<li>CentaurReverseEngineeringHumanTech</li>
+	  </researchPrerequisites>
+    </recipeMaker>
+    <costList Inherit="False">
+      <Apparel_ArmorHelmetReconClocked>1</Apparel_ArmorHelmetReconClocked>
+      <Plasteel>10</Plasteel>
+      <Gold>1</Gold>
+    </costList>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <tags>
+        <li>PrestigeCombatGear</li>
+      </tags>
+      <wornGraphicPath isNull="True" />
+      <useWornGraphicMask>true</useWornGraphicMask>
+    </apparel>
+    <colorGenerator Inherit="False" Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <only>(0.24313725490196078431372549019608,0.4,0.70980392156862745098039215686275)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <thingCategories Inherit="False">
+      <li>CentaurApparels</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelArmorHelmetCataphractBase" ExEx="Royalty">
+    <defName>Apparel_ArmorHelmetCataphractClocked</defName>
+    <tradeability>Sellable</tradeability>
+    <label>clocked cataphract helmet</label>
+    <description>A heavily-armored high-tech helmet, with a solid plasteel-weave shell and indirect visual system for non-frontal view angles. It protects against all but the most powerful or luckily-aimed shots.\n\nThis modified verison is invisible, powered by clocking shield technology, but behaviored as a normal helmet and requires more skills to make, allowing someone showing it best face and hair without the thread of exposing head.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PrestigeCataphractHelmet/PrestigeCataphractHelmet</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>10500</WorkToMake>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivity ExEx="Royalty">0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate ExEx="Royalty">0.033</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+	  <researchPrerequisites>
+		<li ExEx="Royalty">CataphractArmor</li>
+		<li ExEx="~Royalty">PoweredArmor</li>
+		<li>CentaurReverseEngineeringHumanTech</li>
+	  </researchPrerequisites>
+    </recipeMaker>
+    <costList Inherit="False">
+      <Apparel_ArmorMarineHelmetClocked>1</Apparel_ArmorMarineHelmetClocked>
+      <Plasteel>25</Plasteel>
+      <Gold>4</Gold>
+    </costList>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <tags>
+        <li>PrestigeCombatGear</li>
+      </tags>
+      <wornGraphicPath isNull="True" />
+      <useWornGraphicMask>true</useWornGraphicMask>
+    </apparel>
+    <colorGenerator Inherit="False" Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <only>(0.24313725490196078431372549019608,0.4,0.70980392156862745098039215686275)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <thingCategories Inherit="False">
+      <li>CentaurApparels</li>
+    </thingCategories>
+  </ThingDef>
+  
   <!--<ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>Apparel_CentaurAdvancedHelmet</defName>
     <label>flak helmet</label>

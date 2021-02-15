@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
-  <ThingDef ExEx="Royalty">
+  <ThingDef>
     <defName>Apparel_CentaurHeaddress</defName>
     <label>centaurs headdress</label>
-    <description>A decorative headdress for centaur's pair of great ears.</description>
+    <description>A decorative headdress for centaur's pair of great ears, hiding any headgear that covers the face.</description>
     <tradeability>Sellable</tradeability>
     <!--<costStuffCount>50</costStuffCount>
     <stuffCategories>
@@ -16,14 +16,14 @@
       <MaxHitPoints>90</MaxHitPoints>
       <!--<MarketValue>200</MarketValue>-->
       <WorkToMake>300</WorkToMake>
-      <Mass>0.1</Mass>
+      <Mass>0.05</Mass>
       <Flammability>0.6</Flammability>
       <DeteriorationRate>0.0</DeteriorationRate>
       <EquipDelay>0.8</EquipDelay>
       <Beauty>-3</Beauty>
     </statBases>
     <costList>
-      <ComponentSpacer>1</ComponentSpacer>
+      <TriCapacitorCell>1</TriCapacitorCell>
     </costList>
     <graphicData>
       <texPath>Things/Item/Unfinished/UnfinishedComponent</texPath>
@@ -38,7 +38,8 @@
         <li>FullHead</li>
       </bodyPartGroups>
       <layers>
-        <li>Overhead</li>
+        <li>OnSkin</li>
+        <!--<li>Overhead</li>-->
       </layers>
       <tags>
         <li>CentaurRetroStart</li>
@@ -57,7 +58,8 @@
     <recipeMaker>
 	  <researchPrerequisite Inherit="False" />
 	  <researchPrerequisites>
-		<li>RoyalApparel</li>
+		<li ExEx="Royalty">RoyalApparel</li>
+		<li ExEx="~Royalty">ComplexClothing</li>
 		<li>CentaurReverseEngineeringHumanTech</li>
 	  </researchPrerequisites>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -65,9 +67,10 @@
       <effectWorking>Smith</effectWorking>
       <soundWorking>Recipe_Machining</soundWorking>
       <recipeUsers>
+        <li>CraftingSpot</li>
         <li>FabricationBench</li>
       </recipeUsers>
-      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <unfinishedThingDef Inherit="False"/>
       <defaultIngredientFilter>
         <categories>
           <li>Root</li>
@@ -93,13 +96,13 @@
     <alwaysHaulable>True</alwaysHaulable>
     <burnableByRecipe>true</burnableByRecipe>
     <smeltable>true</smeltable>
-    <!--<tickerType>Rare</tickerType>
+    <tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
       <li Class="Explorite.CompProperties_SelfHealOvertime">
         <detlaHpPerSec>0.1</detlaHpPerSec>
 	  </li>
-    </comps>-->
+    </comps>
   </ThingDef>
   
   <ThingDef ParentName="ApparelMakeableBase" ExEx="Royalty">
@@ -179,6 +182,7 @@
     <recipeMaker>
       <unfinishedThingDef>UnfinishedApparelStuffless</unfinishedThingDef>
 	  <researchPrerequisites>
+		<li>ComplexClothing</li>
 		<li>CentaurReverseEngineeringHumanTech</li>
 	  </researchPrerequisites>
     </recipeMaker>

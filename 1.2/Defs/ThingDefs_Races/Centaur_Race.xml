@@ -11,7 +11,7 @@
     <comps>
       <li Class="Explorite.CompProperties_PawnShield" />
       <li Class="Explorite.CompProperties_PawnRepairApparelsOvertime">
-        <ticksBetweenHeal>3000</ticksBetweenHeal>
+        <ticksBetweenHeal>60000</ticksBetweenHeal>
       </li>
       <li Class="Explorite.CompProperties_PassiveMeditationFocusGain">
         <focusPerDay>1</focusPerDay>
@@ -649,10 +649,10 @@
           <!--<li>Apparel_CentaurShieldArmor</li>-->
           <li>Apparel_CentaurAntimassBelt</li>
 
-          <!--<li>Apparel_CentaurHeaddress</li>-->
+          <li>Apparel_CentaurHeaddress</li>
           <li>Apparel_ArmorReconCentaur</li>
           <li>Apparel_ArmorMarineCentaur</li>
-          <li ExEx="Royalty">Apparel_ArmorCataphractCentaur</li>
+          <li>Apparel_ArmorCataphractCentaur</li>
 
           <li ExEx="Royalty">Apparel_PsyfocusCentaursuit</li>
 
@@ -695,9 +695,9 @@
           <li>Apparel_ArmorHelmetReconPrestige</li>
           <li>Apparel_ArmorMarineHelmetPrestige</li>
           <li ExEx="Royalty">Apparel_ArmorHelmetCataphractPrestige</li>
-          <li>Apparel_ArmorHelmetReconClocked</li>
+          <!--<li>Apparel_ArmorHelmetReconClocked</li>
           <li>Apparel_ArmorMarineHelmetClocked</li>
-          <li ExEx="Royalty">Apparel_ArmorHelmetCataphractClocked</li>
+          <li ExEx="Royalty">Apparel_ArmorHelmetCataphractClocked</li>-->
 
           <!--<li>Apparel_PowerArmorHelmet_Clocked</li>-->
 
