@@ -4,7 +4,7 @@
   <ResearchProjectDef>
     <defName>CentaurTechRootProject</defName>
     <tab>Explorite</tab>
-    <label>trishot</label>
+    <label>centaurs</label>
     <description>Allowing you researching future more centaurs exclusive technology.</description>
     <baseCost>100</baseCost>
     <techLevel>Neolithic</techLevel>
@@ -31,7 +31,7 @@
     <baseCost>100</baseCost>
     <techLevel>Neolithic</techLevel>
     <prerequisites>
-      <li>AdvancedFabrication</li>
+      <li>CentaurTechRootProject</li>
     </prerequisites>
     <researchViewX>1</researchViewX>
     <researchViewY>2.80</researchViewY>

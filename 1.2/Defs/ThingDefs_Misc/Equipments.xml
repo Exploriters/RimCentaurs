@@ -349,7 +349,7 @@
     </tools>
     <recipeMaker>
 	  <researchPrerequisites>
-		<li>CentaurReverseEngineeringHumanTech</li>
+		<!--<li>CentaurReverseEngineeringHumanTech</li>-->
 	  </researchPrerequisites>
       <skillRequirements>
         <!-- <Crafting>0</Crafting> -->
