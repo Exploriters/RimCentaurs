@@ -104,7 +104,7 @@
     </weaponTags>
     <comps>
       <li Class="CompProperties_Art">
-		<compClass>Explorite.CompArt_Qualityless</compClass>
+		<!--<compClass>Explorite.CompArt_Qualityless</compClass>-->
         <nameMaker>NamerArtWeaponGun</nameMaker>
         <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
         <!-- <minQualityForArtistic>Excellent</minQualityForArtistic> -->
