@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef>
+    <hediffClass>Explorite.Hediff_AddedPart_HManipulator</hediffClass>
+    <defaultLabelColor>(0.5, 0.75, 1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <defName>HyperManipulator</defName>
+    <label>physic manipulator</label>
+    <labelNoun>a physic manipulator</labelNoun>
+    <description>An pair of devices replacing arms with a powerful remote manipulator.</description>
+    <descriptionHyperlinks>
+	  <ThingDef>HyperManipulator</ThingDef>
+	</descriptionHyperlinks>
+    <maxSeverity>1.0</maxSeverity>
+    <initialSeverity>0.001</initialSeverity>
+	<everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <label>assembling</label>
+        <minSeverity>0</minSeverity>
+        <partEfficiencyOffset>-5</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0</partEfficiencyOffset> -->
+      </li>
+      <li>
+        <label>initial</label>
+        <minSeverity>0.15</minSeverity>
+        <partEfficiencyOffset>-4.95</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0.01</partEfficiencyOffset> -->
+      </li>
+      <li>
+        <label>adapting</label>
+        <minSeverity>0.50</minSeverity>
+        <partEfficiencyOffset>-4.5</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0.1</partEfficiencyOffset> -->
+      </li>
+      <li>
+        <label>adapting</label>
+        <minSeverity>0.85</minSeverity>
+        <partEfficiencyOffset>-4</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0.2</partEfficiencyOffset> -->
+      </li>
+      <li>
+        <label>adapting</label>
+        <minSeverity>0.9</minSeverity>
+        <partEfficiencyOffset>-3</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0.3</partEfficiencyOffset> -->
+      </li>
+      <li>
+        <label>adapting</label>
+        <minSeverity>0.95</minSeverity>
+        <partEfficiencyOffset>-2.5</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0.5</partEfficiencyOffset> -->
+      </li>
+      <li>
+        <minSeverity>1</minSeverity>
+        <hediffGivers>
+          <li Class="HediffGiver_Heat">
+            <hediff>HyperManipulator_EnvironmentalHeat</hediff>
+          </li>
+          <li Class="HediffGiver_Hypothermia">
+            <hediff>HyperManipulator_EnvironmentalCold</hediff>
+          </li>
+        </hediffGivers>
+      </li>
+    </stages>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>5</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>0.05</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>frost smasher</label>
+            <capacities>
+              <li>FrostblastMelee</li>
+            </capacities>
+            <power>20</power>
+            <cooldownTime>1</cooldownTime>
+			<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			<hediff>Frostbite</hediff>
+            <surpriseAttack>
+              <extraMeleeDamages>
+                <li>
+                  <def>Stun</def>
+                  <amount>20</amount>
+                </li>
+                <li>
+                  <def>EMP</def>
+                  <amount>20</amount>
+                </li>
+              </extraMeleeDamages>
+            </surpriseAttack>
+			<chanceFactor>10</chanceFactor>
+			<armorPenetration>1.1</armorPenetration>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <!-- <spawnThingOnRemoved>HyperManipulator</spawnThingOnRemoved> -->
+  </HediffDef>
+
+  <ThingDef>
+    <defName>HyperManipulator</defName>
+    <label>physic manipulator</label>
+    <description>An pair of arm replacement built by an unknown centaur-archotech. It removes one's arms, replacing it's shoulders with a powerful remote manipulator that can interact objects around without directly contect, strong enough to crush a thick hardwood branch, and precise enough to write a sonnet on a grain of rice. It can controllably generating Holographic projection which looks and feels like natural flesh, and dynamically reposition center of mass to keep balance. If it is harmed, it repairs itself over time. Its internal workings are a mystery to all minds.\n\nIt can be assemble by oneself without surgery, but not very comfortable at begining, take times to become adapted, and then it will be incredibly effective than anyother types of bionic parts.</description>
+    <descriptionHyperlinks>
+	  <HediffDef>HyperManipulator</HediffDef>
+	  <RecipeDef>InstallHyperManipulator</RecipeDef>
+	</descriptionHyperlinks>
+    <techLevel>Archotech</techLevel>
+    <thingSetMakerTags>
+      <!-- <li>RewardSpecial</li> -->
+    </thingSetMakerTags>
+    <statBases>
+	  <DeteriorationRate>0</DeteriorationRate>
+      <MarketValue>100000</MarketValue>
+      <Mass>20</Mass>
+	  
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+	  <Beauty>-4</Beauty>
+      <WorkToMake>100000</WorkToMake>
+    </statBases>
+	
+    <costList>
+      <ThermoDamper>1</ThermoDamper>
+      <MechSerumArchotech>10</MechSerumArchotech>
+    </costList>
+    <recipeMaker>
+      <productCount>1</productCount>
+	  <researchPrerequisite Inherit="False" />
+	  <researchPrerequisites>
+		<li>Bionics</li>
+		<li>CentaurReverseEngineeringHumanTech</li>
+	  </researchPrerequisites>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+	
+    <techHediffsTags>
+      <!-- <li>Advanced</li> -->
+    </techHediffsTags>
+    <tradeability>None</tradeability>
+	
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItemMagnualand_Double</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+	
+    <thingCategories>
+      <li>BodyPartsProsthetic</li>
+    </thingCategories>
+	
+	<thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Never</tickerType>
+    <alwaysHaulable>true</alwaysHaulable>
+    <isTechHediff>true</isTechHediff>
+    <tradeTags>
+      <li>TechHediff</li>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <pathCost>10</pathCost>
+
+    <!--<ingestible>
+      <preferability>NeverForNutrition</preferability>
+      <!- - <drugCategory>Medical</drugCategory> - ->
+      <baseIngestTicks>600</baseIngestTicks>
+      <chairSearchRadius>0</chairSearchRadius>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <!- - <ingestSound>None</ingestSound> - ->
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+		  <hediffDef>HyperManipulator</hediffDef>
+          <severity>1.0</severity>
+          <partsToAffect>
+			<li>Shoulder</li>
+			<li>Shoulder</li>
+          </partsToAffect>
+		  <divideByBodySize>false</divideByBodySize>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+		  <hediffDef>HyperManipulator</hediffDef>
+          <severity>1.0</severity>
+          <partsToAffect>
+			<li>Shoulder</li>
+			<li>Shoulder</li>
+          </partsToAffect>
+		  <divideByBodySize>false</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible> -->
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Usable">
+        <compClass>Explorite.CompUsable_IgnoreManipulation</compClass>
+        <useJob>UseItem_HManipulator</useJob>
+        <useLabel>assemble physic manipulator on self</useLabel>
+        <useDuration>600</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>Explorite.CompUseEffect_HediffApply_HManipulator</compClass>
+        <!-- <hediffDef>HyperManipulator</hediffDef>
+		<severity>1</severity>
+		<divideByBodySize>true</divideByBodySize> -->
+      </li>
+      <!-- <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_DestroySelf</compClass>
+      </li> -->
+    </comps>
+  </ThingDef>
+
+  <JobDef>
+    <defName>UseItem_HManipulator</defName>
+    <driverClass>Explorite.JobDriver_UseItem_IgnoreManipulation</driverClass>
+    <reportString>Installing physic manipulator on self.</reportString>
+    <playerInterruptible>false</playerInterruptible>
+    <casualInterruptible>false</casualInterruptible>
+    <suspendable>false</suspendable>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	<neverFleeFromEnemies>true</neverFleeFromEnemies>
+	<neverShowWeapon>true</neverShowWeapon>
+    <alwaysShowWeapon>false</alwaysShowWeapon>
+	<!-- <taleOnCompletion /> -->
+    <!-- <CheckJobOverrideOnDamageMode>Never</CheckJobOverrideOnDamageMode> -->
+  </JobDef>
+
+  <JobDef Abstract="True">
+    <defName>UseItem_NonInturruptible</defName>
+    <driverClass>JobDriver_UseItem</driverClass>
+    <reportString>using TargetA.</reportString>
+    <playerInterruptible>false</playerInterruptible>
+    <casualInterruptible>false</casualInterruptible>
+    <suspendable>false</suspendable>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <!-- <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallHyperManipulator</defName>
+    <label>install physic manipulator</label>
+    <description>Install a physic manipulator.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing physic manipulator.</jobString>
+    <workAmount>6000</workAmount>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>HyperManipulator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>HyperManipulator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>CentaurScapular</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>HyperManipulator</addsHediff>
+  </RecipeDef> -->
+
+  <!-- <RecipeDef>
+    <defName>InstallHyperManipulator</defName>
+    <label>install physic manipulator</label>
+    <description>Install a physic manipulator.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing physic manipulator.</jobString>
+    <workAmount>180</workAmount>
+    <targetsBodyPart>true</targetsBodyPart>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <anesthetize>false</anesthetize>
+    <skillRequirements />
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>HyperManipulator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>HyperManipulator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>CentaurScapular</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>HyperManipulator</addsHediff>
+  </RecipeDef> -->
+
+  <RecipeDef>
+    <defName>InstallHyperManipulator</defName>
+    <label>install physic manipulator</label>
+    <description>Install a physic manipulator.</description>
+    <workerClass>Recipe_AdministerUsableItem</workerClass>
+    <jobString>Installing physic manipulator.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>600</workAmount>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>HyperManipulator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>HyperManipulator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  
+  
+  <HediffDef>
+    <defName>HyperManipulator_EnvironmentalHeat</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.95, 0.6, 0.75)</defaultLabelColor>
+    <label>manipulator overheating failure</label>
+    <description>The physic manipulator has begun to fail due to overheating ambient temperature. If it is not cooled on time, the manipulator will soon be seriously out of alignment and affect manipulate ability.\n\nEffects of overheating are temporary. The manipulator returned to a safe environmental temperature will eventually backs to normal and will not leave permanent damage, but the colonist may still be heatstroke or burned due to the high temperature.</description>
+    <descriptionHyperlinks>
+	  <ThingDef>HyperManipulator</ThingDef>
+	  <HediffDef>HyperManipulator</HediffDef>
+	  <HediffDef>HyperManipulator_EnvironmentalCold</HediffDef>
+	  <HediffDef>HyperManipulator_Dyskinesia</HediffDef>
+	</descriptionHyperlinks>
+    <!-- <taleOnVisible>HypothermiaRevealed</taleOnVisible> -->
+    <maxSeverity>10.0</maxSeverity>
+    <isBad>true</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<makesAlert>true</makesAlert>
+    <hediffGivers>
+      <li Class="HediffGiver_Heat">
+        <hediff>HyperManipulator_EnvironmentalHeat</hediff>
+      </li>
+    </hediffGivers>
+    <comps>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_Discoverable">
+        <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
+        <discoverLetterLabel>Manipulator overheating :{0}</discoverLetterLabel>
+        <discoverLetterText>The physic manipulator on {0} has begun to fail due to overheating ambient temperature. If it is not cooled on time, the manipulator will soon be seriously out of alignment and affect manipulate ability.\n\nEffects of overheating are temporary. The manipulator returned to a safe environmental temperature will eventually backs to normal and will not leave permanent damage, but the colonist may still be heatstroke or burned due to the high temperature.</discoverLetterText>
+        <letterType>NegativeEvent</letterType>
+        <messageType>NegativeEvent</messageType>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>initial</label>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <label>minor</label>
+        <minSeverity>0.05</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.92</postFactor>
+          </li>
+        </capMods>
+        <hediffGivers>
+          <!-- <li Class="HediffGiver_Random">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+            <mtbDays>0.00020833333333333333333333333333333</mtbDays>
+		  </li> -->
+          <!-- <li Class="HediffGiver_RandomDrugEffect">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<minSeverity>0.001</minSeverity>
+			<baseMtbDays>0.00020833333333333333333333333333333</baseMtbDays>
+		  </li> -->
+          <li Class="Explorite.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.08</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <label>moderate</label>
+        <minSeverity>0.2</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.8</postFactor>
+          </li>
+        </capMods>
+        <hediffGivers>
+          <!-- <li Class="HediffGiver_Random">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+            <mtbDays>0.000083333333333333333333333333333333</mtbDays>
+		  </li> -->
+          <!-- <li Class="HediffGiver_RandomDrugEffect">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<minSeverity>0.001</minSeverity>
+			<baseMtbDays>0.000083333333333333333333333333333333</baseMtbDays>
+		  </li> -->
+          <li Class="Explorite.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.2</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <label>serious</label>
+        <minSeverity>0.35</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.5</postFactor>
+          </li>
+        </capMods>
+        <hediffGivers>
+          <!-- <li Class="HediffGiver_Random">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+            <mtbDays>0.000033333333333333333333333333333333</mtbDays>
+		  </li> -->
+          <!-- <li Class="HediffGiver_RandomDrugEffect">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<minSeverity>0.001</minSeverity>
+			<baseMtbDays>0.000033333333333333333333333333333333</baseMtbDays>
+		  </li> -->
+          <li Class="Explorite.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.5</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <label>extreme</label>
+        <minSeverity>0.62</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.1</postFactor>
+          </li>
+        </capMods>
+        <hediffGivers>
+          <!-- <li Class="HediffGiver_Random">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+            <mtbDays>0.000018518518518518518518518518518519</mtbDays>
+		  </li> -->
+          <!-- <li Class="HediffGiver_RandomDrugEffect">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<minSeverity>0.001</minSeverity>
+			<baseMtbDays>0.000018518518518518518518518518518519</baseMtbDays>
+		  </li> -->
+          <li Class="Explorite.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.9</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <label>critical</label>
+        <minSeverity>0.95</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.05</postFactor>
+          </li>
+        </capMods>
+        <hediffGivers>
+          <!-- <li Class="HediffGiver_Random">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+            <mtbDays>0.000017543859649122807017543859649123</mtbDays>
+		  </li> -->
+          <!-- <li Class="HediffGiver_RandomDrugEffect">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<minSeverity>0.001</minSeverity>
+			<baseMtbDays>0.000017543859649122807017543859649123</baseMtbDays>
+		  </li> -->
+          <li Class="Explorite.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.95</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <label>fatal</label>
+        <minSeverity>3</minSeverity>
+        <!-- <lifeThreatening>true</lifeThreatening> -->
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.01</postFactor>
+            <setMax>0.05</setMax>
+          </li>
+        </capMods>
+        <hediffGivers>
+          <!-- <li Class="HediffGiver_Random">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+            <mtbDays>0.000016835016835016835016835016835</mtbDays>
+		  </li> -->
+          <!-- <li Class="HediffGiver_RandomDrugEffect">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<minSeverity>0.001</minSeverity>
+			<baseMtbDays>0.000016835016835016835016835016835</baseMtbDays>
+		  </li> -->
+          <li Class="Explorite.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.99</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
+        </hediffGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>HyperManipulator_EnvironmentalCold</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.95, 0.6, 0.75)</defaultLabelColor>
+    <label>manipulator overcolding failure</label>
+    <description>The physic manipulator has begun to fail due to overcolding ambient temperature. If it is not cooled on time, the manipulator will soon be seriously out of alignment and affect manipulate ability.\n\nEffects of overcolding are temporary. The manipulator returned to a safe environmental temperature will eventually backs to normal and will not leave permanent damage, but the colonist may still got hypothermia or frostbite due to the low temperature.</description>
+    <descriptionHyperlinks>
+	  <ThingDef>HyperManipulator</ThingDef>
+	  <HediffDef>HyperManipulator</HediffDef>
+	  <HediffDef>HyperManipulator_EnvironmentalHeat</HediffDef>
+	  <HediffDef>HyperManipulator_Dyskinesia</HediffDef>
+	</descriptionHyperlinks>
+    <!-- <taleOnVisible>HypothermiaRevealed</taleOnVisible> -->
+    <maxSeverity>10.0</maxSeverity>
+    <isBad>true</isBad>
+	<everCurableByItem>false</everCurableByItem>
+    <hediffGivers>
+      <li Class="HediffGiver_Hypothermia">
+        <hediff>HyperManipulator_EnvironmentalCold</hediff>
+      </li>
+    </hediffGivers>
+    <comps>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>initial</label>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <label>minor</label>
+        <minSeverity>0.05</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <hediffGivers>
+          <!-- <li Class="HediffGiver_Random">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+            <mtbDays>0.00020833333333333333333333333333333</mtbDays>
+		  </li> -->
+          <!-- <li Class="HediffGiver_RandomDrugEffect">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<minSeverity>0.001</minSeverity>
+			<baseMtbDays>0.00020833333333333333333333333333333</baseMtbDays>
+		  </li> -->
+          <li Class="Explorite.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.08</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <label>moderate</label>
+        <minSeverity>0.2</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <hediffGivers>
+          <!-- <li Class="HediffGiver_Random">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+            <mtbDays>0.000083333333333333333333333333333333</mtbDays>
+		  </li> -->
+          <!-- <li Class="HediffGiver_RandomDrugEffect">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<minSeverity>0.001</minSeverity>
+			<baseMtbDays>0.000083333333333333333333333333333333</baseMtbDays>
+		  </li> -->
+          <li Class="Explorite.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.2</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <label>serious</label>
+        <minSeverity>0.35</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <hediffGivers>
+          <!-- <li Class="HediffGiver_Random">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+            <mtbDays>0.000033333333333333333333333333333333</mtbDays>
+		  </li> -->
+          <!-- <li Class="HediffGiver_RandomDrugEffect">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<minSeverity>0.001</minSeverity>
+			<baseMtbDays>0.000033333333333333333333333333333333</baseMtbDays>
+		  </li> -->
+          <li Class="Explorite.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.5</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <label>extreme</label>
+        <minSeverity>0.62</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <hediffGivers>
+          <!-- <li Class="HediffGiver_Random">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+            <mtbDays>0.000018518518518518518518518518518519</mtbDays>
+		  </li> -->
+          <!-- <li Class="HediffGiver_RandomDrugEffect">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<minSeverity>0.001</minSeverity>
+			<baseMtbDays>0.000018518518518518518518518518518519</baseMtbDays>
+		  </li> -->
+          <li Class="Explorite.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.9</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <label>critical</label>
+        <minSeverity>0.95</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <hediffGivers>
+          <!-- <li Class="HediffGiver_Random">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+            <mtbDays>0.000017543859649122807017543859649123</mtbDays>
+		  </li> -->
+          <!-- <li Class="HediffGiver_RandomDrugEffect">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<minSeverity>0.001</minSeverity>
+			<baseMtbDays>0.000017543859649122807017543859649123</baseMtbDays>
+		  </li> -->
+          <li Class="Explorite.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.95</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <label>fatal</label>
+        <minSeverity>3</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <hediffGivers>
+          <!-- <li Class="HediffGiver_Random">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+            <mtbDays>0.000016835016835016835016835016835</mtbDays>
+		  </li> -->
+          <!-- <li Class="HediffGiver_RandomDrugEffect">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<minSeverity>0.001</minSeverity>
+			<baseMtbDays>0.000016835016835016835016835016835</baseMtbDays>
+		  </li> -->
+          <li Class="Explorite.HediffGiver_Overtime">
+			<hediff>HyperManipulator_FatalSequela</hediff>
+			<chancePerTick>0.99</chancePerTick>
+			<doCount>2</doCount>
+			<severityAdjust>0.001</severityAdjust>
+			<doTryApply>true</doTryApply>
+		  </li>
+        </hediffGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>HyperManipulator_FatalSequela</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.95, 0.6, 0.75)</defaultLabelColor>
+    <label>manipulator failure sequela</label>
+    <description>The physic manipulator once failed due to hazard temperature, and can be failed at any time for a piroid.</description>
+    <descriptionHyperlinks>
+	  <ThingDef>HyperManipulator</ThingDef>
+	  <HediffDef>HyperManipulator</HediffDef>
+	  <HediffDef>HyperManipulator_EnvironmentalCold</HediffDef>
+	  <HediffDef>HyperManipulator_EnvironmentalHeat</HediffDef>
+	  <HediffDef>HyperManipulator_Dyskinesia</HediffDef>
+	</descriptionHyperlinks>
+    <maxSeverity>1.0</maxSeverity>
+    <initialSeverity>0.001</initialSeverity>
+	<everCurableByItem>false</everCurableByItem>
+    <comps>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.05</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <!-- <label>initial</label> -->
+        <minSeverity>0.0</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <!-- <label>minor</label> -->
+        <minSeverity>0.06</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>HyperManipulator_Dyskinesia</hediff>
+            <mtbDays>20</mtbDays>
+          </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <!-- <label>moderate</label> -->
+        <minSeverity>0.2</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>HyperManipulator_Dyskinesia</hediff>
+            <mtbDays>12</mtbDays>
+          </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <!-- <label>serious</label> -->
+        <minSeverity>0.35</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>HyperManipulator_Dyskinesia</hediff>
+            <mtbDays>7</mtbDays>
+          </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <!-- <label>extreme</label> -->
+        <minSeverity>0.62</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>HyperManipulator_Dyskinesia</hediff>
+            <mtbDays>4</mtbDays>
+          </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <!-- <label>critical</label> -->
+        <minSeverity>0.95</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>HyperManipulator_Dyskinesia</hediff>
+            <mtbDays>2.25</mtbDays>
+          </li>
+        </hediffGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>HyperManipulator_Dyskinesia</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.95, 0.3, 0.75)</defaultLabelColor>
+    <label>manipulator dyskinesia</label>
+    <description>The physic manipulator is failed to once be in hazard temperature. It will last for some times not more than two days, and will not leave permanent damage.</description>
+    <descriptionHyperlinks>
+	  <ThingDef>HyperManipulator</ThingDef>
+	  <HediffDef>HyperManipulator</HediffDef>
+	  <HediffDef>HyperManipulator_EnvironmentalCold</HediffDef>
+	  <HediffDef>HyperManipulator_EnvironmentalHeat</HediffDef>
+	</descriptionHyperlinks>
+    <maxSeverity>1.0</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+	<everCurableByItem>false</everCurableByItem>
+    <hediffGivers>
+    </hediffGivers>
+    <comps>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.5</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>
+          <min>60000</min>
+          <max>240000</max>
+        </disappearsAfterTicks>
+      </li>
+      <!-- <li Class="HediffCompProperties_Discoverable">
+        <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
+        <discoverLetterLabel>Manipulator dyskinesia :{0}</discoverLetterLabel>
+        <discoverLetterText>The physic manipulator on {0} has begun to fail due to dyskinesia, caused by overheated.</discoverLetterText>
+        <letterType>NegativeEvent</letterType>
+        <messageType>NegativeEvent</messageType>
+      </li> -->
+    </comps>
+    <stages>
+      <li>
+        <label>recovering</label>
+        <minSeverity>0</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.92</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>minor</label>
+        <minSeverity>0.06</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.8</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>moderate</label>
+        <minSeverity>0.2</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.5</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>major</label>
+        <minSeverity>0.35</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.1</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>disabled</label>
+        <minSeverity>0.62</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <!-- <postFactor>0.1</postFactor> -->
+            <setMax>0</setMax>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>initial</label>
+        <minSeverity>0.95</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.05</postFactor>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+</Defs>

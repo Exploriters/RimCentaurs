@@ -6,8 +6,8 @@
     <needClass>Explorite.Need_HypothermiaAbsorption</needClass>
     <label>Hypothermia Absorption</label>
     <description>Absorb hypothermia overtime, and allows exposing to chill for a short time.</description>
-    <listPriority>85</listPriority>
-    <major>true</major>
+    <listPriority>485</listPriority>
+    <major>false</major>
     <showForCaravanMembers>true</showForCaravanMembers>
   </NeedDef>
   
@@ -16,7 +16,7 @@
     <needClass>Explorite.Need_CentaurCreativityInspiration</needClass>
     <label>creativity inspiration</label>
     <description>Creativity inspiration reward for having a long time happiness.</description>
-    <listPriority>84</listPriority>
+    <listPriority>85</listPriority>
     <scaleBar>true</scaleBar>
     <major>false</major>
     <showForCaravanMembers>false</showForCaravanMembers>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <RecipeDef>
+    <defName>Make_MedicineUltratech_By_MechSerumArchotech</defName>
+    <label>make glitterworld medicine</label>
+    <description>Make glitterworld medicine by archotech mech serum.</description>
+    <jobString>Making glitterworld medicine.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>10000</workAmount>
+    <unfinishedThingDef>UnfinishedMedicine</unfinishedThingDef>
+	<productHasIngredientStuff>false</productHasIngredientStuff>
+	<dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>  
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MechSerumArchotech</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MechSerumArchotech</li>
+        <li>MedicineIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MedicineUltratech>50</MedicineUltratech>
+    </products>
+	<researchPrerequisites>
+	  <li>MedicineProduction</li>
+	  <li>CentaurReverseEngineeringHumanTech</li>
+	</researchPrerequisites>
+    <skillRequirements>
+      <Crafting>9</Crafting>
+      <Intellectual>9</Intellectual>
+    </skillRequirements>
+    <workSkill>Intellectual</workSkill>
+    <recipeUsers Inherit="False">
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <workSkillLearnFactor>1</workSkillLearnFactor>
+  </RecipeDef>
+
+</Defs>

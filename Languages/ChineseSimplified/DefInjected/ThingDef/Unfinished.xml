@@ -1,9 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: unfinished apparel -->
   <UnfinishedApparelStuffless.label>未完成的衣物</UnfinishedApparelStuffless.label>
-  <!-- EN: An unfinished piece of an apparel. -->
-  <UnfinishedApparelStuffless.description>一件未完成得衣物。</UnfinishedApparelStuffless.description>
+  <UnfinishedApparelStuffless.description>一件未完成的衣物。</UnfinishedApparelStuffless.description>
+  
+  <UnfinishedMedicine.label>未完成的药物</UnfinishedMedicine.label>
+  <UnfinishedMedicine.description>一个未完成的药物。</UnfinishedMedicine.description>
+  
+  <UnfinishedPowercell.label>未完成的能量电池</UnfinishedPowercell.label>
+  <UnfinishedPowercell.description>一个未完成的能量电池。</UnfinishedPowercell.description>
   
 </LanguageData>

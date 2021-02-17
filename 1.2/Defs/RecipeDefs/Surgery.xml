@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <RecipeDef ParentName="SurgeryFlesh">
+  <!-- <RecipeDef ParentName="SurgeryFlesh">
     <defName>RemoveBodyPart_ExcludingScapular</defName>
     <label>remove part</label>
     <description>Remove a body part.</description>
@@ -9,7 +9,7 @@
     <jobString>Removing body part.</jobString>
     <workAmount>2000</workAmount>
     <surgerySuccessChanceFactor>1.2</surgerySuccessChanceFactor>
-    <!-- <targetsBodyPart>true</targetsBodyPart> -->
+    <!- - <targetsBodyPart>true</targetsBodyPart> - ->
     <ingredients>
       <li>
         <filter>
@@ -25,7 +25,7 @@
         <li>Medicine</li>
       </categories>
     </fixedIngredientFilter>
-    <!-- <appliedOnFixedBodyParts>
+    <appliedOnFixedBodyParts>
 		<li>Torso</li>
 		<li>Ribcage</li>
 		<li>Sternum</li>
@@ -56,7 +56,7 @@
 		<li>Femur</li>
 		<li>Tibia</li>
 		<li>CentaurHoof</li>
-    </appliedOnFixedBodyParts> -->
-  </RecipeDef>
+    </appliedOnFixedBodyParts>
+  </RecipeDef> -->
   
 </Defs>

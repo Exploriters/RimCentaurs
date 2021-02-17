@@ -84,7 +84,72 @@
       <recipeUsers>
         <li>FabricationBench</li>
       </recipeUsers>
-      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <unfinishedThingDef>UnfinishedPowercell</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>MechSerumArchotech</defName>
+    <label>archotech mech serum</label>
+    <description>A massive number of mechanites that havn't tuned to any usage yet. It uses archotech to do ultratech works, may waste in some ways but extremely effective.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/MechSerumArchotech</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <!--<soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>-->
+    <stackLimit>25</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <costList>
+      <ComponentArchotech>1</ComponentArchotech>
+      <TriCapacitorCell>1</TriCapacitorCell>
+      <Steel>1</Steel>
+    </costList>
+    <statBases>
+      <MaxHitPoints>320</MaxHitPoints>
+      <!--<MarketValue>2220</MarketValue>-->
+      <Mass>4</Mass>
+      <Flammability>0.2</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+      <WorkToMake>500</WorkToMake>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags />
+    <tradeability>Sellable</tradeability>
+    <techLevel>Ultra</techLevel>
+    <comps />
+    <recipeMaker>
+      <productCount>1</productCount>
+	  <researchPrerequisite Inherit="False" />
+	  <researchPrerequisites>
+		<li>CentaurReverseEngineeringHumanTech</li>
+	  </researchPrerequisites>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <unfinishedThingDef />
       <defaultIngredientFilter>
         <categories>
           <li>Root</li>

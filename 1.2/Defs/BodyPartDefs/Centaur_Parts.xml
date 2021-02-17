@@ -64,6 +64,7 @@
     </tags>
     <destroyableByDamage>false</destroyableByDamage>
     <pawnGeneratorCanAmputate>false</pawnGeneratorCanAmputate>
+    <canSuggestAmputation>false</canSuggestAmputation>
     <frostbiteVulnerability>0</frostbiteVulnerability>
   </BodyPartDef>
 
