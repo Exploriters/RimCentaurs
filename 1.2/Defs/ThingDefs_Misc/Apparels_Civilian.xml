@@ -59,8 +59,8 @@
         <li>CentaurIndustrialBasic</li>
       </tags>
       <defaultOutfitTags>
-        <li>Worker</li>
-        <li>Soldier</li>
+        <li>CentaurOutfit</li>
+        <li>CentaurOutfit</li>
       </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
@@ -68,9 +68,9 @@
 
   <ThingDef ParentName="ArmorSmithableBase">
     <defName>Apparel_CentaurHorseshoesSet</defName>
-    <label>centaur horseshoes Set</label>
+    <label>centaur mitten set</label>
     <tradeability>Sellable</tradeability>
-    <description>A set of horseshoes for a centaur to protect their hooves, also gives them a minor moving speed boost.</description>
+    <description>A set of horseshoes and mittens for a centaur to protect their hooves and hands, also gives them a minor moving speed boost.</description>
     <!--<generateCommonality>0.0</generateCommonality>-->
     <!-- <commonality>0</commonality> -->
     <recipeMaker>
@@ -80,7 +80,6 @@
 		<li>CentaurReverseEngineeringHumanTech</li>
 	  </researchPrerequisites>
       <recipeUsers Inherit="False">
-        <li>CraftingSpot</li>
         <li>FueledSmithy</li>
         <li>ElectricSmithy</li>
       </recipeUsers>
@@ -94,11 +93,11 @@
     </graphicData>
     <costStuffCount>1</costStuffCount>
     <stuffCategories>
-      <li>Woody</li>
+	  <li>Woody</li>
       <li>Metallic</li>
-      <!-- <li>Fabric</li>
+      <li>Fabric</li>
       <li>Leathery</li>
-      <li>Stony</li> -->
+      <!-- <li>Stony</li> -->
     </stuffCategories>
     <thingCategories Inherit="False">
       <li>CentaurApparels</li>
@@ -107,9 +106,8 @@
       <MaxHitPoints>100</MaxHitPoints>
       <WorkToMake>400</WorkToMake>
       <Mass>1</Mass>
-      <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
       <EquipDelay>1</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -118,6 +116,7 @@
     <apparel>
       <bodyPartGroups>
         <li>CentaurHooves</li>
+        <li>Hands</li>
       </bodyPartGroups>
       <layers>
         <li>OnSkin</li>
@@ -127,8 +126,7 @@
         <li>CentaurRetroStart</li>
       </tags>
       <defaultOutfitTags>
-        <li>Worker</li>
-        <li>Soldier</li>
+        <li>Centaur</li>
       </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
@@ -179,8 +177,8 @@
         <li>CentaurIndustrialBasic</li>
       </tags>
       <defaultOutfitTags>
-        <li>Worker</li>
-        <li>Soldier</li>
+        <li>CentaurOutfit</li>
+        <li>CentaurOutfit</li>
       </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
@@ -237,8 +235,8 @@
         <li>CentaurRetroStart</li>
       </tags>
       <defaultOutfitTags>
-        <li>Worker</li>
-        <li>Soldier</li>
+        <li>CentaurOutfit</li>
+        <li>CentaurOutfit</li>
       </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">
@@ -315,8 +313,8 @@
         <li>BeltDefense</li>
       </tags>
       <defaultOutfitTags>
-        <li>Worker</li>
-        <li>Soldier</li>
+        <li>CentaurOutfit</li>
+        <li>CentaurOutfit</li>
       </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
@@ -366,8 +364,8 @@
         <li>CentaurNeolithic</li>
       </tags>
       <defaultOutfitTags>
-        <li>Worker</li>
-        <li>Soldier</li>
+        <li>CentaurOutfit</li>
+        <li>CentaurOutfit</li>
       </defaultOutfitTags>
     </apparel>
     <recipeMaker>
@@ -453,7 +451,7 @@
         <li>CentaurIndustrialAdvanced</li>
       </tags>
       <defaultOutfitTags>
-        <li>Worker</li>
+        <li>CentaurOutfit</li>
       </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">
@@ -526,7 +524,7 @@
         <li>CentaurIndustrialAdvanced</li>
       </tags>
       <defaultOutfitTags>
-        <li>Worker</li>
+        <li>CentaurOutfit</li>
       </defaultOutfitTags>
     </apparel>
     <recipeMaker>

@@ -12,7 +12,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>ThermoDamper</defName>
     <label>thermo damper</label>
-    <description>A durable container, act as a powerful power core, AKA "Environment Thermoelectric Reactor", that generates energy by absorb environment heat. When you placing it indoor, it will drain heat in the room. This technology is developed by unknowns but likly centaurs, and is beyond even most glitterworld societies. Its internal workings are a mystery to all minds, althought it likly extracts energy directly from a singularity in it, means it likly explode on hit.\n\nThis device is however much lighter than it looks like.</description>
+    <description>A durable container, act as a powerful power core, AKA "Environment Thermoelectric Reactor", that generates energy by absorb environment heat. When you place it indoors, it will drain heat in the room. This technology is developed by unknowns but likely centaurs, and is beyond even most glitterworld societies. Its internal workings are a mystery to all minds, althought it likely extracts energy directly from a singularity in it, means it likely explode on hit.\n\nThis device is however much lighter than it looks like.</description>
     <graphicData>
       <texPath>Things/Item/Special/ThermoDamper</texPath>
       <!-- <texPath>Things/Projectile/Arrow_Trishot</texPath> -->
@@ -55,14 +55,14 @@
       <li Class="CompProperties_UseEffect">
         <compClass>CompUseEffect_StartWick</compClass>
       </li>
-      <li Class="CompProperties_ProximityFuse">
+	  <!-- <li Class="CompProperties_ProximityFuse">
         <target>Filth_FrostdustBlue</target>
         <radius>0.05</radius>
-      </li>
-      <li Class="CompProperties_ProximityFuse">
+      </li> -->
+      <!-- <li Class="CompProperties_ProximityFuse">
         <target>Filth_FrostdustOrange</target>
         <radius>0.05</radius>
-      </li>
+      </li> -->
       <!-- <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
         <heatPerSecond>20</heatPerSecond>
@@ -81,17 +81,17 @@
         <transmitsPower>false</transmitsPower>
       </li>
       <li Class="CompProperties_Breakdownable"/> -->
-      <li Class="CompProperties_SnowExpand">
+      <!-- <li Class="CompProperties_SnowExpand">
       <compClass>Explorite.CompSnowExpand_Overtick</compClass>
 	  <expandInterval>100</expandInterval>
 	  <addAmount>100</addAmount>
 	  <maxRadius>2.5</maxRadius>
-	  </li>
-      <li Class="CompProperties_HeatPusher">
+	  </li> -->
+      <!-- <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
         <heatPerSecond>-20</heatPerSecond>
-        <!-- <heatPushMinTemperature>-273</heatPushMinTemperature> -->
-      </li>
+        <heatPushMinTemperature>-2273</heatPushMinTemperature>
+      </li> -->
       <li Class="Explorite.CompProperties_SelfHealOvertime">
         <!-- <compClass>Explorite.CompSelfHealOvertime</compClass> -->
         <detlaHpPerSec>3</detlaHpPerSec>

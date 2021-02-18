@@ -894,6 +894,9 @@
     </race>
     <recipes>
       <li>InstallHyperManipulator</li>
+      <li>InstallBionicCentaurTail</li>
+	  
+	  
       <!-- <li>RemoveBodyPart_ExcludingScapular</li> -->
       <!-- humanRecipeImport enabled
 	  <li>InstallArchotechEye</li>

@@ -3,9 +3,10 @@
 
   <BodyPartDef>
     <defName>CentaurTail</defName>
-    <label>equine tail</label>
+    <!--<label>equine tail</label>-->
+    <label>tail</label>
     <hitPoints>10</hitPoints>
-    <frostbiteVulnerability>1</frostbiteVulnerability>
+    <frostbiteVulnerability>8</frostbiteVulnerability>
     <skinCovered>true</skinCovered>
     <beautyRelated>true</beautyRelated>
     <pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>

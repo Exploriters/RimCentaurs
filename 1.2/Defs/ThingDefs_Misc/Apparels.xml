@@ -87,7 +87,7 @@
         <li>SOS2_SpaceSuit</li>
       </tags>
       <defaultOutfitTags>
-        <li>Soldier</li>
+        <li>CentaurOutfit</li>
       </defaultOutfitTags>
     </apparel>
     <comps>
@@ -177,7 +177,7 @@
         <li>SOS2_SpaceHelmet</li>
       </tags>
       <defaultOutfitTags>
-        <li>Soldier</li>
+        <li>CentaurOutfit</li>
       </defaultOutfitTags>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
     </apparel>
@@ -264,6 +264,9 @@
         <li>CentaurBeltDefense</li>
         <li>CentaurRetroStart</li>
       </tags>
+      <defaultOutfitTags Inherit="False">
+        <li>CentaurOutfit</li>
+      </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">
       <options>

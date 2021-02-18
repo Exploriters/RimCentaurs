@@ -8,6 +8,10 @@
   <InstallMentalBurster.label>安装精神爆发芯片</InstallMentalBurster.label>
   <InstallMentalBurster.description>安装精神爆发芯片。</InstallMentalBurster.description>
   <InstallMentalBurster.jobString>正在安装精神爆发芯片。</InstallMentalBurster.jobString>
+  
+  <InstallBionicCentaurTail.label>安装仿生尾</InstallBionicCentaurTail.label>
+  <InstallBionicCentaurTail.description>安装仿生尾。</InstallBionicCentaurTail.description>
+  <InstallBionicCentaurTail.jobString>正在安装仿生尾。</InstallBionicCentaurTail.jobString>
 
 
 </LanguageData>

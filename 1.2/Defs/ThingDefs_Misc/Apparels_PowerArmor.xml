@@ -85,7 +85,7 @@
         <li>EVA</li>
       </tags>
       <defaultOutfitTags>
-        <li>Soldier</li>
+        <li>CentaurOutfit</li>
       </defaultOutfitTags>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <useWornGraphicMask>true</useWornGraphicMask>
@@ -162,7 +162,7 @@
         <li>EVA</li>
       </tags>
       <defaultOutfitTags>
-        <li>Soldier</li>
+        <li>CentaurOutfit</li>
       </defaultOutfitTags>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <useWornGraphicMask>true</useWornGraphicMask>
@@ -328,7 +328,7 @@
         <li>EVA</li>
       </tags>
       <defaultOutfitTags>
-        <li>Soldier</li>
+        <li>CentaurOutfit</li>
       </defaultOutfitTags>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <useWornGraphicMask>true</useWornGraphicMask>
@@ -457,7 +457,7 @@
         <li>SOS2_SpaceSuit</li>
       </tags>
       <defaultOutfitTags>
-        <li>Soldier</li>
+        <li>CentaurOutfit</li>
       </defaultOutfitTags>
       <useDeflectMetalEffect>false</useDeflectMetalEffect>
     </apparel>

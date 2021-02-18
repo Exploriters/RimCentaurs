@@ -5,7 +5,7 @@
     <defName>CentaurColonist</defName>
     <label>colonist</label>
     <race>Alien_Centaur</race>
-    <defaultFactionType>PlayerColony</defaultFactionType>
+    <defaultFactionType>CentaurPlayerColony</defaultFactionType>
 
     <minGenerationAge>20</minGenerationAge>
     <maxGenerationAge>39</maxGenerationAge>

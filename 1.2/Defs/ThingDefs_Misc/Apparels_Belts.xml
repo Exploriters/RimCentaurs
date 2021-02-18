@@ -58,6 +58,9 @@
         <!-- <li>BeltDefense</li> -->
         <li>CentaurBeltAntimass</li>
       </tags>
+      <defaultOutfitTags Inherit="False">
+        <li>CentaurOutfit</li>
+      </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
@@ -137,6 +140,9 @@
         <!-- <li>BeltDefense</li> -->
         <li>CentaurBeltAntimass</li>
       </tags>
+      <defaultOutfitTags Inherit="False">
+        <li>CentaurOutfit</li>
+      </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">
       <options>

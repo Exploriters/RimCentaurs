@@ -15,7 +15,7 @@
       <parts>
         <li>
           <def>Ribcage</def>
-          <coverage>0.036</coverage>
+          <coverage>0.024</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -23,7 +23,7 @@
         </li>
         <li>
           <def>Sternum</def>
-          <coverage>0.005</coverage>
+          <coverage>0.01</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -31,7 +31,7 @@
         </li>
         <li>
           <def>Pelvis</def>
-          <coverage>0.01</coverage>
+          <coverage>0.01666666666666666666666666666667</coverage>
           <height>Bottom</height>
           <depth>Inside</depth>
           <groups>
@@ -39,17 +39,8 @@
           </groups>
         </li>
         <li>
-          <def>CentaurTail</def>
-          <customLabel>tail</customLabel>
-          <coverage>0.02</coverage>
-          <height>Bottom</height>
-          <groups>
-            <li>Torso</li>
-          </groups>
-        </li>
-        <li>
           <def>Spine</def>
-          <coverage>0.02</coverage>
+          <coverage>0.01666666666666666666666666666667</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -57,7 +48,7 @@
         </li>
         <li>
           <def>Stomach</def>
-          <coverage>0.022</coverage>
+          <coverage>0.01666666666666666666666666666667</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -65,7 +56,7 @@
         </li>
         <li>
           <def>Heart</def>
-          <coverage>0.017</coverage>
+          <coverage>0.01333333333333333333333333333333</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -74,7 +65,7 @@
         <li>
           <def>Heart</def>
           <customLabel>auxiliary heart</customLabel>
-          <coverage>0.017</coverage>
+          <coverage>0.01333333333333333333333333333333</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -83,7 +74,7 @@
         <li>
           <def>Lung</def>
           <customLabel>left lung</customLabel>
-          <coverage>0.020</coverage>
+          <coverage>0.01666666666666666666666666666667</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -92,7 +83,7 @@
         <li>
           <def>Lung</def>
           <customLabel>right lung</customLabel>
-          <coverage>0.020</coverage>
+          <coverage>0.01666666666666666666666666666667</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -101,7 +92,7 @@
         <li>
           <def>Kidney</def>
           <customLabel>left kidney</customLabel>
-          <coverage>0.01</coverage>
+          <coverage>0.01133333333333333333333333333333</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -110,7 +101,7 @@
         <li>
           <def>Kidney</def>
           <customLabel>right kidney</customLabel>
-          <coverage>0.01</coverage>
+          <coverage>0.01133333333333333333333333333333</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
@@ -118,15 +109,24 @@
         </li>
         <li>
           <def>Liver</def>
-          <coverage>0.023</coverage>
+          <coverage>0.01666666666666666666666666666667</coverage>
           <depth>Inside</depth>
           <groups>
             <li>Torso</li>
           </groups>
         </li>
         <li>
+          <def>CentaurTail</def>
+          <customLabel>tail</customLabel>
+          <coverage>0.05</coverage>
+          <height>Bottom</height>
+          <groups>
+            <li>Torso</li>
+          </groups>
+        </li>
+        <li>
           <def>Neck</def>
-          <coverage>0.08</coverage>
+          <coverage>0.05</coverage>
           <height>Top</height>
           <groups>
             <li>Neck</li>
@@ -134,7 +134,7 @@
           <parts>
             <li>
               <def>Head</def>
-              <coverage>0.72</coverage>
+              <coverage>0.80</coverage>
               <groups>
                 <li>UpperHead</li>
                 <li>FullHead</li>
@@ -217,7 +217,7 @@
         </li>
         <li>
           <def>CentaurScapular</def>
-          <coverage>0.24</coverage>
+          <coverage>0.18666666666666666666666666666666</coverage>
           <height>Top</height>
           <groups>
             <li>Torso</li>
@@ -438,7 +438,7 @@
         <li>
           <def>Leg</def>
           <customLabel>front left leg</customLabel>
-          <coverage>0.060</coverage>
+          <coverage>0.09333333333333333333333333333333</coverage>
           <height>Bottom</height>
           <groups>
             <li>CentaurLegs</li>
@@ -447,7 +447,7 @@
             <li>
               <def>Femur</def>
               <customLabel>front left femur</customLabel>
-              <coverage>0.055</coverage>
+              <coverage>0.1</coverage>
               <depth>Inside</depth>
               <groups>
                 <li>CentaurLegs</li>
@@ -456,7 +456,7 @@
             <li>
               <def>Tibia</def>
               <customLabel>front left tibia</customLabel>
-              <coverage>0.055</coverage>
+              <coverage>0.1</coverage>
               <depth>Inside</depth>
               <groups>
                 <li>CentaurLegs</li>
@@ -465,7 +465,7 @@
             <li>
               <def>CentaurHoof</def>
               <customLabel>front left hoof</customLabel>
-              <coverage>0.05</coverage>
+              <coverage>0.1</coverage>
               <groups>
                 <li>CentaurHooves</li>
                 <li>FrontLeftHoove</li>
@@ -476,7 +476,7 @@
         <li>
           <def>Leg</def>
           <customLabel>front right leg</customLabel>
-          <coverage>0.060</coverage>
+          <coverage>0.09333333333333333333333333333333</coverage>
           <height>Bottom</height>
           <groups>
             <li>CentaurLegs</li>
@@ -485,7 +485,7 @@
             <li>
               <def>Femur</def>
               <customLabel>front right femur</customLabel>
-              <coverage>0.055</coverage>
+              <coverage>0.1</coverage>
               <depth>Inside</depth>
               <groups>
                 <li>CentaurLegs</li>
@@ -494,7 +494,7 @@
             <li>
               <def>Tibia</def>
               <customLabel>front right tibia</customLabel>
-              <coverage>0.055</coverage>
+              <coverage>0.1</coverage>
               <depth>Inside</depth>
               <groups>
                 <li>CentaurLegs</li>
@@ -503,7 +503,7 @@
             <li>
               <def>CentaurHoof</def>
               <customLabel>front right hoof</customLabel>
-              <coverage>0.05</coverage>
+              <coverage>0.1</coverage>
               <groups>
                 <li>CentaurHooves</li>
                 <li>FrontRightHoove</li>
@@ -514,7 +514,7 @@
         <li>
           <def>Leg</def>
           <customLabel>rear left leg</customLabel>
-          <coverage>0.060</coverage>
+          <coverage>0.09333333333333333333333333333333</coverage>
           <height>Bottom</height>
           <groups>
             <li>CentaurLegs</li>
@@ -523,7 +523,7 @@
             <li>
               <def>Femur</def>
               <customLabel>rear left femur</customLabel>
-              <coverage>0.055</coverage>
+              <coverage>0.1</coverage>
               <depth>Inside</depth>
               <groups>
                 <li>CentaurLegs</li>
@@ -532,7 +532,7 @@
             <li>
               <def>Tibia</def>
               <customLabel>rear left tibia</customLabel>
-              <coverage>0.055</coverage>
+              <coverage>0.1</coverage>
               <depth>Inside</depth>
               <groups>
                 <li>CentaurLegs</li>
@@ -541,7 +541,7 @@
             <li>
               <def>CentaurHoof</def>
               <customLabel>rear left hoof</customLabel>
-              <coverage>0.05</coverage>
+              <coverage>0.1</coverage>
               <groups>
                 <li>CentaurHooves</li>
                 <li>RearLeftHoove</li>
@@ -552,7 +552,7 @@
         <li>
           <def>Leg</def>
           <customLabel>rear right leg</customLabel>
-          <coverage>0.060</coverage>
+          <coverage>0.09333333333333333333333333333333</coverage>
           <height>Bottom</height>
           <groups>
             <li>CentaurLegs</li>
@@ -561,7 +561,7 @@
             <li>
               <def>Femur</def>
               <customLabel>rear right femur</customLabel>
-              <coverage>0.055</coverage>
+              <coverage>0.1</coverage>
               <depth>Inside</depth>
               <groups>
                 <li>CentaurLegs</li>
@@ -570,7 +570,7 @@
             <li>
               <def>Tibia</def>
               <customLabel>rear right tibia</customLabel>
-              <coverage>0.055</coverage>
+              <coverage>0.1</coverage>
               <depth>Inside</depth>
               <groups>
                 <li>CentaurLegs</li>
@@ -579,7 +579,7 @@
             <li>
               <def>CentaurHoof</def>
               <customLabel>rear right hoof</customLabel>
-              <coverage>0.05</coverage>
+              <coverage>0.1</coverage>
               <groups>
                 <li>CentaurHooves</li>
                 <li>RearRightHoove</li>
@@ -595,11 +595,12 @@
             <li>Waist</li>
           </groups>
         </li>
-        <!--<li>
+        <li>
           <def>CentaurSubsystem</def>
           <customLabel>subsystem primary</customLabel>
-          <coverage>0.05</coverage>
+          <coverage>0.01666666666666666666666666666667</coverage>
           <depth>Inside</depth>
+          <height>Bottom</height>
           <groups>
             <li>Torso</li>
           </groups>
@@ -607,8 +608,9 @@
         <li>
           <def>CentaurSubsystem</def>
           <customLabel>subsystem secondary</customLabel>
-          <coverage>0.05</coverage>
+          <coverage>0.01666666666666666666666666666667</coverage>
           <depth>Inside</depth>
+          <height>Bottom</height>
           <groups>
             <li>Torso</li>
           </groups>
@@ -616,12 +618,13 @@
         <li>
           <def>CentaurSubsystem</def>
           <customLabel>subsystem tertiary</customLabel>
-          <coverage>0.05</coverage>
+          <coverage>0.01666666666666666666666666666667</coverage>
           <depth>Inside</depth>
+          <height>Bottom</height>
           <groups>
             <li>Torso</li>
           </groups>
-        </li>-->
+        </li>
       </parts>
     </corePart>
   </BodyDef>

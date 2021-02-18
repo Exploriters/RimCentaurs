@@ -120,7 +120,7 @@
     <defName>CentaurCivil_Retro</defName>
     <title>Centaur</title>
     <titleShort>Centaur</titleShort>
-    <baseDescription>When the first time [PAWN_nameDef] woke up from cryptosleep, [PAWN_pronoun] found [PAWN_possessive]self inside a cold and wet spaceship. [PAWN_pronoun] had no idea about how [PAWN_pronoun] got here. The only thing that [PAWN_nameDef] remembered, was [PAWN_pronoun] one had a human life... And [PAWN_pronoun] now got a new body with a fluffy tail and an extra pair of legs, also olddly well skilled on most tasks.\n\n[PAWN_pronoun] piloted [PAWN_possessive] ship to a colonized planet, and started to lives there. After that, [PAWN_nameDef] took some time made [PAWN_possessive]self fit the human world, and found [PAWN_possessive] position.</baseDescription>
+    <baseDescription>When the first time [PAWN_nameDef] woke up from cryptosleep, [PAWN_pronoun] found [PAWN_possessive]self inside a cold and wet spaceship. [PAWN_pronoun] had no idea about how [PAWN_pronoun] got here. The only thing that [PAWN_nameDef] remembered, was [PAWN_pronoun] one had a human life... And [PAWN_pronoun] now got a new body with a fluffy tail and an extra pair of legs, also oddly well skilled on most tasks.\n\n[PAWN_pronoun] piloted [PAWN_possessive] ship to a colonized planet and started to lives there. After that, [PAWN_nameDef] took some time made [PAWN_possessive]self fit the human world, and found [PAWN_possessive] position.</baseDescription>
 	
     <bodyTypeMale>CentaurMale</bodyTypeMale>
     <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
@@ -149,7 +149,7 @@
     <femaleCommonality>1</femaleCommonality>-->
 
     <skillGains>
-      <li>
+      <!--<li>
         <defName>Shooting</defName>
         <amount>9</amount>
       </li>
@@ -196,7 +196,7 @@
       <li>
         <defName>Intellectual</defName>
         <amount>9</amount>
-      </li>
+      </li>-->
     </skillGains>
     <!--<requiredWorkTags>
         <li>ManualDumb</li>
@@ -216,7 +216,7 @@
         <li>Mining</li>
     </requiredWorkTags>-->
     <disallowedTraits>
-	  <li><defName>BodyPurist</defName></li>
+	  <!--<li><defName>BodyPurist</defName></li>
 	  <li><defName>Nudist</defName></li>
 	  <li><defName>Bloodlust</defName></li>
 	  <li><defName>Psychopath</defName></li>
@@ -282,7 +282,7 @@
 	  </li>
 	  <li>
 	    <defName>Xenophobia</defName>
-	  </li>
+	  </li>-->
     </disallowedTraits>
 
     <spawnCategories>

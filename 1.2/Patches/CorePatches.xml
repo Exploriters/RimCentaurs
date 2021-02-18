@@ -72,7 +72,7 @@
 		</value>
 	</Operation>
 	
-	
+	<!--
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[((recipeMaker) or (tools) or (apparel) or @ParentName="SculptureBase") and (costStuffCount > 0) and not (stuffCategories)]</xpath>
@@ -87,7 +87,7 @@
 			<li>Orangice</li>
 		</value>
 	</Operation>
-	
+	-->
 	
 	<!--
 	<Operation Class="PatchOperationAdd">

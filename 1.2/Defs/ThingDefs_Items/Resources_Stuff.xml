@@ -44,11 +44,11 @@
       <stuffAdjective>orangicy</stuffAdjective>
       <categories>
 	    <li>Orangice</li>
-        <!--<li>Metallic</li>
+        <li>Metallic</li>
         <li>Fabric</li>
         <li>Leathery</li>
         <li>Stony</li>
-        <li>Woody</li>-->
+        <li>Woody</li>
       </categories>
       <commonality>0</commonality>
       <constructEffect>ConstructMetal</constructEffect>

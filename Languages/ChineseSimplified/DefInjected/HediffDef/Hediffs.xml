@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <BionicCentaurTail.label>仿生尾</BionicCentaurTail.label>
+  <BionicCentaurTail.description>一条已安装的仿生尾。</BionicCentaurTail.description>
+  <BionicCentaurTail.labelNoun>仿生尾</BionicCentaurTail.labelNoun>
+
   <MentalBurster.label>精神爆发芯片</MentalBurster.label>
   <MentalBurster.labelNoun>一个精神爆发芯片</MentalBurster.labelNoun>
   <MentalBurster.description>一个为人马提供的大脑植入物用于增强感知并降低疼痛。</MentalBurster.description>

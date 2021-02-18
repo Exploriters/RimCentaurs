@@ -130,8 +130,7 @@
     </recipeMaker>
     <costList>
       <Gun_CentaurChargeShotgun>1</Gun_CentaurChargeShotgun>
-      <ComponentSpacer>20</ComponentSpacer>
-      <Uranium>60</Uranium>
+      <TriCapacitorCell>20</TriCapacitorCell>
     </costList>
     <weaponTags>
       <li>CentaurSpacerGun</li>
@@ -559,6 +558,10 @@
       </li>   
       <li Class="CompProperties_BiocodableWeapon"/>
       <li Class="Explorite.CompProperties_OversizedWeapon"/>
+      <!--<li Class="CompProperties_BladelinkWeapon" />
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>-->
     </comps>
     <verbs>
       <li>

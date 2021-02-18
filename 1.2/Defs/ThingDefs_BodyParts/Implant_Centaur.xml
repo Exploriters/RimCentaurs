@@ -307,10 +307,10 @@
     <addsHediff>HyperManipulator</addsHediff>
   </RecipeDef> -->
 
-  <!-- <RecipeDef>
-    <defName>InstallHyperManipulator</defName>
-    <label>install physic manipulator</label>
-    <description>Install a physic manipulator.</description>
+  <RecipeDef>
+    <defName>InstallHyperManipulatorSurgery</defName>
+    <label>install physic manipulator by surgery</label>
+    <description>Install a physic manipulator. ERROR SHOWING THIS!</description>
     <workerClass>Recipe_InstallImplant</workerClass>
     <jobString>Installing physic manipulator.</jobString>
     <workAmount>180</workAmount>
@@ -320,6 +320,9 @@
     <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
     <anesthetize>false</anesthetize>
     <skillRequirements />
+	<factionPrerequisiteTags>
+	  <li>NeverNeverNeverAndNever</li>
+	</factionPrerequisiteTags>
     <ingredients>
       <li>
         <filter>
@@ -339,7 +342,7 @@
       <li>CentaurScapular</li>
     </appliedOnFixedBodyParts>
     <addsHediff>HyperManipulator</addsHediff>
-  </RecipeDef> -->
+  </RecipeDef>
 
   <RecipeDef>
     <defName>InstallHyperManipulator</defName>
@@ -368,7 +371,6 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
-  
   
   <HediffDef>
     <defName>HyperManipulator_EnvironmentalHeat</defName>

@@ -118,16 +118,16 @@
       <li>
         <filter>
           <thingDefs>
-            <li>ComponentSpacer</li>
+            <li>MechSerumArchotech</li>
           </thingDefs>
         </filter>
-        <count>50</count>
+        <count>5</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Bow_Trishot_1Stage</li>
-        <li>ComponentSpacer</li>
+        <li>MechSerumArchotech</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -143,7 +143,7 @@
     <recipeUsers Inherit="False">
       <li>FabricationBench</li>
     </recipeUsers>
-    <workSkillLearnFactor>0</workSkillLearnFactor>
+    <!--<workSkillLearnFactor>0</workSkillLearnFactor>-->
   </RecipeDef>
 
   <RecipeDef>
@@ -241,7 +241,7 @@
     <recipeUsers>
       <li>FabricationBench</li>
     </recipeUsers>
-    <workSkillLearnFactor>0</workSkillLearnFactor>
+    <!--<workSkillLearnFactor>0</workSkillLearnFactor>-->
   </RecipeDef>
 
 </Defs>

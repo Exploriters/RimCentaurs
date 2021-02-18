@@ -51,6 +51,9 @@
       </tags>
       <wornGraphicPath isNull="True" />
       <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <defaultOutfitTags Inherit="False">
+        <li>CentaurOutfit</li>
+      </defaultOutfitTags>
     </apparel>
     <!--<colorGenerator Inherit="False" isNull="True" />-->
     <thingCategories Inherit="False">
@@ -164,7 +167,7 @@
         <li>OnSkin</li>
       </layers>
       <defaultOutfitTags>
-        <li>Soldier</li>
+        <li>CentaurOutfit</li>
       </defaultOutfitTags>
       <tags>
         <li>Psychic</li>
