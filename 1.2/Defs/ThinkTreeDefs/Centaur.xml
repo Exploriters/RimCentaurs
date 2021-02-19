@@ -16,7 +16,7 @@
 				<li Class="ThinkNode_Tagger">
 				  <tagToGive>Misc</tagToGive>
 				  <subNodes>
-					<li Class="JobGiver_Nuzzle" />
+					<li Class="Explorite.JobGiver_Nuzzle_Humanoid" />
 				  </subNodes>
 				</li>
 			  </subNodes>

@@ -17,4 +17,7 @@
   <ArtificialHivebox.label>人造虫箱</ArtificialHivebox.label>
   <ArtificialHivebox.description>通过饲养其中的昆虫来缓慢地生成虫胶。其被摧毁时会释放其中危险的巨型昆虫。</ArtificialHivebox.description>
 
+  <CentaurBed.label>半人马床</CentaurBed.label>
+  <CentaurBed.description>一张为半人马设计的床。非常舒适和漂亮，同时也可以增加治疗的成功率。</CentaurBed.description>
+
 </LanguageData>

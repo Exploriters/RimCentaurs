@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BedWithQualityBase">
+    <defName>CentaurBed</defName>
+    <label>centaur bed</label>
+    <description>A bed designed for centaurs. It is very comfy and beautiful, also adjustable for a patient and festooned with built-in equipment, improves medical outcomes over normal beds.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/CentaurBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <statBases>
+      <MaxHitPoints>214.28571428571428571428571428571</MaxHitPoints>
+      <WorkToBuild>175000</WorkToBuild>
+      <Mass>70</Mass>
+	  <Beauty>75</Beauty>
+      <Flammability>1.0</Flammability>
+      <BedRestEffectiveness>1.05</BedRestEffectiveness>
+      <Comfort>0.96</Comfort>
+      <ImmunityGainSpeedFactor>1.11</ImmunityGainSpeedFactor>
+      <MedicalTendQualityOffset>0.10</MedicalTendQualityOffset>
+      <SurgerySuccessChanceFactor>1.1</SurgerySuccessChanceFactor>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>VitalsMonitor</li>
+          <li>EndTable</li>
+          <li>Dresser</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <size>(2,2)</size>
+    <stuffCategories>
+      <li>Woody</li>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <costList>
+      <Steel>300</Steel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <building>
+      <bed_showSleeperBody>False</bed_showSleeperBody>
+      <bed_healPerDay>10</bed_healPerDay>
+      <bed_defaultMedical>false</bed_defaultMedical>
+      <buildingSizeCategory>Small</buildingSizeCategory>
+    </building>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>42</pathCost>
+    <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+    <!--<designationHotKey>Misc5</designationHotKey>-->
+    <researchPrerequisites>
+	  <li>CentaurReverseEngineeringHumanTech</li>
+      <li>HospitalBed</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <techLevel>Spacer</techLevel>
+    <uiIconScale>0.90</uiIconScale>
+	<tradeability>Sellable</tradeability>
+  </ThingDef>
+  
+</Defs>
