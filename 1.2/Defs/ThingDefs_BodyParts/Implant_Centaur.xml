@@ -309,8 +309,11 @@
 
   <RecipeDef>
     <defName>InstallHyperManipulatorSurgery</defName>
-    <label>install physic manipulator by surgery</label>
+    <label>install physic manipulator</label>
     <description>Install a physic manipulator. ERROR SHOWING THIS!</description>
+    <descriptionHyperlinks>
+	  <RecipeDef>InstallHyperManipulator</RecipeDef>
+	</descriptionHyperlinks>
     <workerClass>Recipe_InstallImplant</workerClass>
     <jobString>Installing physic manipulator.</jobString>
     <workAmount>180</workAmount>
@@ -348,6 +351,10 @@
     <defName>InstallHyperManipulator</defName>
     <label>install physic manipulator</label>
     <description>Install a physic manipulator.</description>
+    <descriptionHyperlinks>
+	  <ThingDef>HyperManipulator</ThingDef>
+	  <HediffDef>HyperManipulator</HediffDef>
+	</descriptionHyperlinks>
     <workerClass>Recipe_AdministerUsableItem</workerClass>
     <jobString>Installing physic manipulator.</jobString>
     <targetsBodyPart>false</targetsBodyPart>

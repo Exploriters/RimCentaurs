@@ -5,6 +5,10 @@
   <InstallHyperManipulator.description>安装物理操作仪。</InstallHyperManipulator.description>
   <InstallHyperManipulator.jobString>正在安装物理操作仪。</InstallHyperManipulator.jobString>
 
+  <InstallHyperManipulatorSurgery.label>安装物理操作仪</InstallHyperManipulatorSurgery.label>
+  <InstallHyperManipulatorSurgery.description>安装物理操作仪。</InstallHyperManipulatorSurgery.description>
+  <InstallHyperManipulatorSurgery.jobString>正在安装物理操作仪。</InstallHyperManipulatorSurgery.jobString>
+
   <InstallMentalBurster.label>安装精神爆发芯片</InstallMentalBurster.label>
   <InstallMentalBurster.description>安装精神爆发芯片。</InstallMentalBurster.description>
   <InstallMentalBurster.jobString>正在安装精神爆发芯片。</InstallMentalBurster.jobString>

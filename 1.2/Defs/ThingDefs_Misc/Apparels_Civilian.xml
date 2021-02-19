@@ -126,7 +126,7 @@
         <li>CentaurRetroStart</li>
       </tags>
       <defaultOutfitTags>
-        <li>Centaur</li>
+        <li>CentaurOutfit</li>
       </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />

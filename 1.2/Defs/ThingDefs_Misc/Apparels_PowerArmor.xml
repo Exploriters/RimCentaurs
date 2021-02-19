@@ -244,9 +244,6 @@
     <projectile>
       <speed>16</speed>
     </projectile>
-    <thingCategories Inherit="False">
-      <li>CentaurApparels</li>
-    </thingCategories>
   </ThingDef>
   <ThingDef ParentName="BaseGrenadeProjectile">
     <defName>Proj_CentaurGrenadierEMP</defName>
@@ -263,9 +260,6 @@
       <!-- Use default damage from explosion def -->
       <explosionDelay>100</explosionDelay>
     </projectile>
-    <thingCategories Inherit="False">
-      <li>CentaurApparels</li>
-    </thingCategories>
   </ThingDef>
   
   <ThingDef ParentName="ApparelArmorCataphractBase" ExEx="Royalty">

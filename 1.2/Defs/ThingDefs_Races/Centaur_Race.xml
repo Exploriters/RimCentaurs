@@ -399,6 +399,9 @@
           <li>SleptInHeat</li>
           <li>AteKibble</li>
           <li>WasImprisoned</li>
+		  
+          <li>ButcheredHumanlikeCorpse</li>
+          <li>KnowButcheredHumanlikeCorpse</li>
         </cannotReceiveThoughts>
         <restrictedThoughts>
           <li>EnvironmentCold_Centaur</li>
@@ -442,7 +445,17 @@
             <replacer>WasImprisoned_Centaur</replacer>
           </li>
         </replacerList>
-
+		
+		<butcherThoughtSpecific>
+			<li>
+				<raceList>
+					<li>Alien_Centaur</li>
+				</raceList>
+				<thought>ButcheredHumanlikeCorpse</thought>
+				<knowThought>KnowButcheredHumanlikeCorpse</knowThought>
+			</li>
+		</butcherThoughtSpecific>
+		
         <!--<butcherThoughtSpecific>
                 <li>
                     <raceList>
