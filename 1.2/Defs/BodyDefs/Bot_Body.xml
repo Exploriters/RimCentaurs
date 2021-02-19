@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyDef>
+    <defName>MechanicalSingleThorax</defName>
+    <label>auto bot</label>
+    <corePart>
+      <def>AutoBotCore</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>Torso</li>
+      </groups>
+    </corePart>
+  </BodyDef>
+
+  <BodyPartDef>
+    <defName>AutoBotCore</defName>
+    <label>core</label>
+    <hitPoints>1000</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <frostbiteVulnerability>1</frostbiteVulnerability>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+  
+</Defs>
