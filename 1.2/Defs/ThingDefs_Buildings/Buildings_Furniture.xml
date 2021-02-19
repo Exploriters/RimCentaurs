@@ -25,7 +25,14 @@
       <MedicalTendQualityOffset>0.10</MedicalTendQualityOffset>
       <SurgerySuccessChanceFactor>1.1</SurgerySuccessChanceFactor>
     </statBases>
-    <comps>
+    <comps Inherit="False">
+      <li Class="Explorite.CompProperties_AssignableToPawn_NoPostLoadSpecial">
+        <drawAssignmentOverlay>false</drawAssignmentOverlay>
+        <compClass>CompAssignableToPawn_Bed</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
           <li>VitalsMonitor</li>
