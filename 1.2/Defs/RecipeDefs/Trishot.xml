@@ -96,8 +96,13 @@
 
   <RecipeDef>
     <defName>Repair_Trishot_1Stage</defName>
-	<label>replace thermo damper for trishot</label>
-	<description>Repair trishot by replacing its components. This will restore it's normal range and sightly restore an alternative attact</description>
+	<label>patch trishot</label>
+	<description>Repair trishot by archotech mech serum. This will restore it's normal range and sightly restore an alternative attact</description>
+    <descriptionHyperlinks>
+      <ThingDef>TriCapacitorCell</ThingDef>
+      <ThingDef>ComponentArchotech</ThingDef>
+      <ThingDef>MechSerumArchotech</ThingDef>
+    </descriptionHyperlinks>
 	<jobString>Repairing trishot.</jobString>
 	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 	<effectWorking>Smith</effectWorking>
@@ -134,7 +139,7 @@
       <Bow_Trishot_2Stage>1</Bow_Trishot_2Stage>
     </products>
 	<researchPrerequisites>
-	  <li>CentaurReverseEngineeringHumanTech</li>
+	  <li>CentaurStoryStep1st</li>
 	</researchPrerequisites>
     <skillRequirements>
       <Crafting>9</Crafting>

@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ResearchProjectDef>
-    <defName>CentaurTechRootProject</defName>
+  <ResearchProjectDef Name="CentaurResearchProjectBase" Abstract="True">
     <tab>Explorite</tab>
+    <prerequisites />
+    <researchViewX>0</researchViewX>
+    <researchViewY>2.80</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="CentaurResearchProjectBase">
+    <defName>CentaurTechRootProject</defName>
     <label>centaurs</label>
     <description>Allowing you researching future more centaurs exclusive technology.</description>
     <baseCost>100</baseCost>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Animal</techLevel>
     <prerequisites>
     </prerequisites>
     <hiddenPrerequisites>
     </hiddenPrerequisites>
     <researchViewX>0</researchViewX>
-    <researchViewY>2.80</researchViewY>
     <techprintCount>1</techprintCount>
     <techprintCommonality>0</techprintCommonality>
     <techprintMarketValue>20000</techprintMarketValue>
@@ -23,40 +28,77 @@
     </tags>
   </ResearchProjectDef>
 
-  <ResearchProjectDef>
+  <ResearchProjectDef ParentName="CentaurResearchProjectBase">
     <defName>CentaurReverseEngineeringHumanTech</defName>
-    <tab>Explorite</tab>
     <label>centaurs exclusive equipments</label>
     <description>Remastery human equipments to make things fit centaurs.</description>
     <baseCost>100</baseCost>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Animal</techLevel>
     <prerequisites>
       <li>CentaurTechRootProject</li>
     </prerequisites>
     <researchViewX>1</researchViewX>
-    <researchViewY>2.80</researchViewY>
     <tags>
       <li>CentaurStart</li>
     </tags>
   </ResearchProjectDef>
 
-  <ResearchProjectDef>
+  <ResearchProjectDef ParentName="CentaurResearchProjectBase" Name="CentaurStoryProjectBase" Abstract="True">
+    <baseCost>10000</baseCost>
+    <techLevel>Animal</techLevel>
+    <prerequisites />
+    <hiddenPrerequisites>
+      <li>CentaurTechRootProject</li>
+    </hiddenPrerequisites>
+    <techprintCount>1</techprintCount>
+    <techprintCommonality>0</techprintCommonality>
+    <techprintMarketValue>20000</techprintMarketValue>
+    <heldByFactionCategoryTags><li>CentaurFactionDummy</li></heldByFactionCategoryTags>
+    <researchViewX>3</researchViewX>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="CentaurStoryProjectBase">
+    <defName>CentaurStoryStep1st</defName>
+    <label>centaurs archotech</label>
+    <description>Unlock base centaurs archotech.</description>
+    <prerequisites>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="CentaurStoryProjectBase">
+    <defName>CentaurStoryStep2nd</defName>
+    <label>centaurs TODO</label>
+    <description>Unlock SOMETHING TODO.</description>
+    <prerequisites>
+    </prerequisites>
+    <researchViewX>4</researchViewX>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="CentaurStoryProjectBase">
+    <defName>CentaurStoryStep3rd</defName>
+    <label>centaurs TODO</label>
+    <description>Unlock SOMETHING TODO.</description>
+    <prerequisites>
+    </prerequisites>
+    <researchViewX>5</researchViewX>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="CentaurResearchProjectBase">
     <defName>TrishotProject</defName>
-    <tab>Explorite</tab>
     <label>trishot</label>
     <description>Allows you craft an ultra weapon that used by centaur, Trishot, a powerful massive bow with long range that fires triple heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst.</description>
     <baseCost>10000</baseCost>
     <techLevel>Spacer</techLevel>
-    <prerequisites>
+    <hiddenPrerequisites>
       <li>CentaurTechRootProject</li>
       <li>ChargedShot</li>
-    </prerequisites>
+    </hiddenPrerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
     <researchViewX>6</researchViewX>
-    <researchViewY>2.80</researchViewY>
     <!-- <discoveredLetterTitle>About: Trishot</discoveredLetterTitle>
     <discoveredLetterText>????</discoveredLetterText>
     <discoveredLetterMinDifficulty>1</discoveredLetterMinDifficulty> -->

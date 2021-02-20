@@ -43,6 +43,7 @@
         <!--<li>Overhead</li>-->
       </layers>
       <tags>
+        <li>CentaurBodyFit</li>
         <li>CentaurRetroStart</li>
         <li>PrestigeCombatGear</li>
         <li>Psychic</li>
@@ -138,7 +139,7 @@
     </statBases>
     <equippedStatOffsets>
       <PsychicSensitivity>0.675</PsychicSensitivity>
-      <!--<PsychicSensitivityOffset>0.45</PsychicSensitivityOffset>-->
+      <!--<PsychicSensitivity>0.45</PsychicSensitivity>-->
       <PsychicEntropyRecoveryRate>0.495</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <costList>
@@ -170,6 +171,7 @@
         <li>CentaurOutfit</li>
       </defaultOutfitTags>
       <tags>
+        <li>CentaurBodyFit</li>
         <li>Psychic</li>
       </tags>
     </apparel>

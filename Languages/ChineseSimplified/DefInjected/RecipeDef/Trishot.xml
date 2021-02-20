@@ -13,8 +13,8 @@
   <Make_Bow_Trishot.description>制作三射弓。</Make_Bow_Trishot.description>
   <Make_Bow_Trishot.jobString>正在制作三射弓。</Make_Bow_Trishot.jobString> -->
   
-  <Repair_Trishot_1Stage.label>为三射弓更换失温器</Repair_Trishot_1Stage.label>
-  <Repair_Trishot_1Stage.description>通过更换其零部件来修复三射弓。这将会恢复其射程并轻度恢复其额外攻击能力。</Repair_Trishot_1Stage.description>
+  <Repair_Trishot_1Stage.label>修补三射弓</Repair_Trishot_1Stage.label>
+  <Repair_Trishot_1Stage.description>使用远古机械液来修复三射弓。这将会恢复其射程并轻度恢复其额外攻击能力。</Repair_Trishot_1Stage.description>
   <Repair_Trishot_1Stage.jobString>正在修复三射弓。</Repair_Trishot_1Stage.jobString>
 
   <Repair_Trishot_2Stage.label>修复三射弓</Repair_Trishot_2Stage.label>

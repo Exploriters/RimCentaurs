@@ -7,7 +7,8 @@
     <label>centaur</label>
     <!-- The result of extensive gene modding done by the ultra-wealthy as a hobby, now recognised as a distinct species. Despite their equine appearance, centaurs are omnivorous. -->
     <description>An extremely rare, unknown source of bioengineered species that possesses a human genome with additional patches, centaur is now recognised as a distinct mammal species.\n\nCentaur has a stronger physique, generally better appearance, larger appetite, stronger immunity, more difficult to be knocked down than humans, also a natural shooter - although it is not ruled out that there may be a few ones who prefer melee combat - but Centaur's extremely hard body and extraordinary unarmed damage can also make it a deadly melee combat unit. Despite their equine appearance, centaurs are omnivorous. \n\nCentaur is more adaptable to cold environments than humans. Although they have the same skin as humans, centaurs are less likely to endure heat than humans.</description>
-
+	
+    <size>(1,1)</size>
     <comps>
       <li Class="Explorite.CompProperties_PawnShield" />
       <li Class="Explorite.CompProperties_PawnRepairApparelsOvertime">
@@ -22,20 +23,342 @@
         </abilities>
       </li>
     </comps>
-    <tradeTags>
-      <!-- <li>AnimalInsectSpace</li> -->
-      <!-- To allows Centaurs survive in SOS2 Space. I didn't have anyother choice. -->
-    </tradeTags>
+    <tradeTags />
+    <statBases>
+      <MarketValue>38000</MarketValue>
+      <MoveSpeed>13.5</MoveSpeed>
+      <CarryingCapacity>1000</CarryingCapacity>
+      <Flammability>1.0</Flammability>
+      <LeatherAmount>90</LeatherAmount>
+	  
+	  <!-- Corpse -->
+      <MaxHitPoints>250</MaxHitPoints>
+      <DeteriorationRate>0.0</DeteriorationRate>
+	  
+	  <!-- Endurance -->
+      <ComfyTemperatureMin>-36</ComfyTemperatureMin>
+      <ComfyTemperatureMax>20.2</ComfyTemperatureMax>
+      <ImmunityGainSpeed>1.75</ImmunityGainSpeed>
+      <ToxicSensitivity>0.5</ToxicSensitivity>
+      <ToxicHypothermiaSensitivity>0</ToxicHypothermiaSensitivity>
+      <MentalBreakThreshold>0.02</MentalBreakThreshold>
+      <PainShockThreshold>0.95</PainShockThreshold>
+	  
+	  <!-- Combat -->
+      <AimingDelayFactor>0.5</AimingDelayFactor>
+      <ShootingAccuracyPawn>60</ShootingAccuracyPawn>
+      <MeleeDodgeChance>15</MeleeDodgeChance>
+      <PawnTrapSpringChance>0.1</PawnTrapSpringChance>
+	  
+	  <!-- Needs -->
+      <EatingSpeed>1.5</EatingSpeed>
+      <RestRateMultiplier>1.5</RestRateMultiplier>
+	  
+	  <!-- Social -->
+      <PawnBeauty>10.0</PawnBeauty>
+      <SocialImpact>2.0</SocialImpact>
+      <!--<TradePriceImprovement>1</TradePriceImprovement>-->
+	  
+	  <!-- Work -->
+      <GlobalLearningFactor>1.75</GlobalLearningFactor>
+      <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+      <ResearchSpeed>2.0</ResearchSpeed>
+      <TameAnimalChance>3.0</TameAnimalChance>
+      <TrainAnimalChance>3.0</TrainAnimalChance>
+      <ButcheryFleshEfficiency>1.03</ButcheryFleshEfficiency>
+      <ButcheryMechanoidEfficiency>1.03</ButcheryMechanoidEfficiency>
+	  
+	  
+	  <!-- Psychic -->
+      <PsychicSensitivity>1.8</PsychicSensitivity>
+      <PsychicEntropyMax ExEx="Royalty">90</PsychicEntropyMax>
+      <PsychicEntropyRecoveryRate ExEx="Royalty">1.62</PsychicEntropyRecoveryRate>
+      <!--<MeditationFocusGain ExEx="Royalty">1.5</MeditationFocusGain>-->
 
+	  <!-- Shield -->
+      <PawnShieldRechargeRate>0</PawnShieldRechargeRate>
+      <PawnShieldEnergyMax>0</PawnShieldEnergyMax>
+	  
+    </statBases>
+	<race>
+      <thinkTreeMain>Centaur</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>false</makesFootprints>
+      <lifeExpectancy>Infinity</lifeExpectancy>
+      <nameCategory>HumanStandard</nameCategory>
+      <leatherDef>Leather_Human</leatherDef>
+      <body>Centaur</body>
+      <!--<Mass>106.5</Mass>-->
+      <baseBodySize>3.0</baseBodySize>
+      <baseHealthScale>3.0</baseHealthScale>
+      <foodType>OmnivoreHuman, CarnivoreAnimal, OmnivoreAnimal, OvivoreAnimal</foodType>
+      <!-- <gestationPeriodDays>45</gestationPeriodDays> -->
+      <gestationPeriodDays isNull="True" />
+      <meatMarketValue>0.8</meatMarketValue>
+      <useMeatFrom>Human</useMeatFrom>
+      <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+      <baseHungerRate>1.5</baseHungerRate>
+      <herdAnimal>false</herdAnimal>
+      <packAnimal>true</packAnimal>
+      <predator>false</predator>
+      <nuzzleMtbHours>12</nuzzleMtbHours>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, .30)</li>
+          <li>(2, .40)</li>
+          <li>(3, .10)</li>
+          <li>(4, .20)</li>
+          <li>(5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>CentaurBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>CentaurToddler</def>
+          <minAge>1.2</minAge>
+        </li>
+        <li>
+          <def>CentaurChild</def>
+          <minAge>4</minAge>
+        </li>
+        <li>
+          <def>CentaurTeenager</def>
+          <minAge>13</minAge>
+        </li>
+        <li>
+          <def>CentaurAdult</def>
+          <minAge>18</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <!-- <ageGenerationCurve>
+				<points>
+				  <li>(26.25,0)</li>
+				  <li>(30,100)</li>
+				  <li>(93.75,100)</li>
+				  <li>(112.5,30)</li>
+				  <li>(131.25,18)</li>
+				  <li>(150,10)</li>
+				  <li>(168.75,3)</li>
+				  <li>(187.5,0)</li>
+				</points>
+			  </ageGenerationCurve> -->
+      <ageGenerationCurve>
+        <points>
+          <li>(14,0)</li>
+          <li>(16,100)</li>
+          <li>(93.75,100)</li>
+          <li>(112.5,30)</li>
+          <li>(131.25,18)</li>
+          <li>(150,10)</li>
+          <li>(168.75,3)</li>
+          <li>(187.5,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <hediffGiverSets>
+        <li>OrganicStandard_NoAgingProblem</li>
+        <li>Human</li>
+        <li>Centaur</li>
+      </hediffGiverSets>
+    </race>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>1.4</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>18</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>1.4</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>18</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.07</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+      <li>
+        <label>front left hoove</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftHoove</linkedBodyPartsGroup>
+        <chanceFactor>0.3</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>26</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>front right hoove</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightHoove</linkedBodyPartsGroup>
+        <chanceFactor>0.3</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>26</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>rear left hoove</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>RearLeftHoove</linkedBodyPartsGroup>
+        <chanceFactor>0.2</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>26</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>rear right hoove</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>RearRightHoove</linkedBodyPartsGroup>
+        <chanceFactor>0.2</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>26</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+    </tools>
+    <recipes>
+      <li>InstallHyperManipulator</li>
+      <li>InstallBionicCentaurTail</li>
+	  
+	  
+      <!-- <li>RemoveBodyPart_ExcludingScapular</li> -->
+      <!-- humanRecipeImport enabled
+	  <li>InstallArchotechEye</li>
+	  <li>InstallArchotechArm</li>
+	  <li>InstallArchotechLeg</li>
+	  <li>InstallPowerClaw</li>
+	  <li>InstallBionicEye</li>
+	  <li>InstallBionicArm</li>
+	  <li>InstallBionicLeg</li>
+	  <li>InstallBionicSpine</li>
+	  <li>InstallBionicHeart</li>
+	  <li>InstallBionicStomach</li>
+	  <li>InstallBionicEar</li>
+	  <li>InstallSimpleProstheticArm</li>
+	  <li>InstallSimpleProstheticLeg</li>
+	  <li>InstallSimpleProstheticHeart</li>
+	  <li>InstallCochlearImplant</li>
+	  <li>InstallPegLeg</li>
+	  <li>InstallWoodenFoot</li>
+	  <li>InstallDenture</li>
+	  <li>InstallJoywire</li>
+	  <li>InstallPainstopper</li>
+	  <li>InstallNaturalHeart</li>
+	  <li>InstallNaturalLung</li>
+	  <li>InstallNaturalKidney</li>
+	  <li>InstallNaturalLiver</li>
+	  <li>ExciseCarcinoma</li>
+	  <li>AdministerMechSerumHealer</li>
+	  <li>RemoveBodyPart</li>
+	  <li>Euthanize</li>
+	  <li>Anesthetize</li>-->
+    </recipes>
+	
     <alienRace>
       <generalSettings>
-        <!-- <useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories> -->
         <immuneToAge>true</immuneToAge>
         <allowHumanBios>true</allowHumanBios>
+		<humanRecipeImport>true</humanRecipeImport>
 		<maleGenderProbability>0.5</maleGenderProbability>
         <maxDamageForSocialfight>7</maxDamageForSocialfight>
         <canLayDown>true</canLayDown>
-        <!--<validBeds>
+        <!--
+		<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>
+        <validBeds>
 			<li>DoubleSleepingSpot</li>
 			<li>DoubleBed</li>
 			<li>RoyalBed</li>
@@ -55,8 +378,8 @@
             <defName>Asexual</defName>
             <chance>100</chance>
           </li>
-        </forcedRaceTraitEntries>-->
-        <!--<disallowedTraits>
+        </forcedRaceTraitEntries>
+        <disallowedTraits>
           <li><defName>Asexual</defName></li>
           <li><defName>Kind</defName></li>
           <li><defName>Transhumanist</defName></li>
@@ -141,7 +464,6 @@
               <path>Things/Centaur/Ears/EarLeft</path>
               <bodyPart>left ear</bodyPart>
               <inFrontOfBody>true</inFrontOfBody>
-              <!--<useSkinColor>false</useSkinColor>-->
               <drawnInBed>true</drawnInBed>
               <hiddenUnderApparelTag>
                 <li>HideCentaurEar</li>
@@ -203,16 +525,12 @@
                 </east>
               </offsets>
             </li>
-
-
-
-            <li Class="Explorite.BodyAddon_MX">
+			<li Class="Explorite.BodyAddon_MX">
               <drawSize>1</drawSize>
               <colorChannel>hair</colorChannel>
               <path>Things/Centaur/Ears/EarRight</path>
               <bodyPart>right ear</bodyPart>
               <inFrontOfBody>true</inFrontOfBody>
-              <!--<useSkinColor>false</useSkinColor>-->
               <drawnInBed>true</drawnInBed>
               <hiddenUnderApparelTag>
                 <li>HideCentaurEar</li>
@@ -274,16 +592,12 @@
                 </east>
               </offsets>
             </li>
-
-
-
             <li Class="Explorite.BodyAddon_MX">
               <drawSize>1</drawSize>
               <colorChannel>hair</colorChannel>
               <path>Things/Centaur/Tail/Tail</path>
               <bodyPart>tail</bodyPart>
               <inFrontOfBody>false</inFrontOfBody>
-              <!--<useSkinColor>false</useSkinColor>-->
               <drawnInBed>false</drawnInBed>
               <offsets>
                 <south>
@@ -342,31 +656,7 @@
                 </east>
               </offsets>
             </li>
-
-            <!--   -->
-
           </bodyAddons>
-
-          <!--<alienskincolorgen Class="ColorGenerator_StandardApparel">
-				<!- -    <options>
-					<li>
-						<weight>10</weight>
-						<only>RGBA(0.2,0.2,0.2,1)</only>
-					</li>
-					
-					<li>
-						<weight>10</weight>
-						<only>RGBA(1,0.7,0.5,1)</only>
-					</li>
-					<!- - Cute Colours - ->
-					<li>
-						<weight>10</weight>
-						<only>RGBA(0.5,0.9,1,1)</only>
-					</li>						
-					</options>- ->
-
-				</alienskincolorgen>-->
-          <!--<alienhaircolorgen Class="Explorite.ColorGenerator_CentaurHair"/>-->
           <colorChannels>
             <li>
               <name>hair</name>
@@ -378,56 +668,55 @@
           <customHeadDrawSize>(1, 1)</customHeadDrawSize>
           <customDrawSize>(1.35, 1.35)</customDrawSize>
         </alienPartGenerator>
-        <humanRecipeImport>true</humanRecipeImport>
+        
       </generalSettings>
 
       <thoughtSettings>
         <cannotReceiveThoughts>
+		  <!-- Situations - Centaurs can't have -->
+          <li>EnvironmentCold</li>
+          <li>EnvironmentHot</li>
+          <li>NeedOutdoors</li>
 		  <li>ProsthophileNoProsthetic</li>
 		  <li>Pain</li>
 		  <li>MasochistPain</li>
 		  
-          <li>AteWithoutTable</li>
-          <li>SoakingWet</li>
-          <li>SleptOnGround</li>
-          <li>SleptOutside</li>
-
-          <li>EnvironmentCold</li>
-          <li>EnvironmentHot</li>
-          <li>NeedOutdoors</li>
+		  <!-- Memories - Centaurs have replacer -->
           <li>SleptInCold</li>
           <li>SleptInHeat</li>
           <li>AteKibble</li>
           <li>WasImprisoned</li>
 		  
+		  <!-- Memories - Centaurs can't have -->
+          <li>AteWithoutTable</li>
+          <li>SoakingWet</li>
+          <li>SleptOnGround</li>
+          <li>SleptOutside</li>
           <li>ButcheredHumanlikeCorpse</li>
           <li>KnowButcheredHumanlikeCorpse</li>
+		  
+		  <!-- Social - Centaurs can't have -->
+          <li>ButcheredHumanlikeCorpseOpinion</li>
         </cannotReceiveThoughts>
         <restrictedThoughts>
+		
+		  <!-- Situations -->
           <li>EnvironmentCold_Centaur</li>
           <li>EnvironmentHot_Centaur</li>
           <li>NeedOutdoors_Centaur</li>
+		  
+		  <!-- Memories -->
           <li>SleptInCold_Centaur</li>
           <li>SleptInHeat_Centaur</li>
           <li>AteKibble_Centaur</li>
           <li>WasImprisoned_Centaur</li>
-
+		  
+		  <!-- Social related -->
           <li>BothCentaur</li>
           <li>SpotCentaur</li>
+		  
         </restrictedThoughts>
         <replacerList>
-          <!--<li>
-					<original>EnvironmentCold</original>
-					<replacer>EnvironmentCold_Centaur</replacer> 
-				</li>
-				<li>
-					<original>EnvironmentHot</original>
-					<replacer>EnvironmentHot_Centaur</replacer> 
-				</li>
-				<li>
-					<original>NeedOutdoors</original>
-					<replacer>NeedOutdoors_Centaur</replacer> 
-				</li>-->
           <li>
             <original>SleptInCold</original>
             <replacer>SleptInCold_Centaur</replacer>
@@ -622,326 +911,6 @@
       </raceRestriction>
 
     </alienRace>
-
-
-
-    <statBases>
-      <MarketValue>38000</MarketValue>
-      <!-- 1900 -->
-      <MoveSpeed>13.5</MoveSpeed>
-      <!--Nyooooooooom-->
-      <!-- 9.0 -->
-      <Flammability>1.0</Flammability>
-      <ComfyTemperatureMin>-36</ComfyTemperatureMin>
-      <!-- 14 -->
-      <ComfyTemperatureMax>20.2</ComfyTemperatureMax>
-      <!-- 24 -->
-      <LeatherAmount>90</LeatherAmount>
-      <MeleeDodgeChance>15</MeleeDodgeChance>
-      <PawnTrapSpringChance>0.1</PawnTrapSpringChance>
-      <RestRateMultiplier>1.5</RestRateMultiplier>
-      <ToxicSensitivity>0.5</ToxicSensitivity>
-      <ToxicHypothermiaSensitivity>0</ToxicHypothermiaSensitivity>
-
-      <MaxHitPoints>250</MaxHitPoints>
-      <DeteriorationRate>0.0</DeteriorationRate>
-
-      <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
-      <GlobalLearningFactor>1.75</GlobalLearningFactor>
-      <EatingSpeed>1.5</EatingSpeed>
-      <MentalBreakThreshold>0.02</MentalBreakThreshold>
-      <AimingDelayFactor>0.5</AimingDelayFactor>
-      <ShootingAccuracyPawn>20</ShootingAccuracyPawn>
-      <SocialImpact>2.0</SocialImpact>
-      <PawnBeauty>10.0</PawnBeauty>
-      <ImmunityGainSpeed>1.75</ImmunityGainSpeed>
-      <PainShockThreshold>0.95</PainShockThreshold>
-      <TameAnimalChance>1.5</TameAnimalChance>
-      <TrainAnimalChance>1.5</TrainAnimalChance>
-      <!-- <HungerRateMultiplier>1.0</HungerRateMultiplier> -->
-      <CarryingCapacity>150</CarryingCapacity>
-
-      <PsychicSensitivity>1.8</PsychicSensitivity>
-      <PsychicEntropyMax ExEx="Royalty">90</PsychicEntropyMax>
-      <PsychicEntropyRecoveryRate ExEx="Royalty">1.62</PsychicEntropyRecoveryRate>
-      <MeditationFocusGain ExEx="Royalty">1.5</MeditationFocusGain>
-
-      <PawnShieldRechargeRate>0</PawnShieldRechargeRate>
-      <PawnShieldEnergyMax>0</PawnShieldEnergyMax>
-    </statBases>
-    <size>(1,1)</size>
-    <tools>
-      <li>
-        <label>left fist</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>8.2</power>
-        <cooldownTime>1.4</cooldownTime>
-        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>18</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <label>right fist</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>8.2</power>
-        <cooldownTime>1.4</cooldownTime>
-        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>18</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <label>teeth</label>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>12</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.07</chanceFactor>
-      </li>
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>10</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-      </li>
-      <li>
-        <label>front left hoove</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>14</power>
-        <cooldownTime>2.5</cooldownTime>
-        <linkedBodyPartsGroup>FrontLeftHoove</linkedBodyPartsGroup>
-        <chanceFactor>0.3</chanceFactor>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>26</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-      </li>
-      <li>
-        <label>front right hoove</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>14</power>
-        <cooldownTime>2.5</cooldownTime>
-        <linkedBodyPartsGroup>FrontRightHoove</linkedBodyPartsGroup>
-        <chanceFactor>0.3</chanceFactor>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>26</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-      </li>
-      <li>
-        <label>rear left hoove</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>14</power>
-        <cooldownTime>2.5</cooldownTime>
-        <linkedBodyPartsGroup>RearLeftHoove</linkedBodyPartsGroup>
-        <chanceFactor>0.2</chanceFactor>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>26</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-      </li>
-      <li>
-        <label>rear right hoove</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>14</power>
-        <cooldownTime>2.5</cooldownTime>
-        <linkedBodyPartsGroup>RearRightHoove</linkedBodyPartsGroup>
-        <chanceFactor>0.2</chanceFactor>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>26</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-      </li>
-    </tools>
-    <race>
-      <thinkTreeMain>Centaur</thinkTreeMain>
-      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
-      <intelligence>Humanlike</intelligence>
-      <makesFootprints>false</makesFootprints>
-      <!-- <lifeExpectancy>150</lifeExpectancy> -->
-      <lifeExpectancy>Infinity</lifeExpectancy>
-      <!-- <lifeExpectancy isNull="true" /> -->
-      <nameCategory>HumanStandard</nameCategory>
-      <leatherDef>Leather_Human</leatherDef>
-      <body>Centaur</body>
-      <!--<Mass>106.5</Mass>-->
-      <baseBodySize>3.0</baseBodySize>
-      <!-- 1.5 -->
-      <baseHealthScale>3.0</baseHealthScale>
-      <!-- 1.2 -->
-      <foodType>OmnivoreHuman, CarnivoreAnimal, OmnivoreAnimal, OvivoreAnimal</foodType>
-      <!-- <gestationPeriodDays>45</gestationPeriodDays> -->
-      <!-- 32.5 -->
-      <gestationPeriodDays isNull="True" />
-      <meatMarketValue>0.8</meatMarketValue>
-      <useMeatFrom>Human</useMeatFrom>
-      <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
-      <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
-      <baseHungerRate>1.5</baseHungerRate>
-      <herdAnimal>false</herdAnimal>
-      <packAnimal>true</packAnimal>
-      <predator>false</predator>
-      <nuzzleMtbHours>12</nuzzleMtbHours>
-      <litterSizeCurve>
-        <points>
-          <li>(0.5, 0)</li>
-          <li>(1, .30)</li>
-          <li>(2, .40)</li>
-          <li>(3, .10)</li>
-          <li>(4, .20)</li>
-          <li>(5, 0)</li>
-        </points>
-      </litterSizeCurve>
-      <lifeStageAges>
-        <li>
-          <def>CentaurBaby</def>
-          <minAge>0</minAge>
-        </li>
-        <li>
-          <def>CentaurToddler</def>
-          <minAge>1.2</minAge>
-        </li>
-        <li>
-          <def>CentaurChild</def>
-          <minAge>4</minAge>
-        </li>
-        <li>
-          <def>CentaurTeenager</def>
-          <minAge>13</minAge>
-        </li>
-        <li>
-          <def>CentaurAdult</def>
-          <minAge>18</minAge>
-        </li>
-      </lifeStageAges>
-      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
-      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
-      <specialShadowData>
-        <volume>(0.3, 0.8, 0.4)</volume>
-        <offset>(0,0,-0.3)</offset>
-      </specialShadowData>
-      <!-- <ageGenerationCurve>
-				<points>
-				  <li>(26.25,0)</li>
-				  <li>(30,100)</li>
-				  <li>(93.75,100)</li>
-				  <li>(112.5,30)</li>
-				  <li>(131.25,18)</li>
-				  <li>(150,10)</li>
-				  <li>(168.75,3)</li>
-				  <li>(187.5,0)</li>
-				</points>
-			  </ageGenerationCurve> -->
-      <ageGenerationCurve>
-        <points>
-          <li>(14,0)</li>
-          <li>(16,100)</li>
-          <li>(93.75,100)</li>
-          <li>(112.5,30)</li>
-          <li>(131.25,18)</li>
-          <li>(150,10)</li>
-          <li>(168.75,3)</li>
-          <li>(187.5,0)</li>
-        </points>
-      </ageGenerationCurve>
-      <hediffGiverSets>
-        <li>OrganicStandard_NoAgingProblem</li>
-        <li>Human</li>
-        <li>Centaur</li>
-      </hediffGiverSets>
-    </race>
-    <recipes>
-      <li>InstallHyperManipulator</li>
-      <li>InstallBionicCentaurTail</li>
-	  
-	  
-      <!-- <li>RemoveBodyPart_ExcludingScapular</li> -->
-      <!-- humanRecipeImport enabled
-	  <li>InstallArchotechEye</li>
-	  <li>InstallArchotechArm</li>
-	  <li>InstallArchotechLeg</li>
-	  <li>InstallPowerClaw</li>
-	  <li>InstallBionicEye</li>
-	  <li>InstallBionicArm</li>
-	  <li>InstallBionicLeg</li>
-	  <li>InstallBionicSpine</li>
-	  <li>InstallBionicHeart</li>
-	  <li>InstallBionicStomach</li>
-	  <li>InstallBionicEar</li>
-	  <li>InstallSimpleProstheticArm</li>
-	  <li>InstallSimpleProstheticLeg</li>
-	  <li>InstallSimpleProstheticHeart</li>
-	  <li>InstallCochlearImplant</li>
-	  <li>InstallPegLeg</li>
-	  <li>InstallWoodenFoot</li>
-	  <li>InstallDenture</li>
-	  <li>InstallJoywire</li>
-	  <li>InstallPainstopper</li>
-	  <li>InstallNaturalHeart</li>
-	  <li>InstallNaturalLung</li>
-	  <li>InstallNaturalKidney</li>
-	  <li>InstallNaturalLiver</li>
-	  <li>ExciseCarcinoma</li>
-	  <li>AdministerMechSerumHealer</li>
-	  <li>RemoveBodyPart</li>
-	  <li>Euthanize</li>
-	  <li>Anesthetize</li>-->
-    </recipes>
 
   </AlienRace.ThingDef_AlienRace>
 </Defs>

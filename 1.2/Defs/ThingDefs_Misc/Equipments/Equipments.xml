@@ -528,7 +528,7 @@
 	  <researchPrerequisite Inherit="False"/>
 	  <researchPrerequisites>
 		<li>ChargedShot</li>
-		<li>CentaurReverseEngineeringHumanTech</li>
+		<li>CentaurStoryStep1st</li>
 	  </researchPrerequisites>
       <skillRequirements>
         <Crafting>9</Crafting>

@@ -37,6 +37,10 @@
     <defName>TriCapacitorCell</defName>
     <label>radioisotope fuel cell</label>
     <description>Packs of batteries made of uranium, which can provide a stable power output. These power cells can be used by varies of devices to support thousands years of use.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Uranium</ThingDef>
+      <ThingDef>ComponentSpacer</ThingDef>
+    </descriptionHyperlinks>
     <graphicData>
       <texPath>Things/Item/Resource/TriCapacitor</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -54,7 +58,7 @@
       <MarketValue>20</MarketValue>
       <Mass>3</Mass>
       <Flammability>0</Flammability>
-      <DeteriorationRate>2</DeteriorationRate>
+      <DeteriorationRate>0</DeteriorationRate>
       <WorkToMake>2400</WorkToMake>
     </statBases>
     <intricate>true</intricate>
@@ -104,6 +108,10 @@
     <defName>MechSerumArchotech</defName>
     <label>archotech mech serum</label>
     <description>A massive number of mechanites that havn't tuned to any usage yet. It uses archotech to do ultratech works, may waste in some ways but extremely effective.</description>
+    <descriptionHyperlinks>
+      <ThingDef>TriCapacitorCell</ThingDef>
+      <ThingDef>ComponentArchotech</ThingDef>
+    </descriptionHyperlinks>
     <graphicData>
       <texPath>Things/Item/Resource/MechSerumArchotech</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -121,8 +129,8 @@
       <MaxHitPoints>320</MaxHitPoints>
       <!--<MarketValue>2220</MarketValue>-->
       <Mass>4</Mass>
-      <Flammability>0.2</Flammability>
-      <DeteriorationRate>2</DeteriorationRate>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
       <WorkToMake>500</WorkToMake>
     </statBases>
     <intricate>true</intricate>
@@ -140,7 +148,7 @@
       <productCount>1</productCount>
 	  <researchPrerequisite Inherit="False" />
 	  <researchPrerequisites>
-		<li>CentaurReverseEngineeringHumanTech</li>
+		<li>CentaurStoryStep1st</li>
 	  </researchPrerequisites>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>

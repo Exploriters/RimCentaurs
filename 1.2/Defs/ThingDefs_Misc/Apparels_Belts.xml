@@ -55,6 +55,7 @@
         <li>Belt</li>
       </layers>
       <tags>
+        <li>CentaurBodyFit</li>
         <!-- <li>BeltDefense</li> -->
         <li>CentaurBeltAntimass</li>
       </tags>
@@ -137,6 +138,7 @@
         <li>Belt</li>
       </layers>
       <tags>
+        <li>CentaurBodyFit</li>
         <!-- <li>BeltDefense</li> -->
         <li>CentaurBeltAntimass</li>
       </tags>

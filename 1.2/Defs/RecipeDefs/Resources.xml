@@ -55,4 +55,83 @@
     <workSkillLearnFactor>1</workSkillLearnFactor>
   </RecipeDef>
 
+  <RecipeDef>
+    <defName>Make_ArchotechComponent_ByDeconstruct</defName>
+    <label>deconstruct archotech for component</label>
+    <description>Deconstruct archotech objects to make archotech component.</description>
+    <jobString>Making archotech component.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>2000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredientValueGetterClass>Explorite.IngredientValueGetter_MarketValue</ingredientValueGetterClass>
+    <recipeUsers Inherit="False">
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AIPersonaCore</li>
+            <li>Apparel_PsychicInsanityLance</li>
+            <li>Apparel_PsychicShockLance</li>
+            <li>ArchotechArm</li>
+            <li>ArchotechEye</li>
+            <li>ArchotechLeg</li>
+            <li>PsychicAnimalPulser</li>
+            <li>PsychicSoothePulser</li>
+            <li>PsychicAmplifier</li>
+            <li>PsychicEmanator</li>
+            <li>Gloomlight</li>
+            <li>UnstablePowerCell</li>
+            <li>VanometricPowerCell</li>
+          </thingDefs>
+          <categories>
+            <li>Artifacts</li>
+            <li>BodyPartsArchotech</li>
+          </categories>
+          <disallowedThingDefs />
+        </filter>
+        <count>4000</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+            <li>AIPersonaCore</li>
+            <li>Apparel_PsychicInsanityLance</li>
+            <li>Apparel_PsychicShockLance</li>
+            <li>ArchotechArm</li>
+            <li>ArchotechEye</li>
+            <li>ArchotechLeg</li>
+            <li>PsychicAnimalPulser</li>
+            <li>PsychicSoothePulser</li>
+            <li>PsychicAmplifier</li>
+            <li>PsychicEmanator</li>
+            <li>Gloomlight</li>
+            <li>UnstablePowerCell</li>
+            <li>VanometricPowerCell</li>
+      </thingDefs>
+	  <categories>
+		<li>Artifacts</li>
+		<li>BodyPartsArchotech</li>
+	  </categories>
+      <disallowedThingDefs />
+    </fixedIngredientFilter>
+	<researchPrerequisites>
+	  <li>CentaurStoryStep1st</li>
+	</researchPrerequisites>
+    <defaultIngredientFilter>
+      <thingDefs />
+      <categories />
+      <disallowedThingDefs />
+    </defaultIngredientFilter>
+    <products>
+      <ComponentArchotech>1</ComponentArchotech>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
 </Defs>

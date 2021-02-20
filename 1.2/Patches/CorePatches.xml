@@ -9,6 +9,23 @@
 		</value>
 	</Operation>-->
 	<Operation Class="PatchOperationAdd">
+		<success>Normal</success>
+		<xpath>Defs/StorytellerDef[@Name="BaseStoryteller"]/comps</xpath>
+		<value>
+		  <li Class="StorytellerCompProperties_SingleOnceFixed">
+			<fireAfterDaysPassed>1</fireAfterDaysPassed>
+			<incident MayRequire="Exploriters.siiftun1857.CentaurTheMagnuassembly">GiveQuest_Centaur_FisteverTrishot</incident>
+			<allowedTargetTags>
+			  <li>World</li>
+			</allowedTargetTags>
+			<enableIfAnyModActive>
+			  <li>Exploriters.siiftun1857.CentaurTheMagnuassembly</li>
+			</enableIfAnyModActive>
+		  </li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[race/fleshType="Mechanoid"]/statBases</xpath>
 		<value>
@@ -41,6 +58,7 @@
 				defName="SolarPanels" or 
 				defName="ColoredLights" or 
 				defName="ComplexFurniture" or
+				defName="ShipBasics" or
 				
 				defName="CataphractArmor") 
 			and not (tags)]</xpath>
@@ -56,7 +74,8 @@
 				defName="Batteries" or 
 				defName="SolarPanels" or 
 				defName="ColoredLights" or 
-				defName="ComplexFurniture"]
+				defName="ComplexFurniture" or 
+				defName="ShipBasics"]
 			/tags</xpath>
 		<value>
 			<li>CentaurStart</li>

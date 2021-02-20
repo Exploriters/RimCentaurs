@@ -28,5 +28,9 @@
   <Make_MedicineUltratech_By_MechSerumArchotech.label>制作闪耀世界医药</Make_MedicineUltratech_By_MechSerumArchotech.label>
   <Make_MedicineUltratech_By_MechSerumArchotech.description>使用古代机械液来制作闪耀世界医药。</Make_MedicineUltratech_By_MechSerumArchotech.description>
   <Make_MedicineUltratech_By_MechSerumArchotech.jobString>正在制作闪耀世界医药。</Make_MedicineUltratech_By_MechSerumArchotech.jobString>
+
+  <Make_ArchotechComponent_ByDeconstruct.label>拆解远古科技以获取零部件</Make_ArchotechComponent_ByDeconstruct.label>
+  <Make_ArchotechComponent_ByDeconstruct.description>拆解远古科技以获取零部件。</Make_ArchotechComponent_ByDeconstruct.description>
+  <Make_ArchotechComponent_ByDeconstruct.jobString>正在制作远古零部件。</Make_ArchotechComponent_ByDeconstruct.jobString>
   
 </LanguageData>

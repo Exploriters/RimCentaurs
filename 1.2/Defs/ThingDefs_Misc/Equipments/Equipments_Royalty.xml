@@ -29,7 +29,7 @@
     </statBases>
     <equippedAngleOffset>-65</equippedAngleOffset>
     <equippedStatOffsets>
-      <PsychicSensitivityOffset>0.75</PsychicSensitivityOffset>
+      <PsychicSensitivity>0.75</PsychicSensitivity>
       <PsychicEntropyRecoveryRate>0.2475</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <recipeMaker>

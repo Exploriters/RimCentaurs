@@ -20,11 +20,13 @@
 
     <chemicalAddictionChance>0</chemicalAddictionChance>
     <apparelRequired>
+      <li>Apparel_CentaurHeaddress</li>
       <li>Apparel_CentaurHorseshoesSet</li>
       <li>Apparel_CentaurCollarShirt</li>
       <li>Apparel_CentaurFlakVest</li>
       <li>Apparel_CentaurFlakPants</li>
       <li>Apparel_CentaurFlakJacket</li>
+      <li>Apparel_AdvancedHelmet</li>
     </apparelRequired>
     <apparelTags>
       <li>CentaurRetroStart</li>
