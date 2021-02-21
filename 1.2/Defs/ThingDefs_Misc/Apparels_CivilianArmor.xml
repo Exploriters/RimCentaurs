@@ -39,7 +39,7 @@
     </stuffCategories>
     <costStuffCount>340</costStuffCount>
     <statBases>
-      <WorkToMake>75000</WorkToMake>
+      <WorkToMake>76000</WorkToMake>
       <MaxHitPoints>580</MaxHitPoints>
       <Mass>30</Mass>
       <StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
@@ -48,7 +48,7 @@
       <EquipDelay>30</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.8</MoveSpeed>
+      <MoveSpeed>-1.6</MoveSpeed>
     </equippedStatOffsets>
     <thingCategories Inherit="False">
       <li>CentaurApparels</li>
@@ -115,7 +115,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <WorkToMake>1800</WorkToMake>
+      <WorkToMake>18000</WorkToMake>
       <MaxHitPoints>200</MaxHitPoints>
       <Mass>8</Mass>
       <Flammability>0.6</Flammability>
@@ -194,7 +194,7 @@
       <drawSize>0.90</drawSize>
     </graphicData>
     <statBases>
-      <WorkToMake>16000</WorkToMake>
+      <WorkToMake>18000</WorkToMake>
       <MaxHitPoints>400</MaxHitPoints>
       <Mass>8</Mass>
       <Flammability>0.6</Flammability>
@@ -275,8 +275,8 @@
       <li>CentaurApparels</li>
     </thingCategories>
     <statBases>
-      <MaxHitPoints>260</MaxHitPoints>
-      <WorkToMake>26000</WorkToMake>
+      <WorkToMake>28000</WorkToMake>
+      <MaxHitPoints>400</MaxHitPoints>
       <Mass>14</Mass>
       <Flammability>0.6</Flammability>
       <ArmorRating_Sharp>0.40</ArmorRating_Sharp>

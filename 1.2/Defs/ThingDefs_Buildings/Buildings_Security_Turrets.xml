@@ -6,37 +6,78 @@
     <label>auto crossbow turret</label>
     <description>A ultra-long-ranged mass blasting crossbow turret that can shoot over walls, fires quadruple heavy arrows with delay-setoff thermal-discharging-bomb in a single burst. It requires advanced component to be replaced after overuse. It can't fire at close-up targets, and may explode when damaged.</description>
     <uiIconPath>Things/Building/Security/TurretHyperTrishot_MenuIcon</uiIconPath>
+    <statBases>
+      <MaxHitPoints>3800</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>30000</WorkToBuild>
+      <Mass>1000</Mass>
+      <Beauty>0</Beauty>
+      <ShootingAccuracyTurret>0.95</ShootingAccuracyTurret>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Security/TurretShipCombatMassiveBase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3, 3)</drawSize>
+      <drawOffset>(0,0,0)</drawOffset>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(3,0.35,3)</volume>
+        <offset>(0,0,-0.05)</offset>
+      </shadowData>
+    </graphicData>
+	<passability>Impassable</passability>
+    <rotatable>false</rotatable>
+    <size>(3,3)</size>
     <category>Building</category>
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
     <tradeability>Sellable</tradeability>
-    <statBases>
-      <ShootingAccuracyTurret>0.95</ShootingAccuracyTurret>
-    </statBases>
     <costList Inherit="False">
-      <ComponentSpacer>300</ComponentSpacer>
+      <Steel>2000</Steel>
+      <ComponentSpacer>25</ComponentSpacer>
       <ThermoDamper>1</ThermoDamper>
     </costList>
-    <thingCategories>
+    <!--<thingCategories>
       <li>BuildingsSpecial</li>
-    </thingCategories>
-    <minifiedDef>MinifiedThing</minifiedDef>
+    </thingCategories>-->
+    <!-- <minifiedDef>MinifiedThing</minifiedDef> -->
     <!-- <minifiedDef>ThermoDamper</minifiedDef> -->
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <resourcesFractionWhenDeconstructed>0.5</resourcesFractionWhenDeconstructed>
+    <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
     <killedLeavings>
-      <ThermoDamper>0</ThermoDamper>
-      <ComponentSpacer>25</ComponentSpacer>
-      <ChunkSlagSteel>1</ChunkSlagSteel>
+      <ThermoDamper>1</ThermoDamper>
+      <Steel>2000</Steel>
+      
+      <!--<ComponentSpacer>300</ComponentSpacer>
+	  <ComponentSpacer>25</ComponentSpacer>
+      <ChunkSlagSteel>9</ChunkSlagSteel>-->
     </killedLeavings>
     <comps Inherit="False">
+      <!--<li>
+        <compClass>Explorite.CompDropThermoDamperOnDestroy</compClass>
+      </li>-->
+      <!--<li Class="Explorite.CompProperties_DropThingsOnDestroy">
+        <cases>
+		  <li>
+			<destroyModes>
+			  <li>KillFinalize</li>
+			  <li>Deconstruct</li>
+			</destroyModes>
+			<things>
+			  <li><thingDef>ThermoDamper</thingDef></li>
+			</things>
+		  </li>
+		</cases>
+      </li>-->
       <!-- <li Class="CompProperties_Explosive">
         <explosiveRadius>5.9</explosiveRadius>
         <explosiveDamageType>Bomb</explosiveDamageType>
         <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
       </li> -->
-      <li Class="CompProperties_Explosive">
+      <!--<li Class="CompProperties_Explosive">
         <explosiveDamageType>FrostblastSuper</explosiveDamageType>
         <explosiveRadius>39.95</explosiveRadius>
         <preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
@@ -56,14 +97,15 @@
           <min>180</min>
           <max>600</max>
         </wickTicks>
-      </li>
+      </li>-->
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>150</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
       </li>
       <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_Breakdownable"/>
+      <!-- <li Class="CompProperties_Breakdownable"/> -->
       <!-- <li Class="CompProperties_Refuelable">
         <fuelLabel>Shots until rearm</fuelLabel>
         <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
@@ -164,7 +206,7 @@
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
     <researchPrerequisites>
-      <li>TrishotProject</li>
+      <li>CentaurStoryStep3rd</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -224,111 +266,5 @@
       </li>
     </verbs>
   </ThingDef>
-  
-  <!--
-  <ThingDef ParentName="AutocannonTurret">
-    <defName>Turret_CentaursChargedBlaster</defName>
-    <label>auto crossbow turret</label>
-    <description>A ultra-long-ranged mass blasting crossbow turret that can shoot over walls, fires quadruple heavy arrows with delay-setoff thermal-discharging-bomb in a single burst. It requires advanced component to be replaced after overuse. It can't fire at close-up targets, and may explode when damaged.</description>
-    <uiIconPath>Things/Building/Security/TurretHyperTrishot_MenuIcon</uiIconPath>
-    <category>Building</category>
-    <tradeTags>
-      <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeability>Sellable</tradeability>
-    <statBases>
-      <ShootingAccuracyTurret>0.95</ShootingAccuracyTurret>
-    </statBases>
-    <costList Inherit="False">
-      <ComponentSpacer>300</ComponentSpacer>
-      <ThermoDamper>1</ThermoDamper>
-    </costList>
-    <thingCategories>
-      <li>BuildingsSpecial</li>
-    </thingCategories>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <resourcesFractionWhenDeconstructed>0.5</resourcesFractionWhenDeconstructed>
-    <killedLeavings>
-      <ThermoDamper>0</ThermoDamper>
-      <ComponentSpacer>25</ComponentSpacer>
-      <ChunkSlagSteel>1</ChunkSlagSteel>
-    </killedLeavings>
-    <comps Inherit="False">
-      <li Class="CompProperties_Explosive">
-        <wickTicks>240</wickTicks>
-        <explosiveRadius>3.9</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
-      </li>
-      <li Class="CompProperties_Forbiddable"/>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>150</basePowerConsumption>
-      </li>
-      <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_Breakdownable"/>
-      <li Class="CompProperties_Refuelable">
-        <fuelLabel>Component durability</fuelLabel>
-        <fuelGizmoLabel>Component durability</fuelGizmoLabel>
-        <fuelFilter>
-          <thingDefs>
-            <li>ComponentSpacer</li>
-          </thingDefs>
-        </fuelFilter>
-        <fuelCapacity>250</fuelCapacity>
-        <initialFuelPercent>0.5</initialFuelPercent>
-        <autoRefuelPercent>0.75</autoRefuelPercent>
-        <showFuelGizmo>true</showFuelGizmo>
-        <minimumFueledThreshold>1</minimumFueledThreshold>
-        <fuelMultiplier>5</fuelMultiplier>
-        <factorByDifficulty>false</factorByDifficulty>
-        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-        <outOfFuelMessage>Cannot shoot: Needs replace components</outOfFuelMessage>
-        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
-        <initialConfigurableTargetFuelLevel>125</initialConfigurableTargetFuelLevel>
-      </li>
-    </comps>
-    <inspectorTabs>
-    </inspectorTabs>
-    <building>
-      <turretGunDef>Gun_CentaurChargeBlasterTurret</turretGunDef>
-      <turretBurstCooldownTime>0</turretBurstCooldownTime>
-    </building>
-    <placeWorkers>
-      <li>PlaceWorker_TurretTop</li>
-    </placeWorkers>
-    <researchPrerequisites>
-      <li>TrishotProject</li>
-    </researchPrerequisites>
-  </ThingDef>
-
-  <ThingDef ParentName="Gun_ChargeBlasterHeavyBase">
-    <defName>Gun_CentaurChargeBlasterTurret</defName>
-    <label>light charge blaster</label>
-    <description>A pulse-charged rapid-fire blaster for area fire.</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/ChargeBlasterLight</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <statBases>
-      <AccuracyLong>0.08</AccuracyLong>
-    </statBases>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_ChargeBlasterHeavy</defaultProjectile>
-        <warmupTime>0.13194444444444444444444444444444</warmupTime>
-        <range>45.9</range>
-        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
-        <burstShotCount>1</burstShotCount>
-        <soundCast>Shot_ChargeBlaster</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
-      </li>
-    </verbs>
-  </ThingDef>
-  -->
   
 </Defs>

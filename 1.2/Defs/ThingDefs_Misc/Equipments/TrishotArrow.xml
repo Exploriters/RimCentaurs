@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
-  <!-- Arrows -->
-  
-  <ThingDef ParentName="BaseProjectileNeolithic" Name="Arrow_Trishot">
-    <defName>Arrow_Trishot</defName>
-    <label>trishot bombarrow</label>
+  <ThingDef ParentName="BaseProjectileNeolithic" Name="BaseTrishotArrow" Abstract="True">
     <useHitPoints>false</useHitPoints>
     <neverMultiSelect>false</neverMultiSelect>
     <statBases>
@@ -13,7 +9,7 @@
       <Mass>1</Mass>
       <Flammability>0</Flammability>
     </statBases>
-    <selectable>true</selectable>
+    <selectable>false</selectable>
     <graphicData>
       <texPath>Things/Projectile/Arrow_Trishot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -21,13 +17,8 @@
     </graphicData>
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
-      <flyOverhead>false</flyOverhead>
       <damageDef>Frostblast</damageDef>
-      <damageAmountBase>20</damageAmountBase>
-      <stoppingPower>10.05</stoppingPower>
-      <armorPenetrationBase>0.0</armorPenetrationBase>
-      <speed>60</speed>
-      <explosionRadius>1.5</explosionRadius>
+      <armorPenetrationBase>1.0</armorPenetrationBase>
       <preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
       <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
       <preExplosionSpawnThingCount>5</preExplosionSpawnThingCount>
@@ -37,12 +28,31 @@
       <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
       <!-- <explosionEffect>GiantExplosion</explosionEffect> -->
       <ai_IsIncendiary>false</ai_IsIncendiary>
-      <explosionDelay>20</explosionDelay>
-
       <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
       <soundExplode>Explosion_EMP</soundExplode>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
       <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+    <comps />
+  </ThingDef>
+  
+  <!-- Arrows -->
+  
+  <ThingDef ParentName="BaseTrishotArrow">
+    <defName>Arrow_Trishot</defName>
+    <label>trishot bombarrow</label>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Frostblast</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <stoppingPower>10.05</stoppingPower>
+      <speed>60</speed>
+      <explosionRadius>1.5</explosionRadius>
+      <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+      <preExplosionSpawnThingCount>5</preExplosionSpawnThingCount>
+      <postExplosionSpawnChance>0.5</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>5</postExplosionSpawnThingCount>
+      <explosionDelay>20</explosionDelay>
     </projectile>
     <comps>
       <!-- 
@@ -76,46 +86,22 @@
     </comps>
   </ThingDef>
 
-  <ThingDef ParentName="BaseProjectileNeolithic">
+  <ThingDef ParentName="BaseTrishotArrow">
     <defName>Arrow_Trishot_Hyper_20D</defName>
     <label>trishot hyper arrow</label>
-    <useHitPoints>false</useHitPoints>
-    <neverMultiSelect>false</neverMultiSelect>
-    <statBases>
-      <MaxHitPoints>0</MaxHitPoints>
-      <Mass>1</Mass>
-      <Flammability>0</Flammability>
-    </statBases>
-    <selectable>true</selectable>
-    <graphicData>
-      <texPath>Things/Projectile/Arrow_Trishot</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPostLight</shaderType>
-    </graphicData>
-    <thingClass>Explorite.Projectile_Explosive_Waggingshot</thingClass>
+    <thingClass>Explorite.Projectile_Explosive_Spotshot</thingClass>
     <projectile>
       <flyOverhead>true</flyOverhead>
       <damageDef>Frostblast</damageDef>
       <damageAmountBase>3</damageAmountBase>
       <stoppingPower>20</stoppingPower>
-      <armorPenetrationBase>0.0</armorPenetrationBase>
       <speed>180</speed>
       <explosionRadius>2.5</explosionRadius>
-      <preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
       <preExplosionSpawnChance>0.125</preExplosionSpawnChance>
       <preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
-      <postExplosionSpawnThingDef>Filth_FrostdustOrange</postExplosionSpawnThingDef>
       <postExplosionSpawnChance>0.125</postExplosionSpawnChance>
       <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
-      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-      <!-- <explosionEffect>GiantExplosion</explosionEffect> -->
-      <ai_IsIncendiary>false</ai_IsIncendiary>
       <explosionDelay>0</explosionDelay>
-
-      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-      <soundExplode>Explosion_EMP</soundExplode>
-      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-      <soundAmbient>MortarRound_Ambient</soundAmbient>
     </projectile>
     <comps>
       <li Class="Explorite.CompProperties_SendSignalOnDestroyed">
@@ -151,46 +137,21 @@
     </comps>
   </ThingDef>
 
-  <ThingDef ParentName="BaseProjectileNeolithic">
+  <ThingDef ParentName="BaseTrishotArrow">
     <defName>Arrow_Trishot_Hyper</defName>
     <label>trishot hyper arrow</label>
-    <useHitPoints>false</useHitPoints>
-    <neverMultiSelect>false</neverMultiSelect>
-    <statBases>
-      <MaxHitPoints>0</MaxHitPoints>
-      <Mass>1</Mass>
-      <Flammability>0</Flammability>
-    </statBases>
-    <selectable>true</selectable>
-    <graphicData>
-      <texPath>Things/Projectile/Arrow_Trishot</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPostLight</shaderType>
-    </graphicData>
-    <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <flyOverhead>true</flyOverhead>
       <damageDef>Frostblast_Buildingimmune</damageDef>
       <damageAmountBase>60</damageAmountBase>
       <stoppingPower>20</stoppingPower>
-      <armorPenetrationBase>0.0</armorPenetrationBase>
       <speed>180</speed>
       <explosionRadius>2.5</explosionRadius>
-      <preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
-      <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
-      <preExplosionSpawnThingCount>5</preExplosionSpawnThingCount>
-      <postExplosionSpawnThingDef>Filth_FrostdustOrange</postExplosionSpawnThingDef>
-      <postExplosionSpawnChance>0.5</postExplosionSpawnChance>
-      <postExplosionSpawnThingCount>5</postExplosionSpawnThingCount>
-      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-      <!-- <explosionEffect>GiantExplosion</explosionEffect> -->
-      <ai_IsIncendiary>false</ai_IsIncendiary>
+      <preExplosionSpawnChance>0</preExplosionSpawnChance>
+      <preExplosionSpawnThingCount>0</preExplosionSpawnThingCount>
+      <postExplosionSpawnChance>0</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>0</postExplosionSpawnThingCount>
       <explosionDelay>60</explosionDelay>
-
-      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-      <soundExplode>Explosion_EMP</soundExplode>
-      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-      <soundAmbient>MortarRound_Ambient</soundAmbient>
     </projectile>
     <comps>
       <!-- <li Class="CompProperties_HeatPusher">
@@ -222,46 +183,24 @@
     </comps>
   </ThingDef>
 
-  <ThingDef ParentName="BaseProjectileNeolithic">
+  <ThingDef ParentName="BaseTrishotArrow">
     <defName>Arrow_Trishot_Super</defName>
     <label>trishot super arrow</label>
-    <useHitPoints>false</useHitPoints>
-    <neverMultiSelect>false</neverMultiSelect>
-    <statBases>
-      <MaxHitPoints>0</MaxHitPoints>
-      <Mass>1</Mass>
-      <Flammability>0</Flammability>
-    </statBases>
-    <selectable>true</selectable>
-    <graphicData>
-      <texPath>Things/Projectile/Arrow_Trishot</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPostLight</shaderType>
-    </graphicData>
     <thingClass>Explorite.Projectile_Explosive_Teleshot</thingClass>
     <projectile>
       <flyOverhead>true</flyOverhead>
       <damageDef>FrostblastSuper_LauncherSafe</damageDef>
       <damageAmountBase>200</damageAmountBase>
       <stoppingPower>20</stoppingPower>
-      <armorPenetrationBase>0.0</armorPenetrationBase>
       <speed>120</speed>
       <explosionRadius>39.95</explosionRadius>
-      <preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
       <preExplosionSpawnChance>0.25</preExplosionSpawnChance>
       <preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
-      <postExplosionSpawnThingDef>Filth_FrostdustOrange</postExplosionSpawnThingDef>
       <postExplosionSpawnChance>0.25</postExplosionSpawnChance>
       <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
-      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
       <explosionEffect>GiantExplosion</explosionEffect>
-      <ai_IsIncendiary>false</ai_IsIncendiary>
       <explosionDelay>180</explosionDelay>
-
-      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
       <soundExplode>Explosion_GiantBomb</soundExplode>
-      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-      <soundAmbient>MortarRound_Ambient</soundAmbient>
     </projectile>
     <comps>
       <!-- <li Class="CompProperties_HeatPusher">

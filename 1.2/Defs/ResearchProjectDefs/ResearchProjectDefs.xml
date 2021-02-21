@@ -6,6 +6,10 @@
     <prerequisites />
     <researchViewX>0</researchViewX>
     <researchViewY>2.80</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="CentaurResearchProjectBase">
@@ -26,6 +30,8 @@
     <tags>
       <li>CentaurStart</li>
     </tags>
+    <requiredResearchBuilding Inherit="False" />
+    <requiredResearchFacilities Inherit="False" />
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="CentaurResearchProjectBase">
@@ -60,31 +66,39 @@
   <ResearchProjectDef ParentName="CentaurStoryProjectBase">
     <defName>CentaurStoryStep1st</defName>
     <label>centaurs archotech</label>
-    <description>Unlock base centaurs archotech.</description>
-    <prerequisites>
-    </prerequisites>
+    <description>Unlock base centaurs archotech. These exotic components can be extracted from archotech objects.</description>
     <researchViewX>3</researchViewX>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="CentaurStoryProjectBase">
     <defName>CentaurStoryStep2nd</defName>
-    <label>centaurs TODO</label>
-    <description>Unlock SOMETHING TODO.</description>
-    <prerequisites>
-    </prerequisites>
+    <label>centaur subsystems</label>
+    <description>Unlock centaur subsystems, customizable modules that plug in centaur body to provide powerful passive effects. One centaur can have up to three subsystems at the same time.</description>
     <researchViewX>4</researchViewX>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="CentaurStoryProjectBase">
     <defName>CentaurStoryStep3rd</defName>
-    <label>centaurs TODO</label>
-    <description>Unlock SOMETHING TODO.</description>
-    <prerequisites>
-    </prerequisites>
+    <label>thermo damper fabrication</label>
+    <description>Unlock the way to process with Thermo Damper, a supreme exceptional reverse-entropy core.</description>
     <researchViewX>5</researchViewX>
   </ResearchProjectDef>
 
-  <ResearchProjectDef ParentName="CentaurResearchProjectBase">
+  <ResearchProjectDef ParentName="CentaurStoryProjectBase">
+    <defName>CentaurStoryStep4th</defName>
+    <label>centaurs TODO</label>
+    <description>Unlock SOMETHING TODO.</description>
+    <researchViewX>6</researchViewX>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="CentaurStoryProjectBase">
+    <defName>CentaurStoryStep5th</defName>
+    <label>centaurs TODO</label>
+    <description>Unlock SOMETHING TODO.</description>
+    <researchViewX>7</researchViewX>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="CentaurResearchProjectBase" Abstract="True">
     <defName>TrishotProject</defName>
     <label>trishot</label>
     <description>Allows you craft an ultra weapon that used by centaur, Trishot, a powerful massive bow with long range that fires triple heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst.</description>

@@ -3133,7 +3133,7 @@
 				<x>-22</x>
 				<z>-10</z>
 			</li>
-			<li>
+			<!--<li>
 				<shapeOrDef>CraftingSpot</shapeOrDef>
 				<x>13</x>
 				<z>-14</z>
@@ -3144,7 +3144,7 @@
 				<x>13</x>
 				<z>-7</z>
 				<rot>1</rot>
-			</li>
+			</li>-->
 			<li>
 				<shapeOrDef>Ship_Beam</shapeOrDef>
 				<x>-22</x>
@@ -12083,7 +12083,7 @@
 				<z>-2</z>
 			</li>
 			<li>
-				<shapeOrDef>RoyalBed</shapeOrDef>
+				<shapeOrDef>CentaurBed</shapeOrDef>
 				<stuff>WoodLog</stuff>
 				<x>-10</x>
 				<z>-1</z>

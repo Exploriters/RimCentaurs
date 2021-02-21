@@ -237,7 +237,7 @@
       <Bow_Trishot>1</Bow_Trishot>
     </products>
 	<researchPrerequisites>
-	  <li>TrishotProject</li>
+	  <li>CentaurStoryStep3rd</li>
 	</researchPrerequisites>
     <skillRequirements>
       <Crafting>12</Crafting>
