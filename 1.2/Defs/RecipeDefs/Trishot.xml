@@ -103,14 +103,17 @@
       <ThingDef>ComponentArchotech</ThingDef>
       <ThingDef>MechSerumArchotech</ThingDef>
     </descriptionHyperlinks>
+    <uiIconThing>Bow_Trishot</uiIconThing>
 	<jobString>Repairing trishot.</jobString>
 	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 	<effectWorking>Smith</effectWorking>
 	<soundWorking>Recipe_Machining</soundWorking>
-	<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
-    <workAmount>6000</workAmount>
+	<!--<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>-->
+	<unfinishedThingDef />
+    <workAmount>300</workAmount>
 	<productHasIngredientStuff>false</productHasIngredientStuff>  
 	<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>  
+	<workerClass>Explorite.Recipe_RepairTrishot1Stage</workerClass>  
     <ingredients>
       <li>
         <filter>

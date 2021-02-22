@@ -69,7 +69,7 @@
 
   <ThingDef ParentName="ArmorSmithableBase">
     <defName>Apparel_CentaurHorseshoesSet</defName>
-    <label>centaur mitten set</label>
+    <label>centaur horseshoes set</label>
     <tradeability>Sellable</tradeability>
     <description>A set of horseshoes and mittens for a centaur to protect their hooves and hands.</description>
     <!--<generateCommonality>0.0</generateCommonality>-->
@@ -96,9 +96,9 @@
     <stuffCategories>
 	  <li>Woody</li>
       <li>Metallic</li>
-      <li>Fabric</li>
+      <!-- <li>Fabric</li>
       <li>Leathery</li>
-      <!-- <li>Stony</li> -->
+      <li>Stony</li> -->
     </stuffCategories>
     <thingCategories Inherit="False">
       <li>CentaurApparels</li>
@@ -107,7 +107,7 @@
       <MaxHitPoints>100</MaxHitPoints>
       <WorkToMake>400</WorkToMake>
       <Mass>1</Mass>
-      <StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1</EquipDelay>

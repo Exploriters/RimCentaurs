@@ -33,6 +33,7 @@
       <li>Gun</li>
       <li>CentaurRanged</li>
       <li>CentaurTrishot</li>
+      <li>CentaurTracedTrishot</li>
     </weaponTags>
     <comps>
       <!-- <li Class="Explorite.CompProperties_SelfHealOvertime">

@@ -26,8 +26,8 @@
     <questDescriptionRules>
       <rulesStrings>
         <li>questDescription->A unknown person has sent you a message.
-\nHe/she claimed that the one can help you to acquiring some centaurs archotech - before you ever repond you are a centaur - and sends you some techprints, including the way to exract exotic component from archotech, and recipe of a weapon called "Trishot".
-\nYou were requested to fire the trishot under "icos shot" mode at anywhere to shows you have acquiring, this will trigger a signal. The next quest will be given once this signal has been detected.
+\nHe/she claimed that the one can help you to acquire some centaurs archotech - before you ever repond you are a centaur - and sends you some techprints, including the way to extract exotic component from \narchotech, and recipe of a weapon called "Trishot". One broken Trishot has been hiding in your tribattery.
+\nYou were requested to fire the trishot under "icos shot" mode anywhere to show you have acquire, this will trigger a signal. The next quest will be given once this signal has been detected.
 \nThe communication was cut off before you asking more questions.</li>
       </rulesStrings>
     </questDescriptionRules>
@@ -46,6 +46,7 @@
 		  <outcome>Success</outcome>
 		  <sendStandardLetter>true</sendStandardLetter>
 		</li>
+		
         <!--<li Class="QuestNode_Signal">
           <inSignal>icosShotCasted</inSignal>
           <node Class="QuestNode_Sequence">

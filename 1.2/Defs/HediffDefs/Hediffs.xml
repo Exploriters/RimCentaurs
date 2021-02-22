@@ -27,7 +27,7 @@
     <stages>
       <li>
         <label>initial</label>
-        <becomeVisible>true</becomeVisible>
+        <becomeVisible>false</becomeVisible>
       </li>
       <li>
         <label>minor</label>

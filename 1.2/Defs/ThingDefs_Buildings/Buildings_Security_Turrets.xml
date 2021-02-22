@@ -172,6 +172,7 @@
       <!-- <li>ITab_Storage</li> -->
     </inspectorTabs>
     <!-- <specialDisplayRadius>119.95</specialDisplayRadius> -->
+    <specialDisplayRadius>-1</specialDisplayRadius>
     <building>
       <!-- <deconstructible>false</deconstructible> -->
       <!-- <mineableThing>ThermoDamper</mineableThing>
@@ -246,9 +247,9 @@
         <forcedMissRadius>9</forcedMissRadius>
         <ai_AvoidFriendlyFireRadius>10</ai_AvoidFriendlyFireRadius>
         <noiseRadius>20</noiseRadius>
-        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
         <warmupTime>0</warmupTime>
-        <minRange>11.5</minRange>
+        <!--<minRange>11.5</minRange>-->
         <range>119.95</range>
         <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
         <burstShotCount>4</burstShotCount>

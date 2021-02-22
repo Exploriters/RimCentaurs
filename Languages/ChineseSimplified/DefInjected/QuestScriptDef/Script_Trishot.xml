@@ -3,7 +3,7 @@
   
   
   <Centaur_FisteverTrishot.questDescriptionRules.rulesStrings>
-    <li>questDescription->一位未知人物向你发送了一条消息。\n\n他/她声称可以帮助你获得一些半人马远古科技——在你回应自己是半人马之前——并向你发送了一些科技蓝图，包括从远古科技中提取零部件的方法，以及一种被称为“三射弓”的武器。\n\n你被要求使用三射弓的“廿射打击”模式向任意位置射击，这将会触发一个信号。下一个任务将会在这个信号被检测到时被给予。\n\n在你询问更多问题之前，通讯被切断了。</li></Centaur_FisteverTrishot.questDescriptionRules.rulesStrings>
+    <li>questDescription->一位未知人物向你发送了一条消息。\n\n他/她声称可以帮助你获得一些半人马远古科技——在你回应自己是半人马之前——并向你发送了一些科技蓝图。其中包括从远古科技中提取零部件的方法，以及一种被称为“三射弓”的武器。对方声称一把损坏的三射弓被藏在了你的三联电池中。\n\n你被要求使用三射弓的“廿射打击”模式向任意位置射击，这将会触发一个信号。下一个任务将会在这个信号被检测到时被给予。\n\n在你询问更多问题之前，通讯被切断了。</li></Centaur_FisteverTrishot.questDescriptionRules.rulesStrings>
   <Centaur_FisteverTrishot.questNameRules.rulesStrings>
     <li>questName->远古射手</li>
   </Centaur_FisteverTrishot.questNameRules.rulesStrings>
