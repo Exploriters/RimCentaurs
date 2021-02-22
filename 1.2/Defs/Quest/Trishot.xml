@@ -9,6 +9,7 @@
     <defName>GiveQuest_Centaur_FisteverTrishot</defName>
     <label>centaur quest</label>
     <letterLabel>Centaur quest</letterLabel>
+    <!--<workerClass>IncidentWorker_GiveQuest</workerClass>-->
     <questScriptDef>Centaur_FisteverTrishot</questScriptDef>
     <baseChance>0</baseChance> <!-- given by a special storyteller comp -->
   </IncidentDef>
@@ -37,9 +38,7 @@
           <tag>Centaur_FisteverTrishot</tag>
         </li>
         
-        <li Class="Explorite.QuestNode_FisteverTrishot">
-          <inSignalChoiceUsed>icosShotCasted</inSignalChoiceUsed>
-        </li>
+        <li Class="Explorite.QuestNode_FisteverTrishot" />
 		
 		<li Class="QuestNode_End">
 		  <inSignal>icosShotCasted</inSignal>

@@ -98,7 +98,7 @@
           <max>600</max>
         </wickTicks>
       </li>-->
-      <li Class="CompProperties_Forbiddable"/>
+      <!--<li Class="CompProperties_Forbiddable"/>-->
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>150</basePowerConsumption>
@@ -203,8 +203,9 @@
         </filter>
       </defaultStorageSettings>
     </building>
-    <placeWorkers>
-      <li>PlaceWorker_TurretTop</li>
+    <placeWorkers Inherit="False">
+      <!--<li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>-->
     </placeWorkers>
     <researchPrerequisites>
       <li>CentaurStoryStep3rd</li>
