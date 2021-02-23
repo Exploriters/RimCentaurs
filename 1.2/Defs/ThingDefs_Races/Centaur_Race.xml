@@ -46,7 +46,7 @@
 	  
 	  <!-- Combat -->
       <AimingDelayFactor>0.5</AimingDelayFactor>
-      <ShootingAccuracyPawn>60</ShootingAccuracyPawn>
+      <ShootingAccuracyPawn>20</ShootingAccuracyPawn>
       <MeleeDodgeChance>15</MeleeDodgeChance>
       <PawnTrapSpringChance>0.1</PawnTrapSpringChance>
 	  
