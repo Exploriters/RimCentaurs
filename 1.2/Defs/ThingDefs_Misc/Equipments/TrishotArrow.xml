@@ -18,7 +18,7 @@
     <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <damageDef>Frostblast</damageDef>
-      <armorPenetrationBase>1.0</armorPenetrationBase>
+      <armorPenetrationBase>1.33333333333333333333</armorPenetrationBase>
       <preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
       <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
       <preExplosionSpawnThingCount>5</preExplosionSpawnThingCount>

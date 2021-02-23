@@ -5,7 +5,6 @@
     <techLevel>Archotech</techLevel>
     <tradeability>None</tradeability>
     <tradeTags>
-      <li>ExoticMisc</li>
       <li>CentaurEndgame</li>
     </tradeTags>
     <soundInteract>Bow_Large</soundInteract>
@@ -94,7 +93,6 @@
       <MarketValue>250000</MarketValue>
       <!--<WorkToMake>200000</WorkToMake>-->
     </statBases>
-    <tradeability>None</tradeability>
     <!--<costList>
       <ThermoDamper>1</ThermoDamper>
 	  <!- - <Bow_Trishot_2Stage>1</Bow_Trishot_2Stage> - ->
@@ -104,9 +102,6 @@
       <MechSerumHealer>1</MechSerumHealer>
 	  <Gun_CentaurPlasmaBlaster>1</Gun_CentaurPlasmaBlaster>
     </costList>-->
-    <weaponTags>
-      <li>CentaurTrishotFully</li>
-    </weaponTags>
     <comps>
       <li Class="CompProperties_Art">
 		<!--<compClass>Explorite.CompArt_Qualityless</compClass>-->
@@ -246,8 +241,6 @@
     <statBases>
       <MarketValue>100000</MarketValue>
     </statBases>
-    <tradeability>None</tradeability>
-    <weaponTags />
 	
 	<verbs>
       <li Class="Explorite.VerbProperties_Custom">
@@ -356,11 +349,9 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <WorkToMake>6000</WorkToMake>
+      <!--<WorkToMake>6000</WorkToMake>-->
       <MarketValue>175000</MarketValue>
     </statBases>
-    <tradeability>None</tradeability>
-    <weaponTags />
 	<verbs>
       <li Class="Explorite.VerbProperties_Custom">
         <verbClass>Explorite.Verb_Shoot_OvertickShotgun</verbClass>
@@ -404,7 +395,7 @@
         <warmupTime>9</warmupTime>
         <range>59.95</range>
         <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
-        <burstShotCount>10</burstShotCount>
+        <burstShotCount>20</burstShotCount>
         <soundAiming>OrbitalTargeter_Aiming</soundAiming>
         <soundCast>Bow_Large</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -416,7 +407,7 @@
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
 
-        <desc>Icos mode that launch empowered scatting hyper shot in massive amount but deals low damage each, shoot longer range and pass over walls.\n\nDamaged:\nRange and damage are halved.</desc>
+        <desc>Icos mode that launch empowered scatting hyper shot in massive amount but deals low damage each, shoot longer range and pass over walls.\n\nDamaged:\nRange are halved.</desc>
         <label>icos shot</label>
         <texPath>UI/Commands/BowTrishot_ModeIcos</texPath>
         <texPathSelected>UI/Commands/BowTrishot_ModeIcos_Select</texPathSelected>

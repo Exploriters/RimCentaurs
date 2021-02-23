@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <HediffDef ParentName="SubsystemHediffBase">
+    <defName>CentaurSubsystem_AbsorbShield</defName>
+    <label>shield subsystem</label>
+    <description>A powerful shield generator, charged and prepared to absorb external damage.</description>
+    <descriptionHyperlinks />
+    <stages>
+      <li>
+	    <minSeverity>1</minSeverity>
+		
+        <statFactors>
+		  
+        </statFactors>
+        <statOffsets>
+		  <PawnShieldEnergyMax>1000</PawnShieldEnergyMax>
+		  <PawnShieldRechargeRate>10</PawnShieldRechargeRate>
+        </statOffsets>
+		
+      </li>
+    </stages>
+  </HediffDef>
+  
+</Defs>

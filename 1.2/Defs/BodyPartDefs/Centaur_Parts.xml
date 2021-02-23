@@ -117,6 +117,8 @@
     </tags>
     <!-- <spawnThingOnRemoved></spawnThingOnRemoved> -->
     <canSuggestAmputation>false</canSuggestAmputation>
+    <pawnGeneratorCanAmputate>false</pawnGeneratorCanAmputate>
+    <destroyableByDamage>false</destroyableByDamage>
   </BodyPartDef>
 
 </Defs>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <HediffDef Name="SubsystemHediffBaseBase" Abstract="true">
+    <hediffClass>Hediff_AddedPart</hediffClass>
+    <defaultLabelColor>(0.5, 0.75, 1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <maxSeverity>1.0</maxSeverity>
+    <initialSeverity>0.001</initialSeverity>
+	<everCurableByItem>false</everCurableByItem>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <spawnThingOnRemoved />
+	<tags>
+	  <li>CentaurTechHediff</li>
+	  <li>CentaurSubsystem</li>
+	</tags>
+  </HediffDef>
+  
+  <HediffDef ParentName="SubsystemHediffBaseBase" Name="SubsystemHediffBase" Abstract="true">
+    <stages>
+      <li>
+	    <label>initializing</label>
+		<minSeverity>0</minSeverity>
+        <!--<partEfficiencyOffset>-1.0</partEfficiencyOffset>-->
+      </li>
+    </stages>
+	<comps>
+	  <li Class="HediffCompProperties_SeverityPerDay">
+		<severityPerDay>1</severityPerDay>
+	  </li>
+	</comps>
+	<tags>
+	  <li>CentaurTechHediff_AccuSubsystem</li>
+	  <li>CentaurTechHediff_InitializationNeeded</li>
+	</tags>
+  </HediffDef>
+  
+  <HediffDef ParentName="SubsystemHediffBaseBase">
+    <defName>CentaurSubsystem_BlankBlank</defName>
+    <hediffClass>Explorite.Hediff_AddedPart_BlankSubsystem</hediffClass>
+    <label>blank subsystem</label>
+    <description>Blank subsystem slot with no function yet.</description>
+    <descriptionHyperlinks />
+    <initialSeverity>1.0</initialSeverity>
+    <stages>
+      <li />
+    </stages>
+  </HediffDef>
+  
+  </Defs>

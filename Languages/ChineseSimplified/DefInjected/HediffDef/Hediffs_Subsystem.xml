@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CentaurSubsystem_BlankBlank.label>空子系统</CentaurSubsystem_BlankBlank.label>
+  <CentaurSubsystem_BlankBlank.labelNoun>空子系统</CentaurSubsystem_BlankBlank.labelNoun>
+  <CentaurSubsystem_BlankBlank.description>尚无任何功能的空子系统槽位。</CentaurSubsystem_BlankBlank.description>
+
+  <CentaurSubsystem_AbsorbShield.label>护盾子系统</CentaurSubsystem_AbsorbShield.label>
+  <CentaurSubsystem_AbsorbShield.stages.initializing.label>初始化</CentaurSubsystem_AbsorbShield.stages.initializing.label>
+  <CentaurSubsystem_AbsorbShield.labelNoun>一个护盾子系统</CentaurSubsystem_AbsorbShield.labelNoun>
+  <CentaurSubsystem_AbsorbShield.description>一个强大的屏蔽发生器，已充能并准备好吸收外界伤害。</CentaurSubsystem_AbsorbShield.description>
+
+</LanguageData>

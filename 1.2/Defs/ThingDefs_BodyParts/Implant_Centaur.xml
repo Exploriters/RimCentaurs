@@ -64,6 +64,10 @@
         </hediffGivers>
       </li>
     </stages>
+	<tags>
+	  <li>CentaurTechHediff</li>
+	  <li>CentaurTechHediff_InitializationNeeded</li>
+	</tags>
     <addedPartProps>
       <solid>true</solid>
       <partEfficiency>5</partEfficiency>

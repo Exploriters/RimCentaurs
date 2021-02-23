@@ -47,5 +47,33 @@
     <labelShort>subsystem</labelShort>
     <listOrder>1000</listOrder>
   </BodyPartGroupDef>-->
+  
+  <BodyPartGroupDef>
+    <defName>CentaurCorePart</defName>
+    <label>torso</label>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>CentaurSubsystem</defName>
+    <label>subsystem</label>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>CentaurSubsystemPrimary</defName>
+    <label>subsystem primary</label>
+    <labelShort>subsystem</labelShort>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>CentaurSubsystemSecondary</defName>
+    <label>subsystem secondary</label>
+    <labelShort>subsystem</labelShort>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>CentaurSubsystemTertiary</defName>
+    <label>subsystem tertiary</label>
+    <labelShort>subsystem</labelShort>
+  </BodyPartGroupDef>
 
 </Defs>

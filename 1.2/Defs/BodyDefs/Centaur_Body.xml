@@ -11,6 +11,7 @@
       <depth>Outside</depth>
       <groups>
         <li>Torso</li>
+        <li>CentaurCorePart</li>
       </groups>
       <parts>
         <li>
@@ -603,6 +604,8 @@
           <height>Bottom</height>
           <groups>
             <li>Torso</li>
+            <li>CentaurSubsystem</li>
+            <li>CentaurSubsystemPrimary</li>
           </groups>
         </li>
         <li>
@@ -613,6 +616,8 @@
           <height>Bottom</height>
           <groups>
             <li>Torso</li>
+            <li>CentaurSubsystem</li>
+            <li>CentaurSubsystemSecondary</li>
           </groups>
         </li>
         <li>
@@ -623,6 +628,8 @@
           <height>Bottom</height>
           <groups>
             <li>Torso</li>
+            <li>CentaurSubsystem</li>
+            <li>CentaurSubsystemTertiary</li>
           </groups>
         </li>
       </parts>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <HediffGiverSetDef>
@@ -16,6 +16,7 @@
       <li Class="HediffGiver_Heat">
         <hediff>Heatstroke</hediff>
       </li>
+	  
     </hediffGivers>
   </HediffGiverSetDef>
 
@@ -26,6 +27,38 @@
       <li Class="Explorite.HediffGiver_EnsureForAlways">
         <hediff>CentaurHiddenEffect</hediff>
       </li>
+	  
+      <li Class="Explorite.HediffGiver_EnsureForBlankSubsystem">
+        <hediff>CentaurSubsystem_BlankBlank</hediff>
+        <countToAffect>3</countToAffect>
+        <partsToAffect>
+          <li>CentaurSubsystem</li>
+        </partsToAffect>
+      </li>
+	  
+      <!--<li Class="Explorite.HediffGiver_EnsureForBlankSubsystem">
+        <hediff>CentaurSubsystem_BlankBlank</hediff>
+        <countToAffect>3</countToAffect>
+        <partsToAffect>
+          <li>CentaurSubsystem</li>
+        </partsToAffect>
+      </li>
+      
+      <li Class="Explorite.HediffGiver_EnsureForAlways">
+        <hediff>CentaurSubsystem_BlankBlank</hediff>
+        <countToAffect>2</countToAffect>
+        <partsToAffect>
+          <li>CentaurSubsystem</li>
+        </partsToAffect>
+      </li>
+      
+      <li Class="Explorite.HediffGiver_EnsureForAlways">
+        <hediff>CentaurSubsystem_BlankBlank</hediff>
+        <countToAffect>1</countToAffect>
+        <partsToAffect>
+          <li>CentaurSubsystem</li>
+        </partsToAffect>
+      </li>-->
 	  
     </hediffGivers>
   </HediffGiverSetDef>

@@ -66,7 +66,7 @@
   <Bow_Trishot_2Stage.verbs.0.label>三重打击</Bow_Trishot_2Stage.verbs.0.label>
   <Bow_Trishot_2Stage.verbs.0.desc>标准三射模式，在单次爆发射击中射出三只携带延迟起爆热能释放爆炸物的远距离重箭。</Bow_Trishot_2Stage.verbs.0.desc>
   <Bow_Trishot_2Stage.verbs.1.label>廿射打击</Bow_Trishot_2Stage.verbs.1.label>
-  <Bow_Trishot_2Stage.verbs.1.desc>发射大量低伤高能散射射击的廿射打击模式，射击距离更远且能够越过墙壁。\n\n故障:\n伤害和射程减半。</Bow_Trishot_2Stage.verbs.1.desc>
+  <Bow_Trishot_2Stage.verbs.1.desc>发射大量低伤高能散射射击的廿射打击模式，射击距离更远且能够越过墙壁。\n\n故障:\n射程减半。</Bow_Trishot_2Stage.verbs.1.desc>
   <Bow_Trishot_2Stage.verbs.2.label>单发打击</Bow_Trishot_2Stage.verbs.2.label>
   <Bow_Trishot_2Stage.verbs.2.desc>发射极强单发射击的模式，拥有极端射程且能够越墙射击。造成毁灭性的伤害并将发射者传送至爆炸位置。需要花很长的时间来发射，并且在发射后需要冷却。</Bow_Trishot_2Stage.verbs.2.desc>
   <Bow_Trishot_2Stage.verbs.2.disableReason>在该功能可用前，这把武器需要被修复。</Bow_Trishot_2Stage.verbs.2.disableReason>

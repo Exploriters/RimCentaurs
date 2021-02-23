@@ -19,6 +19,7 @@
       <Mass>0.6</Mass>
       <Flammability>0</Flammability>
       <DeteriorationRate>0</DeteriorationRate>
+	  <SellPriceFactor>1</SellPriceFactor>
     </statBases>
     <intricate>true</intricate>
     <thingCategories>
@@ -60,6 +61,7 @@
       <Flammability>0</Flammability>
       <DeteriorationRate>0</DeteriorationRate>
       <WorkToMake>2400</WorkToMake>
+	  <SellPriceFactor>1</SellPriceFactor>
     </statBases>
     <intricate>true</intricate>
     <thingCategories>
@@ -132,6 +134,7 @@
       <Flammability>0</Flammability>
       <DeteriorationRate>0</DeteriorationRate>
       <WorkToMake>500</WorkToMake>
+	  <SellPriceFactor>1</SellPriceFactor>
     </statBases>
     <intricate>true</intricate>
     <thingCategories>
