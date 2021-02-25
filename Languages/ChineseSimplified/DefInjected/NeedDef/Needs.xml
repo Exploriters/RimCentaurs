@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <HypothermiaAbsorption.label>低温吸收</HypothermiaAbsorption.label>
-  <HypothermiaAbsorption.description>持续吸收低温，并允许人物短暂地暴露在严寒环境中。</HypothermiaAbsorption.description>
+  <HypothermiaAbsorption.label>危害防护</HypothermiaAbsorption.label>
+  <HypothermiaAbsorption.description>持续吸收来自环境中的伤害，并允许人物短暂地暴露在灾害环境中。</HypothermiaAbsorption.description>
   
   <CentaurCreativityInspiration.label>创造灵感</CentaurCreativityInspiration.label>
   <CentaurCreativityInspiration.description>长期幸福的创造灵感奖励。</CentaurCreativityInspiration.description>

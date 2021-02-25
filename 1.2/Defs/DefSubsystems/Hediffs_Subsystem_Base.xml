@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
-  <HediffDef Name="SubsystemHediffBaseBase" Abstract="true">
-    <hediffClass>Hediff_AddedPart</hediffClass>
+  <Explorite.HediffDef_Subsystem Name="SubsystemHediffBaseBase" Abstract="true">
+    <hediffClass>Explorite.Hediff_AddedPart_Subsystem</hediffClass>
     <defaultLabelColor>(0.5, 0.75, 1)</defaultLabelColor>
     <isBad>false</isBad>
     <maxSeverity>1.0</maxSeverity>
@@ -18,37 +18,56 @@
 	  <li>CentaurTechHediff</li>
 	  <li>CentaurSubsystem</li>
 	</tags>
-  </HediffDef>
-  
-  <HediffDef ParentName="SubsystemHediffBaseBase" Name="SubsystemHediffBase" Abstract="true">
     <stages>
       <li>
-	    <label>initializing</label>
 		<minSeverity>0</minSeverity>
-        <!--<partEfficiencyOffset>-1.0</partEfficiencyOffset>-->
+	    <!--<label>initializing</label>
+        <partEfficiencyOffset>-1.0</partEfficiencyOffset>-->
       </li>
     </stages>
+  </Explorite.HediffDef_Subsystem>
+  
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBaseBase" Name="SubsystemHediffBase" Abstract="true">
 	<comps>
 	  <li Class="HediffCompProperties_SeverityPerDay">
 		<severityPerDay>1</severityPerDay>
+		<showDaysToRecover>false</showDaysToRecover>
 	  </li>
 	</comps>
 	<tags>
 	  <li>CentaurTechHediff_AccuSubsystem</li>
 	  <li>CentaurTechHediff_InitializationNeeded</li>
 	</tags>
-  </HediffDef>
+  </Explorite.HediffDef_Subsystem>
   
-  <HediffDef ParentName="SubsystemHediffBaseBase">
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBaseBase">
     <defName>CentaurSubsystem_BlankBlank</defName>
     <hediffClass>Explorite.Hediff_AddedPart_BlankSubsystem</hediffClass>
     <label>blank subsystem</label>
     <description>Blank subsystem slot with no function yet.</description>
-    <descriptionHyperlinks />
+    <descriptionHyperlinks>
+		<hediffDef>CentaurSubsystem_AbsorbShield</hediffDef>
+		<hediffDef>CentaurSubsystem_DamageControl</hediffDef>
+		<hediffDef>CentaurSubsystem_SkillEnchanter</hediffDef>
+		<hediffDef>CentaurSubsystem_NeedsCapacitor</hediffDef>
+		<hediffDef>CentaurSubsystem_CreativeInspire</hediffDef>
+		<hediffDef>CentaurSubsystem_LowProfile</hediffDef>
+		<hediffDef>CentaurSubsystem_NaturePsyfocus</hediffDef>
+		<hediffDef>CentaurSubsystem_HazardAdaptation</hediffDef>
+		<hediffDef>CentaurSubsystem_EquipmentRepaire</hediffDef>
+		<hediffDef>CentaurSubsystem_AntiMass</hediffDef>
+		<hediffDef>CentaurSubsystem_LifeSupport</hediffDef>
+		<hediffDef>CentaurSubsystem_AlternativeManipulation</hediffDef>
+		<hediffDef>CentaurSubsystem_FogScanSensory</hediffDef>
+		<hediffDef>CentaurSubsystem_DeepArmor</hediffDef>
+		<hediffDef>CentaurSubsystem_TargetAcquiring</hediffDef>
+		<hediffDef>CentaurSubsystem_MammalsLink</hediffDef>
+		<hediffDef>CentaurSubsystem_Thorns</hediffDef>
+		<hediffDef>CentaurSubsystem_KillAure</hediffDef>
+		<hediffDef>CentaurSubsystem_Incinerator</hediffDef>
+		<hediffDef>CentaurSubsystem_SnowSkater</hediffDef>
+    </descriptionHyperlinks>
     <initialSeverity>1.0</initialSeverity>
-    <stages>
-      <li />
-    </stages>
-  </HediffDef>
+  </Explorite.HediffDef_Subsystem>
   
   </Defs>

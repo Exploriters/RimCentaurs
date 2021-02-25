@@ -4,8 +4,8 @@
   <NeedDef>
     <defName>HypothermiaAbsorption</defName>
     <needClass>Explorite.Need_HypothermiaAbsorption</needClass>
-    <label>Hypothermia Absorption</label>
-    <description>Absorb hypothermia overtime, and allows exposing to chill for a short time.</description>
+    <label>hazard resist</label>
+    <description>Absorb damage from environment overtime, allows exposing to hazard for a short time.</description>
     <listPriority>485</listPriority>
     <major>false</major>
     <showForCaravanMembers>true</showForCaravanMembers>

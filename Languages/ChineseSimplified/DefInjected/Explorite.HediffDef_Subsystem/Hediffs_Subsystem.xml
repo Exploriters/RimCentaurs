@@ -6,8 +6,95 @@
   <CentaurSubsystem_BlankBlank.description>尚无任何功能的空子系统槽位。</CentaurSubsystem_BlankBlank.description>
 
   <CentaurSubsystem_AbsorbShield.label>护盾子系统</CentaurSubsystem_AbsorbShield.label>
-  <CentaurSubsystem_AbsorbShield.stages.initializing.label>初始化</CentaurSubsystem_AbsorbShield.stages.initializing.label>
   <CentaurSubsystem_AbsorbShield.labelNoun>一个护盾子系统</CentaurSubsystem_AbsorbShield.labelNoun>
   <CentaurSubsystem_AbsorbShield.description>一个强大的屏蔽发生器，已充能并准备好吸收外界伤害。</CentaurSubsystem_AbsorbShield.description>
+
+  <CentaurSubsystem_DamageControl.label>损伤控制子系统</CentaurSubsystem_DamageControl.label>
+  <CentaurSubsystem_DamageControl.labelNoun>一个损伤控制子系统</CentaurSubsystem_DamageControl.labelNoun>
+  <CentaurSubsystem_DamageControl.description>TODO一个损伤控制。</CentaurSubsystem_DamageControl.description>
+
+  <CentaurSubsystem_SkillEnchanter.label>技能强化子系统</CentaurSubsystem_SkillEnchanter.label>
+  <CentaurSubsystem_SkillEnchanter.labelNoun>一个技能强化子系统</CentaurSubsystem_SkillEnchanter.labelNoun>
+  <CentaurSubsystem_SkillEnchanter.description>TODO一个技能强化。</CentaurSubsystem_SkillEnchanter.description>
+
+  <CentaurSubsystem_NeedsCapacitor.label>需求冗余子系统</CentaurSubsystem_NeedsCapacitor.label>
+  <CentaurSubsystem_NeedsCapacitor.labelNoun>一个需求冗余子系统</CentaurSubsystem_NeedsCapacitor.labelNoun>
+  <CentaurSubsystem_NeedsCapacitor.description>一个能容纳更多物体的辅胃。</CentaurSubsystem_NeedsCapacitor.description>
+  <CentaurSubsystem_NeedsCapacitor.tip>饥饿度储量: x333.33%</CentaurSubsystem_NeedsCapacitor.tip>
+
+  <CentaurSubsystem_CreativeInspire.label>创造灵感子系统</CentaurSubsystem_CreativeInspire.label>
+  <CentaurSubsystem_CreativeInspire.labelNoun>一个创造灵感子系统</CentaurSubsystem_CreativeInspire.labelNoun>
+  <CentaurSubsystem_CreativeInspire.description>TODO一个创造灵感。</CentaurSubsystem_CreativeInspire.description>
+
+  <CentaurSubsystem_LowProfile.label>低调行事子系统</CentaurSubsystem_LowProfile.label>
+  <CentaurSubsystem_LowProfile.labelNoun>一个低调行事子系统</CentaurSubsystem_LowProfile.labelNoun>
+  <CentaurSubsystem_LowProfile.description>TODO一个低调行事。</CentaurSubsystem_LowProfile.description>
+
+  <CentaurSubsystem_NaturePsyfocus.label>自然精神力子系统</CentaurSubsystem_NaturePsyfocus.label>
+  <CentaurSubsystem_NaturePsyfocus.labelNoun>一个自然精神力子系统</CentaurSubsystem_NaturePsyfocus.labelNoun>
+  <CentaurSubsystem_NaturePsyfocus.description>一个可以进行冥想的子系统，为人物在任何时候持续恢复精神力。</CentaurSubsystem_NaturePsyfocus.description>
+
+  <CentaurSubsystem_HazardAdaptation.label>危险适应子系统</CentaurSubsystem_HazardAdaptation.label>
+  <CentaurSubsystem_HazardAdaptation.labelNoun>一个危险适应子系统</CentaurSubsystem_HazardAdaptation.labelNoun>
+  <CentaurSubsystem_HazardAdaptation.description>一个危险防护能力的拓展模块，用于吸收中暑和中毒。</CentaurSubsystem_HazardAdaptation.description>
+  <CentaurSubsystem_HazardAdaptation.tip>吸收: 中毒, 中暑</CentaurSubsystem_HazardAdaptation.tip>
+
+  <CentaurSubsystem_EquipmentRepaire.label>修复液子系统</CentaurSubsystem_EquipmentRepaire.label>
+  <CentaurSubsystem_EquipmentRepaire.labelNoun>一个修复液子系统</CentaurSubsystem_EquipmentRepaire.labelNoun>
+  <CentaurSubsystem_EquipmentRepaire.description>持续分泌修补机械液以修复任何装备的服装和武器，货物。逆转货物的腐烂过程。</CentaurSubsystem_EquipmentRepaire.description>
+
+  <CentaurSubsystem_AntiMass.label>反重力子系统</CentaurSubsystem_AntiMass.label>
+  <CentaurSubsystem_AntiMass.labelNoun>一个反重力子系统</CentaurSubsystem_AntiMass.labelNoun>
+  <CentaurSubsystem_AntiMass.description>一个从内部增强承受力强度的子系统，大幅增强负重能力。不能降低人物的体重。</CentaurSubsystem_AntiMass.description>
+  <CentaurSubsystem_AntiMass.tip>负重能力: x300%</CentaurSubsystem_AntiMass.tip>
+
+  <CentaurSubsystem_LifeSupport.label>生命维持子系统</CentaurSubsystem_LifeSupport.label>
+  <CentaurSubsystem_LifeSupport.labelNoun>一个生命维持子系统</CentaurSubsystem_LifeSupport.labelNoun>
+  <CentaurSubsystem_LifeSupport.description>TODO一个生命维持。</CentaurSubsystem_LifeSupport.description>
+
+  <CentaurSubsystem_AlternativeManipulation.stages.initializing.label>初始化</CentaurSubsystem_AlternativeManipulation.stages.initializing.label>
+  <CentaurSubsystem_AlternativeManipulation.label>代偿操作子系统</CentaurSubsystem_AlternativeManipulation.label>
+  <CentaurSubsystem_AlternativeManipulation.labelNoun>一个代偿操作子系统</CentaurSubsystem_AlternativeManipulation.labelNoun>
+  <CentaurSubsystem_AlternativeManipulation.description>TODO一个代偿操作。</CentaurSubsystem_AlternativeManipulation.description>
+
+  <CentaurSubsystem_FogScanSensory.stages.initializing.label>初始化</CentaurSubsystem_FogScanSensory.stages.initializing.label>
+  <CentaurSubsystem_FogScanSensory.label>扫描传感器子系统</CentaurSubsystem_FogScanSensory.label>
+  <CentaurSubsystem_FogScanSensory.labelNoun>一个扫描传感器子系统</CentaurSubsystem_FogScanSensory.labelNoun>
+  <CentaurSubsystem_FogScanSensory.description>TODO一个扫描传感器。</CentaurSubsystem_FogScanSensory.description>
+
+  <CentaurSubsystem_DeepArmor.stages.initializing.label>初始化</CentaurSubsystem_DeepArmor.stages.initializing.label>
+  <CentaurSubsystem_DeepArmor.label>内装甲子系统</CentaurSubsystem_DeepArmor.label>
+  <CentaurSubsystem_DeepArmor.labelNoun>一个DeepArmor子系统</CentaurSubsystem_DeepArmor.labelNoun>
+  <CentaurSubsystem_DeepArmor.description>TODO一个内装甲。</CentaurSubsystem_DeepArmor.description>
+
+  <CentaurSubsystem_TargetAcquiring.stages.initializing.label>初始化</CentaurSubsystem_TargetAcquiring.stages.initializing.label>
+  <CentaurSubsystem_TargetAcquiring.label>目标取得子系统</CentaurSubsystem_TargetAcquiring.label>
+  <CentaurSubsystem_TargetAcquiring.labelNoun>一个目标取得子系统</CentaurSubsystem_TargetAcquiring.labelNoun>
+  <CentaurSubsystem_TargetAcquiring.description>一个用于协调使用者使用远程武器的设备，可以降低远程武器预热时间，增强瞄准精准度。</CentaurSubsystem_TargetAcquiring.description>
+
+  <CentaurSubsystem_MammalsLink.stages.initializing.label>初始化</CentaurSubsystem_MammalsLink.stages.initializing.label>
+  <CentaurSubsystem_MammalsLink.label>动物连接子系统</CentaurSubsystem_MammalsLink.label>
+  <CentaurSubsystem_MammalsLink.labelNoun>一个动物连接子系统</CentaurSubsystem_MammalsLink.labelNoun>
+  <CentaurSubsystem_MammalsLink.description>TODO一个动物连接。</CentaurSubsystem_MammalsLink.description>
+
+  <CentaurSubsystem_Thorns.stages.initializing.label>初始化</CentaurSubsystem_Thorns.stages.initializing.label>
+  <CentaurSubsystem_Thorns.label>荆棘子系统</CentaurSubsystem_Thorns.label>
+  <CentaurSubsystem_Thorns.labelNoun>一个荆棘子系统</CentaurSubsystem_Thorns.labelNoun>
+  <CentaurSubsystem_Thorns.description>TODO一个荆棘。</CentaurSubsystem_Thorns.description>
+
+  <CentaurSubsystem_KillAure.stages.initializing.label>初始化</CentaurSubsystem_KillAure.stages.initializing.label>
+  <CentaurSubsystem_KillAure.label>杀戮光环子系统</CentaurSubsystem_KillAure.label>
+  <CentaurSubsystem_KillAure.labelNoun>一个杀戮光环子系统</CentaurSubsystem_KillAure.labelNoun>
+  <CentaurSubsystem_KillAure.description>TODO一个杀戮光环。</CentaurSubsystem_KillAure.description>
+
+  <CentaurSubsystem_Incinerator.stages.initializing.label>初始化</CentaurSubsystem_Incinerator.stages.initializing.label>
+  <CentaurSubsystem_Incinerator.label>焚烧子系统</CentaurSubsystem_Incinerator.label>
+  <CentaurSubsystem_Incinerator.labelNoun>一个焚烧子系统</CentaurSubsystem_Incinerator.labelNoun>
+  <CentaurSubsystem_Incinerator.description>TODO一个焚烧。</CentaurSubsystem_Incinerator.description>
+
+  <CentaurSubsystem_SnowSkater.stages.initializing.label>初始化</CentaurSubsystem_SnowSkater.stages.initializing.label>
+  <CentaurSubsystem_SnowSkater.label>雪行者子系统</CentaurSubsystem_SnowSkater.label>
+  <CentaurSubsystem_SnowSkater.labelNoun>一个雪行者子系统</CentaurSubsystem_SnowSkater.labelNoun>
+  <CentaurSubsystem_SnowSkater.description>TODO一个雪行者。</CentaurSubsystem_SnowSkater.description>
 
 </LanguageData>
