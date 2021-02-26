@@ -48,7 +48,7 @@
         <li>PrestigeCombatGear</li>
         <li>Psychic</li>
         <li>CentaurRoyale</li>
-        <li>EVA</li>
+        <!--<li>EVA</li>-->
       </tags>
       <wornGraphicPath isNull="True" />
       <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
