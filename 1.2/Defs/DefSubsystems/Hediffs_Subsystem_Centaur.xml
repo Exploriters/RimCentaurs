@@ -6,6 +6,7 @@
     <defName>CentaurSubsystem_AbsorbShield</defName>
     <label>shield subsystem</label>
     <description>A powerful shield generator, charged and prepared to absorb external damage.</description>
+    <sysTexturePath>Subsystems/AbsorbShield</sysTexturePath>
     <descriptionHyperlinks />
     <comps />
     <stages>
@@ -90,6 +91,7 @@
     <defName>CentaurSubsystem_LowProfile</defName>
     <label>low profile subsystem</label>
     <description>A TODO DESC.</description>
+    <sysTexturePath>Subsystems/LowProfile</sysTexturePath>
     <descriptionHyperlinks />
     <comps />
     <stages><li><minSeverity>1</minSeverity>
@@ -105,6 +107,7 @@
     <defName>CentaurSubsystem_NaturePsyfocus</defName>
     <label>nature psyfocus subsystem</label>
     <description>A subsystem that can meditate, passively gain meditation focus at any time.</description>
+    <sysTexturePath>Subsystems/NaturePsyfocus</sysTexturePath>
     <descriptionHyperlinks />
     <comps>
       <li Class="Explorite.HediffCompProperties_PassiveMeditationFocusGain">

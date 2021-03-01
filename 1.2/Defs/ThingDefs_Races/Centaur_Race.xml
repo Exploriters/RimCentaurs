@@ -8,7 +8,11 @@
     <description>An extremely rare, unknown source of bioengineered species that possesses a human genome with additional patches, centaur is recognized as a distinct mammal species.\n\nCentaur has a stronger physique, better appearance, more adaptable to cold environments, larger appetite, stronger immunity, more difficult to be knocked down than humans, IMMUNE to pain shock, also a natural shooter. Despite their equine appearance, centaurs are omnivorous.\n\nAccording to myth, centaurs are archotech-created artificial species that immortal and invincible, but also infertility. They have extremely powerful race-exclusive equipment, made them a god-like exist - and none have ever spot or seen these gods.\n\nCentaurs have a natural psylink potential, able to develop psychic symbiosis with anima creatures, and birth with a powerful area of effect ability: "Mass psychical deafness".</description>
 	
     <size>(1,1)</size>
+    <inspectorTabs>
+      <li>Explorite.ITab_Pawn_Subsystem</li>
+    </inspectorTabs>
     <comps>
+      <li Class="Explorite.CompProperties_PawnSubsystemManager" />
       <li Class="Explorite.CompProperties_PawnShield" />
       <li Class="Explorite.CompProperties_PawnRepairApparelsOvertime">
         <ticksBetweenHeal>60000</ticksBetweenHeal>

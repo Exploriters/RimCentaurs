@@ -45,6 +45,7 @@
     <hediffClass>Explorite.Hediff_AddedPart_BlankSubsystem</hediffClass>
     <label>blank subsystem</label>
     <description>Blank subsystem slot with no function yet.</description>
+    <sysTexturePath>Subsystems/_Blank</sysTexturePath>
     <descriptionHyperlinks>
 		<hediffDef>CentaurSubsystem_AbsorbShield</hediffDef>
 		<hediffDef>CentaurSubsystem_DamageControl</hediffDef>
