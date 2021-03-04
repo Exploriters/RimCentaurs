@@ -30,7 +30,7 @@
       <SharpDamageMultiplier>3.0</SharpDamageMultiplier>
       <BluntDamageMultiplier>3.0</BluntDamageMultiplier>
       <!-- <HeatDamageMultiplier>3.0</HeatDamageMultiplier> -->
-      <Beauty>0</Beauty>
+      <Beauty>-3</Beauty>
       <DeteriorationRate>0</DeteriorationRate>
     </statBases>
     <stackLimit>400</stackLimit>

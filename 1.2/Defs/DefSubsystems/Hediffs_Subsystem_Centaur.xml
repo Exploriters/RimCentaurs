@@ -30,6 +30,7 @@
     <defName>CentaurSubsystem_DamageControl</defName>
     <label>damage control subsystem</label>
     <description>A TODO DESC.</description>
+    <sysTexturePath>Subsystems/DamageControl</sysTexturePath>
     <descriptionHyperlinks />
     <comps />
     <stages><li><minSeverity>1</minSeverity>
@@ -124,6 +125,7 @@
     <defName>CentaurSubsystem_HazardAdaptation</defName>
     <label>hazard adaptation subsystem</label>
     <description>An expansion module for hazard protection capabilities to absorb heatstroke and toxic buildup.</description>
+    <sysTexturePath>Subsystems/HazardAdaptation</sysTexturePath>
     <descriptionHyperlinks />
     <tip>Absorb: toxic buildup, heatstroke</tip>
     <comps />
@@ -156,6 +158,7 @@
     <defName>CentaurSubsystem_AntiMass</defName>
     <label>anti-mass subsystem</label>
     <description>A subsystem that enhances body strength from inside, greatly increases the hauling mass capacity. Cannot reduce weight of the character.</description>
+    <sysTexturePath>Subsystems/AntiMass</sysTexturePath>
     <descriptionHyperlinks />
     <tip>mass carry max: x300%</tip>
     <comps />

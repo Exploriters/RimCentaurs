@@ -52,6 +52,21 @@
 	
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
+		<xpath>//thingSetMaker/fixedParams/filter[(categories/li="ResourcesRaw") and not (disallowedThingDefs)]</xpath>
+		<value>
+			<disallowedThingDefs />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>//thingSetMaker/fixedParams/filter[categories/li="ResourcesRaw"]/disallowedThingDefs</xpath>
+		<value>
+			<li>Orangice</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
 		<xpath>Defs/ResearchProjectDef[(
 				defName="Autodoors" or 
 				defName="Batteries" or 
