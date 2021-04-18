@@ -8,7 +8,7 @@
     <description>Absorb damage from environment overtime, allows exposing to hazard for a short time.</description>
     <listPriority>485</listPriority>
     <major>false</major>
-    <showForCaravanMembers>true</showForCaravanMembers>
+    <showForCaravanMembers>false</showForCaravanMembers>
   </NeedDef>
   
   <NeedDef>

@@ -24,13 +24,13 @@
     <stackLimit>1</stackLimit>
     <useHitPoints>true</useHitPoints>
     <tickerType>Normal</tickerType>
-    <statBases>
+    <statBases Inherit="False">
       <MarketValue>77961</MarketValue>
       <MaxHitPoints>800</MaxHitPoints>
       <Mass>3</Mass>
       <Flammability>0</Flammability>
-      <Beauty>0</Beauty>
-      <DeteriorationRate>-16000</DeteriorationRate>
+      <!-- <Beauty>0</Beauty>
+      <DeteriorationRate>-16000</DeteriorationRate> -->
     </statBases>
     <thingCategories Inherit="False">
       <li>ThermoDamper</li>
@@ -96,10 +96,10 @@
         <!-- <compClass>Explorite.CompSelfHealOvertime</compClass> -->
         <detlaHpPerSec>3</detlaHpPerSec>
       </li>
-      <li Class="CompProperties_Glower">
+      <!-- <li Class="CompProperties_Glower">
         <glowRadius>20</glowRadius>
         <glowColor>(127,192,255,0)</glowColor>
-      </li>
+      </li> -->
       <li Class="CompProperties_Explosive">
         <explosiveDamageType>FrostblastSuper</explosiveDamageType>
         <explosiveRadius>39.95</explosiveRadius>
@@ -110,7 +110,7 @@
         <postExplosionSpawnChance>0.25</postExplosionSpawnChance>
         <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
         <explosiveExpandPerStackcount>0.2</explosiveExpandPerStackcount>
-        <startWickHitPointsPercent>0.25</startWickHitPointsPercent>
+        <startWickHitPointsPercent>0</startWickHitPointsPercent>
         <chanceToStartFire>0</chanceToStartFire>
         <damageFalloff>true</damageFalloff>
         <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>

@@ -23,12 +23,13 @@
     <hiddenPrerequisites>
     </hiddenPrerequisites>
     <researchViewX>0</researchViewX>
-    <techprintCount>1</techprintCount>
+    <!--<techprintCount>1</techprintCount>
     <techprintCommonality>0</techprintCommonality>
     <techprintMarketValue>20000</techprintMarketValue>
-    <heldByFactionCategoryTags><li>CentaurFactionDummy</li></heldByFactionCategoryTags>
+    <heldByFactionCategoryTags><li>CentaurFactionDummy</li></heldByFactionCategoryTags>-->
     <tags>
       <li>CentaurStart</li>
+      <li>ExploriteNeverResearchable</li>
     </tags>
     <requiredResearchBuilding Inherit="False" />
     <requiredResearchFacilities Inherit="False" />
@@ -51,16 +52,21 @@
 
   <ResearchProjectDef ParentName="CentaurResearchProjectBase" Name="CentaurStoryProjectBase" Abstract="True">
     <baseCost>10000</baseCost>
-    <techLevel>Animal</techLevel>
+    <techLevel>Archotech</techLevel>
     <prerequisites />
     <hiddenPrerequisites>
       <li>CentaurTechRootProject</li>
     </hiddenPrerequisites>
-    <techprintCount>1</techprintCount>
+    <requiredResearchBuilding Inherit="False" />
+    <requiredResearchFacilities Inherit="False" />
+    <!--<techprintCount>1</techprintCount>
     <techprintCommonality>0</techprintCommonality>
     <techprintMarketValue>20000</techprintMarketValue>
-    <heldByFactionCategoryTags><li>CentaurFactionDummy</li></heldByFactionCategoryTags>
+    <heldByFactionCategoryTags><li>CentaurFactionDummy</li></heldByFactionCategoryTags>-->
     <researchViewX>3</researchViewX>
+    <tags>
+      <li>ExploriteNeverResearchable</li>
+    </tags>
   </ResearchProjectDef>
 
   <ResearchProjectDef ParentName="CentaurStoryProjectBase">

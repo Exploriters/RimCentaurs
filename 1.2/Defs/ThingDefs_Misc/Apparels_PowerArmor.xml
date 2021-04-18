@@ -26,10 +26,11 @@
       <Uranium>20</Uranium>
       <Plasteel>280</Plasteel>
       <Gold>18</Gold>
-      <Chemfuel>200</Chemfuel>
+      <!--<Chemfuel>200</Chemfuel>-->
     </costList>
     <comps>
       <li Class="CompProperties_Reloadable">
+        <compClass>Explorite.CompReloadable_InitOnEmpty</compClass>
         <maxCharges>10</maxCharges>
         <ammoDef>Chemfuel</ammoDef>
         <ammoCountPerCharge>20</ammoCountPerCharge>
@@ -135,7 +136,8 @@
       <Plasteel>240</Plasteel>
       <Uranium>40</Uranium>
       <Gold>20</Gold>
-      <Steel>150</Steel>
+      <!--<Steel>150</Steel>-->
+      <Steel>50</Steel>
       <ComponentIndustrial>8</ComponentIndustrial>
     </costList>
     <apparel Inherit="False">
@@ -179,6 +181,7 @@
     </recipeMaker>
     <comps>
       <li Class="CompProperties_Reloadable">
+        <compClass>Explorite.CompReloadable_InitOnEmpty</compClass>
         <maxCharges>4</maxCharges>
         <ammoDef>Steel</ammoDef>
         <ammoCountPerCharge>25</ammoCountPerCharge>
@@ -486,5 +489,99 @@
       <li>CentaurApparels</li>
     </thingCategories>
   </ThingDef>-->
+  
+  <ThingDef>
+    <defName>Apparel_ArmorCataphractCentaurSet_Object</defName>
+    <thingClass>ThingWithComps</thingClass>
+    <label>centaur cataphract armor set</label>
+    <description>Centaur cataphract armor set.</description>
+    <category>None</category>
+    <menuHidden>false</menuHidden>
+    <tradeability>None</tradeability>
+    <destroyOnDrop>false</destroyOnDrop>
+    <useHitPoints>false</useHitPoints>
+    <selectable>false</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>1</stackLimit>
+    <statBases>
+      <WorkToMake>300000</WorkToMake>
+    </statBases>
+    <alwaysHaulable>false</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>0</pathCost>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/CentaurArmorCataphract/CentaurArmorCataphract</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(0.24313725490196078431372549019608,0.4,0.70980392156862745098039215686275)</color>
+    </graphicData>
+    <costList>
+      <Apparel_ArmorReconCentaur>1</Apparel_ArmorReconCentaur>
+      <Apparel_ArmorMarineCentaur>1</Apparel_ArmorMarineCentaur>
+      <Uranium>40</Uranium>
+      <Gold>7</Gold>
+      <Steel>100</Steel>
+      <Chemfuel>80</Chemfuel>
+    </costList>
+    <recipeMaker>
+	  <researchPrerequisites>
+		<li ExEx="Royalty">CataphractArmor</li>
+		<li>CentaurReverseEngineeringHumanTech</li>
+	  </researchPrerequisites>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <comps>
+      <li Class="Explorite.CompProperties_DestroyOnSpawn"/>
+	  <li Class="Explorite.CompProperties_DropThingsOnDestroy">
+        <cases>
+		  <li>
+			<destroyModes>
+			  <li>KillFinalize</li>
+			</destroyModes>
+			<things>
+			  <!--<li>
+			    <thingDef>Plasteel</thingDef>
+			    <count>65</count>
+			  </li>
+			  <li>
+			    <thingDef>ComponentSpacer</thingDef>
+			  </li>-->
+			  <li>
+			    <thingDef>Apparel_ArmorHelmetCataphractPrestige</thingDef>
+			    <quality>Legendary</quality>
+			    <color>(0.24313725490196078431372549019608,0.4,0.70980392156862745098039215686275)</color>
+			  </li>
+			  <li>
+			    <thingDef>Apparel_ArmorCataphractCentaur</thingDef>
+			    <quality>Legendary</quality>
+			  </li>
+			</things>
+		  </li>
+		</cases>
+      </li>
+    </comps>
+  </ThingDef>
   
 </Defs>

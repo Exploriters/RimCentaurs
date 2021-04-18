@@ -75,14 +75,17 @@
   <Apparel_PsyfocusCentaursuit.label>灵质半人马装</Apparel_PsyfocusCentaursuit.label>
   <Apparel_PsyfocusCentaursuit.description>镶嵌有心灵聚合物的半人马连身衣。除了会增加心灵敏感度外，还能够提高心灵熵降低速率。</Apparel_PsyfocusCentaursuit.description>
   
+  <Apparel_ArmorCataphractCentaurSet_Object.label>半人马禁卫装甲套装</Apparel_ArmorCataphractCentaurSet_Object.label>
+  <Apparel_ArmorCataphractCentaurSet_Object.description>半人马禁卫装甲套装。</Apparel_ArmorCataphractCentaurSet_Object.description>
+  
   <Apparel_ArmorReconCentaur.label>半人马斥候装甲</Apparel_ArmorReconCentaur.label>
   <Apparel_ArmorReconCentaur.description>为半人马穿戴者设计的一套轻量化动力装甲，但轻量化的设计也使其相较于其他动力装甲具备更优越的机动性，配置的轻型玻璃钢装甲可以在不影响穿戴者灵活性的情况下提供可靠的防护，位于装甲中段的神经模因装置可以让使用者更容易地穿戴和使用它。\n\n半人马种族的强大负重能力允许其装甲无需削弱其防御能力就能携带强大的额外装置，集成了能够让使用者短距离飞行的短程喷射火箭，能够进行船舰破袭作战。这一装甲还额外镌刻了昂贵且华丽的灵质秘纹用于增强使用者的心灵能力。</Apparel_ArmorReconCentaur.description>
-  <Apparel_ArmorReconCentaur.comps.CompReloadable.chargeNoun>跳跃</Apparel_ArmorReconCentaur.comps.CompReloadable.chargeNoun>
+  <Apparel_ArmorReconCentaur.comps.Explorite_CompReloadable_InitOnEmpty.chargeNoun>跳跃</Apparel_ArmorReconCentaur.comps.Explorite_CompReloadable_InitOnEmpty.chargeNoun>
   <Apparel_ArmorReconCentaur.verbs.0.label>跳跃</Apparel_ArmorReconCentaur.verbs.0.label>
   
   <Apparel_ArmorMarineCentaur.label>半人马海军装甲</Apparel_ArmorMarineCentaur.label>
   <Apparel_ArmorMarineCentaur.description>为半人马穿戴者设计的一套轻型动力盔甲。从颈部到脚部都覆盖玻璃钢纤维编制的装甲片，能够十分有效地防御攻击。神经模因机械让人在穿着重型装甲时仍然能够轻松行动。\n\n半人马种族的强大负重能力允许其装甲无需削弱其防御能力就能携带强大的额外装置，这一装甲装备了背负式破片榴弹发射器，可以用于破拆防御建筑和舰船舱壁，在狭窄的区域内可怕得令人发指。这一装甲还额外镌刻了昂贵且华丽的灵质秘纹用于增强使用者的心灵能力。</Apparel_ArmorMarineCentaur.description>
-  <Apparel_ArmorMarineCentaur.comps.CompReloadable.chargeNoun>榴弹</Apparel_ArmorMarineCentaur.comps.CompReloadable.chargeNoun>
+  <Apparel_ArmorMarineCentaur.comps.Explorite_CompReloadable_InitOnEmpty.chargeNoun>榴弹</Apparel_ArmorMarineCentaur.comps.Explorite_CompReloadable_InitOnEmpty.chargeNoun>
   <Apparel_ArmorMarineCentaur.verbs.0.label>发射破片弹</Apparel_ArmorMarineCentaur.verbs.0.label>
   <Apparel_ArmorMarineCentaur.verbs.1.label>发射电磁脉冲弹</Apparel_ArmorMarineCentaur.verbs.1.label>
   <Proj_CentaurGrenadierGrenade.label>破片榴弹</Proj_CentaurGrenadierGrenade.label>
