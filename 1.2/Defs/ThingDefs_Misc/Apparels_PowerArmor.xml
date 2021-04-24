@@ -102,7 +102,7 @@
     <colorGenerator Inherit="False" Class="ColorGenerator_Options">
       <options>
         <li>
-          <only>(0.24313725490196078431372549019608,0.4,0.70980392156862745098039215686275)</only>
+          <only>(62, 102, 181)</only>
         </li>
       </options>
     </colorGenerator>
@@ -237,7 +237,7 @@
     <colorGenerator Inherit="False" Class="ColorGenerator_Options">
       <options>
         <li>
-          <only>(0.24313725490196078431372549019608,0.4,0.70980392156862745098039215686275)</only>
+          <only>(62, 102, 181)</only>
         </li>
       </options>
     </colorGenerator>
@@ -381,7 +381,7 @@
     <colorGenerator Inherit="False" Class="ColorGenerator_Options">
       <options>
         <li>
-          <only>(0.24313725490196078431372549019608,0.4,0.70980392156862745098039215686275)</only>
+          <only>(62, 102, 181)</only>
         </li>
       </options>
     </colorGenerator>
@@ -515,7 +515,7 @@
       <texPath>Things/Pawn/Humanlike/Apparel/CentaurArmorCataphract/CentaurArmorCataphract</texPath>
       <shaderType>CutoutComplex</shaderType>
       <graphicClass>Graphic_Single</graphicClass>
-      <color>(0.24313725490196078431372549019608,0.4,0.70980392156862745098039215686275)</color>
+      <color>(62, 102, 181)</color>
     </graphicData>
     <costList>
       <Apparel_ArmorReconCentaur>1</Apparel_ArmorReconCentaur>
@@ -571,7 +571,7 @@
 			  <li>
 			    <thingDef>Apparel_ArmorHelmetCataphractPrestige</thingDef>
 			    <quality>Legendary</quality>
-			    <color>(0.24313725490196078431372549019608,0.4,0.70980392156862745098039215686275)</color>
+			    <color>(62, 102, 181)</color>
 			  </li>
 			  <li>
 			    <thingDef>Apparel_ArmorCataphractCentaur</thingDef>
