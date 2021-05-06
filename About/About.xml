@@ -2,7 +2,7 @@
 <ModMetaData>
   <packageId>Exploriters.siiftun1857.CentaurTheMagnuassembly</packageId>
   <name>RimCentaurs</name>
-  <author>Magnus siiftun1857 Frankline</author>
+  <author>siiftun1857</author>
   <!-- <targetVersion>1.0</targetVersion> -->
   <supportedVersions>
     <li>1.2</li>
@@ -59,7 +59,7 @@
   </loadAfter>
   <loadBefore />
   <incompatibleWith />
-  <url>https://github.com/siiftun1857/RimCentaurs</url>
+  <url>https://github.com/Exploriters/RimCentaurs</url>
   <!-- Magnus' Modify. Original author was Zedralan: Published Id 1576793761. -->
   <!-- A genetically engineered solution to anyone's labor problems, a centaur is the obvious choice. -->
   <description>&lt;color=#7fa0ff&gt;&lt;b&gt;RimCentaurs - Story of an exotic lone wolf species\nby siiftun1857&lt;/b&gt; (AKA Magnussiiftun1857)\nLicensed under Apache 2.0 (Copyright 2018)&lt;/color&gt;\n\n&lt;color=#a0a0a0&gt;None believes that centaurs exist in the world, and no one has witnessed the appearance of centaurs, or even thought about it.\n\nUntil you showed up.\n\nYou may the last centaur among you know. However, are you the only centaur in the world?\n\nYou will find out.&lt;/color&gt;\n\n&lt;b&gt;&lt;color=#ff7f00&gt;This mod is WIP and some objects are unobtainable,\nincluding "Thermo Damper" and "Subsystems".&lt;/color&gt;\nRequires "Explorite Core" to work.&lt;/b&gt;\n\n&lt;b&gt;Features:&lt;/b&gt;\n - New race "Centaur" with long wolf style scenario.\n - No NPC Centaur factions among the planet, you are the only one.\n - Survival will not be a problem nor challenge for centaurs. Have a relax.\n - Join the empire and satisfy royal apparel requirement without headdress.\n - Exotic resources, including archotech components.\n - Unique mechanics and systems, subsystems, and pawn shield.\n - Storyline of seeking "The other".\n - Multiple method-patches to solve common alien races issue.\n - Designed no effect on humans or other alien-races saves.\n - ... and more.\n\n&lt;b&gt;Features with SOS2:&lt;/b&gt;\n - Start in centaur cruiser.\n - Uses centaur power armor as space suit, even without helmet.\n - Torpedo spinal weapon.\nHave your nice trip!\n\nGitHub repository: https://github.com/Exploriters/RimCentaurs\nFell free to sent pull request.\n</description>
