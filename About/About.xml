@@ -58,7 +58,11 @@
 	<li>jecrell.jecstools</li>
   </loadAfter>
   <loadBefore />
-  <incompatibleWith />
+  <incompatibleWith>
+	<li>zedralan548.centaurs</li>
+	<li>Mlie.Centaurs</li>
+	<li>Outremer.Epona</li>
+  </incompatibleWith>
   <url>https://github.com/Exploriters/RimCentaurs</url>
   <!-- Magnus' Modify. Original author was Zedralan: Published Id 1576793761. -->
   <!-- A genetically engineered solution to anyone's labor problems, a centaur is the obvious choice. -->
