@@ -826,6 +826,7 @@
 
           <!--<li>Apparel_CentaurArchotechArmor</li>-->
         </apparelList>
+		<!--
         <whiteApparelList>
           <li>Apparel_CowboyHat</li>
           <li>Apparel_BowlerHat</li>
@@ -863,11 +864,11 @@
           <li>Apparel_ArmorHelmetReconPrestige</li>
           <li>Apparel_ArmorMarineHelmetPrestige</li>
           <li ExEx="Royalty">Apparel_ArmorHelmetCataphractPrestige</li>
-          <!--<li>Apparel_ArmorHelmetReconClocked</li>
+          <!- -<li>Apparel_ArmorHelmetReconClocked</li>
           <li>Apparel_ArmorMarineHelmetClocked</li>
-          <li ExEx="Royalty">Apparel_ArmorHelmetCataphractClocked</li>-->
+          <li ExEx="Royalty">Apparel_ArmorHelmetCataphractClocked</li>- ->
 
-          <!--<li>Apparel_PowerArmorHelmet_Clocked</li>-->
+          <!- -<li>Apparel_PowerArmorHelmet_Clocked</li>- ->
 
           <li>OrbitalTargeterBombardment</li>
           <li>OrbitalTargeterPowerBeam</li>
@@ -876,6 +877,7 @@
           <li>Apparel_PsychicInsanityLance</li>
           <li>Apparel_PsychicShockLance</li>
         </whiteApparelList>
+		-->
 
         <onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
         <weaponList>

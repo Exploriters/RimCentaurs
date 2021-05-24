@@ -160,7 +160,7 @@
     <description>A subsystem that enhances body strength from inside, greatly increases the hauling mass capacity. Cannot reduce weight of the character.</description>
     <sysTexturePath>Subsystems/AntiMass</sysTexturePath>
     <descriptionHyperlinks />
-    <tip>mass carry max: x300%</tip>
+    <tip>mass carry max: x285.714%</tip>
     <comps />
     <stages><li><minSeverity>1</minSeverity>
 		

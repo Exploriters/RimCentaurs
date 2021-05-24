@@ -78,8 +78,7 @@
 				defName="CataphractArmor") 
 			and not (tags)]</xpath>
 		<value>
-			<tags>
-			</tags>
+			<tags />
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">

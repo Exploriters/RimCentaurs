@@ -46,7 +46,7 @@
   <CentaurSubsystem_AntiMass.label>反重力子系统</CentaurSubsystem_AntiMass.label>
   <CentaurSubsystem_AntiMass.labelNoun>一个反重力子系统</CentaurSubsystem_AntiMass.labelNoun>
   <CentaurSubsystem_AntiMass.description>一个从内部增强承受力强度的子系统，大幅增强负重能力。不能降低人物的体重。</CentaurSubsystem_AntiMass.description>
-  <CentaurSubsystem_AntiMass.tip>负重能力: x300%</CentaurSubsystem_AntiMass.tip>
+  <CentaurSubsystem_AntiMass.tip>负重能力: x285.714%</CentaurSubsystem_AntiMass.tip>
 
   <CentaurSubsystem_LifeSupport.label>生命维持子系统</CentaurSubsystem_LifeSupport.label>
   <CentaurSubsystem_LifeSupport.labelNoun>一个生命维持子系统</CentaurSubsystem_LifeSupport.labelNoun>
