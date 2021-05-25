@@ -16,6 +16,7 @@
   <RearRightHoove.label>右后蹄</RearRightHoove.label>
   <RearRightHoove.labelShort>蹄</RearRightHoove.labelShort>
 
+  <CentaurTorso.label>躯干</CentaurTorso.label>
   <CentaurCorePart.label>躯干</CentaurCorePart.label>
   <CentaurSubsystem.label>子系统</CentaurSubsystem.label>
   <CentaurSubsystemPrimary.label>第一子系统</CentaurSubsystemPrimary.label>

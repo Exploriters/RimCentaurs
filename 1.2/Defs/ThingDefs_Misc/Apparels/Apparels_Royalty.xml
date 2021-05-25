@@ -155,7 +155,7 @@
     </tradeTags>-->
     <apparel>
       <bodyPartGroups>
-        <li>Torso</li>
+        <li>CentaurTorso</li>
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>

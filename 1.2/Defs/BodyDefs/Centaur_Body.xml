@@ -10,7 +10,7 @@
       <height>Middle</height>
       <depth>Outside</depth>
       <groups>
-        <li>Torso</li>
+        <li>CentaurTorso</li>
         <li>CentaurCorePart</li>
       </groups>
       <parts>
@@ -19,7 +19,7 @@
           <coverage>0.024</coverage>
           <depth>Inside</depth>
           <groups>
-            <li>Torso</li>
+            <li>CentaurTorso</li>
           </groups>
         </li>
         <li>
@@ -27,7 +27,7 @@
           <coverage>0.01</coverage>
           <depth>Inside</depth>
           <groups>
-            <li>Torso</li>
+            <li>CentaurTorso</li>
           </groups>
         </li>
         <li>
@@ -36,7 +36,7 @@
           <height>Bottom</height>
           <depth>Inside</depth>
           <groups>
-            <li>Torso</li>
+            <li>CentaurTorso</li>
           </groups>
         </li>
         <li>
@@ -44,7 +44,7 @@
           <coverage>0.01666666666666666666666666666667</coverage>
           <depth>Inside</depth>
           <groups>
-            <li>Torso</li>
+            <li>CentaurTorso</li>
           </groups>
         </li>
         <li>
@@ -52,7 +52,7 @@
           <coverage>0.01666666666666666666666666666667</coverage>
           <depth>Inside</depth>
           <groups>
-            <li>Torso</li>
+            <li>CentaurTorso</li>
           </groups>
         </li>
         <li>
@@ -60,7 +60,7 @@
           <coverage>0.01333333333333333333333333333333</coverage>
           <depth>Inside</depth>
           <groups>
-            <li>Torso</li>
+            <li>CentaurTorso</li>
           </groups>
         </li>
         <li>
@@ -69,7 +69,7 @@
           <coverage>0.01333333333333333333333333333333</coverage>
           <depth>Inside</depth>
           <groups>
-            <li>Torso</li>
+            <li>CentaurTorso</li>
           </groups>
         </li>
         <li>
@@ -78,7 +78,7 @@
           <coverage>0.01666666666666666666666666666667</coverage>
           <depth>Inside</depth>
           <groups>
-            <li>Torso</li>
+            <li>CentaurTorso</li>
           </groups>
         </li>
         <li>
@@ -87,7 +87,7 @@
           <coverage>0.01666666666666666666666666666667</coverage>
           <depth>Inside</depth>
           <groups>
-            <li>Torso</li>
+            <li>CentaurTorso</li>
           </groups>
         </li>
         <li>
@@ -96,7 +96,7 @@
           <coverage>0.01133333333333333333333333333333</coverage>
           <depth>Inside</depth>
           <groups>
-            <li>Torso</li>
+            <li>CentaurTorso</li>
           </groups>
         </li>
         <li>
@@ -105,7 +105,7 @@
           <coverage>0.01133333333333333333333333333333</coverage>
           <depth>Inside</depth>
           <groups>
-            <li>Torso</li>
+            <li>CentaurTorso</li>
           </groups>
         </li>
         <li>
@@ -113,7 +113,7 @@
           <coverage>0.01666666666666666666666666666667</coverage>
           <depth>Inside</depth>
           <groups>
-            <li>Torso</li>
+            <li>CentaurTorso</li>
           </groups>
         </li>
         <li>
@@ -122,7 +122,7 @@
           <coverage>0.05</coverage>
           <height>Bottom</height>
           <groups>
-            <li>Torso</li>
+            <li>CentaurTorso</li>
           </groups>
         </li>
         <li>
@@ -221,7 +221,7 @@
           <coverage>0.18666666666666666666666666666666</coverage>
           <height>Top</height>
           <groups>
-            <li>Torso</li>
+            <li>CentaurTorso</li>
           </groups>
           <parts>
             <li>
@@ -239,7 +239,7 @@
                   <height>Top</height>
                   <depth>Inside</depth>
                   <groups>
-                    <li>Torso</li>
+                    <li>CentaurTorso</li>
                   </groups>
                 </li>-->
                 <li>
@@ -344,7 +344,7 @@
                   <height>Top</height>
                   <depth>Inside</depth>
                   <groups>
-                    <li>Torso</li>
+                    <li>CentaurTorso</li>
                   </groups>
                 </li>-->
                 <li>
@@ -603,7 +603,7 @@
           <depth>Inside</depth>
           <height>Bottom</height>
           <groups>
-            <li>Torso</li>
+            <li>CentaurTorso</li>
             <li>CentaurSubsystem</li>
             <li>CentaurSubsystemPrimary</li>
           </groups>
@@ -615,7 +615,7 @@
           <depth>Inside</depth>
           <height>Bottom</height>
           <groups>
-            <li>Torso</li>
+            <li>CentaurTorso</li>
             <li>CentaurSubsystem</li>
             <li>CentaurSubsystemSecondary</li>
           </groups>
@@ -627,7 +627,7 @@
           <depth>Inside</depth>
           <height>Bottom</height>
           <groups>
-            <li>Torso</li>
+            <li>CentaurTorso</li>
             <li>CentaurSubsystem</li>
             <li>CentaurSubsystemTertiary</li>
           </groups>

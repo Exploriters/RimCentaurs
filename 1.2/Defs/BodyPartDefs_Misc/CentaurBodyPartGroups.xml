@@ -54,6 +54,12 @@
   </BodyPartGroupDef>
   
   <BodyPartGroupDef>
+    <defName>CentaurTorso</defName>
+    <label>torso</label>
+    <listOrder>100</listOrder>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
     <defName>CentaurSubsystem</defName>
     <label>subsystem</label>
   </BodyPartGroupDef>
