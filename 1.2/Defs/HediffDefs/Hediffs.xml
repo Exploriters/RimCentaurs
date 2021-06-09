@@ -2,11 +2,11 @@
 <Defs>
 
   <HediffDef>
-    <defName>ToxicHypothermia</defName>
+    <defName>CryoToxic</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(0, 0.95, 0.45)</defaultLabelColor>
-    <label>toxic hypothermia</label>
-    <description>Hypothermia poison in the bloodstream. This can come from poisoned weapons.\nToxic hypothermia is not lethal at all, will not leave permanent damage and no side effects besides reduced consciousness.</description>
+    <label>Cryo neurotoxin</label>
+    <description>Cryo poison in the bloodstream. This can come from poisoned weapons.\nCryo neurotoxin is not lethal at all, will not leave permanent damage and no side effects besides reduced consciousness.</description>
     <!-- <taleOnVisible>HypothermiaRevealed</taleOnVisible> -->
     <maxSeverity>10</maxSeverity>
     <isBad>true</isBad>
@@ -38,7 +38,7 @@
             <capacity>Consciousness</capacity>
             <postFactor>0.92</postFactor>
           </li>
-          <li>
+          <!--<li>
             <capacity>Moving</capacity>
             <postFactor>0.92</postFactor>
           </li>
@@ -61,7 +61,7 @@
           <li>
             <capacity>Hearing</capacity>
             <postFactor>0.92</postFactor>
-          </li>
+          </li>-->
         </capMods>
       </li>
       <li>
@@ -73,7 +73,7 @@
             <capacity>Consciousness</capacity>
             <postFactor>0.8</postFactor>
           </li>
-          <li>
+          <!--<li>
             <capacity>Moving</capacity>
             <postFactor>0.8</postFactor>
           </li>
@@ -96,7 +96,7 @@
           <li>
             <capacity>Hearing</capacity>
             <postFactor>0.8</postFactor>
-          </li>
+          </li>-->
         </capMods>
       </li>
       <li>
@@ -108,7 +108,7 @@
             <capacity>Consciousness</capacity>
             <postFactor>0.5</postFactor>
           </li>
-          <li>
+          <!--<li>
             <capacity>Moving</capacity>
             <postFactor>0.5</postFactor>
           </li>
@@ -131,7 +131,7 @@
           <li>
             <capacity>Hearing</capacity>
             <postFactor>0.5</postFactor>
-          </li>
+          </li>-->
         </capMods>
       </li>
       <li>
@@ -143,7 +143,7 @@
             <capacity>Consciousness</capacity>
             <postFactor>0.1</postFactor>
           </li>
-          <li>
+          <!--<li>
             <capacity>Moving</capacity>
             <postFactor>0.1</postFactor>
           </li>
@@ -166,7 +166,7 @@
           <li>
             <capacity>Hearing</capacity>
             <postFactor>0.1</postFactor>
-          </li>
+          </li>-->
         </capMods>
       </li>
       <li>
@@ -178,7 +178,7 @@
             <capacity>Consciousness</capacity>
             <postFactor>0.05</postFactor>
           </li>
-          <li>
+          <!--<li>
             <capacity>Moving</capacity>
             <postFactor>0.05</postFactor>
           </li>
@@ -201,7 +201,7 @@
           <li>
             <capacity>Hearing</capacity>
             <postFactor>0.05</postFactor>
-          </li>
+          </li>-->
         </capMods>
       </li>
       <li>
@@ -215,7 +215,7 @@
             <postFactor>0.01</postFactor>
             <setMax>0.05</setMax>
           </li>
-          <li>
+          <!--<li>
             <capacity>Moving</capacity>
             <postFactor>0.01</postFactor>
             <setMax>0.05</setMax>
@@ -241,7 +241,7 @@
           <li>
             <capacity>Hearing</capacity>
             <postFactor>0.05</postFactor>
-          </li>
+          </li>-->
         </capMods>
       </li>
     </stages>

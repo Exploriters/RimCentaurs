@@ -35,6 +35,7 @@
       <SocialImpact>0.2</SocialImpact>
     </equippedStatOffsets>
     <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
@@ -154,6 +155,7 @@
       <li>PsychicApparel</li>
     </tradeTags>-->
     <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
       <bodyPartGroups>
         <li>CentaurTorso</li>
         <li>Neck</li>

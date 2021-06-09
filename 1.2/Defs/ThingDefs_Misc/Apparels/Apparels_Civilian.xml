@@ -96,9 +96,9 @@
     <stuffCategories>
 	  <li>Woody</li>
       <li>Metallic</li>
-      <!-- <li>Fabric</li>
+      <!--<li>Fabric</li>
       <li>Leathery</li>
-      <li>Stony</li> -->
+      <li>Stony</li>-->
     </stuffCategories>
     <thingCategories Inherit="False">
       <li>CentaurApparels</li>
@@ -116,6 +116,7 @@
       <!--<MoveSpeed>1.0</MoveSpeed>-->
     </equippedStatOffsets>
     <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
       <bodyPartGroups>
         <li>CentaurHooves</li>
         <li>Hands</li>

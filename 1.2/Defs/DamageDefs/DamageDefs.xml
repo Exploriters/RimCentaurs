@@ -74,9 +74,9 @@
         <victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
       </li>
       <li>
-        <hediff>ToxicHypothermia</hediff>
+        <hediff>CryoToxic</hediff>
         <severityPerDamageDealt>0.005</severityPerDamageDealt>
-        <victimSeverityScaling>ToxicHypothermiaSensitivity</victimSeverityScaling>
+        <victimSeverityScaling>CryoToxicSensitivity</victimSeverityScaling>
       </li>
     </additionalHediffs>
   </DamageDef>

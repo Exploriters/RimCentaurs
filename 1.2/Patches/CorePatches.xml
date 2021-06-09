@@ -29,7 +29,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[race/fleshType="Mechanoid"]/statBases</xpath>
 		<value>
-			<ToxicHypothermiaSensitivity>0</ToxicHypothermiaSensitivity>
+			<CryoToxicSensitivity>0</CryoToxicSensitivity>
 		</value>
 	</Operation>
 	

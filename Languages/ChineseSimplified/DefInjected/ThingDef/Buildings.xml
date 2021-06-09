@@ -2,7 +2,7 @@
 <LanguageData>
 
   <Turret_HyperTrishot.label>自动弩机炮塔</Turret_HyperTrishot.label>
-  <Turret_HyperTrishot.description>一种可以越墙射击的极远程重型自动弩机炮塔，能在单次爆发射击中射出四只携带延迟起爆热能释放爆炸物的远距离重箭。在过度使用后需要更换零部件。不能对近距离目标开火，损坏时可能会爆炸。</Turret_HyperTrishot.description>
+  <Turret_HyperTrishot.description>一种可以越墙射击的极远程重型自动弩机炮塔，能在单次爆发射击中射出四只携带延迟起爆热能释放爆炸物的远距离重箭。在过度使用后需要更换零部件。</Turret_HyperTrishot.description>
   <Turret_HyperTrishot.comps.CompRefuelable.fuelGizmoLabel>零部件耐久度</Turret_HyperTrishot.comps.CompRefuelable.fuelGizmoLabel>
   <Turret_HyperTrishot.comps.CompRefuelable.fuelLabel>射击直到零部件报废</Turret_HyperTrishot.comps.CompRefuelable.fuelLabel>
   <Turret_HyperTrishot.comps.CompRefuelable.outOfFuelMessage>无法射击：需要新零部件</Turret_HyperTrishot.comps.CompRefuelable.outOfFuelMessage>

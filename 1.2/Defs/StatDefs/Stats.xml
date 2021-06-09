@@ -2,9 +2,9 @@
 <Defs>
 
   <StatDef>
-    <defName>ToxicHypothermiaSensitivity</defName>
-    <label>toxic hypothermia sensitivity</label>
-    <description>Multiplier on the impact of toxic hypothermia buildup on this creature, which most come from toxin weaponry.</description>
+    <defName>CryoToxicSensitivity</defName>
+    <label>cryo neurotoxin sensitivity</label>
+    <description>Multiplier on the impact of cryo neurotoxin buildup on this creature, which most come from toxin weaponry.</description>
     <category>BasicsPawn</category>
     <defaultBaseValue>1.0</defaultBaseValue>
     <hideAtValue>1.0</hideAtValue>

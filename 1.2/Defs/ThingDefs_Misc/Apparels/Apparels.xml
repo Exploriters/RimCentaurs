@@ -67,6 +67,7 @@
       <Uranium>150</Uranium>
     </costList>
     <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
       <bodyPartGroups>
         <li>FullHead</li>
         <li>CentaurTorso</li>

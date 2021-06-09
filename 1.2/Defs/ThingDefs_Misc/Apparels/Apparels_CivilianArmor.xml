@@ -48,7 +48,7 @@
       <EquipDelay>30</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-1.6</MoveSpeed>
+      <!--<MoveSpeed>-1.6</MoveSpeed>-->
     </equippedStatOffsets>
     <thingCategories Inherit="False">
       <li>CentaurApparels</li>
@@ -126,7 +126,7 @@
       <EquipDelay>5</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.24</MoveSpeed>
+      <!--<MoveSpeed>-0.24</MoveSpeed>-->
     </equippedStatOffsets>
     <thingCategories Inherit="False">
       <li>CentaurApparels</li>
@@ -206,7 +206,7 @@
       <EquipDelay>10</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.24</MoveSpeed>
+      <!--<MoveSpeed>-0.24</MoveSpeed>-->
     </equippedStatOffsets>
     <thingCategories Inherit="False">
       <li>CentaurApparels</li>
@@ -288,7 +288,7 @@
       <EquipDelay>6</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.24</MoveSpeed>
+      <!--<MoveSpeed>-0.24</MoveSpeed>-->
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>

@@ -43,7 +43,7 @@
       <ComfyTemperatureMax>20.2</ComfyTemperatureMax>
       <ImmunityGainSpeed>1.75</ImmunityGainSpeed>
       <ToxicSensitivity>0.5</ToxicSensitivity>
-      <ToxicHypothermiaSensitivity>0</ToxicHypothermiaSensitivity>
+      <CryoToxicSensitivity>0</CryoToxicSensitivity>
       <MentalBreakThreshold>0.02</MentalBreakThreshold>
       <PainShockThreshold>0.95</PainShockThreshold>
 	  
@@ -59,7 +59,7 @@
 	  
 	  <!-- Social -->
       <PawnBeauty>10.0</PawnBeauty>
-      <SocialImpact>2.0</SocialImpact>
+      <SocialImpact>1.3</SocialImpact>
       <!--<TradePriceImprovement>1</TradePriceImprovement>-->
 	  
 	  <!-- Work -->

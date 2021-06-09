@@ -8,7 +8,7 @@
     <defName>HyperManipulator</defName>
     <label>physic manipulator</label>
     <labelNoun>a physic manipulator</labelNoun>
-    <description>An pair of devices replacing arms with a powerful remote manipulator.</description>
+    <description>An set of devices replacing limbs with a powerful mass manipulator.</description>
     <descriptionHyperlinks>
 	  <ThingDef>HyperManipulator</ThingDef>
 	</descriptionHyperlinks>
@@ -54,14 +54,14 @@
       </li>
       <li>
         <minSeverity>1</minSeverity>
-        <hediffGivers>
+        <!-- <hediffGivers>
           <li Class="HediffGiver_Heat">
             <hediff>HyperManipulator_EnvironmentalHeat</hediff>
           </li>
           <li Class="HediffGiver_Hypothermia">
             <hediff>HyperManipulator_EnvironmentalCold</hediff>
           </li>
-        </hediffGivers>
+        </hediffGivers> -->
       </li>
     </stages>
 	<tags>
@@ -109,6 +109,114 @@
     <!-- <spawnThingOnRemoved>HyperManipulator</spawnThingOnRemoved> -->
   </HediffDef>
 
+  <HediffDef Abstract="True">
+    <hediffClass>Explorite.Hediff_AddedPart_HManipulator</hediffClass>
+    <defaultLabelColor>(0.5, 0.75, 1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <defName>HyperManipulatorLegs</defName>
+    <label>physic manipulator</label>
+    <labelNoun>a physic manipulator</labelNoun>
+    <description>An set of devices replacing limbs with a powerful mass manipulator.</description>
+    <descriptionHyperlinks>
+	  <ThingDef>HyperManipulator</ThingDef>
+	</descriptionHyperlinks>
+    <maxSeverity>1.0</maxSeverity>
+    <initialSeverity>0.001</initialSeverity>
+	<everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <label>assembling</label>
+        <minSeverity>0</minSeverity>
+        <partEfficiencyOffset>-5</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0</partEfficiencyOffset> -->
+      </li>
+      <li>
+        <label>initial</label>
+        <minSeverity>0.15</minSeverity>
+        <partEfficiencyOffset>-4.95</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0.01</partEfficiencyOffset> -->
+      </li>
+      <li>
+        <label>adapting</label>
+        <minSeverity>0.50</minSeverity>
+        <partEfficiencyOffset>-4.5</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0.1</partEfficiencyOffset> -->
+      </li>
+      <li>
+        <label>adapting</label>
+        <minSeverity>0.85</minSeverity>
+        <partEfficiencyOffset>-4</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0.2</partEfficiencyOffset> -->
+      </li>
+      <li>
+        <label>adapting</label>
+        <minSeverity>0.9</minSeverity>
+        <partEfficiencyOffset>-3</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0.3</partEfficiencyOffset> -->
+      </li>
+      <li>
+        <label>adapting</label>
+        <minSeverity>0.95</minSeverity>
+        <partEfficiencyOffset>-2.5</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>0.5</partEfficiencyOffset> -->
+      </li>
+      <li>
+        <minSeverity>1</minSeverity>
+        <!-- <hediffGivers>
+          <li Class="HediffGiver_Heat">
+            <hediff>HyperManipulator_EnvironmentalHeat</hediff>
+          </li>
+          <li Class="HediffGiver_Hypothermia">
+            <hediff>HyperManipulator_EnvironmentalCold</hediff>
+          </li>
+        </hediffGivers> -->
+      </li>
+    </stages>
+	<tags>
+	  <li>CentaurTechHediff</li>
+	  <li>CentaurTechHediff_InitializationNeeded</li>
+	</tags>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>5</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>0.05</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>frost smasher</label>
+            <capacities>
+              <li>FrostblastMelee</li>
+            </capacities>
+            <power>20</power>
+            <cooldownTime>1</cooldownTime>
+			<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			<hediff>Frostbite</hediff>
+            <surpriseAttack>
+              <extraMeleeDamages>
+                <li>
+                  <def>Stun</def>
+                  <amount>20</amount>
+                </li>
+                <li>
+                  <def>EMP</def>
+                  <amount>20</amount>
+                </li>
+              </extraMeleeDamages>
+            </surpriseAttack>
+			<chanceFactor>10</chanceFactor>
+			<armorPenetration>1.1</armorPenetration>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <!-- <spawnThingOnRemoved>HyperManipulator</spawnThingOnRemoved> -->
+  </HediffDef>
+  
   <ThingDef>
     <defName>HyperManipulator</defName>
     <label>physic manipulator</label>

@@ -127,7 +127,7 @@
       <Mass>24</Mass>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-1.2</MoveSpeed>
+      <!--<MoveSpeed>-1.2</MoveSpeed>-->
       <PsychicSensitivity ExEx="Royalty">0.05</PsychicSensitivity>
       <PsychicEntropyRecoveryRate ExEx="Royalty">0.166</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
@@ -290,7 +290,7 @@
     </statBases>
     <equippedStatOffsets>
       <Flammability>-0.68</Flammability>
-      <MoveSpeed>-2.4</MoveSpeed>
+      <!--<MoveSpeed>-2.4</MoveSpeed>-->
       <PsychicSensitivity ExEx="Royalty">0.05</PsychicSensitivity>
       <PsychicEntropyRecoveryRate ExEx="Royalty">0.166</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
@@ -397,7 +397,7 @@
     <description>A suit of powered armor for centaurs. Layered plasteel-weave plates are very effective at stopping attacks, with few vulnerable joint sections. Neuro-memetic assistors allow a human to wear the armor and still move easily.\n\nArmor like this is often used by imperial janissaries and rapid-incursion space marines.</description>
     <thingClass>D9ASB.RangedShieldBelt</thingClass>
     <tickerType>Normal</tickerType>
-    <techLevel>Spacer</techLevel>
+    <techLevel>Archotech</techLevel>
     <useHitPoints>false</useHitPoints>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmorHelmet/CentaurPowerArmorHelmet</texPath>

@@ -17,15 +17,15 @@
   <HyperManipulator.stages.initial.label>初安装</HyperManipulator.stages.initial.label>
   <HyperManipulator.stages.adapting.label>适应中</HyperManipulator.stages.adapting.label>
 
-  <ToxicHypothermia.label>毒性低温症</ToxicHypothermia.label>
-  <ToxicHypothermia.description>血液中有低温症毒素。这可以由毒性武器造成。\n毒性低温症不会致命，并且在降低意识以外没有任何副作用和后遗症。</ToxicHypothermia.description>
-  <ToxicHypothermia.stages.initial.label>轻微</ToxicHypothermia.stages.initial.label>
-  <ToxicHypothermia.stages.minor.label>较轻</ToxicHypothermia.stages.minor.label>
-  <ToxicHypothermia.stages.moderate.label>中度</ToxicHypothermia.stages.moderate.label>
-  <ToxicHypothermia.stages.serious.label>严重</ToxicHypothermia.stages.serious.label>
-  <ToxicHypothermia.stages.extreme.label>极重</ToxicHypothermia.stages.extreme.label>
-  <ToxicHypothermia.stages.critical.label>危急</ToxicHypothermia.stages.critical.label>
-  <ToxicHypothermia.stages.fatal.label>致命</ToxicHypothermia.stages.fatal.label>
+  <CryoToxic.label>低温神经毒素</CryoToxic.label>
+  <CryoToxic.description>血液中有低温神经毒素。这可以由毒性武器造成。\n低温神经毒素不会致命，并且在降低意识以外没有任何副作用和后遗症。</CryoToxic.description>
+  <CryoToxic.stages.initial.label>轻微</CryoToxic.stages.initial.label>
+  <CryoToxic.stages.minor.label>较轻</CryoToxic.stages.minor.label>
+  <CryoToxic.stages.moderate.label>中度</CryoToxic.stages.moderate.label>
+  <CryoToxic.stages.serious.label>严重</CryoToxic.stages.serious.label>
+  <CryoToxic.stages.extreme.label>极重</CryoToxic.stages.extreme.label>
+  <CryoToxic.stages.critical.label>危急</CryoToxic.stages.critical.label>
+  <CryoToxic.stages.fatal.label>致命</CryoToxic.stages.fatal.label>
 
   <HyperManipulator_EnvironmentalHeat.label>操作器过热失效</HyperManipulator_EnvironmentalHeat.label>
   <HyperManipulator_EnvironmentalHeat.stages.initial.label>轻微</HyperManipulator_EnvironmentalHeat.stages.initial.label>
