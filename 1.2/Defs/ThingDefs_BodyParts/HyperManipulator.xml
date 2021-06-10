@@ -19,37 +19,43 @@
       <li>
         <label>assembling</label>
         <minSeverity>0</minSeverity>
-        <partEfficiencyOffset>-5</partEfficiencyOffset>
+        <partEfficiencyOffset>-1.5</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>-5</partEfficiencyOffset> -->
         <!-- <partEfficiencyOffset>0</partEfficiencyOffset> -->
       </li>
       <li>
         <label>initial</label>
         <minSeverity>0.15</minSeverity>
-        <partEfficiencyOffset>-4.95</partEfficiencyOffset>
+        <partEfficiencyOffset>-1.45</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>-4.95</partEfficiencyOffset> -->
         <!-- <partEfficiencyOffset>0.01</partEfficiencyOffset> -->
       </li>
       <li>
         <label>adapting</label>
         <minSeverity>0.50</minSeverity>
-        <partEfficiencyOffset>-4.5</partEfficiencyOffset>
+        <partEfficiencyOffset>-1</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>-4.5</partEfficiencyOffset> -->
         <!-- <partEfficiencyOffset>0.1</partEfficiencyOffset> -->
       </li>
       <li>
         <label>adapting</label>
         <minSeverity>0.85</minSeverity>
-        <partEfficiencyOffset>-4</partEfficiencyOffset>
+        <partEfficiencyOffset>-0.5</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>-4</partEfficiencyOffset> -->
         <!-- <partEfficiencyOffset>0.2</partEfficiencyOffset> -->
       </li>
       <li>
         <label>adapting</label>
         <minSeverity>0.9</minSeverity>
-        <partEfficiencyOffset>-3</partEfficiencyOffset>
+        <partEfficiencyOffset>-0.25</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>-3</partEfficiencyOffset> -->
         <!-- <partEfficiencyOffset>0.3</partEfficiencyOffset> -->
       </li>
       <li>
         <label>adapting</label>
         <minSeverity>0.95</minSeverity>
-        <partEfficiencyOffset>-2.5</partEfficiencyOffset>
+        <!-- <partEfficiencyOffset>-0</partEfficiencyOffset> -->
+        <!-- <partEfficiencyOffset>-2.5</partEfficiencyOffset> -->
         <!-- <partEfficiencyOffset>0.5</partEfficiencyOffset> -->
       </li>
       <li>
@@ -70,7 +76,7 @@
 	</tags>
     <addedPartProps>
       <solid>true</solid>
-      <partEfficiency>5</partEfficiency>
+      <partEfficiency>1.5</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
     <comps>
