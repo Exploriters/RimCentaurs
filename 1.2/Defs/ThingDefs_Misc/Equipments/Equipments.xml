@@ -613,15 +613,14 @@
         <power>9</power>
         <cooldownTime>2</cooldownTime>
       </li>
-      <li>
+      <!--<li>
         <label>blade</label>
         <capacities>
-          <li>Cut</li>
-		  <li>FrostblastMelee</li>
+		  <li>Frostblast</li>
         </capacities>
         <power>20</power>
         <cooldownTime>2</cooldownTime>
-      </li>
+      </li>-->
     </tools>
   </ThingDef>
   

@@ -44,7 +44,7 @@
     <!-- <minDamageToFragment>0</minDamageToFragment> -->
     <defaultDamage>20</defaultDamage>
     <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-    <defaultArmorPenetration>0</defaultArmorPenetration>
+    <defaultArmorPenetration>1.333333</defaultArmorPenetration>
     <explosionHeatEnergyPerCell>-80</explosionHeatEnergyPerCell>
     <explosionCellMote>Mote_BlastFlame</explosionCellMote>
     <explosionColorCenter>(1.0, 0.75, 0.0, 0.5)</explosionColorCenter>
@@ -85,7 +85,7 @@
     <defName>FrostblastMelee</defName>
     <defaultDamage>20</defaultDamage>
     <defaultStoppingPower>3.05</defaultStoppingPower>
-    <defaultArmorPenetration>1.0</defaultArmorPenetration>
+    <defaultArmorPenetration>1.333333</defaultArmorPenetration>
     <buildingDamageFactor>3</buildingDamageFactor>
     <plantDamageFactor>10</plantDamageFactor>
 	
@@ -103,7 +103,7 @@
     <defName>FrostblastSuper</defName>
     <defaultDamage>200</defaultDamage>
     <defaultStoppingPower>20.05</defaultStoppingPower>
-    <defaultArmorPenetration>1.0</defaultArmorPenetration>
+    <defaultArmorPenetration>1.333333</defaultArmorPenetration>
     <buildingDamageFactor>1.5</buildingDamageFactor>
     <plantDamageFactor>5</plantDamageFactor>
   </DamageDef>

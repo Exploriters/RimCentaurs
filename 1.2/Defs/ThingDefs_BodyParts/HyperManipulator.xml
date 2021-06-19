@@ -107,7 +107,7 @@
               </extraMeleeDamages>
             </surpriseAttack>
 			<chanceFactor>10</chanceFactor>
-			<armorPenetration>1.1</armorPenetration>
+			<armorPenetration>1.333333</armorPenetration>
           </li>
         </tools>
       </li>

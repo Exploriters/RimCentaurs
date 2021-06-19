@@ -103,13 +103,13 @@
       <li Class="CompProperties_Explosive">
         <explosiveDamageType>FrostblastSuper</explosiveDamageType>
         <explosiveRadius>39.95</explosiveRadius>
-        <preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
+        <!--<preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
         <preExplosionSpawnChance>0.25</preExplosionSpawnChance>
         <preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
         <postExplosionSpawnThingDef>Filth_FrostdustOrange</postExplosionSpawnThingDef>
         <postExplosionSpawnChance>0.25</postExplosionSpawnChance>
-        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
-        <explosiveExpandPerStackcount>0.2</explosiveExpandPerStackcount>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>-->
+        <explosiveExpandPerStackcount>0</explosiveExpandPerStackcount>
         <startWickHitPointsPercent>0</startWickHitPointsPercent>
         <chanceToStartFire>0</chanceToStartFire>
         <damageFalloff>true</damageFalloff>

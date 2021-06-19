@@ -2,6 +2,9 @@
 <Defs>
   
   <ThingDef ParentName="BaseProjectileNeolithic" Name="BaseTrishotArrow" Abstract="True">
+    <tradeTags>
+      <li>ExRoofBypass</li>
+    </tradeTags>
     <useHitPoints>false</useHitPoints>
     <neverMultiSelect>false</neverMultiSelect>
     <statBases>
