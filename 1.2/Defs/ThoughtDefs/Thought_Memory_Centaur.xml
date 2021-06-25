@@ -152,7 +152,7 @@
   <ThoughtDef>
     <defName>BothCentaur</defName>
     <thoughtClass>Thought_SituationalSocial</thoughtClass>
-    <!-- <workerClass>Explorite.ThoughtWorker_AlwaysActive_Centaur</workerClass> -->
+    <workerClass>Explorite.ThoughtWorker_AlwaysActive_Centaur</workerClass>
     <validWhileDespawned>true</validWhileDespawned>
     <stages>
       <li>
@@ -160,7 +160,7 @@
         <baseOpinionOffset>40</baseOpinionOffset>
       </li>
     </stages>
-	<thoughtToMake>SpotCentaur</thoughtToMake>
+	<!--<thoughtToMake>SpotCentaur</thoughtToMake>-->
   </ThoughtDef>
 
   <ThoughtDef>

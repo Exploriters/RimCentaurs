@@ -55,7 +55,7 @@
     </thingCategories>
     <apparel>
       <bodyPartGroups>
-        <li>CentaurTorso</li>
+        <li>CentaurTorso</li><li>Torso</li>
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
@@ -138,7 +138,7 @@
     </costList>
     <apparel>
       <bodyPartGroups>
-        <li>CentaurTorso</li>
+        <li>CentaurTorso</li><li>Torso</li>
         <li>Neck</li>
         <li>Shoulders</li>
       </bodyPartGroups>
@@ -292,7 +292,7 @@
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
-        <li>CentaurTorso</li>
+        <li>CentaurTorso</li><li>Torso</li>
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>

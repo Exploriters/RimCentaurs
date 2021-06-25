@@ -69,7 +69,7 @@
         <li>Shell</li>
       </layers>
       <bodyPartGroups>
-        <li>CentaurTorso</li>
+        <li>CentaurTorso</li><li>Torso</li>
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
@@ -149,7 +149,7 @@
         <li>Shell</li>
       </layers>
       <bodyPartGroups>
-        <li>CentaurTorso</li>
+        <li>CentaurTorso</li><li>Torso</li>
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
@@ -312,7 +312,7 @@
         <li>Shell</li>
       </layers>
       <bodyPartGroups>
-        <li>CentaurTorso</li>
+        <li>CentaurTorso</li><li>Torso</li>
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
@@ -438,7 +438,7 @@
     <apparel>
       <bodyPartGroups>
         <li>FullHead</li>
-        <li>CentaurTorso</li>
+        <li>CentaurTorso</li><li>Torso</li>
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>

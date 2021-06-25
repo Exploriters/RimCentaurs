@@ -157,7 +157,7 @@
     <apparel>
       <careIfWornByCorpse>false</careIfWornByCorpse>
       <bodyPartGroups>
-        <li>CentaurTorso</li>
+        <li>CentaurTorso</li><li>Torso</li>
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>

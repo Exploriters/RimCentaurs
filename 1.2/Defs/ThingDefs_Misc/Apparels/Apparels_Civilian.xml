@@ -171,7 +171,7 @@
     </statBases>
     <apparel>
       <bodyPartGroups>
-        <li>CentaurTorso</li>
+        <li>CentaurTorso</li><li>Torso</li>
         <li>Shoulders</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurBasicShirt/CentaurBasicShirt</wornGraphicPath>
@@ -225,7 +225,7 @@
     </statBases>
     <apparel>
       <bodyPartGroups>
-        <li>CentaurTorso</li>
+        <li>CentaurTorso</li><li>Torso</li>
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
@@ -303,7 +303,7 @@
     </statBases>
 		<apparel>
       <bodyPartGroups>
-        <li>CentaurTorso</li>
+        <li>CentaurTorso</li><li>Torso</li>
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
@@ -356,7 +356,7 @@
     </statBases>
     <apparel>
       <bodyPartGroups>
-        <li>CentaurTorso</li>
+        <li>CentaurTorso</li><li>Torso</li>
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
@@ -444,7 +444,7 @@
     </statBases>
     <apparel>
       <bodyPartGroups>
-        <li>CentaurTorso</li>
+        <li>CentaurTorso</li><li>Torso</li>
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
@@ -519,7 +519,7 @@
     </statBases>
     <apparel>
       <bodyPartGroups>
-        <li>CentaurTorso</li>
+        <li>CentaurTorso</li><li>Torso</li>
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
