@@ -17,7 +17,13 @@
     </tradeTags>
     <weaponTags>
       <li>EltexStaff</li>
+      <li>ExploriteOversizedWeapon</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleeBlunt</li>
+      <li>Ultratech</li>
+    </weaponClasses>
     <costList>
       <MeleeWeapon_PsyfocusStaff>3</MeleeWeapon_PsyfocusStaff>
     </costList>
@@ -70,8 +76,8 @@
       </li>
     </tools>
     <comps>
-      <li Class="CompProperties_BiocodableWeapon"/>
-      <li Class="Explorite.CompProperties_OversizedWeapon"/>
+      <li Class="CompProperties_Biocodable"/>
+      <!--<li Class="Explorite.CompProperties_OversizedWeapon"/>-->
     </comps>
     <burnableByRecipe>true</burnableByRecipe>
     <thingCategories>

@@ -10,6 +10,7 @@
     <minGenerationAge>20</minGenerationAge>
     <maxGenerationAge>39</maxGenerationAge>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <initialResistanceRange>99~99</initialResistanceRange>
     <backstoryFiltersOverride>
       <li>
         <categories>

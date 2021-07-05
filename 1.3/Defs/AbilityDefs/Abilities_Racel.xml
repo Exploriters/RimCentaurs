@@ -58,8 +58,12 @@
         <applicableToMechs>True</applicableToMechs>
         <screenShakeIntensity>2</screenShakeIntensity>
       </li>
-      <li Class="CompProperties_AbilityMoteOnTarget">
+      <!--<li Class="CompProperties_AbilityMoteOnTarget">
         <moteDef>MotePsychicApplyNeuroquake</moteDef>
+        <sound>Psycast_Neuroquake_Effect</sound>
+      </li>-->
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsychicApplyNeuroquake</fleckDef>
         <sound>Psycast_Neuroquake_Effect</sound>
       </li>
     </comps>

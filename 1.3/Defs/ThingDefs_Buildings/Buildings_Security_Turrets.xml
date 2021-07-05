@@ -215,7 +215,7 @@
     </researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="BaseGun">
+  <ThingDef ParentName="BaseWeaponTurret">
     <defName>Gun_TurretHyperCrossbow</defName>
     <label>hyper crossbow turret</label>
     <description>A self-loading heavy crossbow designed to attach to a turret.</description>
@@ -225,10 +225,6 @@
       <drawSize>(1,1)</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-    <menuHidden>true</menuHidden>
-    <destroyOnDrop>true</destroyOnDrop>
-    <tradeability>None</tradeability>
-    <useHitPoints>false</useHitPoints>
     <statBases>
       <AccuracyTouch>0.64</AccuracyTouch>
       <AccuracyShort>0.57</AccuracyShort>
@@ -239,9 +235,6 @@
       <Mass>40</Mass>
       <Flammability>0</Flammability>
     </statBases>
-    <weaponTags Inherit="false">
-      <li>TurretGun</li>
-    </weaponTags>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>

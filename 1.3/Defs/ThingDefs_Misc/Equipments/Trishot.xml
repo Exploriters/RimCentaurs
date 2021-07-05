@@ -34,6 +34,11 @@
       <li>CentaurTrishot</li>
       <li>CentaurTracedTrishot</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
     <comps>
       <!-- <li Class="Explorite.CompProperties_SelfHealOvertime">
         <detlaHpPerSec>3</detlaHpPerSec>

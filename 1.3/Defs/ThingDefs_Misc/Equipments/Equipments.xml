@@ -43,6 +43,10 @@
       <li>CentaurSpacerGun</li>
       <li>CentaurRanged</li>
     </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
     <verbs>
       <li>
         <verbClass>Explorite.Verb_Shoot_OvertickShotgun</verbClass>
@@ -136,6 +140,10 @@
       <li>CentaurSpacerGun</li>
       <li>CentaurRanged</li>
     </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
     <verbs>
       <li Class="Explorite.VerbProperties_Custom">
         <verbClass>Explorite.Verb_Shoot_Rainbow2</verbClass>
@@ -282,6 +290,11 @@
     <weaponTags>
       <li>CentaurRanged</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+      <li>Neolithic</li>
+      <li>RangedLight</li>
+    </weaponClasses>
     <comps>
       <!-- <li>
         <compClass>CompEquippable</compClass>
@@ -545,7 +558,11 @@
     <weaponTags>
       <li>CentaurSpacerGun</li>
       <li>CentaurRanged</li>
+      <li>ExploriteOversizedWeapon</li>
     </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+    </weaponClasses>
     <comps Inherit="False">
       <li Class="CompProperties_Forbiddable"/>      
       <li>
@@ -556,8 +573,8 @@
         <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
         <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li>   
-      <li Class="CompProperties_BiocodableWeapon"/>
-      <li Class="Explorite.CompProperties_OversizedWeapon"/>
+      <li Class="CompProperties_Biocodable"/>
+      <!--<li Class="Explorite.CompProperties_OversizedWeapon"/>-->
       <!--<li Class="CompProperties_BladelinkWeapon" />
       <li Class="CompProperties_GeneratedName">
         <nameMaker>NamerWeaponBladelink</nameMaker>

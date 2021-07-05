@@ -4,7 +4,7 @@
   <ThingDef Name="ExploriteUtilityThingBase" Abstract="True">
     <thingClass>ThingWithComps</thingClass>
     <category>None</category>
-    <menuHidden>false</menuHidden>
+    <!--<menuHidden>false</menuHidden>-->
     <tradeability>None</tradeability>
     <destroyOnDrop>false</destroyOnDrop>
     <useHitPoints>false</useHitPoints>

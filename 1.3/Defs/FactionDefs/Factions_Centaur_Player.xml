@@ -13,6 +13,7 @@
     <pawnSingular>colonist</pawnSingular>
     <pawnsPlural>colonists</pawnsPlural>
     <techLevel>Archotech</techLevel>
+    <allowedCultures><li>Astropolitan</li></allowedCultures>
     <backstoryFilters>
       <li>
         <categories>
@@ -34,9 +35,9 @@
       <li>CentaurStart</li>
       <li>CentaurStartTechprints</li>
     </startingTechprintsResearchTags>
-    <hairTags>
+    <!--<hairTags>
       <li>Urban</li>
-    </hairTags>
+    </hairTags>-->
     <apparelStuffFilter>
       <thingDefs>
 		<li>Hyperweave</li><li>Plasteel</li>
