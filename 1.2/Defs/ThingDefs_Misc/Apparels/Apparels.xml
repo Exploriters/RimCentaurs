@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- VERY TEST FOR MAYINAS -->
+  <ThingDef ParentName="ApparelNoQualityBase" Abstract="True">
+    <defName>Apparel_CentaurShieldArmor</defName>
+    <label>centaur shield armor</label>
+    <tradeability>None</tradeability>
+    <description>A suit of light powered armor for a centaur wearer with projectile-repulsion device and toxic defense. Layered plasteel-weave plates are very effective at stopping attacks, with few vulnerable joint sections. Neuro-memetic assistors allow a centaur to wear the armor and still move easily.\n\nThe shield of it will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks or heat. It shuts down instantly if hit by EMP. It DOES NOT prevents the wearer from firing out.\n\nArmor like this is often used by imperial janissaries and rapid-incursion space marines.\n\nAdditional weight and materials are required when compared to humanoid armor, allowing for protection of the flanks.</description>
+    <!-- <generateCommonality>0.0</generateCommonality> -->
+    <thingClass>D9ASB.RangedShieldBelt</thingClass>
+    <tickerType>Normal</tickerType>
+    <techLevel>Spacer</techLevel>
+    <useHitPoints>false</useHitPoints>
+    <tradeTags>
+      <li>ExoticMisc</li>
+      <li>CentaurEndgame</li>
+    </tradeTags>
+    <!-- <recipeMaker>
+	  <researchPrerequisites>
+		<li>PoweredArmor</li>
+		<li>CentaurReverseEngineeringHumanTech</li>
+	  </researchPrerequisites>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker> -->
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmor/CentaurPowerArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>100000</WorkToMake>
+      <MaxHitPoints>1800</MaxHitPoints>
+      <Mass>20</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>2.00</ArmorRating_Sharp>
+      <ArmorRating_Blunt>2.00</ArmorRating_Blunt>
+      <ArmorRating_Heat>2.00</ArmorRating_Heat>
+      <EnergyShieldRechargeRate>1.0</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>3.0</EnergyShieldEnergyMax>
+      <Insulation_Cold>3000</Insulation_Cold>
+      <!-- <Insulation_Cold>51</Insulation_Cold> -->
+      <!-- <Insulation_Cold>Infinite</Insulation_Cold> -->
+      <Insulation_Heat>22</Insulation_Heat>
+      <EquipDelay>20</EquipDelay>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+      <ToxicSensitivity>-0.45</ToxicSensitivity>
+      <PainShockThreshold>0.95</PainShockThreshold>
+      <PsychicSensitivity>0.0</PsychicSensitivity>
+      <Flammability>-2</Flammability>
+      <!--<MoveSpeed>0.05</MoveSpeed>
+      <SocialImpact>0.0</SocialImpact>-->
+    </equippedStatOffsets>
+    <thingCategories Inherit="False">
+      <li>CentaurApparels</li>
+    </thingCategories>
+    <costList>
+      <Hyperweave>150</Hyperweave>
+      <ComponentSpacer>100</ComponentSpacer>
+      <Uranium>150</Uranium>
+    </costList>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>FullHead</li>
+        <li>CentaurTorso</li><li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>CentaurLegs</li>
+        <li>Hands</li>
+        <li>CentaurHooves</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmor/CentaurPowerArmor</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>CentaurBodyFit</li>
+        <li>CentaurEndgame</li>
+        <li>SOS2_SpaceSuit</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>CentaurOutfit</li>
+      </defaultOutfitTags>
+    </apparel>
+    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeapon</nameMaker>
+        <descriptionMaker>ArtDescription_CentaurArmor</descriptionMaker>
+        <minQualityForArtistic>Awful</minQualityForArtistic>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <only>(0.5,0.75,1)</only>
+        </li>
+        <li>
+          <only>(1.0,0.75,0)</only>
+        </li>
+        <li>
+          <weight>0</weight>
+          <only>(0.33,0.33,0.33)</only>
+        </li>
+        <li>
+          <weight>0</weight>
+          <only>(0.65,0.65,0.65)</only>
+        </li>
+        <li>
+          <weight>0</weight>
+          <min>(0.3,0.3,0.3)</min>
+          <max>(0.5,0.5,0.5)</max>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  
+  <!--<ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>Apparel_PowerArmorHelmet_Clocked</defName>
+    <label>marine clocked helmet</label>
+    <tradeability>Sellable</tradeability>
+    <description>A marine armor helmet, with a built-in status computer and layered plasteel-weave plates.\n\nArmor like this is often used by imperial janissaries and rapid-incursion space marines. \n\nThis modified verison is invisible, powered by clocking shield technology, but behaviored as a normal helmet and requires more skills to make, allowing someone showing it best face and hair without the thread of exposing head, original designed for centaur but available to all species.</description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisites>
+        <li>PoweredArmor</li>
+        <li>CentaurReverseEngineeringHumanTech</li>
+      </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>16</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/CentaurPowerArmorHelmet/ClockedPowerArmorHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>2</generateCommonality>
+    <statBases>
+      <WorkToMake>50000</WorkToMake>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Mass>2.7</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.9</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>4</EquipDelay>
+    </statBases>
+    <costList>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Plasteel>40</Plasteel>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>CentaurBodyFit</li>
+        <li>CentaurSpacerMilitary</li>
+        <li>SOS2_SpaceHelmet</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>CentaurOutfit</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <only>(0.5,0.75,1)</only>
+        </li>
+        <li>
+          <only>(1.0,0.75,0)</only>
+        </li>
+        <li>
+          <weight>0</weight>
+          <only>(0.33,0.33,0.33)</only>
+        </li>
+        <li>
+          <weight>0</weight>
+          <only>(0.65,0.65,0.65)</only>
+        </li>
+        <li>
+          <weight>0</weight>
+          <min>(0.3,0.3,0.3)</min>
+          <max>(0.5,0.5,0.5)</max>
+        </li>
+      </options>
+    </colorGenerator>
+    <thingSetMakerTags>
+    </thingSetMakerTags>
+  </ThingDef>-->
+  
+  <!--<ThingDef ParentName="ApparelBase">
+    <defName>Apparel_CentaurShieldBelt</defName>
+    <label>centaur shield belt</label>
+    <description>A projectile-repulsion device designed for centaur. It will attempt to stop incoming projectiles or shrapnel, but does nothing against melee attacks or heat. It shuts down instantly if hit by EMP. This DOES NOT prevents the wearer from firing out.</description>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/ShieldBelt/ShieldBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <thingClass>D9ASB.RangedShieldBelt</thingClass>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <Mass>6</Mass>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToMake>28000</WorkToMake>
+      <Flammability>0.4</Flammability>
+      <EnergyShieldRechargeRate>0.5</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>1.5</EnergyShieldEnergyMax>
+      <EquipDelay>4</EquipDelay>
+    </statBases>
+    <costList>
+      <ComponentSpacer>20</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+      <researchPrerequisites>
+        <li>ShieldBelt</li>
+        <li>CentaurReverseEngineeringHumanTech</li>
+      </researchPrerequisites>
+      <workSpeedStat>SmeltingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingCategories Inherit="False">
+      <li>CentaurApparels</li>
+    </thingCategories>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>CentaurBodyFit</li>
+        <li>CentaurBeltDefense</li>
+        <li>CentaurRetroStart</li>
+      </tags>
+      <defaultOutfitTags Inherit="False">
+        <li>CentaurOutfit</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>-->
+  
+</Defs>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IncidentCategoryDef>
+    <defName>Centaur_MainQuest</defName>
+  </IncidentCategoryDef>
+
+  <IncidentDef ParentName="GiveQuestBase">
+    <defName>GiveQuest_Centaur_FisteverTrishot</defName>
+    <label>centaur quest</label>
+    <letterLabel>Centaur quest</letterLabel>
+    <!--<workerClass>IncidentWorker_GiveQuest</workerClass>-->
+    <questScriptDef>Centaur_FisteverTrishot</questScriptDef>
+    <baseChance>0</baseChance> <!-- given by a special storyteller comp -->
+  </IncidentDef>
+  
+  <QuestScriptDef>
+    <defName>Centaur_FisteverTrishot</defName>
+    <autoAccept>true</autoAccept>
+    <defaultChallengeRating>4</defaultChallengeRating>
+    <isRootSpecial>true</isRootSpecial>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Archotech sagittarius</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription->A unknown person has sent you a message.
+\nHe/she claimed that the one can help you to acquire some centaurs archotech - before you ever repond you are a centaur - and sends you some techprints, including the way to extract exotic component from \narchotech, and recipe of a weapon called "Trishot". One broken Trishot has been hiding in your tribattery.
+\nYou were requested to fire the trishot under "icos shot" mode anywhere to show you have acquire, this will trigger a signal. The next quest will be given once this signal has been detected.
+\nThe communication was cut off before you asking more questions.</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_QuestUnique">
+          <tag>Centaur_FisteverTrishot</tag>
+        </li>
+        
+        <li Class="Explorite.QuestNode_FisteverTrishot" />
+		
+		<li Class="QuestNode_End">
+		  <inSignal>icosShotCasted</inSignal>
+		  <outcome>Success</outcome>
+		  <sendStandardLetter>true</sendStandardLetter>
+		</li>
+		
+        <!--<li Class="QuestNode_Signal">
+          <inSignal>icosShotCasted</inSignal>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_Letter">
+                <label TKey="LetterQuestCompletedLabel">Quest completed: [resolvedQuestName]</label>
+                <text TKey="LetterQuestCompletedSuccess">[successLetterEndingCommon]</text>
+                <!- -<label TKey="LetterLabelShuttleSentUnsatisfied">Quest completed: [resolvedQuestName]</label>
+                <text TKey="LetterTextShuttleSentUnsatisfied">\n\n[successLetterEndingCommon]</text>- ->
+                <letterDef>PositiveEvent</letterDef>
+              </li>
+            </nodes>
+          </node>
+        </li>-->
+      </nodes>
+    </root>
+  </QuestScriptDef>
+  
+</Defs>

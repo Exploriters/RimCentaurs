@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<Defs>
+
+  <ThinkTreeDef Abstract="True">
+    <defName>SurgeryBot</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Downed -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Downed</treeDef>
+        </li>
+        
+		
+        <!-- Do a queued job -->
+        <li Class="ThinkNode_QueuedJob" />
+
+        <!-- Lord -->
+        <!--
+		<li Class="ThinkNode_Subtree">
+          <treeDef>LordDuty</treeDef>
+        </li>
+		-->
+		
+		<li Class="Explorite.JobGiverAutoSurgery"/>
+        
+        <li Class="JobGiver_Idle" />
+        <!-- Idle error -->
+        <li Class="JobGiver_IdleError"/>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+  
+</Defs>

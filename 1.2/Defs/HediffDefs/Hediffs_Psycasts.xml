@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!--<HediffDef ParentName="DiseaseBase">
+    <defName>PsychicEntropy_Centaurs</defName>
+    <label>neural heat centaur</label>
+    <description>neural heat of centaurs</description>
+    <isBad>true</isBad>
+    <comps>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_SeverityFromEntropy">
+        <compClass>Explorite.HediffComp_SeverityFromEntropy_CentarusOnly</compClass>
+	  </li>
+    </comps>
+    <stages>
+      <li>
+        <minSeverity>0.0</minSeverity>
+        <becomeVisible>false</becomeVisible>
+        <statFactors>
+          <PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+        </statFactors>
+      </li>
+      <li>
+        <minSeverity>1.0</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+  </HediffDef>-->
+
+  <!--<HediffDef>
+    <defName>MentalBursting</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.95, 0.3, 0.75)</defaultLabelColor>
+    <label>manipulator dyskinesia</label>
+    <description>The physic manipulator is failed to once be in hazard temperature. It will last for some times not more than two days, and will not leave permanent damage.</description>
+    <maxSeverity>2.0</maxSeverity>
+    <initialSeverity>2</initialSeverity>
+	<everCurableByItem>false</everCurableByItem>
+    <hediffGivers>
+    </hediffGivers>
+    <comps>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+    </comps>
+    <stages>
+      <li>
+        <label>recovering</label>
+        <minSeverity>0</minSeverity>
+		<comps>
+		  <li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>-1.0</severityPerDay>
+			<showDaysToRecover>true</showDaysToRecover>
+		  </li>
+		</comps>
+        <statFactors>
+          <PsychicSensitivity>0</PsychicSensitivity>
+        </statFactors>
+      </li>
+      <li>
+        <label>brusting</label>
+        <minSeverity>1</minSeverity>
+        <painFactor>0</painFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>3</postFactor>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <setMax>0</setMax>
+          </li>
+          <li>
+            <capacity>Talking</capacity>
+            <setMax>0</setMax>
+          </li>
+        </capMods>
+        <statFactors>
+          <PsychicEntropyMax>3402823470000000000E+30F</PsychicEntropyMax>
+          <PsychicEntropyRecoveryRate>0</PsychicEntropyRecoveryRate>
+          <PsychicSensitivity>20</PsychicSensitivity>
+        </statFactors>
+        <hediffGivers>
+          <li Class="HediffGiver_Refresh">
+            <hediff>PsychicShock</hediff>
+          </li>
+        </hediffGivers>
+		<comps>
+		  <li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>-20.0</severityPerDay>
+			<showDaysToRecover>true</showDaysToRecover>
+		  </li>
+		</comps>
+      </li>
+    </stages>
+  </HediffDef>-->
+  
+
+  <HediffDef ParentName = "PsycastHediffBase">
+    <defName>PsychicDeafCentaur</defName>
+    <label>psychic deaf</label>
+    <description>Psychically-induced partial psychic insensitivity.</description>
+    <isBad>true</isBad>
+	<everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+        <statFactors>
+          <PsychicSensitivity>0</PsychicSensitivity>
+          <PsychicEntropyRecoveryRate>0</PsychicEntropyRecoveryRate>
+        </statFactors>
+        <statOffsets />
+      </li>
+    </stages>
+  </HediffDef>
+  
+</Defs>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <AlienRace.BackstoryDef>
+
+    <defName>Backstory_Mayinas_Exploriter</defName>
+    <title>Exploriter</title>
+    <titleShort>Exploriter</titleShort>
+    <baseDescription>[PAWN_nameDef] the Exploriter. [PAWN_pronoun] is the end-art. [PAWN_possessive] author is [PAWN_possessive]self. </baseDescription>
+
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+	
+    <bioAgeRange>
+      <min>7</min>
+      <max>7</max>
+    </bioAgeRange>
+
+
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>20</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>20</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>20</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>20</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>20</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>20</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>20</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>20</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>20</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>20</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>20</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>20</amount>
+      </li>
+    </skillGains>
+    <workDisables />
+    <workAllows />
+    <forcedTraits />
+    <disallowedTraits />
+
+    <spawnCategories>
+      <li>Mayinas</li>
+      <li>CentaurBackstories</li>
+    </spawnCategories>
+
+    <maleCommonality>0</maleCommonality>
+    <femaleCommonality>0</femaleCommonality>
+
+  </AlienRace.BackstoryDef>
+
+  <!--=====Childhood=====-->
+
+  <AlienRace.BackstoryDef Name="CentaurBackstoryBase" Abstract="True">
+
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+	
+    <!-- <bioAgeRange>
+      <min>1</min>
+      <max>19</max>
+    </bioAgeRange> -->
+	
+	<relationSettings>
+        <relationChanceModifierLover>0</relationChanceModifierLover>
+        <relationChanceModifierExLover>0</relationChanceModifierExLover>
+
+        <relationChanceModifierFiance>0</relationChanceModifierFiance>
+        <relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+        <relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+
+        <relationChanceModifierParent>0</relationChanceModifierParent>
+        <relationChanceModifierChild>0</relationChanceModifierChild>
+        <relationChanceModifierSibling>0</relationChanceModifierSibling>
+	</relationSettings>
+
+    <maleCommonality>1</maleCommonality>
+    <femaleCommonality>1</femaleCommonality>
+
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef><!--ParentName="CentaurBackstoryBase"-->
+    <defName>CentaurCivil_Retro</defName>
+    <title>Centaur</title>
+    <titleShort>Centaur</titleShort>
+    <baseDescription>When the first time [PAWN_nameDef] woke up from cryptosleep, [PAWN_pronoun] found [PAWN_possessive]self inside a cold and wet spaceship. [PAWN_pronoun] had no idea about how [PAWN_pronoun] got here. The only thing that [PAWN_nameDef] remembered, was [PAWN_pronoun] one had a human life... And [PAWN_pronoun] now got a new body with a fluffy tail and an extra pair of legs, also oddly well skilled on most tasks.\n\n[PAWN_pronoun] piloted [PAWN_possessive] ship to a colonized planet and started to lives there. After that, [PAWN_nameDef] took some time made [PAWN_possessive]self fit the human world, and found [PAWN_possessive] position.</baseDescription>
+	
+    <bodyTypeMale>CentaurMale</bodyTypeMale>
+    <bodyTypeFemale>CentaurFemale</bodyTypeFemale>
+	
+    <slot>Childhood</slot>
+	
+    <!-- <bioAgeRange>
+      <min>1</min>
+      <max>19</max>
+    </bioAgeRange> -->
+	
+	<relationSettings>
+        <relationChanceModifierLover>0</relationChanceModifierLover>
+        <relationChanceModifierExLover>0</relationChanceModifierExLover>
+
+        <relationChanceModifierFiance>0</relationChanceModifierFiance>
+        <relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+        <relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+
+        <relationChanceModifierParent>0</relationChanceModifierParent>
+        <relationChanceModifierChild>0</relationChanceModifierChild>
+        <relationChanceModifierSibling>0</relationChanceModifierSibling>
+	</relationSettings>
+
+    <!--<maleCommonality>1</maleCommonality>
+    <femaleCommonality>1</femaleCommonality>-->
+
+    <skillGains>
+      <!--<li>
+        <defName>Shooting</defName>
+        <amount>9</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>9</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>9</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>9</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>9</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>9</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>9</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>9</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>9</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>9</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>9</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>9</amount>
+      </li>-->
+    </skillGains>
+    <!--<requiredWorkTags>
+        <li>ManualDumb</li>
+        <li>ManualSkilled</li>
+        <li>Violent</li>
+        <li>Caring</li>
+        <li>Social</li>
+        <li>Intellectual</li>
+        <li>Animals</li>
+        <li>Artistic</li>
+        <li>Crafting</li>
+        <li>Cooking</li>
+        <li>Firefighting</li>
+        <li>Cleaning</li>
+        <li>Hauling</li>
+        <li>PlantWork</li>
+        <li>Mining</li>
+    </requiredWorkTags>-->
+    <disallowedTraits>
+	  <!--<li><defName>BodyPurist</defName></li>
+	  <li><defName>Nudist</defName></li>
+	  <li><defName>Bloodlust</defName></li>
+	  <li><defName>Psychopath</defName></li>
+	  <li><defName>Cannibal</defName></li>
+	  <li><defName>Abrasive</defName></li>
+	  <li><defName>Brawler</defName></li>
+	  <li><defName>NightOwl</defName></li>
+	  <li><defName>Greedy</defName></li>
+	  <li><defName>Jealous</defName></li>
+	  <li><defName>Ascetic</defName></li>
+	  <li><defName>Gay</defName></li>
+	  <li><defName>AnnoyingVoice</defName></li>
+	  <li><defName>CreepyBreathing</defName></li>
+	  <li><defName>Pyromaniac</defName></li>
+	  <li><defName>Wimp</defName></li>
+	  <li><defName>DislikesMen</defName></li>
+	  <li><defName>DislikesWomen</defName></li>
+	  <li><defName>Gourmand</defName></li>
+	  
+	  <li>
+	    <defName>DrugDesire</defName>
+        <degree>2</degree>
+	  </li>
+	  <li>
+	    <defName>DrugDesire</defName>
+        <degree>1</degree>
+	  </li>
+	  <li>
+	    <defName>Nerves</defName>
+        <degree>-1</degree>
+	  </li>
+	  <li>
+	    <defName>Nerves</defName>
+        <degree>-2</degree>
+	  </li>
+	  <li>
+	    <defName>Industriousness</defName>
+        <degree>-1</degree>
+	  </li>
+	  <li>
+	    <defName>Industriousness</defName>
+        <degree>-2</degree>
+	  </li>
+	  <li>
+	    <defName>ShootingAccuracy</defName>
+        <degree>1</degree>
+	  </li>
+	  <li>
+	    <defName>ShootingAccuracy</defName>
+        <degree>-1</degree>
+	  </li>
+	  <li>
+	    <defName>Beauty</defName>
+        <degree>-1</degree>
+	  </li>
+	  <li>
+	    <defName>Beauty</defName>
+        <degree>-2</degree>
+	  </li>
+	  <li>
+	    <defName>Immunity</defName>
+        <degree>-1</degree>
+	  </li>
+	  <li>
+	    <defName>Xenophobia</defName>
+	  </li>-->
+    </disallowedTraits>
+
+    <spawnCategories>
+      <li>CentaurCivil</li>
+      <li>CentaurBackstories</li>
+    </spawnCategories>
+
+  </AlienRace.BackstoryDef>
+  
+</Defs>

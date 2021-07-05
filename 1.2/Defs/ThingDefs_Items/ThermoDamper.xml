@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>ThermoDamper</defName>
+    <label>thermo damper</label>
+    <parent>Items</parent>
+    <iconPath>Things/Item/Special/ThermoDamper</iconPath>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+  </ThingCategoryDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>ThermoDamper</defName>
+    <label>thermo damper</label>
+    <description>A durable container, act as a powerful power core, AKA "Environment Thermoelectric Reactor", that generates energy by absorb environment heat. When you place it indoors, it will drain heat in the room. This technology is developed by unknowns but likely centaurs, and is beyond even most glitterworld societies. Its internal workings are a mystery to all minds, althought it likely extracts energy directly from a singularity in it, means it likely explode on hit.\n\nThis device is however much lighter than it looks like.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/ThermoDamper</texPath>
+      <!-- <texPath>Things/Projectile/Arrow_Trishot</texPath> -->
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <tickerType>Normal</tickerType>
+    <statBases Inherit="False">
+      <MarketValue>77961</MarketValue>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Mass>3</Mass>
+      <Flammability>0</Flammability>
+      <!-- <Beauty>0</Beauty>
+      <DeteriorationRate>-16000</DeteriorationRate> -->
+    </statBases>
+    <thingCategories Inherit="False">
+      <li>ThermoDamper</li>
+      <!-- <li>MortarShells</li> -->
+    </thingCategories>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <tradeability>Sellable</tradeability>
+    <techLevel>Archotech</techLevel>
+    <specialDisplayRadius>39.95</specialDisplayRadius>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <tradeTags>
+      <li>ExoticMisc</li>
+      <!-- <li>MortarShell</li> -->
+      <li>ThermoDamper</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>DetonateThermoDamper</useJob>
+        <useLabel>Detonate thermo damper</useLabel>
+        <useDuration>180</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_StartWick</compClass>
+      </li>
+	  <!-- <li Class="CompProperties_ProximityFuse">
+        <target>Filth_FrostdustBlue</target>
+        <radius>0.05</radius>
+      </li> -->
+      <!-- <li Class="CompProperties_ProximityFuse">
+        <target>Filth_FrostdustOrange</target>
+        <radius>0.05</radius>
+      </li> -->
+      <!-- <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>20</heatPerSecond>
+        <heatPushMaxTemperature>-273</heatPushMaxTemperature>
+      </li> -->
+      <!-- <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-1257</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+      <li Class="CompProperties_Battery">
+        <storedEnergyMax>1257</storedEnergyMax>
+        <efficiency>1.0</efficiency>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <transmitsPower>false</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable"/> -->
+      <!-- <li Class="CompProperties_SnowExpand">
+      <compClass>Explorite.CompSnowExpand_Overtick</compClass>
+	  <expandInterval>100</expandInterval>
+	  <addAmount>100</addAmount>
+	  <maxRadius>2.5</maxRadius>
+	  </li> -->
+      <!-- <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-20</heatPerSecond>
+        <heatPushMinTemperature>-2273</heatPushMinTemperature>
+      </li> -->
+      <li Class="Explorite.CompProperties_SelfHealOvertime">
+        <!-- <compClass>Explorite.CompSelfHealOvertime</compClass> -->
+        <detlaHpPerSec>3</detlaHpPerSec>
+      </li>
+      <!-- <li Class="CompProperties_Glower">
+        <glowRadius>20</glowRadius>
+        <glowColor>(127,192,255,0)</glowColor>
+      </li> -->
+      <li Class="CompProperties_Explosive">
+        <explosiveDamageType>FrostblastSuper</explosiveDamageType>
+        <explosiveRadius>39.95</explosiveRadius>
+        <!--<preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
+        <preExplosionSpawnChance>0.25</preExplosionSpawnChance>
+        <preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
+        <postExplosionSpawnThingDef>Filth_FrostdustOrange</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>0.25</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>-->
+        <explosiveExpandPerStackcount>0</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0</startWickHitPointsPercent>
+        <chanceToStartFire>0</chanceToStartFire>
+        <damageFalloff>true</damageFalloff>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>GiantExplosion</explosionEffect>
+        <explosionSound>Explosion_GiantBomb</explosionSound>
+        <wickTicks>
+          <min>180</min>
+          <max>600</max>
+        </wickTicks>
+      </li>
+
+
+      <!-- <li Class="CompProperties_TemperatureRuinable">
+        <minSafeTemperature>19</minSafeTemperature>
+        <!- - <maxSafeTemperature>32</maxSafeTemperature> - ->
+        <progressPerDegreePerTick>-0.001</progressPerDegreePerTick>
+      </li> -->
+
+    </comps>
+    <!-- <projectileWhenLoaded>Arrow_Trishot_Super</projectileWhenLoaded> -->
+  </ThingDef>
+
+  <JobDef>
+    <defName>DetonateThermoDamper</defName>
+    <driverClass>Explorite.JobDriver_UseItem_IgnoreManipulation</driverClass>
+    <reportString>detonating thermo damper.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+</Defs>

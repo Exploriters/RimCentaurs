@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThinkTreeDef>
+    <defName>Centaur</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+
+        <!-- Tame animal: do useful things for the colony-->
+        <li Class="ThinkNode_ConditionalHasFaction">
+          <subNodes>
+            
+			<!-- Nuzzle randoms -->
+			<li Class="ThinkNode_ChancePerHour_Nuzzle">
+			  <subNodes>
+				<li Class="ThinkNode_Tagger">
+				  <tagToGive>Misc</tagToGive>
+				  <subNodes>
+					<li Class="Explorite.JobGiver_Nuzzle_Humanoid" />
+				  </subNodes>
+				</li>
+			  </subNodes>
+			</li>
+			
+		  </subNodes>
+		</li>
+		
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Humanlike</treeDef>
+        </li>
+        <!--<li Class="Explorite.JobGiver_GetFood_Sayers"/>-->
+      </subNodes>
+	</thinkRoot>
+  </ThinkTreeDef>
+  
+</Defs>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseWeapon" ExEx="Royalty">
+    <defName>MeleeWeapon_PsyfocusStaffCentaur</defName>
+	<tradeability>Sellable</tradeability>
+    <label>eltex centaur staff</label>
+    <description>An ultratech staff threaded with psychic focusing materials for centaurs. While it is a solid melee weapon, its main purpose is to enhance the wielder's psychic sensitivity and neural heat dissipation, allowing more use of psychic powers.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/CentaurPsyfocusStaff</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <techLevel>Ultra</techLevel>
+    <tradeTags>
+      <li>PsychicWeapon</li>
+    </tradeTags>
+    <weaponTags>
+      <li>EltexStaff</li>
+    </weaponTags>
+    <costList>
+      <MeleeWeapon_PsyfocusStaff>3</MeleeWeapon_PsyfocusStaff>
+    </costList>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <MarketValue>30000</MarketValue>
+      <Mass>3.6</Mass>
+      <WorkToMake>0</WorkToMake>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <equippedStatOffsets>
+      <PsychicSensitivity>0.75</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate>0.2475</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <recipeMaker>
+	  <researchPrerequisite Inherit="False" />
+	  <researchPrerequisites>
+		<li>CentaurReverseEngineeringHumanTech</li>
+	  </researchPrerequisites>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>22.846153846153846153846153846154</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_BiocodableWeapon"/>
+      <li Class="Explorite.CompProperties_OversizedWeapon"/>
+    </comps>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+  </ThingDef>
+  
+</Defs>

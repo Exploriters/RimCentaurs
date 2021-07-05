@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>ArtDescription_CentaurArmor</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>physical_description_root->This [OBJECT_CUSTOM] is engraved with a [depiction] of [image]. [desc_sentence_group]</li>
+        <li>physical_description_root->This [OBJECT_CUSTOM] bears a [depiction] of [image]. [desc_sentence_group]</li>
+        <li>physical_description_root->An engraving on this [OBJECT_CUSTOM] [depicts] [image]. [desc_sentence_group]</li>
+        <li>OBJECT_CUSTOM->armor</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>ArtDescription_CentaurApparel</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>physical_description_root->This [OBJECT_CUSTOM] is engraved with a [depiction] of [image]. [desc_sentence_group]</li>
+        <li>physical_description_root->This [OBJECT_CUSTOM] bears a [depiction] of [image]. [desc_sentence_group]</li>
+        <li>physical_description_root->An engraving on this [OBJECT_CUSTOM] [depicts] [image]. [desc_sentence_group]</li>
+        <li>OBJECT_CUSTOM->apparel</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

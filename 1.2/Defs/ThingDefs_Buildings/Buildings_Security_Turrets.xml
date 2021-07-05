@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="AutocannonTurret">
+    <defName>Turret_HyperTrishot</defName>
+    <label>auto crossbow turret</label>
+    <description>A ultra-long-ranged mass blasting crossbow turret that can shoot over walls, fires quadruple heavy arrows with delay-setoff thermal-discharging-bomb in a single burst. It requires advanced component to be replaced after overuse.</description>
+    <uiIconPath>Things/Building/Security/TurretHyperTrishot_MenuIcon</uiIconPath>
+    <statBases>
+      <MaxHitPoints>3800</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <WorkToBuild>30000</WorkToBuild>
+      <Mass>1000</Mass>
+      <Beauty>0</Beauty>
+      <ShootingAccuracyTurret>0.95</ShootingAccuracyTurret>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Security/TurretShipCombatMassiveBase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3, 3)</drawSize>
+      <drawOffset>(0,0,0)</drawOffset>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(3,0.35,3)</volume>
+        <offset>(0,0,-0.05)</offset>
+      </shadowData>
+    </graphicData>
+	<passability>Impassable</passability>
+    <rotatable>false</rotatable>
+    <size>(3,3)</size>
+    <category>Building</category>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeability>Sellable</tradeability>
+    <costList Inherit="False">
+      <Steel>2000</Steel>
+      <ComponentSpacer>25</ComponentSpacer>
+      <ThermoDamper>1</ThermoDamper>
+    </costList>
+    <!--<thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>-->
+    <!-- <minifiedDef>MinifiedThing</minifiedDef> -->
+    <!-- <minifiedDef>ThermoDamper</minifiedDef> -->
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    <killedLeavings>
+      <ThermoDamper>1</ThermoDamper>
+      <Steel>2000</Steel>
+      
+      <!--<ComponentSpacer>300</ComponentSpacer>
+	  <ComponentSpacer>25</ComponentSpacer>
+      <ChunkSlagSteel>9</ChunkSlagSteel>-->
+    </killedLeavings>
+    <comps Inherit="False">
+      <li Class="CompProperties_ShipPart"/>
+      <!--<li>
+        <compClass>Explorite.CompDropThermoDamperOnDestroy</compClass>
+      </li>-->
+      <!--<li Class="Explorite.CompProperties_DropThingsOnDestroy">
+        <cases>
+		  <li>
+			<destroyModes>
+			  <li>KillFinalize</li>
+			  <li>Deconstruct</li>
+			</destroyModes>
+			<things>
+			  <li><thingDef>ThermoDamper</thingDef></li>
+			</things>
+		  </li>
+		</cases>
+      </li>-->
+      <!-- <li Class="CompProperties_Explosive">
+        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+      </li> -->
+      <!--<li Class="CompProperties_Explosive">
+        <explosiveDamageType>FrostblastSuper</explosiveDamageType>
+        <explosiveRadius>39.95</explosiveRadius>
+        <preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
+        <preExplosionSpawnChance>0.25</preExplosionSpawnChance>
+        <preExplosionSpawnThingCount>1</preExplosionSpawnThingCount>
+        <postExplosionSpawnThingDef>Filth_FrostdustOrange</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>0.25</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        <explosiveExpandPerStackcount>0.2</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.25</startWickHitPointsPercent>
+        <chanceToStartFire>0</chanceToStartFire>
+        <damageFalloff>true</damageFalloff>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        <explosionEffect>GiantExplosion</explosionEffect>
+        <explosionSound>Explosion_GiantBomb</explosionSound>
+        <wickTicks>
+          <min>180</min>
+          <max>600</max>
+        </wickTicks>
+      </li>-->
+      <!--<li Class="CompProperties_Forbiddable"/>-->
+      <li Class="CompProperties_Power">
+        <!--<compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>-->
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <!-- <li Class="CompProperties_Breakdownable"/> -->
+      <!-- <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until rearm</fuelLabel>
+        <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>400</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.25</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>1</fuelMultiplier>
+        <factorByDifficulty>false</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs rearm</outOfFuelMessage>
+        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+      </li>-->
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Component durability</fuelLabel>
+        <fuelGizmoLabel>Component durability</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </fuelFilter>
+        <!-- <fuelConsumptionRate>-1</fuelConsumptionRate> -->
+        <fuelCapacity>250</fuelCapacity>
+        <initialFuelPercent>0.5</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>5</fuelMultiplier>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs replace components</outOfFuelMessage>
+        <!-- <fuelIconPath>Things/Item/Resource/ComponentSpacer</fuelIconPath> -->
+        <!-- <fuelIconPath>UI/Overlays/Barrel</fuelIconPath> -->
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+        <initialConfigurableTargetFuelLevel>125</initialConfigurableTargetFuelLevel>
+      </li>
+      <!--<li Class="CompProperties_Refuelable">
+        <fuelLabel>Thermo Damper Durability</fuelLabel>
+        <fuelGizmoLabel>Thermo Damper durability</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>ThermoDamper</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>8000</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.25</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>8000</fuelMultiplier>
+        <factorByDifficulty>false</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs new Thermo Damper</outOfFuelMessage>
+        <fuelIconPath>Things/Item/Special/ThermoDamper</fuelIconPath>
+      </li> -->
+    </comps>
+    <inspectorTabs>
+      <!-- <li>ITab_Shells</li> -->
+      <!-- <li>ITab_Storage</li> -->
+    </inspectorTabs>
+    <!-- <specialDisplayRadius>119.95</specialDisplayRadius> -->
+    <specialDisplayRadius>-1</specialDisplayRadius>
+    <building>
+      <shipPart>true</shipPart>
+      <!-- <deconstructible>false</deconstructible> -->
+      <!-- <mineableThing>ThermoDamper</mineableThing>
+      <mineableYield>1</mineableYield>
+      <isResourceRock>true</isResourceRock> -->
+      <!-- <mineableScatterCommonality>0.05</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>
+        <min>2</min>
+        <max>8</max>
+      </mineableScatterLumpSizeRange> -->
+      <turretGunDef>Gun_TurretHyperCrossbow</turretGunDef>
+      <turretBurstCooldownTime>0.6666666</turretBurstCooldownTime>
+      <!-- <turretTopGraphicPath>Things/Building/Security/TurretHyperTrishot_Top</turretTopGraphicPath> -->
+
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>ThermoDamper</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+          <categories>
+            <li>ThermoDamper</li>
+          </categories>
+          <disallowedThingDefs />
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <placeWorkers Inherit="False">
+      <!--<li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>-->
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>CentaurStoryStep3rd</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGun">
+    <defName>Gun_TurretHyperCrossbow</defName>
+    <label>hyper crossbow turret</label>
+    <description>A self-loading heavy crossbow designed to attach to a turret.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/TurretHyperTrishot_Top</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <menuHidden>true</menuHidden>
+    <destroyOnDrop>true</destroyOnDrop>
+    <tradeability>None</tradeability>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <AccuracyTouch>0.64</AccuracyTouch>
+      <AccuracyShort>0.57</AccuracyShort>
+      <AccuracyMedium>0.79</AccuracyMedium>
+      <AccuracyLong>0.52</AccuracyLong>
+      <RangedWeapon_Cooldown>0.6666666</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>40</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <weaponTags Inherit="false">
+      <li>TurretGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <requireLineOfSight>false</requireLineOfSight>
+        <defaultProjectile>Arrow_Trishot_Hyper</defaultProjectile>
+        <forcedMissRadius>9</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>10</ai_AvoidFriendlyFireRadius>
+        <noiseRadius>20</noiseRadius>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+        <warmupTime>0</warmupTime>
+        <!--<minRange>11.5</minRange>-->
+        <range>119.95</range>
+        <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+        <burstShotCount>4</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>20</muzzleFlashScale>
+        <onlyManualCast>false</onlyManualCast>
+        <stopBurstWithoutLos>true</stopBurstWithoutLos>
+        <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <consumeFuelPerShot>0.25</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+</Defs>

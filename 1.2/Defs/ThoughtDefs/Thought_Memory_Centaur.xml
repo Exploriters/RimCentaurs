@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThoughtDef>
+    <defName>EnvironmentCold_Centaur</defName>
+    <workerClass>ThoughtWorker_Cold</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>chilly</label>
+        <description>I'm a bit uncomfortably cold.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <li>
+        <label>cold</label>
+        <description>I'm cold and shivering. Did I pushed myself a little too far?</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>numbing cold</label>
+        <description>I can't stop shivering. I'm not feeling want to handle this wrong kind of cold anymore. </description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>absolutely freezing</label>
+        <description>This totally out of my endurance of resisting cold. My hooves are numb and my teeth are chattering. When did a cold can be so painful?</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>EnvironmentHot_Centaur</defName>
+    <workerClass>ThoughtWorker_Hot</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>sweaty</label>
+        <description>It's too hot here. I'm sweating and overheating.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>hot</label>
+        <description>If I could just have a breath of cool air... I hate hot environment. </description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>sweltering hot</label>
+        <description>I feel like I'm in an oven! I'm not sure how long I can handle this.</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+      <li>
+        <label>blistering hot</label>
+        <description>This place is searing hot. I think I could die from this heat!</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>AteKibble_Centaur</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate kibble</label>
+        <description>I had to eat animal kibble. It feels like .. not being considered as a intelligent species any more.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>WasImprisoned_Centaur</defName>
+    <durationDays>7</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>was imprisoned</label>
+        <description>The colony had me in jail for a while, like a caged animal.</description>
+        <baseMoodEffect>-25</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SleptInCold_Centaur</defName>
+    <durationDays>0.5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>slept in the cold</label>
+        <description>I had to sleep in a unbearable chill.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SleptInHeat_Centaur</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>slept in the heat</label>
+        <description>I had to sleep in unbearable heat. Can't we have air conditioning?</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+  <ThoughtDef>
+    <defName>NeedOutdoors_Centaur</defName>
+    <workerClass>ThoughtWorker_NeedOutdoors</workerClass>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>entombed underground</label>
+        <description>I've been underground too long. I feel like the weight of this mountain is crushing me. I need to see the sky and feel the wind.</description>
+        <baseMoodEffect>-18</baseMoodEffect>
+      </li>
+      <li>
+        <label>trapped underground</label>
+        <description>How long have I been underground? I need to get out in the fresh air and spend some time under the sky.</description>
+        <baseMoodEffect>-14</baseMoodEffect>
+      </li>
+      <li>
+        <label>cabin fever</label>
+        <description>I've spent so long indoors I feel like the roof is pressing in. I need to get out and see the sky.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>trapped indoors</label>
+        <description>It's been too long since I've seen the sky.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+      <li>
+        <label>stuck indoors</label>
+        <description>I'd like to go outside and get some fresh air.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+
+  <ThoughtDef>
+    <defName>BothCentaur</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>Explorite.ThoughtWorker_AlwaysActive_Centaur</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>centaur aliker</label>
+        <baseOpinionOffset>40</baseOpinionOffset>
+      </li>
+    </stages>
+	<!--<thoughtToMake>SpotCentaur</thoughtToMake>-->
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SpotCentaur</defName>
+    <durationDays>15</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>spot other centaur</label>
+        <description>We got company. I am not alone, never more... Centaur is not just a confusing dream, they actually exit besides me!</description>
+        <baseMoodEffect>25</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>NewCentaurJoin</defName>
+    <durationDays>15</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>new centaur joined</label>
+        <description>We got company. I am not alone, never more.</description>
+        <baseMoodEffect>60</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

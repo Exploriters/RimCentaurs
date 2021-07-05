@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ScenarioDef>
+    <defName>TheExplorerCentaur</defName>
+    <label>The Centaur Explorer</label>
+    <description>Centaur is a fantastic urban legend. None believes that centaurs exist in the world, and no one has witnessed the appearance of centaurs, or even thought about it.\n\nUntil you showed up.\n\nTechnically, centaurs have a complete human genome and have added extra patches made them from growing into normal humans, but no one knows where they exactly came from. Apart from the two extra legs and horrifying physical strength, centaurs and humans are the same in most ways. However, people were more willing to pay attention to the part of this larger difference.\n\nThe lack of ftl-communication makes the circulation of information extremely difficult. You failed to find the same kind, nor inquired about any valuable information about the other centaur. In fact, most people havn't even heard of centaurs stuff before you show up.\n\nAt the beginning of your memory as a centaur, you were the focal point of the entire region. Kinds of people, for kinds of purposes, whether you like want to or not, want to have a relationship with you, or dragged you down. Then, when they got bored, they started to repel you. Finally, because you are not human, you were not even treated as an individual with rights.\n\nPeople did not really try forcing you out, but you chose to leave, as this place does not welcome you. After hearing the witness of other centaur, you packed up all your things, left the place where you felt no intimacy and went to find your own race.\n\nNow, you reached an unknown wilderness. There's nothing else to bother you here, most areas have not been developed, and no one will stop you.\n\n&lt;color=#7fa0ff&gt;&lt;b&gt;Welcome to Rimworld. --Mayinas&lt;/b&gt;&lt;/color&gt;</description>
+	<scenario>
+      <summary>A centaur who left hometown to seeks a companion in the universe.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>CentaurPlayerColony</factionDef>
+      </playerFaction>
+      <parts>
+
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>None will join you way to rimworld, they may consider you are committing a mad suicide, but you left without saying goodbye. Maybe they will miss you? You didn't left anything there. After taking everything you can bring, you don't care about it anymore.\n\nImportant is, you finally got some valuable information, more or less. You got a witness report of centaur activity, which located at a rimworld. After a long and lonely journey of decades, you are now closer to your destination than ever before.\n\nAlthough it is desolate here, it is not completely no human activities. Actually, the population here is much larger than you thought, and includes the one you yearn for - although you haven't know who the other party is, yet. In any case, this is almost your only chance to find a partner.\n\nCan you fulfill this dream?</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <visible>false</visible>
+          <pawnCount>1</pawnCount>
+          <pawnChoiceCount>1</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <visible>false</visible>
+          <method>DropPods</method>
+        </li>
+		
+		<li Class="ScenPart_SetNeedLevel">
+			<def>SetNeedLevel</def>
+            <visible>false</visible>
+			<chance>1</chance>
+			<context>PlayerStarter</context>
+			<need>Food</need>
+			<levelRange>1~1</levelRange>
+		</li>
+		<li Class="ScenPart_SetNeedLevel">
+			<def>SetNeedLevel</def>
+            <visible>false</visible>
+			<chance>1</chance>
+			<context>PlayerStarter</context>
+			<need>Rest</need>
+			<levelRange>1~1</levelRange>
+		</li>
+		<li Class="ScenPart_SetNeedLevel">
+			<def>SetNeedLevel</def>
+            <visible>false</visible>
+			<chance>1</chance>
+			<context>PlayerStarter</context>
+			<need>Mood</need>
+			<levelRange>1~1</levelRange>
+		</li>
+		<li Class="ScenPart_SetNeedLevel">
+			<def>SetNeedLevel</def>
+            <visible>false</visible>
+			<chance>1</chance>
+			<context>PlayerStarter</context>
+			<need>Joy</need>
+			<levelRange>0.7~0.7</levelRange>
+		</li>
+		
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <visible>false</visible>
+          <thingDef>Gun_CentaurPlasmaBlaster</thingDef>
+          <count>1</count>
+        </li>
+		<li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <visible>false</visible>
+          <thingDef>Gold</thingDef>
+          <count>500</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <visible>false</visible>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>10</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <visible>false</visible>
+          <thingDef>MedicineUltratech</thingDef>
+          <count>3</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <visible>false</visible>
+          <thingDef>TriBattery</thingDef>
+          <count>1</count>
+        </li>
+        <li Class="Explorite.ScenPart_WipeoutChunkSlag">
+          <def>RemoveChunkSlag</def>
+          <visible>false</visible>
+        </li>
+        <li Class="Explorite.ScenPart_FillBattery">
+          <def>FillTriBattery</def>
+          <visible>false</visible>
+        </li>
+        <li Class="Explorite.ScenPart_DumpThingsToPawnInv">
+          <def>DumpThingsToPawnInv</def>
+          <visible>false</visible>
+        </li>
+		<li Class="Explorite.ScenPart_StartInSpaceCentaur">
+		  <def>StartInSpaceCentaurs</def>
+          <visible>false</visible>
+		</li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+</Defs>

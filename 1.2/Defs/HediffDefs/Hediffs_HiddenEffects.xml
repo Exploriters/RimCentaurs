@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>CentaurHiddenEffect</defName>
+    <label>Centaur</label>
+    <description>Centaur.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Alien_Centaur</ThingDef>
+    </descriptionHyperlinks>
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="Explorite.HediffCompProperties_HediffGiverEnsureForAlwaysRequired" />
+	</comps>
+    <stages>
+      <li>
+        <becomeVisible>false</becomeVisible>
+        <statFactors />
+        <statOffsets />
+        <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+        <!--<makeImmuneTo>
+          <li>LuciferiumHigh</li>
+          <li>LuciferiumAddiction</li>
+        </makeImmuneTo>-->
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

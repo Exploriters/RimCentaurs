@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[label="artillery error"]/building/defaultStorageSettings/filter/disallowedThingDefs</xpath>
+		<value>
+			<li>ThermoDamper</li>
+		</value>
+	</Operation>-->
+	<Operation Class="PatchOperationAdd">
+		<success>Normal</success>
+		<xpath>Defs/StorytellerDef[@Name="BaseStoryteller"]/comps</xpath>
+		<value>
+		  <li Class="StorytellerCompProperties_SingleOnceFixed">
+			<fireAfterDaysPassed>1</fireAfterDaysPassed>
+			<incident MayRequire="Exploriters.siiftun1857.CentaurTheMagnuassembly">GiveQuest_Centaur_FisteverTrishot</incident>
+			<allowedTargetTags>
+			  <li>World</li>
+			</allowedTargetTags>
+			<enableIfAnyModActive>
+			  <li>Exploriters.siiftun1857.CentaurTheMagnuassembly</li>
+			</enableIfAnyModActive>
+		  </li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[race/fleshType="Mechanoid"]/statBases</xpath>
+		<value>
+			<CryoToxicSensitivity>0</CryoToxicSensitivity>
+		</value>
+	</Operation>
+	
+	<!--
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/MeditationFocusDef[defName="Natural"]/requiredBackstoriesAny</xpath>
+		<value>
+			<li>
+				<categoryName>CentaurBackstories</categoryName>
+				<slot>Childhood</slot>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>Defs/StatDef[defName="PsychicSensitivity"]/parts/li[@Class="StatPart_ApparelStatOffset"]</xpath>
+		<attribute>Class</attribute>
+		<value>Explorite.StatPart_ApparelStatOffset_PsychicDeafIncluded</value>
+	</Operation>
+	-->
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>//thingSetMaker/fixedParams/filter[(categories/li="ResourcesRaw") and not (disallowedThingDefs)]</xpath>
+		<value>
+			<disallowedThingDefs />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>//thingSetMaker/fixedParams/filter[categories/li="ResourcesRaw"]/disallowedThingDefs</xpath>
+		<value>
+			<li>Orangice</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ResearchProjectDef[(
+				defName="Autodoors" or 
+				defName="Batteries" or 
+				defName="SolarPanels" or 
+				defName="ColoredLights" or 
+				defName="ComplexFurniture" or
+				defName="ShipBasics" or
+				
+				defName="CataphractArmor") 
+			and not (tags)]</xpath>
+		<value>
+			<tags />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ResearchProjectDef[
+				defName="Autodoors" or 
+				defName="Batteries" or 
+				defName="SolarPanels" or 
+				defName="ColoredLights" or 
+				defName="ComplexFurniture" or 
+				defName="ShipBasics"]
+			/tags</xpath>
+		<value>
+			<li>CentaurStart</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ResearchProjectDef[
+				defName="CataphractArmor"]
+			/tags</xpath>
+		<value>
+			<li>CentaurStartTechprints</li>
+		</value>
+	</Operation>
+	
+	<!--
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[((recipeMaker) or (tools) or (apparel) or @ParentName="SculptureBase") and (costStuffCount > 0) and not (stuffCategories)]</xpath>
+		<value>
+			<stuffCategories />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[((recipeMaker) or (tools) or (apparel) or @ParentName="SculptureBase") and (costStuffCount > 0)]/stuffCategories</xpath>
+		<value>
+			<li>Orangice</li>
+		</value>
+	</Operation>
+	-->
+	
+	<!--
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[
+				defName="OrbitalTargeterBombardment" or 
+				defName="OrbitalTargeterPowerBeam" or 
+				defName="OrbitalTargeterMechCluster" or 
+				defName="BroadshieldPack"]
+			/apparel/wornGraphicData</xpath>
+		<value>
+			<scale>(0.4,0.4)</scale>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[
+				defName="Apparel_PackJump"]
+			/apparel/wornGraphicData</xpath>
+		<value>
+			<scale>(0.75,0.75)</scale>
+		</value>
+	</Operation>
+	-->
+	
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[
+				defName="OrbitalTargeterBombardment" or 
+				defName="OrbitalTargeterPowerBeam" or 
+				defName="OrbitalTargeterMechCluster"]
+			/apparel/wornGraphicData/north</xpath>
+		<value>
+			<offset>(0.25, -0.25)</offset>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[
+				defName="OrbitalTargeterBombardment" or 
+				defName="OrbitalTargeterPowerBeam" or 
+				defName="OrbitalTargeterMechCluster"]
+			/apparel/wornGraphicData/south</xpath>
+		<value>
+			<offset>(-0.3, -0.25)</offset>
+		</value>
+	</Operation>
+	
+	<!--<Operation Class="PatchOperationAdd">
+		<success>Normal</success>
+		<xpath>Defs/ThingDef[@Name="AnimalThingBase" or defName="Human"]/recipes</xpath>
+		<value>
+		  <li>ForceScarSurgery</li>
+		</value>
+	</Operation>-->
+	
+</Patch>

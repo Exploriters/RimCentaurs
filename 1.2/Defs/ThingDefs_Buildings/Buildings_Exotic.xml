@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--
+  <ThingDef ParentName="BuildingBase">
+    <defName>StarterBox</defName>
+    <label>starter box</label>
+    <description>StarterBox.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Power/TriBattery</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <size>(2,3)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <blockWind>true</blockWind>
+    <pathCost>70</pathCost>
+    <fillPercent>0.40</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <canOverlapZones>false</canOverlapZones>
+    <castEdgeShadows>true</castEdgeShadows>
+    <tickerType>Normal</tickerType>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <tradeability>Sellable</tradeability>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>1600</MaxHitPoints>
+      <WorkToBuild>16000</WorkToBuild>
+      <Mass>80</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <ComponentSpacer>100</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>false</transmitsPower>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-1500</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>20</glowRadius>
+        <glowColor>(127,192,255,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Component durability</fuelLabel>
+        <fuelGizmoLabel>Component durability</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>180.1</fuelCapacity>
+        <fuelConsumptionRate>1</fuelConsumptionRate>
+        <initialFuelPercent>0.3333333333333</initialFuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>60</fuelMultiplier>
+        <factorByDifficulty>false</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Needs replace components</outOfFuelMessage>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+        <initialConfigurableTargetFuelLevel>60</initialConfigurableTargetFuelLevel>
+      </li>
+      <li Class="CompProperties_Battery">
+        <storedEnergyMax>1500</storedEnergyMax>
+        <efficiency>1</efficiency>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <transmitsPower>false</transmitsPower>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-20</heatPerSecond>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.95</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0</chanceNeverExplodeFromDamage>
+      </li>
+    </comps>
+    <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>Batteries</li>
+    </researchPrerequisites>
+    <thingSetMakerTags>
+      <!- - <li>RewardSpecial</li> - ->
+    </thingSetMakerTags>
+    <building>
+	  <deconstructible>false</deconstructible>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>Gun_MiniTurret</turretGunDef>
+      <turretBurstCooldownTime>4.8</turretBurstCooldownTime>
+      <turretTopGraphicPath>Things/Building/Security/TurretMini_Top</turretTopGraphicPath>
+      <turretTopDrawSize>2.7</turretTopDrawSize>
+      <turretTopOffset>(0, 0.05)</turretTopOffset>
+    </building>
+  </ThingDef>
+  -->
+  
+  <ThingDef ParentName="BuildingBase" Abstract="True">
+    <defName>ArtificialHivebox</defName>
+    <label>artificial hivebox</label>
+    <description>Slowly producing insect jelly by breeding insects in it. If it got destroyed, it may release these dangerous mega insect everywhere.</description>
+    <graphicData>
+      <texPath>Things/Building/Special/InfiniteChemreactor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3, 3)</drawSize>
+      <shadowData>
+        <volume>(1.8, 1.0, 0.2)</volume>
+        <offset>(0.0, 0.0, -0.4)</offset>
+      </shadowData>
+    </graphicData>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <costList>
+      <ComponentSpacer>4</ComponentSpacer>
+      <Uranium>12</Uranium>
+      <Hyperweave>48</Hyperweave>
+    </costList>
+    <resourcesFractionWhenDeconstructed>0.5</resourcesFractionWhenDeconstructed>
+    <killedLeavings>
+      <InsectJelly>30</InsectJelly>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Uranium>5</Uranium>
+      <Hyperweave>10</Hyperweave>
+      <Hive>1</Hive>
+      <Filth_Slime>20</Filth_Slime>
+      <Fire>4</Fire>
+    </killedLeavings>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Spawner">
+        <requiresPower>true</requiresPower>
+        <thingToSpawn>InsectJelly</thingToSpawn>
+        <spawnCount>75</spawnCount>
+        <spawnIntervalRange>
+          <min>600000</min>
+          <max>600000</max>
+        </spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>true</showMessageIfOwned>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>9</glowRadius>
+        <glowColor>(113,141,117,0)</glowColor>
+      </li>
+    </comps>
+    <altitudeLayer>Building</altitudeLayer>
+    <building>
+      <uninstallWork>1200</uninstallWork>
+    </building>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Mass>20</Mass>
+      <WorkToBuild>16000</WorkToBuild>
+    </statBases>
+    <thingSetMakerTags>
+      <!-- <li>RewardSpecial</li> -->
+    </thingSetMakerTags>
+    <tickerType>Normal</tickerType>
+    <size>(2, 2)</size>
+    <fillPercent>1.0</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <rotatable>false</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <tradeability>Sellable</tradeability>
+  </ThingDef>
+
+</Defs>

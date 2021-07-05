@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!--<RecipeDef>
+    <defName>Make_ArmorCataphractCentaurSet</defName>
+    <label>make centaur cataphract armor set</label>
+    <description>Make centaur cataphract armor set.</description>
+    <jobString>Making centaur cataphract armor set.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>300000</workAmount>
+    <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+	<productHasIngredientStuff>false</productHasIngredientStuff>
+	<dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>  
+	<uiIconThing>Apparel_ArmorCataphractCentaur</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Apparel_ArmorReconCentaur</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Apparel_ArmorMarineCentaur</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>70</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Apparel_ArmorReconCentaur</li>
+        <li>Apparel_ArmorMarineCentaur</li>
+        <li>Uranium</li>
+        <li>Gold</li>
+        <li>Steel</li>
+        <li>Chemfuel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Plasteel>65</Plasteel>
+      <Apparel_ArmorHelmetCataphractPrestige>1</Apparel_ArmorHelmetCataphractPrestige>-
+      <Apparel_ArmorCataphractCentaur>1</Apparel_ArmorCataphractCentaur>
+    </products>
+	<researchPrerequisites>
+	  <li>CataphractArmor</li>
+	  <li>CentaurReverseEngineeringHumanTech</li>
+	</researchPrerequisites>
+    <skillRequirements>
+      <Crafting>9</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <recipeUsers Inherit="False">
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <workSkillLearnFactor>1</workSkillLearnFactor>
+  </RecipeDef>-->
+  
+</Defs>

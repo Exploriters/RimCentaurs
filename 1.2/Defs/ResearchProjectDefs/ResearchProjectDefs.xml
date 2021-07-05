@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef Name="CentaurResearchProjectBase" Abstract="True">
+    <tab>Explorite</tab>
+    <prerequisites />
+    <researchViewX>0</researchViewX>
+    <researchViewY>2.80</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="CentaurResearchProjectBase">
+    <defName>CentaurTechRootProject</defName>
+    <label>centaurs</label>
+    <description>Allowing you researching future more centaurs exclusive technology.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Animal</techLevel>
+    <prerequisites>
+    </prerequisites>
+    <hiddenPrerequisites>
+    </hiddenPrerequisites>
+    <researchViewX>0</researchViewX>
+    <!--<techprintCount>1</techprintCount>
+    <techprintCommonality>0</techprintCommonality>
+    <techprintMarketValue>20000</techprintMarketValue>
+    <heldByFactionCategoryTags><li>CentaurFactionDummy</li></heldByFactionCategoryTags>-->
+    <tags>
+      <li>CentaurStart</li>
+      <li>ExploriteNeverResearchable</li>
+    </tags>
+    <requiredResearchBuilding Inherit="False" />
+    <requiredResearchFacilities Inherit="False" />
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="CentaurResearchProjectBase">
+    <defName>CentaurReverseEngineeringHumanTech</defName>
+    <label>centaurs exclusive equipments</label>
+    <description>Remastery human equipments to make things fit centaurs.</description>
+    <baseCost>100</baseCost>
+    <techLevel>Animal</techLevel>
+    <prerequisites>
+      <li>CentaurTechRootProject</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <tags>
+      <li>CentaurStart</li>
+    </tags>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="CentaurResearchProjectBase" Name="CentaurStoryProjectBase" Abstract="True">
+    <baseCost>10000</baseCost>
+    <techLevel>Archotech</techLevel>
+    <prerequisites />
+    <hiddenPrerequisites>
+      <li>CentaurTechRootProject</li>
+    </hiddenPrerequisites>
+    <requiredResearchBuilding Inherit="False" />
+    <requiredResearchFacilities Inherit="False" />
+    <!--<techprintCount>1</techprintCount>
+    <techprintCommonality>0</techprintCommonality>
+    <techprintMarketValue>20000</techprintMarketValue>
+    <heldByFactionCategoryTags><li>CentaurFactionDummy</li></heldByFactionCategoryTags>-->
+    <researchViewX>3</researchViewX>
+    <tags>
+      <li>ExploriteNeverResearchable</li>
+    </tags>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="CentaurStoryProjectBase">
+    <defName>CentaurStoryStep1st</defName>
+    <label>centaurs archotech</label>
+    <description>Unlock base centaurs archotech. These exotic components can be extracted from archotech objects.</description>
+    <researchViewX>3</researchViewX>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="CentaurStoryProjectBase">
+    <defName>CentaurStoryStep2nd</defName>
+    <label>centaur subsystems</label>
+    <description>Unlock centaur subsystems, customizable modules that plug in centaur body to provide powerful passive effects. One centaur can have up to three subsystems at the same time.</description>
+    <researchViewX>4</researchViewX>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="CentaurStoryProjectBase">
+    <defName>CentaurStoryStep3rd</defName>
+    <label>thermo damper fabrication</label>
+    <description>Unlock the way to process with Thermo Damper, a supreme exceptional reverse-entropy core.</description>
+    <researchViewX>5</researchViewX>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="CentaurStoryProjectBase">
+    <defName>CentaurStoryStep4th</defName>
+    <label>centaurs TODO</label>
+    <description>Unlock SOMETHING TODO.</description>
+    <researchViewX>6</researchViewX>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="CentaurStoryProjectBase">
+    <defName>CentaurStoryStep5th</defName>
+    <label>centaurs TODO</label>
+    <description>Unlock SOMETHING TODO.</description>
+    <researchViewX>7</researchViewX>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="CentaurResearchProjectBase" Abstract="True">
+    <defName>TrishotProject</defName>
+    <label>trishot</label>
+    <description>Allows you craft an ultra weapon that used by centaur, Trishot, a powerful massive bow with long range that fires triple heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst.</description>
+    <baseCost>10000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <hiddenPrerequisites>
+      <li>CentaurTechRootProject</li>
+      <li>ChargedShot</li>
+    </hiddenPrerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>6</researchViewX>
+    <!-- <discoveredLetterTitle>About: Trishot</discoveredLetterTitle>
+    <discoveredLetterText>????</discoveredLetterText>
+    <discoveredLetterMinDifficulty>1</discoveredLetterMinDifficulty> -->
+  </ResearchProjectDef>
+
+</Defs>

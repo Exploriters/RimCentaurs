@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingCategoryDef>
+    <defName>CentaurApparels</defName>
+    <label>centaur apparels</label>
+    <parent>Apparel</parent>
+    <iconPath>Things/Pawn/Humanlike/Apparel/CentaurPants/CentaurHorseshoesSet</iconPath>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+  </ThingCategoryDef>
+</Defs>

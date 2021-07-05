@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartGroupDef>
+    <defName>CentaurLegs</defName>
+    <label>legs</label>
+    <listOrder>10</listOrder>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>CentaurHooves</defName>
+    <label>hooves</label>
+    <listOrder>9</listOrder>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>FrontLeftHoove</defName>
+    <label>front left hoove</label>
+    <labelShort>hoove</labelShort>
+    <listOrder>8</listOrder>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>FrontRightHoove</defName>
+    <label>front right hoove</label>
+    <labelShort>hoove</labelShort>
+    <listOrder>7</listOrder>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>RearLeftHoove</defName>
+    <label>rear left hoove</label>
+    <labelShort>hoove</labelShort>
+    <listOrder>6</listOrder>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>RearRightHoove</defName>
+    <label>rear right hoove</label>
+    <labelShort>hoove</labelShort>
+    <listOrder>5</listOrder>
+  </BodyPartGroupDef>
+
+  <!--<BodyPartGroupDef>
+    <defName>CentaurSubsystem</defName>
+    <label>centaur subsystem</label>
+    <labelShort>subsystem</labelShort>
+    <listOrder>1000</listOrder>
+  </BodyPartGroupDef>-->
+  
+  <BodyPartGroupDef>
+    <defName>CentaurCorePart</defName>
+    <label>torso</label>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>CentaurTorso</defName>
+    <label>torso</label>
+    <listOrder>100</listOrder>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>CentaurSubsystem</defName>
+    <label>subsystem</label>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>CentaurSubsystemPrimary</defName>
+    <label>subsystem primary</label>
+    <labelShort>subsystem</labelShort>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>CentaurSubsystemSecondary</defName>
+    <label>subsystem secondary</label>
+    <labelShort>subsystem</labelShort>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>CentaurSubsystemTertiary</defName>
+    <label>subsystem tertiary</label>
+    <labelShort>subsystem</labelShort>
+  </BodyPartGroupDef>
+
+</Defs>

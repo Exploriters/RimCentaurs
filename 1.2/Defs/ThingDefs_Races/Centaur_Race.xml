@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <defName>Alien_Centaur</defName>
+    <!-- <thingClass>Explorite.PawnWithShield</thingClass> -->
+    <label>centaur</label>
+    <description>An extremely rare, unknown source of bioengineered species that possesses a human genome with additional patches, centaur is recognized as a distinct mammal species.\n\nCentaur has a stronger physique, better appearance, more adaptable to cold environments, larger appetite, stronger immunity, more difficult to be knocked down than humans, IMMUNE to pain shock, also a natural shooter. Despite their equine appearance, centaurs are omnivorous.\n\nAccording to myth, centaurs are archotech-created artificial species that immortal and invincible, but also infertility. They have extremely powerful race-exclusive equipment, made them a god-like exist - and none have ever spot or seen these gods.\n\nCentaurs have a natural psylink potential, able to develop psychic symbiosis with anima creatures, and birth with a powerful area of effect ability: "Mass psychical deafness".</description>
+	
+    <size>(1,1)</size>
+    <inspectorTabs>
+      <li>Explorite.ITab_Pawn_Subsystem</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="Explorite.CompProperties_PawnSubsystemManager" />
+      <li Class="Explorite.CompProperties_PawnShield" />
+      <li Class="Explorite.CompProperties_PawnRepairApparelsOvertime">
+        <ticksBetweenHeal>60000</ticksBetweenHeal>
+      </li>
+      <li Class="Explorite.CompProperties_PassiveMeditationFocusGain">
+        <focusPerDay>1</focusPerDay>
+      </li>
+      <li Class="Explorite.CompProperties_EnsureAbility">
+        <abilities>
+          <li>MassPsychicDeafCentaur</li>
+        </abilities>
+      </li>
+    </comps>
+    <tradeTags />
+    <statBases>
+      <MarketValue>38000</MarketValue>
+      <MoveSpeed>13.5</MoveSpeed>
+      <CarryingCapacity>1000</CarryingCapacity>
+      <Flammability>1.0</Flammability>
+      <LeatherAmount>90</LeatherAmount>
+	  
+	  <!-- Corpse -->
+      <MaxHitPoints>250</MaxHitPoints>
+      <DeteriorationRate>0.0</DeteriorationRate>
+	  
+	  <!-- Endurance -->
+      <ComfyTemperatureMin>-36</ComfyTemperatureMin>
+      <ComfyTemperatureMax>20.2</ComfyTemperatureMax>
+      <ImmunityGainSpeed>1.75</ImmunityGainSpeed>
+      <ToxicSensitivity>0.5</ToxicSensitivity>
+      <CryoToxicSensitivity>0</CryoToxicSensitivity>
+      <MentalBreakThreshold>0.02</MentalBreakThreshold>
+      <PainShockThreshold>0.95</PainShockThreshold>
+	  
+	  <!-- Combat -->
+      <AimingDelayFactor>0.5</AimingDelayFactor>
+      <ShootingAccuracyPawn>20</ShootingAccuracyPawn>
+      <MeleeDodgeChance>15</MeleeDodgeChance>
+      <PawnTrapSpringChance>0.1</PawnTrapSpringChance>
+	  
+	  <!-- Needs -->
+      <EatingSpeed>1.5</EatingSpeed>
+      <RestRateMultiplier>1.5</RestRateMultiplier>
+	  
+	  <!-- Social -->
+      <PawnBeauty>10.0</PawnBeauty>
+      <SocialImpact>1.3</SocialImpact>
+      <!--<TradePriceImprovement>1</TradePriceImprovement>-->
+	  
+	  <!-- Work -->
+      <GlobalLearningFactor>1.75</GlobalLearningFactor>
+      <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+      <ResearchSpeed>2.0</ResearchSpeed>
+      <TameAnimalChance>3.0</TameAnimalChance>
+      <TrainAnimalChance>3.0</TrainAnimalChance>
+      <ButcheryFleshEfficiency>1.03</ButcheryFleshEfficiency>
+      <ButcheryMechanoidEfficiency>1.03</ButcheryMechanoidEfficiency>
+	  
+	  
+	  <!-- Psychic -->
+      <PsychicSensitivity>1.8</PsychicSensitivity>
+      <PsychicEntropyMax ExEx="Royalty">90</PsychicEntropyMax>
+      <PsychicEntropyRecoveryRate ExEx="Royalty">1.62</PsychicEntropyRecoveryRate>
+      <!--<MeditationFocusGain ExEx="Royalty">1.5</MeditationFocusGain>-->
+
+	  <!-- Shield -->
+      <PawnShieldRechargeRate>0</PawnShieldRechargeRate>
+      <PawnShieldEnergyMax>0</PawnShieldEnergyMax>
+	  
+    </statBases>
+	<race>
+      <thinkTreeMain>Centaur</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>false</makesFootprints>
+      <lifeExpectancy>Infinity</lifeExpectancy>
+      <nameCategory>HumanStandard</nameCategory>
+      <leatherDef>Leather_Human</leatherDef>
+      <body>Centaur</body>
+      <!--<Mass>106.5</Mass>-->
+      <baseBodySize>3.0</baseBodySize>
+      <baseHealthScale>3.0</baseHealthScale>
+      <foodType>OmnivoreHuman, CarnivoreAnimal, OmnivoreAnimal, OvivoreAnimal</foodType>
+      <!-- <gestationPeriodDays>45</gestationPeriodDays> -->
+      <gestationPeriodDays isNull="True" />
+      <meatMarketValue>0.8</meatMarketValue>
+      <useMeatFrom>Human</useMeatFrom>
+      <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+      <baseHungerRate>1.5</baseHungerRate>
+      <herdAnimal>false</herdAnimal>
+      <packAnimal>true</packAnimal>
+      <predator>false</predator>
+      <nuzzleMtbHours>12</nuzzleMtbHours>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, .30)</li>
+          <li>(2, .40)</li>
+          <li>(3, .10)</li>
+          <li>(4, .20)</li>
+          <li>(5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>CentaurBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>CentaurToddler</def>
+          <minAge>1.2</minAge>
+        </li>
+        <li>
+          <def>CentaurChild</def>
+          <minAge>4</minAge>
+        </li>
+        <li>
+          <def>CentaurTeenager</def>
+          <minAge>13</minAge>
+        </li>
+        <li>
+          <def>CentaurAdult</def>
+          <minAge>18</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <!-- <ageGenerationCurve>
+				<points>
+				  <li>(26.25,0)</li>
+				  <li>(30,100)</li>
+				  <li>(93.75,100)</li>
+				  <li>(112.5,30)</li>
+				  <li>(131.25,18)</li>
+				  <li>(150,10)</li>
+				  <li>(168.75,3)</li>
+				  <li>(187.5,0)</li>
+				</points>
+			  </ageGenerationCurve> -->
+      <ageGenerationCurve>
+        <points>
+          <li>(14,0)</li>
+          <li>(16,100)</li>
+          <li>(93.75,100)</li>
+          <li>(112.5,30)</li>
+          <li>(131.25,18)</li>
+          <li>(150,10)</li>
+          <li>(168.75,3)</li>
+          <li>(187.5,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <hediffGiverSets>
+        <li>OrganicStandard_NoAgingProblem</li>
+        <li>Human</li>
+        <li>Centaur</li>
+      </hediffGiverSets>
+    </race>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>1.4</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>18</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>1.4</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>18</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.07</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+      <li>
+        <label>front left hoove</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftHoove</linkedBodyPartsGroup>
+        <chanceFactor>0.3</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>26</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>front right hoove</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightHoove</linkedBodyPartsGroup>
+        <chanceFactor>0.3</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>26</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>rear left hoove</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>RearLeftHoove</linkedBodyPartsGroup>
+        <chanceFactor>0.2</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>26</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>rear right hoove</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>RearRightHoove</linkedBodyPartsGroup>
+        <chanceFactor>0.2</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>26</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+    </tools>
+    <recipes>
+      <li>InstallHyperManipulator</li>
+      <li>InstallBionicCentaurTail</li>
+	  
+	  
+      <!-- <li>RemoveBodyPart_ExcludingScapular</li> -->
+      <!-- humanRecipeImport enabled
+	  <li>InstallArchotechEye</li>
+	  <li>InstallArchotechArm</li>
+	  <li>InstallArchotechLeg</li>
+	  <li>InstallPowerClaw</li>
+	  <li>InstallBionicEye</li>
+	  <li>InstallBionicArm</li>
+	  <li>InstallBionicLeg</li>
+	  <li>InstallBionicSpine</li>
+	  <li>InstallBionicHeart</li>
+	  <li>InstallBionicStomach</li>
+	  <li>InstallBionicEar</li>
+	  <li>InstallSimpleProstheticArm</li>
+	  <li>InstallSimpleProstheticLeg</li>
+	  <li>InstallSimpleProstheticHeart</li>
+	  <li>InstallCochlearImplant</li>
+	  <li>InstallPegLeg</li>
+	  <li>InstallWoodenFoot</li>
+	  <li>InstallDenture</li>
+	  <li>InstallJoywire</li>
+	  <li>InstallPainstopper</li>
+	  <li>InstallNaturalHeart</li>
+	  <li>InstallNaturalLung</li>
+	  <li>InstallNaturalKidney</li>
+	  <li>InstallNaturalLiver</li>
+	  <li>ExciseCarcinoma</li>
+	  <li>AdministerMechSerumHealer</li>
+	  <li>RemoveBodyPart</li>
+	  <li>Euthanize</li>
+	  <li>Anesthetize</li>-->
+    </recipes>
+	
+    <alienRace>
+      <generalSettings>
+        <immuneToAge>true</immuneToAge>
+        <allowHumanBios>true</allowHumanBios>
+		<humanRecipeImport>true</humanRecipeImport>
+		<maleGenderProbability>0.5</maleGenderProbability>
+        <maxDamageForSocialfight>7</maxDamageForSocialfight>
+        <canLayDown>true</canLayDown>
+        <!--
+		<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>
+        <validBeds>
+			<li>DoubleSleepingSpot</li>
+			<li>DoubleBed</li>
+			<li>RoyalBed</li>
+			<li>HospitalBed</li>
+			<li>BedrollDouble</li>
+		</validBeds>-->
+        <chemicalSettings>
+          <li>
+            <chemical>Luciferium</chemical>
+            <ingestible>false</ingestible>
+          </li>
+        </chemicalSettings>
+		
+		<additionalTraits>-10~-10</additionalTraits>
+        <!--<forcedRaceTraitEntries>
+          <li>
+            <defName>Asexual</defName>
+            <chance>100</chance>
+          </li>
+        </forcedRaceTraitEntries>
+        <disallowedTraits>
+          <li><defName>Asexual</defName></li>
+          <li><defName>Kind</defName></li>
+          <li><defName>Transhumanist</defName></li>
+		  
+          <li><defName>FastLearner</defName></li>
+          <li><defName>Nimble</defName></li>
+          <li><defName>QuickSleeper</defName></li>
+          <li><defName>TorturedArtist</defName></li>
+		  
+          <li><defName>Xenophobia</defName></li>
+          <li><defName>Brawler</defName></li>
+          <li><defName>Wimp</defName></li>
+          <li><defName>BodyPurist</defName></li>
+          <li><defName>Nudist</defName></li>
+          <li><defName>Bloodlust</defName></li>
+          <li><defName>Psychopath</defName></li>
+          <li><defName>Cannibal</defName></li>
+          <li><defName>Abrasive</defName></li>
+          <li><defName>NightOwl</defName></li>
+          <li><defName>Greedy</defName></li>
+          <li><defName>Jealous</defName></li>
+          <li><defName>Ascetic</defName></li>
+          <li><defName>Gay</defName></li>
+          <li><defName>Bisexual</defName></li>
+          <li><defName>Pyromaniac</defName></li>
+          <li><defName>AnnoyingVoice</defName></li>
+          <li><defName>CreepyBreathing</defName></li>
+          <li><defName>DislikesMen</defName></li>
+          <li><defName>DislikesWomen</defName></li>
+          <li><defName>Gourmand</defName></li>
+          <li><defName>GreatMemory</defName></li>
+          <li><defName>Undergrounder</defName></li>
+          <li><defName>Tough</defName></li>
+		  
+          <li><defName>TooSmart</defName></li>
+          <li><defName>SlowLearner</defName></li>
+			
+          <li><defName>DrugDesire</defName>
+            <degree>0</degree></li>
+
+          <li><defName>NaturalMood</defName>
+            <degree>0</degree></li>
+			
+          <li><defName>Nerves</defName>
+            <degree>0</degree></li>
+			
+          <li><defName>Industriousness</defName>
+            <degree>0</degree></li>
+			
+          <li><defName>PsychicSensitivity</defName>
+            <degree>0</degree></li>
+			
+          <li><defName>ShootingAccuracy</defName>
+            <degree>0</degree></li>
+			
+          <li><defName>Beauty</defName>
+            <degree>0</degree></li>
+			
+          <li><defName>Immunity</defName>
+            <degree>0</degree></li>
+			
+          <li><defName>Neurotic</defName>
+            <degree>0</degree></li>
+			
+          <li><defName>SpeedOffset</defName>
+            <degree>0</degree></li>
+
+
+        </disallowedTraits>-->
+
+        <alienPartGenerator>
+          <headOffset>(0.0, 0.0)</headOffset>
+          <alienbodytypes>
+            <li>CentaurMale</li>
+            <li>CentaurFemale</li>
+          </alienbodytypes>
+          <useGenderedBodies>false</useGenderedBodies>
+          <bodyAddons>
+            <li Class="Explorite.BodyAddon_MX">
+              <drawSize>1</drawSize>
+              <colorChannel>hair</colorChannel>
+              <path>Things/Centaur/Ears/EarLeft</path>
+              <bodyPart>left ear</bodyPart>
+              <inFrontOfBody>true</inFrontOfBody>
+              <drawnInBed>true</drawnInBed>
+              <hiddenUnderApparelTag>
+                <li>HideCentaurEar</li>
+              </hiddenUnderApparelTag>
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <CentaurMale>(-.425,0.95)</CentaurMale>
+                    <CentaurFemale>(-.425,0.95)</CentaurFemale>
+                  </bodyTypes>
+                  <portraitBodyTypes>
+                    <CentaurMale>(-.425,0.95)</CentaurMale>
+                    <CentaurFemale>(-.425,0.95)</CentaurFemale>
+                  </portraitBodyTypes>
+                  <crownTypes>
+                    <Normal_Average>(0,0)</Normal_Average>
+                    <Normal_Pointy>(0,0)</Normal_Pointy>
+                    <Normal_Wide>(0,0)</Normal_Wide>
+                    <Narrow_Average>(0,0)</Narrow_Average>
+                    <Narrow_Pointy>(0,0)</Narrow_Pointy>
+                    <Narrow_Wide>(0,0)</Narrow_Wide>
+                  </crownTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <CentaurMale>(0,1.1)</CentaurMale>
+                    <CentaurFemale>(0,1.1)</CentaurFemale>
+                  </bodyTypes>
+                  <portraitBodyTypes>
+                    <CentaurMale>(0,1.1)</CentaurMale>
+                    <CentaurFemale>(0,1.1)</CentaurFemale>
+                  </portraitBodyTypes>
+                  <crownTypes>
+                    <Normal_Average>(0,0)</Normal_Average>
+                    <Normal_Pointy>(0,0)</Normal_Pointy>
+                    <Normal_Wide>(0,0)</Normal_Wide>
+                    <Narrow_Average>(0,0)</Narrow_Average>
+                    <Narrow_Pointy>(0,0)</Narrow_Pointy>
+                    <Narrow_Wide>(0,0)</Narrow_Wide>
+                  </crownTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <CentaurMale>(-.425,0.95)</CentaurMale>
+                    <CentaurFemale>(-.425,0.95)</CentaurFemale>
+                  </bodyTypes>
+                  <portraitBodyTypes>
+                    <CentaurMale>(-.425,0.95)</CentaurMale>
+                    <CentaurFemale>(-.425,0.95)</CentaurFemale>
+                  </portraitBodyTypes>
+                  <crownTypes>
+                    <Normal_Average>(0,0)</Normal_Average>
+                    <Normal_Pointy>(0,0)</Normal_Pointy>
+                    <Normal_Wide>(0,0)</Normal_Wide>
+                    <Narrow_Average>(0,0)</Narrow_Average>
+                    <Narrow_Pointy>(0,0)</Narrow_Pointy>
+                    <Narrow_Wide>(0,0)</Narrow_Wide>
+                  </crownTypes>
+                </east>
+              </offsets>
+            </li>
+			<li Class="Explorite.BodyAddon_MX">
+              <drawSize>1</drawSize>
+              <colorChannel>hair</colorChannel>
+              <path>Things/Centaur/Ears/EarRight</path>
+              <bodyPart>right ear</bodyPart>
+              <inFrontOfBody>true</inFrontOfBody>
+              <drawnInBed>true</drawnInBed>
+              <hiddenUnderApparelTag>
+                <li>HideCentaurEar</li>
+              </hiddenUnderApparelTag>
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <CentaurMale>(-.425,0.95)</CentaurMale>
+                    <CentaurFemale>(-.425,0.95)</CentaurFemale>
+                  </bodyTypes>
+                  <portraitBodyTypes>
+                    <CentaurMale>(-.425,0.95)</CentaurMale>
+                    <CentaurFemale>(-.425,0.95)</CentaurFemale>
+                  </portraitBodyTypes>
+                  <crownTypes>
+                    <Normal_Average>(0,0)</Normal_Average>
+                    <Normal_Pointy>(0,0)</Normal_Pointy>
+                    <Normal_Wide>(0,0)</Normal_Wide>
+                    <Narrow_Average>(0,0)</Narrow_Average>
+                    <Narrow_Pointy>(0,0)</Narrow_Pointy>
+                    <Narrow_Wide>(0,0)</Narrow_Wide>
+                  </crownTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <CentaurMale>(0,1.1)</CentaurMale>
+                    <CentaurFemale>(0,1.1)</CentaurFemale>
+                  </bodyTypes>
+                  <portraitBodyTypes>
+                    <CentaurMale>(0,1.1)</CentaurMale>
+                    <CentaurFemale>(0,1.1)</CentaurFemale>
+                  </portraitBodyTypes>
+                  <crownTypes>
+                    <Normal_Average>(0,0)</Normal_Average>
+                    <Normal_Pointy>(0,0)</Normal_Pointy>
+                    <Normal_Wide>(0,0)</Normal_Wide>
+                    <Narrow_Average>(0,0)</Narrow_Average>
+                    <Narrow_Pointy>(0,0)</Narrow_Pointy>
+                    <Narrow_Wide>(0,0)</Narrow_Wide>
+                  </crownTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <CentaurMale>(-.425,0.95)</CentaurMale>
+                    <CentaurFemale>(-.425,0.95)</CentaurFemale>
+                  </bodyTypes>
+                  <portraitBodyTypes>
+                    <CentaurMale>(-.425,0.95)</CentaurMale>
+                    <CentaurFemale>(-.425,0.95)</CentaurFemale>
+                  </portraitBodyTypes>
+                  <crownTypes>
+                    <Normal_Average>(0,0)</Normal_Average>
+                    <Normal_Pointy>(0,0)</Normal_Pointy>
+                    <Normal_Wide>(0,0)</Normal_Wide>
+                    <Narrow_Average>(0,0)</Narrow_Average>
+                    <Narrow_Pointy>(0,0)</Narrow_Pointy>
+                    <Narrow_Wide>(0,0)</Narrow_Wide>
+                  </crownTypes>
+                </east>
+              </offsets>
+            </li>
+            <li Class="Explorite.BodyAddon_MX">
+              <drawSize>1</drawSize>
+              <colorChannel>hair</colorChannel>
+              <path>Things/Centaur/Tail/Tail</path>
+              <bodyPart>tail</bodyPart>
+              <inFrontOfBody>false</inFrontOfBody>
+              <drawnInBed>false</drawnInBed>
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <CentaurMale>(-.425,0.92)</CentaurMale>
+                    <CentaurFemale>(-.425,0.92)</CentaurFemale>
+                  </bodyTypes>
+                  <portraitBodyTypes>
+                    <CentaurMale>(-.425,0.92)</CentaurMale>
+                    <CentaurFemale>(-.425,0.92)</CentaurFemale>
+                  </portraitBodyTypes>
+                  <crownTypes>
+                    <Normal_Average>(0,0)</Normal_Average>
+                    <Normal_Pointy>(0,0)</Normal_Pointy>
+                    <Normal_Wide>(0,0)</Normal_Wide>
+                    <Narrow_Average>(0,0)</Narrow_Average>
+                    <Narrow_Pointy>(0,0)</Narrow_Pointy>
+                    <Narrow_Wide>(0,0)</Narrow_Wide>
+                  </crownTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <CentaurMale>(0,0.20)</CentaurMale>
+                    <CentaurFemale>(0,0.20)</CentaurFemale>
+                  </bodyTypes>
+                  <portraitBodyTypes>
+                    <CentaurMale>(0,0.20)</CentaurMale>
+                    <CentaurFemale>(0,0.20)</CentaurFemale>
+                  </portraitBodyTypes>
+                  <crownTypes>
+                    <Normal_Average>(0,0)</Normal_Average>
+                    <Normal_Pointy>(0,0)</Normal_Pointy>
+                    <Normal_Wide>(0,0)</Normal_Wide>
+                    <Narrow_Average>(0,0)</Narrow_Average>
+                    <Narrow_Pointy>(0,0)</Narrow_Pointy>
+                    <Narrow_Wide>(0,0)</Narrow_Wide>
+                  </crownTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <CentaurMale>(.925,0.05)</CentaurMale>
+                    <CentaurFemale>(.925,0.05)</CentaurFemale>
+                  </bodyTypes>
+                  <portraitBodyTypes>
+                    <CentaurMale>(.925,0.10)</CentaurMale>
+                    <CentaurFemale>(.925,0.10)</CentaurFemale>
+                  </portraitBodyTypes>
+                  <crownTypes>
+                    <Normal_Average>(0,0)</Normal_Average>
+                    <Normal_Pointy>(0,0)</Normal_Pointy>
+                    <Normal_Wide>(0,0)</Normal_Wide>
+                    <Narrow_Average>(0,0)</Narrow_Average>
+                    <Narrow_Pointy>(0,0)</Narrow_Pointy>
+                    <Narrow_Wide>(0,0)</Narrow_Wide>
+                  </crownTypes>
+                </east>
+              </offsets>
+            </li>
+          </bodyAddons>
+          <colorChannels>
+            <li>
+              <name>hair</name>
+              <first Class="Explorite.ColorGenerator_CentaurHair"/>
+              <second Class="Explorite.ColorGenerator_CentaurHair"/>
+            </li>
+          </colorChannels>
+          <!--<useSkincolorForHair>false</useSkincolorForHair>-->
+          <customHeadDrawSize>(1, 1)</customHeadDrawSize>
+          <customDrawSize>(1.35, 1.35)</customDrawSize>
+        </alienPartGenerator>
+        
+      </generalSettings>
+
+      <thoughtSettings>
+        <cannotReceiveThoughts>
+		  <!-- Situations - Centaurs can't have -->
+          <li>EnvironmentCold</li>
+          <li>EnvironmentHot</li>
+          <li>NeedOutdoors</li>
+		  <li>ProsthophileNoProsthetic</li>
+		  <li>Pain</li>
+		  <li>MasochistPain</li>
+		  
+		  <!-- Memories - Centaurs have replacer -->
+          <li>SleptInCold</li>
+          <li>SleptInHeat</li>
+          <li>AteKibble</li>
+          <li>WasImprisoned</li>
+		  
+		  <!-- Memories - Centaurs can't have -->
+          <li>AteWithoutTable</li>
+          <li>SoakingWet</li>
+          <li>SleptOnGround</li>
+          <li>SleptOutside</li>
+          <li>ButcheredHumanlikeCorpse</li>
+          <li>KnowButcheredHumanlikeCorpse</li>
+		  
+		  <!-- Social - Centaurs can't have -->
+          <li>ButcheredHumanlikeCorpseOpinion</li>
+        </cannotReceiveThoughts>
+        <restrictedThoughts>
+		
+		  <!-- Situations -->
+          <li>EnvironmentCold_Centaur</li>
+          <li>EnvironmentHot_Centaur</li>
+          <li>NeedOutdoors_Centaur</li>
+		  
+		  <!-- Memories -->
+          <li>SleptInCold_Centaur</li>
+          <li>SleptInHeat_Centaur</li>
+          <li>AteKibble_Centaur</li>
+          <li>WasImprisoned_Centaur</li>
+		  
+		  <!-- Social related -->
+          <li>BothCentaur</li>
+          <li>SpotCentaur</li>
+		  
+        </restrictedThoughts>
+        <replacerList>
+          <li>
+            <original>SleptInCold</original>
+            <replacer>SleptInCold_Centaur</replacer>
+          </li>
+          <li>
+            <original>SleptInHeat</original>
+            <replacer>SleptInHeat_Centaur</replacer>
+          </li>
+          <li>
+            <original>AteKibble</original>
+            <replacer>AteKibble_Centaur</replacer>
+          </li>
+          <li>
+            <original>WasImprisoned</original>
+            <replacer>WasImprisoned_Centaur</replacer>
+          </li>
+        </replacerList>
+		
+		<butcherThoughtSpecific>
+			<li>
+				<raceList>
+					<li>Alien_Centaur</li>
+				</raceList>
+				<thought>ButcheredHumanlikeCorpse</thought>
+				<knowThought>KnowButcheredHumanlikeCorpse</knowThought>
+			</li>
+		</butcherThoughtSpecific>
+		
+        <!--<butcherThoughtSpecific>
+                <li>
+                    <raceList>
+                        <li>Human</li>
+                        <li>Alien_Centaur</li>
+                    </raceList>
+                    <thought>ButcheredHuman</thought>
+                    <knowThought>KnowButcheredHuman</knowThought>
+                </li>
+            </butcherThoughtSpecific>
+            <ateThoughtSpecific>
+                <li>
+                    <raceList>
+                        <li>Human</li>
+                        <li>Alien_Centaur</li>
+                    </raceList>
+                    <thought>AteHumanlikeMeatDirect</thought>
+                    <ingredientThought>AteHumanIngredient</ingredientThought>
+                </li>
+            </ateThoughtSpecific>-->
+
+      </thoughtSettings>
+      <hairSettings>
+        <!-- <getsGreyAt>93.75</getsGreyAt> -->
+        <!-- <getsGreyAt>2147483647</getsGreyAt> -->
+        <!-- <getsGreyAt>200.55</getsGreyAt> -->
+      </hairSettings>
+
+      <relationSettings>
+        <relationChanceModifierLover>0</relationChanceModifierLover>
+        <relationChanceModifierExLover>0</relationChanceModifierExLover>
+
+        <relationChanceModifierFiance>0</relationChanceModifierFiance>
+        <relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+        <relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+
+        <relationChanceModifierParent>0</relationChanceModifierParent>
+        <relationChanceModifierChild>0</relationChanceModifierChild>
+        <relationChanceModifierSibling>0</relationChanceModifierSibling>
+        <!-- <renamer>
+			   <li>
+				  <relation>Parent</relation>
+				  <label>Adoptive Father</label>
+				  <femaleLabel>Adoptive Mother</femaleLabel>
+			   </li>
+			</renamer> -->
+      </relationSettings>
+
+
+      <raceRestriction>
+        <onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+        <apparelList>
+          <li>Apparel_CentaurPants</li>
+          <li>Apparel_CentaurHorseshoesSet</li>
+          <li>Apparel_CentaurBasicShirt</li>
+          <li>Apparel_CentaurCollarShirt</li>
+          <li>Apparel_CentaurFlakJacket</li>
+          <li>Apparel_CentaurFlakVest</li>
+          <li>Apparel_CentaurFlakPants</li>
+
+          <li>Apparel_CentaurParka</li>
+          <li>Apparel_CentaurJacket</li>
+          <li>Apparel_CentaurDuster</li>
+          <li>Apparel_CentaurPlateArmor</li>
+
+          <!--<li>Apparel_CentaurCollarShirt_Raised</li>-->
+          <!--<li>Apparel_CentaurShieldArmor</li>-->
+          <li>Apparel_CentaurAntimassBelt</li>
+
+          <li>Apparel_CentaurHeaddress</li>
+          <li>Apparel_ArmorReconCentaur</li>
+          <li>Apparel_ArmorMarineCentaur</li>
+          <li>Apparel_ArmorCataphractCentaur</li>
+
+          <li ExEx="Royalty">Apparel_PsyfocusCentaursuit</li>
+
+          <!--<li>Apparel_CentaurArchotechArmor</li>-->
+        </apparelList>
+		<!--
+        <whiteApparelList>
+          <li>Apparel_CowboyHat</li>
+          <li>Apparel_BowlerHat</li>
+          <li>Apparel_TribalHeaddress</li>
+          <li>Apparel_Tuque</li>
+          <li>Apparel_WarMask</li>
+          <li>Apparel_WarVeil</li>
+          <li>Apparel_SimpleHelmet</li>
+          <li>Apparel_AdvancedHelmet</li>
+          <li>Apparel_PsychicFoilHelmet</li>
+          <li>Apparel_ShieldBelt</li>
+          <li>Apparel_SmokepopBelt</li>
+
+
+
+          <li ExEx="Royalty">Apparel_PackBroadshield</li>
+          <li ExEx="Royalty">Apparel_PackJump</li>
+          <li ExEx="Royalty">Apparel_Gunlink</li>
+
+          <li ExEx="Royalty">Apparel_Beret</li>
+          <li ExEx="Royalty">Apparel_Coronet</li>
+          <li ExEx="Royalty">Apparel_Crown</li>
+          <li ExEx="Royalty">Apparel_CrownStellic</li>
+          <li ExEx="Royalty">Apparel_HatHood</li>
+          <li ExEx="Royalty">Apparel_HatLadies</li>
+          <li ExEx="Royalty">Apparel_HatTop</li>
+
+          <li ExEx="Royalty">Apparel_EltexSkullcap</li>
+          <li ExEx="Royalty">Apparel_PsyfocusHelmet</li>
+
+          <li>Apparel_ArmorHelmetRecon</li>
+          <li>Apparel_PowerArmorHelmet</li>
+          <li ExEx="Royalty">Apparel_ArmorHelmetCataphract</li>
+
+          <li>Apparel_ArmorHelmetReconPrestige</li>
+          <li>Apparel_ArmorMarineHelmetPrestige</li>
+          <li ExEx="Royalty">Apparel_ArmorHelmetCataphractPrestige</li>
+          <!- -<li>Apparel_ArmorHelmetReconClocked</li>
+          <li>Apparel_ArmorMarineHelmetClocked</li>
+          <li ExEx="Royalty">Apparel_ArmorHelmetCataphractClocked</li>- ->
+
+          <!- -<li>Apparel_PowerArmorHelmet_Clocked</li>- ->
+
+          <li>OrbitalTargeterBombardment</li>
+          <li>OrbitalTargeterPowerBeam</li>
+          <li>TornadoGenerator</li>
+          <li ExEx="Royalty">OrbitalTargeterMechCluster</li>
+          <li>Apparel_PsychicInsanityLance</li>
+          <li>Apparel_PsychicShockLance</li>
+        </whiteApparelList>
+		-->
+
+        <onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
+        <weaponList>
+          <!--<li>Gun_CentaurChargeShotgun</li>-->
+          <li>MeleeWeapon_PsyfocusStaffCentaur</li>
+          <li>Gun_CentaurPlasmaBlaster</li>
+          <li>Bow_Trishot</li>
+        </weaponList>
+
+        <!--<onlyDoRaceRestrictedRecipes>false</onlyDoRaceRestrictedRecipes>
+			<recipeList>
+			</recipeList>
+
+			<onlyGetRaceRestrictedTraits>false</onlyGetRaceRestrictedTraits>
+			<traitList>
+			</traitList>            
+
+			<onlyEatRaceRestrictedFood>false</onlyEatRaceRestrictedFood>
+			<foodList>
+			</foodList> 
+			
+			<onlyBuildRaceRestrictedBuildings>false</onlyBuildRaceRestrictedBuildings>
+			<buildingList>
+			</buildingList>
+			
+			<onlyDoRaceRestrictedPlants>false</onlyDoRaceRestrictedPlants>
+			<plantList>
+			</plantList>
+			
+			<conceptList>
+			</conceptList>
+
+			<workGiverList>
+			</workGiverList>-->
+
+      </raceRestriction>
+
+    </alienRace>
+
+  </AlienRace.ThingDef_AlienRace>
+</Defs>

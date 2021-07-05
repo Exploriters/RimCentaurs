@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ResearchProjectTagDef>
+    <defName>CentaurStart</defName>
+  </ResearchProjectTagDef>
+
+  <ResearchProjectTagDef>
+    <defName>CentaurStartTechprints</defName>
+  </ResearchProjectTagDef>
+  
+</Defs>

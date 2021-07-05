@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- 完成 -->
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBase">
+    <defName>CentaurSubsystem_AbsorbShield</defName>
+    <label>shield subsystem</label>
+    <description>A powerful shield generator, charged and prepared to absorb external damage.</description>
+    <sysTexturePath>Subsystems/AbsorbShield</sysTexturePath>
+    <descriptionHyperlinks />
+    <comps />
+    <stages>
+      <li>
+	    <minSeverity>1</minSeverity>
+		
+        <statFactors>
+		  
+        </statFactors>
+        <statOffsets>
+		  <PawnShieldEnergyMax>200</PawnShieldEnergyMax>
+		  <PawnShieldRechargeRate>10</PawnShieldRechargeRate>
+        </statOffsets>
+		
+      </li>
+    </stages>
+  </Explorite.HediffDef_Subsystem>
+  
+  <!-- 未实现 -->
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBase">
+    <defName>CentaurSubsystem_DamageControl</defName>
+    <label>damage control subsystem</label>
+    <description>A TODO DESC.</description>
+    <sysTexturePath>Subsystems/DamageControl</sysTexturePath>
+    <descriptionHyperlinks />
+    <comps />
+    <stages><li><minSeverity>1</minSeverity>
+		
+      <statFactors/>
+      <statOffsets/>
+		
+    </li></stages>
+  </Explorite.HediffDef_Subsystem>
+  
+  <!-- 未实现 -->
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBase">
+    <defName>CentaurSubsystem_SkillEnchanter</defName>
+    <label>skill enchanter subsystem</label>
+    <description>A TODO DESC.</description>
+    <descriptionHyperlinks />
+    <comps />
+    <stages><li><minSeverity>1</minSeverity>
+		
+      <statFactors/>
+      <statOffsets/>
+		
+    </li></stages>
+  </Explorite.HediffDef_Subsystem>
+  
+  <!-- 完成 -->
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBase">
+    <defName>CentaurSubsystem_NeedsCapacitor</defName>
+    <label>needs capacitor subsystem</label>
+    <description>A alternative stomach that can hold more things.</description>
+    <descriptionHyperlinks />
+    <tip>Food capacity: x333.33%</tip>
+    <comps />
+    <stages><li><minSeverity>1</minSeverity>
+		
+      <statFactors/>
+      <statOffsets/>
+		
+    </li></stages>
+  </Explorite.HediffDef_Subsystem>
+  
+  <!-- 未实现 -->
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBase">
+    <defName>CentaurSubsystem_CreativeInspire</defName>
+    <label>creative inspire subsystem</label>
+    <description>A TODO DESC.</description>
+    <descriptionHyperlinks />
+    <comps />
+    <stages><li><minSeverity>1</minSeverity>
+		
+      <statFactors/>
+      <statOffsets/>
+		
+    </li></stages>
+  </Explorite.HediffDef_Subsystem>
+  
+  <!-- 未实现 -->
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBase">
+    <defName>CentaurSubsystem_LowProfile</defName>
+    <label>low profile subsystem</label>
+    <description>A TODO DESC.</description>
+    <sysTexturePath>Subsystems/LowProfile</sysTexturePath>
+    <descriptionHyperlinks />
+    <comps />
+    <stages><li><minSeverity>1</minSeverity>
+		
+      <statFactors/>
+      <statOffsets/>
+		
+    </li></stages>
+  </Explorite.HediffDef_Subsystem>
+  
+  <!-- 完成 -->
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBase">
+    <defName>CentaurSubsystem_NaturePsyfocus</defName>
+    <label>nature psyfocus subsystem</label>
+    <description>A subsystem that can meditate, passively gain meditation focus at any time.</description>
+    <sysTexturePath>Subsystems/NaturePsyfocus</sysTexturePath>
+    <descriptionHyperlinks />
+    <comps>
+      <li Class="Explorite.HediffCompProperties_PassiveMeditationFocusGain">
+        <minStage>1</minStage>
+        <focusPerDay>1</focusPerDay>
+      </li>
+    </comps>
+    <stages><li><minSeverity>1</minSeverity>
+    </li></stages>
+  </Explorite.HediffDef_Subsystem>
+  
+  <!-- 完成 -->
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBase">
+    <defName>CentaurSubsystem_HazardAdaptation</defName>
+    <label>hazard adaptation subsystem</label>
+    <description>An expansion module for hazard protection capabilities to absorb heatstroke and toxic buildup.</description>
+    <sysTexturePath>Subsystems/HazardAdaptation</sysTexturePath>
+    <descriptionHyperlinks />
+    <tip>Absorb: toxic buildup, heatstroke</tip>
+    <comps />
+    <stages><li><minSeverity>1</minSeverity>
+		
+      <statFactors/>
+      <statOffsets/>
+		
+    </li></stages>
+  </Explorite.HediffDef_Subsystem>
+  
+  <!-- 完成 -->
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBase">
+    <defName>CentaurSubsystem_EquipmentRepaire</defName>
+    <label>serumites repaire subsystem</label>
+    <description>Keep secreting mech-serumites to repair any equipped outfits, weapons and hauling goods overtime. Reverse the rotten progress of hauling goods.</description>
+    <descriptionHyperlinks />
+    <comps>
+      <li Class="Explorite.HediffCompProperties_RepairApparelsOvertime">
+        <minStage>1</minStage>
+        <ticksBetweenHeal>3157.894736842105</ticksBetweenHeal>
+      </li>
+    </comps>
+    <stages><li><minSeverity>1</minSeverity>
+    </li></stages>
+  </Explorite.HediffDef_Subsystem>
+  
+  <!-- 完成 -->
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBase">
+    <defName>CentaurSubsystem_AntiMass</defName>
+    <label>anti-mass subsystem</label>
+    <description>A subsystem that enhances body strength from inside, greatly increases the hauling mass capacity. Cannot reduce weight of the character.</description>
+    <sysTexturePath>Subsystems/AntiMass</sysTexturePath>
+    <descriptionHyperlinks />
+    <tip>mass carry max: x285.714%</tip>
+    <comps />
+    <stages><li><minSeverity>1</minSeverity>
+		
+      <statFactors/>
+      <statOffsets/>
+		
+    </li></stages>
+  </Explorite.HediffDef_Subsystem>
+  
+  <!-- 未实现 -->
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBase">
+    <defName>CentaurSubsystem_LifeSupport</defName>
+    <label>life support subsystem</label>
+    <description>A TODO DESC.</description>
+    <descriptionHyperlinks />
+    <comps />
+    <stages><li><minSeverity>1</minSeverity>
+		
+      <statFactors/>
+      <statOffsets/>
+		
+    </li></stages>
+  </Explorite.HediffDef_Subsystem>
+  
+  <!-- 未实现 -->
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBase">
+    <defName>CentaurSubsystem_AlternativeManipulation</defName>
+    <label>alternative manipulation subsystem</label>
+    <description>A TODO DESC.</description>
+    <descriptionHyperlinks />
+    <comps />
+    <stages><li><minSeverity>1</minSeverity>
+		
+      <statFactors/>
+      <statOffsets/>
+		
+    </li></stages>
+  </Explorite.HediffDef_Subsystem>
+  
+  <!-- 未实现 -->
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBase">
+    <defName>CentaurSubsystem_FogScanSensory</defName>
+    <label>life sensory subsystem</label>
+    <description>A TODO DESC.</description>
+    <descriptionHyperlinks />
+    <comps />
+    <stages><li><minSeverity>1</minSeverity>
+		
+      <statFactors>
+		  <PawnTrapSpringChance>0.5</PawnTrapSpringChance>
+      </statFactors>
+      <statOffsets/>
+		
+    </li></stages>
+  </Explorite.HediffDef_Subsystem>
+  
+  <!-- 未实现 -->
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBase">
+    <defName>CentaurSubsystem_DeepArmor</defName>
+    <label>deep armor subsystem</label>
+    <description>A TODO DESC.</description>
+    <descriptionHyperlinks />
+    <comps />
+    <stages><li><minSeverity>1</minSeverity>
+		
+      <statFactors/>
+      <statOffsets/>
+		
+    </li></stages>
+  </Explorite.HediffDef_Subsystem>
+  
+  <!-- 完成 -->
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBase">
+    <defName>CentaurSubsystem_TargetAcquiring</defName>
+    <label>target acquiring subsystem</label>
+    <description>A subsystem used to coordinate the use of ranged weapons for users, reduce warm-up time and increase shooting accuracy.</description>
+    <descriptionHyperlinks />
+    <comps />
+    <stages><li><minSeverity>1</minSeverity>
+		
+      <statFactors>
+		  <AimingDelayFactor>0.70710678118654752440084436210485</AimingDelayFactor>
+		  <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+      </statFactors>
+      <statOffsets/>
+		
+    </li></stages>
+  </Explorite.HediffDef_Subsystem>
+  
+  <!-- 未实现 -->
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBase">
+    <defName>CentaurSubsystem_MammalsLink</defName>
+    <label>mammals link subsystem</label>
+    <description>A TODO DESC.</description>
+    <descriptionHyperlinks />
+    <comps />
+    <stages><li><minSeverity>1</minSeverity>
+		
+      <statFactors>
+        <TameAnimalChance>3.0</TameAnimalChance>
+        <TrainAnimalChance>3.0</TrainAnimalChance>
+      </statFactors>
+      <statOffsets/>
+		
+    </li></stages>
+  </Explorite.HediffDef_Subsystem>
+  
+  <!-- 未实现 -->
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBase">
+    <defName>CentaurSubsystem_Thorns</defName>
+    <label>thorns subsystem</label>
+    <description>A TODO DESC.</description>
+    <descriptionHyperlinks />
+    <comps />
+    <stages><li><minSeverity>1</minSeverity>
+		
+      <statFactors/>
+      <statOffsets/>
+		
+    </li></stages>
+  </Explorite.HediffDef_Subsystem>
+  
+  <!-- 未实现 -->
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBase">
+    <defName>CentaurSubsystem_KillAure</defName>
+    <label>killAure subsystem</label>
+    <description>A TODO DESC.</description>
+    <descriptionHyperlinks />
+    <comps />
+    <stages><li><minSeverity>1</minSeverity>
+		
+      <statFactors/>
+      <statOffsets/>
+		
+    </li></stages>
+  </Explorite.HediffDef_Subsystem>
+  
+  <!-- 未实现 -->
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBase">
+    <defName>CentaurSubsystem_Incinerator</defName>
+    <label>incinerator subsystem</label>
+    <description>A TODO DESC.</description>
+    <descriptionHyperlinks />
+    <comps />
+    <stages><li><minSeverity>1</minSeverity>
+		
+      <statFactors/>
+      <statOffsets/>
+		
+    </li></stages>
+  </Explorite.HediffDef_Subsystem>
+  
+  <!-- 未实现 -->
+  <Explorite.HediffDef_Subsystem ParentName="SubsystemHediffBase">
+    <defName>CentaurSubsystem_SnowSkater</defName>
+    <label>snow skater subsystem</label>
+    <description>A TODO DESC.</description>
+    <descriptionHyperlinks />
+    <comps />
+    <stages><li><minSeverity>1</minSeverity>
+		
+      <statFactors/>
+      <statOffsets/>
+		
+    </li></stages>
+  </Explorite.HediffDef_Subsystem>
+  
+</Defs>

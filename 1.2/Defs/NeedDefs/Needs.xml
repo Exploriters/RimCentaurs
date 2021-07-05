@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <NeedDef>
+    <defName>HypothermiaAbsorption</defName>
+    <needClass>Explorite.Need_HypothermiaAbsorption</needClass>
+    <label>hazard resist</label>
+    <description>Absorb damage from environment overtime, allows exposing to hazard for a short time.</description>
+    <listPriority>485</listPriority>
+    <major>false</major>
+    <showForCaravanMembers>false</showForCaravanMembers>
+  </NeedDef>
+  
+  <NeedDef>
+    <defName>CentaurCreativityInspiration</defName>
+    <needClass>Explorite.Need_CentaurCreativityInspiration</needClass>
+    <label>creativity inspiration</label>
+    <description>Creativity inspiration reward for having a long time happiness.</description>
+    <listPriority>85</listPriority>
+    <scaleBar>true</scaleBar>
+    <major>false</major>
+    <showForCaravanMembers>false</showForCaravanMembers>
+    <freezeWhileSleeping>true</freezeWhileSleeping>
+  </NeedDef>
+  
+</Defs>

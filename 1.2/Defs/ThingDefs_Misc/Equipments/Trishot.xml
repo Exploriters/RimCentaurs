@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseWeapon" Name="TrishotBase" Abstract="True">
+    <techLevel>Archotech</techLevel>
+    <tradeability>None</tradeability>
+    <tradeTags>
+      <li>CentaurEndgame</li>
+    </tradeTags>
+    <soundInteract>Bow_Large</soundInteract>
+    <soundDrop>Bow_Large</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Mass>12.5</Mass>
+      <!-- <AccuracyTouch>0.425</AccuracyTouch>
+      <AccuracyShort>0.383</AccuracyShort>
+      <AccuracyMedium>0.525</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong> -->
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+      <!-- <EquipDelay>3</EquipDelay> -->
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+	  <SellPriceFactor>1</SellPriceFactor>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivity>0.75</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate>0.2475</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+	<stackLimit>1</stackLimit>
+    <weaponTags>
+      <li>Gun</li>
+      <li>CentaurRanged</li>
+      <li>CentaurTrishot</li>
+      <li>CentaurTracedTrishot</li>
+    </weaponTags>
+    <comps>
+      <!-- <li Class="Explorite.CompProperties_SelfHealOvertime">
+        <detlaHpPerSec>3</detlaHpPerSec>
+      </li> -->
+      <!-- <li>
+        <compClass>CompEquippable</compClass>
+      </li> -->
+      <li>
+        <compClass>Explorite.Comp_VerbSaveable</compClass>
+      </li>
+      <!-- <li>
+        <compClass>Explorite.CompUnbreakableViaDamage</compClass>
+      </li> -->
+    </comps>
+    <!-- <smeltable>false</smeltable> -->
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>ice constructor</label>
+        <capacities>
+          <li>Frostblast</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>1</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="TrishotBase">
+    <defName>Bow_Trishot</defName>
+    <label>trishot</label>
+    <description>A powerful massive bow with long range that fires heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst. It requires powerful arms to use it that only available to Centaurs. With a massive weight and sharp edge on it, it can also be a deadly melee weapon.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/BowTrishot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>250000</MarketValue>
+      <!--<WorkToMake>200000</WorkToMake>-->
+    </statBases>
+    <!--<costList>
+      <ThermoDamper>1</ThermoDamper>
+	  <!- - <Bow_Trishot_2Stage>1</Bow_Trishot_2Stage> - ->
+      <Orangice_Blue>10</Orangice_Blue>
+      <Orangice>10</Orangice>
+      <MedicineUltratech>25</MedicineUltratech>
+      <MechSerumHealer>1</MechSerumHealer>
+	  <Gun_CentaurPlasmaBlaster>1</Gun_CentaurPlasmaBlaster>
+    </costList>-->
+    <comps>
+      <li Class="CompProperties_Art">
+		<!--<compClass>Explorite.CompArt_Qualityless</compClass>-->
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <!-- <minQualityForArtistic>Excellent</minQualityForArtistic> -->
+        <minQualityForArtistic>Awful</minQualityForArtistic>
+      </li>
+      <!-- <li>
+        <compClass>CompQuality</compClass>
+      </li> -->
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+	<!-- <recipeMaker> 	
+	  <researchPrerequisites>
+		<li>CentaurStoryStep3rd</li>
+		<li>CentaurReverseEngineeringHumanTech</li>
+	  </researchPrerequisites>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    </recipeMaker> -->
+	<verbs>
+      <li Class="Explorite.VerbProperties_Custom">
+        <verbClass>Explorite.Verb_Shoot_OvertickShotgun</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <requireLineOfSight>true</requireLineOfSight>
+        <defaultProjectile>Arrow_Trishot</defaultProjectile>
+        <forcedMissRadius>3</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <noiseRadius>20</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>4.2</warmupTime>
+        <range>79.95</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <onlyManualCast>false</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+
+		<isPrimary>true</isPrimary>
+        <desc>Standard Trishot mode, fires triple heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst.</desc>
+        <label>triple shot</label>
+        <texPath>UI/Commands/BowTrishot_ModeTri</texPath>
+        <texPathSelected>UI/Commands/BowTrishot_ModeTri_Select</texPathSelected>
+      </li>
+      <li Class="Explorite.VerbProperties_Custom">
+        <verbClass>Explorite.Verb_Shoot_OvertickShotgun</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <requireLineOfSight>false</requireLineOfSight>
+        <defaultProjectile>Arrow_Trishot_Hyper_20D</defaultProjectile>
+        <forcedMissRadius>3</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>7</ai_AvoidFriendlyFireRadius>
+        <noiseRadius>20</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>9</warmupTime>
+        <range>119.95</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>20</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <onlyManualCast>false</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+
+        <desc>Icos mode that launch empowered scatting hyper shot in massive amount but deals low damage each, shoot longer range and pass over walls.</desc>
+        <label>icos shot</label>
+        <texPath>UI/Commands/BowTrishot_ModeIcos</texPath>
+        <texPathSelected>UI/Commands/BowTrishot_ModeIcos_Select</texPathSelected>
+      </li>
+      <li Class="Explorite.VerbProperties_Custom">
+        <verbClass>Explorite.Verb_Shoot_Cooldown</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <requireLineOfSight>false</requireLineOfSight>
+        <defaultProjectile>Arrow_Trishot_Super</defaultProjectile>
+        <forcedMissRadius>0.05</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>50</ai_AvoidFriendlyFireRadius>
+        <noiseRadius>20</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>3.75</warmupTime>
+        <range>9999.95</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>20</muzzleFlashScale>
+        <onlyManualCast>false</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+		
+        <cooldownTick>18000</cooldownTick>
+        <redirectVerbAfterShoot>0</redirectVerbAfterShoot>
+
+        <desc>One shot mode that launch a extremely powerful singe shot, shoot ultra long range fly over walls. Deals devastative damage and teleport the caster to the destnation, without letting the caster taking damage from own's shot. Takes really long time to take a shot, and needs cooldown after a cast.</desc>
+        <label>one shot</label>
+        <texPath>UI/Commands/BowTrishot_ModeOne</texPath>
+        <texPathSelected>UI/Commands/BowTrishot_ModeOne_Select</texPathSelected>
+        <!-- <texPathCooldown>UI/Commands/BowTrishot_ModeOne_Cooldown</texPathCooldown> -->
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <ThingDef ParentName="TrishotBase">
+    <defName>Bow_Trishot_1Stage</defName>
+    <label>trishot malfunction</label>
+    <description>A powerful massive bow with long range that fires heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst. It requires powerful arms to use it that only available to Centaurs. With a massive weight and sharp edge on it, it can also be a deadly melee weapon.\n\nThis weapon is currently badly damaged, some functions is unavailable now.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/BowTrishotDamaged</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>100000</MarketValue>
+    </statBases>
+	
+	<verbs>
+      <li Class="Explorite.VerbProperties_Custom">
+        <verbClass>Explorite.Verb_Shoot_OvertickShotgun</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <requireLineOfSight>true</requireLineOfSight>
+        <defaultProjectile>Arrow_Trishot</defaultProjectile>
+        <forcedMissRadius>3</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <noiseRadius>20</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>4.2</warmupTime>
+        <range>39.95</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <onlyManualCast>false</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+
+		<isPrimary>true</isPrimary>
+        <desc>Standard Trishot mode, fires triple heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst.\n\nDamaged:\nRange is halved.</desc>
+        <label>triple shot</label>
+        <texPath>UI/Commands/BowTrishot_ModeTri</texPath>
+        <texPathSelected>UI/Commands/BowTrishot_ModeTri_Select</texPathSelected>
+      </li>
+      <li Class="Explorite.VerbProperties_Custom">
+        <verbClass>Explorite.Verb_DoNothing</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <requireLineOfSight>false</requireLineOfSight>
+        <defaultProjectile>Arrow_Trishot_Hyper_20D</defaultProjectile>
+        <forcedMissRadius>3</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>7</ai_AvoidFriendlyFireRadius>
+        <noiseRadius>20</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>9</warmupTime>
+        <range>119.95</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>20</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <onlyManualCast>false</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+
+        <desc>Icos mode that launch empowered scatting hyper shot in massive amount but deals low damage each, shoot longer range and pass over walls.</desc>
+        <label>icos shot</label>
+        <texPath>UI/Commands/BowTrishot_ModeIcos</texPath>
+        <texPathSelected>UI/Commands/BowTrishot_ModeIcos_Select</texPathSelected>
+		
+		<disable>true</disable>
+		<disableReason>This weapon needs to be repaired before this mode available.</disableReason>
+      </li>
+      <li Class="Explorite.VerbProperties_Custom">
+        <verbClass>Explorite.Verb_DoNothing</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <requireLineOfSight>false</requireLineOfSight>
+        <defaultProjectile>Arrow_Trishot_Super</defaultProjectile>
+        <forcedMissRadius>0.05</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>50</ai_AvoidFriendlyFireRadius>
+        <noiseRadius>20</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>37.5</warmupTime>
+        <range>9999.95</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>20</muzzleFlashScale>
+        <onlyManualCast>false</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+
+        <desc>One shot mode that launch a extremely powerful singe shot, shoot ultra long range fly over walls. Deals devastative damage and teleport the caster to the destnation, without letting the caster taking damage from own's shot. Takes really long time to take a shot, and needs cooldown after a cast.</desc>
+        <label>one shot</label>
+        <texPath>UI/Commands/BowTrishot_ModeOne</texPath>
+        <texPathSelected>UI/Commands/BowTrishot_ModeOne_Select</texPathSelected>
+		
+		<disable>true</disable>
+		<disableReason>This weapon needs to be repaired before this mode available.</disableReason>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <ThingDef ParentName="TrishotBase">
+    <defName>Bow_Trishot_2Stage</defName>
+    <label>trishot prototype</label>
+    <description>A powerful massive bow with long range that fires heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst. It requires powerful arms to use it that only available to Centaurs. With a massive weight and sharp edge on it, it can also be a deadly melee weapon.\n\nThis weapon is currently damaged, some functional is unavailable now.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/BowTrishotDamaged2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <!--<WorkToMake>6000</WorkToMake>-->
+      <MarketValue>175000</MarketValue>
+    </statBases>
+	<verbs>
+      <li Class="Explorite.VerbProperties_Custom">
+        <verbClass>Explorite.Verb_Shoot_OvertickShotgun</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <requireLineOfSight>true</requireLineOfSight>
+        <defaultProjectile>Arrow_Trishot</defaultProjectile>
+        <forcedMissRadius>3</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <noiseRadius>20</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>4.2</warmupTime>
+        <range>79.95</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <onlyManualCast>false</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+
+		<isPrimary>true</isPrimary>
+        <desc>Standard Trishot mode, fires triple heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst.</desc>
+        <label>triple shot</label>
+        <texPath>UI/Commands/BowTrishot_ModeTri</texPath>
+        <texPathSelected>UI/Commands/BowTrishot_ModeTri_Select</texPathSelected>
+      </li>
+      <li Class="Explorite.VerbProperties_Custom">
+        <verbClass>Explorite.Verb_Shoot_OvertickShotgun</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <requireLineOfSight>false</requireLineOfSight>
+        <defaultProjectile>Arrow_Trishot_Hyper_20D</defaultProjectile>
+        <forcedMissRadius>3</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>7</ai_AvoidFriendlyFireRadius>
+        <noiseRadius>20</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>9</warmupTime>
+        <range>59.95</range>
+        <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+        <burstShotCount>20</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <onlyManualCast>false</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+
+        <desc>Icos mode that launch empowered scatting hyper shot in massive amount but deals low damage each, shoot longer range and pass over walls.\n\nDamaged:\nRange are halved.</desc>
+        <label>icos shot</label>
+        <texPath>UI/Commands/BowTrishot_ModeIcos</texPath>
+        <texPathSelected>UI/Commands/BowTrishot_ModeIcos_Select</texPathSelected>
+      </li>
+      <li Class="Explorite.VerbProperties_Custom">
+        <verbClass>Explorite.Verb_DoNothing</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <requireLineOfSight>false</requireLineOfSight>
+        <defaultProjectile>Arrow_Trishot_Super</defaultProjectile>
+        <forcedMissRadius>0.05</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>50</ai_AvoidFriendlyFireRadius>
+        <noiseRadius>20</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>37.5</warmupTime>
+        <range>9999.95</range>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>Bow_Large</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>20</muzzleFlashScale>
+        <onlyManualCast>false</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <rangedFireRulepack>Combat_RangedFire</rangedFireRulepack>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+
+        <desc>One shot mode that launch a extremely powerful singe shot, shoot ultra long range fly over walls. Deals devastative damage and teleport the caster to the destnation, without letting the caster taking damage from own's shot. Takes really long time to take a shot, and needs cooldown after a cast.</desc>
+        <label>one shot</label>
+        <texPath>UI/Commands/BowTrishot_ModeOne</texPath>
+        <texPathSelected>UI/Commands/BowTrishot_ModeOne_Select</texPathSelected>
+		
+		<disable>true</disable>
+		<disableReason>This weapon needs to be repaired before this mode available.</disableReason>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+</Defs>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <RecipeDef>
+    <defName>Make_MedicineUltratech_By_MechSerumArchotech</defName>
+    <label>make glitterworld medicine</label>
+    <description>Make glitterworld medicine by archotech mech serum.</description>
+    <jobString>Making glitterworld medicine.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>10000</workAmount>
+    <unfinishedThingDef>UnfinishedMedicine</unfinishedThingDef>
+	<productHasIngredientStuff>false</productHasIngredientStuff>
+	<dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>  
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MechSerumArchotech</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MechSerumArchotech</li>
+        <li>MedicineIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <MedicineUltratech>50</MedicineUltratech>
+    </products>
+	<researchPrerequisites>
+	  <li>MedicineProduction</li>
+	  <li>CentaurReverseEngineeringHumanTech</li>
+	</researchPrerequisites>
+    <skillRequirements>
+      <Crafting>9</Crafting>
+      <Intellectual>9</Intellectual>
+    </skillRequirements>
+    <workSkill>Intellectual</workSkill>
+    <recipeUsers Inherit="False">
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <workSkillLearnFactor>1</workSkillLearnFactor>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Make_ArchotechComponent_ByDeconstruct</defName>
+    <label>deconstruct archotech for component</label>
+    <description>Deconstruct archotech objects to make archotech component.</description>
+    <jobString>Making archotech component.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>2000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredientValueGetterClass>Explorite.IngredientValueGetter_MarketValue</ingredientValueGetterClass>
+    <recipeUsers Inherit="False">
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AIPersonaCore</li>
+            <li>Apparel_PsychicInsanityLance</li>
+            <li>Apparel_PsychicShockLance</li>
+            <li>ArchotechArm</li>
+            <li>ArchotechEye</li>
+            <li>ArchotechLeg</li>
+            <li>PsychicAnimalPulser</li>
+            <li>PsychicSoothePulser</li>
+            <li>PsychicAmplifier</li>
+            <li>PsychicEmanator</li>
+            <li>Gloomlight</li>
+            <li>UnstablePowerCell</li>
+            <li>VanometricPowerCell</li>
+          </thingDefs>
+          <categories>
+            <li>Artifacts</li>
+            <li>BodyPartsArchotech</li>
+          </categories>
+          <disallowedThingDefs />
+        </filter>
+        <count>4000</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+            <li>AIPersonaCore</li>
+            <li>Apparel_PsychicInsanityLance</li>
+            <li>Apparel_PsychicShockLance</li>
+            <li>ArchotechArm</li>
+            <li>ArchotechEye</li>
+            <li>ArchotechLeg</li>
+            <li>PsychicAnimalPulser</li>
+            <li>PsychicSoothePulser</li>
+            <li>PsychicAmplifier</li>
+            <li>PsychicEmanator</li>
+            <li>Gloomlight</li>
+            <li>UnstablePowerCell</li>
+            <li>VanometricPowerCell</li>
+      </thingDefs>
+	  <categories>
+		<li>Artifacts</li>
+		<li>BodyPartsArchotech</li>
+	  </categories>
+      <disallowedThingDefs />
+    </fixedIngredientFilter>
+	<researchPrerequisites>
+	  <li>CentaurStoryStep1st</li>
+	</researchPrerequisites>
+    <defaultIngredientFilter>
+      <thingDefs />
+      <categories />
+      <disallowedThingDefs />
+    </defaultIngredientFilter>
+    <products>
+      <ComponentArchotech>1</ComponentArchotech>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+</Defs>

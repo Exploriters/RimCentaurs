@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef>
+    <defName>Apparel_CentaurHeaddress</defName>
+    <label>centaurs headdress</label>
+    <description>A decorative headdress for centaur's pair of great ears, hiding any headgear that covers the face.</description>
+    <tradeability>Sellable</tradeability>
+    <!--<costStuffCount>50</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>-->
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <!--<MarketValue>200</MarketValue>-->
+      <!--<WorkToMake>300</WorkToMake>-->
+      <WorkToMake>1</WorkToMake>
+      <Mass>0.05</Mass>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>0.0</DeteriorationRate>
+      <EquipDelay>0.8</EquipDelay>
+      <Beauty>-3</Beauty>
+    </statBases>
+    <costList>
+      <TriCapacitorCell>1</TriCapacitorCell>
+    </costList>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/UnfinishedComponent</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <!--<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>-->
+    </graphicData>
+    <equippedStatOffsets>
+      <SocialImpact>0.2</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+        <!--<li>Overhead</li>-->
+      </layers>
+      <tags>
+        <li>CentaurBodyFit</li>
+        <li>CentaurRetroStart</li>
+        <li>PrestigeCombatGear</li>
+        <li>Psychic</li>
+        <li>CentaurRoyale</li>
+        <!--<li>EVA</li>-->
+      </tags>
+      <wornGraphicPath isNull="True" />
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <defaultOutfitTags Inherit="False">
+        <li>CentaurOutfit</li>
+      </defaultOutfitTags>
+    </apparel>
+    <!--<colorGenerator Inherit="False" isNull="True" />-->
+    <thingCategories Inherit="False">
+      <li>CentaurApparels</li>
+    </thingCategories>
+    <recipeMaker>
+	  <researchPrerequisite Inherit="False" />
+	  <researchPrerequisites>
+		<!--<li ExEx="Royalty">RoyalApparel</li>-->
+		<!--<li ExEx="~Royalty">ComplexClothing</li>-->
+		<li>CentaurReverseEngineeringHumanTech</li>
+	  </researchPrerequisites>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <unfinishedThingDef Inherit="False"/>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Gold</li>
+          <li>Silver</li>
+          <li>Plasteel</li>
+          <li>Jade</li>
+          <li>Uranium</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+	
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>14</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <techLevel>Spacer</techLevel>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="Explorite.CompProperties_SelfHealOvertime">
+        <detlaHpPerSec>0.1</detlaHpPerSec>
+	  </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="ApparelMakeableBase" ExEx="Royalty">
+    <defName>Apparel_PsyfocusCentaursuit</defName>
+    <label>eltex centaur suit</label>
+    <description>A suit embedded with special psychic focusing materials for centaurs. These enhance psychic sensitivity and help dissipate neural heat.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/CentaurCollarShirt/CentaurCollarShirt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tradeability>Sellable</tradeability>
+    <thingCategories Inherit="False">
+      <li>CentaurApparels</li>
+    </thingCategories>
+    <statBases>
+      <MarketValue>7500</MarketValue>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>1.25</Mass>
+	  
+      <ArmorRating_Sharp>0.126</ArmorRating_Sharp><!-- 0.07 -->
+      <ArmorRating_Blunt>0</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.072</ArmorRating_Heat><!-- 0.04 -->
+      <Insulation_Cold>46.8</Insulation_Cold><!-- 26 -->
+      <Insulation_Heat>5.4</Insulation_Heat><!-- 3 -->
+	  
+      <EquipDelay>5</EquipDelay>
+      <WorkToMake>1500</WorkToMake>
+      <DeteriorationRate>0.0</DeteriorationRate>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivity>0.675</PsychicSensitivity>
+      <!--<PsychicSensitivity>0.45</PsychicSensitivity>-->
+      <PsychicEntropyRecoveryRate>0.495</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <costList>
+      <Apparel_PsyfocusRobe>1</Apparel_PsyfocusRobe>
+      <Apparel_PsyfocusVest>1</Apparel_PsyfocusVest>
+      <Apparel_PsyfocusShirt>1</Apparel_PsyfocusShirt>
+    </costList>
+    <costStuffCount Inherit="False" IsNull="True" />
+    <stuffCategories Inherit="False" IsNull="True" />
+    <techLevel>Ultra</techLevel>
+    <!--<tradeTags>
+      <li>PsychicApparel</li>
+    </tradeTags>-->
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>CentaurTorso</li><li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>CentaurLegs</li>
+        <li>Hands</li>
+        <li>CentaurHooves</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurCollarShirt/CentaurCollarShirt</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>CentaurOutfit</li>
+      </defaultOutfitTags>
+      <tags>
+        <li>CentaurBodyFit</li>
+        <li>Psychic</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <only>(51,27,49)</only>
+        </li>
+        <li>
+          <only>(57,87,93)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedApparelStuffless</unfinishedThingDef>
+	  <researchPrerequisites>
+		<li>ComplexClothing</li>
+		<li>CentaurReverseEngineeringHumanTech</li>
+	  </researchPrerequisites>
+    </recipeMaker>
+	
+    <!--<tickerType>Rare</tickerType>-->
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <comps Inherit="False">
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <!--<li Class="Explorite.CompProperties_SelfHealOvertime">
+        <detlaHpPerSec>0.1</detlaHpPerSec>
+	  </li>-->
+    </comps>
+  </ThingDef>
+  
+</Defs>

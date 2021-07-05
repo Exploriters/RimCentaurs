@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--<AbilityDef ParentName="PsycastBase">
+    <defName>PsychicDeafCentaur</defName>
+    <label>Psy-deaf</label>
+    <description>Block pain pathways in the target's brain for a short time. This can allow a person to move and act even with grievous injuries which would normally incapacitate them.</description>
+    <level>1</level>
+    <iconPath>UI/Abilities/Painblock</iconPath>
+    <hotKey>Misc1</hotKey>
+    <statBases>
+      <Ability_EntropyGain>0</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+      <Ability_Duration>120</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <warmupTime>0.25</warmupTime>
+      <range>-1</range>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+        <canTargetAnimals>True</canTargetAnimals>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class = "CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>PsychicDeafCentaur</hediffDef>
+        <durationMultiplier>PsychicSensitivity</durationMultiplier>
+        <psychic>True</psychic>
+        <applicableToMechs>True</applicableToMechs>
+      </li>
+      <li Class="CompProperties_AbilityMoteOnTarget">
+        <moteDef>Mote_PsycastPsychicEffect</moteDef>
+      </li>
+    </comps>
+  </AbilityDef>-->
+
+</Defs>

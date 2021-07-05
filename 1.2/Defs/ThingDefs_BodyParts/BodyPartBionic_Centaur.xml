@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>BionicCentaurTail</defName>
+    <label>bionic tail</label>
+    <labelNoun>a bionic tail</labelNoun>
+    <description>An installed bionic tail.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BionicCentaurTail</ThingDef>
+    </descriptionHyperlinks>
+	<spawnThingOnRemoved>BionicCentaurTail</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <betterThanNatural>true</betterThanNatural>
+      <!--<partEfficiency>1.25</partEfficiency>-->
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>BionicCentaurTail</defName>
+    <label>bionic tail</label>
+    <description>An advanced artificial tail. A biogel nerve bundle runs with mini-servos, surrounded by a lattice-dust healing system. It can adapt to fit most kinds of creatures upon being implanted, matches the performance of a biological tail.</description>
+    <descriptionHyperlinks>
+      <HediffDef>BionicCentaurTail</HediffDef>
+      <RecipeDef>InstallBionicCentaurTail</RecipeDef>
+    </descriptionHyperlinks>
+	<costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <statBases>
+      <Mass>2</Mass>
+    </statBases>
+    <recipeMaker>
+	  <researchPrerequisite Inherit="False" />
+	  <researchPrerequisites>
+		<li>Bionics</li>
+		<li>CentaurReverseEngineeringHumanTech</li>
+	  </researchPrerequisites>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallBionicCentaurTail</defName>
+    <label>install bionic tail</label>
+    <description>Install a bionic tail.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BionicCentaurTail</ThingDef>
+      <HediffDef>BionicCentaurTail</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic tail.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicCentaurTail</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BionicCentaurTail</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Tail</li>
+      <li>CentaurTail</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicCentaurTail</addsHediff>
+  </RecipeDef>
+  
+</Defs>
