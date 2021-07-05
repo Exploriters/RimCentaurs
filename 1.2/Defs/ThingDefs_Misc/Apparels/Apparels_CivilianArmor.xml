@@ -218,6 +218,7 @@
     </costList>
     <apparel>
       <bodyPartGroups>
+        <li>Legs</li>
         <li>CentaurLegs</li>
       </bodyPartGroups>
       <layers>

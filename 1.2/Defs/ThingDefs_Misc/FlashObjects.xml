@@ -49,7 +49,6 @@
       <effectWorking>Smith</effectWorking>
       <soundWorking>Recipe_Machining</soundWorking>
       <recipeUsers>
-        <li>CraftingSpot</li>
         <li>FabricationBench</li>
       </recipeUsers>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
