@@ -468,65 +468,21 @@
               <bodyPart>left ear</bodyPart>
               <inFrontOfBody>true</inFrontOfBody>
               <drawnInBed>true</drawnInBed>
+              <defaultOffset>Head</defaultOffset>
               <hiddenUnderApparelTag>
                 <li>HideCentaurEar</li>
               </hiddenUnderApparelTag>
               <offsets>
-                <south>
-                  <bodyTypes>
-                    <CentaurMale>(-.425,0.95)</CentaurMale>
-                    <CentaurFemale>(-.425,0.95)</CentaurFemale>
-                  </bodyTypes>
-                  <portraitBodyTypes>
-                    <CentaurMale>(-.425,0.95)</CentaurMale>
-                    <CentaurFemale>(-.425,0.95)</CentaurFemale>
-                  </portraitBodyTypes>
-                  <crownTypes>
-                    <Normal_Average>(0,0)</Normal_Average>
-                    <Normal_Pointy>(0,0)</Normal_Pointy>
-                    <Normal_Wide>(0,0)</Normal_Wide>
-                    <Narrow_Average>(0,0)</Narrow_Average>
-                    <Narrow_Pointy>(0,0)</Narrow_Pointy>
-                    <Narrow_Wide>(0,0)</Narrow_Wide>
-                  </crownTypes>
-                </south>
                 <north>
-                  <bodyTypes>
-                    <CentaurMale>(0,1.1)</CentaurMale>
-                    <CentaurFemale>(0,1.1)</CentaurFemale>
-                  </bodyTypes>
-                  <portraitBodyTypes>
-                    <CentaurMale>(0,1.1)</CentaurMale>
-                    <CentaurFemale>(0,1.1)</CentaurFemale>
-                  </portraitBodyTypes>
-                  <crownTypes>
-                    <Normal_Average>(0,0)</Normal_Average>
-                    <Normal_Pointy>(0,0)</Normal_Pointy>
-                    <Normal_Wide>(0,0)</Normal_Wide>
-                    <Narrow_Average>(0,0)</Narrow_Average>
-                    <Narrow_Pointy>(0,0)</Narrow_Pointy>
-                    <Narrow_Wide>(0,0)</Narrow_Wide>
-                  </crownTypes>
+				  <offset>(0,0.225)</offset>
                 </north>
+                <south>
+				  <offset>(0,0.225)</offset>
+                </south>
                 <east>
-                  <bodyTypes>
-                    <CentaurMale>(-.425,0.95)</CentaurMale>
-                    <CentaurFemale>(-.425,0.95)</CentaurFemale>
-                  </bodyTypes>
-                  <portraitBodyTypes>
-                    <CentaurMale>(-.425,0.95)</CentaurMale>
-                    <CentaurFemale>(-.425,0.95)</CentaurFemale>
-                  </portraitBodyTypes>
-                  <crownTypes>
-                    <Normal_Average>(0,0)</Normal_Average>
-                    <Normal_Pointy>(0,0)</Normal_Pointy>
-                    <Normal_Wide>(0,0)</Normal_Wide>
-                    <Narrow_Average>(0,0)</Narrow_Average>
-                    <Narrow_Pointy>(0,0)</Narrow_Pointy>
-                    <Narrow_Wide>(0,0)</Narrow_Wide>
-                  </crownTypes>
+				  <offset>(0,0.225)</offset>
                 </east>
-              </offsets>
+			  </offsets>
             </li>
 			<li Class="Explorite.BodyAddon_MX">
               <drawSize>1</drawSize>
@@ -535,65 +491,21 @@
               <bodyPart>right ear</bodyPart>
               <inFrontOfBody>true</inFrontOfBody>
               <drawnInBed>true</drawnInBed>
+              <defaultOffset>Head</defaultOffset>
               <hiddenUnderApparelTag>
                 <li>HideCentaurEar</li>
               </hiddenUnderApparelTag>
               <offsets>
-                <south>
-                  <bodyTypes>
-                    <CentaurMale>(-.425,0.95)</CentaurMale>
-                    <CentaurFemale>(-.425,0.95)</CentaurFemale>
-                  </bodyTypes>
-                  <portraitBodyTypes>
-                    <CentaurMale>(-.425,0.95)</CentaurMale>
-                    <CentaurFemale>(-.425,0.95)</CentaurFemale>
-                  </portraitBodyTypes>
-                  <crownTypes>
-                    <Normal_Average>(0,0)</Normal_Average>
-                    <Normal_Pointy>(0,0)</Normal_Pointy>
-                    <Normal_Wide>(0,0)</Normal_Wide>
-                    <Narrow_Average>(0,0)</Narrow_Average>
-                    <Narrow_Pointy>(0,0)</Narrow_Pointy>
-                    <Narrow_Wide>(0,0)</Narrow_Wide>
-                  </crownTypes>
-                </south>
                 <north>
-                  <bodyTypes>
-                    <CentaurMale>(0,1.1)</CentaurMale>
-                    <CentaurFemale>(0,1.1)</CentaurFemale>
-                  </bodyTypes>
-                  <portraitBodyTypes>
-                    <CentaurMale>(0,1.1)</CentaurMale>
-                    <CentaurFemale>(0,1.1)</CentaurFemale>
-                  </portraitBodyTypes>
-                  <crownTypes>
-                    <Normal_Average>(0,0)</Normal_Average>
-                    <Normal_Pointy>(0,0)</Normal_Pointy>
-                    <Normal_Wide>(0,0)</Normal_Wide>
-                    <Narrow_Average>(0,0)</Narrow_Average>
-                    <Narrow_Pointy>(0,0)</Narrow_Pointy>
-                    <Narrow_Wide>(0,0)</Narrow_Wide>
-                  </crownTypes>
+				  <offset>(0,0.225)</offset>
                 </north>
+                <south>
+				  <offset>(0,0.225)</offset>
+                </south>
                 <east>
-                  <bodyTypes>
-                    <CentaurMale>(-.425,0.95)</CentaurMale>
-                    <CentaurFemale>(-.425,0.95)</CentaurFemale>
-                  </bodyTypes>
-                  <portraitBodyTypes>
-                    <CentaurMale>(-.425,0.95)</CentaurMale>
-                    <CentaurFemale>(-.425,0.95)</CentaurFemale>
-                  </portraitBodyTypes>
-                  <crownTypes>
-                    <Normal_Average>(0,0)</Normal_Average>
-                    <Normal_Pointy>(0,0)</Normal_Pointy>
-                    <Normal_Wide>(0,0)</Normal_Wide>
-                    <Narrow_Average>(0,0)</Narrow_Average>
-                    <Narrow_Pointy>(0,0)</Narrow_Pointy>
-                    <Narrow_Wide>(0,0)</Narrow_Wide>
-                  </crownTypes>
+				  <offset>(0,0.225)</offset>
                 </east>
-              </offsets>
+			  </offsets>
             </li>
             <li Class="Explorite.BodyAddon_MX">
               <drawSize>1</drawSize>
@@ -602,60 +514,19 @@
               <bodyPart>tail</bodyPart>
               <inFrontOfBody>false</inFrontOfBody>
               <drawnInBed>false</drawnInBed>
+              <defaultOffset>Tail</defaultOffset>
+              <hiddenUnderApparelTag>
+                <li>HideCentaurTail</li>
+              </hiddenUnderApparelTag>
               <offsets>
-                <south>
-                  <bodyTypes>
-                    <CentaurMale>(-.425,0.92)</CentaurMale>
-                    <CentaurFemale>(-.425,0.92)</CentaurFemale>
-                  </bodyTypes>
-                  <portraitBodyTypes>
-                    <CentaurMale>(-.425,0.92)</CentaurMale>
-                    <CentaurFemale>(-.425,0.92)</CentaurFemale>
-                  </portraitBodyTypes>
-                  <crownTypes>
-                    <Normal_Average>(0,0)</Normal_Average>
-                    <Normal_Pointy>(0,0)</Normal_Pointy>
-                    <Normal_Wide>(0,0)</Normal_Wide>
-                    <Narrow_Average>(0,0)</Narrow_Average>
-                    <Narrow_Pointy>(0,0)</Narrow_Pointy>
-                    <Narrow_Wide>(0,0)</Narrow_Wide>
-                  </crownTypes>
-                </south>
                 <north>
-                  <bodyTypes>
-                    <CentaurMale>(0,0.20)</CentaurMale>
-                    <CentaurFemale>(0,0.20)</CentaurFemale>
-                  </bodyTypes>
-                  <portraitBodyTypes>
-                    <CentaurMale>(0,0.20)</CentaurMale>
-                    <CentaurFemale>(0,0.20)</CentaurFemale>
-                  </portraitBodyTypes>
-                  <crownTypes>
-                    <Normal_Average>(0,0)</Normal_Average>
-                    <Normal_Pointy>(0,0)</Normal_Pointy>
-                    <Normal_Wide>(0,0)</Normal_Wide>
-                    <Narrow_Average>(0,0)</Narrow_Average>
-                    <Narrow_Pointy>(0,0)</Narrow_Pointy>
-                    <Narrow_Wide>(0,0)</Narrow_Wide>
-                  </crownTypes>
+				  <offset>(0,0.20)</offset>
                 </north>
+                <south>
+				  <offset>(-0.425,0.92)</offset>
+                </south>
                 <east>
-                  <bodyTypes>
-                    <CentaurMale>(.925,0.05)</CentaurMale>
-                    <CentaurFemale>(.925,0.05)</CentaurFemale>
-                  </bodyTypes>
-                  <portraitBodyTypes>
-                    <CentaurMale>(.925,0.10)</CentaurMale>
-                    <CentaurFemale>(.925,0.10)</CentaurFemale>
-                  </portraitBodyTypes>
-                  <crownTypes>
-                    <Normal_Average>(0,0)</Normal_Average>
-                    <Normal_Pointy>(0,0)</Normal_Pointy>
-                    <Normal_Wide>(0,0)</Normal_Wide>
-                    <Narrow_Average>(0,0)</Narrow_Average>
-                    <Narrow_Pointy>(0,0)</Narrow_Pointy>
-                    <Narrow_Wide>(0,0)</Narrow_Wide>
-                  </crownTypes>
+				  <offset>(0.925,0.05)</offset>
                 </east>
               </offsets>
             </li>
@@ -665,6 +536,7 @@
               <name>hair</name>
               <first Class="Explorite.ColorGenerator_CentaurHair"/>
               <second Class="Explorite.ColorGenerator_CentaurHair"/>
+              <!--<third Class="Explorite.ColorGenerator_CentaurHair"/>-->
             </li>
           </colorChannels>
           <!--<useSkincolorForHair>false</useSkincolorForHair>-->
@@ -770,11 +642,11 @@
             </ateThoughtSpecific>-->
 
       </thoughtSettings>
-      <hairSettings>
-        <!-- <getsGreyAt>93.75</getsGreyAt> -->
-        <!-- <getsGreyAt>2147483647</getsGreyAt> -->
-        <!-- <getsGreyAt>200.55</getsGreyAt> -->
-      </hairSettings>
+      <!-- <hairSettings>
+        <getsGreyAt>93.75</getsGreyAt>
+        <getsGreyAt>2147483647</getsGreyAt>
+        <getsGreyAt>200.55</getsGreyAt>
+      </hairSettings> -->
 
       <relationSettings>
         <relationChanceModifierLover>0</relationChanceModifierLover>
@@ -826,92 +698,13 @@
 
           <!--<li>Apparel_CentaurArchotechArmor</li>-->
         </apparelList>
-		<!--
-        <whiteApparelList>
-          <li>Apparel_CowboyHat</li>
-          <li>Apparel_BowlerHat</li>
-          <li>Apparel_TribalHeaddress</li>
-          <li>Apparel_Tuque</li>
-          <li>Apparel_WarMask</li>
-          <li>Apparel_WarVeil</li>
-          <li>Apparel_SimpleHelmet</li>
-          <li>Apparel_AdvancedHelmet</li>
-          <li>Apparel_PsychicFoilHelmet</li>
-          <li>Apparel_ShieldBelt</li>
-          <li>Apparel_SmokepopBelt</li>
-
-
-
-          <li ExEx="Royalty">Apparel_PackBroadshield</li>
-          <li ExEx="Royalty">Apparel_PackJump</li>
-          <li ExEx="Royalty">Apparel_Gunlink</li>
-
-          <li ExEx="Royalty">Apparel_Beret</li>
-          <li ExEx="Royalty">Apparel_Coronet</li>
-          <li ExEx="Royalty">Apparel_Crown</li>
-          <li ExEx="Royalty">Apparel_CrownStellic</li>
-          <li ExEx="Royalty">Apparel_HatHood</li>
-          <li ExEx="Royalty">Apparel_HatLadies</li>
-          <li ExEx="Royalty">Apparel_HatTop</li>
-
-          <li ExEx="Royalty">Apparel_EltexSkullcap</li>
-          <li ExEx="Royalty">Apparel_PsyfocusHelmet</li>
-
-          <li>Apparel_ArmorHelmetRecon</li>
-          <li>Apparel_PowerArmorHelmet</li>
-          <li ExEx="Royalty">Apparel_ArmorHelmetCataphract</li>
-
-          <li>Apparel_ArmorHelmetReconPrestige</li>
-          <li>Apparel_ArmorMarineHelmetPrestige</li>
-          <li ExEx="Royalty">Apparel_ArmorHelmetCataphractPrestige</li>
-          <!- -<li>Apparel_ArmorHelmetReconClocked</li>
-          <li>Apparel_ArmorMarineHelmetClocked</li>
-          <li ExEx="Royalty">Apparel_ArmorHelmetCataphractClocked</li>- ->
-
-          <!- -<li>Apparel_PowerArmorHelmet_Clocked</li>- ->
-
-          <li>OrbitalTargeterBombardment</li>
-          <li>OrbitalTargeterPowerBeam</li>
-          <li>TornadoGenerator</li>
-          <li ExEx="Royalty">OrbitalTargeterMechCluster</li>
-          <li>Apparel_PsychicInsanityLance</li>
-          <li>Apparel_PsychicShockLance</li>
-        </whiteApparelList>
-		-->
 
         <onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
         <weaponList>
-          <!--<li>Gun_CentaurChargeShotgun</li>-->
           <li>MeleeWeapon_PsyfocusStaffCentaur</li>
           <li>Gun_CentaurPlasmaBlaster</li>
           <li>Bow_Trishot</li>
         </weaponList>
-
-        <!--<onlyDoRaceRestrictedRecipes>false</onlyDoRaceRestrictedRecipes>
-			<recipeList>
-			</recipeList>
-
-			<onlyGetRaceRestrictedTraits>false</onlyGetRaceRestrictedTraits>
-			<traitList>
-			</traitList>            
-
-			<onlyEatRaceRestrictedFood>false</onlyEatRaceRestrictedFood>
-			<foodList>
-			</foodList> 
-			
-			<onlyBuildRaceRestrictedBuildings>false</onlyBuildRaceRestrictedBuildings>
-			<buildingList>
-			</buildingList>
-			
-			<onlyDoRaceRestrictedPlants>false</onlyDoRaceRestrictedPlants>
-			<plantList>
-			</plantList>
-			
-			<conceptList>
-			</conceptList>
-
-			<workGiverList>
-			</workGiverList>-->
 
       </raceRestriction>
 
