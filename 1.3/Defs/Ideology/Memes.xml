@@ -3,7 +3,7 @@
 
   <MemeDef>
     <defName>Structure_Centaur</defName>
-    <label>archist</label>
+    <label>centaur</label>
     <description>Centaurs are the god spawns. The moral structure of the universe are TODO.</description>
     <category>Structure</category>
     <iconPath>UI/Ideology/Exploriter</iconPath>
