@@ -44,9 +44,12 @@
       <li>CentaurRanged</li>
     </weaponTags>
     <weaponClasses>
+      <li>Ultratech</li>
+      <li>Ranged</li>
       <li>LongShots</li>
-      <li>RangedHeavy</li>
+      <li>RangedLight</li>
     </weaponClasses>
+    <relicChance>0</relicChance>
     <verbs>
       <li>
         <verbClass>Explorite.Verb_Shoot_OvertickShotgun</verbClass>
@@ -141,9 +144,12 @@
       <li>CentaurRanged</li>
     </weaponTags>
     <weaponClasses>
+      <li>Ultratech</li>
+      <li>Ranged</li>
       <li>LongShots</li>
       <li>RangedHeavy</li>
     </weaponClasses>
+    <relicChance>0</relicChance>
     <verbs>
       <li Class="Explorite.VerbProperties_Custom">
         <verbClass>Explorite.Verb_Shoot_Rainbow2</verbClass>
@@ -291,10 +297,12 @@
       <li>CentaurRanged</li>
     </weaponTags>
     <weaponClasses>
-      <li>Ranged</li>
       <li>Neolithic</li>
+      <li>Ranged</li>
       <li>RangedLight</li>
+      <li>ShortShots</li>
     </weaponClasses>
+    <relicChance>0</relicChance>
     <comps>
       <!-- <li>
         <compClass>CompEquippable</compClass>
@@ -561,8 +569,11 @@
       <li>ExploriteOversizedWeapon</li>
     </weaponTags>
     <weaponClasses>
+      <li>Ultratech</li>
+      <li>Ranged</li>
       <li>LongShots</li>
     </weaponClasses>
+    <relicChance>0</relicChance>
     <comps Inherit="False">
       <li Class="CompProperties_Forbiddable"/>      
       <li>

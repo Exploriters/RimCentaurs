@@ -20,10 +20,11 @@
       <li>ExploriteOversizedWeapon</li>
     </weaponTags>
     <weaponClasses>
+      <li>Ultratech</li>
       <li>Melee</li>
       <li>MeleeBlunt</li>
-      <li>Ultratech</li>
     </weaponClasses>
+    <relicChance>0</relicChance>
     <costList>
       <MeleeWeapon_PsyfocusStaff>3</MeleeWeapon_PsyfocusStaff>
     </costList>

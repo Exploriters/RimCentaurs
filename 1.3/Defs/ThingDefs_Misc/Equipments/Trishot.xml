@@ -38,7 +38,9 @@
       <li>Ranged</li>
       <li>LongShots</li>
       <li>RangedHeavy</li>
+      <li>Ultratech</li>
     </weaponClasses>
+    <relicChance>0</relicChance>
     <comps>
       <!-- <li Class="Explorite.CompProperties_SelfHealOvertime">
         <detlaHpPerSec>3</detlaHpPerSec>
