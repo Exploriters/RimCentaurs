@@ -32,6 +32,7 @@
 				   defName="AnimalConnection_Strong"
 				or defName="ApparelDesired_Strong_Subordinate"
 				or defName="ApparelDesired_Soft_Subordinate"
+				or defName="NutrientPasteEating_Disgusting"
 				or defName="NutrientPasteEating_DontMind"
 				or defName="Blind_Psysense"
 				or defName="BodyMod_Approved"
