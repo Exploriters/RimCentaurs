@@ -5,15 +5,15 @@
     <defName>Centaur</defName>
     <label>centaur</label>
     <description>A broad collection of cultures common among frequent space travelers.</description>
-    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoAstropolitan</ideoNameMaker>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoCentaur</ideoNameMaker>
     <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityAstropolitan</deityNameMaker>
     <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerAstropolitan</deityTypeMaker>
-    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Astropolitan</leaderTitleMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Centaur</leaderTitleMaker>
     <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
     <allowedPlaceTags>
       <li>OriginSpacer</li>
     </allowedPlaceTags>
-    <iconPath>World/WorldObjects/Expanding/EASTREND</iconPath>
+    <iconPath>UI/Ideology/Exploriter</iconPath>
     <iconColor>(0.8, 0.8, 0.8)</iconColor>
     <styleItemTags>
       <li>
@@ -33,5 +33,67 @@
       </li>
     </styleItemTags>
   </CultureDef>
+
+  <RulePackDef>
+    <defName>NamerIdeoCentaur</defName>
+    <rulePack>
+      <rulesStrings>
+        <!-- The system will feed one (and only one) of these cases into this namer:
+                - key deity
+                - symbol pack
+             These cases are separate, they won't mix.
+
+             The system will also feed a set of place_* keys correesponding to the ideo's foundation PlaceDef
+         -->
+
+        <!-- From key deity -->
+        <li>r_ideoName->Centaur</li>
+        <li>r_ideoAdjective->centaur</li>
+        <li>r_memberName->Centaur</li>
+      </rulesStrings>
+    </rulePack>
+    <include />	
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>LeaderTitleMaker_Centaur</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_leaderTitle->leader</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!--<IdeoIconDef>
+    <defName>EASTREND</defName>
+    <iconPath>UI/Ideology/EASTREND</iconPath>
+    <memes>
+      <li>Centaur</li>
+    </memes>
+  </IdeoIconDef>-->
+  
+  <IdeoIconDef>
+    <defName>Exploriter</defName>
+    <iconPath>UI/Ideology/Exploriter</iconPath>
+    <memes>
+      <li>Centaur</li>
+    </memes>
+  </IdeoIconDef>
+
+  <ColorDef>
+    <defName>ExploriteBlue</defName>
+    <color>(9, 132, 255)</color>
+    <memes>
+      <li>Centaur</li>
+    </memes>
+  </ColorDef>
+
+  <ColorDef>
+    <defName>ExploriteOrange</defName>
+    <color>(234, 135, 0)</color>
+    <memes>
+      <li>Centaur</li>
+    </memes>
+  </ColorDef>
 
 </Defs>

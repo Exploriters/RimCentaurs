@@ -40,14 +40,27 @@
 		<li>Hyperweave</li><li>Plasteel</li>
       </thingDefs>
     </apparelStuffFilter>
+
+    <requiredMemes>
+      <li>Centaur</li>
+    </requiredMemes>
+    <allowedMemes>
+      <li>Structure_Centaur</li>
+      <li>Centaur</li>
+    </allowedMemes>
+    <structureMemeWeights>
+      <Structure_Centaur MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Centaur>
+    </structureMemeWeights>
+
+	<!--
     <requiredMemes>
       <li>Structure_Ideological</li>
-      <!--<li>Structure_Archist</li>-->
-      <!--<li>Transhumanist</li>-->
+      <!- -<li>Structure_Archist</li>- ->
+      <!- -<li>Transhumanist</li>- ->
       <li>Centaur</li>
     </requiredMemes>
     <disallowedMemes>
-	  <!-- Structure -->
+	  <!- - Structure - ->
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Archist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEmbodied</li>
@@ -56,24 +69,24 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginIslamic</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginBuddhist</li>
 	  
-	  <!-- GenderSupremacy -->
+	  <!- - GenderSupremacy - ->
       <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
 	  
-	  <!-- Supremacy -->
+	  <!- - Supremacy - ->
       <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
 	  
-	  <!-- Individualism -->
+	  <!- - Individualism - ->
       <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
 	  
-	  <!-- Primacy -->
+	  <!- - Primacy - ->
       <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
 	  
-	  <!-- Misc -->
+	  <!- - Misc - ->
       <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
@@ -89,6 +102,7 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
     </disallowedMemes>
+    -->
   </FactionDef>
 
   <FactionDef ParentName="FactionBase">

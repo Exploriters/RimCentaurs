@@ -2,10 +2,62 @@
 <Defs>
 
   <MemeDef>
+    <defName>Structure_Centaur</defName>
+    <label>archist</label>
+    <description>Centaurs are the god spawns. The moral structure of the universe are TODO.</description>
+    <category>Structure</category>
+    <iconPath>UI/Ideology/Exploriter</iconPath>
+    <!--<iconPath>UI/Structures/Archist</iconPath>-->
+    <impact>17</impact>
+    <randomizationSelectionWeightFactor>0</randomizationSelectionWeightFactor>
+    <deityCount>0</deityCount>
+    <renderOrder>10000</renderOrder>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->A</li>
+        <li>memeCreed->B</li>
+        <li>memeHyphenPrefix->C</li>
+        <li>memeLeaderNoun->leader</li>
+        <li>memeLeaderAdjective->centaur</li>
+        <li>memeMoralist->moralist</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <patterns>
+        <li><def>CentaursDescription</def></li>
+      </patterns>
+      <constants />
+    </descriptionMaker>
+    <worshipRoomLabel>room</worshipRoomLabel>
+    <symbolPacks>
+      <li>
+        <ideoName>Centaurs</ideoName>
+        <theme>centaur</theme>
+        <adjective>centaur</adjective>
+        <member>centaur</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+
+  <IdeoStoryPatternDef>
+    <defName>CentaursDescription</defName>
+    <segments>
+      <li>main</li>
+    </segments>
+    <rules>
+      <include />
+      <rulesStrings>
+        <li>main->The centaurs. TODO desc.</li>
+      </rulesStrings>
+    </rules>
+  </IdeoStoryPatternDef>
+  
+  <MemeDef>
     <defName>Centaur</defName>
     <label>centaur</label>
     <description>As a centaur.</description>
-    <iconPath>UI/Memes/AnimalPersonhood</iconPath>
+    <iconPath>UI/Ideology/Exploriter</iconPath>
+    <!--<iconPath>UI/Memes/AnimalPersonhood</iconPath>-->
     <groupDef>Misc</groupDef>
     <impact>3</impact>
     <randomizationSelectionWeightFactor>0.0</randomizationSelectionWeightFactor>
@@ -15,12 +67,12 @@
     <exclusionTags>
     </exclusionTags>
     <requireOne>
-      <li><li>AnimalConnection_Strong</li></li>
-      <li><li>SleepAccelerator_Preferred</li></li>
-      <li><li>NeuralSupercharge_Preferred</li></li>
+      <!--<li><li>AnimalConnection_Strong</li></li>-->
+      <!--<li><li>SleepAccelerator_Preferred</li></li>
+      <li><li>NeuralSupercharge_Preferred</li></li>-->
+      <!--<li><li>AgeReversal_Demanded</li></li>-->
       <li><li>Biosculpting_Accelerated</li></li>
-      <li><li>AgeReversal_Demanded</li></li>
-      <li><li>NutrientPasteEating_DontMind</li></li>
+      <!--<li><li>NutrientPasteEating_DontMind</li></li>-->
       <li><li>Scarification_Horrible</li></li>
       <li><li>BodyMod_Approved</li></li>
       <li><li>Research_VeryFast</li></li>
@@ -45,20 +97,7 @@
       <li>Floor_Transhumanist_Carpet</li>
     </addDesignatorGroups>
     <symbolPackOverride>true</symbolPackOverride>
-    <symbolPacks>
-      <li>
-        <ideoName>Archotechnics</ideoName>
-        <theme>archotechnology</theme>
-        <adjective>archotechnic</adjective>
-        <member>archotechnist</member>
-      </li>
-      <li>
-        <ideoName>Archism</ideoName>
-        <theme>archism</theme>
-        <adjective>archist</adjective>
-        <member>archist</member>
-      </li>
-    </symbolPacks>
+    <symbolPacks />
     <styleItemTags>
       <li>
         <tag>NoBeard</tag>

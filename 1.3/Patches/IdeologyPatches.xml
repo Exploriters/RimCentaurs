@@ -78,16 +78,7 @@
 	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>Defs/PreceptDef[
-				   defName="AnimalConnection_Strong"
-				or defName="ApparelDesired_Strong_Subordinate"
-				or defName="ApparelDesired_Soft_Subordinate"
-				or defName="NutrientPasteEating_DontMind"
-				or defName="SleepAccelerator_Preferred"
-				or defName="NeuralSupercharge_Preferred"
-				or defName="Biosculpting_Accelerated"
-				or defName="AgeReversal_Demanded"
-				]
+		<xpath>Defs/PreceptDef[defName="Biosculpting_Accelerated"]
 			/requiredMemes</xpath>
 		<value>
 			<li>Centaur</li>
