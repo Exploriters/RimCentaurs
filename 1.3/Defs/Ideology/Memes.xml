@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MemeDef>
+    <defName>Centaur</defName>
+    <label>centaur</label>
+    <description>As a centaur.</description>
+    <iconPath>UI/Memes/AnimalPersonhood</iconPath>
+    <groupDef>Misc</groupDef>
+    <impact>3</impact>
+    <randomizationSelectionWeightFactor>0.0</randomizationSelectionWeightFactor>
+    <renderOrder>8000</renderOrder>
+    <veneratedAnimalsCountOffset>-10</veneratedAnimalsCountOffset>
+    <veneratedAnimalsCountOverride>0</veneratedAnimalsCountOverride>
+    <exclusionTags>
+    </exclusionTags>
+    <requireOne>
+      <li><li>AnimalConnection_Strong</li></li>
+      <li><li>SleepAccelerator_Preferred</li></li>
+      <li><li>NeuralSupercharge_Preferred</li></li>
+      <li><li>Biosculpting_Accelerated</li></li>
+      <li><li>AgeReversal_Demanded</li></li>
+      <li><li>NutrientPasteEating_DontMind</li></li>
+      <li><li>Scarification_Horrible</li></li>
+      <li><li>BodyMod_Approved</li></li>
+      <li><li>Research_VeryFast</li></li>
+      <li><li>Execution_DontCare</li></li>
+      <li><li>OrganUse_Acceptable</li></li>
+      <li><li>Nudity_Female_NoRules</li></li>
+      <li><li>Nudity_Male_NoRules</li></li>
+      <li><li>MarriageName_KeepNames</li></li>
+      <li><li>Lovin_Prohibited</li></li>
+      <li><li>DrugUse_MedicalOnly</li></li>
+      <li><li>Cannibalism_Disapproved</li></li>
+      <li><li>IdeoDiversity_Standard</li></li>
+    </requireOne>
+    <generalRules />
+    <descriptionMaker />
+    <addDesignators>
+      <li>Tile_Transhumanist</li>
+      <li>SleepAccelerator</li>
+      <li>NeuralSupercharger</li>
+    </addDesignators>
+    <addDesignatorGroups>
+      <li>Floor_Transhumanist_Carpet</li>
+    </addDesignatorGroups>
+    <symbolPackOverride>true</symbolPackOverride>
+    <symbolPacks>
+      <li>
+        <ideoName>Archotechnics</ideoName>
+        <theme>archotechnology</theme>
+        <adjective>archotechnic</adjective>
+        <member>archotechnist</member>
+      </li>
+      <li>
+        <ideoName>Archism</ideoName>
+        <theme>archism</theme>
+        <adjective>archist</adjective>
+        <member>archist</member>
+      </li>
+    </symbolPacks>
+    <styleItemTags>
+      <li>
+        <tag>NoBeard</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoTattoo</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+    <thingStyleCategories>
+      <li>
+        <category>Techist</category>
+        <priority>40</priority>
+      </li>
+      <li>
+        <category>Animalist</category>
+        <priority>30</priority>
+      </li>
+    </thingStyleCategories>
+    <!--<preferredWeaponClasses>
+      <noble />
+      <despised />
+    </preferredWeaponClasses>-->
+  </MemeDef>
+  
+</Defs>

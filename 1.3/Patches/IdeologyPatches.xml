@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+		<value>
+			<li>conflictingMemes</li>
+		</value>
+	</Operation>
+	
+	
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+		<value>
+			<li>conflictingMemes</li>
+		</value>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/PreceptDef[not (conflictingMemes)]</xpath>
+		<value>
+			<conflictingMemes />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/PreceptDef[not (
+				   defName="AnimalConnection_Strong"
+				or defName="ApparelDesired_Strong_Subordinate"
+				or defName="ApparelDesired_Soft_Subordinate"
+				or defName="NutrientPasteEating_DontMind"
+				or defName="Blind_Psysense"
+				or defName="BodyMod_Approved"
+				or defName="Cannibalism_Disapproved"
+				or defName="Cannibalism_Acceptable"
+				or defName="DrugUse_MedicalOnly"
+				or defName="Lovin_Prohibited"
+				or defName="MarriageName_KeepNames"
+				or defName="Nudity_Male_NoRules"
+				or defName="Nudity_Female_NoRules"
+				or defName="IdeoDiversity_Standard"
+				or defName="OrganUse_HorribleSellOK"
+				or defName="OrganUse_Acceptable"
+				or defName="Execution_HorribleIfInnocent"
+				or defName="Execution_DontCare"
+				or defName="Execution_RespectedIfGuilty"
+				or defName="Research_VeryFast"
+				or defName="Slavery_Acceptable"
+				or defName="SleepAccelerator_Preferred"
+				or defName="NeuralSupercharge_Preferred"
+				or defName="Biosculpting_Accelerated"
+				or defName="AgeReversal_Demanded"
+				or defName="WorkDrive_Tripled"
+				or defName="Scarification_Horrible"
+				or defName="InsectMeatEating_Despised_Classic"
+				or defName="Corpses_Ugly"
+				or defName="OrganUse_Classic"
+				or defName="Execution_Classic"
+				or defName="SpouseCount_Male_MaxOne"
+				or defName="SpouseCount_Female_MaxOne"
+				)]
+			/conflictingMemes</xpath>
+		<value>
+			<li>Centaur</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/PreceptDef[not (requiredMemes)]</xpath>
+		<value>
+			<requiredMemes />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/PreceptDef[
+				   defName="AnimalConnection_Strong"
+				or defName="ApparelDesired_Strong_Subordinate"
+				or defName="ApparelDesired_Soft_Subordinate"
+				or defName="NutrientPasteEating_DontMind"
+				or defName="SleepAccelerator_Preferred"
+				or defName="NeuralSupercharge_Preferred"
+				or defName="Biosculpting_Accelerated"
+				or defName="AgeReversal_Demanded"
+				]
+			/requiredMemes</xpath>
+		<value>
+			<li>Centaur</li>
+		</value>
+	</Operation>
+	
+				<!--or defName="Apostasy_Abhorrent"-->
+				<!--or defName="Skullspike_Disapproved"-->
+				<!--or defName="IdeoRelic"-->
+				<!--or defName="IdeoRitualSeat"-->
+				<!--or defName="IdeoRole_Leader"-->
+				<!--or defName="IdeoRole_Moralist"-->
+				<!--or defName="NobleDespisedWeapons"-->
+</Patch>

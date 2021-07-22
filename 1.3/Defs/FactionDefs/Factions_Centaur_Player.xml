@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <FactionDef ParentName="PlayerFactionBase">
@@ -13,7 +13,7 @@
     <pawnSingular>colonist</pawnSingular>
     <pawnsPlural>colonists</pawnsPlural>
     <techLevel>Archotech</techLevel>
-    <allowedCultures><li>Astropolitan</li></allowedCultures>
+    <allowedCultures><li>Centaur</li></allowedCultures>
     <backstoryFilters>
       <li>
         <categories>
@@ -35,14 +35,60 @@
       <li>CentaurStart</li>
       <li>CentaurStartTechprints</li>
     </startingTechprintsResearchTags>
-    <!--<hairTags>
-      <li>Urban</li>
-    </hairTags>-->
     <apparelStuffFilter>
       <thingDefs>
 		<li>Hyperweave</li><li>Plasteel</li>
       </thingDefs>
     </apparelStuffFilter>
+    <requiredMemes>
+      <li>Structure_Ideological</li>
+      <!--<li>Structure_Archist</li>-->
+      <!--<li>Transhumanist</li>-->
+      <li>Centaur</li>
+    </requiredMemes>
+    <disallowedMemes>
+	  <!-- Structure -->
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Archist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEmbodied</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistAbstract</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginChristian</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginIslamic</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginBuddhist</li>
+	  
+	  <!-- GenderSupremacy -->
+      <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+	  
+	  <!-- Supremacy -->
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+	  
+	  <!-- Individualism -->
+      <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+	  
+	  <!-- Primacy -->
+      <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+	  
+	  <!-- Misc -->
+      <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+    </disallowedMemes>
   </FactionDef>
 
   <FactionDef ParentName="FactionBase">
