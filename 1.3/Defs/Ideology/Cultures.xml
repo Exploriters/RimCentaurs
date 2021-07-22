@@ -81,6 +81,14 @@
   </IdeoIconDef>
 
   <ColorDef>
+    <defName>CentaurBlue</defName>
+    <color>(127, 191, 255)</color>
+    <memes>
+      <li>Centaur</li>
+    </memes>
+  </ColorDef>
+
+  <!--<ColorDef>
     <defName>ExploriteBlue</defName>
     <color>(9, 132, 255)</color>
     <memes>
@@ -94,6 +102,6 @@
     <memes>
       <li>Centaur</li>
     </memes>
-  </ColorDef>
+  </ColorDef>-->
 
 </Defs>

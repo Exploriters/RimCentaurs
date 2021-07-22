@@ -42,6 +42,7 @@
     </apparelStuffFilter>
 
     <requiredMemes>
+      <li>Structure_Centaur</li>
       <li>Centaur</li>
     </requiredMemes>
     <allowedMemes>
