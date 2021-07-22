@@ -8,7 +8,7 @@
     <category>Structure</category>
     <iconPath>UI/Ideology/Exploriter</iconPath>
     <!--<iconPath>UI/Structures/Archist</iconPath>-->
-    <impact>17</impact>
+    <impact>0</impact>
     <randomizationSelectionWeightFactor>0</randomizationSelectionWeightFactor>
     <deityCount>0</deityCount>
     <renderOrder>10000</renderOrder>
