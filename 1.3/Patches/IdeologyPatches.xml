@@ -13,7 +13,7 @@
 		<xpath>Defs/PreceptDef[not (
 				   defName="Biosculpting_Accelerated"
 				or defName="Blinding_Horrible"
-				or defName="Cannibalism_Disapproved"
+				or defName="Cannibalism_Disgusting_EX"
 				or defName="Corpses_Ugly"
 				or defName="DrugUse_MedicalOnly"
 				or defName="Execution_DontCare"
@@ -30,6 +30,9 @@
 				or defName="Nudity_Male_NoRules"
 				or defName="Nudity_Female_NoRules"
 				or defName="NutrientPasteEating_Disgusting"
+				or @Name="FuneralBase"
+				or @ParentName="FuneralBase"
+				or defName="NobleDespisedWeapons"
 				)]/conflictingMemes</xpath>
 		<value>
 			<li>Centaur</li>

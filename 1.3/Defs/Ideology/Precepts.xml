@@ -22,5 +22,38 @@
       </li>
     </comps>
   </PreceptDef>
+  
+  <PreceptDef>
+    <defName>Cannibalism_Disgusting_EX</defName>
+    <issue>Cannibalism</issue>
+    <label>disapproved</label>
+    <description>Human flesh is disgusting and not preferred.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>25</displayOrderInIssue>
+    <displayOrderInImpact>100</displayOrderInImpact>
+    <requiredMemes>
+      <li>Centaur</li>
+    </requiredMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>AteHumanMeat</eventDef>
+        <thought>AteHumanMeat_Disapproved</thought>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>ButcheredHuman</eventDef>
+        <thought>ButcheredHuman_Disapproved</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>ButcheredHuman</eventDef>
+        <thought>ButcheredHuman_Know_Disapproved</thought>
+      </li>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>HumanLeatherApparel_Disapproved</thought>
+        <description>Humanleather apparel</description>
+        <tooltipShowMoodRange>true</tooltipShowMoodRange>
+      </li>
+    </comps>
+  </PreceptDef>
+
 
 </Defs>

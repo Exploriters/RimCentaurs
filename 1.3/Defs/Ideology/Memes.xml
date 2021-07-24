@@ -14,11 +14,11 @@
     <renderOrder>10000</renderOrder>
     <generalRules>
       <rulesStrings>
-        <li>memeAdjective->A</li>
-        <li>memeCreed->B</li>
-        <li>memeHyphenPrefix->C</li>
+        <li>memeAdjective->exploriters</li>
+        <li>memeCreed->exploriters</li>
+        <li>memeHyphenPrefix->exploriters</li>
         <li>memeLeaderNoun->leader</li>
-        <li>memeLeaderAdjective->centaur</li>
+        <li>memeLeaderAdjective->exploriter</li>
         <li>memeMoralist->moralist</li>
       </rulesStrings>
     </generalRules>
@@ -69,7 +69,7 @@
     <requireOne>
       <li><li>Biosculpting_Accelerated</li></li>
       <li><li>Blinding_Horrible</li></li>
-      <li><li>Cannibalism_Disapproved</li></li>
+      <li><li>Cannibalism_Disgusting_EX</li></li>
       <li><li>Corpses_Ugly</li></li>
       <li><li>DrugUse_MedicalOnly</li></li>
       <li><li>Execution_DontCare</li></li>
@@ -121,10 +121,10 @@
         <priority>30</priority>
       </li>
     </thingStyleCategories>
-    <!--<preferredWeaponClasses>
-      <noble />
-      <despised />
-    </preferredWeaponClasses>-->
+    <preferredWeaponClasses>
+      <noble>Ultratech</noble>
+      <despised>Neolithic</despised>
+    </preferredWeaponClasses>
   </MemeDef>
 
 </Defs>
