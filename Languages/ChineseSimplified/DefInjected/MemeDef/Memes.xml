@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Structure_Centaur.label>探解者</Structure_Centaur.label>
+  <Structure_Centaur.description>宇宙的道德框架还没写好。</Structure_Centaur.description>
+  <Structure_Centaur.worshipRoomLabel>礼堂</Structure_Centaur.worshipRoomLabel>
+  <Structure_Centaur.generalRules.rulesStrings>
+	<li>memeAdjective->A</li>
+	<li>memeCreed->B</li>
+	<li>memeHyphenPrefix->C</li>
+	<li>memeLeaderNoun->领袖</li>
+	<li>memeLeaderAdjective->半人马</li>
+	<li>memeMoralist->传道者</li>
+  </Structure_Centaur.generalRules.rulesStrings>
+  
+  <Centaur.label>孤狼</Centaur.label>
+  <Centaur.description>独立地存活下去。</Centaur.description>
+
+</LanguageData>

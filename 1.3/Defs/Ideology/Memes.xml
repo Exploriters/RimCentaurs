@@ -3,10 +3,10 @@
 
   <MemeDef>
     <defName>Structure_Centaur</defName>
-    <label>centaur</label>
-    <description>Centaurs are the god spawns. The moral structure of the universe are TODO.</description>
+    <label>exploriters</label>
+    <description>The moral structure of the universe are works in progress.</description>
     <category>Structure</category>
-    <iconPath>UI/Ideology/Exploriter</iconPath>
+    <iconPath>UI/Ideology/ExploriterT</iconPath>
     <!--<iconPath>UI/Structures/Archist</iconPath>-->
     <impact>0</impact>
     <randomizationSelectionWeightFactor>0.0</randomizationSelectionWeightFactor>
@@ -28,7 +28,7 @@
       </patterns>
       <constants />
     </descriptionMaker>
-    <worshipRoomLabel>room</worshipRoomLabel>
+    <worshipRoomLabel>ritual room</worshipRoomLabel>
     <symbolPacks>
       <li>
         <ideoName>Centaurs</ideoName>
@@ -47,16 +47,16 @@
     <rules>
       <include />
       <rulesStrings>
-        <li>main->The centaurs. TODO desc.</li>
+        <li>main->TODO desc.</li>
       </rulesStrings>
     </rules>
   </IdeoStoryPatternDef>
   
   <MemeDef>
     <defName>Centaur</defName>
-    <label>centaur</label>
-    <description>As a centaur.</description>
-    <iconPath>UI/Ideology/Exploriter</iconPath>
+    <label>lone wolf</label>
+    <description>Live independently.</description>
+    <iconPath>UI/Ideology/ExploriterT</iconPath>
     <!--<iconPath>UI/Memes/AnimalPersonhood</iconPath>-->
     <groupDef>Misc</groupDef>
     <impact>3</impact>
@@ -67,24 +67,25 @@
     <exclusionTags>
     </exclusionTags>
     <requireOne>
-      <!--<li><li>AnimalConnection_Strong</li></li>-->
-      <!--<li><li>SleepAccelerator_Preferred</li></li>
-      <li><li>NeuralSupercharge_Preferred</li></li>-->
-      <!--<li><li>AgeReversal_Demanded</li></li>-->
       <li><li>Biosculpting_Accelerated</li></li>
-      <!--<li><li>NutrientPasteEating_DontMind</li></li>-->
-      <li><li>Scarification_Horrible</li></li>
-      <li><li>BodyMod_Approved</li></li>
-      <li><li>Research_VeryFast</li></li>
-      <li><li>Execution_DontCare</li></li>
-      <li><li>OrganUse_Acceptable</li></li>
-      <li><li>Nudity_Female_NoRules</li></li>
-      <li><li>Nudity_Male_NoRules</li></li>
-      <li><li>MarriageName_KeepNames</li></li>
-      <li><li>Lovin_Prohibited</li></li>
-      <li><li>DrugUse_MedicalOnly</li></li>
+      <li><li>Blinding_Horrible</li></li>
       <li><li>Cannibalism_Disapproved</li></li>
+      <li><li>Corpses_Ugly</li></li>
+      <li><li>DrugUse_MedicalOnly</li></li>
+      <li><li>Execution_DontCare</li></li>
+      <li><li>Lovin_Rejcet_EX</li></li>
       <li><li>IdeoDiversity_Standard</li></li>
+      <li><li>InsectMeatEating_Despised_Classic</li></li>
+      <li><li>Scarification_Horrible</li></li>
+      <li><li>Slavery_Acceptable</li></li>
+      <li><li>SpouseCount_Male_MaxOne</li></li>
+      <li><li>SpouseCount_Female_MaxOne</li></li>
+      <li><li>Research_VeryFast</li></li>
+      <li><li>OrganUse_Acceptable</li></li>
+      <li><li>MarriageName_KeepNames</li></li>
+      <li><li>Nudity_Male_NoRules</li></li>
+      <li><li>Nudity_Female_NoRules</li></li>
+      <li><li>NutrientPasteEating_Disgusting</li></li>
     </requireOne>
     <generalRules />
     <descriptionMaker />
@@ -125,5 +126,5 @@
       <despised />
     </preferredWeaponClasses>-->
   </MemeDef>
-  
+
 </Defs>

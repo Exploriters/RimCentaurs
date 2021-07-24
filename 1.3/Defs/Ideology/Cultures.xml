@@ -3,12 +3,12 @@
 
   <CultureDef>
     <defName>Centaur</defName>
-    <label>centaur</label>
-    <description>A broad collection of cultures common among frequent space travelers.</description>
+    <label>exploriter</label>
+    <description>A broad collection of cultures exclusive to lone wolves.</description>
     <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoCentaur</ideoNameMaker>
     <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityAstropolitan</deityNameMaker>
     <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerAstropolitan</deityTypeMaker>
-    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Centaur</leaderTitleMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Exploriter</leaderTitleMaker>
     <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
     <allowedPlaceTags>
       <li>OriginSpacer</li>
@@ -47,16 +47,16 @@
          -->
 
         <!-- From key deity -->
-        <li>r_ideoName->Centaur</li>
-        <li>r_ideoAdjective->centaur</li>
-        <li>r_memberName->Centaur</li>
+        <li>r_ideoName->Exploriter</li>
+        <li>r_ideoAdjective->exploriter</li>
+        <li>r_memberName->Exploriter</li>
       </rulesStrings>
     </rulePack>
     <include />	
   </RulePackDef>
   
   <RulePackDef>
-    <defName>LeaderTitleMaker_Centaur</defName>
+    <defName>LeaderTitleMaker_Exploriter</defName>
     <rulePack>
       <rulesStrings>
         <li>r_leaderTitle->leader</li>

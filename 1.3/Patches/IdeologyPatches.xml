@@ -7,9 +7,61 @@
 			<conflictingMemes />
 		</value>
 	</Operation>
+	  
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/PreceptDef[not (
+				   defName="Biosculpting_Accelerated"
+				or defName="Blinding_Horrible"
+				or defName="Cannibalism_Disapproved"
+				or defName="Corpses_Ugly"
+				or defName="DrugUse_MedicalOnly"
+				or defName="Execution_DontCare"
+				or defName="Lovin_Rejcet_EX"
+				or defName="IdeoDiversity_Standard"
+				or defName="InsectMeatEating_Despised_Classic"
+				or defName="Scarification_Horrible"
+				or defName="Slavery_Acceptable"
+				or defName="SpouseCount_Male_MaxOne"
+				or defName="SpouseCount_Female_MaxOne"
+				or defName="Research_VeryFast"
+				or defName="OrganUse_Acceptable"
+				or defName="MarriageName_KeepNames"
+				or defName="Nudity_Male_NoRules"
+				or defName="Nudity_Female_NoRules"
+				or defName="NutrientPasteEating_Disgusting"
+				)]/conflictingMemes</xpath>
+		<value>
+			<li>Centaur</li>
+		</value>
+	</Operation>
+	
+      <!--<li><li>AnimalConnection_Strong</li></li>-->
+      <!--<li><li>SleepAccelerator_Preferred</li></li>
+      <li><li>NeuralSupercharge_Preferred</li></li>-->
+      <!--<li><li>AgeReversal_Demanded</li></li>-->
+      <!--<li><li>Biosculpting_Accelerated</li></li>-->
+      <!--<li><li>NutrientPasteEating_DontMind</li></li>-->
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/PreceptDef[(
+				   defName="Biosculpting_Accelerated"
+				)and not (requiredMemes)]</xpath>
+		<value>
+			<requiredMemes />
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/PreceptDef[defName="Biosculpting_Accelerated"]
+				/requiredMemes</xpath>
+		<value>
+			<li>Centaur</li>
+		</value>
+	</Operation>
+	
+	<!--
 				   defName="AnimalConnection_Strong"
 				or defName="ApparelDesired_Strong_Subordinate"
 				or defName="ApparelDesired_Soft_Subordinate"
@@ -34,7 +86,6 @@
 				or defName="Slavery_Acceptable"
 				or defName="SleepAccelerator_Preferred"
 				or defName="NeuralSupercharge_Preferred"
-				or defName="Biosculpting_Accelerated"
 				or defName="AgeReversal_Demanded"
 				or defName="WorkDrive_Tripled"
 				or defName="Scarification_Horrible"
@@ -44,31 +95,10 @@
 				or defName="Execution_Classic"
 				or defName="SpouseCount_Male_MaxOne"
 				or defName="SpouseCount_Female_MaxOne"
-				)]
-			/conflictingMemes</xpath>
-		<value>
-			<li>Centaur</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/PreceptDef[not (requiredMemes)]</xpath>
-		<value>
-			<requiredMemes />
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/PreceptDef[defName="Biosculpting_Accelerated"]
-			/requiredMemes</xpath>
-		<value>
-			<li>Centaur</li>
-		</value>
-	</Operation>
-	
+	-->
 				<!--or defName="Apostasy_Abhorrent"-->
 				<!--or defName="Skullspike_Disapproved"-->
+				<!--or defName="Biosculpting_Accelerated"-->
 				<!--or defName="IdeoRelic"-->
 				<!--or defName="IdeoRitualSeat"-->
 				<!--or defName="IdeoRole_Leader"-->

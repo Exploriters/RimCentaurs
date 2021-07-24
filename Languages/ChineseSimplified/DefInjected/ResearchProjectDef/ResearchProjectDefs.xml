@@ -10,8 +10,8 @@
   <TrishotProject.label>三射弓</TrishotProject.label>
   <TrishotProject.description>允许你制造一种由半人马使用的强大武器，三射弓，一把强大的远距离重型弓，能在单次爆发射击中射出三只携带延迟起爆热能释放爆炸物的远距离重箭。</TrishotProject.description>
 
-  <CentaurStoryStep1st.label>远古半人马科技</CentaurStoryStep1st.label>
-  <CentaurStoryStep1st.description>解锁「远古零部件」的基础技术。这些非常规零部件可以从远古科技设备中拆解得到。</CentaurStoryStep1st.description>
+  <CentaurStoryStep1st.label>超凡半人马科技</CentaurStoryStep1st.label>
+  <CentaurStoryStep1st.description>解锁「超凡零部件」的基础技术。这些非常规零部件可以从超凡科技设备中拆解得到。</CentaurStoryStep1st.description>
   
   <CentaurStoryStep2nd.label>半人马子系统</CentaurStoryStep2nd.label>
   <CentaurStoryStep2nd.description>解锁「半人马子系统」，植入半人马身体的可自定义模块，用于提供强大的被动效果。一个半人马同时只能拥有3个子系统。</CentaurStoryStep2nd.description>
