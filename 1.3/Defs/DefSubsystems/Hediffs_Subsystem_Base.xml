@@ -5,6 +5,8 @@
     <hediffClass>Explorite.Hediff_AddedPart_Subsystem</hediffClass>
     <defaultLabelColor>(0.5, 0.75, 1)</defaultLabelColor>
     <isBad>false</isBad>
+    <priceImpact>false</priceImpact>
+    <countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
     <maxSeverity>1.0</maxSeverity>
     <initialSeverity>0.001</initialSeverity>
 	<everCurableByItem>false</everCurableByItem>
