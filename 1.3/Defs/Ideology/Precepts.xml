@@ -6,7 +6,7 @@
     <issue>Lovin</issue>
     <label>reject</label>
     <description>The physical act of lust with others is a violation of independently. However, there is no need to disrupt others will.</description>
-    <impact>Medium</impact>
+    <impact>High</impact>
     <displayOrderInIssue>45</displayOrderInIssue>
     <requiredMemes>
       <li>Centaur</li>
@@ -55,5 +55,61 @@
     </comps>
   </PreceptDef>
 
+  <PreceptDef>
+    <defName>DrugUse_MedicalOnly_SoftCareOthers_EX</defName>
+    <issue>DrugUse</issue>
+    <label>medical for self only</label>
+    <description>Poisoning own body for recreational purposes is a deeply immoral act. However drug of others are not an issue.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>15</displayOrderInIssue>
+    <displayOrderInImpact>100</displayOrderInImpact>
+    <requiredMemes>
+      <li>Centaur</li>
+    </requiredMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>IngestedRecreationalDrug</eventDef>
+        <thought>IngestedRecreationalDrug_Horrible</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>IngestedHardDrug</eventDef>
+        <thought>IngestedHardDrug_Know_Horrible</thought>
+      </li>
+      <li Class="PreceptComp_UnwillingToDo">
+        <eventDef>IngestedRecreationalDrug</eventDef>
+        <description>Ingest recreational drug</description>
+        <nullifyingTraits>
+          <DrugDesire>2</DrugDesire>
+          <DrugDesire>1</DrugDesire>
+        </nullifyingTraits>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>AdministeredRecreationalDrug</eventDef>
+        <thought>AdministeredRecreationalDrug_Horrible</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>AdministeredHardDrug</eventDef>
+        <thought>AdministeredHardDrug_Know_Horrible</thought>
+      </li>
+    </comps>
+    <defaultDrugPolicyOverride>NoDrugs</defaultDrugPolicyOverride>
+  </PreceptDef>
 
+  <PreceptDef>
+    <defName>Proselytizing_Prohibited_EX</defName>
+    <issue>Proselytizing</issue>
+    <label>prohibited</label>
+    <description>Lone wolves do not share their truth to others.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>-50</displayOrderInIssue>
+    <requiredMemes>
+      <li>Centaur</li>
+    </requiredMemes>
+    <statFactors>
+      <ConversionPower>0</ConversionPower>
+      <SocialIdeoSpreadFrequencyFactor>0</SocialIdeoSpreadFrequencyFactor>
+    </statFactors>
+    <proselytizes>false</proselytizes>
+  </PreceptDef>
+  
 </Defs>

@@ -68,6 +68,7 @@
       <ResearchSpeed>2.0</ResearchSpeed>
       <TameAnimalChance>3.0</TameAnimalChance>
       <TrainAnimalChance>3.0</TrainAnimalChance>
+      <BondAnimalChanceFactor>3.0</BondAnimalChanceFactor>
       <ButcheryFleshEfficiency>1.03</ButcheryFleshEfficiency>
       <ButcheryMechanoidEfficiency>1.03</ButcheryMechanoidEfficiency>
       
@@ -81,6 +82,11 @@
       <!-- Shield -->
       <PawnShieldRechargeRate>0</PawnShieldRechargeRate>
       <PawnShieldEnergyMax>0</PawnShieldEnergyMax>
+
+      <!-- Ideology -->
+      <CertaintyLossFactor>0.0</CertaintyLossFactor>
+      <BiosculpterOccupantSpeed>3.0</BiosculpterOccupantSpeed>
+      <HackingSpeed>3.0</HackingSpeed>
       
     </statBases>
     <race>

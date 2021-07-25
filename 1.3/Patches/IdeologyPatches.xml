@@ -11,34 +11,37 @@
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/PreceptDef[not (
-				   defName="Biosculpting_Accelerated"
-				or defName="Blinding_Horrible"
+				   defName="Blinding_Horrible"
 				or defName="Cannibalism_Disgusting_EX"
 				or defName="Corpses_Ugly"
-				or defName="DrugUse_MedicalOnly"
+				or defName="DrugUse_MedicalOnly_SoftCareOthers_EX"
 				or defName="Execution_DontCare"
+				or defName="FungusEating_Despised"
 				or defName="Lovin_Rejcet_EX"
 				or defName="IdeoDiversity_Standard"
 				or defName="InsectMeatEating_Despised_Classic"
-				or defName="Scarification_Horrible"
-				or defName="Slavery_Acceptable"
-				or defName="SpouseCount_Male_MaxOne"
-				or defName="SpouseCount_Female_MaxOne"
-				or defName="Research_VeryFast"
-				or defName="OrganUse_Acceptable"
 				or defName="MarriageName_KeepNames"
 				or defName="Nudity_Male_NoRules"
 				or defName="Nudity_Female_NoRules"
 				or defName="NutrientPasteEating_Disgusting"
-				or @Name="FuneralBase"
-				or @ParentName="FuneralBase"
 				or defName="NobleDespisedWeapons"
+				or defName="OrganUse_Acceptable"
+				or defName="Proselytizing_Prohibited_EX"
+				or defName="Research_VeryFast"
+				or defName="Scarification_Horrible"
+				or defName="Slavery_Acceptable"
+				or defName="SpouseCount_Male_MaxOne"
+				or defName="SpouseCount_Female_MaxOne"
 				)]/conflictingMemes</xpath>
 		<value>
 			<li>Centaur</li>
 		</value>
 	</Operation>
 	
+      <!--
+				or @Name="FuneralBase"
+				or @ParentName="FuneralBase"
+		-->
       <!--<li><li>AnimalConnection_Strong</li></li>-->
       <!--<li><li>SleepAccelerator_Preferred</li></li>
       <li><li>NeuralSupercharge_Preferred</li></li>-->

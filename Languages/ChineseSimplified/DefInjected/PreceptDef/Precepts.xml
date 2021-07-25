@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <Lovin_Rejcet_EX.label>抗拒</Lovin_Rejcet_EX.label>
@@ -8,5 +8,12 @@
   <Cannibalism_Disgusting_EX.label>厌恶</Cannibalism_Disgusting_EX.label>
   <Cannibalism_Disgusting_EX.description>人肉令人厌恶且并不必要。</Cannibalism_Disgusting_EX.description>
   <Cannibalism_Disgusting_EX.comps.3.description>人皮衣物</Cannibalism_Disgusting_EX.comps.3.description>
+
+  <DrugUse_MedicalOnly_SoftCareOthers_EX.label>自身仅医疗</DrugUse_MedicalOnly_SoftCareOthers_EX.label>
+  <DrugUse_MedicalOnly_SoftCareOthers_EX.description>为了娱乐目的毒害身体是一种非常不道德的行为。然而对他人的药物使用并不是一个问题。</DrugUse_MedicalOnly_SoftCareOthers_EX.description>
+  <DrugUse_MedicalOnly_SoftCareOthers_EX.comps.2.description>摄入娱乐成瘾品</DrugUse_MedicalOnly_SoftCareOthers_EX.comps.2.description>
+
+  <Proselytizing_Prohibited_EX.label>禁止</Proselytizing_Prohibited_EX.label>
+  <Proselytizing_Prohibited_EX.description>孤狼们并不分享他们的真理。</Proselytizing_Prohibited_EX.description>
 
 </LanguageData>

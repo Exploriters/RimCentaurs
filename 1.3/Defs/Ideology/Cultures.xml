@@ -14,7 +14,7 @@
       <li>OriginSpacer</li>
     </allowedPlaceTags>
     <iconPath>UI/Ideology/Exploriter</iconPath>
-    <iconColor>(0.8, 0.8, 0.8)</iconColor>
+    <!--<iconColor>(0.8, 0.8, 0.8)</iconColor>-->
     <styleItemTags>
       <li>
         <tag>Urban</tag>
@@ -82,7 +82,7 @@
 
   <ColorDef>
     <defName>CentaurBlue</defName>
-    <color>(127, 191, 255)</color>
+    <color>RGBA(0.243, 0.400, 0.710, 1.000)</color>
     <memes>
       <li>Centaur</li>
     </memes>
