@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <MemeDef>
+  <Explorite.MemeDef_Ex>
     <defName>Structure_Centaur</defName>
     <label>exploriters</label>
     <description>The moral structure of the universe are works in progress.</description>
@@ -37,7 +37,12 @@
         <member>centaur</member>
       </li>
     </symbolPacks>
-  </MemeDef>
+	
+	<exclusiveTo>
+	  <li>CentaurPlayerColony</li>
+	</exclusiveTo>
+	<islocateGroup>CentaurMeme</islocateGroup>
+  </Explorite.MemeDef_Ex>
 
   <IdeoStoryPatternDef>
     <defName>CentaursDescription</defName>
@@ -52,7 +57,7 @@
     </rules>
   </IdeoStoryPatternDef>
   
-  <MemeDef>
+  <Explorite.MemeDef_Ex>
     <defName>Centaur</defName>
     <label>lone wolf</label>
     <description>Live independently.</description>
@@ -126,6 +131,10 @@
       <noble>Ultratech</noble>
       <despised>Neolithic</despised>
     </preferredWeaponClasses>
-  </MemeDef>
+	
+	<exclusiveTo>
+	  <li>CentaurPlayerColony</li>
+	</exclusiveTo>
+  </Explorite.MemeDef_Ex>
 
 </Defs>

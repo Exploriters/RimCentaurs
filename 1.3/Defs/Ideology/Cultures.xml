@@ -12,6 +12,7 @@
     <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
     <allowedPlaceTags>
       <li>OriginSpacer</li>
+      <li>ExExclusive</li>
     </allowedPlaceTags>
     <iconPath>UI/Ideology/Exploriter</iconPath>
     <!--<iconColor>(0.8, 0.8, 0.8)</iconColor>-->
