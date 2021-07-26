@@ -59,10 +59,10 @@
     </appliedOnFixedBodyParts>
   </RecipeDef> -->
   
-  <!--<RecipeDef ParentName="SurgeryFlesh">
+  <RecipeDef ParentName="SurgeryFlesh" Abstract="True">
     <defName>ForceScarSurgery</defName>
     <label>scarring</label>
-    <description>Causes injueries goes permanent.</description>
+    <description>Causes injueries get permanent.</description>
     <workerClass>Explorite.Recipe_ForceScarSurgery</workerClass>
     <jobString>Scarring.</jobString>
     <workAmount>1000</workAmount>
@@ -85,6 +85,6 @@
         <li>Medicine</li>
       </categories>
     </fixedIngredientFilter>
-  </RecipeDef>-->
+  </RecipeDef>
   
 </Defs>

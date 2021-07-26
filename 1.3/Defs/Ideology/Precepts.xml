@@ -87,10 +87,6 @@
         <eventDef>AdministeredRecreationalDrug</eventDef>
         <thought>AdministeredRecreationalDrug_Horrible</thought>
       </li>
-      <li Class="PreceptComp_KnowsMemoryThought">
-        <eventDef>AdministeredHardDrug</eventDef>
-        <thought>AdministeredHardDrug_Know_Horrible</thought>
-      </li>
     </comps>
     <defaultDrugPolicyOverride>NoDrugs</defaultDrugPolicyOverride>
   </PreceptDef>
