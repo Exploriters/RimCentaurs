@@ -83,10 +83,6 @@
           <DrugDesire>1</DrugDesire>
         </nullifyingTraits>
       </li>
-      <li Class="PreceptComp_SelfTookMemoryThought">
-        <eventDef>AdministeredRecreationalDrug</eventDef>
-        <thought>AdministeredRecreationalDrug_Horrible</thought>
-      </li>
     </comps>
     <defaultDrugPolicyOverride>NoDrugs</defaultDrugPolicyOverride>
   </PreceptDef>

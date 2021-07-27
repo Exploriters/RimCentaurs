@@ -94,7 +94,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
-      <damageDef>Bullet</damageDef>
+      <damageDef>BulletHeat_WeakAgainstBuilding</damageDef>
       <damageAmountBase>3</damageAmountBase>
       <armorPenetrationBase>0.05</armorPenetrationBase>
       <stoppingPower>2.0</stoppingPower>
@@ -232,7 +232,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
-      <damageDef>BulletHeat</damageDef>
+      <damageDef>BulletHeat_AntiBuilding</damageDef>
       <damageAmountBase>20</damageAmountBase>
       <armorPenetrationBase>0.95</armorPenetrationBase>
       <stoppingPower>1.05</stoppingPower>
@@ -248,7 +248,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
-      <damageDef>BulletHeat</damageDef>
+      <damageDef>BulletHeat_AntiBuilding</damageDef>
       <damageAmountBase>10</damageAmountBase>
       <armorPenetrationBase>0.95</armorPenetrationBase>
       <stoppingPower>1.05</stoppingPower>

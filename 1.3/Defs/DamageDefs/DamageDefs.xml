@@ -150,7 +150,7 @@
     <combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
   </ManeuverDef>
 
-  <DamageDef>
+  <DamageDef Name="BulletHeat">
     <defName>BulletHeat</defName>
     <label>bullet</label>
     <workerClass>DamageWorker_AddInjury</workerClass>
@@ -163,6 +163,18 @@
     <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
     <isRanged>true</isRanged>
     <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+
+  <DamageDef ParentName="BulletHeat">
+    <defName>BulletHeat_WeakAgainstBuilding</defName>
+    <buildingDamageFactor>0.333333333</buildingDamageFactor>
+    <plantDamageFactor>0.333333333</plantDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="BulletHeat">
+    <defName>BulletHeat_AntiBuilding</defName>
+    <buildingDamageFactor>5</buildingDamageFactor>
+    <plantDamageFactor>5</plantDamageFactor>
   </DamageDef>
 
   <DamageDef>
