@@ -38,6 +38,7 @@
           <li>VitalsMonitor</li>
           <li>EndTable</li>
           <li>Dresser</li>
+          <li>SleepAccelerator</li>
         </linkableFacilities>
       </li>
     </comps>
@@ -69,6 +70,34 @@
     <techLevel>Spacer</techLevel>
     <uiIconScale>0.90</uiIconScale>
 	<tradeability>Sellable</tradeability>
+  </ThingDef>
+
+  <ThingDef ParentName="TableGatherSpotBase">
+    <defName>Table_Centaur_1x1c</defName>
+    <label>table (1x1)</label>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Table1x1Centaur</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.9</uiIconScale>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>375</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>0.5</Beauty>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+    </statBases>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <costStuffCount>15</costStuffCount>
   </ThingDef>
   
 </Defs>

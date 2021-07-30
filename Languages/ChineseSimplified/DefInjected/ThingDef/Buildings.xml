@@ -20,4 +20,7 @@
   <CentaurBed.label>半人马床</CentaurBed.label>
   <CentaurBed.description>一张为半人马设计的床。非常舒适和漂亮，同时也可以增加治疗的成功率。</CentaurBed.description>
 
+  <Table_Centaur_1x1c.label>桌子（1x1）</Table_Centaur_1x1c.label>
+  <Table_Centaur_1x1c.description>当放置有朝向桌子的椅子时，人们会在上面吃饭。</Table_Centaur_1x1c.description>
+
 </LanguageData>

@@ -1,34 +1,51 @@
-<color=#7fa0ff><b>RimCentaurs - Story of an exotic lone wolf species\n
-by siiftun1857</b> (AKA Magnussiiftun1857)\n
-Licensed under Apache 2.0 (Copyright 2018)</color>\n
-\n
-<color=#a0a0a0>None believes that centaurs exist in the world, and no one has witnessed the appearance of centaurs, or even thought about it.\n\n
-Until you showed up.\n\n
-You may the last centaur among you know. However, are you the only centaur in the world?\n\n
-You will find out.</color>\n
-\n
-<b><color=#ff7f00>This mod is WIP and some objects are unobtainable,\n
-including "Thermo Damper" and "Subsystems".</color>\n
-Requires "Explorite Core" to work.</b>\n
-\n
-<b>Features:</b>\n
- - New race "Centaur" with long wolf style scenario.\n
- - No NPC Centaur factions among the planet, you are the only one.\n
- - Survival will not be a problem nor challenge for centaurs. Have a relax.\n
- - Join the empire and satisfy royal apparel requirement without headdress.\n
- - Exotic resources, including archotech components.\n
- - Unique mechanics and systems, subsystems, and pawn shield.\n
- - Storyline of seeking "The other".\n
- - Multiple method-patches to solve common alien races issue.\n
- - Designed no effect on humans or other alien-races saves.\n
- - ... and more.\n
-\n
-<b>Features with SOS2:</b>\n
- - Start in centaur cruiser.\n
- - Uses centaur power armor as space suit, even without helmet.\n
+<color=#7fa0ff><b>RimCentaurs - Story of an exotic lone wolf species
+by siiftun1857</b> (AKA Magnussiiftun1857)
+Licensed under Apache 2.0 (Copyright 2018)</color>
+
+<color=#a0a0a0>None believes that centaurs exist in the world, and no one has witnessed the appearance of centaurs, or even thought about it.
+
+Until you showed up.
+
+You may the last centaur among you know. However, are you the only centaur in the world?
+
+You will find out.</color>
+
+
+<b><color=#ff7f00>This mod is WIP and some objects are unobtainable,
+including "Thermo Damper" and "Subsystems".</color>
+Requires "Explorite Core" and "Humanoid Alien Races 2.0" to work.</b>
+
+<b>Features:</b>
+- New race "Centaur" with lone wolf style scenario.
+- Completely different with most races in many ways, including immune to pain shock.
+- No NPC Centaur factions among the planet, you are the only one.
+- Survival will not be a problem nor challenge for centaurs. Have a relax.
+- Exotic resources, including archotech components.
+- Unique mechanics and systems, subsystems, and pawn shield.
+- Storyline of seeking "The other".
+- Multiple method-patches to solve common alien races issue.
+- Designed no effect on humans or other alien-races saves.
+- ... and more.
+<b>Integrations with Royalty:</b>
+- Join the empire and satisfy royal apparel requirement without headdress.
+- Release powerful abilities exclusive to centaurs.
+- Psychic sensitivity of centaur will not boost Neural heat limit until it reached 300%.
+- Receives no pain boost to speeds up neural heat dissipation of centaur. Just don't get hurt.
+<b>Integrations with Ideology:</b>
+- Centaur ideo is locked into a fixed one.
+- Memes which exclusive to centaurs match their lone wolf style.
+- Centaur headdress is no needs to be dyed.
+<b>Integrations with SOS2:</b>
+- Start in centaur cruiser.
+- Uses centaur power armor as space suit, even without helmet.
+- Torpedo spinal weapon.
+
+<b>Features with SOS2:</b>
+ - Start in centaur cruiser.
+ - Uses centaur power armor as space suit, even without helmet.
  - Torpedo spinal weapon.
-\n
-Have your nice trip!\n
-\n
-GitHub repository: https://github.com/Exploriters/RimCentaurs\n
-Fell free to sent pull request.\n
+
+Have your nice trip!
+
+GitHub repository: https://github.com/Exploriters/RimCentaurs
+Fell free to sent pull request.
