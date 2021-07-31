@@ -42,6 +42,7 @@
 	  <li>CentaurPlayerColony</li>
 	</exclusiveTo>
 	<islocateGroup>CentaurMeme</islocateGroup>
+	<lockAccuIdeoColor>true</lockAccuIdeoColor>
   </Explorite.MemeDef_Ex>
 
   <IdeoStoryPatternDef>
@@ -135,6 +136,7 @@
 	<exclusiveTo>
 	  <li>CentaurPlayerColony</li>
 	</exclusiveTo>
+	<lockAccuIdeoColor>true</lockAccuIdeoColor>
   </Explorite.MemeDef_Ex>
 
 </Defs>
