@@ -94,7 +94,7 @@
   </RecipeDef>
   -->
 
-  <RecipeDef>
+  <RecipeDef Abstract="True">
     <defName>Repair_Trishot_1Stage</defName>
 	<label>patch trishot</label>
 	<description>Repair trishot by archotech mech serum. This will restore it's normal range and sightly restore an alternative attact</description>
@@ -114,11 +114,12 @@
 	<productHasIngredientStuff>false</productHasIngredientStuff>  
 	<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>  
 	<workerClass>Explorite.Recipe_RepairTrishot1Stage</workerClass>  
+    <!--<ingredientValueGetterClass>Explorite.IngredientValueGetter_Stage1trishotOnly</ingredientValueGetterClass>-->
     <ingredients>
       <li>
         <filter>
           <thingDefs>
-            <li>Bow_Trishot_1Stage</li>
+            <li>Bow_Trishot</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -134,12 +135,12 @@
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>Bow_Trishot_1Stage</li>
+        <li>Bow_Trishot</li>
         <li>MechSerumArchotech</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Bow_Trishot_2Stage>1</Bow_Trishot_2Stage>
+      <Bow_Trishot>1</Bow_Trishot>
     </products>
 	<researchPrerequisites>
 	  <li>CentaurStoryStep1st</li>
@@ -154,7 +155,7 @@
     <!--<workSkillLearnFactor>0</workSkillLearnFactor>-->
   </RecipeDef>
 
-  <RecipeDef>
+  <RecipeDef Abstract="True">
     <defName>Repair_Trishot_2Stage</defName>
 	<label>repair trishot</label>
 	<description>Compelely repair trishot and restore its all functions, unlock a extremely powerful alternative attact.</description>
