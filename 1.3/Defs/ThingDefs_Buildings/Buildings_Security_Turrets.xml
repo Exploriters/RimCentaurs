@@ -27,7 +27,11 @@
         <offset>(0,0,-0.05)</offset>
       </shadowData>
     </graphicData>
-	<passability>Impassable</passability>
+    <passability>Impassable</passability>
+    <blockWind>true</blockWind>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
     <rotatable>false</rotatable>
     <size>(3,3)</size>
     <category>Building</category>
