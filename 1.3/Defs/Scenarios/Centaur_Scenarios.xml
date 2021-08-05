@@ -62,46 +62,32 @@
 			<levelRange>0.7~0.7</levelRange>
 		</li>
 		
-        <li Class="ScenPart_StartingThing_Defined">
-          <def>StartingThing_Defined</def>
+        <li Class="Explorite.ScenPart_StartingPawnThings">
+          <def>StartingPawnsThings</def>
           <visible>false</visible>
           <thingDef>Gun_CentaurPlasmaBlaster</thingDef>
           <count>1</count>
         </li>
-		<li Class="ScenPart_StartingThing_Defined">
-          <def>StartingThing_Defined</def>
+        <li Class="Explorite.ScenPart_StartingPawnThings">
+          <def>StartingPawnsThings</def>
           <visible>false</visible>
-          <thingDef>Gold</thingDef>
-          <count>500</count>
+          <thingDef>TriBatteryGolden</thingDef>
+          <count>1</count>
         </li>
-        <li Class="ScenPart_StartingThing_Defined">
-          <def>StartingThing_Defined</def>
+        <li Class="Explorite.ScenPart_StartingPawnThings">
+          <def>StartingPawnsThings</def>
           <visible>false</visible>
           <thingDef>MealSurvivalPack</thingDef>
           <count>10</count>
         </li>
-        <li Class="ScenPart_StartingThing_Defined">
-          <def>StartingThing_Defined</def>
+        <li Class="Explorite.ScenPart_StartingPawnThings">
+          <def>StartingPawnsThings</def>
           <visible>false</visible>
           <thingDef>MedicineUltratech</thingDef>
           <count>3</count>
         </li>
-        <li Class="ScenPart_StartingThing_Defined">
-          <def>StartingThing_Defined</def>
-          <visible>false</visible>
-          <thingDef>TriBattery</thingDef>
-          <count>1</count>
-        </li>
         <li Class="Explorite.ScenPart_WipeoutChunkSlag">
           <def>RemoveChunkSlag</def>
-          <visible>false</visible>
-        </li>
-        <li Class="Explorite.ScenPart_FillBattery">
-          <def>FillTriBattery</def>
-          <visible>false</visible>
-        </li>
-        <li Class="Explorite.ScenPart_DumpThingsToPawnInv">
-          <def>DumpThingsToPawnInv</def>
           <visible>false</visible>
         </li>
 		<li Class="Explorite.ScenPart_StartInSpaceCentaur">

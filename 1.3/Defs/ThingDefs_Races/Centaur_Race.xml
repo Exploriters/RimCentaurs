@@ -467,13 +467,14 @@
           </alienbodytypes>
           <useGenderedBodies>false</useGenderedBodies>
           <bodyAddons>
-            <li Class="Explorite.BodyAddon_MX">
+            <li> <!-- Class="Explorite.BodyAddon_MX" -->
               <drawSize>1</drawSize>
               <colorChannel>hair</colorChannel>
               <path>Things/Centaur/Ears/EarLeft</path>
               <bodyPart>left ear</bodyPart>
               <inFrontOfBody>true</inFrontOfBody>
               <drawnInBed>true</drawnInBed>
+              <drawnDesiccated>false</drawnDesiccated>
               <defaultOffset>Head</defaultOffset>
               <hiddenUnderApparelTag>
                 <li>HideCentaurEar</li>
@@ -490,13 +491,14 @@
                 </east>
               </offsets>
             </li>
-            <li Class="Explorite.BodyAddon_MX">
+            <li>
               <drawSize>1</drawSize>
               <colorChannel>hair</colorChannel>
               <path>Things/Centaur/Ears/EarRight</path>
               <bodyPart>right ear</bodyPart>
               <inFrontOfBody>true</inFrontOfBody>
               <drawnInBed>true</drawnInBed>
+              <drawnDesiccated>false</drawnDesiccated>
               <defaultOffset>Head</defaultOffset>
               <hiddenUnderApparelTag>
                 <li>HideCentaurEar</li>
@@ -513,13 +515,14 @@
                 </east>
               </offsets>
             </li>
-            <li Class="Explorite.BodyAddon_MX">
+            <li>
               <drawSize>1</drawSize>
               <colorChannel>hair</colorChannel>
               <path>Things/Centaur/Tail/Tail</path>
               <bodyPart>tail</bodyPart>
               <inFrontOfBody>false</inFrontOfBody>
               <drawnInBed>false</drawnInBed>
+              <drawnDesiccated>false</drawnDesiccated>
               <defaultOffset>Tail</defaultOffset>
               <hiddenUnderApparelTag>
                 <li>HideCentaurTail</li>

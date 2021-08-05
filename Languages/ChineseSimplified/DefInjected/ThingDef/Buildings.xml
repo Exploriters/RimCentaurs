@@ -13,7 +13,9 @@
 
   <TriBattery.label>三联电池</TriBattery.label>
   <TriBattery.description>储存电力以便稍后使用。充能的电池暴露在雨水或火焰中会爆炸。这个修改过的版本具有三倍的储量。</TriBattery.description>
-
+  <TriBatteryGolden.label>黄金三联电池</TriBatteryGolden.label>
+  <TriBatteryGolden.description>储存电力以便稍后使用。充能的电池暴露在雨水或火焰中会爆炸。这个修改过的版本具有闪亮而奢华的黄金外壳旨在满足一种文化。</TriBatteryGolden.description>
+  
   <ArtificialHivebox.label>人造虫箱</ArtificialHivebox.label>
   <ArtificialHivebox.description>通过饲养其中的昆虫来缓慢地生成虫胶。其被摧毁时会释放其中危险的巨型昆虫。</ArtificialHivebox.description>
 
