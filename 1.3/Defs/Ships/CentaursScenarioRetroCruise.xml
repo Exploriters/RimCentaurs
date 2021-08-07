@@ -11107,22 +11107,152 @@
 			<li>
 				<shapeOrDef>ShipHeatConduit</shapeOrDef>
 				<x>2</x>
-				<z>-1</z>
+				<z>-2</z>
 			</li>
 			<li>
 				<shapeOrDef>ShipHeatConduit</shapeOrDef>
 				<x>-2</x>
-				<z>-1</z>
+				<z>-2</z>
 			</li>
 			<li>
 				<shapeOrDef>PowerConduit</shapeOrDef>
 				<x>-2</x>
-				<z>-1</z>
+				<z>-2</z>
 			</li>
 			<li>
 				<shapeOrDef>PowerConduit</shapeOrDef>
 				<x>2</x>
-				<z>-1</z>
+				<z>-2</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>-38</x>
+				<z>-29</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>-39</x>
+				<z>-29</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>-39</x>
+				<z>-28</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>-34</x>
+				<z>-29</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>-33</x>
+				<z>-29</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>-32</x>
+				<z>-29</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>-31</x>
+				<z>-29</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>-30</x>
+				<z>-29</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>-26</x>
+				<z>-28</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>-25</x>
+				<z>-28</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>-24</x>
+				<z>-28</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>-23</x>
+				<z>-28</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>-22</x>
+				<z>-28</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>22</x>
+				<z>-28</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>23</x>
+				<z>-28</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>24</x>
+				<z>-28</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>25</x>
+				<z>-28</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>26</x>
+				<z>-28</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>30</x>
+				<z>-29</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>31</x>
+				<z>-29</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>32</x>
+				<z>-29</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>33</x>
+				<z>-29</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>34</x>
+				<z>-29</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>38</x>
+				<z>-29</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>39</x>
+				<z>-29</z>
+			</li>
+			<li>
+				<shapeOrDef>ShipHeatConduit</shapeOrDef>
+				<x>39</x>
+				<z>-28</z>
 			</li>
 			<li>
 				<shapeOrDef>ShipHullTile</shapeOrDef>
@@ -13069,15 +13199,15 @@
 				<shapeOrDef>Dresser</shapeOrDef>
 				<stuff>WoodLog</stuff>
 				<x>-12</x>
-				<z>-3</z>
+				<z>-2</z>
 				<rot>3</rot>
 			</li>
 			<li>
 				<shapeOrDef>EndTable</shapeOrDef>
 				<stuff>WoodLog</stuff>
 				<x>-12</x>
-				<z>-1</z>
-				<rot>1</rot>
+				<z>-3</z>
+				<rot>2</rot>
 			</li>
 			<li>
 				<shapeOrDef>ToolCabinet</shapeOrDef>
@@ -15929,7 +16059,7 @@
 		</parts>
 		<core>
 			<shapeOrDef>ShipPilotSeatMini</shapeOrDef>
-			<z>-1</z>
+			<z>-2</z>
 			<rot>2</rot>
 		</core>
 	</EnemyShipDef>

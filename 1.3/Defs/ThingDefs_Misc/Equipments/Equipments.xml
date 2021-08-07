@@ -155,7 +155,6 @@
         <verbClass>Explorite.Verb_Shoot_Rainbow2</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_CentaurPlasmaBlaster</defaultProjectile>
-        <secondaryProjectile>Bullet_CentaurPlasmaBlasterSingle</secondaryProjectile>
         <warmupTime>4.0</warmupTime>
         <range>56.4</range>
         <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
@@ -164,12 +163,15 @@
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>16</muzzleFlashScale>
         <stopBurstWithoutLos>false</stopBurstWithoutLos>
-
 		<isPrimary>true</isPrimary>
-        <desc>Fires plasma shots with high armor penetration ability</desc>
+        
         <label>piercer</label>
-        <texPath>Things/Item/Equipment/WeaponRanged/CentaurOverkill</texPath>
-        <texPathSelected>Things/Item/Equipment/WeaponRanged/CentaurOverkill</texPathSelected>
+        <exProps>
+          <desc>Fires plasma shots with high armor penetration ability</desc>
+          <texPath>Things/Item/Equipment/WeaponRanged/CentaurOverkill</texPath>
+          <texPathSelected>Things/Item/Equipment/WeaponRanged/CentaurOverkill</texPathSelected>
+          <secondaryProjectile>Bullet_CentaurPlasmaBlasterSingle</secondaryProjectile>
+        </exProps>
       </li>
       <li Class="Explorite.VerbProperties_Custom">
         <verbClass>Explorite.Verb_Shoot_OvertickShotgun</verbClass>
@@ -185,9 +187,11 @@
         <stopBurstWithoutLos>false</stopBurstWithoutLos>
 		
         <label>scatter</label>
-        <desc>Launch massive of charge shot in a single burst.</desc>
-        <texPath>Things/Item/Equipment/WeaponRanged/CentaurChargeShotgun</texPath>
-        <texPathSelected>Things/Item/Equipment/WeaponRanged/CentaurChargeShotgun</texPathSelected>
+        <exProps>
+          <desc>Launch massive of charge shot in a single burst.</desc>
+          <texPath>Things/Item/Equipment/WeaponRanged/CentaurChargeShotgun</texPath>
+          <texPathSelected>Things/Item/Equipment/WeaponRanged/CentaurChargeShotgun</texPathSelected>
+        </exProps>
       </li>
     </verbs>
     <tools>

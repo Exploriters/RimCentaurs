@@ -497,7 +497,7 @@
     </fixedIngredientFilter>
   </RecipeDef>
   
-  <HediffDef>
+  <HediffDef Abstract="True">
     <defName>HyperManipulator_EnvironmentalHeat</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(0.95, 0.6, 0.75)</defaultLabelColor>
@@ -710,7 +710,7 @@
     </stages>
   </HediffDef>
 
-  <HediffDef>
+  <HediffDef Abstract="True">
     <defName>HyperManipulator_EnvironmentalCold</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(0.95, 0.6, 0.75)</defaultLabelColor>
@@ -883,7 +883,7 @@
     </stages>
   </HediffDef>
 
-  <HediffDef>
+  <HediffDef Abstract="True">
     <defName>HyperManipulator_FatalSequela</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(0.95, 0.6, 0.75)</defaultLabelColor>
@@ -969,7 +969,7 @@
     </stages>
   </HediffDef>
 
-  <HediffDef>
+  <HediffDef Abstract="True">
     <defName>HyperManipulator_Dyskinesia</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(0.95, 0.3, 0.75)</defaultLabelColor>

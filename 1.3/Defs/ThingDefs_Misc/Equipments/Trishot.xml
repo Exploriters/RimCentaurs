@@ -186,12 +186,14 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-
 		<isPrimary>true</isPrimary>
-        <desc>Standard Trishot mode, fires triple heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst.</desc>
+		
         <label>triple shot</label>
-        <texPath>UI/Commands/BowTrishot_ModeTri</texPath>
-        <texPathSelected>UI/Commands/BowTrishot_ModeTri_Select</texPathSelected>
+        <exProps>
+          <desc>Standard Trishot mode, fires triple heavy arrows with delay-setoff thermal-discharging-bomb for long distances in a single burst.</desc>
+          <texPath>UI/Commands/BowTrishot_ModeTri</texPath>
+          <texPathSelected>UI/Commands/BowTrishot_ModeTri_Select</texPathSelected>
+        </exProps>
       </li>
       <li Class="Explorite.VerbProperties_Custom">
         <verbClass>Explorite.Verb_Shoot_OvertickShotgun</verbClass>
@@ -217,15 +219,18 @@
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
 		
-		<enableTagsValidator Mode="None">
-		  <li>DisallowIcosShot</li>
-		</enableTagsValidator>
-		<disableReason>This weapon needs to be repaired before this mode available.</disableReason>
-
-        <desc>Icos mode that launch empowered scatting hyper shot in massive amount but deals low damage each, shoot longer range and pass over walls.</desc>
+		
         <label>icos shot</label>
-        <texPath>UI/Commands/BowTrishot_ModeIcos</texPath>
-        <texPathSelected>UI/Commands/BowTrishot_ModeIcos_Select</texPathSelected>
+        <exProps>
+          <desc>Icos mode that launch empowered scatting hyper shot in massive amount but deals low damage each, shoot longer range and pass over walls.</desc>
+          <texPath>UI/Commands/BowTrishot_ModeIcos</texPath>
+          <texPathSelected>UI/Commands/BowTrishot_ModeIcos_Select</texPathSelected>
+		  
+		  <enableTagsValidator Mode="None">
+		    <li>DisallowIcosShot</li>
+		  </enableTagsValidator>
+		  <disableReason>This weapon needs to be repaired before this mode available.</disableReason>
+        </exProps>
       </li>
       <li Class="Explorite.VerbProperties_Custom">
         <verbClass>Explorite.Verb_Shoot_Cooldown</verbClass>
@@ -251,19 +256,21 @@
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
 		
-        <cooldownTick>18000</cooldownTick>
-        <redirectVerbAfterShoot>0</redirectVerbAfterShoot>
-		
-		<enableTagsValidator Mode="None">
-		  <li>DisallowSuperShot</li>
-		</enableTagsValidator>
-		<disableReason>This weapon needs to be repaired before this mode available.</disableReason>
-
-        <desc>One shot mode that launch a extremely powerful singe shot, shoot ultra long range fly over walls. Deals devastative damage and teleport the caster to the destnation, without letting the caster taking damage from own's shot. Takes really long time to take a shot, and needs cooldown after a cast.</desc>
         <label>one shot</label>
-        <texPath>UI/Commands/BowTrishot_ModeOne</texPath>
-        <texPathSelected>UI/Commands/BowTrishot_ModeOne_Select</texPathSelected>
-        <!-- <texPathCooldown>UI/Commands/BowTrishot_ModeOne_Cooldown</texPathCooldown> -->
+        <exProps>
+          <desc>One shot mode that launch a extremely powerful singe shot, shoot ultra long range fly over walls. Deals devastative damage and teleport the caster to the destnation, without letting the caster taking damage from own's shot. Takes really long time to take a shot, and needs cooldown after a cast.</desc>
+          <texPath>UI/Commands/BowTrishot_ModeOne</texPath>
+          <texPathSelected>UI/Commands/BowTrishot_ModeOne_Select</texPathSelected>
+          <!-- <texPathCooldown>UI/Commands/BowTrishot_ModeOne_Cooldown</texPathCooldown> -->
+		  
+		  <enableTagsValidator Mode="None">
+		    <li>DisallowSuperShot</li>
+		  </enableTagsValidator>
+		  <disableReason>This weapon needs to be repaired before this mode available.</disableReason>
+		  
+          <cooldownTick>18000</cooldownTick>
+          <redirectVerbAfterShoot>0</redirectVerbAfterShoot>
+        </exProps>
       </li>
     </verbs>
   </ThingDef>
