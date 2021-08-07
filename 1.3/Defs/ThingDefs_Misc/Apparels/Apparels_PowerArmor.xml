@@ -79,7 +79,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurArmorRecon/CentaurArmorRecon</wornGraphicPath>
       <tags>
-        <li>CentaurBodyFit</li>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
         <li>PrestigeCombatGear</li>
         <li>Psychic</li>
         <li>CentaurRoyale</li>
@@ -158,7 +158,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurArmorMarine/CentaurArmorMarine</wornGraphicPath>
       <tags>
-        <li>CentaurBodyFit</li>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
         <li>PrestigeCombatGear</li>
         <li>Psychic</li>
         <li>CentaurRoyale</li>
@@ -320,7 +320,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CentaurArmorCataphract/CentaurArmorCataphract</wornGraphicPath>
       <tags>
-        <li>CentaurBodyFit</li>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
         <li>PrestigeCombatGear</li>
         <li>Psychic</li>
         <li>CentaurRoyale</li>
@@ -453,7 +453,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>CentaurBodyFit</li>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
         <li>CentaurEndgame</li>
         <li>SOS2_SpaceSuit</li>
       </tags>

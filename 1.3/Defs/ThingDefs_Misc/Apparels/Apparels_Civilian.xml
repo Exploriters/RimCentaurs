@@ -57,7 +57,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>CentaurBodyFit</li>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
         <li>CentaurIndustrialBasic</li>
       </tags>
       <defaultOutfitTags>
@@ -127,7 +127,7 @@
         <li>Middle</li>
       </layers>
       <tags>
-        <li>CentaurBodyFit</li>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
         <li>CentaurIndustrialBasic</li>
         <li>CentaurRetroStart</li>
       </tags>
@@ -180,7 +180,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>CentaurBodyFit</li>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
         <li>CentaurIndustrialBasic</li>
       </tags>
       <defaultOutfitTags>
@@ -236,7 +236,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>CentaurBodyFit</li>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
         <li>CentaurIndustrialBasic</li>
         <li>CentaurRetroStart</li>
       </tags>
@@ -315,7 +315,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>CentaurBodyFit</li>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
         <li>CentaurIndustrialBasic</li>
         <li>BeltDefense</li>
       </tags>
@@ -367,7 +367,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>CentaurBodyFit</li>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
         <li>CentaurIndustrialBasic</li>
         <li>CentaurNeolithic</li>
       </tags>
@@ -456,7 +456,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>CentaurBodyFit</li>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
         <li>CentaurIndustrialAdvanced</li>
       </tags>
       <defaultOutfitTags>
@@ -530,7 +530,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>CentaurBodyFit</li>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
         <li>CentaurIndustrialAdvanced</li>
       </tags>
       <defaultOutfitTags>

@@ -25,8 +25,8 @@
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
     <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
     <!--<pawnNameMaker>NamerPersonGuoguo</pawnNameMaker>-->
-    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
-    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <factionNameMaker>NamerFactionCentaur</factionNameMaker>
+    <settlementNameMaker>NamerSettlementCentaur</settlementNameMaker>
     <geneticVariance>1</geneticVariance>
     <startingResearchTags>
       <li>CentaurStart</li>

@@ -67,7 +67,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>CentaurBodyFit</li>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
         <li>CentaurMedievalMilitary</li>
       </tags>
       <defaultOutfitTags>
@@ -147,7 +147,7 @@
         <li>Middle</li>
       </layers>
       <tags>
-        <li>CentaurBodyFit</li>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
         <li>CentaurIndustrialMilitaryBasic</li>
         <li>CentaurRetroStart</li>
       </tags>
@@ -226,7 +226,7 @@
         <li>Middle</li>
       </layers>
       <tags>
-        <li>CentaurBodyFit</li>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
         <li>CentaurIndustrialMilitaryBasic</li>
         <li>CentaurRetroStart</li>
       </tags>
@@ -303,7 +303,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>CentaurBodyFit</li>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
         <li>CentaurIndustrialAdvanced</li>
         <li>CentaurRetroStart</li>
       </tags>

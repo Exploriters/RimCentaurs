@@ -84,7 +84,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>CentaurBodyFit</li>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
         <li>CentaurEndgame</li>
         <li>SOS2_SpaceSuit</li>
       </tags>
@@ -175,7 +175,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>CentaurBodyFit</li>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
         <li>CentaurSpacerMilitary</li>
         <li>SOS2_SpaceHelmet</li>
       </tags>
@@ -264,7 +264,7 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>CentaurBodyFit</li>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
         <li>CentaurBeltDefense</li>
         <li>CentaurRetroStart</li>
       </tags>

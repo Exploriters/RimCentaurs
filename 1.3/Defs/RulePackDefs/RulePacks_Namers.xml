@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--
+  <RulePackDef>
+    <defName>NamerPersonCentaur</defName>
+    <include>
+      <li>TribalWordUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>person_name->[Color][Animal]</li>
+        <li>r_name->[person_name] [person_name] Centaur</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  -->
+
+  <RulePackDef>
+    <defName>NamerFactionCentaur</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->Exploriters</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerSettlementCentaur</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->Lone wolf settlement</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

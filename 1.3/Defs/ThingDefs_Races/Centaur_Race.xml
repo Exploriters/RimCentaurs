@@ -26,7 +26,10 @@
         </abilities>
       </li>
     </comps>
-    <tradeTags />
+    <tradeTags>
+      <li>ExAutoApparelWhiteList</li>
+      <li>ExImmuneToFoodPoisoning</li>
+    </tradeTags>
     <statBases>
       <MarketValue>38000</MarketValue>
       <MoveSpeed>13.5</MoveSpeed>
@@ -164,7 +167,7 @@
                   <li>(187.5,0)</li>
                 </points>
               </ageGenerationCurve> -->
-      <ageGenerationCurve>
+      <!-- <ageGenerationCurve>
         <points>
           <li>(14,0)</li>
           <li>(16,100)</li>
@@ -174,6 +177,18 @@
           <li>(150,10)</li>
           <li>(168.75,3)</li>
           <li>(187.5,0)</li>
+        </points>
+      </ageGenerationCurve> -->
+	  <ageGenerationCurve>
+        <points>
+          <li>(100,0)</li>
+          <li>(102,100)</li>
+          <li>(136,100)</li>
+          <li>(146,30)</li>
+          <li>(156,18)</li>
+          <li>(166,10)</li>
+          <li>(176,3)</li>
+          <li>(186,0)</li>
         </points>
       </ageGenerationCurve>
       <hediffGiverSets>

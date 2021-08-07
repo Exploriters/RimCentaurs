@@ -24,9 +24,9 @@
     <defName>Centaur</defName>
     <hediffGivers>
       
-      <li Class="Explorite.HediffGiver_EnsureForAlways">
+      <!--<li Class="Explorite.HediffGiver_EnsureForAlways">
         <hediff>CentaurHiddenEffect</hediff>
-      </li>
+      </li>-->
 	  
       <li Class="Explorite.HediffGiver_EnsureForBlankSubsystem">
         <hediff>CentaurSubsystem_BlankBlank</hediff>

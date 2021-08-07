@@ -44,7 +44,7 @@
         <!--<li>Overhead</li>-->
       </layers>
       <tags>
-        <li>CentaurBodyFit</li>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
         <li>CentaurRetroStart</li>
         <li>PrestigeCombatGear</li>
         <li>Psychic</li>
@@ -174,7 +174,7 @@
       </defaultOutfitTags>
       <tags>
         <li>CentaurRoyale</li>
-        <li>CentaurBodyFit</li>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
         <li>Psychic</li>
       </tags>
     </apparel>

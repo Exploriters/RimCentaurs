@@ -5,7 +5,7 @@
   <MentalBurster.description>一个为人马提供的大脑植入物，用于增强感知并降低疼痛，但不像止痛芯片那样完全移除疼痛。</MentalBurster.description>
 
   <HyperManipulator.label>物理操作仪</HyperManipulator.label>
-  <HyperManipulator.description>一套手臂的替换品，由未知的古代半人马建造。其移除一个人马的手臂，将其肩部替换为一套强大的远程操作器，能够隔空与周围的物体交互而不需要直接接触，强大到可以轻松摧毁硬木，也能精细到能在一粒米的空间写下十四行诗。它可以可控地生成全息投影，外观和触感都像是自然的手臂，同时动态地调整重心以保持平衡。其受到伤害时会持续自我修复，内部结构对于所有人来说都是个迷。\n\n它可以被独自安装并且不需要手术，但一开始会很不舒服，需要花费一些时间来适应，并在最终变得不可思议般地比任何其它仿生部件都要强大。</HyperManipulator.description>
+  <HyperManipulator.description>一套手臂的替换品，由未知的超凡半人马建造。其移除一个人马的手臂，将其肩部替换为一套强大的远程操作器，能够隔空与周围的物体交互而不需要直接接触，强大到可以轻松摧毁硬木，也能精细到能在一粒米的空间写下十四行诗。它可以可控地生成全息投影，外观和触感都像是自然的手臂，同时动态地调整重心以保持平衡。其受到伤害时会持续自我修复，内部结构对于所有人来说都是个迷。\n\n它可以被独自安装并且不需要手术，但一开始会很不舒服，需要花费一些时间来适应，并在最终变得不可思议般地比任何其它仿生部件都要强大。</HyperManipulator.description>
   <HyperManipulator.comps.1.useLabel>为自己组装物理操作仪</HyperManipulator.comps.1.useLabel>
   
   <BionicCentaurTail.label>仿生尾</BionicCentaurTail.label>
