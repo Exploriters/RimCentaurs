@@ -43,31 +43,19 @@
 	</exclusiveTo>
 	<islocateGroup>CentaurMeme</islocateGroup>
 	<lockAccuIdeoColor>true</lockAccuIdeoColor>
-  </Explorite.MemeDef_Ex>
-
-  <IdeoStoryPatternDef>
-    <defName>CentaursDescription</defName>
-    <segments>
-      <li>main</li>
-    </segments>
-    <rules>
-      <include />
-      <rulesStrings>
-        <li>main->TODO desc.</li>
-      </rulesStrings>
-    </rules>
-  </IdeoStoryPatternDef>
-  
-  <Explorite.MemeDef_Ex>
+	<countForNonStructureGroup>true</countForNonStructureGroup>
+	
+	<!--
     <defName>Centaur</defName>
     <label>lone wolf</label>
     <description>Live independently.</description>
     <iconPath>UI/Ideology/ExploriterT</iconPath>
-    <!--<iconPath>UI/Memes/AnimalPersonhood</iconPath>-->
+    <iconPath>UI/Memes/AnimalPersonhood</iconPath>
     <groupDef>Misc</groupDef>
     <impact>3</impact>
     <randomizationSelectionWeightFactor>0.0</randomizationSelectionWeightFactor>
-    <renderOrder>8000</renderOrder>
+    <renderOrder>8000</renderOrder>-->
+	
     <veneratedAnimalsCountOffset>-10</veneratedAnimalsCountOffset>
     <veneratedAnimalsCountOverride>0</veneratedAnimalsCountOverride>
     <exclusionTags>
@@ -94,8 +82,6 @@
       <li><li>SpouseCount_Male_MaxOne</li></li>
       <li><li>SpouseCount_Female_MaxOne</li></li>
     </requireOne>
-    <generalRules />
-    <descriptionMaker />
     <addDesignators>
       <li>Tile_Transhumanist</li>
       <li>SleepAccelerator</li>
@@ -105,7 +91,6 @@
       <li>Floor_Transhumanist_Carpet</li>
     </addDesignatorGroups>
     <symbolPackOverride>true</symbolPackOverride>
-    <symbolPacks />
     <styleItemTags>
       <li>
         <tag>NoBeard</tag>
@@ -132,11 +117,19 @@
       <noble>Ultratech</noble>
       <despised>Neolithic</despised>
     </preferredWeaponClasses>
-	
-	<exclusiveTo>
-	  <li>CentaurPlayerColony</li>
-	</exclusiveTo>
-	<lockAccuIdeoColor>true</lockAccuIdeoColor>
   </Explorite.MemeDef_Ex>
 
+  <IdeoStoryPatternDef>
+    <defName>CentaursDescription</defName>
+    <segments>
+      <li>main</li>
+    </segments>
+    <rules>
+      <include />
+      <rulesStrings>
+        <li>main->TODO desc.</li>
+      </rulesStrings>
+    </rules>
+  </IdeoStoryPatternDef>
+  
 </Defs>

@@ -43,14 +43,14 @@
 
     <requiredMemes>
       <li>Structure_Centaur</li>
-      <li>Centaur</li>
+      <!--<li>Centaur</li>-->
     </requiredMemes>
     <allowedMemes>
       <li>Structure_Centaur</li>
-      <li>Centaur</li>
+      <!--<li>Centaur</li>-->
     </allowedMemes>
     <structureMemeWeights>
-      <Structure_Centaur MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Centaur>
+      <Structure_Centaur>1</Structure_Centaur>
     </structureMemeWeights>
 
 	<!--

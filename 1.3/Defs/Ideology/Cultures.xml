@@ -78,7 +78,7 @@
     <iconPath>UI/Ideology/Exploriter</iconPath>
     <memes>
       <li>Structure_Centaur</li>
-      <li>Centaur</li>
+      <!--<li>Centaur</li>-->
     </memes>
   </IdeoIconDef>
 
@@ -87,7 +87,7 @@
     <color>RGBA(0.243, 0.400, 0.710, 1.000)</color>
     <memes>
       <li>Structure_Centaur</li>
-      <li>Centaur</li>
+      <!--<li>Centaur</li>-->
     </memes>
   </ColorDef>
 
