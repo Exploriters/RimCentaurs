@@ -9,7 +9,7 @@
     <impact>High</impact>
     <displayOrderInIssue>45</displayOrderInIssue>
     <requiredMemes>
-      <li>Centaur</li>
+      <li>Structure_Centaur</li>
     </requiredMemes>
     <comps>
       <li Class="PreceptComp_UnwillingToDo">
@@ -32,7 +32,7 @@
     <displayOrderInIssue>25</displayOrderInIssue>
     <displayOrderInImpact>100</displayOrderInImpact>
     <requiredMemes>
-      <li>Centaur</li>
+      <li>Structure_Centaur</li>
     </requiredMemes>
     <comps>
       <li Class="PreceptComp_SelfTookMemoryThought">
@@ -64,7 +64,7 @@
     <displayOrderInIssue>15</displayOrderInIssue>
     <displayOrderInImpact>100</displayOrderInImpact>
     <requiredMemes>
-      <li>Centaur</li>
+      <li>Structure_Centaur</li>
     </requiredMemes>
     <comps>
       <li Class="PreceptComp_SelfTookMemoryThought">
@@ -95,7 +95,7 @@
     <impact>High</impact>
     <displayOrderInIssue>-50</displayOrderInIssue>
     <requiredMemes>
-      <li>Centaur</li>
+      <li>Structure_Centaur</li>
     </requiredMemes>
     <statFactors>
       <ConversionPower>0</ConversionPower>
