@@ -104,7 +104,7 @@
     <defName>TriBatteryGolden</defName>
     <label>golden triple battery</label>
     <description>Stores electricity for later use. Charged batteries explode when exposed to rain or fire. This modified version with golden shell is shiny and luxury, designed to satisfy a kind of culture.</description>
-    <thingClass>Explorite.Building_TriBattery_SecretTrishot</thingClass>
+    <thingClass>Explorite.Building_TriBattery</thingClass>
     <graphicData>
       <color>(255,235,122)</color>
     </graphicData>

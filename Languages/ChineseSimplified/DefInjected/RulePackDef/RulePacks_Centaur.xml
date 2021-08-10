@@ -23,5 +23,9 @@
     <li>r_name->孤狼基地</li>
   </NamerSettlementCentaur.rulePack.rulesStrings>
 
+  <LeaderTitleMaker_Exploriter.rulePack.rulesStrings>
+    <li>r_leaderTitle->领袖</li>
+  </LeaderTitleMaker_Exploriter.rulePack.rulesStrings>
+
 
 </LanguageData>

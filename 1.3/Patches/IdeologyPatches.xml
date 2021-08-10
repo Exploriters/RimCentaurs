@@ -11,7 +11,8 @@
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/PreceptDef[not (
-				   defName="Blinding_Horrible"
+				   @Abstract="True"
+				or defName="Blinding_Horrible"
 				or defName="Cannibalism_Disgusting_EX"
 				or defName="Corpses_Ugly"
 				or defName="DrugUse_MedicalOnly_SoftCareOthers_EX"
@@ -32,12 +33,32 @@
 				or defName="Slavery_Acceptable"
 				or defName="SpouseCount_Male_MaxOne"
 				or defName="SpouseCount_Female_MaxOne"
+				
+				or @Name="PreceptRoleSingleBase"
+				or @Name="PreceptRoleMultiBase"
+				or defName="IdeoRole_Leader"
 				)]/conflictingMemes</xpath>
 		<value>
 			<li>Structure_Centaur</li>
 		</value>
 	</Operation>
-	
+	  <!--
+				
+				or issue="IdeoRole"
+				or @ParentName="PreceptRoleSingleBase"
+				or @ParentName="PreceptRoleMultiBase"
+				or defName="IdeoRole_Moralist"
+				
+				or issue="Ritual"
+				or @ParentName="FuneralBase"
+				or @Name="FuneralBase"
+				or @ParentName="FestivalBase"
+				or @Name="FestivalBase"
+				or @ParentName="SpeechPreceptBase"
+				or @Name="SpeechPreceptBase"
+				or @ParentName="TrialBase"
+				or @Name="TrialBase"
+	  -->
       <!--
 				or @Name="FuneralBase"
 				or @ParentName="FuneralBase"

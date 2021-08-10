@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BedWithQualityBase">
+  <ThingDef ParentName="ArtableBedBase">
     <defName>CentaurBed</defName>
     <label>centaur bed</label>
     <description>A bed designed for centaurs. It is very comfy and beautiful, also adjustable for a patient and festooned with built-in equipment, improves medical outcomes over normal beds.</description>
@@ -26,12 +26,17 @@
       <SurgerySuccessChanceFactor>1.1</SurgerySuccessChanceFactor>
     </statBases>
     <comps Inherit="False">
-      <li Class="Explorite.CompProperties_AssignableToPawn_NoPostLoadSpecial">
-        <drawAssignmentOverlay>false</drawAssignmentOverlay>
-        <compClass>CompAssignableToPawn_Bed</compClass>
-      </li>
       <li>
         <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtFurniture</nameMaker>
+        <descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="Explorite.CompProperties_AssignableToPawn_NoPostLoadSpecial">
+        <drawAssignmentOverlay>false</drawAssignmentOverlay>
+        <compClass>Explorite.CompAssignableToPawn_Bed_Centaur</compClass>
       </li>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
@@ -98,6 +103,12 @@
     <size>(1,1)</size>
     <rotatable>false</rotatable>
     <costStuffCount>15</costStuffCount>
+    <comps Inherit="False">
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Styleable" />
+    </comps>
   </ThingDef>
   
 </Defs>

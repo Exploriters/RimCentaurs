@@ -103,5 +103,48 @@
     </statFactors>
     <proselytizes>false</proselytizes>
   </PreceptDef>
+
+  <!--
+  <PreceptDef>
+    <defName>IdeoDiversity_Isolated_EX</defName>
+    <issue>IdeoDiversity</issue>
+    <label>isolated</label>
+    <description>We stand on our beliefs and does not care about anyone else.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>-10</displayOrderInIssue>
+    <defaultSelectionWeight>0</defaultSelectionWeight>
+    <requiredMemes>
+      <li>Structure_Centaur</li>
+    </requiredMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>IdeoDiversity_Abhorrent</thought>
+      </li>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>IdeoDiversity_Abhorrent_Uniform</thought>
+        <description>All colonists have same ideoligion</description>
+      </li>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>IdeoLeaderResentmentAbhorrent</thought>
+      </li>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>IdeoDiverity_Abhorrent_AltarSharing</thought>
+      </li>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>IdeoDiversity_Abhorrent_StyleDominance</thought>
+        <thoughtStageDescriptions>
+          <li>Uniform surroundings</li>
+          <li>Diverse surroundings</li>
+        </thoughtStageDescriptions>
+      </li>
+    </comps>
+    <statFactors>
+      <ConversionPower>0</ConversionPower>
+      <SocialIdeoSpreadFrequencyFactor>0</SocialIdeoSpreadFrequencyFactor>
+      <CertaintyLossFactor>0</CertaintyLossFactor>
+    </statFactors>
+    <proselytizes>false</proselytizes>
+  </PreceptDef>
+  -->
   
 </Defs>
