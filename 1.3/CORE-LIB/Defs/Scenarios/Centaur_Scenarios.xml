@@ -90,7 +90,7 @@
           <def>RemoveChunkSlag</def>
           <visible>false</visible>
         </li>
-		<li Class="Explorite.ScenPart_StartInSpaceCentaur">
+		<li Class="Explorite.ScenPart_StartInSpaceCentaur" MayRequire="kentington.saveourship2">
 		  <def>StartInSpaceCentaurs</def>
           <visible>false</visible>
 		</li>

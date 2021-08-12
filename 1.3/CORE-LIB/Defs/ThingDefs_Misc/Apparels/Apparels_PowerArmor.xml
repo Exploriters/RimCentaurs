@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ApparelArmorReconCentaurBase">
+    <defName>Apparel_ArmorReconCentaur</defName>
+    <tradeability>Sellable</tradeability>
+    <label>centaur recon armor</label>
+    <description>A suit of light partially-powered armor for centaurs, designed to permit quick movement. Plasteel-weave plates block attacks without compromising mobility, and neuro-memetic assistors in the lower body allow a human to wear the armor and still move easily.\n\nThe powerful carrying ability of the centaurs allows their armor to attach additional powerful devices without weakening its defense, this variant attached an integrated burst rocket for short-ranged flight, excel in shipcracking operations. Embedded expensive and beautiful eltex threads also enhance the wearer's psychic sensitivity.</description>
+  </ThingDef>
+  
+  <ThingDef ParentName="ApparelArmorPowerCentaurBase">
+    <defName>Apparel_ArmorMarineCentaur</defName>
+    <tradeability>Sellable</tradeability>
+    <label>centaur marine armor</label>
+    <description>A suit of powered armor for centaurs. Layered plasteel-weave plates are very effective at stopping attacks, with few vulnerable joint sections. Neuro-memetic assistors allow a human to wear the armor and still move easily.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.\n\nThe powerful carrying ability of the centaurs allows their armor to attach additional powerful devices without weakening its defense, this variant attached an integrated frag launcher on back, usually specialize in breaching buildings or internal ship bulkheads, surprisingly deadly in confined quarters. Embedded expensive and beautiful eltex threads also enhance the wearer's psychic sensitivity.</description>
+  </ThingDef>
+  
+  <ThingDef ParentName="ApparelArmorCataphractCentaurBase">
+    <defName>Apparel_ArmorCataphractCentaur</defName>
+    <tradeability>Sellable</tradeability>
+    <label>centaur cataphract armor</label>
+    <description>A suit of heavy powered armor for centaurs, built for maximum protection at the cost of mobility. Heavy layered plasteel-weave plates with solid ablative coatings stop all but the most well-aimed or powerful attacks. Neuro-memetic assistors prevent the suit's massive weight from immobilizing the wearer entirely, but the suit is still quite cumbersome.\n\nThe powerful carrying ability of the centaurs allows their armor to attach additional powerful devices without weakening its defense, this variant attached a mounted flamebolt launcher on back, specialize in clearing out very confined spaces full of enemies as in underground or shipborne operations, absorb hits while moving down a corridor, and fill rooms with flame. Embedded expensive and beautiful eltex threads also enhance the wearer's psychic sensitivity.</description>
+    <recipeMaker>
+	  <researchPrerequisites>
+		<li>PoweredArmor</li>
+	  </researchPrerequisites>
+    </recipeMaker>
+  </ThingDef>
+  
+</Defs>

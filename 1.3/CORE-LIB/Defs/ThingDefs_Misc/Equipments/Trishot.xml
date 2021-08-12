@@ -24,8 +24,8 @@
 	  <SellPriceFactor>1</SellPriceFactor>
     </statBases>
     <equippedStatOffsets>
-      <PsychicSensitivity>0.75</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate>0.2475</PsychicEntropyRecoveryRate>
+      <!--<PsychicSensitivity>0.75</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate>0.2475</PsychicEntropyRecoveryRate>-->
     </equippedStatOffsets>
 	<stackLimit>1</stackLimit>
     <weaponTags>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef Name="ExploriteUtilityThingBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>None</category>
+    <!--<menuHidden>false</menuHidden>-->
+    <tradeability>None</tradeability>
+    <destroyOnDrop>false</destroyOnDrop>
+    <useHitPoints>false</useHitPoints>
+    <selectable>false</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>1</stackLimit>
+    <alwaysHaulable>false</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>0</pathCost>
+    <tickerType>Normal</tickerType>
+  </ThingDef>
+
+</Defs>

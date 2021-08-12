@@ -22,7 +22,7 @@
       </li>
       <li Class="Explorite.CompProperties_EnsureAbility">
         <abilities>
-          <li>MassPsychicDeafCentaur</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">MassPsychicDeafCentaur</li>
         </abilities>
       </li>
     </comps>
@@ -75,21 +75,20 @@
       <ButcheryFleshEfficiency>1.03</ButcheryFleshEfficiency>
       <ButcheryMechanoidEfficiency>1.03</ButcheryMechanoidEfficiency>
       
-      
-      <!-- Psychic -->
-      <PsychicSensitivity>1.8</PsychicSensitivity>
-      <PsychicEntropyMax ExEx="Royalty">90</PsychicEntropyMax>
-      <PsychicEntropyRecoveryRate ExEx="Royalty">1.62</PsychicEntropyRecoveryRate>
-      <!--<MeditationFocusGain ExEx="Royalty">1.5</MeditationFocusGain>-->
-
       <!-- Shield -->
       <PawnShieldRechargeRate>0</PawnShieldRechargeRate>
       <PawnShieldEnergyMax>0</PawnShieldEnergyMax>
+      
+      <!-- Psychic -->
+      <PsychicSensitivity>1.8</PsychicSensitivity>
+      <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">90</PsychicEntropyMax>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">1.62</PsychicEntropyRecoveryRate>
+      <!--<MeditationFocusGain ExEx="Royalty">1.5</MeditationFocusGain>-->
 
       <!-- Ideology -->
-      <CertaintyLossFactor>0.0</CertaintyLossFactor>
-      <BiosculpterOccupantSpeed>3.0</BiosculpterOccupantSpeed>
-      <HackingSpeed>3.0</HackingSpeed>
+      <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.0</CertaintyLossFactor>
+      <BiosculpterOccupantSpeed MayRequire="Ludeon.RimWorld.Ideology">3.0</BiosculpterOccupantSpeed>
+      <HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">3.0</HackingSpeed>
       
     </statBases>
     <race>
@@ -718,14 +717,14 @@
           <li>Apparel_ArmorMarineCentaur</li>
           <li>Apparel_ArmorCataphractCentaur</li>
 
-          <li ExEx="Royalty">Apparel_PsyfocusCentaursuit</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsyfocusCentaursuit</li>
 
           <!--<li>Apparel_CentaurArchotechArmor</li>-->
         </apparelList>
 
         <onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
         <weaponList>
-          <li>MeleeWeapon_PsyfocusStaffCentaur</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">MeleeWeapon_PsyfocusStaffCentaur</li>
           <li>Gun_CentaurPlasmaBlaster</li>
           <li>Bow_Trishot</li>
         </weaponList>

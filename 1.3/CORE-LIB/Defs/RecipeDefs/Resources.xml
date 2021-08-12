@@ -83,10 +83,10 @@
             <li>ArchotechLeg</li>
             <li>PsychicAnimalPulser</li>
             <li>PsychicSoothePulser</li>
-            <li>PsychicAmplifier</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">PsychicAmplifier</li>
             <li>PsychicEmanator</li>
-            <li>Gloomlight</li>
-            <li>UnstablePowerCell</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">Gloomlight</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">UnstablePowerCell</li>
             <li>VanometricPowerCell</li>
           </thingDefs>
           <categories>
@@ -108,10 +108,10 @@
             <li>ArchotechLeg</li>
             <li>PsychicAnimalPulser</li>
             <li>PsychicSoothePulser</li>
-            <li>PsychicAmplifier</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">PsychicAmplifier</li>
             <li>PsychicEmanator</li>
-            <li>Gloomlight</li>
-            <li>UnstablePowerCell</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">Gloomlight</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">UnstablePowerCell</li>
             <li>VanometricPowerCell</li>
       </thingDefs>
 	  <categories>

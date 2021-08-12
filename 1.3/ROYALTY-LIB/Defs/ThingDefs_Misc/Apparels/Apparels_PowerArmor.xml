@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ApparelArmorReconCentaurBase">
+    <defName>Apparel_ArmorReconCentaur</defName>
+    <tradeability>Sellable</tradeability>
+    <label>centaur recon armor</label>
+    <description>A suit of light partially-powered armor for centaurs, designed to permit quick movement. Plasteel-weave plates block attacks without compromising mobility, and neuro-memetic assistors in the lower body allow a human to wear the armor and still move easily.\n\nThe powerful carrying ability of the centaurs allows their armor to attach additional powerful devices without weakening its defense, this variant attached an integrated burst rocket for short-ranged flight, excel in shipcracking operations. Embedded expensive and beautiful eltex threads also enhance the wearer's psychic sensitivity.</description>
+    <statBases>
+      <JumpRange>23.9</JumpRange>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivity>0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate>0.166</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <compClass>Explorite.CompReloadable_InitOnEmpty</compClass>
+        <maxCharges>10</maxCharges>
+        <ammoDef>Chemfuel</ammoDef>
+        <ammoCountPerCharge>20</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>jump</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_Jump</verbClass>
+        <label>jump</label>
+        <commandIcon>Things/Pawn/Humanlike/Apparel/JumpPack/JumpPack</commandIcon>
+        <violent>false</violent>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <warmupTime>0.5</warmupTime>
+        <warmupEffecter>JumpWarmupEffect</warmupEffecter>
+        <requireLineOfSight>true</requireLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <ThingDef ParentName="ApparelArmorPowerCentaurBase">
+    <defName>Apparel_ArmorMarineCentaur</defName>
+    <tradeability>Sellable</tradeability>
+    <label>centaur marine armor</label>
+    <description>A suit of powered armor for centaurs. Layered plasteel-weave plates are very effective at stopping attacks, with few vulnerable joint sections. Neuro-memetic assistors allow a human to wear the armor and still move easily.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.\n\nThe powerful carrying ability of the centaurs allows their armor to attach additional powerful devices without weakening its defense, this variant attached an integrated frag launcher on back, usually specialize in breaching buildings or internal ship bulkheads, surprisingly deadly in confined quarters. Embedded expensive and beautiful eltex threads also enhance the wearer's psychic sensitivity.</description>
+    <equippedStatOffsets>
+      <PsychicSensitivity>0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate>0.166</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <compClass>Explorite.CompReloadable_InitOnEmpty</compClass>
+        <maxCharges>4</maxCharges>
+        <ammoDef>Steel</ammoDef>
+        <ammoCountPerCharge>25</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>grenade</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <label>launch frag grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>12.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Proj_CentaurGrenadierGrenade</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+      <li>
+        <label>launch emp grenade</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>12.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Proj_CentaurGrenadierEMP</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <ThingDef ParentName="ApparelArmorCataphractCentaurBase">
+    <defName>Apparel_ArmorCataphractCentaur</defName>
+    <tradeability>Sellable</tradeability>
+    <label>centaur cataphract armor</label>
+    <description>A suit of heavy powered armor for centaurs, built for maximum protection at the cost of mobility. Heavy layered plasteel-weave plates with solid ablative coatings stop all but the most well-aimed or powerful attacks. Neuro-memetic assistors prevent the suit's massive weight from immobilizing the wearer entirely, but the suit is still quite cumbersome.\n\nThe powerful carrying ability of the centaurs allows their armor to attach additional powerful devices without weakening its defense, this variant attached a mounted flamebolt launcher on back, specialize in clearing out very confined spaces full of enemies as in underground or shipborne operations, absorb hits while moving down a corridor, and fill rooms with flame. Embedded expensive and beautiful eltex threads also enhance the wearer's psychic sensitivity.</description>
+    <equippedStatOffsets>
+      <PsychicSensitivity>0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate>0.166</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <recipeMaker>
+	  <researchPrerequisites>
+		<li>CataphractArmor</li>
+	  </researchPrerequisites>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>2</maxCharges>
+        <ammoDef>Chemfuel</ammoDef>
+        <ammoCountPerCharge>40</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>incendiary</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <label>launch incendiary</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>14.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <!--<soundCast>Shot_IncendiaryLauncher</soundCast>-->
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Proj_GrenadePhoenixFire</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+</Defs>
