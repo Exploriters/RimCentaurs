@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
-  <ThingDef ParentName="ApparelMakeableBase" ExEx="Royalty">
+  <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_PsyfocusCentaursuit</defName>
     <label>eltex centaur suit</label>
     <description>A suit embedded with special psychic focusing materials for centaurs. These enhance psychic sensitivity and help dissipate neural heat.</description>

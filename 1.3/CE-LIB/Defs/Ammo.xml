@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>AmmoCentaurCharged</defName>
+    <label>Centaur Charged Ammunition</label>
+    <parent>AmmoAdvanced</parent>
+    <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
+  </ThingCategoryDef>
+
+  <!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_CentaurChargeShotgun</defName>
+    <label>Charged Shotgun</label>
+    <ammoTypes>
+      <Ammo_CentaurChargeShotgun>Projectile_CentaurChargeShotgun</Ammo_CentaurChargeShotgun>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_CentaurOverkill</defName>
+    <label>Overkill</label>
+    <ammoTypes>
+      <Ammo_CentaurChargeShotgun>Projectile_CentaurChargeShotgun</Ammo_CentaurChargeShotgun>
+      <Ammo_CentaurCharge>Projectile_CentaurCharge</Ammo_CentaurCharge>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_CentaurSlingLine</defName>
+    <label>Slignline</label>
+    <ammoTypes>
+      <Ammo_CentaurSlingLine_Stone>Projectile_CentaurSlingLineStone</Ammo_CentaurSlingLine_Stone>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+
+  <!-- ==================== Ammo ========================== -->
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
+    <description>Charged shot ammo used by centaur charge shotgun, fires more smaller pellets than normal charge shotgun cartridge.</description>
+    <defName>Ammo_CentaurChargeShotgun</defName>
+    <label>Charged shotgun cartridge</label>
+    <graphicData>
+      <texPath>Things/Ammo/Charged/Regular</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Bulk>0.01</Bulk>
+      <MarketValue>2.8</MarketValue>
+      <Mass>0.028</Mass>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting_FabricationBench</li>
+    </tradeTags>
+    <ammoClass>BuckShot</ammoClass>
+    <thingCategories>
+      <li>AmmoCentaurCharged</li>
+    </thingCategories>
+    <stackLimit>5000</stackLimit>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
+    <description>Special charged shot ammo used by centaur overkill blaster.</description>
+    <defName>Ammo_CentaurCharge</defName>
+    <label>Thermo charged cartridge</label>
+    <graphicData>
+      <texPath>Things/Ammo/Charged/Regular</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.018</Mass>
+      <Bulk>0.01</Bulk>
+      <MarketValue>1.55</MarketValue>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting_FabricationBench</li>
+    </tradeTags>
+    <ammoClass>Charged</ammoClass>
+    <thingCategories>
+      <li>AmmoCentaurCharged</li>
+    </thingCategories>
+    <stackLimit>5000</stackLimit>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoSlingBulletBase">
+    <defName>Ammo_CentaurSlingLine_Stone</defName>
+    <label>slingline stone</label>
+    <graphicData>
+      <texPath>Things/Ammo/Neolithic/SlingBullet/Stone</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MarketValue>0.7</MarketValue>
+    </statBases>
+    <ammoClass>StoneSlingBullet</ammoClass>
+    <tradeTags>
+      <li>CE_AutoEnableCrafting_CraftingSpot</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- ================== Projectiles ================== -->
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base12GaugeChargedBullet">
+    <defName>Projectile_CentaurChargeShotgun</defName>
+    <label>charge shot pellet</label>
+    <graphicData>
+      <drawSize>0.5</drawSize>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageAmountBase>3</damageAmountBase>
+      <secondaryDamage>
+        <li>
+          <def>Bomb_Secondary</def>
+          <amount>1</amount>
+        </li>
+      </secondaryDamage>
+      <armorPenetrationSharp>4</armorPenetrationSharp>
+      <armorPenetrationBlunt>10.4</armorPenetrationBlunt>
+      <pelletCount>20</pelletCount>
+      <spreadMult>27.8</spreadMult>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base6x24mmChargedBullet">
+    <defName>Projectile_CentaurCharge</defName>
+    <label>Thermo plasma bolt</label>
+    <graphicData>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageAmountBase>15</damageAmountBase>
+      <secondaryDamage>
+        <li>
+          <def>Bomb_Secondary</def>
+          <amount>20</amount>
+        </li>
+      </secondaryDamage>
+      <pelletCount>2</pelletCount>
+      <armorPenetrationSharp>30</armorPenetrationSharp>
+      <armorPenetrationBlunt>38.6</armorPenetrationBlunt>
+      <spreadMult>2</spreadMult>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+    <defName>Projectile_CentaurSlingLineStone</defName>
+    <label>slingline stone</label>
+    <graphicData>
+      <texPath>Things/Projectile/Stone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <speed>40</speed>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <armorPenetrationBlunt>60</armorPenetrationBlunt>
+      <preExplosionSpawnChance>0.166</preExplosionSpawnChance>
+      <preExplosionSpawnThingDef>Ammo_CentaurSlingLine_Stone</preExplosionSpawnThingDef>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+    <defName>Bullet_CentaurFrostbrainerCE</defName>
+    <thingClass>Explorite.BulletCE_Direct</thingClass>
+    <label>entropy laser</label>
+    <graphicData>
+      <texPath>TextureNothing</texPath>
+      <drawSize>(0,0)</drawSize>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>BulletBrain</damageDef>
+      <speed>500</speed>
+      <flyOverhead>true</flyOverhead>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+    <defName>Arrow_Trishot_HyperCE</defName>
+    <label>trishot hyper arrow</label>
+    <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Trishot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <flyOverhead>true</flyOverhead>
+      <speed>0</speed>
+      <damageDef>Frostblast_Buildingimmune</damageDef>
+      <damageAmountBase>120</damageAmountBase>
+      <explosionRadius>5</explosionRadius>
+
+      <preExplosionSpawnThingDef>Filth_FrostdustBlue</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+      <preExplosionSpawnThingCount>5</preExplosionSpawnThingCount>
+      
+      <postExplosionSpawnThingDef>Filth_FrostdustOrange</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>0.5</postExplosionSpawnChance>
+      <postExplosionSpawnThingCount>5</postExplosionSpawnThingCount>
+      
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      <ai_IsIncendiary>false</ai_IsIncendiary>
+      
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>MortarBomb_Explode</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <gravityFactor>20</gravityFactor>
+    </projectile>
+  </ThingDef>
+
+
+  <!-- ==================== Recipes ========================== -->
+
+  <RecipeDef ParentName="ChargeAmmoRecipeBase">
+    <defName>MakeAmmo_CentaurChargeShotgun</defName>
+    <label>make centaur charged shotgun cartridge x500</label>
+    <description>Craft 500 centaur charged shotgun cartridges.</description>
+    <jobString>Making centaur charged shotgun cartridges.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>	  
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TriCapacitorCell</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Steel</li>		
+        <li>ComponentIndustrial</li>
+        <li>TriCapacitorCell</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_CentaurChargeShotgun>500</Ammo_CentaurChargeShotgun>
+    </products>
+    <workAmount>8600</workAmount>		
+  </RecipeDef>
+
+  <RecipeDef ParentName="ChargeAmmoRecipeBase">
+    <defName>MakeAmmo_CentaurCharge</defName>
+    <label>make centaur overkill charged cartridge x500</label>
+    <description>Craft 500 centaur overkill charged cartridges.</description>
+    <jobString>Making centaur overkill charged cartridge.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TriCapacitorCell</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Steel</li>
+        <li>ComponentIndustrial</li>
+        <li>TriCapacitorCell</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_CentaurCharge>500</Ammo_CentaurCharge>
+    </products>
+    <workAmount>8600</workAmount>		
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeNeolithicBase">
+    <defName>MakeAmmo_CentaurSlingLine_Stone</defName>
+    <label>make slingline stone x10</label>
+    <description>Make 10 slingline stones.</description>
+    <jobString>Making slingline stones.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneChunks</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>StoneChunks</li>
+      </categories>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_CentaurSlingLine_Stone>10</Ammo_CentaurSlingLine_Stone>
+    </products>
+    <workAmount>600</workAmount>
+    <unfinishedThingDef>UnfinishedAmmo</unfinishedThingDef>
+  </RecipeDef>
+
+</Defs>

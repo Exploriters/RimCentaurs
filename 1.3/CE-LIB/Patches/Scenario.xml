@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ScenarioDef[defName="TheExplorerCentaur"]/scenario/parts</xpath>
+    <value>
+
+      <li Class="Explorite.ScenPart_StartingPawnThings">
+        <def>StartingPawnsThings</def>
+        <visible>false</visible>
+        <thingDef>Ammo_CentaurCharge</thingDef>
+        <count>40</count>
+      </li>
+
+      <li Class="Explorite.ScenPart_StartingPawnThings">
+        <def>StartingPawnsThings</def>
+        <visible>false</visible>
+        <thingDef>Ammo_CentaurChargeShotgun</thingDef>
+        <count>80</count>
+      </li>
+
+    </value>
+  </Operation>
+
+</Patch>      
+

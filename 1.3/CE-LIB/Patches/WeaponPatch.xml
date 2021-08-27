@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <!--Shotgun-->
+  <Operation Class="PatchOperationReplace">
+    <xpath>
+      Defs/ThingDef[defName="Gun_CentaurChargeShotgun" or defName="Gun_CentaurFrostbrainer"]/tools
+    </xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>stock</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>8</power>
+          <cooldownTime>1.55</cooldownTime>
+          <chanceFactor>1.5</chanceFactor>
+          <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+          <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>barrel</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>5</power>
+          <cooldownTime>2.02</cooldownTime>
+          <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+          <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>muzzle</label>
+          <capacities>
+            <li>Poke</li>
+          </capacities>
+          <power>8</power>
+          <cooldownTime>1.55</cooldownTime>
+          <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+          <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>
+      Defs/ThingDef[defName="Slingline"]/tools
+    </xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>16</power>
+          <cooldownTime>2</cooldownTime>
+          <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+          <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+          <surpriseAttack>
+            <extraMeleeDamages>
+              <li>
+                <def>Stun</def>
+                <amount>20</amount>
+              </li>
+            </extraMeleeDamages>
+          </surpriseAttack>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>
+      /Defs/ThingDef[defName="Gun_CentaurChargeShotgun"]/verbs/li[1]/burstShotCount
+    </xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>
+      /Defs/ThingDef[defName="Gun_CentaurChargeShotgun"]/verbs/li[1]/ticksBetweenBurstShots
+    </xpath>
+  </Operation>
+
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>Gun_CentaurChargeShotgun</defName>
+    <statBases>
+      <Mass>4.5</Mass>
+      <SwayFactor>1.25</SwayFactor>
+      <ShotSpread>0.14</ShotSpread>
+      <SightsEfficiency>1</SightsEfficiency>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+      <Bulk>6.0</Bulk>
+      <WorkToMake>45000</WorkToMake>
+    </statBases>
+    <Properties>
+      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Projectile_CentaurChargeShotgun</defaultProjectile>
+      <warmupTime>0.5</warmupTime>
+      <range>20</range>
+      <soundCast>Shot_ChargeRifle</soundCast>
+      <soundCastTail>GunTail_Heavy</soundCastTail>
+      <muzzleFlashScale>9</muzzleFlashScale>
+      <recoilAmount>2.62</recoilAmount>
+    </Properties>
+    <AmmoUser>
+      <magazineSize>64</magazineSize>
+      <reloadTime>8.6</reloadTime>
+      <ammoSet>AmmoSet_CentaurChargeShotgun</ammoSet>
+    </AmmoUser>
+    <FireModes>
+      <aiUseBurstMode>FALSE</aiUseBurstMode>
+    </FireModes>
+    <weaponTags>
+      <li>CentaurSpacerGun</li>
+      <li>CentaurRanged</li>
+      <li>SpacerGun</li>
+      <li>CE_AI_AssaultWeapon</li>
+    </weaponTags>
+  </Operation>
+
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>Gun_CentaurFrostbrainer</defName>
+    <statBases>
+      <Mass>4.5</Mass>
+      <SwayFactor>0</SwayFactor>
+      <ShotSpread>0</ShotSpread>
+      <SightsEfficiency>1</SightsEfficiency>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>5</Mass>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+    <Properties>
+      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_CentaurFrostbrainerCE</defaultProjectile>
+      <warmupTime>2.0</warmupTime>
+      <range>56.4</range>
+      <soundCast>Explosion_EMP</soundCast>
+      <muzzleFlashScale>0</muzzleFlashScale>
+      <recoilAmount>0</recoilAmount>
+      <requireLineOfSight>false</requireLineOfSight>
+    </Properties>
+  </Operation>
+
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>
+      Defs/ThingDef[defName="Gun_CentaurChargeShotgun"]/verbs
+    </xpath>
+    <value>
+      <verbs>
+        <li Class="CombatExtended.VerbPropertiesCE">
+          <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Projectile_CentaurChargeShotgun</defaultProjectile>
+          <warmupTime>0.5</warmupTime>
+          <range>20</range>
+          <soundCast>Shot_ChargeRifle</soundCast>
+          <soundCastTail>GunTail_Heavy</soundCastTail>
+          <recoilAmount>2.62</recoilAmount>
+          <muzzleFlashScale>9</muzzleFlashScale>
+        </li>
+      </verbs>
+    </value>
+  </Operation>
+ 
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_CentaurChargeShotgun"]</xpath>
+    <value>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.03,1.03</DrawSize>
+        <DrawOffset>0.05,0.0</DrawOffset>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>
+      Defs/ThingDef[defName="Gun_CentaurPlasmaBlaster"]
+    </xpath>
+    <value>
+      <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>Gun_CentaurPlasmaBlaster</defName>
+        <label>overkill</label>
+        <description>A powerful energy weapon that deals thermo damage, takes a bit long time to fires plasma shots with high armor penetration ability. It somehow looks like a quadruple missile tube by the front, but actually a plasma projectile cannon. It is really heavy and oddly doesn't have much recoil as it looks like.\n\nDue to its horrible weight, only centaurs can handle it.</description>
+        <techLevel>Spacer</techLevel>
+        <tradeability>Sellable</tradeability>
+        <graphicData>
+          <texPath>Things/Item/Equipment/WeaponRanged/CentaurOverkill</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+        <statBases>
+          <WorkToMake>135000</WorkToMake>
+          <Mass>20.0</Mass>
+          <Bulk>35</Bulk>
+          <SwayFactor>1.26</SwayFactor>
+          <ShotSpread>0.06</ShotSpread>
+          <SightsEfficiency>1.1</SightsEfficiency>
+          <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+        </statBases>
+        <recipeMaker>
+          <researchPrerequisite Inherit="False"/>
+          <researchPrerequisites>
+            <li>ChargedShot</li>
+            <li>CentaurReverseEngineeringHumanTech</li>
+          </researchPrerequisites>
+          <skillRequirements>
+            <Crafting>9</Crafting>
+          </skillRequirements>
+          <recipeUsers Inherit="False">
+            <li>FabricationBench</li>
+          </recipeUsers>
+        </recipeMaker>
+        <costList>
+          <Gun_CentaurChargeShotgun>1</Gun_CentaurChargeShotgun>
+          <TriCapacitorCell>20</TriCapacitorCell>
+        </costList>
+        <weaponTags>
+          <li>CentaurSpacerGun</li>
+          <li>CentaurRanged</li>
+        </weaponTags>
+        <weaponClasses>
+          <li>Ultratech</li>
+          <li>Ranged</li>
+          <li>LongShots</li>
+          <li>RangedHeavy</li>
+        </weaponClasses>
+        <relicChance>0</relicChance>
+        <verbs>
+          <li Class="CombatExtended.VerbPropertiesCE">
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>Projectile_CentaurCharge</defaultProjectile>
+            <warmupTime>4.0</warmupTime>
+            <range>56.4</range>
+            <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+            <burstShotCount>2</burstShotCount>
+            <soundCast>Shot_TurretSniper</soundCast>
+            <soundCastTail>GunTail_Heavy</soundCastTail>
+            <muzzleFlashScale>16</muzzleFlashScale>
+            <recoilAmount>1.9</recoilAmount>
+          </li>
+        </verbs>
+        <tools>
+          <li Class="CombatExtended.ToolCE">
+            <label>stock</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>11.7</power>
+            <cooldownTime>1.3</cooldownTime>
+            <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+            <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+          </li>
+          <li Class="CombatExtended.ToolCE">
+            <label>barrel</label>
+            <capacities>
+              <li>Blunt</li>
+              <li>Poke</li>
+            </capacities>
+            <power>11.7</power>
+            <cooldownTime>1.3</cooldownTime>
+            <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+            <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+          </li>
+          <li Class="CombatExtended.ToolCE">
+            <label>grip</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>11.7</power>
+            <cooldownTime>1.3</cooldownTime>
+            <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+            <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+          </li>
+        </tools>
+        <comps>
+          <li Class="CombatExtended.CompProperties_AmmoUser">
+            <magazineSize>40</magazineSize>
+            <reloadTime>6.5</reloadTime>
+            <ammoSet>AmmoSet_CentaurOverkill</ammoSet>
+          </li>
+          <li Class="CombatExtended.CompProperties_FireModes">
+            <aiAimMode>AimedShot</aiAimMode>
+            <noSingleShot>true</noSingleShot>
+          </li>
+        </comps>
+      </ThingDef>
+    </value>
+  </Operation>
+
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>Slingline</defName>
+    <statBases>
+      <Mass>1</Mass>
+      <SightsEfficiency>0.6</SightsEfficiency>
+      <ShotSpread>1</ShotSpread>
+      <SwayFactor>2</SwayFactor>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+      <Bulk>6.0</Bulk>
+      <WorkToMake>45000</WorkToMake>
+    </statBases>
+    <Properties>
+      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Projectile_CentaurSlingLineStone</defaultProjectile>
+      <warmupTime>2.4</warmupTime>
+      <range>12</range>
+      <soundCast>ThrowGrenade</soundCast>
+      <muzzleFlashScale>0</muzzleFlashScale>
+    </Properties>
+    <AmmoUser>
+      <reloadTime>0.8</reloadTime>
+      <ammoSet>AmmoSet_CentaurSlingLine</ammoSet>
+    </AmmoUser>
+    <FireModes>
+      <aiAimMode>AimedShot</aiAimMode>
+    </FireModes>
+    <weaponTags>
+      <li>CentaurRanged</li>
+    </weaponTags>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/ThingDef[defName="Slingline"]/costStuffCount
+    </xpath>
+    <value>
+      <costStuffCount>15</costStuffCount>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>
+      /Defs/ThingDef[defName="Slingline"]/stuffCategories
+    </xpath>
+    <value>
+      <stuffCategories>
+        <li>Fabric</li>
+        <li>Leathery</li>
+      </stuffCategories>
+    </value>
+  </Operation>
+
+</Patch>

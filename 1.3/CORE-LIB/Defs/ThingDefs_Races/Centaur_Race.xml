@@ -17,10 +17,10 @@
       <li Class="Explorite.CompProperties_PawnRepairApparelsOvertime">
         <ticksBetweenHeal>60000</ticksBetweenHeal>
       </li>
-      <li Class="Explorite.CompProperties_PassiveMeditationFocusGain">
+      <li Class="Explorite.CompProperties_PassiveMeditationFocusGain" MayRequire="Ludeon.RimWorld.Royalty">
         <focusPerDay>1</focusPerDay>
       </li>
-      <li Class="Explorite.CompProperties_EnsureAbility">
+      <li Class="Explorite.CompProperties_EnsureAbility" MayRequire="Ludeon.RimWorld.Royalty">
         <abilities>
           <li MayRequire="Ludeon.RimWorld.Royalty">MassPsychicDeafCentaur</li>
         </abilities>
@@ -83,7 +83,7 @@
       <PsychicSensitivity>1.8</PsychicSensitivity>
       <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">90</PsychicEntropyMax>
       <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">1.62</PsychicEntropyRecoveryRate>
-      <!--<MeditationFocusGain ExEx="Royalty">1.5</MeditationFocusGain>-->
+      <!--<MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">1.5</MeditationFocusGain>-->
 
       <!-- Ideology -->
       <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.0</CertaintyLossFactor>
@@ -474,6 +474,7 @@
         </disallowedTraits>-->
 
         <alienPartGenerator>
+          <atlasScale>4</atlasScale>
           <headOffset>(0.0, 0.0)</headOffset>
           <alienbodytypes>
             <li>CentaurMale</li>

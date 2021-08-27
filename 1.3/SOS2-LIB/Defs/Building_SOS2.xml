@@ -65,32 +65,34 @@
         <targetFuelLevelConfigurable>false</targetFuelLevelConfigurable>
         <showAllowAutoRefuelToggle>false</showAllowAutoRefuelToggle>
         <initialConfigurableTargetFuelLevel>0</initialConfigurableTargetFuelLevel>
-		
+        
         <fuelGenFragment>2</fuelGenFragment>
         <fuelGenFragmentTicks>9</fuelGenFragmentTicks>
         <displayFragment>100</displayFragment>
+        <requirePower>true</requirePower>
+        <powerWhenNotSpike>150</powerWhenNotSpike>
       </li>
-	  
-	  <li Class="CompProperties_SpinalMount">
-		<destroysHull>false</destroysHull>
-		<emits>false</emits>
-		<receives>true</receives>
-		<color>(1,0.72156862745098039215686274509804,0.33725490196078431372549019607843)</color>
+      <li Class="CompProperties_SpinalMount">
+        <destroysHull>false</destroysHull>
+        <emits>false</emits>
+        <receives>true</receives>
+        <color>(1,0.72156862745098039215686274509804,0.33725490196078431372549019607843)</color>
       </li>
       <li Class="CompProperties_ShipHeat">
         <compClass>CompShipHeatSource</compClass>
-		<!--<heatPerPulse>140</heatPerPulse>
-		<energyToFire>4800</energyToFire>-->
-		<heatPerPulse>23.333333333333333333333333333333</heatPerPulse>
-		<energyToFire>800</energyToFire>
-		<maxRange>200</maxRange>
-		<!--<minRange>150</minRange>-->
-		<projectileSpeed>3</projectileSpeed>
-		<threat>120</threat>
+        <!--<heatPerPulse>140</heatPerPulse>
+        <energyToFire>4800</energyToFire>-->
+        <heatPerPulse>23.333333333333333333333333333333</heatPerPulse>
+        <!--<energyToFire>800</energyToFire>-->
+        <energyToFire>0</energyToFire>
+        <maxRange>200</maxRange>
+        <!--<minRange>150</minRange>-->
+        <projectileSpeed>3</projectileSpeed>
+        <threat>120</threat>
       </li>	  
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>150</basePowerConsumption>
+        <basePowerConsumption>106816.66666666666666666666666667</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
       </li>
       <li Class="CompProperties_Flickable" />
@@ -99,7 +101,7 @@
       </li>
 	</comps>
     <placeWorkers>
-      <li>PlaceWorker_NeedsSpinalMountPort</li>
+      <!--<li>PlaceWorker_NeedsSpinalMountPort</li>-->
     </placeWorkers>
     <researchPrerequisites>
       <li>ShipTurretLarge</li>

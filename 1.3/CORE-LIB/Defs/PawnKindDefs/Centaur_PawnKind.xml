@@ -28,6 +28,7 @@
       <li>Apparel_CentaurFlakPants</li>
       <li>Apparel_CentaurFlakJacket</li>
       <li>Apparel_AdvancedHelmet</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsychicAnimaAmplifierLance</li>
     </apparelRequired>
     <apparelTags>
       <li>CentaurRetroStart</li>

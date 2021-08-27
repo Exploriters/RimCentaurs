@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Turret_HyperTrishot"]/description</xpath>
+    <value>
+      <description>A ultra-long-ranged mass blasting crossbow turret that can shoot over walls, fires quadruple heavy arrows with delay-setoff thermal-discharging-bomb in a single burst. It generates it's own ammunition every shot but requires advanced component to be replaced after overuse.</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Turret_HyperTrishot"]</xpath>
+    <value>
+      <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Turret_HyperTrishot"]/statBases</xpath>
+    <value>
+      <AimingAccuracy>0.5</AimingAccuracy>
+    </value>
+  </Operation>
+
+  
+  
+  
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Gun_TurretHyperCrossbow"]</xpath>
+    <value>
+      <ThingDef ParentName="BaseArtilleryWeapon">
+        <defName>Gun_TurretHyperCrossbow</defName>
+        <label>hyper crossbow turret</label>
+        <description>A self-loading heavy crossbow designed to attach to a turret.</description>
+        <graphicData>
+          <texPath>Things/Building/Security/TurretHyperTrishot_Top</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(1,1)</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+          <SightsEfficiency>2.25</SightsEfficiency>
+          <ShotSpread>0.05</ShotSpread>
+          <SwayFactor>1.1</SwayFactor>
+          <RangedWeapon_Cooldown>0.6666666</RangedWeapon_Cooldown>
+        </statBases>
+        <verbs>
+          <li Class="CombatExtended.VerbPropertiesCE">
+            <verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+            <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>Arrow_Trishot_HyperCE</defaultProjectile>
+            <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+            <warmupTime>0</warmupTime>
+            <range>255</range>
+            
+            <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+            <burstShotCount>4</burstShotCount>
+
+            <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+            <soundCast>Bow_Large</soundCast>
+            <soundCastTail>GunTail_Heavy</soundCastTail>
+
+            <consumeFuelPerShot>0.25</consumeFuelPerShot>
+            <muzzleFlashScale>20</muzzleFlashScale>
+            <circularError>10</circularError>
+            <indirectFirePenalty>0.1</indirectFirePenalty>
+            <ai_AvoidFriendlyFireRadius>10</ai_AvoidFriendlyFireRadius>
+            <requireLineOfSight>false</requireLineOfSight>
+            <targetParams>
+              <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+          </li>
+        </verbs>
+        <comps>
+          <li Class="CombatExtended.CompProperties_Charges">
+            <chargeSpeeds>
+              <li>30</li>
+              <li>50</li>
+              <li>70</li>
+              <li>90</li>
+              <li>180</li>
+            </chargeSpeeds>
+          </li>
+          <li Class="CombatExtended.CompProperties_FireModes">
+            <aiAimMode>AimedShot</aiAimMode>
+            <noSnapshot>true</noSnapshot>
+            <noSingleShot>true</noSingleShot>
+          </li>
+        </comps>
+      </ThingDef>
+    </value>
+  </Operation>
+  
+  
+
+</Patch>      
+

@@ -18,7 +18,7 @@ Requires [Explorite Core](https://github.com/Exploriters/explorite-core) and [Hu
 
 ## Features
 * New race "Centaur" with lone wolf style scenario.
-* Completely different with most races in many ways, including immune to pain shock.
+* Completely different with most races in many ways, including immune to pain shock and never mental break.
 * No NPC Centaur factions among the planet, you are the only one.
 * Survival will not be a problem nor challenge for centaurs. Have a relax.
 * Exotic resources, including archotech components.
@@ -31,6 +31,7 @@ Requires [Explorite Core](https://github.com/Exploriters/explorite-core) and [Hu
 * Join the empire and satisfy royal apparel requirement without headdress.
 * Release powerful abilities exclusive to centaurs.
 * Psychic sensitivity of centaur will not boost Neural heat limit until it reached 300%.
+* Raising psylink level will not give any ability to centaurs.
 * Receives no pain boost to speeds up neural heat dissipation of centaur. Just don't get hurt.
 ## Integrations with Ideology
 * Centaur ideo is locked into a fixed one.

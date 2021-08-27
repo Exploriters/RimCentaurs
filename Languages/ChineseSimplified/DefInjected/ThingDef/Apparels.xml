@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <Apparel_PsychicAnimaAmplifierLance.label>仙灵增强器</Apparel_PsychicAnimaAmplifierLance.label>
+  <Apparel_PsychicAnimaAmplifierLance.description>一种超凡科技制作的一次性装置，能够增强启灵连接植物的生长，包括仙树和灵草。其可以在一次发射中投射效果。使用之后，这个装置失去充能但仍然保持，可以被分解成有用的零部件。</Apparel_PsychicAnimaAmplifierLance.description>
+  <Apparel_PsychicAnimaAmplifierLance.comps.CompReloadable.chargeNoun>充能</Apparel_PsychicAnimaAmplifierLance.comps.CompReloadable.chargeNoun>
+  <Apparel_PsychicAnimaAmplifierLance.verbs.0.label>仙灵增强器</Apparel_PsychicAnimaAmplifierLance.verbs.0.label>
+  
   <Apparel_CentaurShieldArmor.label>半人马护盾装甲</Apparel_CentaurShieldArmor.label>
   <Apparel_CentaurShieldArmor.description>为半人马穿戴者的一套轻型动力盔甲，具有投射屏障装置和毒性防护能力。覆盖玻璃钢纤维编制的装甲片，能够十分有效地防御攻击。神经模因机械让人在穿着重型装甲时仍然能够轻松行动。\n\n护盾能阻挡从一定距离外射来的任何高速运动弹头或能量攻击，但对近战攻击或零距离贴近射击无效，同时会被EMP摧毁。不会阻碍穿戴者从内往外的射击。\n\n动力装甲通常由来自太空时代军队的重甲士兵和空间海军突击队员使用。\n\n和人类的相比具有额外的重量和材料，来提供侧面的保护。</Apparel_CentaurShieldArmor.description>
 

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <ThingDef ParentName="ApparelNoQualityBase">
+    <defName>Apparel_PsychicAnimaAmplifierLance</defName>
+    <label>psychic anima amplifier</label>
+    <description>A consumable archotech-created device that amplifies the growth of psylinkable plants, like anima tree and anima grass. It can project effects in a single shot. Afterward, the device discharges but remains and can be disintegrated into worthy components.</description>
+    <graphicData>
+      <texPath>Things/Item/Artifact/PsychicAnimalPulser</texPath><!-- TODO -->
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tradeability>Sellable</tradeability>
+    <techLevel>Archotech</techLevel>
+    <tradeTags>
+      <li>Artifact</li>
+    </tradeTags>
+    <!--<thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>-->
+    <statBases>
+      <Mass>0.5</Mass>
+      <EquipDelay>2</EquipDelay>
+      <MarketValue>4000</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <scoreOffset>4</scoreOffset>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <ignoredByNonViolent>true</ignoredByNonViolent>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+    </apparel>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <tradeNeverStack>true</tradeNeverStack>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <relicChance>0</relicChance>
+    <verbs>
+      <li>
+        <verbClass>Verb_CastTargetEffect</verbClass>
+        <label>psychic anima amplifier</label>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <onlyManualCast>True</onlyManualCast>
+        <requireLineOfSight>false</requireLineOfSight>
+        <range>34.9</range>
+        <warmupTime>0.5</warmupTime>
+        <targetParams>
+          <canTargetPawns>false</canTargetPawns>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetPlants>true</canTargetPlants>
+          <onlyTargetAnimaTrees>true</onlyTargetAnimaTrees>
+        </targetParams>
+        <soundCast>PsychicSoothePulserCast</soundCast><!-- TODO -->
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>1</maxCharges>
+        <destroyOnEmpty>false</destroyOnEmpty>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileDrafted>true</displayGizmoWhileDrafted>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <!--<ammoDef>PsychicAmplifier</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>-->
+      </li>
+      <li>
+        <compClass>Explorite.CompTargetEffect_AnimaAmplifier</compClass><!-- TODO -->
+      </li>
+      <li Class="CompProperties_TargetEffect_FleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+      <li Class="CompProperties_TargetEffect_FleckConnecting">
+        <fleckDef>PsycastPsychicLine</fleckDef>
+      </li>
+      <li Class="CompProperties_Styleable"></li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BaseWeapon" ExEx="Royalty">
+  <ThingDef ParentName="BaseWeapon">
     <defName>MeleeWeapon_PsyfocusStaffCentaur</defName>
 	<tradeability>Sellable</tradeability>
     <label>eltex centaur staff</label>

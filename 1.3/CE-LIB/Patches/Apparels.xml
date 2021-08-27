@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurAntimassBelt"]/statBases</xpath>
+    <value>
+      <Bulk>4</Bulk>
+      <WornBulk>2</WornBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurSaddleWaterBag"]/statBases</xpath>
+    <value>
+      <Bulk>3</Bulk>
+      <WornBulk>1</WornBulk>
+    </value>
+  </Operation>
+
+  <!-- ========== C- Pants, T-Shirt and Button-Down Shirt ========== -->
+
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurPants" or defName="Apparel_CentaurBasicShirt" or defName="Apparel_CentaurCollarShirt"]/statBases/StuffEffectMultiplierArmor</xpath>
+    <value>
+      <StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurPants" or defName="Apparel_CentaurBasicShirt" or defName="Apparel_CentaurCollarShirt"]/statBases</xpath>
+    <value>
+      <Bulk>2</Bulk>
+      <WornBulk>1</WornBulk>
+    </value>
+  </Operation>
+
+
+  <!-- ========== C- Parka, Duster and Jacket ========== -->
+
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurParka"]/statBases/StuffEffectMultiplierArmor</xpath>
+    <value>
+      <StuffEffectMultiplierArmor>10</StuffEffectMultiplierArmor>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurDuster" or defName="Apparel_CentaurJacket"]/statBases/StuffEffectMultiplierArmor</xpath>
+    <value>
+      <StuffEffectMultiplierArmor>5</StuffEffectMultiplierArmor>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurParka"]/statBases</xpath>
+    <value>
+      <Bulk>15</Bulk>
+      <WornBulk>7.5</WornBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurDuster"]/statBases</xpath>
+    <value>
+      <Bulk>10</Bulk>
+      <WornBulk>3</WornBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurJacket"]/statBases</xpath>
+    <value>
+      <Bulk>7.5</Bulk>
+      <WornBulk>1.5</WornBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurParka"]/costStuffCount</xpath>
+    <value>
+      <costStuffCount>180</costStuffCount>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurJacket"]/costStuffCount</xpath>
+    <value>
+      <costStuffCount>130</costStuffCount>
+    </value>
+  </Operation>
+
+  <!-- ========== Plate armor ========== -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurPlateArmor"]/statBases</xpath>
+    <value>
+      <Bulk>200</Bulk>
+      <WornBulk>30</WornBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurPlateArmor"]/statBases/StuffEffectMultiplierArmor</xpath>
+    <value>
+      <StuffEffectMultiplierArmor>2.5</StuffEffectMultiplierArmor>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurPlateArmor"]/equippedStatOffsets</xpath>
+    <value>
+      <MeleeDodgeChance>-0.15</MeleeDodgeChance>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Apparel_PlateArmor"]/apparel/bodyPartGroups</xpath>
+    <value>
+      <li>Hands</li>
+      <li>Feet</li>
+    </value>
+  </Operation>
+
+  <!-- ========== Armor vest ========== -->
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakVest"]/label</xpath>
+    <value>
+      <label>armor vest</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakVest"]/statBases</xpath>
+    <value>
+      <Bulk>10</Bulk>
+      <WornBulk>6</WornBulk>
+      <StuffEffectMultiplierArmor>8</StuffEffectMultiplierArmor>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakVest"]/statBases/MaxHitPoints</xpath>
+    <value>
+      <MaxHitPoints>125</MaxHitPoints>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakVest"]/statBases/Mass</xpath>
+    <value>
+      <Mass>26</Mass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakVest"]/statBases/ArmorRating_Sharp</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakVest"]/statBases/ArmorRating_Blunt</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakVest"]/statBases/ArmorRating_Heat</xpath>
+  </Operation>
+
+
+  <!-- Change recipe to stuffed -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakVest"]</xpath>
+    <value>
+      <costStuffCount>180</costStuffCount>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakVest"]</xpath>
+    <value>
+      <stuffCategories>
+        <li>Steeled</li>
+      </stuffCategories>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakVest"]/recipeMaker/unfinishedThingDef</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakVest"]/costList/Steel</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakVest"]/costList/ComponentIndustrial</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakVest"]/colorGenerator</xpath>
+  </Operation>
+
+
+  <!-- ========== Flak jacket ========== -->
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakJacket"]/description</xpath>
+    <value>
+      <description>Padded vest made from bullet-resistant materials. Provides limited protection against shrapnel and gunfire at relatively low weight.</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakJacket"]/statBases/ArmorRating_Sharp</xpath>
+    <value>
+      <Bulk>10</Bulk>
+      <WornBulk>10</WornBulk>
+      <StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+      <ArmorRating_Sharp>2</ArmorRating_Sharp>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakJacket"]/statBases/ArmorRating_Blunt</xpath>
+    <value>
+      <ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakJacket"]/statBases/ArmorRating_Heat</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakJacket"]/statBases/Mass</xpath>
+    <value>
+      <Mass>8</Mass>
+    </value>
+  </Operation>
+
+
+  <!-- Half the insulation of a regular jacket -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakJacket"]/statBases/Insulation_Cold</xpath>
+    <value>
+      <StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakJacket"]/statBases/Insulation_Heat</xpath>
+    <value>
+      <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakJacket"]/costList</xpath>
+    <value>
+      <!-- Circuit boards not included -->
+      <costList>
+        <Steel>50</Steel>
+      </costList>
+      <stuffCategories>
+        <li>Fabric</li>
+      </stuffCategories>
+      <costStuffCount>140</costStuffCount>
+    </value>
+  </Operation>
+
+  <!-- ========== Flak pants ========== -->
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakPants"]/description</xpath>
+    <value>
+      <description>Modified pants suited to a centaur. Padded pants made from bullet-resistant materials. Provides limited protection against shrapnel and gunfire at relatively low weight.</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakPants"]/statBases/ArmorRating_Sharp</xpath>
+    <value>
+      <Bulk>8</Bulk>
+      <WornBulk>8</WornBulk>
+      <StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
+      <ArmorRating_Sharp>2</ArmorRating_Sharp>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakPants"]/statBases/ArmorRating_Blunt</xpath>
+    <value>
+      <ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakPants"]/statBases/ArmorRating_Heat</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakPants"]/statBases/Insulation_Cold</xpath>
+    <value>
+      <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakPants"]/statBases/Insulation_Heat</xpath>
+    <value>
+      <StuffEffectMultiplierInsulation_Heat>0.08</StuffEffectMultiplierInsulation_Heat>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_CentaurFlakPants"]/costList</xpath>
+    <value>
+      <costList>
+        <Steel>30</Steel>
+      </costList>
+      <stuffCategories>
+        <li>Fabric</li>
+      </stuffCategories>
+      <costStuffCount>100</costStuffCount>
+    </value>
+  </Operation>
+
+  <!-- ========== Power armor ========== -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorPowerCentaurBase"]/statBases</xpath>
+    <value>
+      <Bulk>200</Bulk>
+      <WornBulk>30</WornBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_ArmorMarineCentaur"]/label</xpath>
+    <value>
+      <label>centaur power armor</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Apparel_ArmorMarineCentaur"]/description</xpath>
+    <value>
+      <description>A suit of powered armor for centaurs. Layered plasteel-weave plates are very effective at stopping attacks, with few vulnerable joint sections. Neuro-memetic assistors allow a human to wear the armor and still move easily.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.\n\nThe powerful carrying ability of the centaurs allows their armor to attach additional powerful devices without weakening its defense, this variant attached an integrated frag launcher on back, usually specialize in breaching buildings or internal ship bulkheads, surprisingly deadly in confined quarters. Embedded expensive and beautiful eltex threads also enhance the wearer's psychic sensitivity.\n\nWhile bulky and heavy, the advanced servo-motors greatly increase the wearer's load bearing capacity and assist in weapon-handling.</description>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorPowerCentaurBase"]/statBases/MaxHitPoints</xpath>
+    <value>
+      <MaxHitPoints>1800</MaxHitPoints>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorPowerCentaurBase"]/statBases/Mass</xpath>
+    <value>
+      <Mass>100</Mass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorPowerCentaurBase"]/costList</xpath>
+    <value>
+      <DevilstrandCloth>100</DevilstrandCloth>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorPowerCentaurBase"]/equippedStatOffsets</xpath>
+    <value>
+      <CarryWeight>160</CarryWeight>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorPowerCentaurBase"]/equippedStatOffsets</xpath>
+    <value>
+      <CarryBulk>20</CarryBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorPowerCentaurBase"]/apparel/bodyPartGroups</xpath>
+    <value>
+      <li>Hands</li>
+      <li>Feet</li>
+    </value>
+  </Operation>
+
+  <!-- Increase Cost -->
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorPowerCentaurBase"]/costList/Plasteel</xpath>
+    <value>
+      <Plasteel>620</Plasteel>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorPowerCentaurBase"]/costList/Uranium</xpath>
+    <value>
+      <Uranium>80</Uranium>
+    </value>
+  </Operation>
+
+  <!-- ========== Recon armor ========== -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorReconCentaurBase"]/statBases</xpath>
+    <value>
+      <Bulk>160</Bulk>
+      <WornBulk>12</WornBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorReconCentaurBase"]/statBases/MaxHitPoints</xpath>
+    <value>
+      <MaxHitPoints>800</MaxHitPoints>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorReconCentaurBase"]/statBases/Mass</xpath>
+    <value>
+      <Mass>60</Mass>
+    </value>
+  </Operation>
+
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorReconCentaurBase"]/costList</xpath>
+    <value>
+      <DevilstrandCloth>80</DevilstrandCloth>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorReconCentaurBase"]/equippedStatOffsets</xpath>
+    <value>
+      <CarryWeight>100</CarryWeight>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorReconCentaurBase"]/equippedStatOffsets</xpath>
+    <value>
+      <CarryBulk>20</CarryBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorReconCentaurBase"]/apparel/bodyPartGroups</xpath>
+    <value>
+      <li>Hands</li>
+      <li>Feet</li>
+    </value>
+  </Operation>
+
+  <!-- Increase Cost -->
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorReconCentaurBase"]/costList/Plasteel</xpath>
+    <value>
+      <Plasteel>500</Plasteel>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorReconCentaurBase"]/costList/Uranium</xpath>
+    <value>
+      <Uranium>40</Uranium>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorCataphractCentaurBase"]/statBases</xpath>
+    <value>
+      <Bulk>200</Bulk>
+      <WornBulk>30</WornBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorCataphractCentaurBase"]/statBases/MaxHitPoints</xpath>
+    <value>
+      <MaxHitPoints>4000</MaxHitPoints>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorCataphractCentaurBase"]/statBases/Mass</xpath>
+    <value>
+      <Mass>160</Mass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorCataphractCentaurBase"]/costList</xpath>
+    <value>
+      <DevilstrandCloth>120</DevilstrandCloth>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorCataphractCentaurBase"]/equippedStatOffsets</xpath>
+    <value>
+      <CarryWeight>160</CarryWeight>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorCataphractCentaurBase"]/equippedStatOffsets</xpath>
+    <value>
+      <CarryBulk>40</CarryBulk>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorCataphractCentaurBase"]/apparel/bodyPartGroups</xpath>
+    <value>
+      <li>Hands</li>
+      <li>Feet</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorCataphractCentaurBase"]/costList/Plasteel</xpath>
+    <value>
+      <Plasteel>750</Plasteel>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="ApparelArmorCataphractCentaurBase"]/costList/Uranium</xpath>
+    <value>
+      <Uranium>160</Uranium>
+    </value>
+  </Operation>
+</Patch>
+

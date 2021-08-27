@@ -2,6 +2,7 @@
 <Defs>
   
   <ThingDef Name="ExploriteUtilityThingBase" Abstract="True">
+    <forceDebugSpawnable>true</forceDebugSpawnable>
     <thingClass>ThingWithComps</thingClass>
     <category>None</category>
     <!--<menuHidden>false</menuHidden>-->
