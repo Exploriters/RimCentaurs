@@ -25,7 +25,7 @@
     <frostbiteVulnerability>0.5</frostbiteVulnerability>
     <skinCovered>false</skinCovered>
     <solid>true</solid>
-    <!-- <alive>false</alive> -->
+    <alive>false</alive>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <tags>
       <li>MovingLimbSegment</li>

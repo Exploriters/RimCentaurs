@@ -475,6 +475,7 @@
 
         <alienPartGenerator>
           <atlasScale>4</atlasScale>
+					<borderScale>2</borderScale>
           <headOffset>(0.0, 0.0)</headOffset>
           <alienbodytypes>
             <li>CentaurMale</li>
@@ -566,6 +567,7 @@
           <!--<useSkincolorForHair>false</useSkincolorForHair>-->
           <customHeadDrawSize>(1, 1)</customHeadDrawSize>
           <customDrawSize>(1.35, 1.35)</customDrawSize>
+          <!--<customPortraitDrawSize>(3, 3)</customPortraitDrawSize>-->
         </alienPartGenerator>
         
       </generalSettings>
