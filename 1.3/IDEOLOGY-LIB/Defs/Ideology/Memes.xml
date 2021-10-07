@@ -44,6 +44,7 @@
 	<islocateGroup>CentaurMeme</islocateGroup>
 	<lockAccuIdeoColor>true</lockAccuIdeoColor>
 	<countForNonStructureGroup>true</countForNonStructureGroup>
+	<overrdieIcon>true</overrdieIcon>
 	
 	<!--
     <defName>Centaur</defName>
