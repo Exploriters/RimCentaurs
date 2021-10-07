@@ -37,12 +37,25 @@
 				or @Name="PreceptRoleSingleBase"
 				or @Name="PreceptRoleMultiBase"
 				or defName="IdeoRole_Leader"
+				
+				or visible="false"
+				or issue="Ritual"
+				or @ParentName="FuneralBase"
+				or @Name="FuneralBase"
+				or @ParentName="FestivalBase"
+				or @Name="FestivalBase"
+				or @ParentName="SpeechPreceptBase"
+				or @Name="SpeechPreceptBase"
+				or @ParentName="TrialBase"
+				or @Name="TrialBase"
+
 				)]/conflictingMemes</xpath>
 		<value>
 			<li>Structure_Centaur</li>
 		</value>
 	</Operation>
 	  <!--
+				or classicExtra="true"
 				
 				or issue="IdeoRole"
 				or @ParentName="PreceptRoleSingleBase"
