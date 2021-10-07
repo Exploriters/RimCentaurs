@@ -25,7 +25,6 @@
 				or defName="Nudity_Male_NoRules"
 				or defName="Nudity_Female_NoRules"
 				or defName="NutrientPasteEating_Disgusting"
-				or defName="NobleDespisedWeapons"
 				or defName="OrganUse_Acceptable"
 				or defName="Proselytizing_Prohibited_EX"
 				or defName="Research_VeryFast"
@@ -56,6 +55,8 @@
 	</Operation>
 	  <!--
 				or classicExtra="true"
+				
+				or defName="NobleDespisedWeapons"
 				
 				or issue="IdeoRole"
 				or @ParentName="PreceptRoleSingleBase"
