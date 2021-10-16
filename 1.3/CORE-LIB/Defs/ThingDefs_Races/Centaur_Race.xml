@@ -516,6 +516,7 @@
               <drawnInBed>true</drawnInBed>
               <drawnDesiccated>false</drawnDesiccated>
               <defaultOffset>Head</defaultOffset>
+              <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
               <hiddenUnderApparelTag>
                 <li>HideCentaurEar</li>
               </hiddenUnderApparelTag>
