@@ -27,7 +27,7 @@
     <disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
     <gizmoClass>Command_Ability</gizmoClass>
 	
-    <sendLetterOnCooldownComplete>True</sendLetterOnCooldownComplete>
+    <sendLetterOnCooldownComplete>False</sendLetterOnCooldownComplete>
     <cooldownTicksRange>1200~1200</cooldownTicksRange>
     <!--<gizmoClass>Explorite.Command_AbilityMassPsychicDeafCentaur</gizmoClass>-->
     <statBases>

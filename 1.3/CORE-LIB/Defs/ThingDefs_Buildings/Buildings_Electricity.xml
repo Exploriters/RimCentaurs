@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+  <DesignatorDropdownGroupDef>
+    <defName>TriBattery</defName>
+    <label>triple battery</label>
+  </DesignatorDropdownGroupDef>
   
   <ThingDef ParentName="BuildingBase" Name="TriBatteryBase">
     <defName>TriBattery</defName>
     <label>triple battery</label>
     <description>Stores electricity for later use. Charged batteries explode when exposed to rain or fire. This modified version has triple storage than normal one.</description>
+    <designatorDropdown>TriBattery</designatorDropdown>
     <drawerType>MapMeshAndRealTime</drawerType>
     <thingClass>Explorite.Building_TriBattery</thingClass>
     <graphicData>
