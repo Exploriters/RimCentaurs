@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>Trishot</defName>
+    <label>trishot</label>
+    <parent>WeaponsRanged</parent>
+    <iconPath>Things/Item/Equipment/WeaponRanged/BowTrishot</iconPath>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+  </ThingCategoryDef>
+
+  <SpecialThingFilterDef>
+    <defName>AllowTrishotStage1</defName>
+    <label>allow malfunction trishot</label>
+    <parentCategory>Trishot</parentCategory>
+    <allowedByDefault>true</allowedByDefault>
+    <saveKey>allowTrishotStage1</saveKey>
+    <workerClass>Explorite.SpecialThingFilterWorker_TrishotStage1</workerClass>
+  </SpecialThingFilterDef>
+
+  <SpecialThingFilterDef>
+    <defName>AllowTrishotStage2</defName>
+    <label>allow prototype trishot</label>
+    <parentCategory>Trishot</parentCategory>
+    <allowedByDefault>true</allowedByDefault>
+    <saveKey>allowTrishotStage2</saveKey>
+    <workerClass>Explorite.SpecialThingFilterWorker_TrishotStage2</workerClass>
+  </SpecialThingFilterDef>
+
+  <SpecialThingFilterDef>
+    <defName>AllowTrishotStage3</defName>
+    <label>allow operational trishot</label>
+    <parentCategory>Trishot</parentCategory>
+    <allowedByDefault>true</allowedByDefault>
+    <saveKey>allowTrishotStage3</saveKey>
+    <workerClass>Explorite.SpecialThingFilterWorker_TrishotStage3</workerClass>
+  </SpecialThingFilterDef>
+  
+
+</Defs>

@@ -56,8 +56,8 @@
       </li> -->
     </comps>
     <!-- <smeltable>false</smeltable> -->
-    <thingCategories>
-      <li>WeaponsRanged</li>
+    <thingCategories Inherit="False">
+      <li>Trishot</li>
     </thingCategories>
     <tools>
       <li>

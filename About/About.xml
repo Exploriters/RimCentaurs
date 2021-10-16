@@ -67,6 +67,7 @@
 	<li>erdelf.HumanoidAlienRaces</li>
 	<li>kentington.saveourship2</li>
 	<li>jecrell.jecstools</li>
+	<li>Epona.EponaRenaissance</li>
   </loadAfter>
   <loadBefore />
   <incompatibleWith>

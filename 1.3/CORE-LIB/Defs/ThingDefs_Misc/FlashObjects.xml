@@ -17,6 +17,9 @@
     <rotatable>false</rotatable>
     <pathCost>0</pathCost>
     <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>0</MaxHitPoints>
+    </statBases>
   </ThingDef>
 
 </Defs>

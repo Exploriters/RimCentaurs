@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef Abstract="True" Name="TrishotRepairRecipeBase">
+    <uiIconThing>Bow_Trishot</uiIconThing>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+	  <productHasIngredientStuff>true</productHasIngredientStuff>
+	  <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <workSkill>Crafting</workSkill>
+    <recipeUsers Inherit="False">
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <workSkillLearnFactor>0</workSkillLearnFactor>
+  </RecipeDef>
+
+  <RecipeDef Abstract="False" ParentName="TrishotRepairRecipeBase">
+    <defName>Repair_Trishot_1Stage</defName>
+    <label>patch trishot</label>
+    <description>Repair trishot by archotech mech serum. This will restore it's normal range and sightly restore an alternative attact</description>
+    <descriptionHyperlinks>
+      <ThingDef>TriCapacitorCell</ThingDef>
+      <ThingDef>ComponentArchotech</ThingDef>
+      <ThingDef>MechSerumArchotech</ThingDef>
+      <ThingDef>Bow_Trishot</ThingDef>
+    </descriptionHyperlinks>
+    <jobString>Repairing trishot.</jobString>
+    <unfinishedThingDef />
+    <workAmount>300</workAmount>
+    <workerClass>Explorite.Recipe_RepairTrishot1Stage</workerClass>  
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Bow_Trishot</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MechSerumArchotech</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Bow_Trishot</li>
+        <li>MechSerumArchotech</li>
+      </thingDefs>
+      <specialFiltersToAllow>
+        <li>AllowTrishotStage1</li>
+      </specialFiltersToAllow>
+      <specialFiltersToDisallow>
+        <li>AllowTrishotStage2</li>
+        <li>AllowTrishotStage3</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <forceHiddenSpecialFilters>
+      <li>AllowTrishotStage1</li>
+      <li>AllowTrishotStage2</li>
+      <li>AllowTrishotStage3</li>
+    </forceHiddenSpecialFilters>
+    <researchPrerequisites>
+      <li>CentaurStoryStep1st</li>
+    </researchPrerequisites>
+    <skillRequirements>
+      <Crafting>9</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+
+  <RecipeDef Abstract="False" ParentName="TrishotRepairRecipeBase">
+    <defName>Repair_Trishot_2Stage</defName>
+    <workerClass>Explorite.Recipe_RepairTrishot2Stage</workerClass>
+    <label>repair trishot</label>
+    <description>Compelely repair trishot and restore its all functions, unlock a extremely powerful alternative attact.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ThermoDamper</ThingDef>
+      <ThingDef>Bow_Trishot</ThingDef>
+    </descriptionHyperlinks>
+    <jobString>Repairing trishot.</jobString>
+    <!--<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    <workAmount>200000</workAmount>-->
+    <workAmount>300</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Bow_Trishot</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ThermoDamper</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Bow_Trishot</li>
+        <li>ThermoDamper</li>
+      </thingDefs>
+      <specialFiltersToAllow>
+        <li>AllowTrishotStage2</li>
+      </specialFiltersToAllow>
+      <specialFiltersToDisallow>
+        <li>AllowTrishotStage1</li>
+        <li>AllowTrishotStage3</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <forceHiddenSpecialFilters>
+      <li>AllowTrishotStage1</li>
+      <li>AllowTrishotStage2</li>
+      <li>AllowTrishotStage3</li>
+    </forceHiddenSpecialFilters>
+    <researchPrerequisites>
+      <li>CentaurStoryStep3rd</li>
+    </researchPrerequisites>
+    <skillRequirements>
+      <Crafting>12</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+
+</Defs>
