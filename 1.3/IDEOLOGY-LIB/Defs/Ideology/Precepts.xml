@@ -97,6 +97,7 @@
     <requiredMemes>
       <li>Structure_Centaur</li>
     </requiredMemes>
+    <willingToConstructOtherIdeoBuildables>true</willingToConstructOtherIdeoBuildables>
     <statFactors>
       <ConversionPower>0</ConversionPower>
       <SocialIdeoSpreadFrequencyFactor>0</SocialIdeoSpreadFrequencyFactor>

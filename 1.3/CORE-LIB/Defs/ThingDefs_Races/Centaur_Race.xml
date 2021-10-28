@@ -27,34 +27,36 @@
       </li>
     </comps>
     <tradeTags>
-      <li>ExAutoApparelWhiteList</li>                     <!-- Automatically generating apparel white list allows them wear waists and hats without additional patches. -->
-      <li>ExOverrideAddedBodyPartsMass</li>               <!-- Use their own way to calculate added body parts mass. -->
-      <li>ExQualityIncreased</li>                         <!-- Things created by them have their quality increased by 1 level. -->
-      <li>ExDisableFoodPoisoning</li>                     <!-- Immune to food poisoning. -->
-      <li>ExDisableSkillsDegrees</li>                     <!-- Does not lost skills overtime. -->
-      <li>ExDisableDailySkillTrainLimit</li>              <!-- Skill training are not limited. -->
-      <li>ExDisableMentalBreak</li>                       <!-- Does not mental break, hide stats and remove thresh percents. -->
-      <li>ExDisablePainShock</li>                         <!-- Stands even under 100% pain level, hide related stat. -->
-      <li>ExDisableBrainShock</li>                        <!-- Does not down to EMP impact on barin implants. -->
-      <li>ExDisableScar</li>                              <!-- Injuries never goes permanent. -->
-      <li>ExDisableSelfHealPenalty</li>                   <!-- Does not suffer the 70% efficient penalty when preforming self heal. -->
-      <li>ExDisableOutdoorsNeeds</li>                     <!-- Remove outdoors needs. -->
-      <li>ExDisableWoundRendering</li>                    <!-- Remove wounds rendering. -->
-      <li>ExDisableSocialFightPossible</li>               <!-- Never starts a social fight. -->
-      <li>ExDisableAbilityGainFromPsylink</li>            <!-- Does not recieve new psychic ability on psylink gain. -->
-      <li>ExDisableEntropyPainBoost</li>                  <!-- Recieve pains no helps to entropy recovery rate. -->
-      <li>ExDisablePassionDraw</li>                       <!-- Remove flame icons of skills passion in character page. -->
-      <li>ExDisableThoughtWorkerPreceptHasUncovered</li>  <!-- Never get bad thought about being naked. -->
-      <li>ExDisableWaistRendering</li>                    <!-- Does not rendering waists. -->
+      <li>ExAutoApparelWhiteList</li>                         <!-- Automatically generating apparel white list allows them wear waists and hats without additional patches. -->
+      <li>ExOverrideAddedBodyPartsMass</li>                   <!-- Use their own way to calculate added body parts mass. -->
+      <li>ExQualityIncreased</li>                             <!-- Things created by them have their quality increased by 1 level. -->
+      <li>ExDisableFoodPoisoning</li>                         <!-- Immune to food poisoning. -->
+      <li>ExDisableSkillsDegrees</li>                         <!-- Does not lost skills overtime. -->
+      <li>ExDisableDailySkillTrainLimit</li>                  <!-- Skill training are not limited. -->
+      <li>ExDisableMentalBreak</li>                           <!-- Does not mental break, hide stats and remove thresh percents. -->
+      <li>ExDisablePainShock</li>                             <!-- Stands even under 100% pain level, hide related stat. -->
+      <li>ExDisableBrainShock</li>                            <!-- Does not down to EMP impact on barin implants. -->
+      <li>ExDisableScar</li>                                  <!-- Injuries never goes permanent. -->
+      <li>ExDisableSelfHealPenalty</li>                       <!-- Does not suffer the 70% efficient penalty when preforming self heal. -->
+      <li>ExDisableOutdoorsNeeds</li>                         <!-- Remove outdoors needs. -->
+      <li>ExDisableWoundRendering</li>                        <!-- Remove wounds rendering. -->
+      <li>ExDisableSocialFightPossible</li>                   <!-- Never starts a social fight. -->
+      <li>ExDisableAbilityGainFromPsylink</li>                <!-- Does not recieve new psychic ability on psylink gain. -->
+      <li>ExDisableEntropyPainBoost</li>                      <!-- Recieve pains no helps to entropy recovery rate. -->
+      <li>ExDisablePassionDraw</li>                           <!-- Remove flame icons of skills passion in character page. -->
+      <li>ExDisableThoughtWorkerPreceptHasUncovered</li>      <!-- Never get bad thought about being naked. -->
+      <li>ExDisableWaistRendering</li>                        <!-- Does not rendering waists. -->
+      <li>ExDisableStatFactorGlow</li>                        <!-- Stats are not affected by lights. -->
+      <li>ExDisableStatFactorSightPsychicSenstivityOffset</li><!-- Psychic senstivity not affected by sight or blind. -->
     </tradeTags>
     <statBases>
       <!-- Basic -->
       <MarketValue>38000</MarketValue>
       <Flammability>1.0</Flammability>
-      <LeatherAmount>90</LeatherAmount>
+      <LeatherAmount>100</LeatherAmount>
 
       <!-- Commuting -->
-      <MoveSpeed>20</MoveSpeed>
+      <MoveSpeed>13.5</MoveSpeed>
       <CarryingCapacity>1000</CarryingCapacity>
       <CaravanRidingSpeedFactor>2.0</CaravanRidingSpeedFactor>
       
@@ -88,7 +90,7 @@
       
       <!-- Work -->
       <GlobalLearningFactor>1.75</GlobalLearningFactor>
-      <WorkSpeedGlobal>3.0</WorkSpeedGlobal>
+      <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
       <ResearchSpeed>2.0</ResearchSpeed>
       <TameAnimalChance>3.0</TameAnimalChance>
       <TrainAnimalChance>3.0</TrainAnimalChance>
@@ -101,8 +103,8 @@
       <PawnShieldEnergyMax>0</PawnShieldEnergyMax>
       
       <!-- Psychic -->
-      <PsychicSensitivity>1.8</PsychicSensitivity>
-      <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">90</PsychicEntropyMax>
+      <PsychicSensitivity>1.0</PsychicSensitivity>
+      <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">100</PsychicEntropyMax>
       <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">1.62</PsychicEntropyRecoveryRate>
       <!--<MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">1.5</MeditationFocusGain>-->
 

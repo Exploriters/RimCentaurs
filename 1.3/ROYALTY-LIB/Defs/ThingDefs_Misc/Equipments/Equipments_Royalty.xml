@@ -3,7 +3,7 @@
 
   <ThingDef ParentName="BaseWeapon">
     <defName>MeleeWeapon_PsyfocusStaffCentaur</defName>
-	<tradeability>Sellable</tradeability>
+	  <tradeability>Sellable</tradeability>
     <label>eltex centaur staff</label>
     <description>An ultratech staff threaded with psychic focusing materials for centaurs. While it is a solid melee weapon, its main purpose is to enhance the wielder's psychic sensitivity and neural heat dissipation, allowing more use of psychic powers.</description>
     <graphicData>
@@ -39,6 +39,26 @@
       <PsychicSensitivity>0.75</PsychicSensitivity>
       <PsychicEntropyRecoveryRate>0.2475</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
+    <!--
+    <thingClass>Apparel</thingClass>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>CentaurBodyFit</li><li>CentaurOutfit</li>
+        <li>BeltDefense</li>
+        <li>CentaurPsyfocusStaff</li>
+      </tags>
+      <defaultOutfitTags Inherit="False">
+        <li>CentaurOutfit</li>
+      </defaultOutfitTags>
+    </apparel>
+    -->
     <recipeMaker>
 	  <researchPrerequisite Inherit="False" />
 	  <researchPrerequisites>

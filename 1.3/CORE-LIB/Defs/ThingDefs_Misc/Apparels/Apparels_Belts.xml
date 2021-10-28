@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="ApparelNoQualityBase">
+  <ThingDef ParentName="ApparelNoQualityBase" Abstract="True">
     <defName>Apparel_CentaurAntimassBelt</defName>
     <label>antimass belt</label>
     <description>A anti-mass device. It helps reduce the mass of a centaur to allows them getting into transporters.</description>

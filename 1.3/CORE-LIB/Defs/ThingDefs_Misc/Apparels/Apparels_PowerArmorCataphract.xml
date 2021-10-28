@@ -32,7 +32,7 @@
       <EquipDelay>17</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.8</MoveSpeed>
+      <!--<MoveSpeed>-0.8</MoveSpeed>-->
     </equippedStatOffsets>
     <tradeTags>
       <li>HiTechArmor</li>

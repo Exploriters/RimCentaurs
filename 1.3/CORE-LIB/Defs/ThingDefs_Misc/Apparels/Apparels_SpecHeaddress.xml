@@ -37,11 +37,10 @@
     <apparel>
       <careIfWornByCorpse>false</careIfWornByCorpse>
       <bodyPartGroups>
-        <li>FullHead</li>
+        <li>Eyes</li>
       </bodyPartGroups>
       <layers>
-        <li>OnSkin</li>
-        <!--<li>Overhead</li>-->
+        <li>EyeCover</li>
       </layers>
       <tags>
         <li>CentaurBodyFit</li><li>CentaurOutfit</li>
