@@ -27,15 +27,36 @@
       </li>
     </comps>
     <tradeTags>
-      <li>ExAutoApparelWhiteList</li>
-      <li>ExImmuneToFoodPoisoning</li>
+      <li>ExAutoApparelWhiteList</li>                     <!-- Automatically generating apparel white list allows them wear waists and hats without additional patches. -->
+      <li>ExOverrideAddedBodyPartsMass</li>               <!-- Use their own way to calculate added body parts mass. -->
+      <li>ExQualityIncreased</li>                         <!-- Things created by them have their quality increased by 1 level. -->
+      <li>ExDisableFoodPoisoning</li>                     <!-- Immune to food poisoning. -->
+      <li>ExDisableSkillsDegrees</li>                     <!-- Does not lost skills overtime. -->
+      <li>ExDisableDailySkillTrainLimit</li>              <!-- Skill training are not limited. -->
+      <li>ExDisableMentalBreak</li>                       <!-- Does not mental break, hide stats and remove thresh percents. -->
+      <li>ExDisablePainShock</li>                         <!-- Stands even under 100% pain level, hide related stat. -->
+      <li>ExDisableBrainShock</li>                        <!-- Does not down to EMP impact on barin implants. -->
+      <li>ExDisableScar</li>                              <!-- Injuries never goes permanent. -->
+      <li>ExDisableSelfHealPenalty</li>                   <!-- Does not suffer the 70% efficient penalty when preforming self heal. -->
+      <li>ExDisableOutdoorsNeeds</li>                     <!-- Remove outdoors needs. -->
+      <li>ExDisableWoundRendering</li>                    <!-- Remove wounds rendering. -->
+      <li>ExDisableSocialFightPossible</li>               <!-- Never starts a social fight. -->
+      <li>ExDisableAbilityGainFromPsylink</li>            <!-- Does not recieve new psychic ability on psylink gain. -->
+      <li>ExDisableEntropyPainBoost</li>                  <!-- Recieve pains no helps to entropy recovery rate. -->
+      <li>ExDisablePassionDraw</li>                       <!-- Remove flame icons of skills passion in character page. -->
+      <li>ExDisableThoughtWorkerPreceptHasUncovered</li>  <!-- Never get bad thought about being naked. -->
+      <li>ExDisableWaistRendering</li>                    <!-- Does not rendering waists. -->
     </tradeTags>
     <statBases>
+      <!-- Basic -->
       <MarketValue>38000</MarketValue>
-      <MoveSpeed>13.5</MoveSpeed>
-      <CarryingCapacity>1000</CarryingCapacity>
       <Flammability>1.0</Flammability>
       <LeatherAmount>90</LeatherAmount>
+
+      <!-- Commuting -->
+      <MoveSpeed>20</MoveSpeed>
+      <CarryingCapacity>1000</CarryingCapacity>
+      <CaravanRidingSpeedFactor>2.0</CaravanRidingSpeedFactor>
       
       <!-- Corpse -->
       <MaxHitPoints>250</MaxHitPoints>
@@ -63,11 +84,11 @@
       <!-- Social -->
       <PawnBeauty>10.0</PawnBeauty>
       <SocialImpact>1.3</SocialImpact>
-      <!--<TradePriceImprovement>1</TradePriceImprovement>-->
+      <TradePriceImprovement>1.18</TradePriceImprovement>
       
       <!-- Work -->
       <GlobalLearningFactor>1.75</GlobalLearningFactor>
-      <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+      <WorkSpeedGlobal>3.0</WorkSpeedGlobal>
       <ResearchSpeed>2.0</ResearchSpeed>
       <TameAnimalChance>3.0</TameAnimalChance>
       <TrainAnimalChance>3.0</TrainAnimalChance>
@@ -125,7 +146,7 @@
           <li>(5, 0)</li>
         </points>
       </litterSizeCurve>
-      <lifeStageAges>
+      <!--<lifeStageAges>
         <li>
           <def>CentaurBaby</def>
           <minAge>0</minAge>
@@ -145,6 +166,12 @@
         <li>
           <def>CentaurAdult</def>
           <minAge>18</minAge>
+        </li>
+      </lifeStageAges>-->
+      <lifeStageAges>
+        <li>
+          <def>CentaurAdult</def>
+          <minAge>0</minAge>
         </li>
       </lifeStageAges>
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>

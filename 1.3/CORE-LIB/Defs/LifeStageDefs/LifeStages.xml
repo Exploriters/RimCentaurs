@@ -63,6 +63,7 @@
     <label>adult</label>
     <visible>false</visible>
     <reproductive>false</reproductive>
+    <caravanRideable>true</caravanRideable>
   </LifeStageDef>
 
 </Defs>
