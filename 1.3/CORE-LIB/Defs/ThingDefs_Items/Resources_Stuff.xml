@@ -4,11 +4,11 @@
   <StuffCategoryDef>
     <defName>Orangice</defName>
   </StuffCategoryDef>
-	
+
   <ThingDef ParentName="ResourceBase" Name="OrangiceBase">
     <defName>Orangice</defName>
     <label>orange ice</label>
-    <description>A powerful exotic superfluid material, can be shaped into nearly any form while under an appropriate manipulation, but takes really long time to preform. It is even harder to damage than plasteel, perfectly biocompatible, and inertia while idle. Its origin is a mystery to all minds.</description>
+    <description>A powerful exotic superfluid material, can be shaped into nearly any form while under an appropriate manipulation, but takes really long time to preform. It is even harder to damage than plasteel, perfectly biocompatible, and inertia while idle. Its origin is a mystery to all minds.\n\n"Frozen bleeds of Siirel from the Blizzard."</description>
     <graphicData>
       <!--<texPath>Things/Item/Resource/Orangice</texPath>-->
       <texPath>Things/Item/Resource/Bluice</texPath>
@@ -43,7 +43,7 @@
     <stuffProps>
       <stuffAdjective>orangicy</stuffAdjective>
       <categories>
-	    <li>Orangice</li>
+        <li>Orangice</li>
         <li>Metallic</li>
         <li>Fabric</li>
         <li>Leathery</li>

@@ -3,5 +3,8 @@
 
   <PsychicDeafCentaur.label>心灵失聪</PsychicDeafCentaur.label>
   <PsychicDeafCentaur.description>精神冲击引起的暂时性心灵失敏。</PsychicDeafCentaur.description>
+
+  <PsychicDeafSourceCentaur.label>心灵失聪源</PsychicDeafSourceCentaur.label>
+  <PsychicDeafSourceCentaur.description>影响区域内的所有物体使其心灵失敏。</PsychicDeafSourceCentaur.description>
   
 </LanguageData>

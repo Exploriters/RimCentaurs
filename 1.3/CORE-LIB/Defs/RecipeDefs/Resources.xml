@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
+
   <RecipeDef>
     <defName>Make_MedicineUltratech_By_MechSerumArchotech</defName>
     <label>make glitterworld medicine</label>
@@ -11,8 +11,8 @@
     <soundWorking>Recipe_Machining</soundWorking>
     <workAmount>10000</workAmount>
     <unfinishedThingDef>UnfinishedMedicine</unfinishedThingDef>
-	<productHasIngredientStuff>false</productHasIngredientStuff>
-	<dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>  
+    <productHasIngredientStuff>false</productHasIngredientStuff>
+    <dontShowIfAnyIngredientMissing>false</dontShowIfAnyIngredientMissing>
     <ingredients>
       <li>
         <filter>
@@ -40,10 +40,10 @@
     <products>
       <MedicineUltratech>50</MedicineUltratech>
     </products>
-	<researchPrerequisites>
-	  <li>MedicineProduction</li>
-	  <li>CentaurReverseEngineeringHumanTech</li>
-	</researchPrerequisites>
+    <researchPrerequisites>
+      <li>MedicineProduction</li>
+      <li>CentaurReverseEngineeringHumanTech</li>
+    </researchPrerequisites>
     <skillRequirements>
       <Crafting>9</Crafting>
       <Intellectual>9</Intellectual>
@@ -88,6 +88,7 @@
             <li MayRequire="Ludeon.RimWorld.Royalty">Gloomlight</li>
             <li MayRequire="Ludeon.RimWorld.Royalty">UnstablePowerCell</li>
             <li>VanometricPowerCell</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsychicAnimaAmplifierLance</li>
           </thingDefs>
           <categories>
             <li>Artifacts</li>
@@ -100,29 +101,30 @@
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-            <li>AIPersonaCore</li>
-            <li>Apparel_PsychicInsanityLance</li>
-            <li>Apparel_PsychicShockLance</li>
-            <li>ArchotechArm</li>
-            <li>ArchotechEye</li>
-            <li>ArchotechLeg</li>
-            <li>PsychicAnimalPulser</li>
-            <li>PsychicSoothePulser</li>
-            <li MayRequire="Ludeon.RimWorld.Royalty">PsychicAmplifier</li>
-            <li>PsychicEmanator</li>
-            <li MayRequire="Ludeon.RimWorld.Royalty">Gloomlight</li>
-            <li MayRequire="Ludeon.RimWorld.Royalty">UnstablePowerCell</li>
-            <li>VanometricPowerCell</li>
+        <li>AIPersonaCore</li>
+        <li>Apparel_PsychicInsanityLance</li>
+        <li>Apparel_PsychicShockLance</li>
+        <li>ArchotechArm</li>
+        <li>ArchotechEye</li>
+        <li>ArchotechLeg</li>
+        <li>PsychicAnimalPulser</li>
+        <li>PsychicSoothePulser</li>
+        <li MayRequire="Ludeon.RimWorld.Royalty">PsychicAmplifier</li>
+        <li>PsychicEmanator</li>
+        <li MayRequire="Ludeon.RimWorld.Royalty">Gloomlight</li>
+        <li MayRequire="Ludeon.RimWorld.Royalty">UnstablePowerCell</li>
+        <li>VanometricPowerCell</li>
+        <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsychicAnimaAmplifierLance</li>
       </thingDefs>
-	  <categories>
-		<li>Artifacts</li>
-		<li>BodyPartsArchotech</li>
-	  </categories>
+      <categories>
+        <li>Artifacts</li>
+        <li>BodyPartsArchotech</li>
+      </categories>
       <disallowedThingDefs />
     </fixedIngredientFilter>
-	<researchPrerequisites>
-	  <li>CentaurStoryStep1st</li>
-	</researchPrerequisites>
+    <researchPrerequisites>
+      <li>CentaurStoryStep1st</li>
+    </researchPrerequisites>
     <defaultIngredientFilter>
       <thingDefs />
       <categories />

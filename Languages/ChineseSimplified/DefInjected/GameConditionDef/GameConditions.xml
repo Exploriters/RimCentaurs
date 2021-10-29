@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <PsychicDeafness.label>心灵失聪</PsychicDeafness.label>
+  <PsychicDeafness.description>由{0}造成的心灵失聪效果正在影响区域内的所有物体使其心灵敏感度归零。</PsychicDeafness.description>
+  <PsychicDeafness.endMessage>心灵失聪波结束了。</PsychicDeafness.endMessage>
+  <PsychicDeafness.letterText>心灵失聪效果正在影响区域内的所有物体。</PsychicDeafness.letterText>
+
+
+</LanguageData>

@@ -10,7 +10,7 @@
 
 
   <Orangice.label>橙冰</Orangice.label>
-  <Orangice.description>一种强大而不同寻常的超流体材料，在接受合适的操纵时能够被塑造成几乎任何形态，但真的需要耗费很长时间来实施。这些材料仍然比玻璃钢更坚固，具有近乎完美的生物兼容性，并在闲置时表现惰性。它的来历对于所有人来说都是个迷。</Orangice.description>
+  <Orangice.description>一种强大而不同寻常的超流体材料，在接受合适的操纵时能够被塑造成几乎任何形态，但真的需要耗费很长时间来实施。这些材料仍然比玻璃钢更坚固，具有近乎完美的生物兼容性，并在闲置时表现惰性。它的来历对于所有人来说都是个迷。\n\n“来自暴风雪的Siirel冰冻血液。”</Orangice.description>
   <Orangice.stuffProps.stuffAdjective>橙冰</Orangice.stuffProps.stuffAdjective>
   
   <ThermoDamper.label>失温器</ThermoDamper.label>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GameConditionDef>
+    <defName>PsychicDeafness</defName>
+    <conditionClass>Explorite.GameCondition_PsychicDeafness</conditionClass>
+    <label>psychic deafness</label>
+    <description>A psychic deafness caused by {0} is affecting everything across the whole region and reducing psychic sensitivity to zero.</description>
+    <endMessage>The psychic deafness is ending.</endMessage>
+    <letterText>A psychic deafness is affecting everything across the whole region.</letterText>
+    <letterDef>NeutralEvent</letterDef>
+    <canBePermanent>false</canBePermanent>
+  </GameConditionDef>
+  
+</Defs>

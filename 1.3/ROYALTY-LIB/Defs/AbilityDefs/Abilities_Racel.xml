@@ -7,7 +7,7 @@
     <abilityClass>Ability</abilityClass>
     <category>ExploriteRacal</category>
     <label>mass psychical deafness</label>
-    <description>Release a massive psychic pulse that disturbs minds, block the psylink of every creature on the map for days - including the caster self.\n\nNeuroquake takes three hours to cast, and cannot be interrupted. The caster will also being disabled to cast anything else during it's effect.</description>
+    <description>Release a massive psychic pulse that disturbs minds, block the psylink of creatures across the whole region for a day, including the caster self. The caster will also being disabled to cast any other psychic Abilities during it's effect.</description>
     <level>0</level>
     <writeCombatLog>True</writeCombatLog>
     <iconPath>UI/Abilities/MassPsychicDeafCentaur</iconPath>
@@ -25,15 +25,15 @@
     <warmupPreEndSoundSeconds>5</warmupPreEndSoundSeconds>
     <displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+    <showGizmoOnWorldView>False</showGizmoOnWorldView>
     <gizmoClass>Command_Ability</gizmoClass>
-	
     <sendLetterOnCooldownComplete>False</sendLetterOnCooldownComplete>
     <cooldownTicksRange>1200~1200</cooldownTicksRange>
     <!--<gizmoClass>Explorite.Command_AbilityMassPsychicDeafCentaur</gizmoClass>-->
     <statBases>
       <Ability_EntropyGain>0</Ability_EntropyGain>
       <Ability_PsyfocusCost>0</Ability_PsyfocusCost>
-      <Ability_Duration>480</Ability_Duration>
+      <Ability_Duration>1000</Ability_Duration>
     </statBases>
     <verbProperties>
       <!--<verbClass>Explorite.Verb_CastAbility_MassPsychicDeafCentaur</verbClass>-->
@@ -43,18 +43,19 @@
       <drawAimPie>False</drawAimPie>
       <requireLineOfSight>false</requireLineOfSight>
       <targetParams Inherit="False">
-          <canTargetSelf>true</canTargetSelf>
-          <canTargetHumans>false</canTargetHumans>
-          <canTargetAnimals>false</canTargetAnimals>
-          <canTargetMechs>false</canTargetMechs>
-          <canTargetBuildings>false</canTargetBuildings>
-        </targetParams>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetHumans>false</canTargetHumans>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
     </verbProperties>
     <comps>
       <li Class="CompProperties_AbilityGiveHediff">
-        <compClass>Explorite.CompAbilityEffect_GiveHediff_WholeMap</compClass>
-        <hediffDef>PsychicDeafCentaur</hediffDef>
-        <durationMultiplier>PsychicSensitivity</durationMultiplier>
+        <!--<compClass>Explorite.CompAbilityEffect_GiveHediff_WholeMap</compClass>-->
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>PsychicDeafSourceCentaur</hediffDef>
+        <!--<durationMultiplier>PsychicSensitivity</durationMultiplier>-->
         <psychic>True</psychic>
         <applicableToMechs>True</applicableToMechs>
         <screenShakeIntensity>2</screenShakeIntensity>

@@ -35,7 +35,7 @@
     <description>The physic manipulator is failed to once be in hazard temperature. It will last for some times not more than two days, and will not leave permanent damage.</description>
     <maxSeverity>2.0</maxSeverity>
     <initialSeverity>2</initialSeverity>
-	<everCurableByItem>false</everCurableByItem>
+	  <everCurableByItem>false</everCurableByItem>
     <hediffGivers>
     </hediffGivers>
     <comps>
@@ -94,12 +94,18 @@
   </HediffDef>-->
   
 
-  <HediffDef ParentName = "PsycastHediffBase">
+  <HediffDef ParentName="PsycastHediffBase">
     <defName>PsychicDeafCentaur</defName>
     <label>psychic deaf</label>
     <description>Psychically-induced partial psychic insensitivity.</description>
     <isBad>true</isBad>
-	<everCurableByItem>false</everCurableByItem>
+	  <everCurableByItem>false</everCurableByItem>
+    <comps Inherit="False">
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties">
+        <compClass>Explorite.HediffComp_PsychicDeafness</compClass>
+      </li>
+    </comps>
     <stages>
       <li>
         <statFactors>
@@ -107,6 +113,29 @@
           <PsychicEntropyRecoveryRate>0</PsychicEntropyRecoveryRate>
         </statFactors>
         <statOffsets />
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="PsycastHediffBase">
+    <defName>PsychicDeafSourceCentaur</defName>
+    <label>psychic deaf source</label>
+    <description>Affecting everything across the whole region and reducing psychic sensitivity to zero.</description>
+    <isBad>true</isBad>
+	  <everCurableByItem>false</everCurableByItem>
+    <comps Inherit="False">
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="Explorite.HediffCompProperties_CausesGameCondition">
+        <conditionDef>PsychicDeafness</conditionDef>
+        <worldRange>1</worldRange>
+      </li>
+      <li Class="Explorite.HediffCompProperties_CausesCaravanPsychicDeafness"/>
+    </comps>
+    <stages>
+      <li>
       </li>
     </stages>
   </HediffDef>
