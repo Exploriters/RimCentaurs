@@ -47,13 +47,15 @@
       <li>ExDisableThoughtWorkerPreceptHasUncovered</li>      <!-- Never get bad thought about being naked. -->
       <li>ExDisableWaistRendering</li>                        <!-- Does not rendering waists. -->
       <li>ExDisableStatFactorGlow</li>                        <!-- Stats are not affected by lights. -->
+      <li>ExDisableRandomInspiration</li>                     <!-- Never recieve random inspiration. -->
       <li>ExDisableStatFactorSightPsychicSenstivityOffset</li><!-- Psychic senstivity not affected by sight or blind. -->
     </tradeTags>
     <statBases>
       <!-- Basic -->
       <MarketValue>38000</MarketValue>
+      <RoyalFavorValue>100</RoyalFavorValue>
       <Flammability>1.0</Flammability>
-      <LeatherAmount>100</LeatherAmount>
+      <LeatherAmount>150</LeatherAmount>
 
       <!-- Commuting -->
       <MoveSpeed>13.5</MoveSpeed>
@@ -89,8 +91,8 @@
       <TradePriceImprovement>1.18</TradePriceImprovement>
       
       <!-- Work -->
-      <GlobalLearningFactor>1.75</GlobalLearningFactor>
-      <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+      <GlobalLearningFactor>3.0</GlobalLearningFactor>
+      <WorkSpeedGlobal>3.0</WorkSpeedGlobal>
       <ResearchSpeed>2.0</ResearchSpeed>
       <TameAnimalChance>3.0</TameAnimalChance>
       <TrainAnimalChance>3.0</TrainAnimalChance>
